@@ -1,4 +1,5 @@
 {
+  "explorer.decorations.colors": true,
   "[astro]": {
     "editor.defaultFormatter": "astro-build.astro-vscode"
   }

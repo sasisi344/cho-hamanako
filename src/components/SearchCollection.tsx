@@ -12,14 +12,15 @@ type Props = {
 }
 
 export default function SearchCollection({ entry_name, data, tags }: Props) {
-  const coerced = data.map((entry) => entry as CollectionEntry<'blog'>);
+  // Use any here to avoid union of array vs array of union issues in Fuse/Filter
+  const items = data as any[];
 
   const [query, setQuery] = createSignal("");
   const [filter, setFilter] = createSignal(new Set<string>())
-  const [collection, setCollection] = createSignal<CollectionEntry<'blog'>[]>([])
+  const [collection, setCollection] = createSignal<any[]>(items)
   const [descending, setDescending] = createSignal(false);
 
-  const fuse = new Fuse(coerced, {
+  const fuse = new Fuse(items, {
     keys: ["slug", "data.title", "data.summary", "data.tags"],
     includeMatches: true,
     minMatchCharLength: 2,
@@ -28,16 +29,16 @@ export default function SearchCollection({ entry_name, data, tags }: Props) {
 
   createEffect(() => {
     const filtered = (query().length < 2
-      ? coerced
+      ? items
       : fuse.search(query()).map((result) => result.item)
-    ).filter((entry) =>
+    ).filter((entry: any) =>
       Array.from(filter()).every((value) =>
         entry.data.tags.some((tag: string) =>
           tag.toLowerCase() === String(value).toLowerCase()
         )
       )
     );
-    setCollection(descending() ? filtered.toReversed() : filtered)
+    setCollection(descending() ? [...filtered].reverse() : filtered)
   })
 
   function toggleDescending() {
