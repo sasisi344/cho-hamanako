@@ -34,14 +34,16 @@ This improves readability and prevents the bold text from blending into the surr
  
 1. **[Plan] プロンプトの検討と埋め込み**:
     - 記事の適切な位置に HTML コメント形式でプロンプトを記述する。
-    - **Eyecatch**: メインのテロップは **8文字程度** に抑え、ユーザーの関心を引くインパクト（強い言葉、鮮やかな色彩）を重視する。
+    - 記事にある最初のH2項目以降から画像挿入するべき位置を調査する。
+    - **Eyecatch**: 作成する画像にテキストは使わないこと。前後の文脈となるべく関連性をもたせて、ユーザーが違和感なく見れるように、記事のリズムを大切にすること。作成サイズは6:4を基本とする。
+    - **Infographic**: 文字で説明がしづらいと判断した場合に挿入。基本的にH2項目を補足することを意識する。作成サイズは6:4か4:6。
     - **Language**: プロンプト本文は **英語**、画像内テキストは **日本語** で指定する。
  
 2. **[Execute] 独自スクリプトによる画像生成**:
     - プロジェクト専用の生成スクリプト `generate-image.js` を使用し、Gemini API を介して画像を生成する。
     - **Command**:
       ```bash
-      node skills/script/Antigravity-nanobana/generate-image.js "<Prompt Content>" "<Target Path>"
+      node skills/scripts/Antigravity-nanobana/generate-image.js "<Prompt Content>" "<Target Path>"
       ```
     - **Target Path**: 記事フォルダ内の `index.md` と同じ階層（Page Bundle 形式）に出力する（例: `./cover.jpg`）。
  
@@ -55,8 +57,9 @@ This improves readability and prevents the bold text from blending into the surr
  
 - **Format**: `<!-- Image Prompt (...) : ... -->`
 - **Placement**:
-    1. **Eyecatch**: フロントマター直下。
+    1. **Eyecatch**: 記事最初のH2以降。フロントマターには含めない。
     2. **Infographics**: 解説セクションの間。
+    3. **cover.jpg（Thumbnail）**: ユーザーから指示があるまで作成はしないこと。
  
 #### Examples
 ```markdown

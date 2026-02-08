@@ -2,5 +2,12 @@
   "explorer.decorations.colors": true,
   "[astro]": {
     "editor.defaultFormatter": "astro-build.astro-vscode"
+  },
+  "workbench.colorCustomizations": {
+    "gitDecoration.modifiedResourceForeground": "#FFC107",
+    "gitDecoration.untrackedResourceForeground": "#4CAF50",
+    "gitDecoration.addedResourceForeground": "#81C784",
+    "gitDecoration.stageModifiedResourceForeground": "#FFEB3B",
+    "gitDecoration.conflictingResourceForeground": "#F44336"
   }
 }

@@ -27,7 +27,7 @@ export async function GET(context: Context) {
       description: item.data.summary,
       pubDate: item.collection === "blog" ? item.data.pubDate : item.data.date,
       link: item.collection === "blog"
-        ? `/blog/${item.slug}/`
+        ? `/${item.slug}/`
         : `/projects/${item.slug}/`,
     })),
   })

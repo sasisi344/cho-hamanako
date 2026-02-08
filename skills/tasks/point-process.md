@@ -17,14 +17,15 @@ When creating a new point article, the following blocks are **MANDATORY**.
 ---
 title: "乙女園（うなぎ観音）"
 summary: "Description for list view..."
-date: "2026-02-08"
+pubDate: "YYYY-MM-DD" # WordPressの公開日（timeは含めない）
+upDate: "YYY-MM-DD" # Astroに追加した日（timeは含めない）
 draft: false
-noindex: true # Mandatory for new articles during migration
-tags:
+noindex: true # WordPress記事とのカニバリズム対策
+tags: # 3-5個設定。記事内容から主要キーワードを拾う（ハッシュタグを意識）
   - "表浜名湖"
   - "ポイント紹介"
 category: "points"
-slug: "otomeen"
+# slug: "otomeen" (Removed: Slug is auto-generated from file path `points/omote/otomeen/index.md`)
 cover: "./cover.jpg"
 
 # 📍 Location Data (Mandatory for Maps/Streamlit)
@@ -63,5 +64,7 @@ facilities:
 3. **Boolean Flags**: `parking`, `toilet`, `nightFishing`, `streetLights`, `carSide` must be `true` or `false` (Astro/Zod will validate this).
     - 特に **`carSide` (車横付け)** はユーザー需要が非常に高い強力なフックになるため、正確に設定すること。
 4. **Category**: Must be exactly `points` for these fields to be active in the schema.
-5. **Co-location**: Always use `./` paths for images (e.g., `cover: "./cover.jpg"`) to keep data and assets within the same Page Bundle.
+6. **Slug Generation**: 
+    - **Rule**: `slug` parameter in frontmatter is **Deprecated** (or optional).
+    - **Reason**: Final URL is generated from the file path (e.g., `src/content/blog/points/omote/otomeen/index.md` -> `example.com/points/omote/otomeen/`). Thoroughly check directory nesting.
 

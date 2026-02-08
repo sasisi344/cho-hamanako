@@ -26,6 +26,33 @@
 | `lng` | float | **経度** | Google Mapsから取得 |
 | `googleMapUrl`| url | Google Mapsへの直リンク | 公式URLを推奨 |
 
+### Basic Format
+`https://cho-hamanako.info/[category-path]/[article-slug]/`
+
+### SEO Strategy: URL & Breadcrumb Alignment
+SEOのベストプラクティス（トピッククラスター強化）に従い、**内部サブカテゴリが存在する場合はURLにも階層を含める** ことを推奨する。これにより、URLとパンくずリスト（Breadcrumb）が完全一致し、クローラーがサイト構造を正確に理解できる。
+
+- **Pattern A (Sub-Categoryあり)**:
+    - URL: `/points/omote/otomeen/`
+    - Breadcrumb: `Home > Points > Omote > Otomeen`
+- **Pattern B (Sub-Categoryなし)**:
+    - URL: `/news/site-renewal/`
+    - Breadcrumb: `Home > News > Site Renewal`
+
+### Rules
+1. **Language**: **English Only**. 日本語URLは禁止。
+2. **Case**: **Lowercase Only**.
+3. **Separator**: **Hyphen (`-`)**.
+4. **Hierarchical Slug**:
+    - `category` がサブカテゴリ（例: `omote`）を持つ場合、URLパスは `points/omote` のように連結する。
+    - 実装上は、Frontmatterの `slug` に単体スラッグ（`otomeen`）を入力し、ファイルディレクトリ構造（`src/content/blog/points/omote/otomeen/index.md`）からURLを自動生成する構成とする。
+5. **Length**: 冗長な単語は省略。
+
+### Examples
+- **ポイント (Main/Sub/Post)**: `points/omote/bentenjima-park`
+- **ガイド (Main/Sub/Post)**: `guide/beginner/rod-selection`
+- **ニュース (Main/Post)**: `news/2026-opening-event`
+
 ### 2. 🎣 Fishing Info (釣り情報)
 ターゲット選定や難易度によるフィルタリングに使用。
 
@@ -33,7 +60,7 @@
 | :--- | :--- | :--- | :--- |
 | `difficulty` | enum | **難易度** | `Beginner`, `Intermediate`, `Advanced` |
 | `familyFriendly`| boolean| **ファミリー向け特化** | 安全性が高く、記事内容が家族向けなら `true` |
-| `bestSeason` | array | おすすめの季節 | `["春", "夏"]` など |
+| `bestSeason` | array | おすすめの季節 | `["春", "夏"]` 等。<br>各季節は以下の月別おすすめ記事へのトリガーとなる。<br>・**春**: 3,4,5月<br>・**夏**: 6,7,8月<br>・**秋**: 9,10,11月<br>・**冬**: 12,1,2月 |
 | `methods` | array | 推奨される釣り方 | `["サビキ釣り", "投げ釣り"]` |
 | `targetFish` | array | 主なターゲット魚種 | `["アジ", "キス", "シーバス"]` |
 

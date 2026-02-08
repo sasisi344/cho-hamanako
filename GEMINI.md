@@ -23,4 +23,8 @@ As the central intelligence for the "Cho! Hamanako" project, your primary respon
 - **Workflow**: Plan -> Implement -> Review -> Optimize.
 
 ## 🤝 Sub-Agents
-- **First Agent**: Content Specialist (defined in `skills/first-agent.md`)
+- **Content Agent**: Content Specialist (defined in `skills/agents/content-agent.md`)
+
+## 📚 Guidelines & Tasks
+- **Writing Style**: `skills/guidelines/writing-style.md`
+- **Point Article Definitions**: `skills/tasks/point-process.md`
