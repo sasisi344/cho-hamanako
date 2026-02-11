@@ -5,23 +5,54 @@ This document defines the strict writing and formatting rules for all articles a
 
 ## ✒️ Markdown Formatting Rules
 
-### ✅ Bold Text Spacing (Critical)
-**Rule**: Always add a half-width space (or zero-width space) **before and after** bold text marker (`**`).
-This improves readability and prevents the bold text from blending into the surrounding characters.
+### ✅ Bold Text Spacing & Frequency (Critical)
+**Structure Rule**: Always add a half-width space (or zero-width space) **before and after** bold text marker (`**`).
+**Usage Rule**: Use bold text sparingly. Limit it to the **first occurrence** of a keyword or the most critical emphasis in a section. Excessive bolding reduces readability.
 
 #### Examples
-- ❌ **Bad**: `ここは**重要**なポイントです。` (No spaces)
-- ✅ **Good**: `ここは **重要** なポイントです。` (Spaces added)
-- ✅ **Good**: `**Astro** は高速です。` (At start of line)
-- ✅ **Good**: `これが **結論** です。`
+- ❌ **Bad**: `ここは**重要**なポイントです。次は**重要**な**魚**を紹介します。` (No spaces, excessive usage)
+- ✅ **Good**: `ここは **重要** なポイントです。次は重要な魚を紹介します。` (Spaces added, reduced frequency)
 
-*Note: The user revision history shows this rule is strictly enforced even in documentation files.*
+### ✅ Headings & SEO
+**Rule**: H2 headings must explicitly include **SEO keywords** (e.g., Point Name, Target Fish, Season). Avoid generic headings.
+- ❌ **Bad**: `## 釣れる魚`
+- ✅ **Good**: `## 弁天島海浜公園で釣れる魚`
+- ✅ **Good**: `## 春の浜名湖で狙えるターゲット`
+
+### ✅ Callouts & Emphasis
+**Rule**: Use standard Markdown callouts (GitHub/Obsidian style) instead of HTML `<div>` tags for emphasis boxes.
+Supported types: `NOTE`, `TIP`, `IMPORTANT`, `WARNING`, `CAUTION`.
+
+#### Examples
+```markdown
+> [!NOTE]
+> 記事の補足情報や、ちょっとした豆知識をここに記述します。
+
+> [!WARNING]
+> 立入禁止区域や危険な場所についての警告は、このスタイルを使用してください。
+```
 
 ## 📝 General Writing Style
 
 ### Tone & Voice
 - **Friendly but Professional**: 親しみやすいが、専門性を感じる信頼できるトーン。
 - **User First**: ユーザー（釣り人）が知りたい「釣果」「場所」「方法」を優先する。
+
+### ✅ Sentence Structure & Rhythm (New)
+**Rule**: Prioritize short sentences and frequent line breaks.
+- **One Idea per Line**: Avoid long paragraphs. Break text into single sentences or short blocks (1-2 sentences) to create rhythm and whitespace.
+- **Simplify Sentences**: Avoid connecting multiple clauses with "ですし", "ため", "ので" repeatedly. Split them into separate sentences.
+- **Direct & Clear**: Use direct phrasing. instead of passive or overly complex explanations.
+
+#### Examples
+- ❌ **Bad**: `ここはキャンプ場としても人気で、釣りも楽しめますし、レンタル品も充実しているので手ぶらでも大丈夫です。`
+- ✅ **Good**: `ここはキャンプ場としても人気です。釣りも楽しめます。\nレンタル品も充実しているので、手ぶらでも大丈夫です。`
+
+### ✅ Heading Specifics
+- **Summary Headings**: The final "Summary" heading (`## まとめ`) must include a **concrete conclusion or unique characteristic** of the article.
+    - ❌ **Bad**: `## まとめ`
+    - ✅ **Good**: `## まとめ：東海地方でも有名だけあって抜群のポテンシャル！`
+    - ✅ **Good**: `## まとめ：飛距離を出せるタックルが望ましい`
 
 ### Spacing (Japanese & English)
 - **English-Japanese Spacing**: Insert a half-width space between English/Numbers and Japanese text (Recommended).
