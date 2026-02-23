@@ -20,28 +20,31 @@ This document defines the strict writing and formatting rules for all articles a
 - ✅ **Good**: `## 春の浜名湖で狙えるターゲット`
 
 ### ✅ Callouts & Emphasis
-**Rule**: Use standard Markdown callouts (GitHub/Obsidian style) instead of HTML `<div>` tags for emphasis boxes.
-Supported types: `NOTE`, `TIP`, `IMPORTANT`, `WARNING`, `CAUTION`.
+**Rule**: Use HTML `<div>` tags for emphasis boxes in accordance with the Astro Sphere theme support. Do **NOT** use Markdown blockquote callouts (`> [!NOTE]`).
+Supported types: `note`, `note warn`.
 
 #### Examples
-```markdown
-> [!NOTE]
-> 記事の補足情報や、ちょっとした豆知識をここに記述します。
+```html
+<div class="note">
+記事の補足情報や、ちょっとした豆知識をここに記述します。
+</div>
 
-> [!WARNING]
-> 立入禁止区域や危険な場所についての警告は、このスタイルを使用してください。
+<div class="note warn">
+**注意！**
+立入禁止区域や危険な場所、マナーについての警告は、このスタイルを使用してください。
+</div>
 ```
 
 ## 📝 General Writing Style
 
 ### Tone & Voice
-- **Friendly but Professional**: 親しみやすいが、専門性を感じる信頼できるトーン。
-- **User First**: ユーザー（釣り人）が知りたい「釣果」「場所」「方法」を優先する。
+- **Friendly & Conversational**: 釣り仲間に宛てた手紙やLINEのような、温かみのある親しみやすいトーン。ただし、馴れ馴れしすぎず、読んでいてワクワクするような「釣り人同士の共感」を大切にする。ユーモアも交えてOK。
+- **User First**: ユーザー（釣り人）が知りたい「釣果」「場所」「方法」を優先しつつ、機械的な箇条書きや説明にならないよう人間味のある言葉選びをする。
 
 ### ✅ Sentence Structure & Rhythm (New)
-**Rule**: Prioritize short sentences and frequent line breaks.
-- **One Idea per Line**: Avoid long paragraphs. Break text into single sentences or short blocks (1-2 sentences) to create rhythm and whitespace.
-- **Simplify Sentences**: Avoid connecting multiple clauses with "ですし", "ため", "ので" repeatedly. Split them into separate sentences.
+**Rule**: Markdownの仕様上、空行を挟むことで独立した `<p>` タグになります。**1つの文（センテンス）が終わるごとに必ず空行を挟む（1センテンス＝1段落）** ことを絶対のルールとします。
+- **1 Sentence = 1 Paragraph**: 文章が連なってブロックになるのを避け、1文ごとに空行を入れて、余白たっぷりのリズムを作ってください。
+- **Conversational Smoothness**: 短く切りすぎでロボットのようにならないよう、「〜ですよね」「〜も面白いですよ！」などの語尾を活用し、流れるようなリズムを作る。
 - **Direct & Clear**: Use direct phrasing. instead of passive or overly complex explanations.
 
 #### Examples
