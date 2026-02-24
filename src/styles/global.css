@@ -184,3 +184,48 @@ article img {
   opacity: 0;
   transform: translateY(10px);
 } */
+
+/**
+ * Remark Link Card Styles
+ */
+.rlc-container {
+  @apply flex flex-col-reverse sm:flex-row items-stretch justify-between;
+  @apply my-6 mx-auto w-full max-w-full;
+  @apply border border-black/10 dark:border-white/20 rounded-lg overflow-hidden;
+  @apply no-underline bg-white/50 dark:bg-black/20 hover:bg-white/80 dark:hover:bg-black/40;
+  @apply transition-all duration-300 ease-in-out;
+  @apply shadow-sm hover:shadow-md hover:-translate-y-[2px];
+  text-decoration: none !important; /* Ensure no underline on the card itself */
+}
+
+.rlc-info {
+  @apply flex flex-col justify-between p-4 flex-1 min-w-0;
+}
+
+.rlc-title {
+  @apply text-base font-bold line-clamp-2 mb-1 text-black dark:text-white leading-tight;
+}
+
+.rlc-description {
+  @apply text-sm text-black/70 dark:text-white/70 line-clamp-2 mb-2 leading-snug;
+}
+
+.rlc-url-container {
+  @apply flex items-center text-xs text-black/50 dark:text-white/50 mt-auto;
+}
+
+.rlc-favicon {
+  @apply w-4 h-4 mr-2 rounded-sm bg-white p-0.5 inline-block;
+  margin: 0 8px 0 0 !important; /* Override article img margin */
+  padding: 0 !important; /* Override article img padding */
+}
+
+.rlc-image-container {
+  @apply w-full sm:w-[180px] h-[120px] sm:h-auto shrink-0 relative order-first sm:order-last;
+}
+
+.rlc-image {
+  @apply w-full h-full object-cover;
+  margin: 0 !important;
+  padding: 0 !important;
+}
