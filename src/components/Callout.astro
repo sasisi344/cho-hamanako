@@ -1,0 +1,82 @@
+---
+interface Props {
+  type: 'NOTE' | 'TIP' | 'IMPORTANT' | 'WARNING' | 'CAUTION'
+  title?: string
+}
+
+const { type, title } = Astro.props
+
+const config = {
+  NOTE: {
+    icon: 'info',
+    color: 'blue',
+    label: 'NOTE',
+    bg: 'bg-blue-50/50 dark:bg-blue-900/20',
+    border: 'border-blue-500',
+    text: 'text-blue-700 dark:text-blue-300',
+    iconColor: 'text-blue-500'
+  },
+  TIP: {
+    icon: 'lightbulb',
+    color: 'emerald',
+    label: 'TIP',
+    bg: 'bg-emerald-50/50 dark:bg-emerald-900/20',
+    border: 'border-emerald-500',
+    text: 'text-emerald-700 dark:text-emerald-300',
+    iconColor: 'text-emerald-500'
+  },
+  IMPORTANT: {
+    icon: 'priority_high',
+    color: 'purple',
+    label: 'IMPORTANT',
+    bg: 'bg-purple-50/50 dark:bg-purple-900/20',
+    border: 'border-purple-500',
+    text: 'text-purple-700 dark:text-purple-300',
+    iconColor: 'text-purple-500'
+  },
+  WARNING: {
+    icon: 'warning',
+    color: 'amber',
+    label: 'WARNING',
+    bg: 'bg-amber-50/50 dark:bg-amber-900/20',
+    border: 'border-amber-500',
+    text: 'text-amber-700 dark:text-amber-300',
+    iconColor: 'text-amber-500'
+  },
+  CAUTION: {
+    icon: 'error',
+    color: 'red',
+    label: 'CAUTION',
+    bg: 'bg-red-50/50 dark:bg-red-900/20',
+    border: 'border-red-500',
+    text: 'text-red-700 dark:text-red-300',
+    iconColor: 'text-red-500'
+  }
+}
+
+const style = config[type] || config.NOTE
+---
+
+<div class={`callout-card my-8 rounded-xl border-l-8 shadow-lg overflow-hidden ${style.bg} ${style.border} transition-all duration-300 hover:shadow-xl hover:-translate-y-1`}>
+  <div class="px-6 py-4">
+    <div class={`flex items-center gap-2 mb-2 font-bold text-sm tracking-wider uppercase ${style.text}`}>
+       {style.label}
+    </div>
+    <div class="callout-content text-black/80 dark:text-white/80 leading-relaxed">
+      <slot />
+    </div>
+  </div>
+</div>
+
+<style>
+  .callout-card {
+    /* Subtle contrast enhancement */
+    backdrop-filter: blur(8px);
+  }
+  .callout-content :global(p) {
+    margin-bottom: 0 !important;
+  }
+  .callout-content :global(strong) {
+    @apply text-black dark:text-white font-bold;
+  }
+</style>

@@ -195,7 +195,8 @@ article img {
   @apply no-underline bg-white/50 dark:bg-black/20 hover:bg-white/80 dark:hover:bg-black/40;
   @apply transition-all duration-300 ease-in-out;
   @apply shadow-sm hover:shadow-md hover:-translate-y-[2px];
-  text-decoration: none !important; /* Ensure no underline on the card itself */
+  text-decoration: none !important;
+  /* Ensure no underline on the card itself */
 }
 
 .rlc-info {
@@ -216,8 +217,10 @@ article img {
 
 .rlc-favicon {
   @apply w-4 h-4 mr-2 rounded-sm bg-white p-0.5 inline-block;
-  margin: 0 8px 0 0 !important; /* Override article img margin */
-  padding: 0 !important; /* Override article img padding */
+  margin: 0 8px 0 0 !important;
+  /* Override article img margin */
+  padding: 0 !important;
+  /* Override article img padding */
 }
 
 .rlc-image-container {
@@ -228,4 +231,49 @@ article img {
   @apply w-full h-full object-cover;
   margin: 0 !important;
   padding: 0 !important;
+}
+
+/**
+ * Markdown Alerts — Ocean Single-Color Theme
+ * Calm teal-blue inspired by the sea. Works in both light & dark modes.
+ */
+.markdown-alert {
+  @apply relative my-8 py-5 pr-5 pl-6 rounded-lg;
+  border-left: 4px solid #2196a4;
+  background-color: rgba(33, 150, 164, 0.06);
+}
+
+html.dark .markdown-alert {
+  background-color: rgba(33, 150, 164, 0.10);
+}
+
+/* ── Title (inline, not floating) ── */
+.markdown-alert-title {
+  @apply flex items-center gap-2 text-sm font-bold uppercase tracking-wide mb-2;
+  color: #2196a4;
+}
+
+.markdown-alert-title svg {
+  @apply w-4 h-4;
+  fill: #2196a4;
+}
+
+/* ── All types share the same ocean color ── */
+.markdown-alert-note,
+.markdown-alert-tip,
+.markdown-alert-important,
+.markdown-alert-warning,
+.markdown-alert-caution {
+  border-left-color: #2196a4;
+}
+
+/* ── Body text ── */
+.markdown-alert p {
+  @apply m-0 leading-relaxed;
+  color: inherit;
+}
+
+.markdown-alert strong {
+  @apply font-bold;
+  color: inherit;
 }

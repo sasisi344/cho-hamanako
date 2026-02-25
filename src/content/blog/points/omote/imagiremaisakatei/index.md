@@ -9,7 +9,7 @@ draft: false
 noindex: true
 cover: "./cover.jpg"
 fishinginfo:
-  difficulty: "Expert"
+  difficulty: "Advanced"
   familyFriendly: false
   bestSeason: ["春", "夏", "秋", "冬"]
   methods: ["前打ち", "穴釣り", "投げ釣り", "サビキ釣り", "ルアー"]

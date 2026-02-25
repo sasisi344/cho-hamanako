@@ -1,0 +1,61 @@
+﻿00:43:32 [types] Generated 444ms
+00:43:32 [build] output: "static"
+00:43:32 [build] directory: C:\Users\sasis\344dev\cho-hama\dist\
+00:43:32 [build] Collecting build info...
+00:43:32 [build] 笨・Completed in 546ms.
+00:43:32 [build] Building static entrypoints...
+node.exe : 00:43:34 [ERROR] [vi
+te] [31mx[39m Build failed in
+ 2.30s
+発生場所 C:\Program Files\nodejs\np
+x.ps1:29 文字:3
++   & $NODE_EXE $NPX_CLI_JS $ar
+gs
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~
+    + CategoryInfo          :  
+   NotSpecified: (00:43:34 [E  
+  RROR...failed in 2.30s:Str   
+ ing) [], RemoteException
+    + FullyQualifiedErrorId :  
+   NativeCommandError
+ 
+[InvalidContentEntryFrontmatter
+Error] [astro:content-imports] 
+blog 竊・points/omote/imagiremais
+akatei/index.md frontmatter doe
+s not match collection schema.
+Did not match union.
+file: C:/Users/sasis/344dev/cho
+-hama/src/content/blog/points/o
+mote/imagiremaisakatei/index.md
+?astroContentCollectionEntry=tr
+ue:0:0
+  Hint:
+    See https://docs.astro.buil
+d/en/guides/content-collections
+/ for more information on conte
+nt schemas.
+  Error reference:
+    https://docs.astro.build/en
+/reference/errors/invalid-conte
+nt-entry-frontmatter-error/
+  Location:
+    C:/Users/sasis/344dev/cho-h
+ama/src/content/blog/points/omo
+te/imagiremaisakatei/index.md:0
+:0
+  Stack trace:
+    at getEntryDataAndImages (f
+ile:///C:/Users/sasis/344dev/ch
+o-hama/node_modules/astro/dist/
+content/utils.js:137:26)
+    at async getContentEntryMod
+ule (file:///C:/Users/sasis/344
+dev/cho-hama/node_modules/astro
+/dist/content/vite-plugin-conte
+nt-imports.js:171:35)
+    at async transform (file://
+/C:/Users/sasis/344dev/cho-hama
+/node_modules/rollup/dist/es/sh
+ared/node-entry.js:21246:16)

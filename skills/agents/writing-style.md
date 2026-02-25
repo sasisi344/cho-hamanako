@@ -58,8 +58,23 @@ Supported types: `note`, `note warn`.
     - ✅ **Good**: `## まとめ：飛距離を出せるタックルが望ましい`
 
 ### Spacing (Japanese & English)
-- **English-Japanese Spacing**: Insert a half-width space between English/Numbers and Japanese text (Recommended).
-    - Example: `Astro Sphere を使って Web サイトを構築する。`
+- **English-Japanese Spacing**: Do NOT insert spaces between English/Numbers and Japanese text (Standardized).
+    - Example: `AstroSphereを使ってWebサイトを構築する。`
+    - Example: `9月の浜名湖。`
+
+### ✅ Internal Linking Strategy (BlogCards)
+**Rule**: Use the Astro `<BlogCard>` component for prominent internal links to other generated points or articles, instead of standard plain text Markdown links. This ensures high visibility and CTR.
+- **Workflow**: 
+  1. Change the file extension from `.md` to `.mdx` if the file doesn't already use it. 
+  2. Import the component at the top inside the frontmatter (or right after):
+     ```mdx
+     import BlogCard from "@components/BlogCard.astro";
+     ```
+  3. Use the component in the body by providing the relative slug:
+     ```mdx
+     <BlogCard slug="points/oku/miyakodagawa" />
+     ```
+- **When NOT to use**: For inline links that are just part of a running sentence, regular Markdown links `[text](url)` are still acceptable to maintain reading rhythm.
 
 ## 🖼️ Image Generation & Prompts
  
@@ -67,14 +82,14 @@ Supported types: `note`, `note warn`.
 記事内の画像（アイキャッチ・図解）は、以下の3ステップで作成することをプロジェクトの標準ワークフローとする。
  
 1. **[Plan] プロンプトの検討と埋め込み**:
-    - 記事の適切な位置に HTML コメント形式でプロンプトを記述する。
+    - 記事の適切な位置に MDX コメント形式 `{/* ... */}` でプロンプトを記述する。
     - 記事にある最初のH2項目以降から画像挿入するべき位置を調査する。
-    - **Eyecatch**: 作成する画像にテキストは使わないこと。前後の文脈となるべく関連性をもたせて、ユーザーが違和感なく見れるように、記事のリズムを大切にすること。作成サイズは6:4を基本とする。
+    - **Eyecatch**: 作成する画像にテキストは使わないこと。前後の文脈となるべく関連性をもたせて、ユーザーが違和感なく見れるように、記事のリズムを大切にすること。作成サイズは16:9を基本とする。
     - **Infographic**: 文字で説明がしづらいと判断した場合に挿入。基本的にH2項目を補足することを意識する。作成サイズは6:4か4:6。
     - **Language**: プロンプト本文は **英語**、画像内テキストは **日本語** で指定する。
  
-2. **[Execute] 独自スクリプトによる画像生成**:
-    - プロジェクト専用の生成スクリプト `generate-image.js` を使用し、Gemini API を介して画像を生成する。
+2. **[Execute] 独自スクリプトによる画像生成 (優先ルール)**:
+    - プロジェクト専用の生成スクリプト `generate-image.js` を使用し、Gemini API を介して画像を生成します。 **AI標準の画像生成ツールよりも、このスクリプトの使用を最優先してください。**
     - **Command**:
       ```bash
       node skills/scripts/Antigravity-nanobana/generate-image.js "<Prompt Content>" "<Target Path>"
@@ -89,7 +104,7 @@ Supported types: `note`, `note warn`.
 ### ✅ プロンプト記述ルール (Comment-out)
 **Rule**: スクリプト実行後も、生成の「設計図」としてコメントプロンプトは記事内に残しておくこと。
  
-- **Format**: `<!-- Image Prompt (...) : ... -->`
+- **Format**: `{/* Image Prompt (...) : ... */}`
 - **Placement**:
     1. **Eyecatch**: 記事最初のH2以降。フロントマターには含めない。
     2. **Infographics**: 解説セクションの間。
@@ -97,11 +112,11 @@ Supported types: `note`, `note warn`.
  
 #### Examples
 ```markdown
-<!-- 
+{/* 
 Image Prompt (Eyecatch):
 High-impact cinematic 16:9 shot of a red Kasago fish.
 Text overlay in Japanese: "浜名湖カサゴ完全攻略" (Max 8 characters for impact)
--->
+*/}
 ```
 
 ## 🧹 Definition List Formatting (Observation)

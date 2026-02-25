@@ -12,7 +12,7 @@ const work = defineCollection({
 
 // Common structured data for fishing
 const fishinginfoSchema = z.object({
-  difficulty: z.enum(['Beginner', 'Intermediate', 'Advanced']).default('Beginner'),
+  difficulty: z.string().default('Beginner'),
   familyFriendly: z.boolean().default(false), // ファミリーフィッシング特化フラグ
   bestSeason: z.array(z.string()).optional(),
   methods: z.array(z.string()).optional(),
@@ -20,20 +20,20 @@ const fishinginfoSchema = z.object({
 }).optional();
 
 const facilitiesSchema = z.object({
-  parking: z.boolean().default(false),
+  parking: z.union([z.boolean(), z.string()]).default(false),
   parkingFee: z.string().optional(),
-  toilet: z.boolean().default(false),
+  toilet: z.union([z.boolean(), z.string()]).default(false),
   convenienceStore: z.string().optional(),
-  nightFishing: z.boolean().default(true),
-  streetLights: z.boolean().default(false),
-  carSide: z.boolean().default(false), // "車横付け" flag
+  nightFishing: z.union([z.boolean(), z.string()]).default(true),
+  streetLights: z.union([z.boolean(), z.string()]).default(false),
+  carSide: z.union([z.boolean(), z.string()]).default(false), // "車横付け" flag
 }).optional();
 
 const locationSchema = z.object({
   name: z.string(),
   address: z.string().optional(),
-  lat: z.number(),
-  lng: z.number(),
+  lat: z.number().optional(),
+  lng: z.number().optional(),
   googleMapUrl: z.string().url().optional(),
 }).optional();
 
@@ -64,8 +64,9 @@ const blog = defineCollection({
       draft: z.boolean().default(false).optional(),
       noindex: z.boolean().default(false).optional(),
       slug: z.string().regex(/^[a-z0-9]+(?:-[a-z0-9]+)*$/).optional(),
-      category: z.enum(['guide', 'target', 'cooking', 'news', 'test']).optional(),
+      category: z.enum(['guide', 'target', 'cooking', 'news', 'test', 'season', 'travel']).optional(),
       cover: image().optional(),
+      location: locationSchema,
       fishinginfo: fishinginfoSchema,
       facilities: facilitiesSchema,
     })

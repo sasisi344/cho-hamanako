@@ -26,5 +26,6 @@ As the central intelligence for the "Cho! Hamanako" project, your primary respon
 - **Content Agent**: Content Specialist (defined in `skills/agents/content-agent.md`)
 
 ## 📚 Guidelines & Tasks
-- **Writing Style**: `skills/guidelines/writing-style.md`
-- **Point Article Definitions**: `skills/tasks/point-process.md`
+- **Writing Style**: `skills/agents/writing-style.md`
+- **Point Article Definitions**: `skills/agents/point-process.md`
+- **Internal Linking Strategy**: Defined in `skills/agents/writing-style.md` (Use `<BlogCard />` in `.mdx`)
