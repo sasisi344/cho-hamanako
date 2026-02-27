@@ -1,0 +1,128 @@
+---
+import { getCollection } from "astro:content";
+import PageLayout from "@layouts/PageLayout.astro";
+import TopLayout from "@layouts/TopLayout.astro";
+import BottomLayout from "@layouts/BottomLayout.astro";
+
+// 釣果ポイント記事をすべて取得
+const allPosts = await getCollection("blog");
+const mapPoints = allPosts
+  .filter(post => post.data.location && post.data.location.lat && post.data.location.lng)
+  .map(post => ({
+    name: post.data.title,
+    lat: post.data.location.lat,
+    lng: post.data.location.lng,
+    url: `/blog/${post.slug}/`,
+    summary: post.data.summary || ""
+  }));
+
+const jsonPoints = JSON.stringify(mapPoints);
+---
+
+<PageLayout title="釣り場ポイント検索マップ" description="浜名湖の釣りポイントを地図から探せます。ポイントをクリックすると詳細記事へ移動できます。">
+  <TopLayout>
+    <div class="container">
+      <h1 class="text-4xl font-black mb-4">🎣 浜名湖ポイント検索マップ</h1>
+      <p class="text-slate-600 dark:text-slate-400 mb-8">
+        浜名湖周辺の釣りポイントを網羅。ピンをクリックすると詳細な解説記事を読むことができます。
+      </p>
+    </div>
+  </TopLayout>
+
+  <BottomLayout>
+    <!-- Map Container -->
+    <div class="relative w-full h-[600px] rounded-3xl overflow-hidden border-4 border-white dark:border-zinc-800 shadow-2xl animate">
+      <div id="map" class="w-full h-full z-10"></div>
+      
+      <!-- Loading Overlay -->
+      <div id="map-loader" class="absolute inset-0 z-20 flex items-center justify-center bg-slate-100 dark:bg-zinc-900 transition-opacity duration-500">
+        <div class="flex flex-col items-center">
+            <div class="w-12 h-12 border-4 border-blue-600 border-t-transparent rounded-full animate-spin mb-4"></div>
+            <p class="text-sm font-bold text-slate-500">MAPを読み込み中...</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="mt-12 animate">
+        <h2 class="text-2xl font-bold mb-6">登録済みのポイント一覧</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+            {mapPoints.map(point => (
+                <a href={point.url} class="p-4 rounded-xl bg-white dark:bg-zinc-900 border border-slate-200 dark:border-zinc-800 hover:border-blue-500 transition-colors shadow-sm">
+                    <h3 class="font-bold text-blue-600 dark:text-blue-400">{point.name}</h3>
+                    <p class="text-xs text-slate-500 mt-1 line-clamp-1">{point.summary}</p>
+                </a>
+            ))}
+        </div>
+    </div>
+  </BottomLayout>
+</PageLayout>
+
+<!-- Leaflet CSS & JS (CDN) -->
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+<script is:inline src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+
+<style>
+  /* 地図の微調整 */
+  :global(.leaflet-popup-content-wrapper) {
+    border-radius: 12px;
+    padding: 4px;
+  }
+  :global(.leaflet-popup-content) {
+    margin: 12px;
+  }
+</style>
+
+<script is:inline define:vars={{ jsonPoints }}>
+  // Leaflet CDN読み込み後に地図を初期化
+  function initMap() {
+    var points = JSON.parse(jsonPoints);
+    var mapElement = document.getElementById('map');
+    var loader = document.getElementById('map-loader');
+
+    if (!mapElement || typeof L === 'undefined') return;
+
+    // 既に初期化済みの場合はスキップ
+    if (mapElement._leaflet_id) return;
+
+    // 地図の初期化（浜名湖の中心）
+    var map = L.map('map', {
+      center: [34.73, 137.58],
+      zoom: 12,
+      scrollWheelZoom: false
+    });
+
+    // クリック後にスクロールズーム有効
+    map.on('focus', function() { map.scrollWheelZoom.enable(); });
+
+    // OpenStreetMapのタイル
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+    }).addTo(map);
+
+    // マーカーの追加
+    points.forEach(function(point) {
+      var popupContent = '<div style="font-family:sans-serif">' +
+        '<h4 style="font-weight:bold;font-size:16px;margin-bottom:8px;color:#1e293b">' + point.name + '</h4>' +
+        '<p style="font-size:13px;color:#64748b;margin-bottom:12px">' + point.summary + '</p>' +
+        '<a href="' + point.url + '" style="display:inline-block;background:#2563eb;color:white;padding:6px 14px;border-radius:8px;font-size:13px;font-weight:bold;text-decoration:none">詳細記事を見る 🎣</a>' +
+        '</div>';
+
+      L.marker([point.lat, point.lng])
+        .bindPopup(popupContent, { maxWidth: 280 })
+        .addTo(map);
+    });
+
+    // 読み込み完了 → ローダーを非表示
+    if (loader) {
+      loader.style.opacity = '0';
+      setTimeout(function() { loader.remove(); }, 500);
+    }
+  }
+
+  // DOMContentLoaded または即時実行
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initMap);
+  } else {
+    initMap();
+  }
+</script>

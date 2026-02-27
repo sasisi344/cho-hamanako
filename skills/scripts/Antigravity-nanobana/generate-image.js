@@ -39,14 +39,23 @@ const API_KEY = process.env.GEMINI_API_KEY;
 const MODEL = 'gemini-3-pro-image-preview';
 const API_URL = `https://generativelanguage.googleapis.com/v1beta/models/${MODEL}:generateContent`;
 
+// ── サイトコンテキスト（全プロンプトに自動付加）───────────────────────────
+// 「釣！浜名湖」のブランドコンテキストを最小限で定義する。
+// このコンテキストはユーザーのプロンプトの前に付加され、
+// 生成されるすべての画像を「浜名湖・汽水域・海の魚釣り」のテーマに限定する。
+const SITE_CONTEXT = `[Site Context] This image is for a Japanese saltwater fishing blog exclusively about Lake Hamana (浜名湖), a brackish-water lake in Hamamatsu, Shizuoka, Japan. All imagery must relate to saltwater or brackish-water fishing — marine fish species, tidal environments, fishing gear, and the coastal scenery of Lake Hamana. Do not depict freshwater or mountain fishing elements.`;
+// ──────────────────────────────────────────────────────────────────────────
+
 // 引数からプロンプトと出力パスを取得
-const prompt = process.argv[2];
+const userPrompt = process.argv[2];
 const outputPath = process.argv[3];
 
-if (!prompt || !outputPath) {
+if (!userPrompt || !outputPath) {
     console.error('使用方法: node generate-image.js "<プロンプト>" "<出力パス>"');
     process.exit(1);
 }
+
+const prompt = `${SITE_CONTEXT}\n\n${userPrompt}`;
 
 async function generateImage(prompt) {
     const requestData = {
