@@ -36,7 +36,7 @@ if (fs.existsSync(envPath)) {
 }
 
 const API_KEY = process.env.GEMINI_API_KEY;
-const MODEL = 'gemini-3-pro-image-preview';
+const MODEL = 'gemini-3.1-flash-image-preview';
 const API_URL = `https://generativelanguage.googleapis.com/v1beta/models/${MODEL}:generateContent`;
 
 // ── サイトコンテキスト（全プロンプトに自動付加）───────────────────────────
