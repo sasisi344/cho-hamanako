@@ -35,6 +35,9 @@ facilities:
   streetLights: true
 ---
 
+import Map from "@components/Map.astro";
+import GMapButton from "@components/GMapButton.astro";
+
 『釣！浜名湖』をご覧いただきありがとうございます！
 
 今回は、はまゆう大橋の西側、庄内湖の南西に位置する **「協和町（きょうわちょう）ボートエリア」** をご紹介します！
@@ -43,11 +46,11 @@ facilities:
 
 陸からのアプローチは難しい場所が多いですが、その分ボートからの機動力があれば、年間を通して安定した釣果が期待できる実力派のエリアなんですよ！
 
-<Map />
+<Map lat={34.735418} lng={137.612734} name="協和町ボートエリア" />
 
 ## 協和エリアの基本情報
 
-<GMapButton />
+<GMapButton url="https://www.google.com/maps/search/?api=1&query=34.735418,137.612734" />
 
 *   **ポイント名**：協和町ボートエリア（はまゆう大橋西側）
 *   **所在地**：静岡県浜松市中央区協和町

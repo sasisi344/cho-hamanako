@@ -35,6 +35,9 @@ facilities:
   streetLights: true
 ---
 
+import Map from "@components/Map.astro";
+import GMapButton from "@components/GMapButton.astro";
+
 『釣！浜名湖』をご覧いただきありがとうございます！
 
 今回は、庄内湖の南東部に位置する隠れたハゼ釣りの名所 **「伊左地川（いさじがわ）河口」** をご紹介します！
@@ -43,11 +46,11 @@ facilities:
 
 奥浜名湖の中ではマイナーなポイントですが、その分釣り人も少なく、秋のハゼシーズンでものんびりと竿を出せる「超穴場」なんですよ！
 
-<Map />
+<Map lat={34.738558} lng={137.641104} name="伊左地川河口" />
 
 ## 伊左地川河口の基本情報
 
-<GMapButton />
+<GMapButton url="https://www.google.com/maps/search/?api=1&query=34.738558,137.641104" />
 
 *   **ポイント名**：伊左地川河口周辺
 *   **所在地**：静岡県浜松市中央区佐浜町

@@ -35,6 +35,9 @@ facilities:
   streetLights: false
 ---
 
+import Map from "@components/Map.astro";
+import GMapButton from "@components/GMapButton.astro";
+
 『釣！浜名湖』をご覧いただきありがとうございます！
 
 今回は、はまゆう大橋の北東側に広がる広大な浅瀬 **「古人見（こひとみ）ボートエリア」** をご紹介します！
@@ -43,11 +46,11 @@ facilities:
 
 夏の太陽が照りつける中、ボートのバウ（船首）からトップウォータールアーを投げ、水面を猛烈な勢いで追ってくるチヌの姿を目視しながら釣るスタイルは、浜名湖ボートゲームの真骨頂なんです！
 
-<Map />
+<Map lat={34.732697} lng={137.634688} name="古人見ボートエリア" />
 
 ## 古人見エリアの基本情報
 
-<GMapButton />
+<GMapButton url="https://www.google.com/maps/search/?api=1&query=34.732697,137.634688" />
 
 *   **ポイント名**：古人見ボートエリア
 *   **所在地**：静岡県浜松市中央区古人見町

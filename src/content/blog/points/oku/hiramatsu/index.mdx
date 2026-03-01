@@ -35,17 +35,20 @@ facilities:
   streetLights: true
 ---
 
+import Map from "@components/Map.astro";
+import GMapButton from "@components/GMapButton.astro";
+
 『釣！浜名湖』をご覧いただきありがとうございます！
 
 今回は、庄内湖の北東部に位置する **「平松町付近」** をご紹介します！
 
 平松町付近は、奥浜名湖の中でも特にハゼ釣りの実績が高いポイントとして有名です。小規模な河川の流れ込みがあり、汽水域を好む魚たちが集まってくる穏やかなシャローエリアなんですよ！
 
-<Map />
+<Map lat={34.754378} lng={137.638226} name="平松町付近" />
 
 ## 平松エリアの基本情報
 
-<GMapButton />
+<GMapButton url="https://www.google.com/maps/search/?api=1&query=34.754378,137.638226" />
 
 *   **ポイント名**：平松町付近（児童遊園地周辺）
 *   **所在地**：静岡県浜松市中央区平松町

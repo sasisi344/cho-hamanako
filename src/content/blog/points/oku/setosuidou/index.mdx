@@ -34,6 +34,9 @@ facilities:
   streetLights: true
 ---
 
+import Map from "@components/Map.astro";
+import GMapButton from "@components/GMapButton.astro";
+
 『釣！浜名湖』をご覧いただきありがとうございます！
 
 今回は、奥浜名湖と本湖を繋ぐパワフルな釣り場 **「瀬戸水道（せとすいどう）」** をご紹介します！
@@ -42,11 +45,11 @@ facilities:
 
 激流を味方につけるためのちょっとマニアックなルアーの攻略法や、エサ釣りのコツもあわせて解説しますので、ぜひ挑戦してみてくださいね！
 
-<Map />
+<Map lat={34.769507} lng={137.548233} name="瀬戸水道" />
 
 ## 瀬戸水道の基本情報
 
-<GMapButton />
+<GMapButton url="https://www.google.com/maps/search/?api=1&query=34.769507,137.548233" />
 
 *   **ポイント名**：瀬戸水道（せとすいどう）
 *   **所在地**：静岡県浜松市浜名区三ヶ日町大崎

@@ -35,6 +35,9 @@ facilities:
   streetLights: false
 ---
 
+import Map from "@components/Map.astro";
+import GMapButton from "@components/GMapButton.astro";
+
 『釣！浜名湖』をご覧いただきありがとうございます！
 
 今回は、奥浜名湖エリアの東端に位置する **「伊目（いめ）」** をご紹介します！
@@ -45,15 +48,11 @@ facilities:
 
 もちろん岸からは、大人気のキビレやハゼ釣りでのんびり遊ぶこともできますよ！
 
-<!-- 
-Image Prompt (Eyecatch):
-High-impact cinematic 16:9 shot of an angler wading in shallow water at dusk, casting a lure.
-Text overlay in Japanese: "伊目（いめ）のルアー＆ハゼ攻略"
--->
+<Map lat={34.785183} lng={137.639434} name="伊目" />
 
 ## 伊目の基本情報
 
-<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3081.6981020748485!2d137.63943412645634!3d34.785183031103415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sja!2sjp!4v1722231708189!5m2!1sja!2sjp" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+<GMapButton url="https://www.google.com/maps/search/?api=1&query=34.785183,137.639434" />
 
 *   **ポイント名**：伊目（いめ）
 *   **所在地**：静岡県浜松市浜名区細江町気賀
@@ -221,14 +220,13 @@ Text overlay in Japanese: "伊目（いめ）のルアー＆ハゼ攻略"
 * 夏休みの8月は風が通らなくてマジでサウナ状態になる危険があるので、無理な長時間の釣り（熱中症）には注意しましょう！
 * のべ竿を持ったおじいちゃんたちが増え始めたら、「今年のハゼが釣れだしたな！」という開始の合図（サイン）になります（笑）
 
-<div class="note warn">
-**最後にお願い！**
-
-釣り場をいつまでも綺麗に保つために、自分たちが出したゴミ（仕掛けのパッケージやエサの箱など）は必ず持ち帰りましょう。
-
-もし周りに落ちている他のアングラーのゴミを見つけたら、一緒に拾ってもらえるとすごく嬉しいです！
-
-それが、皆の大切な釣り場と魚たちを守るための「アングラーの誇り」です。
-
-ルールと駐車マナーをしっかり守って、心から笑える最高に楽しい釣り体験にしてくださいね！
-</div>
+> [!WARNING]
+> **最後にお願い！**
+> 
+> 釣り場をいつまでも綺麗に保つために、自分たちが出したゴミ（仕掛けのパッケージやエサの箱など）は必ず持ち帰りましょう。
+> 
+> もし周りに落ちている他のアングラーのゴミを見つけたら、一緒に拾ってもらえるとすごく嬉しいです！
+> 
+> それが、皆の大切な釣り場と魚たちを守るための「アングラーの誇り」です。
+> 
+> ルールと駐車マナーをしっかり守って、心から笑える最高に楽しい釣り体験にしてくださいね！

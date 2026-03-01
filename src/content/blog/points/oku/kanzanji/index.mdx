@@ -35,6 +35,9 @@ facilities:
   streetLights: true
 ---
 
+import Map from "@components/Map.astro";
+import GMapButton from "@components/GMapButton.astro";
+
 『釣！浜名湖』をご覧いただきありがとうございます！
 
 今回は、奥浜名湖エリアを代表する大人気スポット **「舘山寺（かんざんじ・内浦湾）」** を徹底解説します！
@@ -45,15 +48,11 @@ facilities:
 
 特に夏から秋にかけては、シーバスやキビレの実績が非常に高く、足場も良いので初心者からベテランまで誰でも楽しむことができますよ！
 
-<!-- 
-Image Prompt (Eyecatch):
-High-impact cinematic 16:9 shot of a glowing electrical float on the water surface at night, with the illuminated Ferris wheel of PalPal in the background.
-Text overlay in Japanese: "舘山寺・内浦湾の夜釣り攻略"
--->
+<Map lat={34.766068} lng={137.620257} name="舘山寺（内浦湾）" />
 
 ## 舘山寺（内浦湾）の基本情報
 
-<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d6345.467105217259!2d137.6202574144412!3d34.76606864551975!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sja!2sjp!4v1722244588196!5m2!1sja!2sjp" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+<GMapButton url="https://www.google.com/maps/search/?api=1&query=34.766068,137.620257" />
 
 *   **ポイント名**：内浦湾（うちうらわん）、一般には舘山寺エリア
 *   **所在地**：静岡県浜松市中央区舘山寺（かんざんじ）町
@@ -269,16 +268,15 @@ Text overlay in Japanese: "舘山寺・内浦湾の夜釣り攻略"
 
 もし何が釣れるか分からなくても、夏から秋にかけてなら、昼夜問わずに色々なお魚が遊んでくれる「癒やしの五目釣り」が全力で楽しめますよ。
 
-<div class="note warn">
-**最後にお願い！**
-
-観光地として非常に人が多い場所なので、仕掛けやルアーを投げる際（キャスト時）は、**必ず後ろを振り返って歩行者がいないか安全確認を徹底**してください！
-
-また、釣り場をいつまでも綺麗に保つために、自分たちが出した仕掛けのゴミなどは必ず持ち帰りましょう。
-
-もし周りに落ちている他のゴミを見つけたら、偽善でもいいので一緒に拾ってもらえるとすごく嬉しいです！
-
-それが、皆の大切な釣り場と魚たちを守ることに繋がります。
-
-ルールと安全なマナーをしっかり守って、舘山寺でのとびきり楽しい釣り体験と思い出を作ってくださいね！
-</div>
+> [!WARNING]
+> **最後にお願い！**
+> 
+> 観光地として非常に人が多い場所なので、仕掛けやルアーを投げる際（キャスト時）は、**必ず後ろを振り返って歩行者がいないか安全確認を徹底**してください！
+> 
+> また、釣り場をいつまでも綺麗に保つために、自分たちが出した仕掛けのゴミなどは必ず持ち帰りましょう。
+> 
+> もし周りに落ちている他のゴミを見つけたら、偽善でもいいので一緒に拾ってもらえるとすごく嬉しいです！
+> 
+> それが、皆の大切な釣り場と魚たちを守ることに繋がります。
+> 
+> ルールと安全なマナーをしっかり守って、舘山寺でのとびきり楽しい釣り体験と思い出を作ってくださいね！

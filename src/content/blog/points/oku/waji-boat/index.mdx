@@ -35,17 +35,20 @@ facilities:
   streetLights: false
 ---
 
+import Map from "@components/Map.astro";
+import GMapButton from "@components/GMapButton.astro";
+
 『釣！浜名湖』をご覧いただきありがとうございます！
 
 今回は、庄内湖の最奥、まさに「どん詰まり」のポテンシャルを秘めた **「和地（わじ）ボートエリア」** をご紹介します！
 
 和地エリアは、陸からのエントリーが極めて難しいため、ボートアングラーにとっては戦略を組み立てる楽しさが凝縮された、庄内湖でも指折りのテクニカルなポイントなんですよ！
 
-<Map />
+<Map lat={34.759297} lng={137.648089} name="和地ボートエリア" />
 
 ## 和地エリアの基本情報
 
-<GMapButton />
+<GMapButton url="https://www.google.com/maps/search/?api=1&query=34.759297,137.648089" />
 
 *   **ポイント名**：和地ボートエリア
 *   **所在地**：静岡県浜松市中央区和地町
