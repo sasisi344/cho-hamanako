@@ -9,14 +9,15 @@ type Props = {
   entry_name: string
   tags: string[]
   data: CollectionEntry<"blog">[] | CollectionEntry<'projects'>[]
+  initialTags?: string[]
 }
 
-export default function SearchCollection({ entry_name, data, tags }: Props) {
+export default function SearchCollection({ entry_name, data, tags, initialTags }: Props) {
   // Use any here to avoid union of array vs array of union issues in Fuse/Filter
   const items = data as any[];
 
   const [query, setQuery] = createSignal("");
-  const [filter, setFilter] = createSignal(new Set<string>())
+  const [filter, setFilter] = createSignal(new Set<string>(initialTags || []))
   const [collection, setCollection] = createSignal<any[]>(items)
   const [descending, setDescending] = createSignal(false);
 
@@ -31,13 +32,26 @@ export default function SearchCollection({ entry_name, data, tags }: Props) {
     const filtered = (query().length < 2
       ? items
       : fuse.search(query()).map((result) => result.item)
-    ).filter((entry: any) =>
-      Array.from(filter()).every((value) =>
-        entry.data.tags.some((tag: string) =>
-          tag.toLowerCase() === String(value).toLowerCase()
-        )
-      )
-    );
+    ).filter((entry: any) => {
+      const activeFilters = Array.from(filter());
+      if (activeFilters.length === 0) return true;
+
+      const areaTags = ["表浜名湖", "中浜名湖", "奥浜名湖"];
+      const selectedAreas = activeFilters.filter(f => areaTags.includes(f));
+      const otherFilters = activeFilters.filter(f => !areaTags.includes(f));
+
+      // Area tags match with OR
+      const areaMatch = selectedAreas.length === 0 || selectedAreas.some(area =>
+        entry.data.tags.some((tag: string) => tag === area)
+      );
+
+      // Other tags match with AND
+      const otherMatch = otherFilters.every(f =>
+        entry.data.tags.some((tag: string) => tag === f)
+      );
+
+      return areaMatch && otherMatch;
+    });
     setCollection(descending() ? [...filtered].reverse() : filtered)
   })
 

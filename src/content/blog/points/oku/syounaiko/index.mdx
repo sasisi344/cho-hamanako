@@ -20,19 +20,30 @@ location:
 ---
 
 import Map from "@components/Map.astro";
+import MapArea from "@components/MapArea.astro";
 import GMapButton from "@components/GMapButton.astro";
 
 『釣！浜名湖』をご覧いただきありがとうございます！
 
 庄内湖（しょうないこ）エリアは、奥浜名湖の中でも特に複雑な地形で、広大なシャロー（浅瀬）が広がるエリアです。陸からのエントリーができる場所は限られていますが、ボートフィッシングの聖地として、また秋のハゼ釣りの名所として多くのアングラーに愛されています。
 
-<Map lat={34.745} lng={137.635} name="庄内湖エリア" />
-
-<GMapButton url="https://www.google.com/maps/search/?api=1&query=34.745,137.635" />
-
-現在は、より詳細な釣行計画にお役立ていただけるよう、以下の8つのポイントに分けて詳しく解説しています。
-
 ## 庄内湖の釣りポイント一覧
+
+<MapArea 
+  lat={34.745} 
+  lng={137.64} 
+  zoom={13}
+  points={[
+    { name: "平松町付近", lat: 34.754378, lng: 137.638226, url: "/blog/points/oku/hiramatsu", summary: "ハゼ釣りの名所。ファミリーにもおすすめ。" },
+    { name: "白洲町ボートエリア", lat: 34.743023, lng: 137.627462, url: "/blog/points/oku/shiras-boat", summary: "チヌトップゲームの楽園。" },
+    { name: "佐浜・白山周辺", lat: 34.747526, lng: 137.639386, url: "/blog/points/oku/sahama-hakusan", summary: "大型キビレを狙える玄人好みポイント。" },
+    { name: "花川河口", lat: 34.757267, lng: 137.651896, url: "/blog/points/oku/hanagawa", summary: "ハゼとキビレの好ポイント。" },
+    { name: "和地ボートエリア", lat: 34.759297, lng: 137.648089, url: "/blog/points/oku/waji-boat", summary: "ボートルアーの超定番エリア。" },
+    { name: "伊左地川河口", lat: 34.738558, lng: 137.641104, url: "/blog/points/oku/isajigawa", summary: "のんびり楽しめる穴場スポット。" },
+    { name: "古人見ボートエリア", lat: 34.732697, lng: 137.634688, url: "/blog/points/oku/kohitomi-boat", summary: "サイトフィッシングが熱いシャロー。" },
+    { name: "協和町ボートエリア", lat: 34.735418, lng: 137.612734, url: "/blog/points/oku/kyowa-boat", summary: "広大なシャローでのボートゲーム。" }
+  ]}
+/>
 
 *   **[平松町付近](/blog/points/oku/hiramatsu)**
     ハゼ釣りの名所。児童遊園地周辺がエントリーしやすく、ファミリーにもおすすめです。
@@ -49,6 +60,6 @@ import GMapButton from "@components/GMapButton.astro";
 *   **[古人見ボートエリア](/blog/points/oku/kohitomi-boat)**
     はまゆう大橋北東の明るい砂地シャロー。サイトフィッシングが熱いエリア。
 *   **[協和町ボートエリア](/blog/points/oku/kyowa-boat)**
-    はまゆう大橋西側。オブジェを目印に、広大なシャローをボートで流すのが王道。
+    はまゆう大橋西側。オブジェを目を目印に、広大なシャローをボートで流すのが王道。
 
 ご自身のスタイルやターゲットに合わせて、最適なポイントを選んでみてくださいね！

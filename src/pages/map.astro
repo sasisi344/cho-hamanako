@@ -6,15 +6,38 @@ import BottomLayout from "@layouts/BottomLayout.astro";
 
 // 釣果ポイント記事をすべて取得
 const allPosts = await getCollection("blog");
+// フィルタ用のタグを定義
+const areaTags = ["表浜名湖", "中浜名湖", "奥浜名湖"];
+const monthTags = ["1月", "2月", "3月", "4月", "5月", "6月", "7月", "8月", "9月", "10月", "11月", "12月"];
+
 const mapPoints = allPosts
-  .filter(post => post.data.location && post.data.location.lat && post.data.location.lng)
-  .map(post => ({
-    name: post.data.title,
-    lat: post.data.location.lat,
-    lng: post.data.location.lng,
-    url: `/blog/${post.slug}/`,
-    summary: post.data.summary || ""
-  }));
+  .filter(post => !post.data.draft && post.data.location && post.data.location.lat && post.data.location.lng)
+  .map(post => {
+    const url = post.data.category === "points" 
+      ? `/points/${post.slug.replace(/^points\//, '')}/` 
+      : `/blog/${post.slug}/`;
+    
+    // タグを正規化（「11月の釣り」などを「11月」として扱えるようにする）
+    const rawTags = post.data.tags || [];
+    const normalizedTags = rawTags.map(tag => {
+      const monthMatch = tag.match(/(\d+)月/);
+      return monthMatch ? `${monthMatch[1]}月` : tag;
+    });
+
+    return {
+      name: post.data.title,
+      lat: post.data.location.lat,
+      lng: post.data.location.lng,
+      url,
+      summary: post.data.summary || "",
+      category: post.data.category,
+      tags: normalizedTags,
+      pubDate: post.data.pubDate || post.data.date
+    };
+  });
+
+// 表示するタグを厳選（存在するエリア + 1-12月）
+const displayTags = [...areaTags, ...monthTags];
 
 const jsonPoints = JSON.stringify(mapPoints);
 ---
@@ -23,9 +46,27 @@ const jsonPoints = JSON.stringify(mapPoints);
   <TopLayout>
     <div class="container">
       <h1 class="text-4xl font-black mb-4">🎣 浜名湖ポイント検索マップ</h1>
-      <p class="text-slate-600 dark:text-slate-400 mb-8">
+      <p class="text-slate-600 dark:text-slate-400 mb-6">
         浜名湖周辺の釣りポイントを網羅。ピンをクリックすると詳細な解説記事を読むことができます。
       </p>
+
+      <!-- Tag Filter UI -->
+      <div class="mb-8 animate">
+        <div class="flex flex-wrap gap-2" id="tag-filters">
+          {displayTags.map(tag => (
+            <button 
+              data-tag={tag}
+              class={`px-4 py-2 rounded-full border text-sm font-bold transition-all shadow-sm
+                ${areaTags.includes(tag) 
+                  ? "bg-blue-600 text-white border-blue-600 active-filter" 
+                  : "bg-white dark:bg-zinc-900 text-slate-600 dark:text-slate-400 border-slate-200 dark:border-zinc-800 hover:border-blue-500"}
+              `}
+            >
+              {tag}
+            </button>
+          ))}
+        </div>
+      </div>
     </div>
   </TopLayout>
 
@@ -44,14 +85,9 @@ const jsonPoints = JSON.stringify(mapPoints);
     </div>
 
     <div class="mt-12 animate">
-        <h2 class="text-2xl font-bold mb-6">登録済みのポイント一覧</h2>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-            {mapPoints.map(point => (
-                <a href={point.url} class="p-4 rounded-xl bg-white dark:bg-zinc-900 border border-slate-200 dark:border-zinc-800 hover:border-blue-500 transition-colors shadow-sm">
-                    <h3 class="font-bold text-blue-600 dark:text-blue-400">{point.name}</h3>
-                    <p class="text-xs text-slate-500 mt-1 line-clamp-1">{point.summary}</p>
-                </a>
-            ))}
+        <h2 class="text-2xl font-bold mb-6">表示中のポイント一覧</h2>
+        <div id="point-list" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+            <!-- JSで動的に追加 -->
         </div>
     </div>
   </BottomLayout>
@@ -70,56 +106,187 @@ const jsonPoints = JSON.stringify(mapPoints);
   :global(.leaflet-popup-content) {
     margin: 12px;
   }
+  .active-filter {
+    background-color: #2563eb !important;
+    color: white !important;
+    border-color: #2563eb !important;
+  }
 </style>
 
 <script is:inline define:vars={{ jsonPoints }}>
+  var points = JSON.parse(jsonPoints);
+  var map;
+  var markers = [];
+  var activeTags = new Set(["表浜名湖", "中浜名湖", "奥浜名湖"]);
+
   // Leaflet CDN読み込み後に地図を初期化
   function initMap() {
-    var points = JSON.parse(jsonPoints);
     var mapElement = document.getElementById('map');
     var loader = document.getElementById('map-loader');
 
     if (!mapElement || typeof L === 'undefined') return;
-
-    // 既に初期化済みの場合はスキップ
     if (mapElement._leaflet_id) return;
 
-    // 地図の初期化（浜名湖の中心）
-    var map = L.map('map', {
+    // クエリパラメータからエリアを読み込み
+    var urlParams = new URLSearchParams(window.location.search);
+    var areaParam = urlParams.get('area');
+    if (areaParam) {
+      activeTags = new Set([areaParam]);
+      // ボタンのスタイルをリセットしてアクティブなものだけ色をつける
+      var filterButtons = document.querySelectorAll('#tag-filters button');
+      filterButtons.forEach(function(btn) {
+        var tag = btn.getAttribute('data-tag');
+        if (activeTags.has(tag)) {
+          btn.classList.add('active-filter', 'bg-blue-600', 'text-white', 'border-blue-600');
+          btn.classList.remove('bg-white', 'dark:bg-zinc-900', 'text-slate-600', 'dark:text-slate-400', 'border-slate-200', 'dark:border-zinc-800');
+        } else {
+          btn.classList.remove('active-filter', 'bg-blue-600', 'text-white', 'border-blue-600');
+          btn.classList.add('bg-white', 'dark:bg-zinc-900', 'text-slate-600', 'dark:text-slate-400', 'border-slate-200', 'dark:border-zinc-800');
+        }
+      });
+    }
+
+    map = L.map('map', {
       center: [34.73, 137.58],
       zoom: 12,
       scrollWheelZoom: false
     });
 
-    // クリック後にスクロールズーム有効
     map.on('focus', function() { map.scrollWheelZoom.enable(); });
 
-    // OpenStreetMapのタイル
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
       attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
     }).addTo(map);
 
-    // マーカーの追加
-    points.forEach(function(point) {
-      var popupContent = '<div style="font-family:sans-serif">' +
-        '<h4 style="font-weight:bold;font-size:16px;margin-bottom:8px;color:#1e293b">' + point.name + '</h4>' +
-        '<p style="font-size:13px;color:#64748b;margin-bottom:12px">' + point.summary + '</p>' +
-        '<a href="' + point.url + '" style="display:inline-block;background:#2563eb;color:white;padding:6px 14px;border-radius:8px;font-size:13px;font-weight:bold;text-decoration:none">詳細記事を見る 🎣</a>' +
-        '</div>';
+    updateMap();
+    setupFilters();
 
-      L.marker([point.lat, point.lng])
-        .bindPopup(popupContent, { maxWidth: 280 })
-        .addTo(map);
-    });
-
-    // 読み込み完了 → ローダーを非表示
     if (loader) {
       loader.style.opacity = '0';
       setTimeout(function() { loader.remove(); }, 500);
     }
   }
 
-  // DOMContentLoaded または即時実行
+  function formatDate(dateStr) {
+    if (!dateStr) return "---";
+    var date = new Date(dateStr);
+    if (isNaN(date.getTime())) return "---";
+    return date.toLocaleDateString('en-US', {
+      month: 'short',
+      day: '2-digit',
+      year: 'numeric'
+    });
+  }
+
+  function updateMap() {
+    if (!map) return;
+
+    // 既存のマーカーを削除
+    markers.forEach(m => map.removeLayer(m));
+    markers = [];
+
+    var listContainer = document.getElementById('point-list');
+    if (listContainer) listContainer.innerHTML = '';
+
+    // アクティブなタグに基づくフィルタリング
+    var areaTagsList = ["表浜名湖", "中浜名湖", "奥浜名湖"];
+    var filteredPoints = points.filter(function(point) {
+      if (activeTags.size === 0) return false;
+      
+      var selectedAreas = [];
+      var selectedMonths = [];
+      
+      activeTags.forEach(function(tag) {
+        if (areaTagsList.indexOf(tag) !== -1) {
+          selectedAreas.push(tag);
+        } else if (tag.indexOf("月") !== -1) {
+          selectedMonths.push(tag);
+        }
+      });
+
+      var areaMatch = selectedAreas.length === 0 || (point.tags && point.tags.some(function(t) {
+        return selectedAreas.indexOf(t) !== -1;
+      }));
+
+      var monthMatch = selectedMonths.length === 0 || (point.tags && point.tags.some(function(t) {
+        return selectedMonths.indexOf(t) !== -1;
+      }));
+
+      return areaMatch && monthMatch;
+    });
+
+    if (filteredPoints.length === 0 && listContainer) {
+      listContainer.innerHTML = '<p class="col-span-full text-center py-12 text-slate-500">該当するポイントがありません。他の条件でお試しください。</p>';
+    }
+
+    filteredPoints.forEach(function(point) {
+      var popupContent = '<div style="font-family:sans-serif">' +
+        '<h4 style="font-weight:bold;font-size:16px;margin-bottom:8px;color:#1e293b">' + point.name + '</h4>' +
+        '<p style="font-size:13px;color:#64748b;margin-bottom:12px">' + (point.summary || "") + '</p>' +
+        '<a href="' + point.url + '" style="display:inline-block;background:#2563eb;color:white;padding:6px 14px;border-radius:8px;font-size:13px;font-weight:bold;text-decoration:none">詳細記事を見る 🎣</a>' +
+        '</div>';
+
+      var marker = L.marker([point.lat, point.lng])
+        .bindPopup(popupContent, { maxWidth: 280 })
+        .addTo(map);
+      
+      markers.push(marker);
+
+      // リストにも追加 (ArrowCard風のブログカード)
+      if (listContainer) {
+        var card = document.createElement('a');
+        card.href = point.url;
+        // animateクラスを外し、即座に表示させる
+        card.className = "group flex flex-col p-4 gap-3 border rounded-lg hover:bg-black/5 hover:dark:bg-white/10 border-black/15 dark:border-white/20 transition-all duration-300 ease-in-out bg-white dark:bg-zinc-900 shadow-sm";
+        
+        var tagsHtml = (point.tags || []).slice(0, 3).map(function(t) {
+          return '<li class="text-[10px] uppercase py-0.5 px-2 rounded bg-black/5 dark:bg-white/20 text-black/75 dark:text-white/75">' + t + '</li>';
+        }).join('');
+
+        card.innerHTML = 
+          '<div class="flex flex-col w-full group-hover:text-black group-hover:dark:text-white transition-colors duration-300">' +
+            '<div class="flex items-center gap-2 text-xs uppercase opacity-70">' +
+              '<span>' + formatDate(point.pubDate) + '</span>' +
+            '</div>' +
+            '<h3 class="font-bold mt-2 text-black dark:text-white line-clamp-2 leading-snug">' + point.name + '</h3>' +
+            '<p class="text-sm mt-1 line-clamp-2 opacity-80">' + (point.summary || "") + '</p>' +
+            '<ul class="flex flex-wrap mt-3 gap-1">' + tagsHtml + '</ul>' +
+          '</div>';
+
+        listContainer.appendChild(card);
+      }
+    });
+  }
+
+  function setupFilters() {
+    var filterButtons = document.querySelectorAll('#tag-filters button');
+    
+    // 初期状態のボタン表示を強制更新
+    filterButtons.forEach(function(btn) {
+      var tag = btn.getAttribute('data-tag');
+      if (activeTags.has(tag)) {
+        btn.classList.add('active-filter', 'bg-blue-600', 'text-white', 'border-blue-600');
+        btn.classList.remove('bg-white', 'dark:bg-zinc-900', 'text-slate-600', 'dark:text-slate-400', 'border-slate-200', 'dark:border-zinc-800');
+      }
+    });
+
+    filterButtons.forEach(function(btn) {
+      btn.addEventListener('click', function() {
+        var tag = btn.getAttribute('data-tag');
+        if (activeTags.has(tag)) {
+          activeTags.delete(tag);
+          btn.classList.remove('active-filter', 'bg-blue-600', 'text-white', 'border-blue-600');
+          btn.classList.add('bg-white', 'dark:bg-zinc-900', 'text-slate-600', 'dark:text-slate-400', 'border-slate-200', 'dark:border-zinc-800');
+        } else {
+          activeTags.add(tag);
+          btn.classList.add('active-filter', 'bg-blue-600', 'text-white', 'border-blue-600');
+          btn.classList.remove('bg-white', 'dark:bg-zinc-900', 'text-slate-600', 'dark:text-slate-400', 'border-slate-200', 'dark:border-zinc-800');
+        }
+        updateMap();
+      });
+    });
+  }
+
   if (document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', initMap);
   } else {

@@ -19,8 +19,8 @@ export const BLOG: Page = {
   DESCRIPTION: "浜名湖の釣りに関する最新情報や釣果レポート。",
 }
 
-// Projects Page 
-export const PROJECTS: Page = {
+// Points Page 
+export const POINTS: Page = {
   TITLE: "釣り場ポイント",
   DESCRIPTION: "表・中・奥浜名湖の主要釣りポイントを詳細解説。",
 }
@@ -39,7 +39,7 @@ export const LINKS: Links = [
   },
   {
     TEXT: "ポイント",
-    HREF: "/projects",
+    HREF: "/points",
   },
   {
     TEXT: "解説ガイド",

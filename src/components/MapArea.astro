@@ -1,0 +1,105 @@
+---
+interface Point {
+  lat: number;
+  lng: number;
+  name: string;
+  url: string;
+  summary?: string;
+}
+
+interface Props {
+  lat: number;
+  lng: number;
+  points: Point[];
+  zoom?: number;
+  height?: string;
+}
+
+const { lat, lng, points, zoom = 13, height = "450px" } = Astro.props;
+
+// Generate a unique ID for the map container
+const mapId = `map-area-${Math.random().toString(36).substring(2, 9)}`;
+const jsonPoints = JSON.stringify(points);
+---
+
+<div class={`relative w-full rounded-3xl overflow-hidden border-2 border-slate-100 dark:border-zinc-800 shadow-xl my-8 group animate`} style={{ height }}>
+  <div id={mapId} class="w-full h-full z-10" data-lat={lat} data-lng={lng} data-zoom={zoom}></div>
+  
+  <!-- Overlay for hover instructions -->
+  <div class="absolute inset-0 z-20 pointer-events-none bg-black/0 group-hover:bg-black/5 transition-colors duration-300 flex items-end justify-center pb-4">
+    <span class="text-[10px] font-bold text-white bg-black/50 px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity">
+      ピンをクリックすると記事へ移動できます
+    </span>
+  </div>
+</div>
+
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+<script is:inline src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+
+<script is:inline define:vars={{ mapId, jsonPoints }}>
+  function initAreaMap() {
+    const el = document.getElementById(mapId);
+    if (!el || typeof L === 'undefined') return;
+    if (el._leaflet_id) return;
+
+    const lat = parseFloat(el.dataset.lat);
+    const lng = parseFloat(el.dataset.lng);
+    const zoom = parseInt(el.dataset.zoom);
+    const points = JSON.parse(jsonPoints);
+
+    const map = L.map(mapId, {
+      center: [lat, lng],
+      zoom: zoom,
+      scrollWheelZoom: false,
+      zoomControl: true
+    });
+
+    // Enable scroll zoom on click
+    map.on('focus', function() { map.scrollWheelZoom.enable(); });
+
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+    }).addTo(map);
+
+    points.forEach(point => {
+      const marker = L.marker([point.lat, point.lng]).addTo(map);
+      
+      const popupContent = `
+        <div class="p-2">
+          <h4 class="font-bold text-slate-900 mb-1" style="margin: 0 0 4px 0;">${point.name}</h4>
+          ${point.summary ? `<p class="text-xs text-slate-600 mb-2" style="margin: 0 0 8px 0;">${point.summary}</p>` : ''}
+          <a href="${point.url}" class="inline-block bg-blue-600 text-white px-3 py-1 rounded text-xs font-bold no-underline hover:bg-blue-700 transition-colors">
+            詳細を見る 🎣
+          </a>
+        </div>
+      `;
+      
+      marker.bindPopup(popupContent, { maxWidth: 240 });
+    });
+  }
+
+  // Handle both initial load and view transitions
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initAreaMap);
+  } else {
+    initAreaMap();
+  }
+  
+  // Re-init on Astro View Transitions if used
+  document.addEventListener('astro:after-swap', initAreaMap);
+</script>
+
+<style>
+  :global(.leaflet-popup-content-wrapper) {
+    border-radius: 12px;
+    padding: 0;
+    overflow: hidden;
+  }
+  :global(.leaflet-popup-content) {
+    margin: 0;
+  }
+  :global(.leaflet-container a.leaflet-popup-close-button) {
+    color: #64748b;
+    padding: 8px;
+  }
+</style>
