@@ -62,6 +62,13 @@ Supported types: `note`, `note warn`.
     - Example: `AstroSphereを使ってWebサイトを構築する。`
     - Example: `9月の浜名湖。`
 
+## 🐟 Fishing Knowledge & Accuracy (浜名湖の釣果に関するルール)
+
+**Rule**: 浜名湖の実情に即した正確な情報を提供するため、以下の魚種に関する記述は原則として禁止、または注意すること。
+
+- **アイナメ (Ainame)**: **浜名湖ではまず釣れません。** 記事のターゲット魚種やポイント紹介の候補から **完全に削除** してください。
+- **季節感の徹底**: 魚種ごとのベストシーズンを厳守し、水温や潮の状況に不自然な記述（例：冬にアジ爆釣など）を避けること。
+
 ### ✅ Internal Linking Strategy (BlogCards)
 **Rule**: Use the Astro `<BlogCard>` component for prominent internal links to other generated points or articles, instead of standard plain text Markdown links. This ensures high visibility and CTR.
 - **Workflow**: 

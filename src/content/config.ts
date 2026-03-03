@@ -54,6 +54,7 @@ const blog = defineCollection({
       location: locationSchema,
       fishinginfo: fishinginfoSchema,
       facilities: facilitiesSchema,
+      wpSlug: z.string().optional(),
     }),
     z.object({
       title: z.string(),
@@ -69,6 +70,7 @@ const blog = defineCollection({
       location: locationSchema,
       fishinginfo: fishinginfoSchema,
       facilities: facilitiesSchema,
+      wpSlug: z.string().optional(),
     })
   ]),
 })
