@@ -164,3 +164,25 @@ Based on recent edits, adding a space before the colon in definition lists or pr
 
 General advice text follows here.
 ```
+
+## 🐟 Target Species Hub (Cluster) Rules
+
+### ✅ Frontmatter for species index.mdx
+**Rule**: Every species hub article (`/target/{species}/index.mdx`) must include detailed `fishinginfo` to enable site-wide filtering and search.
+
+```yaml
+fishinginfo:
+  difficulty: "Beginner" | "Intermediate" | "Advanced"
+  familyFriendly: boolean
+  bestSeason: ["春", "夏", "秋", "冬"]
+  methods: ["method1", "method2"]
+  targetFish: ["fish_name"]
+```
+
+### ✅ Article Cluster Structure
+**Rule**: Species-specific content should be organized into the following categories to cover all user intents:
+1.  **Hub (index.mdx)** : The terminal/main pillar page.
+2.  **Beginner (/beginner/)** : "How-to" for families and novices.
+3.  **Tactics (/tactics/)** : Advanced methods and lure strategies.
+4.  **Points (/points/)** : Top 5-10 specific spots for that fish.
+5.  **Cooking/Season (/cooking/)** : Recipes and seasonal patterns.
