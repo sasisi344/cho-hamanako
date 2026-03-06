@@ -1,0 +1,300 @@
+---
+interface Props {
+  lat: number;
+  lng: number;
+  name?: string;
+  zoom?: number;
+  /** Streamlit Community Cloud のベースURL */
+  streamlitBaseUrl?: string;
+}
+
+const {
+  lat,
+  lng,
+  name = "ポイント",
+  zoom = 15,
+  streamlitBaseUrl = "https://hamanako-map.streamlit.app"
+} = Astro.props;
+
+const btnId = `stl-btn-${Math.random().toString(36).substring(2, 9)}`;
+const containerId = `stl-map-${Math.random().toString(36).substring(2, 9)}`;
+
+// Streamlit URL with query params
+const streamlitUrl = `${streamlitBaseUrl}/?lat=${lat}&lng=${lng}&zoom=${zoom}&embed=true`;
+---
+
+<!-- On-Demand Streamlit Map Loader -->
+<div class="stl-map-wrapper my-6">
+  <!-- ボタン (初期表示) -->
+  <button
+    id={btnId}
+    class="stl-map-trigger"
+    aria-label={`${name}の高機能マップを表示`}
+    data-url={streamlitUrl}
+    data-target={containerId}
+  >
+    <span class="stl-map-trigger-icon">🗺️</span>
+    <span class="stl-map-trigger-text">
+      <strong>高機能マップ（Streamlit）で見る</strong>
+      <small>絞り込み・フィルター機能付き</small>
+    </span>
+    <span class="stl-map-trigger-arrow">→</span>
+  </button>
+
+  <!-- iframe コンテナ (初期は空) -->
+  <div id={containerId} class="stl-map-container hidden">
+    <div class="stl-map-header">
+      <span>🗺️ 高機能マップ — {name}</span>
+      <button class="stl-map-close" aria-label="マップを閉じる">✕</button>
+    </div>
+    <div class="stl-map-iframe-wrapper">
+      <!-- iframe はJSで動的に挿入 -->
+      <div class="stl-map-loading">
+        <div class="stl-map-spinner"></div>
+        <p>マップを読み込んでいます...</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script is:inline define:vars={{ btnId, containerId, streamlitUrl }}>
+(function() {
+  const btn = document.getElementById(btnId);
+  const container = document.getElementById(containerId);
+  if (!btn || !container) return;
+
+  const iframeWrapper = container.querySelector('.stl-map-iframe-wrapper');
+  const closeBtn = container.querySelector('.stl-map-close');
+  let loaded = false;
+
+  btn.addEventListener('click', function() {
+    // コンテナを表示
+    container.classList.remove('hidden');
+    container.classList.add('active');
+    // ボタンを非表示
+    btn.style.display = 'none';
+
+    // iframe を一度だけ生成
+    if (!loaded) {
+      const iframe = document.createElement('iframe');
+      iframe.src = streamlitUrl;
+      iframe.title = 'Streamlit 高機能マップ';
+      iframe.className = 'stl-map-iframe';
+      iframe.setAttribute('loading', 'lazy');
+      iframe.setAttribute('allowfullscreen', 'true');
+      iframe.onload = function() {
+        const spinner = iframeWrapper.querySelector('.stl-map-loading');
+        if (spinner) spinner.style.display = 'none';
+      };
+      iframeWrapper.appendChild(iframe);
+      loaded = true;
+    }
+  });
+
+  // 閉じるボタン
+  closeBtn.addEventListener('click', function() {
+    container.classList.remove('active');
+    container.classList.add('hidden');
+    btn.style.display = '';
+  });
+})();
+</script>
+
+<style>
+  .stl-map-wrapper {
+    width: 100%;
+  }
+
+  /* ---- Trigger Button ---- */
+  .stl-map-trigger {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    width: 100%;
+    padding: 16px 20px;
+    border: 2px dashed #94a3b8;
+    border-radius: 16px;
+    background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-align: left;
+  }
+
+  .stl-map-trigger:hover {
+    border-color: #3b82f6;
+    background: linear-gradient(135deg, #dbeafe 0%, #bfdbfe 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(59, 130, 246, 0.15);
+  }
+
+  .stl-map-trigger-icon {
+    font-size: 2rem;
+    flex-shrink: 0;
+  }
+
+  .stl-map-trigger-text {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    line-height: 1.4;
+  }
+
+  .stl-map-trigger-text strong {
+    color: #1e40af;
+    font-size: 1rem;
+  }
+
+  .stl-map-trigger-text small {
+    color: #64748b;
+    font-size: 0.8rem;
+    margin-top: 2px;
+  }
+
+  .stl-map-trigger-arrow {
+    font-size: 1.5rem;
+    color: #3b82f6;
+    transition: transform 0.3s ease;
+    flex-shrink: 0;
+  }
+
+  .stl-map-trigger:hover .stl-map-trigger-arrow {
+    transform: translateX(4px);
+  }
+
+  /* Dark mode */
+  :global(.dark) .stl-map-trigger {
+    border-color: #475569;
+    background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+  }
+  :global(.dark) .stl-map-trigger:hover {
+    border-color: #60a5fa;
+    background: linear-gradient(135deg, #1e3a5f 0%, #172554 100%);
+  }
+  :global(.dark) .stl-map-trigger-text strong {
+    color: #93c5fd;
+  }
+  :global(.dark) .stl-map-trigger-text small {
+    color: #94a3b8;
+  }
+
+  /* ---- Map Container ---- */
+  .stl-map-container {
+    border-radius: 16px;
+    overflow: hidden;
+    border: 2px solid #3b82f6;
+    box-shadow: 0 10px 40px rgba(59, 130, 246, 0.15);
+  }
+
+  .stl-map-container.hidden {
+    display: none;
+  }
+
+  .stl-map-container.active {
+    display: block;
+    animation: stlSlideDown 0.4s ease-out;
+  }
+
+  @keyframes stlSlideDown {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .stl-map-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 16px;
+    background: linear-gradient(135deg, #1e40af, #3b82f6);
+    color: white;
+    font-weight: bold;
+    font-size: 0.9rem;
+  }
+
+  .stl-map-close {
+    background: rgba(255, 255, 255, 0.2);
+    border: none;
+    color: white;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.8rem;
+    transition: background 0.2s;
+  }
+
+  .stl-map-close:hover {
+    background: rgba(255, 255, 255, 0.4);
+  }
+
+  .stl-map-iframe-wrapper {
+    position: relative;
+    width: 100%;
+    height: 600px;
+    background: #f8fafc;
+  }
+
+  :global(.dark) .stl-map-iframe-wrapper {
+    background: #0f172a;
+  }
+
+  .stl-map-iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+  }
+
+  /* Loading spinner */
+  .stl-map-loading {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    color: #64748b;
+    font-size: 0.9rem;
+  }
+
+  .stl-map-spinner {
+    width: 36px;
+    height: 36px;
+    border: 3px solid #e2e8f0;
+    border-top-color: #3b82f6;
+    border-radius: 50%;
+    animation: stlSpin 0.8s linear infinite;
+  }
+
+  @keyframes stlSpin {
+    to { transform: rotate(360deg); }
+  }
+
+  /* Responsive */
+  @media (max-width: 640px) {
+    .stl-map-iframe-wrapper {
+      height: 450px;
+    }
+
+    .stl-map-trigger {
+      padding: 12px 16px;
+      gap: 10px;
+    }
+
+    .stl-map-trigger-icon {
+      font-size: 1.5rem;
+    }
+
+    .stl-map-trigger-text strong {
+      font-size: 0.9rem;
+    }
+  }
+</style>

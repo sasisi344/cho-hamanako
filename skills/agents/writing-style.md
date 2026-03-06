@@ -186,3 +186,14 @@ fishinginfo:
 3.  **Tactics (/tactics/)** : Advanced methods and lure strategies.
 4.  **Points (/points/)** : Top 5-10 specific spots for that fish.
 5.  **Cooking/Season (/cooking/)** : Recipes and seasonal patterns.
+
+## 🛠️ Infrastructure Data & Consistency (インフラデータの整合性)
+
+**Rule**: 釣り人が最も重視する「駐車場・トイレ・夜釣りの可否」などの施設情報は、常に最新かつ正確なデータを提供し続けなければならない。
+
+- **SSOT (Single Source of Truth)** : インフラ情報の「真実のデータ」は `c:/Users/sasis/344dev/cho-hama/data-set/infrastructure-master.json` に集約する。
+- **Verification Priority**: 記事作成・更新時、またはガイド記事で設備に言及する際は、AIの一般知識や推測で数値を書かず、必ず上記JSONファイルを確認すること。
+    - ❌ **Bad**: 「駐車場は500円程度です」「トイレは近くにあります」などの曖昧な記述。
+    - ✅ **Good**: JSONにある「有料（1回400円）」や「多目的トイレあり（徒歩2分）」といった具体的な情報を転記する。
+- **Conflict Management**: 既存記事のFrontmatterとJSONに矛盾がある場合は、現地調査データであるJSONを優先し、必要に応じて記事側を修正すること。
+- **Data Maintenance**: 新しいポイントを追加した際や、大幅な設備変更があった場合は、`scripts/generate_infra_master.cjs` を実行してマスターデータを更新し、データの鮮度を保つこと。
