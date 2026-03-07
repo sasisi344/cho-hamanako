@@ -1,0 +1,21 @@
+---
+import { getEntry } from "astro:content";
+import AffiliateCard from "./AffiliateCard.astro";
+
+interface Props {
+  id: string;
+}
+
+const { id } = Astro.props;
+const entry = await getEntry("affiliates", id);
+---
+
+{entry ? (
+  <div class="my-8">
+    <AffiliateCard product={entry.data} />
+  </div>
+) : (
+  <div class="my-8 p-4 border border-red-500/30 bg-red-500/10 rounded-xl text-red-500 text-sm font-semibold">
+    ⚠️ Tackle ID "{id}" not found in affiliates collection.
+  </div>
+)}

@@ -1,0 +1,10 @@
+id: common/daiwa-legalis
+name: ダイワ(DAIWA) スピニングリール 23レガリス LT3000-CXH
+link: https://www.amazon.co.jp/dp/B0CCN714GK?tag=sasisi344-22&linkCode=ll2&linkId=78944ea16c37bc4e98b1c9ba17140297
+image: https://m.media-amazon.com/images/I/51lYLNkkL2L._AC_SL1134_.jpg
+description: AIRDRIVE DESIGN & ZAION Vの採用により、前モデルよりさらに軽量・軽快な操作性を実現。LT3000-CXHはギア比6.2のハイギア仕様で、浜名湖のシーバスやクロダイ狙いに最適なバーサタイルモデルです。
+targetFish: ["シーバス", "クロダイ", "マゴチ"]
+methods: ["ルアー釣り", "餌釣り"]
+categories: ["リール"]
+brand: ダイワ(DAIWA)
+isRecommended: true

@@ -1,0 +1,10 @@
+id: flatfish/duo-beach-walker
+name: DUO ビーチウォーカー ハウル 21g
+link: https://amzn.to/example-howl
+image: https://m.media-amazon.com/images/I/61k3H1N08rL._AC_SL1500_.jpg
+description: 浜名湖の表浜や航路周りのマゴチ・ヒラメ狙いに最適。
+targetFish: ["マゴチ", "ヒラメ"]
+methods: ["フラットフィッシュ"]
+categories: ["ルアー"]
+brand: DUO
+isRecommended: true

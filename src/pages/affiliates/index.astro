@@ -1,0 +1,165 @@
+---
+import { getCollection } from "astro:content";
+import PageLayout from "@layouts/PageLayout.astro";
+import Container from "@components/Container.astro";
+import AffiliateCard from "@components/AffiliateCard.astro";
+
+const products = await getCollection("affiliates");
+
+// Taxonomy extraction
+const allFish = [...new Set(products.flatMap(p => p.data.targetFish))].sort();
+const allMethods = [...new Set(products.flatMap(p => p.data.methods))].sort();
+const allCategories = [...new Set(products.flatMap(p => p.data.categories))].sort();
+
+// Group products by Fish Species
+const productsByFish = allFish.reduce((acc, fish) => {
+  acc[fish] = products.filter(p => p.data.targetFish.includes(fish));
+  return acc;
+}, {} as Record<string, typeof products>);
+
+// Group products by Fishing Method
+const productsByMethod = allMethods.reduce((acc, method) => {
+  acc[method] = products.filter(p => p.data.methods.includes(method));
+  return acc;
+}, {} as Record<string, typeof products>);
+---
+
+<PageLayout title="おすすめタックル・ギア" description="浜名湖の釣りに最適なタックル・ギアのデータベース。魚種や釣法から最適な道具を見つけられます。">
+  <Container>
+    <div class="py-12">
+      <div class="mb-10 text-center">
+        <h1 class="text-4xl font-bold mb-4 bg-gradient-to-r from-blue-600 to-cyan-500 bg-clip-text text-transparent">
+          おすすめタックルDB
+        </h1>
+        <p class="text-slate-600 dark:text-slate-400 max-w-2xl mx-auto">
+          実釣に基づいた浜名湖のおすすめタックルリストです。随時追加・更新中。<br>
+          記事作成時のリンク埋め込み管理ページとしても活用できます。
+        </p>
+      </div>
+
+      <!-- Quick Index -->
+      <div class="mb-12 p-8 rounded-2xl bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-inner">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+          <div>
+            <h2 class="text-xs font-bold uppercase tracking-widest text-slate-400 mb-5 flex items-center gap-2">
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12V7H5a2 2 0 0 1 0-4h14v4"></path><path d="M3 5v14a2 2 0 0 0 2 2h16v-5"></path><path d="M18 12a2 2 0 0 0 0 4h4v-4Z"></path></svg>
+              魚種から選ぶ
+            </h2>
+            <div class="flex flex-wrap gap-2">
+              {allFish.map(fish => (
+                <a href={`#fish-${fish}`} class="px-3 py-1 bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-full text-xs font-medium hover:border-blue-400 hover:text-blue-500 transition-all shadow-sm no-underline">
+                  {fish}
+                </a>
+              ))}
+            </div>
+          </div>
+          <div>
+            <h2 class="text-xs font-bold uppercase tracking-widest text-slate-400 mb-5 flex items-center gap-2">
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><path d="m16 10-4 4-4-4"></path></svg>
+              釣法から選ぶ
+            </h2>
+            <div class="flex flex-wrap gap-2">
+              {allMethods.map(method => (
+                <a href={`#method-${method}`} class="px-3 py-1 bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-full text-xs font-medium hover:border-green-400 hover:text-green-500 transition-all shadow-sm no-underline">
+                  {method}
+                </a>
+              ))}
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Sections -->
+      <div class="space-y-24">
+        
+        <!-- Fish Group -->
+        <section>
+          <div class="flex items-center gap-3 mb-10">
+            <div class="w-12 h-12 rounded-xl bg-blue-500/10 flex items-center justify-center text-blue-500">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21c-4.97 0-9-4.03-9-9s4.03-9 9-9 9 4.03 9 9-4.03 9-9 9Z"></path><path d="M19.07 4.93c-1.76 4.97-5.9 8.16-10.93 11.2"></path><path d="M14.83 9.17c-2.43 1.05-4.22 2.37-5.69 4.01"></path></svg>
+            </div>
+            <h2 class="text-3xl font-bold">魚種別タックル</h2>
+          </div>
+          
+          <div class="space-y-16">
+            {allFish.map(fish => (
+              <div id={`fish-${fish}`} class="scroll-mt-24">
+                <div class="flex items-baseline gap-4 mb-6">
+                  <h3 class="text-xl font-bold text-slate-800 dark:text-slate-100 italic">
+                    {fish}
+                  </h3>
+                  <div class="flex-1 h-px bg-slate-200 dark:bg-slate-800"></div>
+                </div>
+                <div class="grid grid-cols-1 xl:grid-cols-2 gap-8">
+                  {productsByFish[fish].map(p => (
+                    <div class="relative">
+                      <div class="absolute top-2 right-2 z-20 px-2 py-1 bg-slate-800/80 text-[10px] text-white rounded font-mono border border-slate-700">
+                        ID: {p.id}
+                      </div>
+                      <AffiliateCard product={p.data} />
+                    </div>
+                  ))}
+                </div>
+
+              </div>
+            ))}
+          </div>
+        </section>
+
+        <!-- Method Group -->
+        <section>
+          <div class="flex items-center gap-3 mb-10">
+            <div class="w-12 h-12 rounded-xl bg-green-500/10 flex items-center justify-center text-green-500">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21c-4.97 0-9-4.03-9-9s4.03-9 9-9 9 4.03 9 9-4.03 9-9 9Z"></path><path d="M19.07 4.93c-1.76 4.97-5.9 8.16-10.93 11.2"></path><path d="M14.83 9.17c-2.43 1.05-4.22 2.37-5.69 4.01"></path></svg>
+            </div>
+            <h2 class="text-3xl font-bold">釣法別タックル</h2>
+          </div>
+          
+          <div class="space-y-16">
+            {allMethods.map(method => (
+              <div id={`method-${method}`} class="scroll-mt-24">
+                <div class="flex items-baseline gap-4 mb-6">
+                  <h3 class="text-xl font-bold text-slate-800 dark:text-slate-100 italic">
+                    {method}
+                  </h3>
+                  <div class="flex-1 h-px bg-slate-200 dark:bg-slate-800"></div>
+                </div>
+                <div class="grid grid-cols-1 xl:grid-cols-2 gap-8">
+                  {productsByMethod[method].map(p => (
+                    <div class="relative">
+                      <div class="absolute top-2 right-2 z-20 px-2 py-1 bg-slate-800/80 text-[10px] text-white rounded font-mono border border-slate-700">
+                        ID: {p.id}
+                      </div>
+                      <AffiliateCard product={p.data} />
+                    </div>
+                  ))}
+                </div>
+              </div>
+            ))}
+          </div>
+        </section>
+
+        <!-- Category Group (Optional but helpful) -->
+        <section>
+          <div class="flex items-center gap-3 mb-10">
+            <div class="w-12 h-12 rounded-xl bg-orange-500/10 flex items-center justify-center text-orange-500">
+               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m7.5 4.27 9 5.15"></path><path d="M21 8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16Z"></path><path d="m3.3 7 8.7 5 8.7-5"></path><path d="M12 22V12"></path></svg>
+            </div>
+            <h2 class="text-3xl font-bold">全アイテム一覧</h2>
+          </div>
+          <div class="grid grid-cols-1 xl:grid-cols-2 gap-8">
+            {products.map(p => (
+              <div class="relative">
+                <div class="absolute top-2 right-2 z-20 px-2 py-1 bg-slate-800/80 text-[10px] text-white rounded font-mono border border-slate-700">
+                  ID: {p.id}
+                </div>
+                <AffiliateCard product={p.data} />
+              </div>
+            ))}
+          </div>
+        </section>
+
+      </div>
+    </div>
+  </Container>
+</PageLayout>

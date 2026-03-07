@@ -197,3 +197,32 @@ fishinginfo:
     - ✅ **Good**: JSONにある「有料（1回400円）」や「多目的トイレあり（徒歩2分）」といった具体的な情報を転記する。
 - **Conflict Management**: 既存記事のFrontmatterとJSONに矛盾がある場合は、現地調査データであるJSONを優先し、必要に応じて記事側を修正すること。
 - **Data Maintenance**: 新しいポイントを追加した際や、大幅な設備変更があった場合は、`scripts/generate_infra_master.cjs` を実行してマスターデータを更新し、データの鮮度を保つこと。
+
+## 🎣 Affiliate Product Cards (TackleCard)
+
+**Rule**: 魚種別の攻略記事やガイド記事において、具体的な釣具を紹介する際は、アフィリエイト管理DBと連携した `<TackleCard>` コンポーネントを使用してください。
+
+### ✅ Usage Guidelines
+- **Context Relevance**: 記事で解説している「魚種（Target）」や「釣法（Method）」に合致する商品を、管理DB（`src/content/affiliates/`）から選択して紹介すること。
+- **Categorization**: 管理DBは魚種名などのフォルダで分類されています。紹介する際は、攻略対象に最適なフォルダから商品を選んでください。
+- **Comparison**: 複数の道具を紹介する場合は、それぞれの特徴を前後の文脈で補足すること。
+
+### ✅ Component Syntax
+- **Workflow**: 
+  1. ファイル拡張子が `.mdx` であることを確認する（`.md` の場合は変更する）。
+  2. コンポーネントをインポートする（通常はページ上部で一括読み込み）：
+     ```mdx
+     import TackleCard from "@components/TackleCard.astro";
+     ```
+  3. 管理ページ（`/affiliates`）で表示されているIDを使用して配置する：
+     ```mdx
+     <TackleCard id="kurodai/sample" />
+     <TackleCard id="common/daiwa-legalis" />
+     ```
+
+### ✅ When to Use
+- **Gear Introductions**: 「おすすめの仕掛け」「推奨タックル」といったセクションで、具体的な製品を紹介する場合。
+- **Problem Solving**: 「ライントラブルを防ぐにはこのリール」など、特定の課題解決として道具を提案する場合。
+
+---
+

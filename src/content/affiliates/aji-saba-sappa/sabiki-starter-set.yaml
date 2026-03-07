@@ -1,0 +1,10 @@
+id: aji-saba-sappa/sabiki-starter-set
+name: つり具TEN サビキ釣り入門 完全セット
+link: https://www.amazon.co.jp/dp/B08T6Q49R9?tag=sasisi344-22&linkCode=ll2
+image: https://m.media-amazon.com/images/I/61kbeM1jykL._AC_SL1500_.jpg
+description: ロッド、リール、仕掛け、エサ、バケツまで全て揃ったオールインワンセット。5000円以下で購入でき、届いたその日にサビキ釣りを始められます。堤防での「釣り体験」の最初の一歩に最適です。
+targetFish: ["アジ", "サバ", "サッパ"]
+methods: ["サビキ釣り"]
+categories: ["セット"]
+brand: clubTEN
+isRecommended: true

@@ -1,0 +1,10 @@
+id: kurodai/majorcraft-crostage-kurodai
+name: メジャークラフト クロステージ 黒鯛 802L
+link: https://amzn.to/example-crostage
+image: https://m.media-amazon.com/images/I/61M6r-J9uJL._AC_SL1500_.jpg
+description: 浜名湖のチニング（クロダイ）専用ロッド。コストパフォーマンスに優れ、エントリーに最適。
+targetFish: ["クロダイ", "キビレ"]
+methods: ["チニング", "ルアー釣り"]
+categories: ["ロッド"]
+brand: メジャークラフト
+isRecommended: true

@@ -96,4 +96,23 @@ const legal = defineCollection({
   }),
 })
 
-export const collections = { work, blog, projects, legal }
+const affiliates = defineCollection({
+  type: "data",
+  schema: z.object({
+    id: z.string(),
+    name: z.string(),
+    html: z.string().optional(), // SiteStripeのHTMLコード
+    link: z.string().url().optional(), // 個別リンク（htmlがない場合に使用）
+    image: z.string().optional(), // 個別画像（htmlがない場合に使用）
+    description: z.string().optional(),
+    targetFish: z.array(z.string()).default([]),
+    methods: z.array(z.string()).default([]),
+    categories: z.array(z.string()).default([]),
+    brand: z.string().optional(),
+    isRecommended: z.boolean().default(false),
+  }),
+})
+
+
+export const collections = { work, blog, projects, legal, affiliates }
+
