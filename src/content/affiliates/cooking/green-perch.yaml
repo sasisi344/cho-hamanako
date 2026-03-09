@@ -1,0 +1,10 @@
+id: cooking/green-perch
+name: グリーンパーチ 魚を包む緑の紙
+link: https://www.amazon.co.jp/dp/B0DN5Q6GLQ?tag=sasisi344-22&linkCode=ll2&linkId=2e128b023960e7962e1bb8218b72b4dc
+image: https://m.media-amazon.com/images/P/B0DN5Q6GLQ.01.LZZZZZZZ.jpg
+description: 魚の乾燥を防ぎ、熟成させるためにプロ御用達の保存紙。鮮魚店で刺し身を包んでいるあの紙。
+targetFish: ["全魚種"]
+methods: ["料理", "熟成"]
+categories: ["消耗品"]
+brand: 不明
+isRecommended: true

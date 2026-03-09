@@ -1,0 +1,10 @@
+id: cooking/shinden-brass-scaler
+name: 浅野木工所 真鍮ウロコ取 大 08035
+link: https://www.amazon.co.jp/dp/B001TV679O?tag=sasisi344-22&linkCode=ll2&linkId=ba66443322114433221144332211443322
+image: https://m.media-amazon.com/images/P/B001TV679O.01.LZZZZZZZ.jpg
+description: プロも愛用する真鍮製のウロコ取り。適度な重みがあり、鯛などの硬いウロコも面白いように剥がれます。飛び散りにくい設計で、キッチンの掃除も楽になります。
+targetFish: ["全魚種", "マダイ", "クロダイ"]
+methods: ["料理"]
+categories: ["小物"]
+brand: 浅野木工所
+isRecommended: true

@@ -1,0 +1,10 @@
+id: common/aquamarina-fishing-boat
+name: アクアマリーナ(AQUA MARINA) ゴムボート BT-88890
+link: https://www.amazon.co.jp/dp/B06XR46NG7?tag=sasisi344-22&linkCode=ll2&linkId=e9d73ebb7c1f46cbb7f0402434064b3c
+image: https://m.media-amazon.com/images/P/B06XR46NG7.01.LZZZZZZZ.jpg
+description: 2馬力エンジンや電動モーターをマウントできる本格派インフレータブルボート。免許不要圏内で快適なボート釣りが楽しめます。
+targetFish: ["全魚種"]
+methods: ["ボート釣り"]
+categories: ["ボート・SUP"]
+brand: AQUA MARINA
+isRecommended: true

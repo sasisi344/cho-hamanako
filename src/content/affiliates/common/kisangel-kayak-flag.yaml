@@ -1,0 +1,10 @@
+id: common/kisangel-kayak-flag
+name: Kisangel カヤックフラッグポール 120CM 安全旗
+link: https://www.amazon.co.jp/dp/B0D14SC4J6?tag=sasisi344-22&linkCode=ll2&linkId=ea42aef5eae7a9639e0b223ad0869d8e
+image: https://m.media-amazon.com/images/P/B0D14SC4J6.01.LZZZZZZZ.jpg
+description: 他のプレジャーボートや漁船から視認されやすくするためのポール付きフラッグ。ボートの往来が多い浜名湖ではマストアイテムです。
+targetFish: ["全魚種"]
+methods: ["ボート釣り", "カヤック", "SUP"]
+categories: ["安全装備"]
+brand: Kisangel
+isRecommended: true
