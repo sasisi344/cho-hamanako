@@ -1,0 +1,10 @@
+id: mejina/duel-pink-flouro-iso
+name: デュエル 魚に見えないピンクフロロ 磯ハリス
+link: https://www.amazon.co.jp/dp/B0C7VH3HYZ?tag=sasisi344-22
+image: https://m.media-amazon.com/images/P/B0C7VH3HYZ.01.LZZZZZZZ.jpg
+description: 魚から見えにくいピンクカラーのフロロハリス。1~3号を場所に合わせて使い分け。
+targetFish: ["メジナ", "クロダイ"]
+methods: ["ウキフカセ"]
+categories: ["ライン"]
+brand: デュエル
+isRecommended: true

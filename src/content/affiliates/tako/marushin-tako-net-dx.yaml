@@ -1,0 +1,10 @@
+id: tako/marushin-tako-net-dx
+name: マルシン漁具 タコ入れ網DX L
+link: https://www.amazon.co.jp/dp/B00LTNKN8G?tag=sasisi344-22
+image: https://m.media-amazon.com/images/P/B00LTNKN8G.01.LZZZZZZZ.jpg
+description: タコ専用の網。脱走防止や下処理（塩もみ）にも適している。
+targetFish: ["タコ"]
+methods: ["タコエギング", "タコテンヤ"]
+categories: ["その他"]
+brand: マルシン漁具
+isRecommended: true

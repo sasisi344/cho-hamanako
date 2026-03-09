@@ -1,0 +1,10 @@
+id: travel/rakuten-travel-stay
+name: 楽天トラベル（宿泊）
+link: https://hb.afl.rakuten.co.jp/hsc/51b90f84.a148bfbd.14ff91be.d43d1971/?link_type=pict&ut=eyJwYWdlIjoic2hvcCIsInR5cGUiOiJwaWN0IiwiY29sIjoxLCJjYXQiOiIxMzMiLCJiYW4iOjIxODg2NTcsImFtcCI6ZmFsc2V9
+image: https://hbb.afl.rakuten.co.jp/hsb/51b90f84.a148bfbd.14ff91be.d43d1971/?me_id=2100001&me_adv_id=2188657&t=pict
+description: 楽天ポイントが貯まる・使える国内最大級の宿泊予約サイト。
+targetFish: []
+methods: ["観光", "遠征"]
+categories: ["旅行・観光"]
+brand: 楽天トラベル
+isRecommended: true

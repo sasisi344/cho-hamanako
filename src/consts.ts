@@ -42,7 +42,11 @@ export const LINKS: Links = [
     HREF: "/points",
   },
   {
-    TEXT: "解説ガイド",
+    TEXT: "釣れる魚",
+    HREF: "/blog/target",
+  },
+  {
+    TEXT: "最新記事",
     HREF: "/blog",
   },
 ]

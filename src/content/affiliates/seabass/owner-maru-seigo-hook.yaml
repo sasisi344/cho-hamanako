@@ -1,0 +1,10 @@
+id: seabass/owner-maru-seigo-hook
+name: オーナー 糸付 丸セイゴ 14号
+link: https://www.amazon.co.jp/dp/B001HY74C2?tag=sasisi344-22
+image: https://m.media-amazon.com/images/P/B001HY74C2.01.LZZZZZZZ.jpg
+description: シーバスのエサ釣りに多用される丸セイゴ針。対象魚のサイズに合わせて12-16号を選択。
+targetFish: ["シーバス", "セイゴ", "マダイ"]
+methods: ["ウキ釣り", "投げ釣り"]
+categories: ["針"]
+brand: オーナー
+isRecommended: true

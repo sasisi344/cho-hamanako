@@ -1,0 +1,10 @@
+id: travel/jalan-net-text
+name: じゃらんnet
+link: https://px.a8.net/svt/ejp?a8mat=2NI007+15325E+14CS+63WO2
+image: https://www20.a8.net/svt/bgt?aid=160403335069&wid=007&eno=01&mid=s00000005230001065000&mc=1
+description: 国内最大級の宿・ホテル予約サイト。浜名湖周辺の温泉旅館や、釣行時の拠点となるホテルの予約に最適。
+targetFish: []
+methods: ["遠征", "宿泊"]
+categories: ["旅行・宿泊"]
+brand: リクルート
+isRecommended: true

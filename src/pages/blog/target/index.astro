@@ -1,0 +1,54 @@
+---
+import { getCollection } from "astro:content";
+import PageLayout from "@layouts/PageLayout.astro";
+import TopLayout from "@layouts/TopLayout.astro";
+import BottomLayout from "@layouts/BottomLayout.astro";
+import SearchCollection from "@components/SearchCollection";
+
+const targetPosts = (await getCollection("blog"))
+  .filter((post) => !post.data.draft && post.data.category === "target")
+  .sort((a, b) => (b.data.pubDate || b.data.date).getTime() - (a.data.pubDate || a.data.date).getTime());
+
+const title = "釣れる魚・ターゲット解説";
+const description = "浜名湖で狙える主要なターゲット魚種ごとの攻略法、時期、ポイントを詳しく解説。";
+
+// 魚種名だけをフィルタリング用のタグとして抽出・定義
+const FISH_NAMES = [
+  "シーバス", "スズキ", "セイゴ", "クロダイ", "チヌ", "キビレ", "キチヌ", 
+  "ヒラメ", "マゴチ", "カレイ", "カワハギ", "キス", "シロギス", "ハゼ", "マハゼ", 
+  "メバル", "カサゴ", "メジナ", "グレ", "タコ", "マダコ", "アジ", "サバ", "サッパ", "青物"
+];
+
+// 実際に記事で使用されている魚種タグのみに絞り込む
+const allTags = [...new Set(targetPosts.flatMap((post) => post.data.tags))];
+const activeFishTags = FISH_NAMES.filter(fish => allTags.includes(fish));
+
+const estimated_initial_size = 28 + targetPosts.length * 158 + (targetPosts.length - 1) * 12;
+---
+
+<PageLayout title={title} description={description}>
+  <TopLayout>
+    <div class="animate">
+      <h1 class="text-3xl font-semibold text-black dark:text-white mt-2">
+        {title}
+      </h1>
+      <div class="mt-1">
+        {description}
+      </div>
+    </div>
+  </TopLayout>
+  <BottomLayout>
+    <div
+      id="search-collection-wrapper"
+      class="animate"
+      style={{ minHeight: `${estimated_initial_size}px` }}
+    >
+      <SearchCollection
+        client:load
+        entry_name={"targets"}
+        tags={activeFishTags}
+        data={targetPosts}
+      />
+    </div>
+  </BottomLayout>
+</PageLayout>

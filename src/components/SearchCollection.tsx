@@ -45,8 +45,8 @@ export default function SearchCollection({ entry_name, data, tags, initialTags }
         entry.data.tags.some((tag: string) => tag === area)
       );
 
-      // Other tags match with AND
-      const otherMatch = otherFilters.every(f =>
+      // Other tags match with OR
+      const otherMatch = otherFilters.length === 0 || otherFilters.some(f =>
         entry.data.tags.some((tag: string) => tag === f)
       );
 

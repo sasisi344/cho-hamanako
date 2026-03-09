@@ -1,0 +1,10 @@
+id: common/best-seller-air-mat
+name: Amazonベストセラー エアーマット
+link: https://www.amazon.co.jp/dp/B0DJW585LV?tag=sasisi344-22
+image: https://m.media-amazon.com/images/P/B0DJW585LV.01.LZZZZZZZ.jpg
+description: 10cmの厚さがあり地面の凹凸を感じにくい、コスパに優れたエアーマット。
+targetFish: []
+methods: ["遠征", "車中泊", "キャンプ"]
+categories: ["車中泊グッズ"]
+brand: Amazon
+isRecommended: true

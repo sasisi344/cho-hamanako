@@ -1,0 +1,10 @@
+id: seabass/fuji-tokki-ff-n30lg-float
+name: 富士灯器 涙型自立電気ウキ FF-N30LG 3号 緑
+link: https://www.amazon.co.jp/dp/B00F1OOAWO?tag=sasisi344-22
+image: https://m.media-amazon.com/images/P/B00F1OOAWO.01.LZZZZZZZ.jpg
+description: 高輝度な自立型電気ウキ。夜釣りのシーバスや太刀魚、キビレ狙いに最適な安定性と飛距離。
+targetFish: ["シーバス", "タチウオ", "キビレ"]
+methods: ["ウキ釣り", "夜釣り"]
+categories: ["その他"]
+brand: 富士灯器
+isRecommended: true

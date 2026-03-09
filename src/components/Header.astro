@@ -23,11 +23,18 @@ import Container from "@components/Container.astro"
     <div class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
       <nav class="hidden md:flex items-center justify-center text-sm gap-1">
         {
-          LINKS.map((LINK) => (
-            <a href={LINK.HREF} class={cn("h-8 rounded-full px-3 text-current", "flex items-center justify-center", "transition-colors duration-300 ease-in-out", pathname === LINK.HREF || "/" + subpath?.[0] === LINK.HREF ? "bg-black dark:bg-white text-white dark:text-black" : "hover:bg-black/5 dark:hover:bg-white/20 hover:text-black dark:hover:text-white")}>
-              {LINK.TEXT}
-            </a>
-          ))
+          LINKS.map((LINK) => {
+            const isActive = pathname === LINK.HREF || (
+              LINK.HREF !== "/" && 
+              pathname.startsWith(LINK.HREF) && 
+              !LINKS.some(other => other.HREF !== LINK.HREF && other.HREF.length > LINK.HREF.length && pathname.startsWith(other.HREF))
+            );
+            return (
+              <a href={LINK.HREF} class={cn("h-8 rounded-full px-3 text-current", "flex items-center justify-center", "transition-colors duration-300 ease-in-out", isActive ? "bg-black dark:bg-white text-white dark:text-black" : "hover:bg-black/5 dark:hover:bg-white/20 hover:text-black dark:hover:text-white")}>
+                {LINK.TEXT}
+              </a>
+            )
+          })
         }
       </nav>
     </div>

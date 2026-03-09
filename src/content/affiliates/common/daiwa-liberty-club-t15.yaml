@@ -1,0 +1,10 @@
+id: common/daiwa-liberty-club-t15
+name: ダイワ リバティクラブ T15-300・K
+link: https://www.amazon.co.jp/dp/B00T4950YE?tag=sasisi344-22
+image: https://m.media-amazon.com/images/P/B00T4950YE.01.LZZZZZZZ.jpg
+description: 汎用性の高い投げ竿。キス釣り、シーバスのエサ釣り、キビレのブッコミ釣りなど、浜名湖の投げ釣りに最適。
+targetFish: ["キス", "シーバス", "キビレ", "クロダイ"]
+methods: ["投げ釣り", "ブッコミ釣り"]
+categories: ["ロッド"]
+brand: ダイワ
+isRecommended: true

@@ -8,11 +8,18 @@ const subpath = pathname.match(/[^/]+/g)
 <div id="drawer" class="fixed inset-0 h-0 z-40 overflow-hidden flex flex-col items-center justify-center md:hidden bg-neutral-100 dark:bg-neutral-900 transition-[height] duration-300 ease-in-out">
   <nav class="flex flex-col items-center space-y-2">
     {
-      LINKS.map((LINK) => (
-        <a href={LINK.HREF} class={cn("flex items-center justify-center px-3 py-1 rounded-full", "text-current hover:text-black dark:hover:text-white", "hover:bg-black/5 dark:hover:bg-white/20", "transition-colors duration-300 ease-in-out", pathname === LINK.HREF || "/" + subpath?.[0] === LINK.HREF ? "pointer-events-none bg-black dark:bg-white text-white dark:text-black" : "")}>
-          {LINK.TEXT}
-        </a>
-      ))
+      LINKS.map((LINK) => {
+        const isActive = pathname === LINK.HREF || (
+          LINK.HREF !== "/" && 
+          pathname.startsWith(LINK.HREF) && 
+          !LINKS.some(other => other.HREF !== LINK.HREF && other.HREF.length > LINK.HREF.length && pathname.startsWith(other.HREF))
+        );
+        return (
+          <a href={LINK.HREF} class={cn("flex items-center justify-center px-3 py-1 rounded-full", "text-current hover:text-black dark:hover:text-white", "hover:bg-black/5 dark:hover:bg-white/20", "transition-colors duration-300 ease-in-out", isActive ? "pointer-events-none bg-black dark:bg-white text-white dark:text-black" : "")}>
+            {LINK.TEXT}
+          </a>
+        )
+      })
     }
   </nav>
 

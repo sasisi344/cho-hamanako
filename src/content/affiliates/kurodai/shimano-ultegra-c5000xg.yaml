@@ -1,0 +1,10 @@
+id: kurodai/shimano-ultegra-c5000xg
+name: シマノ アルテグラ C5000XG
+link: https://www.amazon.co.jp/dp/B0DSPG6G4F?tag=sasisi344-22
+image: https://m.media-amazon.com/images/P/B0DSPG6G4F.01.LZZZZZZZ.jpg
+description: スピニングリール。巻き上げが強く、シーバスやチニングに。
+targetFish: ["クロダイ", "シーバス"]
+methods: ["チニング", "シーバスゲーム"]
+categories: ["リール"]
+brand: シマノ
+isRecommended: true
