@@ -39,7 +39,7 @@ export const LINKS: Links = [
   },
   {
     TEXT: "ポイント",
-    HREF: "/points",
+    HREF: "/map",
   },
   {
     TEXT: "釣れる魚",
