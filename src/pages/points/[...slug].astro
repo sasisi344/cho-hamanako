@@ -21,7 +21,7 @@ const point = Astro.props
 const { title, summary } = point.data
 ---
 
-<PageLayout title={title} description={summary}>
+<PageLayout title={title} description={summary} hasAds={true}>
   <TopLayout>
     <div class="animate">
       <ArticleTopLayout entry={point} />
