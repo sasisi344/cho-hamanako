@@ -1,37 +1,15 @@
-# 浜名湖のフラットフィッシュ
-ヒラメとマゴチが狙える。ヒラメは「泳がせ釣り」が有名で、マゴチはボートから「ボトムワインド」が有名。それぞれ実績があるし釣法としても確立されているのが確立されているのが特徴。
+# 浜名湖のフラットフィッシュ（ヒラメ・マゴチ）
 
-## ヒラメの泳がせ釣り
-- ロッド: 2m前後の船用
-- リール: 両軸リール・スピニング3000番どちらでも（commonの3000番）
-- ライン: メインPE1号、ハリス・フロロ3~5号
-- 仕掛け: 泳がせ釣り胴付き仕掛け・天秤仕掛け
-https://www.amazon.co.jp/dp/B07VR9MW6N?tag=sasisi344-22
+このファイルは `src/content/affiliates/flatfish/` に登録されているヒラメ・マゴチ用アイテムのインデックスです。
 
-泳がせ釣りのアプローチは2種類。表浜名湖の橋脚にあるミオ筋に停泊して、活エサのアジ・ヒイラギを使って直下に落として待つ。新居弁天海釣公園・網干場などサビキ釣りで釣れた小魚を針にかけて放置しておく方法。
+| 商品名 | TackleCard ID | リンク |
+| :--- | :--- | :--- |
+| オーナー 堤防のませ仕掛け | `flatfish/owner-teibo-nomase-set-h6253` | [Amazon](https://www.amazon.co.jp/dp/B07VR9MW6N?tag=sasisi344-22) |
+| ジャクソン 鉄板ブレード 20g | `flatfish/jackson-teppan-blade-20g` | [Amazon](https://www.amazon.co.jp/dp/B078GQM9LD?tag=sasisi344-22) |
+| タックルハウス ローリングベイト 77 | `flatfish/tacklehouse-rolling-bait-77` | [Amazon](https://www.amazon.co.jp/dp/B0D92PWFCP?tag=sasisi344-22) |
+| シマノ サイレントアサシン 80S | `flatfish/shimano-silent-assassin-80s` | [Amazon](https://www.amazon.co.jp/dp/B08DLDT6N9?tag=sasisi344-22) |
+| DUO ビーチウォーカー フリッパー Z24 | `flatfish/duo-beach-walker-flipper-z24` | [Amazon](https://www.amazon.co.jp/dp/B08CD6G3K1?tag=sasisi344-22) |
+| メジャークラフト マキジグジェット | `flatfish/major-craft-maki-jig-jet` | [Amazon](https://www.amazon.co.jp/dp/B08HZ26HMZ?tag=sasisi344-22) |
 
-### ルアーフィッシングのアプローチ
-- ロッド・リール・ライン: サーフルアーモデル・フラットフィッシュモデル（マゴチ参照）
-- ルアー: メタルジグ10~20g・シンキングペンシル15~25g・ジグヘッドワーム
-
-## マゴチ（ボトムワインド）
-- ロッド: サーフルアーモデル・フラットフィッシュモデル
-- リール: スピニング3000番（common）
-- ライン: メインPE0.8~1号・リーダー10~18lb（3号以上）
-- ルアー:
-    - ジグヘッド＋ワーム（ピンテールワーム）
-
-ボトムワインドはピンテールワームを使って、ボトム付近で大きく上下にしゃくり上げる（ワインド）方法。タチウオメソッドで有名。キビレとシーバスも同じく釣れる。
-
-### ヒラメとマゴチにおすすめのルアー
-- **メタルバイブ：** ジャクソン 鉄板ブレード 20g
-https://www.amazon.co.jp/dp/B078GQM9LD?tag=sasisi344-22
-- **ローリングルアー：** タックルハウス ローリングベイト 77
-https://www.amazon.co.jp/dp/B0D92PWFCP?tag=sasisi344-22
-- **シンキングミノー：** シマノ エクスセンス サイレントアサシン 80S AR-C
-https://www.amazon.co.jp/dp/B08DLDT6N9?tag=sasisi344-22
-- **メタルジグ：** DUO ビーチウォーカー フリッパー Z24
-https://www.amazon.co.jp/dp/B08CD6G3K1?tag=sasisi344-22
-
-- major-craft-maki-jig-jet
-    https://www.amazon.co.jp/%E3%83%A1%E3%82%B8%E3%83%A3%E3%83%BC%E3%82%AF%E3%83%A9%E3%83%95%E3%83%88-%E3%83%A1%E3%82%BF%E3%83%AB%E3%82%B8%E3%82%B0-%E3%83%9E%E3%82%AD%E3%82%B8%E3%82%B0-%E3%83%96%E3%83%AB%E3%83%BC%E3%83%94%E3%83%B3%E3%82%AF%E3%82%A4%E3%83%AF%E3%82%B7-78/dp/B08HZ26HMZ?source=ps-sl-shoppingads-lpcontext&smid=AN1VRQENFRJN5&th=1&linkCode=ll2&tag=sasisi344-22&linkId=39b30b0f74354eaaf0e89d7aecd8df52&ref_=as_li_ss_tl
+> [!info]
+> ヒラメは「泳がせ釣り」、マゴチは「ボトムワインド」で狙うのが浜名湖の定番です。

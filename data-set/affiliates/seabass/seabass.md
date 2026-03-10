@@ -1,41 +1,26 @@
-#　シーバスのアフィリエイト商品
-シーバスはルアー釣りのほうが一般的かつ市場規模も大きくなった。手軽にできることが強みかつ大型を釣れやすい。エサ釣りは昔から確立されたメソッドが強み。
+# 浜名湖のシーバス釣りおすすめアイテム
 
-##　ルアー釣り総合
-- ロッド: 9ft前後のML
-    MLモデルならチニングも可能。96MLあたりなら外洋サーフルアーも出来る。
-    https://www.amazon.co.jp/%E3%82%B7%E3%83%9E%E3%83%8E-SHIMANO-%E3%82%B7%E3%83%BC%E3%83%90%E3%82%B9%E3%83%AD%E3%83%83%E3%83%89-%E3%82%A8%E3%83%B3%E3%82%AB%E3%82%A6%E3%83%B3%E3%82%BF%E3%83%BC-S96M/dp/B0CRYH5LGC?__mk_ja_JP=%E3%82%AB%E3%82%BF%E3%82%AB%E3%83%8A&crid=KI48KF41S2WS&dib=eyJ2IjoiMSJ9.qYnYR9M-vNGeU26KqFloP2-62GNfo0gfKFW54AU0k5XGMstNdbLRp-JL0cZvAyiCY7WIjhdgPrzW0aB3lsMWh-x_8bY4uUnAnTU0W9DGbH_-cEp-VAB-5TW_YFiTYAaRLpxmVVSuzB-o1lRpBsCTNXwEUqplTI5uQT2S1IkL_Ug9HjX7m8girLfxSMreT-kUva55mCiceUbXx9LMYbho8MTWdfZufm7ZvChjs4PKeJsUsLqUVoInzXQCYCRcvNAu4hG_GbaZnyYa6aexdq3HmIyrESNKz6E5Qmyl1kx64RU.HEyFvNw3V1jEhARsHKwjNpbz_fXq-kr8vfOWanxNPE4&dib_tag=se&keywords=%E3%82%B7%E3%83%BC%E3%83%90%E3%82%B9%E3%83%AD%E3%83%83%E3%83%89&qid=1772970878&s=sports&sprefix=%E3%82%B7%E3%83%BC%E3%83%90%E3%82%B9%E3%83%AD%E3%83%83%E3%83%89%2B%2Csporting%2C179&sr=1-9&ufe=app_do%3Aamzn1.fos.bf5b3200-08a5-4406-bf4b-e679e8ebbcc3&th=1&linkCode=ll2&tag=sasisi344-22&linkId=6c010313b4d032095c7753c00a5803ec&ref_=as_li_ss_tl
-- リール: 3000番スピニングリール。HGなどハイギア以上が使いやすい。
-- ルアー: Fミノー、Sミノー、シンキングペンシル、レンジバイブなどいろいろあるが、シーズンとパターンによる。冬から春にかけてはシンキングペンシル。春から夏はFミノー・レンジバイブ・トップウォーターなど早い動きも追加。秋はなんでもいいけど水温による。
-- ライン: メインPE0.8号、リーダー10~20lb。
+このファイルは `src/content/affiliates/seabass/` に登録されているシーバス用アイテムのインデックスです。
 
-### ウェーディングアイテム
-- ロッド: 8ft前後が望ましい
-    9ft以上でも使えるけど、8ft程度のほうが魚を取り込みやすい。チニングが8ft前後が操作性でもベストなので、チニングのベイトモデルを共用するのがベスト。
-    https://www.amazon.co.jp/%E3%83%80%E3%82%A4%E3%83%AF-DAIWA-SILVERWOLF-%E3%82%B7%E3%83%AB%E3%83%90%E3%83%BC%E3%82%A6%E3%83%AB%E3%83%95-76ML-S%EF%BD%A5W/dp/B0BSTP37BN?__mk_ja_JP=%E3%82%AB%E3%82%BF%E3%82%AB%E3%83%8A&crid=34CQXR4NV3CF9&dib=eyJ2IjoiMSJ9.bh8_QHVx64yv9amYgOEziCSxhVF4sJcnkSbb6rl4f8LibIvDkvFqD7Omg5RBB-chhef315s6JbVJL00MSmv8fMoLq4e4a4RHG4nAthIADS2EMumAUbrRPBz7iP4JGnnEgq_VEqDsCEuF7H6x7cHgyDA_zpVndZ4dCvNo5rZcXgU1FTJCBaW47M_j8ggEBWEkIz1GPKONzjBZROXm6inlbFM1gPrIem615nR-HNC0aW3ApEIVWWRoqfI1v7a8kwtyE6wJqTWLqi73cXLVaHxAaRJWLdpAyfqp1iA_u6-tF3A.JXr814MMZBPnfXf0bpLM8pjbn7OJz2CZTkLCzg5ShAo&dib_tag=se&keywords=%E3%83%81%E3%83%8B%E3%83%B3%E3%82%B0%2B%E3%83%99%E3%82%A4%E3%83%88%E3%83%AD%E3%83%83%E3%83%89&qid=1772971240&s=sports&sprefix=%E3%83%81%E3%83%8B%E3%83%B3%E3%82%B0%2B%E3%83%99%E3%82%A4%E3%83%88%E3%83%AD%E3%83%83%E3%83%89%2Csporting%2C210&sr=1-2&ufe=app_do%3Aamzn1.fos.d8e7ee72-073f-4b97-8ec0-59c18d6dfebe&th=1&linkCode=ll2&tag=sasisi344-22&linkId=ba08a4f8d68a5f81336b05957e803d67&ref_=as_li_ss_tl
-- ウェーダー: 夏と冬と分けたほうがいい。夏は蒸れを防ぐならGORTEX製だけど暑いもんは暑いから安くていい。冬はネオプレンかウェットスーツを選びつつ素材と身体をフィットさせて空間を作らないことがポイント。
-    - 夏用: https://www.amazon.co.jp/PYKES-PEAK-%E3%83%91%E3%82%A4%E3%82%AF%E3%82%B9%E3%83%94%E3%83%BC%E3%82%AF-%E3%83%A9%E3%82%B8%E3%82%A2%E3%83%AB%E3%82%BD%E3%83%BC%E3%83%AB-%E5%86%85%E5%81%B4%E3%81%8C%E3%83%99%E3%82%BF%E3%81%A4%E3%81%8B%E3%81%AA%E3%81%84/dp/B0D53WN3V9?__mk_ja_JP=%E3%82%AB%E3%82%BF%E3%82%AB%E3%83%8A&crid=36KE00SOGLG06&dib=eyJ2IjoiMSJ9.-pRBPCf1cpzQ7AP5E3ZbPnZaly6gq3ozNDtJb-H6oh7Vr2wZP3EQQEUCH9KLuEVmeQ1j2Qy6PLV0ze-_IuCp31PBk-ui6PoHVmt087CV2PahO4WwPULRTjyg-20GhAVpMjWUGjl3_9fB56ZjMP_W16nC9krxgfTeN5cmD30LBq44jlOyuQR-dLKbP_53ol4CeaK73eoIC5HnwKoI0B-TCWsT61RbKFEPfQTe7vnM0XDsh8Dcvg9ymbt8Ezr_DyTL6chLeUpzDvK-Y8i6R1F870ggZ0EhEI-GZvXdQyEgiu0.PzDgLqJn06AnkPdSjvB5T9XsaBstJw1GbGquDoAFVX8&dib_tag=se&keywords=%E3%82%A6%E3%82%A7%E3%83%BC%E3%83%80%E3%83%BC+%E5%A4%8F&qid=1772971300&s=sports&sprefix=%E3%82%A6%E3%82%A7%E3%83%BC%E3%83%80%E3%83%BC+%E5%A4%8F%E7%94%A8%2Csporting%2C208&sr=1-3&ufe=app_do%3Aamzn1.fos.bf5b3200-08a5-4406-bf4b-e679e8ebbcc3&linkCode=ll2&tag=sasisi344-22&linkId=5e3678fb668e100fba5ba813250fe391&ref_=as_li_ss_tl
-    - 冬用: https://www.amazon.co.jp/%E3%83%89%E3%83%AC%E3%82%B9-%E3%82%AF%E3%83%AD%E3%83%AD%E3%83%97%E3%83%AC%E3%83%B3-%E3%83%A9%E3%82%B8%E3%82%A2%E3%83%AB%E3%82%BD%E3%83%BC%E3%83%AB-%E3%82%A6%E3%82%A7%E3%83%BC%E3%83%87%E3%82%A3%E3%83%B3%E3%82%B0-%E3%83%95%E3%82%A3%E3%83%83%E3%82%B7%E3%83%B3%E3%82%B0/dp/B0CKBQJMCM?__mk_ja_JP=%E3%82%AB%E3%82%BF%E3%82%AB%E3%83%8A&crid=LMM9RIZDM2JB&dib=eyJ2IjoiMSJ9.j_oCllbtZG1XHpWlTzDgOG-5OjnybE2jzgl9elhrD2nhqWOoBLU-PbacXHnks-_LB4x5X8E6mFlJ19_zjWZ_6TOTE0mw7m6u_IGrhFMubJoitxe5AtGIdSMXae0UsiXOE3CsN52zomZrNW-Ls73aMkhUEDND5zzxm0zWPu1OJn-Bz1UHHTq2_hOVL6TOdDIZQ7_wLicifr7RZE2L7opcasgQ9-UCUXmRtka-xlBhl582FlGnMJR_s7o65QicJQX7koJKzPu2CcdJQrXkuytDL0679OvdYn9p_T6ff6a6ewQ.nWDH-jdDJWB_17NKe8TwErLLJ3K9wn5aXKKrccbhcig&dib_tag=se&keywords=%E3%82%A6%E3%82%A7%E3%83%BC%E3%83%80%E3%83%BC%2B%E5%86%AC&qid=1772971353&s=sports&sprefix=%E3%82%A6%E3%82%A7%E3%83%BC%E3%83%80%E3%83%BC%2B%E5%86%AC%2Csporting%2C180&sr=1-5&ufe=app_do%3Aamzn1.fos.bf5b3200-08a5-4406-bf4b-e679e8ebbcc3&th=1&linkCode=ll2&tag=sasisi344-22&linkId=39b47fbcba8791852fad76bdd4d5dd36&ref_=as_li_ss_tl
+## ルアー釣り・ウェーディング
 
-- エイガード: すね当てタイプ
-    https://www.amazon.co.jp/%E3%83%AA%E3%83%88%E3%83%AB%E3%83%97%E3%83%AC%E3%82%BC%E3%83%B3%E3%83%84-LITTLE-PRESENTS-%E3%82%AC%E3%83%BC%E3%83%89-OA-24/dp/B01FQI35D4?__mk_ja_JP=%E3%82%AB%E3%82%BF%E3%82%AB%E3%83%8A&crid=3CIX1FBTND1QM&dib=eyJ2IjoiMSJ9.UwgVAALs22l82EEANdJRLCSlYLouFVkMa9prNI3JXNRd4pWLiMoqQLjXRRrEh1my4gvmbXYJrPqdvVdrmIkLQ8903NPMEHmIhCCB0nkUx0HE9UfUUsc1z1x-LwbHDqa4PIxxTu8SJAP-XU9x_4-InB5xoxZTAq-heu11xB9V1beoipckGAdEWVs1wL0eepRs-WheKxcdRYczH9itdQLL-v--BommeDQCOic89hz01yS_anmhZK0tLrCY8W4tFWESCXt9uUEV5atZlWxwc9xIqZ4BOmpoTf857DZHxauU79o.Ck8OubWiOaJqBMcFRpdBJvxC7n8HvU0h_LfZtEeW104&dib_tag=se&keywords=%E3%82%A8%E3%82%A4%E3%82%AC%E3%83%BC%E3%83%89&qid=1772971513&s=sports&sprefix=%E3%82%A8%E3%82%A4%E3%82%AC%E3%83%BC%E3%83%89%2Csporting%2C175&sr=1-1&ufe=app_do%3Aamzn1.fos.d8e7ee72-073f-4b97-8ec0-59c18d6dfebe&linkCode=ll2&tag=sasisi344-22&linkId=435c7b353b37130b4163d91de519d757&ref_=as_li_ss_tl
-- ウェーディングスタッフ: 杖・ステッキ・ストックなどと色々呼び方がある。スマートなら折りたたみタイプ。エイ対策で音をたてながら進むためと深さとヘドロ確認で使う。
-    https://www.amazon.co.jp/%E3%83%AA%E3%83%88%E3%83%AB%E3%83%97%E3%83%AC%E3%82%BC%E3%83%B3%E3%83%84-Little-Presents-%E3%82%B0%E3%83%A9%E3%83%95%E3%82%A1%E3%82%A4%E3%83%88-AC-184/dp/B0FC67WDC6?__mk_ja_JP=%E3%82%AB%E3%82%BF%E3%82%AB%E3%83%8A&crid=2UEC8B5X2S9EV&dib=eyJ2IjoiMSJ9.kgBnZT385b9L-12Z8MJdAFb-9CGdijqvHc_3xOCbMAVEkgiY6JKRUsY_v6bFuNR2C3MfypPR7bj_BgW6UhcBdU8seUrWHmHWHs9KEarVsOZJzWITqVSo9xg8lDsGO5G0PdFwBMJVn7tea9TowgfWR_lFiuyoTC1LAWvnTZQEe7RZ583A0jZ0j_ppJmUpZDlaDVXwTdwvH20S--kv-UPI4kMLQfaLBVrq94YOxVnc8HCStqbwhu-Hpt2KTSJq4h-th0tmzMRMFObQzmKOxe_4HNjNLK7vhVZs1wWNogafd60.lCkfbWFevRSs4SjGFQtwefPJjaVYIWKYKTVzsGA3h6I&dib_tag=se&keywords=%E3%82%A6%E3%82%A7%E3%83%BC%E3%83%87%E3%82%A3%E3%83%B3%E3%82%B0%E3%82%B9%E3%83%88%E3%83%83%E3%82%AF&qid=1772971669&sprefix=%E3%82%A6%E3%82%A7%E3%83%BC%E3%83%87%E3%82%A3%E3%83%B3%E3%82%B0+%E3%82%B9%E3%83%88%E3%83%83%E3%82%AF%2Caps%2C229&sr=8-10&ufe=app_do%3Aamzn1.fos.bf5b3200-08a5-4406-bf4b-e679e8ebbcc3&linkCode=ll2&tag=sasisi344-22&linkId=c768c97a6cb127b949c9dc8088c5d930&ref_=as_li_ss_tl
-- ランディングネット: 
+| 商品名 | TackleCard ID | リンク |
+| :--- | :--- | :--- |
+| シマノ エンカウンター S96M | `seabass/shimano-encounter-s96m` | [Amazon](https://www.amazon.co.jp/dp/B0CRYH5LGC?tag=sasisi344-22) |
+| ダイワ シルバーウルフ 76ML-S・W | `seabass/daiwa-silverwolf-76ml-s-w` | [Amazon](https://www.amazon.co.jp/dp/BSTP37BN?tag=sasisi344-22) |
+| PYKES PEAK ウェーダー 夏用 | `seabass/pykes-peak-wader-summer` | [Amazon](https://www.amazon.co.jp/dp/B0D53WN3V9?tag=sasisi344-22) |
+| DRESS クロロプレンウェーダー 冬用 | `seabass/dress-chloroprene-wader-winter` | [Amazon](https://www.amazon.co.jp/dp/B0CKBQJMCM?tag=sasisi344-22) |
+| リトルプレゼンツ エイガード | `seabass/little-presents-ray-guard-oa-24` | [Amazon](https://www.amazon.co.jp/dp/B01FQI35D4?tag=sasisi344-22) |
+| リトルプレゼンツ ウェーディングスタッフ | `seabass/little-presents-wading-staff-ac-184` | [Amazon](https://www.amazon.co.jp/dp/B0FC67WDC6?tag=sasisi344-22) |
+| シマノ サイレントアサシン 99F | `seabass/shimano-exsence-silent-assassin-99f` | [Amazon](https://www.amazon.co.jp/dp/B082DYP2F4?tag=sasisi344-22) |
 
+## エサ釣り（電気ウキ）
 
-##　エサ釣り総合
-- ロッド:投げ竿4ｍ前後、オモリ負荷10〜20号（キス投げ釣りと共用）
-    https://www.amazon.co.jp/%E3%83%80%E3%82%A4%E3%83%AF-Daiwa-%E3%82%B9%E3%83%94%E3%83%8B%E3%83%B3%E3%82%B0-%E3%83%AA%E3%83%90%E3%83%86%E3%82%A3%E3%82%AF%E3%83%A9%E3%83%96-T15-300%E3%83%BBK/dp/B00T4950YE?__mk_ja_JP=%E3%82%AB%E3%82%BF%E3%82%AB%E3%83%8A&crid=2CPCC1EXAFPB5&dib=eyJ2IjoiMSJ9.X2ngppdYDCthXxPLAptuxV6gZhGZPNKHUveO-wMVGb9W2h94fIty_CFVtcnKQ8bJdWbSqws43ivlGjoXHv7kx-QMwiLn12cGzS8gR3V5mayQZsGkuvzqRLL7olTt9OC_WoDSEqNSNd-fce_dWVEpWzsLnMh2ufwS7CQR0KvsLTUKEkc4tGjmzfPH7g-5_GHuYlSJ99wZmy0wMUBRM7YgR8YfHxim1Ampd2Geruvw8-eT_g2Ly3grwwuDCfn58FnyM0BSe0LKkAqh9hmmO6zOo0c3jb0cdUvolB70WVCc4Bs.RsvL_VpD-6Rx7GbiL-qNP9vcj77x3Xkfy3mSSBRP2Wk&dib_tag=se&keywords=%E6%8A%95%E3%81%92%E7%AB%BF%2B3M&qid=1772970425&s=sports&sprefix=%E6%8A%95%E3%81%92%E7%AB%BF%2B3m%2Csporting%2C198&sr=1-9&ufe=app_do%3Aamzn1.fos.bf5b3200-08a5-4406-bf4b-e679e8ebbcc3&th=1&linkCode=ll2&tag=sasisi344-22&linkId=d04d57cc7e4f4af87b21e394c693984a&ref_=as_li_ss_tl
-- リール:3000番のスピニング（ルアーと同じでいい）
-- ライン:メインPE0,8号、ハリスはフロロカーボン3~5号。
-- 針:丸セイゴ14~16号前後（狙うサイズにもよる）
-    シーバスは口が大きいので針の大きさはあまり関係ない。40cm以上なら14号以上。
-- 電気ウキ:高輝度で3~5号対応自立浮き。太刀魚用がちょうどいい。
-    https://www.amazon.co.jp/%E5%86%A8%E5%A3%AB%E7%81%AF%E5%99%A8-FF-N30LG-%E6%B6%99%E5%9E%8B%E8%87%AA%E7%AB%8B%E9%9B%BB%E6%B0%97%E3%82%A6%E3%82%AD-3%E5%8F%B7-%E7%B7%91/dp/B00F1OOAWO?__mk_ja_JP=%E3%82%AB%E3%82%BF%E3%82%AB%E3%83%8A&crid=16H7HRLOGQB23&dib=eyJ2IjoiMSJ9.3-5yRRIxsCNj-R2dJKDaj1X9FpzIHfuSKPyVKS5alFdIjrvZne2PaBxo1T_XIKRIIIaWpcO1-TP0can3_EmLcn1pEci-sOktMSdB7DkBQ8JKYY_-NFqlnXMo4gKjclReBVEeKHjmYktReg4Bbq9ynRhFHptRBd_pS0lmrJIKBH1blhzIvn6BvHC369BGTixllZGSZaM-d7sD1BN8iRF0uSscTxt-S-sYrvrjfAC0SYhVg2tISHZrT5EuSaqx4Ua9-ek2QCyWDwXZ2fY9vNaaX42u_-WCA9JNtK2-LFRcEw8.nTtTeFfFRkykAnslred-qhCeY0EHZb97vSdnL9ZB-9M&dib_tag=se&keywords=%E3%82%BF%E3%83%81%E3%82%A6%E3%82%AA%2B%E9%9B%BB%E6%B0%97%E3%82%A6%E3%82%AD%2B%E8%87%AA%E7%AB%8B%E5%9E%8B&qid=1772970820&s=sports&sprefix=%E3%82%BF%E3%83%81%E3%82%A6%E3%82%AA%2B%E9%9B%BB%E6%B0%97%E3%82%A6%E3%82%AD%2B%E8%87%AA%E7%AB%8B%E5%9E%8B%2Csporting%2C202&sr=1-1&ufe=app_do%3Aamzn1.fos.bf5b3200-08a5-4406-bf4b-e679e8ebbcc3&th=1&linkCode=ll2&tag=sasisi344-22&linkId=1423eb6da5994aec87f76664e4e82158&ref_=as_li_ss_tl
+| 商品名 | TackleCard ID | リンク |
+| :--- | :--- | :--- |
+| ダイワ リバティークラブ T15-300・K | `seabass/daiwa-liberty-club-t15-300-k` | [Amazon](https://www.amazon.co.jp/dp/B00T4950YE?tag=sasisi344-22) |
+| 富士灯器 FF-N30LG 自立電気ウキ | `seabass/fuji-tokki-ff-n30lg-float` | [Amazon](https://www.amazon.co.jp/dp/B00F1OOAWO?tag=sasisi344-22) |
+| オーナー 丸セイゴ 針 | `seabass/owner-maru-seigo-hook` | [Amazon](https://www.amazon.co.jp/dp/B00DK6BHWDP?tag=sasisi344-22) |
 
-ウキ下は1~1.5mくらいからはじめて、ポイントの水深と状況によって変える。例えば水深2ｍくらいならウキ下1mで、反応がなければ変える。ウキは自立型かつ飛ばしタイプのほうが飛距離と安定性が高いし、ウキ下の仕掛けをフリーに落とせるので食いもいい。
-このタックルはキビレの電気ウキ釣りでも流用可能。
-
-- shimano-exsence-silent-assassin-99f
-    https://www.amazon.co.jp/%E3%82%B7%E3%83%9E%E3%83%8E-SHIMANO-%E3%82%B5%E3%82%A4%E3%83%AC%E3%83%B3%E3%83%88%E3%82%A2%E3%82%B5%E3%82%B7%E3%83%B3-XM-199N-%E3%82%AD%E3%83%A7%E3%82%A6%E3%83%AA%E3%83%B3SB/dp/B082DYP2F4?crid=3W2KD16RY9VX3&dib=eyJ2IjoiMSJ9.X02kgB1olTUMMrH2VemZ1VFMAXEF5cskW3M1srDrqM2gImHo8qJtLEVwpCIJbe6ry9ERQbd8NuJLAIxbXDStNhH8ceC3eJRGNyRWQVYhsqhC9G1ZFGVYCL4P26rzbB5BKducOSXB53iiAswYPcu2H_qEPt2TCKBhxr8bjwR7rE7EGwRZQcex0uyS9hnHHQbF1UaEHD0m_SoyUoJVn-XatjYqZywbmfNCSKXfYUudFdd_DVmSHf3HCOUVOCpsWu6NGZUtzEAa5TnezA9nhAHeGQ1r8IL7WWLzQMO9zvh08ZU.c7hcn3rnw58KtUPpNnAsmdcLIkj1Gtz7jPf1xM90gKk&dib_tag=se&keywords=%E3%82%B5%E3%82%A4%E3%83%AC%E3%83%B3%E3%83%88%E3%82%A2%E3%82%B5%E3%82%B7%E3%83%B3%2B99f&qid=1773129177&sprefix=%E3%82%B5%E3%82%A4%E3%83%AC%E3%83%B3%E3%83%88%E3%82%A2%E3%82%B5%E3%82%B7%E3%83%B3%2Caps%2C194&sr=8-2&ufe=app_do%3Aamzn1.fos.d8e7ee72-073f-4b97-8ec0-59c18d6dfebe&th=1&linkCode=ll2&tag=sasisi344-22&linkId=1d0e0ae606245ecdd5197d475ebbee5f&ref_=as_li_ss_tl
+> [!tip]
+> 浜名湖のシーバスはルアーとエサ釣りの両方が楽しめます。特にウェーディングは浜名湖の醍醐味ですが、エイ対策（エイガードやスタッフ）は必須です。

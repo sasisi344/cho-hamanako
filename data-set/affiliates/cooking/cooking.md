@@ -1,55 +1,24 @@
-# 料理道具の商品
+# 料理道具のアフィリエイト商品一覧
 
-# 魚料理の道具のおすすめリスト
+このファイルは `src/content/affiliates/cooking/` に登録されている商品のインデックスです。
+詳細は各YAMLファイルおよび、サイト上の `<TackleCard id="cooking/..." />` で確認できます。
 
-釣り上げた魚を最高に美味しく食べるための、実用的な料理道具をピックアップしました。
+| 商品名 | TackleCard ID | リンク |
+| :--- | :--- | :--- |
+| 下村工業 ヴェルダン 出刃庖丁 150mm | `cooking/shimomura-verdun-deba-150` | [Amazon](https://www.amazon.co.jp/dp/B000BWSQ6W?tag=sasisi344-22) |
+| 関孫六 銀寿 本鋼 刺身包丁 210mm | `cooking/sekimagoroku-ginju-sashimi-210` | [Amazon](https://www.amazon.co.jp/dp/B00YLZHL8Y?tag=sasisi344-22) |
+| 下村工業 ヴェルダン キッチンバサミ | `cooking/shimomura-verdun-scissors` | [Amazon](https://www.amazon.co.jp/dp/B003AM7NP0?tag=sasisi344-22) |
+| 和大助 真鍮製 ウロコ取り | `cooking/wadaisuke-brass-scaler` | [Amazon](https://www.amazon.co.jp/dp/B0IQZYD6S?tag=sasisi344-22) |
+| 早川工業 ササラ（血合い取り） | `cooking/hayakawa-sasara` | [Amazon](https://www.amazon.co.jp/dp/B005H2FNXA?tag=sasisi344-22) |
+| 貝印 骨抜き（DH7134） | `cooking/kai-fish-bone-tweezers` | [Amazon](https://www.amazon.co.jp/dp/B003Y3B0K8?tag=sasisi344-22) |
+| パール金属 真鍮 骨抜き | `cooking/pearlmetal-bone-tweezers` | [Amazon](https://www.amazon.co.jp/dp/B06XDKTF65?tag=sasisi344-22) |
+| ピチット レギュラー（脱水シート） | `cooking/okamoto-pichit-regular` | [Amazon](https://www.amazon.co.jp/dp/B003VQQP7C?tag=sasisi344-22) |
+| ピチット レギュラー 32枚入 | `cooking/okamoto-pichit-regular-32` | [Amazon](https://www.amazon.co.jp/dp/B003VQQP7C?tag=sasisi344-22) |
+| グリーンパーチ 紙 | `cooking/green-perch` | [Amazon](https://www.amazon.co.jp/dp/B0DN5Q6GLQ?tag=sasisi344-22) |
+| ルミカ 神経締めセット | `cooking/lumica-ikijime-set` | [Amazon](https://www.amazon.co.jp/dp/B009GBY2QC?tag=sasisi344-22) |
+| Latuna 抗菌まな板 | `cooking/latuna-cutting-board` | [Amazon](https://www.amazon.co.jp/dp/B0CNXCGKQ6?tag=sasisi344-22) |
+| シャプトン 刃の黒幕 #1000（砥石） | `cooking/shapton-ha-no-kuromaku-1000` | [Amazon](https://www.amazon.co.jp/dp/B0016VC47E?tag=sasisi344-22) |
+| IROKCAKPT 砥石 セット | `cooking/irokcakpt-whetstone` | [Amazon](https://www.amazon.co.jp/dp/B0B7JP85XH?tag=sasisi344-22) |
+| 登録済みですが未分類の包丁 | `cooking/sekimagoroku-hekiju-sashimi-210` | [Amazon](https://www.amazon.co.jp/dp/B000W4D8S4?tag=sasisi344-22) |
+| 真鍮 ウロコ取り（信田） | `cooking/shinden-brass-scaler` | [Amazon](https://www.amazon.co.jp/dp/B001TV679O?tag=sasisi344-22) |
 
-## 1. さばくための必須アイテム
-*   **出刃包丁（下村工業 ヴェルダン 150mm）**: オールステンレスで手入れが楽。最初の1本に最適。肉と魚に使えるので万能。
-<TackleCard id="cooking/shimomura-verdun-deba-150" />
-*   **刺身包丁（関孫六 銀寿 本鋼 210mm）**: 切れ味鋭く、刺身が美しく仕上がります。切れる包丁でやると全然違います。
-<TackleCard id="cooking/sekimagoroku-ginju-sashimi-210" />
-*   **キッチンバサミ（下村工業 ヴェルダン）**: ヒレ落としや内臓処理の補助に。ステンレスが多いほうが雑菌対策もしやすい。
-<TackleCard id="cooking/shimomura-verdun-scissors" />
-
-## 2. 下処理を劇的に楽にするツール
-*   **真鍮製 ウロコ取り**: マダイなどの硬いウロコも飛び散らずに綺麗に取れます。
-<TackleCard id="cooking/wadaisuke-brass-scaler" />
-*   **ササラ（血合い取り）**: 中骨の血合いをきれいに掻き出すための必須アイテム。使い古した歯ブラシでもアリ。
-<TackleCard id="cooking/hayakawa-sasara" />
-*   **骨抜き（貝印）**: 抜く時のトルクが逃げない、しっかりした造りのもの。
-<TackleCard id="cooking/pearlmetal-bone-tweezers" />
-
-## 3. 鮮度・美味しさを保つ保存・熟成
-*   **ピチットシート（脱水シート）**: 旨味を凝縮させ、生臭さを防ぐ魔法의 シート。昆布締めなど身を寝かせる時に最適。
-<TackleCard id="cooking/okamoto-pichit-regular" />
-*   **グリーンパーチ（ラップ/紙）**: 魚の乾燥を防ぎ、熟成させるためにプロ御用達の保存紙。鮮魚店で刺し身を包んでいるあの紙。
-<TackleCard id="cooking/green-perch" />
-*   **神経締めセット**: 鮮度を究極まで保つための必須道具。
-<TackleCard id="cooking/lumica-ikijime-set" />
-
-## 4. その他・便利アイテム
-*   **抗菌まな板（大型・滑り止め付き）**: 大きな魚も安定して捌けるサイズ。
-<TackleCard id="cooking/latuna-cutting-board" />
-*   **砥石（シャプトン セラミック砥石 刃の黒幕 #1000）**: 切れ味を保つために。良い包丁を長く使うためにも必要。
-<TackleCard id="cooking/irokcakpt-whetstone" />
-
-<TackleCard id="cooking/okamoto-pichit-regular-32" />
-
----
-上記の商品から、アフィリエイト用のYAMLデータを作成しました。
-
-## 作成済みID一覧
-記事内で `<TackleCard id="cooking/..." />` として使用できます。
-
-*   `cooking/shimomura-verdun-deba-150` (出刃包丁)
-*   `cooking/sekimagoroku-ginju-sashimi-210` (刺身包丁)
-*   `cooking/shimomura-verdun-scissors` (キッチンバサミ)
-*   `cooking/wadaisuke-brass-scaler` (真鍮ウロコ取り)
-*   `cooking/hayakawa-sasara` (ササラ)
-*   `cooking/pearlmetal-bone-tweezers` (骨抜き)
-*   `cooking/okamoto-pichit-regular-32` (ピチットシート)
-*   `cooking/green-perch` (グリーンパーチ)
-*   `cooking/lumica-ikijime-set` (神経締めセット)
-*   `cooking/latuna-cutting-board` (抗菌まな板)
-*   `cooking/irokcakpt-whetstone` (砥石)

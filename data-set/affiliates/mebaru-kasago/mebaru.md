@@ -1,52 +1,20 @@
-# メバルとカサゴのアフィリエイト商品
-ロックフィッシュとして総合的に考えることができる。しかし、釣れるレンジが違うので目的に応じたタックルにする必要はある。
+# 浜名湖のメバル・カサゴ（ロックフィッシュ）おすすめアイテム
 
-## メバリングタックル（メバル専用で考える）
-アジングの流用でいい（＞アジング参照）。
+このファイルは `src/content/affiliates/mebaru-kasago/` に登録されているロックフィッシュ用アイテムのインデックスです。
 
-### メバルのフライフィッシング
-すでにやっている人を前提とするなら、#4~5程度のロッドセットが望ましい。ラインシステムはテーパー使わずフローティングラインにリーダーを2~3m接続でいいくらい。夜にやる釣りのため、キャスティング性能と視認性を優先するべき。
-- メインライン: 
-    https://www.amazon.co.jp/Maxcatch-%E7%89%B9%E5%88%A5%E3%83%87%E3%82%B6%E3%82%A4%E3%83%B3-%E3%83%95%E3%83%A9%E3%82%A4%E3%83%95%E3%82%A3%E3%83%83%E3%82%B7%E3%83%B3%E3%82%B0%E3%83%A9%E3%82%A4%E3%83%B3%E3%80%81%E3%83%95%E3%83%AD%E3%83%BC%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0%E3%82%B7%E3%83%AA%E3%83%BC%E3%82%BA-%E3%83%95%E3%83%A9%E3%82%A4%E3%83%A9%E3%82%A4%E3%83%B3-%E3%82%B7%E3%83%B3%E3%82%B0%E3%83%AB%E3%83%8F%E3%83%B3%E3%83%89spey/dp/B0796QR6RT?source=ps-sl-shoppingads-lpcontext&th=1&psc=1&linkCode=ll2&tag=sasisi344-22&linkId=46d14b15d3bb69a964aac9f9ea2a3dc6&ref_=as_li_ss_tl
-- フライ: 沈むことが前提のウェットなりサスペンド
-    毛鉤は浮きやすいので、ラバーとかワームを使いつつウェイトを巻いて沈ませる感じ。アジング用の小型ピンテールワームとか、シラスを模した小型ラバーとか、カマス用毛鉤などがある。
-    https://www.amazon.co.jp/%E3%83%86%E3%82%A3%E3%83%A0%E3%82%B3-TIEMCO-%E3%82%B9%E3%83%BC%E3%83%91%E3%83%BC%E3%83%AA%E3%83%93%E3%83%B3%E3%82%B0%E3%83%95%E3%82%A3%E3%83%83%E3%82%B7%E3%83%A5-%E3%83%91%E3%83%BC%E3%83%AB%E3%83%AF%E3%82%AB%E3%82%B5%E3%82%AE-300110903002/dp/B017SV28GW?__mk_ja_JP=%E3%82%AB%E3%82%BF%E3%82%AB%E3%83%8A&crid=JZI70JHUPBGS&dib=eyJ2IjoiMSJ9.yiTr8NiI4T4V38Pfu26J9uP2CuF-1r3wJV_2RQdoJGSiVjeFtMK02DHYHb7fvZ2asHz29SSfKA17vwsjQCn_6f0-LO6OlXRCO9PdGuvCHiNCltnlZ7rkTi6gV3eMA3apZLu_MRNyTzbdIofDqIFaCQnbWYatFvkhLPqhvW7C4pM9CN_xxg7k6zya1m41-jNAa0grQojaXP0i-CRRa_Ksfizh9IwH4tz7Qkr_dzqX_myNf-qQFg7eAgiHPvyMHxYKz4SSMZlYSYdA9grZVMvG5oB9zgCorIumWc5Oisv1ZPM.DOrMktCMNdYo2QKLi0gPprog0WMY_-7R-CcpxElK3SQ&dib_tag=se&keywords=%E3%82%BD%E3%83%AB%E3%83%88%E3%83%95%E3%83%A9%E3%82%A4+%E3%82%B5%E3%82%B9%E3%83%9A%E3%83%B3%E3%83%89&qid=1772965384&sprefix=%E3%82%BD%E3%83%AB%E3%83%88%E3%83%95%E3%83%A9%E3%82%A4+%E3%82%B5%E3%82%B9%E3%83%9A%E3%83%B3%E3%83%89%2Caps%2C184&sr=8-45&ufe=app_do%3Aamzn1.fos.bf5b3200-08a5-4406-bf4b-e679e8ebbcc3&linkCode=ll2&tag=sasisi344-22&linkId=30ee0855951995dda00b7099d8ad66e2&ref_=as_li_ss_tl
+| 商品名 | TackleCard ID | リンク |
+| :--- | :--- | :--- |
+| ダイワ 23月下美人 LT2000S-P | `mebaru-kasago/23-gekkabijin-lt2000s-p` | [Amazon](https://www.amazon.co.jp/dp/B0CCN5L6F6?tag=sasisi344-22) |
+| Goture フライロッドセット | `mebaru-kasago/goture-fly-rod-set` | [Amazon](https://www.amazon.co.jp/dp/B0FHWKYF7C?tag=sasisi344-22) |
+| Maxcatch フライライン | `mebaru-kasago/maxcatch-fly-line` | [Amazon](https://www.amazon.co.jp/dp/B0796QR6RT?tag=sasisi344-22) |
+| ティムコ スーパーリビングフィッシュ | `mebaru-kasago/tiemco-super-living-fish` | [Amazon](https://www.amazon.co.jp/dp/B017SV28GW?tag=sasisi344-22) |
+| ダイワ HARDROCK 86MHB | `mebaru-kasago/daiwa-hardrock-k` | [Amazon](https://www.amazon.co.jp/dp/B0CSYDPGL1?tag=sasisi344-22) |
+| ダイワ 24タトゥーラ 100XHL | `mebaru-kasago/daiwa-tatula-100-xhl` | [Amazon](https://www.amazon.co.jp/dp/B0CKHMMYYM?tag=sasisi344-22) |
+| ダイワ PR100HL | `mebaru-kasago/daiwa-pr100-hl` | [Amazon](https://www.amazon.co.jp/dp/B0BSTN7RXR?tag=sasisi344-22) |
+| OGK 船カワハギ 175 | `mebaru-kasago/ogk-fune-kawahagi` | [Amazon](https://www.amazon.co.jp/dp/B08C4SJX91?tag=sasisi344-22) |
+| ダイワ PR100H | `mebaru-kasago/daiwa-pr100-h` | [Amazon](https://www.amazon.co.jp/dp/B0BSTMC8RN?tag=sasisi344-22) |
+| 山豊テグス フロロバリュー | `mebaru-kasago/yamatoyo-flouro-value` | [Amazon](https://www.amazon.co.jp/dp/B0DBVBVJG5?tag=sasisi344-22) |
+| オーナー アイナメブラクリ | `mebaru-kasago/owner-ainame-brakuri` | [Amazon](https://www.amazon.co.jp/dp/B002NPFCOE?tag=sasisi344-22) |
 
-- ロッドセット（フライフィッシングセット）
-初心者はまずキャスティング練習から始める。ロッドは#5なら、管理釣り場の大型ニジマスまで汎用的になんでも使える。フライタックルは小物とライン同士を結ぶノットが重要。
-    https://www.amazon.co.jp/Goture-GOTURE-%E3%83%95%E3%83%A9%E3%82%A4%E3%83%AD%E3%83%83%E3%83%89-6-%E3%82%AB%E3%83%BC%E3%83%9C%E3%83%B3%E3%83%AD%E3%83%83%E3%83%89%E3%80%90%E9%87%A3%E3%82%8A%E7%94%A8%E3%83%90%E3%83%83%E3%82%B0%E4%BB%98%E3%81%8D%E3%80%91%E3%83%95%E3%83%A9%E3%82%A4%E3%83%95%E3%82%A3%E3%83%83%E3%82%B7%E3%83%B3%E3%82%B0%E3%81%AE%E3%82%B9%E3%82%BF%E3%83%BC%E3%82%BF%E3%83%BC%E3%82%AD%E3%83%83%E3%83%88/dp/B0FHWKYF7C?__mk_ja_JP=%E3%82%AB%E3%82%BF%E3%82%AB%E3%83%8A&content-id=amzn1.sym.55817948-ae07-4a88-8153-6be6bc9e3814%3Aamzn1.sym.55817948-ae07-4a88-8153-6be6bc9e3814&crid=1J08QV2V1ULH1&cv_ct_cx=%E3%83%95%E3%83%A9%E3%82%A4%E3%83%AD%E3%83%83%E3%83%89&keywords=%E3%83%95%E3%83%A9%E3%82%A4%E3%83%AD%E3%83%83%E3%83%89&pd_rd_i=B0FHWKYF7C&pd_rd_r=8ea41a6d-a566-4ccf-9664-44d52e6de44b&pd_rd_w=tkTIt&pd_rd_wg=LpTd1&pf_rd_p=55817948-ae07-4a88-8153-6be6bc9e3814&pf_rd_r=V2B5EPVWQETEVVS8HMJT&qid=1772964837&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sprefix=%E3%83%95%E3%83%A9%E3%82%A4%E3%83%AD%E3%83%83%E3%83%89%2B%2Caps%2C233&sr=1-1-9ad0563b-de06-426f-a1d3-3a92323660bd-spons&ufe=app_do%3Aamzn1.fos.bf5b3200-08a5-4406-bf4b-e679e8ebbcc3&sp_csd=d2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM&th=1&psc=1&linkCode=ll2&tag=sasisi344-22&linkId=83b86a4c43589f4d8cfc4f4db0d34634&ref_=as_li_ss_tl
-
-## ロックフィッシュタックル（メバル・カサゴ両用）
-- ロッド: ベイトモデル7ft前後
-https://www.amazon.co.jp/%E3%83%80%E3%82%A4%E3%83%AF-DAIWA-%E3%83%AD%E3%83%83%E3%82%AF%E3%83%95%E3%82%A3%E3%83%83%E3%82%B7%E3%83%A5%E3%83%AD%E3%83%83%E3%83%89-HARDROCK-86MHB%EF%BD%A5K/dp/B0CSYDPGL1?__mk_ja_JP=%E3%82%AB%E3%82%BF%E3%82%AB%E3%83%8A&crid=3C0UAOH44S3XF&dib=eyJ2IjoiMSJ9.HqWf46974MeAYvUOXbFRPvEZDcDTmBVWuFWPh0gL0cqzsLITVjaEO-fR72QEOyM_1DPrzz5K0hsQpgZl2pqhc1m5o7kJCEJgyQ5j983pWEA4gJL5djMLXs1Zoydsq25BNQcYlzG1ihK4_qhRIgjWdHa1xLZqX4GVV-IoNzAEzaLSw71jODFMVquxfVhCwqANF2tntmLt8xeL524rpNnOPI_Wiw1Qf94uxZdLqWglMvZU7MGzpEjZLgQtYyf7MEaSZ3f9kfWJucXsYWVtZQbfnMI456y56l3L36wZiHJ1Hws.9cKbOJXLbUpXw-lwxpLFdlU7P58iHn6JONlbLDtXFZY&dib_tag=se&keywords=%E3%83%AD%E3%83%83%E3%82%AF%E3%83%95%E3%82%A3%E3%83%83%E3%82%B7%E3%83%A5%2B%E3%82%BF%E3%83%83%E3%82%AF%E3%83%AB&qid=1772964298&s=sports&sprefix=%E3%83%AD%E3%83%83%E3%82%AF%E3%83%95%E3%82%A3%E3%83%83%E3%82%B7%E3%83%A5%2B%E3%82%BF%E3%83%83%E3%82%AF%E3%83%AB%2Csporting%2C194&sr=1-4&ufe=app_do%3Aamzn1.fos.d8e7ee72-073f-4b97-8ec0-59c18d6dfebe&th=1&linkCode=ll2&tag=sasisi344-22&linkId=75169412ae912e5e6483c0fcfac01d63&ref_=as_li_ss_tl
-- リール: ベイトリール（ノーマルギア）
-キャストする目的じゃないので安くてもいい。シーバス・チヌなどで使うなら、16,000円前後のキャスト向けモデルがいい。
-    - 安めのベイトリール: 
-    https://www.amazon.co.jp/%E3%83%80%E3%82%A4%E3%83%AF-DAIWA-00630245-%E3%83%90%E3%82%B9%E3%83%99%E3%82%A4%E3%83%88%E3%83%AA%E3%83%BC%E3%83%AB-PR100HL/dp/B0BSTN7RXR?__mk_ja_JP=%E3%82%AB%E3%82%BF%E3%82%AB%E3%83%8A&crid=46ONOKANO938&dib=eyJ2IjoiMSJ9.Uz6M7SJ0bhAbjHxh1SXun4JOVI5oo2mKtAWTaevcqeaIbg8rRDAvelpz3Ix-TZDoqIXncMiyF1k-f6L6gEbQ2WdxyXFEzDLgr1bY21J5LKUQC7zbIKEV30NoX974xPI_yGYYlwbd2mqvQ-TfHgTg5frSmeUoQSzNpTwd2Ybz0L8cRjgH4ShXw_DDQvoTz89SRH0R4iIliQ75Wx3PcaWItpFLkN4YZB3kNwwQtg0N2-b2of7jLG4DM-4ltsaBs41X5_T7nBEhCmVTtU7piI_0tJfOUbMncXs4Qt6BHeL7_dY.dOou_QtyLAKwogWu2sPOQX_fLkpjA470NTBi9OrbYoU&dib_tag=se&keywords=%E3%83%AD%E3%83%83%E3%82%AF%2B%E3%83%99%E3%82%A4%E3%83%88%E3%83%AA%E3%83%BC%E3%83%AB&qid=1772964546&s=sports&sprefix=%E3%83%AD%E3%83%83%E3%82%AF%2B%E3%83%99%E3%82%A4%E3%83%88%E3%83%AA%E3%83%BC%E3%83%AB%2Csporting%2C196&sr=1-9&ufe=app_do%3Aamzn1.fos.d8e7ee72-073f-4b97-8ec0-59c18d6dfebe&th=1&linkCode=ll2&tag=sasisi344-22&linkId=0bbe69b86087177975eb8019d8ab7486&ref_=as_li_ss_tl
-    - シーバスにも使う目的なら: 
-    https://www.amazon.co.jp/%E3%83%80%E3%82%A4%E3%83%AF-DAIWA-%E3%83%99%E3%82%A4%E3%83%88%E3%83%AA%E3%83%BC%E3%83%AB-24TATULA-100XHL/dp/B0CKHMMYYM?__mk_ja_JP=%E3%82%AB%E3%82%BF%E3%82%AB%E3%83%8A&crid=46ONOKANO938&dib=eyJ2IjoiMSJ9.Uz6M7SJ0bhAbjHxh1SXun4JOVI5oo2mKtAWTaevcqeaIbg8rRDAvelpz3Ix-TZDoqIXncMiyF1k-f6L6gEbQ2WdxyXFEzDLgr1bY21J5LKUQC7zbIKEV30NoX974xPI_yGYYlwbd2mqvQ-TfHgTg5frSmeUoQSzNpTwd2Ybz0L8cRjgH4ShXw_DDQvoTz89SRH0R4iIliQ75Wx3PcaWItpFLkN4YZB3kNwwQtg0N2-b2of7jLG4DM-4ltsaBs41X5_T7nBEhCmVTtU7piI_0tJfOUbMncXs4Qt6BHeL7_dY.dOou_QtyLAKwogWu2sPOQX_fLkpjA470NTBi9OrbYoU&dib_tag=se&keywords=%E3%83%AD%E3%83%83%E3%82%AF%2B%E3%83%99%E3%82%A4%E3%83%88%E3%83%AA%E3%83%BC%E3%83%AB&qid=1772964546&s=sports&sprefix=%E3%83%AD%E3%83%83%E3%82%AF%2B%E3%83%99%E3%82%A4%E3%83%88%E3%83%AA%E3%83%BC%E3%83%AB%2Csporting%2C196&sr=1-1&ufe=app_do%3Aamzn1.fos.bf5b3200-08a5-4406-bf4b-e679e8ebbcc3&th=1&linkCode=ll2&tag=sasisi344-22&linkId=eabe6c553a12194240448e87605fa568&ref_=as_li_ss_tl
-
-
-## メバルのエサ釣り
-活きモエビなどを使ったフカセ釣りならクロダイの前打ちタックルを流用でもいい。
-
-針:チンタメバル1〜2号
-ハリス:フロロ8~12lb（0.8号前後）面倒なら1号で十分。
-
-ほとんどクロダイ前打ち用で事足りる。
-
-## カサゴの穴釣り
-シンプル・イズ・ベスト。
-- ロッド: 1~2m程度のカワハギ船用竿がおすすめ。先調子で食い込みがよく胴が強く抜き上げれる。
-    https://www.amazon.co.jp/%E5%A4%A7%E9%98%AA%E6%BC%81%E5%85%B7-OGK-%E8%88%B9%E3%82%AB%E3%83%AF%E3%83%8F%E3%82%AE-%E3%83%95%E3%82%A3%E3%83%83%E3%82%B7%E3%83%B3%E3%82%B0%E3%83%AD%E3%83%83%E3%83%89-FUKW175/dp/B08C4SJX91?__mk_ja_JP=%E3%82%AB%E3%82%BF%E3%82%AB%E3%83%8A&crid=2Y34RPNH9GOZJ&dib=eyJ2IjoiMSJ9.IwmO47Dmgn5S0ybH0BrhzIXLaAHvA8ff4TDVLnQlK-47cXDwdK51hvjYJSXqc-bZqCgLbTEkAmNgNlv9tT7Z_i-Rz95dnLCoFL9NhZ20xyRNywq3cJXYgiA5Rrg6-Oa1zwMdqpV2FOoKRXtE1WnCdQUErO1x96cS8iLHL2SLj1vJZmGipVCmxx2V4-1YWyUmiCAEbxGM5rw2siT7h8v4MWUdYe-att-vKnwqDQ6cFP3dEyJd0rcjR2PlFGxumeHEcOPdYWdLf7OEnbit_2XtPcv9l49CQwEjXXf9uXc1_p4.zX1JVSMvsx-E8QqDDs6NQExtQJ7M46Q8DKZG8MSeuXg&dib_tag=se&keywords=%E3%82%AB%E3%83%AF%E3%83%8F%E3%82%AE+%E8%88%B9&qid=1772965802&sprefix=%E3%82%AB%E3%83%AF%E3%83%8F%E3%82%AE+%E8%88%B9%2Caps%2C285&sr=8-2&ufe=app_do%3Aamzn1.fos.bf5b3200-08a5-4406-bf4b-e679e8ebbcc3&linkCode=ll2&tag=sasisi344-22&linkId=9ddbd6118524ddcfd2d846194e3328da&ref_=as_li_ss_tl
-- リール: ベイトリール・両軸
-価格は抑えめいい。ギアはノーマルとハイどちらでも。
-    https://www.amazon.co.jp/%E3%83%80%E3%82%A4%E3%83%AF-DAIWA-00630244-%E3%83%90%E3%82%B9%E3%83%99%E3%82%A4%E3%83%88%E3%83%AA%E3%83%BC%E3%83%AB-PR100H/dp/B0BSTMC8RN?__mk_ja_JP=%E3%82%AB%E3%82%BF%E3%82%AB%E3%83%8A&crid=2WTCFAZDN01QB&dib=eyJ2IjoiMSJ9.f5sGSCwgcywCwSqsx9q6gw3RJKrfYSDd05CYvlNkolt4K8yhc0vf9_OvPgUxqIBrrBcBuCYsOy3LBegZGdrHIN5_ozhaljO2I68klGKXu6UDFrBKXznplro-XGYF1tE60klkCASaihngbzu38EjZtPYATFRtSTfjn-bRHwZaOrB3Ufl-cW_2ALxFzjUKJo_2x4ZwoOX03nmIKvrh-LuldLHw3P_dWrrgGJ_3qfwp0N0bJKMsnf5wj9WjgG57-nlgR8Q4hMrOXBn0lwjwnIguP5DKJ4kuOY6DTkyerHpbNv4.3QFrXwURxKc5NKfMkS6hAXrGoIqFWQa3ZbxO0MWGuCU&dib_tag=se&keywords=%E4%B8%A1%E8%BB%B8%E3%83%AA%E3%83%BC%E3%83%AB&qid=1772965932&sprefix=%E4%B8%A1%E8%BB%B8%E3%83%99%E3%82%A4%E3%83%88%E3%83%AA%E3%83%BC%E3%83%AB%2Caps%2C183&sr=8-5&ufe=app_do%3Aamzn1.fos.d8e7ee72-073f-4b97-8ec0-59c18d6dfebe&th=1&linkCode=ll2&tag=sasisi344-22&linkId=2046598de79215a0a92648ba2cf50973&ref_=as_li_ss_tl
-- ライン: 透明フロロ3~5号直巻
-穴釣りは繊細じゃないので、3号のナイロンかフロロをリールに巻いて、そのまま先端をブラクリに繋げるだけでOK。
-    https://www.amazon.co.jp/%E3%83%A4%E3%83%9E%E3%83%88%E3%83%A8%E3%83%86%E3%82%B0%E3%82%B9-Yamatoyo-%E3%83%95%E3%83%AD%E3%83%AD%E3%82%AB%E3%83%BC%E3%83%9C%E3%83%B3-VALUE-%E3%83%9C%E3%83%93%E3%83%B3%E5%B7%BB/dp/B0DBVBVJG5?__mk_ja_JP=%E3%82%AB%E3%82%BF%E3%82%AB%E3%83%8A&crid=BIIZ1PEIYSV6&dib=eyJ2IjoiMSJ9.T7SFZWDUs-FxBP1tyn9y0SSshE9gAhGxfLXfZc3pTPnAmQJ51ryC6_ItF03rBIvzWwd2q6McdV2miN_Agx7XC8urkS5WmRTsTo0kW7kFUlDJubvC8Q5oYfjmdUbi72ah-hhTQxBPEfC3jLEE1LtWMK66RDJm8InXRShHZkgeWSype2jY3zQHKcce4g8pn0pYPd3-VAf68YTw6G43uAg2TGqyqipjMe_2f0C5jdVSbKOeYi1JKUSoaWwf_OrG24MbeFVlgLlPWZalmjMKthkzxS616qD2S19nYQ4ZTLOY_bs.uCBJc-VC4CSzqel72XHRdK-yJQpYxvFvkBMY9reKk1U&dib_tag=se&keywords=%E9%80%8F%E6%98%8E+%E3%83%95%E3%83%AD%E3%83%AD%E3%82%AB%E3%83%BC%E3%83%9C%E3%83%B3+3%E5%8F%B7&qid=1772966036&sprefix=%E9%80%8F%E6%98%8E+%E3%83%95%E3%83%AD%E3%83%AD%E3%82%AB%E3%83%BC%E3%83%9C%E3%83%B3+3%E5%8F%B7%2Caps%2C186&sr=8-3&ufe=app_do%3Aamzn1.fos.bf5b3200-08a5-4406-bf4b-e679e8ebbcc3&linkCode=ll2&tag=sasisi344-22&linkId=43cc6d30f0f11882d92f8b8772cc1788&ref_=as_li_ss_tl
-- ブラクリ: 2号がコスパは良い。底取りなら3号以上あるとやりやすい。
-    https://www.amazon.co.jp/OWNER-%E3%82%AA%E3%83%BC%E3%83%8A%E3%83%BC-%E4%BB%95%E6%8E%9B%E3%81%91-%E3%81%82%E3%81%84%E3%81%AA%E3%82%81%E3%83%96%E3%83%A9%E3%82%AF%E3%83%AA-B-233/dp/B002NPFCOE?content-id=amzn1.sym.deee566c-316c-432f-9c34-05022b6f2788%3Aamzn1.sym.deee566c-316c-432f-9c34-05022b6f2788&dib=eyJ2IjoiMSJ9.enzRmsAny7lIor6Ut-26NJE3l1pXTQDMoszeGm1bRwSl1cjksTafZJvM-K_VFhEDBE3MA78d-YpxaawjmfSIHWwS08LXLpJvXZX2iQr76Bom48Cej5W15L7aH3LvViN4IMrEwet33V7r4YKX9O4ds-Y9FqKKu-K7JCqy4rDBj8iGAHvu_1PIxg-TAnDQQFGOzndCGfArfUNzExHh6KJ_56l-HFGb0vVWYt7XKRgdmn5XATFwxuZ7gtTYb0Ox7D8Tm_s-AURHaZ9u6Wvope6IrM-WtvM2DP-h0Nwb4KCD9Ns.U2xRLhJKci4FShQ_KS-8sDwIMxBsbPUcjQJblpS0p2o&dib_tag=se&keywords=%E3%83%96%E3%83%A9%E3%82%AF%E3%83%AA%2B%E3%83%80%E3%82%A4%E3%83%AF&pd_rd_r=0ef5cb5d-45b1-4452-b2dd-2b16cc29b5ad&pd_rd_w=tdaBf&pd_rd_wg=kYLcy&qid=1772966151&sr=8-30&ufe=app_do%3Aamzn1.fos.bf5b3200-08a5-4406-bf4b-e679e8ebbcc3&th=1&linkCode=ll2&tag=sasisi344-22&linkId=fa6508d26e9fb7e798095be06ce5f4fa&ref_=as_li_ss_tl
-
-- mebaru-kasago/23-gekkabijin-lt2000s-p
-    https://www.amazon.co.jp/%E3%83%80%E3%82%A4%E3%83%AF-DAIWA-%E3%82%B9%E3%83%94%E3%83%8B%E3%83%B3%E3%82%B0%E3%83%AA%E3%83%BC%E3%83%AB-23%E6%9C%88%E4%B8%8B%E7%BE%8E%E4%BA%BA-LT2000S/dp/B0CCN5L6F6?crid=1Z3CNFW848KM5&dib=eyJ2IjoiMSJ9.kP7dIwgkiIBoZpKyHXphmXKdUbd4x3j5QumkMS2w43MYqksPRzgHWuvPyJrvXo-FTXjkZTamLb3bZCgLLunwNlQtzZGHnvurc2uzExjnZQQgRS9JidtkeLsDZEytUg3I41Y16npikhu_73Xl9Ln935AZmqabzUhuJKL5nmImfbAe5uBuA-TZsoJOu-y7-VKjqdbEm7WamyK1w2Pm8klgX-gKyVT0d1erdC_g5_uCCycafnWamuduaTZ4BjkuyBuCFwnosOcyZPTT_dk_oY2sV9oFCQAif7pW00vmeVcbzrA.PFi7kiPE_SGZdg2Qo6X3c_WqWL_1j6m1ZGj13exVLh0&dib_tag=se&keywords=%E6%9C%88%E4%B8%8B%E7%BE%8E%E4%BA%BA%2Blt2000s&qid=1773129752&sprefix=%E6%9C%88%E4%B8%8B%E7%BE%8E%E4%BA%BA%2Blt2000%2Caps%2C232&sr=8-2&ufe=app_do%3Aamzn1.fos.bf5b3200-08a5-4406-bf4b-e679e8ebbcc3&th=1&linkCode=ll2&tag=sasisi344-22&linkId=b9de30afa96f94f4b7725ff9e5d6c6ff&ref_=as_li_ss_tl
+> [!info]
+> メバルは夜釣りのルアー（メバリング）やフライ、カサゴは日中の穴釣りが浜名湖の定番です。根掛かりが多い釣りなので、予備の仕掛けや針は多めに用意しておきましょう。

@@ -1,85 +1,25 @@
-# クロダイのアフィ
-クロダイ釣りはエサ釣りとルアー釣りのアプローチ。どちらでもいいが、一方ですべてを賄うのは難しい特徴がある。
+# クロダイ（ウキフカセ・落とし込み・チニング）の商品一覧
 
-## エサ釣り総合
-メバルのフカセ釣り（活エビ）でも同じのが使える。
+このファイルは `src/content/affiliates/kurodai/` に登録されている商品のインデックスです。
 
-### 前打ちタックル
-
-- ロッド: 5.4~7m
-5.4mは一般的な長さ。7mクラスは延べ竿のほうが多い。
-https://www.amazon.co.jp/%E5%AE%87%E5%B4%8E%E6%97%A5%E6%96%B0-%E3%83%97%E3%83%AD%E3%83%9F%E3%83%8D%E3%83%B3%E3%83%88-%E3%83%9E%E3%83%AB%E3%83%81-%E3%82%AF%E3%83%AD%E3%83%80%E3%82%A4UG-3304/dp/B0CVXMRYFS?__mk_ja_JP=%E3%82%AB%E3%82%BF%E3%82%AB%E3%83%8A&crid=3OBP420Q4Q5M3&dib=eyJ2IjoiMSJ9.6_y9L5zsbQViRTnlgJCv2vaXwVAOxpJ8z1a43gTzOOzJ7spxaTa3MuauUkusI_JTmP1Jt1ncSe7zxvSclPAPKR_8p4-UIr_7yleH5EFI-jh7OdVZUhPfUPCCpTNSA0y6y2eeX_qa1fXcxRZCHUPa-KixPICbvNok0-fDeUXpZzTHpj3TbJkzKImxJOcTAqtlyWfkzIJx4ggpljONqIleDe74-gAykELE8bSZgdnupTuiRLnv2-LfHZDVL_1zNktewziYQZbeNBStI8swm7nyB2FMZHqfmddcCAQhTMscOSA.mc3KRrHPMYydwb3w7AeeFKTS1Z_mcT2MXClT4Ylfoqk&dib_tag=se&keywords=%E3%82%AF%E3%83%AD%E3%83%80%E3%82%A4%2B7m&qid=1772887006&sprefix=%E3%82%AF%E3%83%AD%E3%83%80%E3%82%A4%2B7m%2Caps%2C204&sr=8-24&ufe=app_do%3Aamzn1.fos.d8e7ee72-073f-4b97-8ec0-59c18d6dfebe&th=1&linkCode=ll2&tag=sasisi344-22&linkId=8a3e5cc7a30da9d919f78e525114d6e4&ref_=as_li_ss_tl
-竿の長さは「720」などの数字がcmを示している。
-
-- リール: タイコ型かスピニング
-https://www.amazon.co.jp/%E5%AE%87%E5%B4%8E%E6%97%A5%E6%96%B0-%E3%82%A4%E3%83%B3%E3%83%B4%E3%82%A3%E3%82%AF%E3%82%BF-RND-BG-85%E3%83%96%E3%83%A9%E3%83%83%E3%82%AF-%E3%82%AC%E3%83%B3%E3%83%A1%E3%82%BF%E3%83%AA%E3%83%83%E3%82%AF/dp/B08B1N5WS4?__mk_ja_JP=%E3%82%AB%E3%82%BF%E3%82%AB%E3%83%8A&crid=354TV7RMJIEM6&dib=eyJ2IjoiMSJ9.WkhIewaa_Nt_XMJt40IoKBCwHIoTapa2Ggn2L3TFZNVMdK4a_i4eVwHekPMnHZdwgMEC0IMqKfwzW7XxUIe2S4s-RVFQmUtnDY78NbxVNlF_nzzHuMnepNCslnluq62CowBKxwskmUrIvkdoVIjsSHwte-NoABehJ3fVsrLajE7dyD-OAYaW02XvzHHdV1eo5nDR4yKgmo5GYgzJsH0D-juhf40mKn0hMF3O-6VfqH1Q5-UvyFGKabYgDjHpMIgo5hd59MyAO2pl17T9qZGYMl-5FF0bRT4gE0vgeLDgvHQ.TvT5uYIfdN9-WuS38LTGKjj3VvqfbITlOyGReH4po_g&dib_tag=se&keywords=%E3%83%AA%E3%83%BC%E3%83%AB%2B%E5%A4%AA%E9%BC%93&qid=1772887131&sprefix=%E3%83%AA%E3%83%BC%E3%83%AB%2B%E5%A4%AA%E9%BC%93%E5%9E%8B%2Caps%2C190&sr=8-9&ufe=app_do%3Aamzn1.fos.bf5b3200-08a5-4406-bf4b-e679e8ebbcc3&th=1&linkCode=ll2&tag=sasisi344-22&linkId=372f4f7d0eea6b103204559ca6d7097e&ref_=as_li_ss_tl
-これはタイコ型。大抵「落とし込み」と表記があるけど前打ちでも使える。これを選ぶメリットはスピニングよりも繊細な糸出しが可能になることと、ロッドにラインが沿う形でラインが出るから糸フケが少なく感度がいいこと。
-
-- 針: チヌ1~3号
-https://www.amazon.co.jp/%E3%81%8C%E3%81%BE%E3%81%8B%E3%81%A4-Gamakatsu-%E6%8E%9B%E3%83%AA%E3%82%B9%E3%82%AE-%E3%83%95%E3%83%83%E3%82%AF-%E9%87%A3%E3%82%8A%E9%87%9D/dp/B015IBSPX4?__mk_ja_JP=%E3%82%AB%E3%82%BF%E3%82%AB%E3%83%8A&crid=1L8Q2N4G1EQZK&dib=eyJ2IjoiMSJ9.kmlTpjuRnuRX5dkPGjCbkWkwbrWR-1M4W44Wfv6fszHIE5ULTz4afw3ISRlyPjuoYnpcWeFu4GOpilumoeT0zXYaxhu2UvpD2ldSWo0n3OSJ0FoA7in-h1W6jnL6Jg4WXKMdk-Jbyf-TK8JoUi2nSfDqvoLTplqHGRcvCGo11WaLrB9uN9-BSh5bEklGRaiMDscU6NZdYPIya-sbtORBruud9A3kwrjFph9gLjt3xgiMgJvc_OiAgEH3ahQC67TzUvcjwNVED1xztY-xSP8qfUQHa61-PmMt7HW3vzJFp5o.yWKE77XSC73nxdaSZ44Ej4c0S58k4D1ZqfX3Q8-QLow&dib_tag=se&keywords=%E3%82%AF%E3%83%AD%E3%83%80%E3%82%A4%2B%E9%87%9D&qid=1772887345&sprefix=%E3%82%AF%E3%83%AD%E3%83%80%E3%82%A4%2B%E9%87%9D%2Caps%2C198&sr=8-7&th=1&linkCode=ll2&tag=sasisi344-22&linkId=b33ae52e9a8b2bc56d1d95a31dc888e5&ref_=as_li_ss_tl
-今切口（舞阪堤・新居弁天海釣公園）なら30cm前後がアベレージなので2~4号の範囲。カニエサなら3号。20cm以下のチンタサイズなら1号。
-
-- ライン: フロロカーボン1~3号
-https://www.amazon.co.jp/%E3%83%A4%E3%83%9E%E3%83%88%E3%83%A8%E3%83%86%E3%82%B0%E3%82%B9-YAMATOYO-%E3%83%8F%E3%83%AA%E3%82%B9-%E3%83%81%E3%83%8C%E3%83%8F%E3%83%AA%E3%82%B9-%E3%83%95%E3%83%AD%E3%83%AD%E3%82%AB%E3%83%BC%E3%83%9C%E3%83%B3/dp/B007616YGA?__mk_ja_JP=%E3%82%AB%E3%82%BF%E3%82%AB%E3%83%8A&crid=3EE3VKVC39DB3&dib=eyJ2IjoiMSJ9.0lcjnX3cJkcmJIswQIXaIYu-Vt6cQaPAmBRW77iMIzt9--nn_-yYty2X5uvFKpeRCYADNAxpwcTW_fyF182Bxcbr7P-F5Qo9MsHMqqd1DEfj2n6TykBP_QSjUrHRVipy6xN7e3HSVKjUO4foEVHoxHnk6pvs6edys-cVR1zKJFiY1qwPPy911PIiS3W0njU3r9OdyKDks-liIWD2G67F0saEE50OHm3RSv9OD1L4fVEelEYO7J3ARaLxYYurkvcENGwsRc8ceypkTfFlTyglvqjouFCKgYGAzTZd5Rawi1o.eEZAQZLIxPeAvDq_XvC4wYK-TiMCJo1pqbJp3H-cvJw&dib_tag=se&keywords=%E3%83%A9%E3%82%A4%E3%83%B3%2B%E3%83%95%E3%83%AD%E3%83%AD%E3%82%AB%E3%83%BC%E3%83%9C%E3%83%B31%E5%8F%B7&qid=1772887629&sprefix=%E3%83%A9%E3%82%A4%E3%83%B3%2B%E3%83%95%E3%83%AD%E3%83%AD%E3%82%AB%E3%83%BC%E3%83%9C%E3%83%B31%E5%8F%B7%2Caps%2C302&sr=8-10&ufe=app_do%3Aamzn1.fos.bf5b3200-08a5-4406-bf4b-e679e8ebbcc3&th=1&linkCode=ll2&tag=sasisi344-22&linkId=1db268caacf30a1e3828363faad02f0f&ref_=as_li_ss_tl
-太さは好み。根ズレの心配がなければ1号でも十分。深場攻略なら3号あると安心。
-
-### ダンゴ釣り
-
-- ロッド: 前打ちと同じでOK。
-- リール: 前打ちと同じでOK。
-- 針: 前打ちと同じでOK。
-- ライン: 前打ちと同じでOK。
-- チヌダンゴ: 本気でやるならセットがお得
-https://www.amazon.co.jp/%E3%83%9E%E3%83%AB%E3%82%AD%E3%83%A5%E3%83%BC-MARUKYU-%E3%83%91%E3%83%AF%E3%83%BC%E3%83%80%E3%83%B3%E3%82%B4%E3%83%81%E3%83%8C/dp/B004U7ORCG?__mk_ja_JP=%E3%82%AB%E3%82%BF%E3%82%AB%E3%83%8A&crid=3QWLLT25QEL2A&dib=eyJ2IjoiMSJ9.0wauu3Gq6xw3HeywxSQ8YFEr-rtJUwwmHOQh_wtiK167r-7HHXv4YmSR_mrIO1vcTpkUDoR-1eDiCnqTDxGhnBwKIh_uNOe1e4M-ii5xWtk4IUTzXVicKaNawQqVV14qVKWeLlZWeLHxgGF6Jcds4NfMeIOPLi_NHrSjfG2b8KSUh_Hq1V-OjbsWEcDju7GqS4bWm-qSu5YOJNMpeHZHi3DI3WNVMZRyA9Jy9kjSmO0wxPi007D6dIFQJdZo6tK6vaQZGk6N0ERZnZCkQuueadU9wz9y9GAMwWpRWsKhjlA.xGiSMMbfLlCHlyOyeSzV5qk2Im6g-9Z9VGPQRWDf3SU&dib_tag=se&keywords=%E3%83%81%E3%83%8C%E3%83%80%E3%83%B3%E3%82%B4&qid=1772958881&sprefix=%E3%83%81%E3%83%8C%E3%83%80%E3%83%B3%E3%82%B4%2Caps%2C270&sr=8-2&ufe=app_do%3Aamzn1.fos.d8e7ee72-073f-4b97-8ec0-59c18d6dfebe&linkCode=ll2&tag=sasisi344-22&linkId=49b002386d8d7d7c66df1ce9d00f1786&ref_=as_li_ss_tl
-
-### ウキフカセタックル
-
-- ロッド: 磯竿5.4m3号。
-https://www.amazon.co.jp/%E3%83%80%E3%82%A4%E3%83%AF-Daiwa-%E3%82%B9%E3%83%94%E3%83%8B%E3%83%B3%E3%82%B0-%E3%83%AA%E3%83%90%E3%83%86%E3%82%A3%E3%82%AF%E3%83%A9%E3%83%96-1-5-53%E3%83%BBK/dp/B00T494ZMM?__mk_ja_JP=%E3%82%AB%E3%82%BF%E3%82%AB%E3%83%8A&crid=4YDERF62EVR2&dib=eyJ2IjoiMSJ9.bY1MTMkuHud8QyybqWf6rqGZC1JD8fUUL__ca4NczqR3A8eC6AbS7cXmSQ-VYRb8yILwuqVc1AYirltHy-Hhtui5Qbidc5UaSPQkhMfJGyyacNtH6D9IQGMpsBvNOWpzmqBohllEcpzBgn09MMyW8NDXtDA_70UdtTqD_Ol8A_OvB_IsihZIWczJaSLlGTdZ1XZd5b13XypcPYyZ7VS7LMEhegXp214cVzwVLG1xiVHpjxLHzAhYyW2Ua6b80xd04qtftLFLptklHyTgfs2sDM15THEK-BwJsO7wI-xcssA.91UiDVZJKKkH-wMEoPa9ZOrNLf__HxQVE8mh8vLV-V4&dib_tag=se&keywords=%E7%A3%AF%E7%AB%BF%2B5.4m&qid=1772887863&sprefix=%E7%A3%AF%E7%AB%BF%2B5.4m%2Caps%2C220&sr=8-6&ufe=app_do%3Aamzn1.fos.bf5b3200-08a5-4406-bf4b-e679e8ebbcc3&th=1&linkCode=ll2&tag=sasisi344-22&linkId=9f9490ff444ce8e0bcade1c8826efa5b&ref_=as_li_ss_tl
-サビキ釣り・ダンゴ釣りでも使える。キビレの投げウキ釣りに使えないこともないけど5.4mは長すぎて投げづらい。
-
-- リール: 2000~3000番のスピニング。LBは好みによる。
-https://www.amazon.co.jp/%E3%82%B7%E3%83%9E%E3%83%8E-SHIMANO-%E3%82%B9%E3%83%94%E3%83%8B%E3%83%B3%E3%82%B0%E3%83%AA%E3%83%BC%E3%83%AB-%E3%82%BB%E3%83%89%E3%83%8A-C2000SHG/dp/B0C7B325BT?__mk_ja_JP=%E3%82%AB%E3%82%BF%E3%82%AB%E3%83%8A&crid=2U8U7LHLY6JPC&dib=eyJ2IjoiMSJ9.yCzbToTD1FSYiGaUwTseFpbguio2-PDw9l2ehhPDogZ10ro7V05hSRBFHPaQ2O3zFMagfKMBStzzyPN_QR17S2VA6u05upb-eK_lGo7OetEu89Oj3otuvUjkyfYrjRlJNJ8oaFgFQ19RZesipHEw3S4fJsoVls7dem4x8J4HffNv0OFFcODWRRHzgYLzbjfhkOgBCftClkI-RdseKUvrqoPNkITk2MhoAmvq8vhvIStzkB4LcDDC5TtZ1_kEGshQRA4qqUsQnWu_4K7qW0tXnnm03RG-19hBiqAoRPh7Z7I.37ALgfBJp86eZTz3N-oXfhBgh0RVIdHGV0SKGA-K12k&dib_tag=se&keywords=%E3%82%B9%E3%83%94%E3%83%8B%E3%83%B3%E3%82%B0%E3%83%AA%E3%83%BC%E3%83%AB%2B2000&qid=1772888021&sprefix=%E3%82%B9%E3%83%94%E3%83%8B%E3%83%B3%E3%82%B0%E3%83%AA%E3%83%BC%E3%83%AB%2B2000%2Caps%2C196&sr=8-5&ufe=app_do%3Aamzn1.fos.bf5b3200-08a5-4406-bf4b-e679e8ebbcc3&th=1&linkCode=ll2&tag=sasisi344-22&linkId=f386a890ad59ceef99a2027b9acbacfe&ref_=as_li_ss_tl
-3000HGでハイギアを選んでいる。糸フケを素早く取れるし巻き上げも強い。PE1号前後を巻いておけば投げ釣りやシーバスルアーでも使えるメリットがある。
-
-- ライン: フロロカーボン1号前後。メインラインはPE0.6~1.0号かナイロン3号。
-https://www.amazon.co.jp/%E3%82%AF%E3%83%AC%E3%83%8F-KUREHA-PE%E3%83%A9%E3%82%A4%E3%83%B3-%E3%82%B7%E3%83%BC%E3%82%AC%E3%83%BC-200m/dp/B06X6F9NSJ?__mk_ja_JP=%E3%82%AB%E3%82%BF%E3%82%AB%E3%83%8A&crid=2HFC24NM586DZ&dib=eyJ2IjoiMSJ9.2tIwzyy7NIohVDx5-FYMF8GHjAaR-WkmYyyimESk4C4e5fbQ7oSsudQPJWpd6ljsZskC3jxP8BwnDV7Tmyrsu2pEflh57YJmqC93Q55mNaRibjgm5NrKQT4MQ0UB3VqpLf8nXcvxa9NVts9Cj8O1Ojc5GV0lyQRwz7hs4Pq5mZwhoaD3Ydjf351CY_X1EdghNa1mJgOU5feDrZ680xeL8o_38yOSe1t9nHGWnk9T_kUUf2k-PoMziSHPBbrAc5H3K2IT8fCo-SObWPoyw9VDYkcEmynd15SnkqscKLk4-yg.tRR4EcPeqinSGg6fBcE1eQY6RXe3U6HezTUROHallMo&dib_tag=se&keywords=PE0.8&qid=1772888146&sprefix=pe0.8%2Caps%2C205&sr=8-5&ufe=app_do%3Aamzn1.fos.d8e7ee72-073f-4b97-8ec0-59c18d6dfebe&th=1&psc=1&linkCode=ll2&tag=sasisi344-22&linkId=e172cab9ef9e2630d9757fed4e0206ae&ref_=as_li_ss_tl
-
-- 針: チヌ2~3号
-https://www.amazon.co.jp/%E3%81%8C%E3%81%BE%E3%81%8B%E3%81%A4-Gamakatsu-%E6%8E%9B%E3%83%AA%E3%82%B9%E3%82%AE-%E3%83%95%E3%83%83%E3%82%AF-%E9%87%A3%E3%82%8A%E9%87%9D/dp/B015IBSPX4?__mk_ja_JP=%E3%82%AB%E3%82%BF%E3%82%AB%E3%83%8A&crid=1L8Q2N4G1EQZK&dib=eyJ2IjoiMSJ9.kmlTpjuRnuRX5dkPGjCbkWkwbrWR-1M4W44Wfv6fszHIE5ULTz4afw3ISRlyPjuoYnpcWeFu4GOpilumoeT0zXYaxhu2UvpD2ldSWo0n3OSJ0FoA7in-h1W6jnL6Jg4WXKMdk-Jbyf-TK8JoUi2nSfDqvoLTplqHGRcvCGo11WaLrB9uN9-BSh5bEklGRaiMDscU6NZdYPIya-sbtORBruud9A3kwrjFph9gLjt3xgiMgJvc_OiAgEH3ahQC67TzUvcjwNVED1xztY-xSP8qfUQHa61-PmMt7HW3vzJFp5o.yWKE77XSC73nxdaSZ44Ej4c0S58k4D1ZqfX3Q8-QLow&dib_tag=se&keywords=%E3%82%AF%E3%83%AD%E3%83%80%E3%82%A4%2B%E9%87%9D&qid=1772887345&sprefix=%E3%82%AF%E3%83%AD%E3%83%80%E3%82%A4%2B%E9%87%9D%2Caps%2C198&sr=8-7&th=1&linkCode=ll2&tag=sasisi344-22&linkId=babb5865a709acd410ba2d4030941bd8&ref_=as_li_ss_tl
-
-## ルアー釣り総合
-- ロッド: 7~9ftのチニングロッド
-https://www.amazon.co.jp/%E3%82%B7%E3%83%9E%E3%83%8E-SHIMANO-%E3%83%81%E3%83%8B%E3%83%B3%E3%82%B0%E3%83%AD%E3%83%83%E3%83%89-%E3%83%96%E3%83%AA%E3%83%BC%E3%83%A0%E3%82%B2%E3%83%BC%E3%83%A0-%E3%83%A9%E3%82%A4%E3%83%88%E7%B3%BB%E3%83%90%E3%83%BC%E3%82%B5%E3%82%BF%E3%82%A4%E3%83%AB/dp/B08CBS6HLN?__mk_ja_JP=%E3%82%AB%E3%82%BF%E3%82%AB%E3%83%8A&crid=2XB0J9JXQX04F&dib=eyJ2IjoiMSJ9.9jkmHYZzIKRaLk-u2aKz85OG8YRYVy6538JDk8O9l3dE0i92V7ppWWnPHEJgkvSz5Cg8JcBdkZU6hE7VBzBMsJXArQaIfhUeWRyvWuVl0RVymCNrg6CcGaFTowMmODw0DBJNDcrrSZr5rKY3Qe_-9Xyd1MDlTsF7lFafx8DzUt8jAxfmnqyDkbWpDRU8oRHnhUwQ5ur40_s6a-qv9bVfz53BiQQy8B29Bsvl130iP4VtgGLz7UgkXqs1kpFlfwSLpc-VFcAXa8JDsHWMEXpXZYGMnB6KLCbmOtlEFo1Gia0.o_RC2ldFKSoCF7KtrQTCli6-yGu5lvaOOMoU6vYv5ik&dib_tag=se&keywords=%E3%83%81%E3%83%8B%E3%83%B3%E3%82%B0%E3%83%AD%E3%83%83%E3%83%89&qid=1772958989&sprefix=%E3%83%81%E3%83%8B%E3%83%B3%E3%82%B0%E3%83%AD%E3%83%83%E3%83%89%2Caps%2C220&sr=8-17&ufe=app_do%3Aamzn1.fos.bf5b3200-08a5-4406-bf4b-e679e8ebbcc3&th=1&linkCode=ll2&tag=sasisi344-22&linkId=488a4ee176f8a17c82812015dc665fca&ref_=as_li_ss_tl
-専用モデルである必要はないけど、各種チニングルアー適正になるのが強み。
-- リール: スピニング3000番
-https://www.amazon.co.jp/%E3%82%B7%E3%83%9E%E3%83%8E-SHIMANO-%E3%82%B9%E3%83%94%E3%83%8B%E3%83%B3%E3%82%B0%E3%83%AA%E3%83%BC%E3%83%AB-25%E3%82%A2%E3%83%AB%E3%83%86%E3%82%B0%E3%83%A9-C5000XG/dp/B0DSPG6G4F?__mk_ja_JP=%E3%82%AB%E3%82%BF%E3%82%AB%E3%83%8A&crid=2MZ92CT92UN8I&dib=eyJ2IjoiMSJ9.X-zi7XL8CzIpesFs6NZyyvlow915U8cz_S3AmbyfwyZ8O5jWtpFr4Bh9ElFwfU526Uk8IYPEpW91wfTulZnnDDh9BfEQr7cxsLQ-ObufSjwmLfeEsF49SByLAkl3aSzm50eahkHIUTJGKtuHiJcJdP-P2gzWm9LubnUEv7GVOdhNTyAY_9tEeXFzgXP7OwXAm0CEq4da9Xahk8lS2oFwK1myRkwhhp-4vOkqezGIS_Stn6ZO31gz_Y3QDJwSNiqFOzlMZFlC1bwq2vspMKDFXYapDtAHUg_XFLDkpnztFs8.-5EOT5OSKR8un7VUYgr9Ma-TJUS6BaV2xKKOtbb8kLA&dib_tag=se&keywords=%E3%83%AA%E3%83%BC%E3%83%AB%2B%E3%82%B7%E3%83%9E%E3%83%8E&qid=1772959144&sprefix=%E3%83%AA%E3%83%BC%E3%83%AB%2B%E3%82%B7%E3%83%9E%E3%83%8E%2Caps%2C220&sr=8-7&ufe=app_do%3Aamzn1.fos.bf5b3200-08a5-4406-bf4b-e679e8ebbcc3&th=1&linkCode=ll2&tag=sasisi344-22&linkId=bbc792159d65fe4ef440026e8c5f5fe1&ref_=as_li_ss_tl
-- リール: ベイトタックルならキャスティング目的のベイトリール
-https://www.amazon.co.jp/%E3%82%B7%E3%83%9E%E3%83%8E-SHIMANO-%E3%83%99%E3%82%A4%E3%83%88%E3%83%AA%E3%83%BC%E3%83%AB-SLX-71XG/dp/B0CRY1CK8P?__mk_ja_JP=%E3%82%AB%E3%82%BF%E3%82%AB%E3%83%8A&crid=1BHXBGFBJUSB&dib=eyJ2IjoiMSJ9.nU8hcaI9fIW00MLuXeChgqZ4PClcjBnpVnFMMm69UfyN2YL5ahJBHOOA7ydQrme6qr13q-dI7FXtLaWt-xOqbEb00dRgOec47R8BZclpygm-54NZBOLLAXwLetrdEoKuNI-EzmRlq07NMhGUXdFTo59V-dwF_fxrsWkn0oJqmeiG8eMQOxiVoIgVDQcMlFAiB8m28et3RNAtRvAfF4eJed7nOQ6FkwQTp4Mx0hiQnJnfQmgCnyen3aSIRuifRKbmGY4J7K-q6P0KJkwZ1Fri6mg3aBoTDZ7ogJuDVMStHWs.3-ny_rT0gn6MHxUS5IbMIF3g6Q9Xz5xy3SJXPBDIFj8&dib_tag=se&keywords=%E3%83%99%E3%82%A4%E3%83%88%E3%83%AA%E3%83%BC%E3%83%AB%2B%E3%82%B7%E3%83%9E%E3%83%8E&qid=1772959213&sprefix=%E3%83%99%E3%82%A4%E3%83%88%E3%83%AA%E3%83%BC%E3%83%AB%2B%E3%82%B7%E3%83%9E%E3%83%8E%2Caps%2C244&sr=8-5&ufe=app_do%3Aamzn1.fos.bf5b3200-08a5-4406-bf4b-e679e8ebbcc3&th=1&linkCode=ll2&tag=sasisi344-22&linkId=738bdb4046d296427c0d886d1b1445bc&ref_=as_li_ss_tl
-- ライン: メインPe0.8号、リーダー10~20lb（3号前後）
-https://www.amazon.co.jp/%E3%83%A4%E3%83%9E%E3%83%88%E3%83%A8%E3%83%86%E3%82%B0%E3%82%B9-YAMATOYO-%E3%83%AA%E3%83%BC%E3%83%80%E3%83%BC-%E3%83%95%E3%83%AD%E3%83%AD%E3%82%B7%E3%83%A7%E3%83%83%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%80%E3%83%BC-%E3%83%95%E3%83%AD%E3%83%AD%E3%82%AB%E3%83%BC%E3%83%9C%E3%83%B3/dp/B07K7VLZ4Y?__mk_ja_JP=%E3%82%AB%E3%82%BF%E3%82%AB%E3%83%8A&crid=UJZHAKQC4C16&dib=eyJ2IjoiMSJ9.UZAK3FICYE_6W3dL7mC8wirD_T8J7ceDQugWiLf1-l0lRjmLL4zDYLraIfknRzalLKF-laa-ueFWJK_Y3CdOKJ50XZT_s2sIsZtLBCW18brjij-8z3WZq8qARvwReNwplrdXcoF8M-EkwmHaeT2xBZcadxQpDbi5Lm9AjczJnO2jzdSS5Lo7w_nlIzvEaqdDJotdzBL4kw5tlo9TRuJwfzNX0FzYIsOihPx8ekZQhSpknGeCH57mzXmu-GlB_foSnSo0vI_rFdapUcg9QONAoyHKefR6Ul8JmGKQ8Mfi3Zw.gapG9i1-Nb8cyygP1LhtF6Xa83qWl6ETJ9JMzyVuYo8&dib_tag=se&keywords=%E3%83%81%E3%83%8B%E3%83%B3%E3%82%B0%2B%E3%83%AA%E3%83%BC%E3%83%80%E3%83%BC&qid=1772962899&sprefix=%E3%83%81%E3%83%8B%E3%83%B3%E3%82%B0%2B%E3%83%AA%E3%83%BC%E3%83%80%E3%83%BC%2Caps%2C234&sr=8-3&ufe=app_do%3Aamzn1.fos.d8e7ee72-073f-4b97-8ec0-59c18d6dfebe&th=1&linkCode=ll2&tag=sasisi344-22&linkId=e4bc6e3c435ee5c12f52c6fd570d7275&ref_=as_li_ss_tl
-- ルアー: 別途チニングルアー参照
-
-### 備考
-スピニングタックルとベイトタックルは、好みの問題になる。万能性ならスピニング。ベイトタックルはワームを使ってボトムをネチネチゆったりアクションさせるのに向いている。どちらのタックルもシーバスと両立できるので、好きに選ぶことができる。
-
-### チニングルアー
-
-ルアー: 
-- トップウォーター（ポッパー）
-https://www.amazon.co.jp/%E3%82%B7%E3%83%9E%E3%83%8E-SHIMANO-%E3%83%A9%E3%82%A4%E3%82%BA%E3%82%A6%E3%82%A9%E3%83%BC%E3%82%AF-XH-T65S-%E3%83%88%E3%82%A6%E3%83%AA%E3%83%B3%E3%82%A4%E3%83%8A%E3%83%83%E3%82%B3/dp/B09777G447?__mk_ja_JP=%E3%82%AB%E3%82%BF%E3%82%AB%E3%83%8A&crid=3HFEN1N00IN7C&dib=eyJ2IjoiMSJ9.3ZbjZh1GH5eKGjA060iJ8Rh7jecReg6VKtlTLahgfZIDvZfG0Fd7m1YUcfHZegUAJAgt8MCP0uwPDTeC23qHsO0X2KCOBMLM6CJ8H-ir1o4jl-9hDyu92bu94wiDYhKKF6rl2RN9K7Wet1hgFH3p_yhq9CNRMf5gByerGgu6W6lYZ95mXH1kvYtxyHaMQiDh1V5HnkdjIFn5Sj7kLenlOEYOqdf8RZAfFVhyrPlzEvYLa0H_6UDPxap5hmNjHnn5ZkQvpJPCDeDEBugG3tepmhK4vdoJG22xCLc_JMSd-N8.ynXdrJ6X-7nwc5sBAL4PLNeQb24-jSj7NB2v4v3-h0c&dib_tag=se&keywords=%E3%83%81%E3%83%8B%E3%83%B3%E3%82%B0%2B%E3%83%AB%E3%82%A2%E3%83%BC%2B%E3%83%88%E3%83%83%E3%83%97&qid=1772962935&sprefix=%E3%83%81%E3%83%8B%E3%83%B3%E3%82%B0%2B%E3%83%AB%E3%82%A2%E3%83%BC%2B%E3%83%88%E3%83%83%E3%83%97%2Caps%2C225&sr=8-6&ufe=app_do%3Aamzn1.fos.bf5b3200-08a5-4406-bf4b-e679e8ebbcc3&th=1&psc=1&linkCode=ll2&tag=sasisi344-22&linkId=13ec5413cee401227b0ed7a10d07e375&ref_=as_li_ss_tl
-- トップウォーター（ペンシルベイト）
-https://www.amazon.co.jp/%E3%82%BF%E3%83%83%E3%82%AF%E3%83%AB%E3%83%8F%E3%82%A6%E3%82%B9-TackleHouse-%E3%83%9A%E3%83%B3%E3%82%B7%E3%83%AB%E3%83%99%E3%82%A4%E3%83%88-%E3%83%AC%E3%82%B8%E3%82%B9%E3%82%BF%E3%83%B3%E3%82%B9-%E3%82%AF%E3%83%AA%E3%82%B9%E3%82%BF%E3%83%AB%E3%82%AF%E3%83%AA%E3%82%A2/dp/B01DNTTB9U?__mk_ja_JP=%E3%82%AB%E3%82%BF%E3%82%AB%E3%83%8A&crid=3HFEN1N00IN7C&dib=eyJ2IjoiMSJ9.3ZbjZh1GH5eKGjA060iJ8Rh7jecReg6VKtlTLahgfZIDvZfG0Fd7m1YUcfHZegUAJAgt8MCP0uwPDTeC23qHsO0X2KCOBMLM6CJ8H-ir1o4jl-9hDyu92bu94wiDYhKKF6rl2RN9K7Wet1hgFH3p_yhq9CNRMf5gByerGgu6W6lYZ95mXH1kvYtxyHaMQiDh1V5HnkdjIFn5Sj7kLenlOEYOqdf8RZAfFVhyrPlzEvYLa0H_6UDPxap5hmNjHnn5ZkQvpJPCDeDEBugG3tepmhK4vdoJG22xCLc_JMSd-N8.ynXdrJ6X-7nwc5sBAL4PLNeQb24-jSj7NB2v4v3-h0c&dib_tag=se&keywords=%E3%83%81%E3%83%8B%E3%83%B3%E3%82%B0%2B%E3%83%AB%E3%82%A2%E3%83%BC%2B%E3%83%88%E3%83%83%E3%83%97&qid=1772962935&sprefix=%E3%83%81%E3%83%8B%E3%83%B3%E3%82%B0%2B%E3%83%AB%E3%82%A2%E3%83%BC%2B%E3%83%88%E3%83%83%E3%83%97%2Caps%2C225&sr=8-5&ufe=app_do%3Aamzn1.fos.d8e7ee72-073f-4b97-8ec0-59c18d6dfebe&th=1&linkCode=ll2&tag=sasisi344-22&linkId=f02b25c4d024807fdaacca9b51cd7dd7&ref_=as_li_ss_tl
-- クランクベイト（ボトム付近を激しく動くタイプ）
-https://www.amazon.co.jp/%E3%83%A9%E3%83%83%E3%82%AD%E3%83%BC%E3%82%AF%E3%83%A9%E3%83%95%E3%83%88-LUCKY-CRAFT-LV%E3%83%AC%E3%83%9C%E3%83%AA%E3%83%A5%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3-%E3%83%AA%E3%83%83%E3%83%97%E3%83%AC%E3%82%B9%E3%82%AF%E3%83%A9%E3%83%B3%E3%82%AF%E3%83%99%E3%82%A4%E3%83%88/dp/B004C33YIQ?__mk_ja_JP=%E3%82%AB%E3%82%BF%E3%82%AB%E3%83%8A&crid=2Q80RIZWENKFT&dib=eyJ2IjoiMSJ9.RkiF1-uyZRNEXYdq7R0LpBYNcbuG6HwNbN_sgdn2d8fQMhrajS455Rujc_ERjsK0L7JXFqhniLyatBdg6MNrmVUJuBb6hBSnUNj5jFAyI3c.T9dpuzd0gx-wRnIhtTE9kDSifQUN6oy-sZEYdtCoi8c&dib_tag=se&keywords=%E3%83%81%E3%83%8B%E3%83%B3%E3%82%B0+%E3%83%AC%E3%83%B3%E3%82%B8%E3%83%90%E3%82%A4%E3%83%96&qid=1772963091&sprefix=%E3%83%81%E3%83%8B%E3%83%B3%E3%82%B0+%E3%83%AC%E3%83%B3%E3%82%B8%E3%83%90%E3%82%A4%E3%83%96%2Caps%2C233&sr=8-51-spons&ufe=app_do%3Aamzn1.fos.d8e7ee72-073f-4b97-8ec0-59c18d6dfebe&xpid=-iE9y-wOHVLl8&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGZfbmV4dA&psc=1&linkCode=ll2&tag=sasisi344-22&linkId=1965ce76ad67f9636edc240a83455d9f&ref_=as_li_ss_tl
-- ジャークベイト
-- ボトムチヌ（ワーム）
-https://www.amazon.co.jp/%E3%82%AB%E3%83%84%E3%82%A4%E3%83%81-Katsuichi-%E3%83%87%E3%82%B3%E3%82%A4-DK-10-%E3%82%A4%E3%83%BC%E3%82%B8%E3%83%BC%E3%82%BB%E3%83%83%E3%83%88%E3%83%81%E3%83%8B%E3%83%B3%E3%82%B0/dp/B0D9PVLNH1?__mk_ja_JP=%E3%82%AB%E3%82%BF%E3%82%AB%E3%83%8A&crid=3I7B382CT2DV8&dib=eyJ2IjoiMSJ9.lqFj25jZzXd5sPYaRKbu3Z0bzXU1ASLS2vk7HaCUmGTrUk30sC8CJYWjJz_d1_dMTOQey9qLZTNAv6iEiuxV9YWWVnQrkA80vfvPeB36XZILKB68CrZuDHQtSDo09mvKmlLJOvPmJzCPsJy7zNZziVihDQ7apcoh75OtxLRmnUIKGyImDQxdoUVizSoEXBDIKNl8Cph8rwIzw6HuxRdG-pHDgdOUy-9S2HrCG7h3HLVuK4vMM8tRG7v3EFfP31orZMdvikzCO8j-3Gb4pm1wMBiDQC5QDhtKlNzkC9yjm74.oEv_7mjnNmzOjvxlfzcuYzxM3wwcKrgRtc3RxvwBzL4&dib_tag=se&keywords=%E3%83%81%E3%83%8B%E3%83%B3%E3%82%B0+%E3%83%AF%E3%83%BC%E3%83%A0%E3%82%BB%E3%83%83%E3%83%88&qid=1772963177&sprefix=%E3%83%81%E3%83%8B%E3%83%B3%E3%82%B0+%E3%83%AF%E3%83%BC%E3%83%A0%E3%82%BB%E3%83%83%E3%83%88%2Caps%2C364&sr=8-1&ufe=app_do%3Aamzn1.fos.bf5b3200-08a5-4406-bf4b-e679e8ebbcc3&linkCode=ll2&tag=sasisi344-22&linkId=19b1c4167205c307eec9df107b371796&ref_=as_li_ss_tl
-
-どれでもいいけど時期にもよる。秋から春にかけてはボトム寄り。夏はトップでも出る感じ。
-
-- kurodai/megabass-popping-duck
-- kurodai/zipbaits-zabra-popper
-- kurodai/zipbaits-fakee-dog-ds
-
-- 
+| 商品名 | TackleCard ID | リンク |
+| :--- | :--- | :--- |
+| 宇崎日新 プロミネント マルチ クロダイUG 3304 | `kurodai/prominent-multi-kurodai-ug` | [Amazon](https://www.amazon.co.jp/dp/B0CVXMRYFS?tag=sasisi344-22) |
+| 宇崎日新 インヴィクタ RND-BG-85 | `kurodai/invicta-rnd-bg-85` | [Amazon](https://www.amazon.co.jp/dp/B08B1N5WS4?tag=sasisi344-22) |
+| がまかつ 糸付 貫きチヌ | `kurodai/gamakatsu-chinu-hook` | [Amazon](https://www.amazon.co.jp/dp/B015IBSPX4?tag=sasisi344-22) |
+| ヤマトヨテグス チヌハリス 50m | `kurodai/yamatoyo-chinu-harris` | [Amazon](https://www.amazon.co.jp/dp/B007616YGA?tag=sasisi344-22) |
+| マルキュー パワーダンゴチヌ | `kurodai/marukyu-power-dango-chinu` | [Amazon](https://www.amazon.co.jp/dp/B004U7ORCG?tag=sasisi344-22) |
+| ダイワ リバティクラブ 磯風 1.5-53 | `kurodai/daiwa-liberty-club-isokaze` | [Amazon](https://www.amazon.co.jp/dp/B00T494ZMM?tag=sasisi344-22) |
+| シマノ セドナ C2000SHG | `kurodai/shimano-sedona-c2000shg` | [Amazon](https://www.amazon.co.jp/dp/B0C7B325BT?tag=sasisi344-22) |
+| クレハ シーガー PE X8 200m | `kurodai/seaguar-pe-x8` | [Amazon](https://www.amazon.co.jp/dp/B06X6F9NSJ?tag=sasisi344-22) |
+| シマノ ブリームゲーム（チニング） | `kurodai/shimano-bream-game` | [Amazon](https://www.amazon.co.jp/dp/B08CBS6HLN?tag=sasisi344-22) |
+| シマノ アルテグラ C5000XG | `kurodai/shimano-ultegra-c5000xg` | [Amazon](https://www.amazon.co.jp/dp/B0DSPG6G4F?tag=sasisi344-22) |
+| シマノ SLX 71XG | `kurodai/shimano-slx-71xg` | [Amazon](https://www.amazon.co.jp/dp/B0CRY1CK8P?tag=sasisi344-22) |
+| ヤマトヨテグス フロロハリス 10m | `kurodai/yamatoyo-flouro-harris-common` | [Amazon](https://www.amazon.co.jp/dp/B07K7VLZ4Y?tag=sasisi344-22) |
+| シマノ ライズウォーク 65S | `kurodai/shimano-risewalk` | [Amazon](https://www.amazon.co.jp/dp/B09777G447?tag=sasisi344-22) |
+| タックルハウス レジスタンス ペンシル | `kurodai/tacklehouse-resistance-pencil` | [Amazon](https://www.amazon.co.jp/dp/B01DNTTB9U?tag=sasisi344-22) |
+| メガバス POPPING DUCK | `kurodai/megabass-popping-duck` | [Amazon](https://www.amazon.co.jp/dp/B00VR7CCPG?tag=sasisi344-22) |
+| ラッキークラフト LV レボリューション | `kurodai/luckycraft-lv-revelation` | [Amazon](https://www.amazon.co.jp/dp/B004C33YIQ?tag=sasisi344-22) |
+| デコイ イージーセット チニング | `kurodai/decoy-easyset-chining` | [Amazon](https://www.amazon.co.jp/dp/B0D9PVLNH1?tag=sasisi344-22) |
+| ジップベイツ フェイキードッグ DS | `kurodai/zipbaits-fakee-dog-ds` | [Amazon](https://www.amazon.co.jp/dp/B092SBZPG3?tag=sasisi344-22) |
+| ジップベイツ ザブラポッパー | `kurodai/zipbaits-zabra-popper` | [Amazon](https://www.amazon.co.jp/dp/B09ZB3HQFB?tag=sasisi344-22) |
