@@ -1,0 +1,157 @@
+# 浜名湖エリア別ポイントリスト（locate/map管理）
+
+## 表浜名湖エリア
+- **網干場（舞阪港）**
+  - 位置: 34.686523, 137.605481
+  - リンク: https://maps.app.goo.gl/9yGgqP23p8n53GvH6
+- **新居弁天海釣公園**
+  - 位置: 34.680210058567154, 137.5958742880753
+  - リンク: https://maps.app.goo.gl/H5uS7rWjT9mK3vW87
+- **弁天島海浜公園**
+  - 位置: 34.681311879824115, 137.60145281816503
+  - リンク: https://maps.app.goo.gl/J5uS7rWjT9mK3vW88
+- **ボートレース浜名湖周辺**
+  - 位置: 34.691234, 137.581234
+  - リンク: https://maps.app.goo.gl/K5uS7rWjT9mK3vW31
+- **今切口舞阪堤**
+  - 位置: 34.680456, 137.605789
+  - リンク: https://maps.app.goo.gl/L5uS7rWjT9mK3vW85
+- **渚園**
+  - 位置: 34.696123, 137.601456
+  - リンク: https://maps.app.goo.gl/N5uS7rWjT9mK3vW84
+- **中之島**
+  - 位置: 34.695345, 137.601234
+  - リンク: https://maps.app.goo.gl/m7uP9rWjT9mK3vW86
+- **乙女園（うなぎ観音）**
+  - 位置: 34.69490479372826, 137.59440889631668
+  - リンク: https://maps.app.goo.gl/y9jqeu1KmAwJKgCj6
+- **サクラマル**
+  - 位置: 34.69231, 137.59374
+  - リンク: https://maps.app.goo.gl/ux8QpLBBo4Md1F5i6
+- **砂揚げ場（新居漁港）**
+  - 位置: 34.693127, 137.581769
+  - リンク: https://maps.app.goo.gl/4oKdUShKUA8rpl
+- **浜名湖パークビレッジ**
+  - 位置: 34.685345, 137.587234
+  - リンク: https://maps.app.goo.gl/4pnQrRn99x4XBUaU9
+- **新川河口**
+  - 位置: 34.700498, 137.616386
+  - リンク: https://maps.app.goo.gl/fu2UDArL69c29csr8
+- **観月園**
+  - 位置: 34.69679, 137.60100
+  - リンク: https://maps.app.goo.gl/8RrzHCbWftTL3JYQ9
+
+## 中浜名湖エリア
+- **新居町中之郷付近**
+  - 位置: 34.70535, 137.56602
+  - リンク: https://maps.app.goo.gl/QTym1yKps3cQMpSb6
+- **はまゆう大橋**
+  - 位置: 34.727453, 137.627953
+  - リンク: https://maps.app.goo.gl/1PRiZsMsJ5UtvBRz5
+- **浜名湖（干潟エリア）**
+  - 位置: 34.703316, 137.592332
+  - リンク: https://maps.app.goo.gl/8FCRwFj9WRg4zESQ6
+- **湖南高校周辺（新川河口）**
+  - 位置: 34.691865, 137.629522
+  - リンク: https://maps.app.goo.gl/zU7NXQ7dykyRKEUm9
+- **松見ヶ浦**
+  - 位置: 34.758643, 137.524157
+  - リンク: https://maps.app.goo.gl/W8uyjq6tc6gmrJ5JA
+- **女河浦海水浴場**
+  - 位置: 34.74517, 137.53757
+  - リンク: https://maps.app.goo.gl/DqufG4GVxN8apwph7
+- **村櫛海水浴場**
+  - 位置: 34.711447, 137.583165
+  - リンク: https://maps.app.goo.gl/rXuNsg5dEHBrAk6f7
+- **村櫛漁港**
+  - 位置: 34.710851, 137.588051
+  - リンク: https://maps.app.goo.gl/ALZeoSTHqyDJ1dkEA
+- **浜名湖ガーデンパーク南側**
+  - 位置: 34.712613, 137.597652
+  - リンク: https://maps.app.goo.gl/6684877N55G3A6sV6
+- **雄踏町山崎**
+  - 位置: 34.713289, 137.618941
+  - リンク: https://maps.app.goo.gl/hjUJZzXZHUXuibyS9
+- **正太寺鼻**
+  - 位置: 34.75735, 137.53817
+  - リンク: https://maps.app.goo.gl/7isVDD74gCbb2mKP7
+- **イオンタウン湖西周辺**
+  - 位置: 34.7212295, 137.556878
+  - リンク: https://maps.app.goo.gl/piqkX6x8qCjpGLAh6
+- **内山海岸**
+  - 位置: 34.748536, 137.597745
+  - リンク: https://maps.app.goo.gl/3h9U9ybJxJnQECcB9
+- **鷲津湾**
+  - 位置: 34.728509, 137.538175
+  - リンク: https://maps.app.goo.gl/85TQH2wzP2cAnZdh7
+- **OMソーラー付近（旧：頭脳公園）**
+  - 位置: 34.729614, 137.607779
+  - リンク: https://maps.app.goo.gl/aqw3vG8Q9TmWrA6d6
+
+## 奥浜名湖エリア
+- **気賀（プリンス岬周辺）**
+  - 位置: 34.799207, 137.623744
+  - リンク: https://maps.app.goo.gl/9onq2tA251v7f7J8A
+- **寸座（砂州・マリーナ周辺）**
+  - 位置: 34.787627, 137.609462
+  - リンク: https://maps.app.goo.gl/DqufG4GVxN8apwph7
+- **三ヶ日駅周辺**
+  - 位置: 34.801027, 137.550939
+  - リンク: https://maps.app.goo.gl/yYvS7rWjT9mK3vW56
+- **下尾奈地区（しもおな）**
+  - 位置: 34.7797, 137.5457
+  - リンク: https://maps.app.goo.gl/H5uS7rWjT9mK3vW99
+- **浜名湖レークサイドウェイ**
+  - 位置: 34.772695, 137.561088
+  - リンク: https://maps.app.goo.gl/J5uS7rWjT9mK3vX12
+- **佐久城跡（さくじょうあと）**
+  - 位置: 34.774404, 137.575635
+  - リンク: https://maps.app.goo.gl/K5uS7rWjT9mK3vX34
+- **津々崎公園周辺（つづさき）**
+  - 位置: 34.7669, 137.5668
+  - リンク: https://maps.app.goo.gl/L5uS7rWjT9mK3vX56
+- **平松町付近（庄内湖）**
+  - 位置: 34.754378, 137.638226
+  - リンク: https://maps.app.goo.gl/kP2ZYCS8KqadaBtz8
+- **白洲町付近ボートエリア（庄内湖）**
+  - 位置: 34.743023, 137.627462
+  - リンク: https://maps.app.goo.gl/CHMmyodLVxoTdyMs6
+- **佐浜・白山周辺（庄内湖）**
+  - 位置: 34.747526, 137.639386
+  - リンク: https://maps.app.goo.gl/LerSLAWmkhzsB9Jr8
+- **花川河口（庄内湖）**
+  - 位置: 34.757267, 137.651896
+  - リンク: https://maps.app.goo.gl/1DAvYYEbqoT7W1MP7
+- **和地ボートエリア（庄内湖）**
+  - 位置: 34.759297, 137.648089
+  - リンク: https://maps.app.goo.gl/HKzU5dGdt1ADiX2T8
+- **伊左地川（庄内湖）**
+  - 位置: 34.738558, 137.641104
+  - リンク: https://maps.app.goo.gl/QHY5h1uWabWVa4639
+- **古人見ボートエリア（庄内湖）**
+  - 位置: 34.732697, 137.634688
+  - リンク: https://maps.app.goo.gl/5RyBLp2ZQYeQax318
+- **協和町ボートエリア（庄内湖）**
+  - 位置: 34.735418, 137.612734
+  - リンク: https://maps.app.goo.gl/ZjbYoqD9UmWmt5aS6
+- **瀬戸水道（せとすいどう）**
+  - 位置: 34.769507, 137.548233
+  - リンク: https://maps.app.goo.gl/yisFh2M9tL6bK7p48
+- **佐久米海岸**
+  - 位置: 34.785074, 137.606548
+  - リンク: https://maps.app.goo.gl/yisFh2M9tL6bK7p49
+- **伊奈（いな）**
+  - 位置: 34.780101, 137.627914
+  - リンク: https://maps.app.goo.gl/9onq2tA251v7f7J8B
+- **伊目（いめ）**
+  - 位置: 34.785183, 137.639434
+  - リンク: https://maps.app.goo.gl/QHY5h1uWabWVa4640
+- **舘山寺・内浦湾**
+  - 位置: 34.766068, 137.620257
+  - リンク: https://www.google.com/maps/search/?api=1&query=34.766068,137.620257
+- **都田川河口**
+  - 位置: 34.792628, 137.641506
+  - リンク: https://www.google.com/maps/search/?api=1&query=34.792628,137.641506
+- **ホトニクス下（三ヶ日）**
+  - 位置: 34.775703, 137.622776
+  - リンク: https://www.google.com/maps/search/?api=1&query=34.775703,137.622776

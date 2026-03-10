@@ -64,6 +64,21 @@ Replace npm with your package manager of choice. `npm`, `pnpm`, `yarn`, `bun`, e
 | `npm run lint`            | Run ESLint                                       |
 | `npm run lint:fix`        | Auto-fix ESLint issues                           |
 
+## 🛠️ Technical Specifications
+
+### 🗺️ Sitemap & SEO
+- **Base URL**: `https://cho-hamanako.info/`
+- **Sitemap Index**: [sitemap-index.xml](https://cho-hamanako.info/sitemap-index.xml)
+- **Integration**: Uses `@astrojs/sitemap` to automatically generate SEO-compliant XML sitemaps during the build process.
+- **Robots configuration**: Linked in `public/robots.txt` for crawler discovery.
+- **LLM Support**: Includes `public/llms.txt` to help AI crawlers understand site structure.
+
+### 🚀 Deployment Workflow (GitHub Actions)
+- **Auto Deploy**: Triggered on every `push` to the `main` branch.
+- **Scheduled Update**: Automatically runs on the **1st of every month at 09:00 JST** to update the "Monthly Featured Points" on the top page.
+- **Full Automation**: The pipeline automatically extracts 301 redirect settings from Markdown frontmatter (`wpSlug`) and generates the `.htaccess` file before each build.
+- **FTP Sync**: Synchronizes the `./dist/` directory to the production server at `cho-hamanako.info/public_html/`.
+
 ## 🗺️ Roadmap
 
 A few features I plan to implement
