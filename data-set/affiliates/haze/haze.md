@@ -49,3 +49,6 @@
     https://www.amazon.co.jp/%E3%81%8C%E3%81%BE%E3%81%8B%E3%81%A4-Gamakatsu-%E3%82%B5%E3%83%9D%E3%83%BC%E3%83%88%E3%83%95%E3%83%83%E3%82%AF%E9%AC%BC%E7%88%AA-%E3%83%8F%E3%82%BC%E3%82%AF%E3%83%A9%E3%82%B9%E3%83%9A%E3%82%B7%E3%83%A3%E3%83%AB-M/dp/B07GFDGJFC?__mk_ja_JP=%E3%82%AB%E3%82%BF%E3%82%AB%E3%83%8A&crid=3EZ6LQ8QWMQO0&dib=eyJ2IjoiMSJ9.c4B6nP2RfvGnytHuuJ9KoLhm_m0FKwFQjHjlaEun47irDWdt7XRNh-6G9EGtOFmMn7iwjgo5JDecjIPOwgzTLAjTCOMWspWS--HIQrnaVUjVkzLMC1pgWFHpIbrq4YmPxyJZ4nMls7Lyq9xGlIvhmvozCDjSnzmwui57vVXF8Yt6AbwNcwYmsDDnNRxOWBhgXGq4grHafQ2XS0uxa7qpOE1jprSSj0oPS-kvEE9K9QTEpkpec-U34aCIFHQfn5JD9AHUkSbF3S90SoDkc5SizIVLjyWcblTWrxjXqiXT_lw.BHTf5H5Yo-iEra2SwrKAd7eixa6B7jG7dAKrTSVW8jU&dib_tag=se&keywords=%E3%83%8F%E3%82%BC%E3%82%AF%E3%83%A9%E3%83%B3%E3%82%AF+%E3%83%95%E3%83%83%E3%82%AF+%E3%82%B7%E3%83%B3%E3%82%B0%E3%83%AB&qid=1773034315&sprefix=%E3%83%8F%E3%82%BC%E3%82%AF%E3%83%A9%E3%83%B3%E3%82%AF+%E3%83%95%E3%83%83%E3%82%AF+%E3%82%B7%E3%83%B3%E3%82%B0%E3%83%AB%2Caps%2C191&sr=8-2&ufe=app_do%3Aamzn1.fos.d8e7ee72-073f-4b97-8ec0-59c18d6dfebe&linkCode=ll2&tag=sasisi344-22&linkId=28d39d251d7d863dd2e7c54cd8bb223f&ref_=as_li_ss_tl
 
 クランクベイトはチヌ（クロダイ・キビレ）でも使える。使うロッドはシーバス・チヌ・メバル・アジなどと共用でもいいが、ハゼは小さすぎる対象のため、引きと当たりを楽しむならトラウトロッドがおすすめ。ハゼクランクはフックを小さくする必要があるので注意。
+
+- haze/sasame-haze-set
+- haze/lucky-craft-hazedra

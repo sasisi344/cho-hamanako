@@ -82,7 +82,7 @@ import TackleCard from "@components/TackleCard.astro";
 *   **🍂 秋（10月〜12月）**：カワハギ、シーバス、キビレ、サヨリ
     *   **【攻略】** 最も魚種が豊かな季節。朝夕のマヅメ時には大型シーバスの回遊も期待できます。
 
-<TackleCard id="kurodai/daiwa-chosenshis-kurodai-2-42" />
+<TackleCard id="common/shimano-lure-tackle-set" />
 
 *   **❄️ 冬（12月〜2月）**：カレイ、メバル、アナゴ
     *   **【攻略】** 車内から暖かくアタリを待てるカレイ釣りが本番。投げ竿を2〜3本出して待ちましょう。
@@ -93,17 +93,20 @@ import TackleCard from "@components/TackleCard.astro";
 
 車横付けとはいえ、足場はコンクリートなので、ライフジャケットの着用は必須です。
 
-<TackleCard id="common/sanka-cooler-6bl" />
-<TackleCard id="common/gentos-headlight-cb-300d" />
+<div class="flex flex-col gap-4">
+  <TackleCard id="common/sanka-cooler-6bl" noMargin={true} />
+  <TackleCard id="common/gentos-headlight-cb-300d" noMargin={true} />
+</div>
 
 ## 周辺観光・グルメ情報
 
 ### 浜松餃子 五味八珍
 釣り帰りの空いたお腹に、静岡県民のソウルフード「浜松餃子」はいかがでしょうか。
 
-<TackleCard id="common/hamamatsu-gyoza-gomihatchin" />
-
-<TackleCard id="travel/rakuten-travel-stay" />
+<div class="flex flex-col gap-4">
+  <TackleCard id="common/hamamatsu-gyoza-gomihatchin" noMargin={true} />
+  <TackleCard id="travel/rakuten-travel-stay" noMargin={true} />
+</div>
 
 ## まとめ：マナーを守って「車横付け」フィッシングを満喫しよう
 

@@ -43,3 +43,7 @@ https://www.amazon.co.jp/%E3%83%8F%E3%83%A4%E3%83%96%E3%82%B5-Hayabusa-HS303-%E5
 https://www.amazon.co.jp/%E3%82%B7%E3%83%9E%E3%83%8E-SHIMANO-%E7%A3%AF%E7%AB%BF-%E3%83%9B%E3%83%AA%E3%83%87%E3%83%BC%E7%A3%AF-450PTS/dp/B072114Y42?__mk_ja_JP=%E3%82%AB%E3%82%BF%E3%82%AB%E3%83%8A&crid=2ZDEZ36FMQV2K&dib=eyJ2IjoiMSJ9.7xIgkhosveiR2WW1iFScORuXXyoxo-L_MFxdRnujmfVB20Yp0nrv1FPkfWa4Yx268-7hC96jVg4OGTvsisNfFIgGzBMiaFmBMljHOyQ39_BBYkNrHA70SFBL_1zroWwIeHD1HulGOYSoA6RJVN5-24B7Y_c1M76YExxagrQdUPtb8UDP5cwvtJJ-MJz_FZ-CaNYk_YD_KdchTst8i-0DTW0-K-nl7gKk8kMWsVCFEiGDaPiX4CNcGR5qpfWHbdKrEthbM0mCwx0ACrISUtkw7XAFmssqq0ZoSy8UmPmxR5I.wi33k92bfSysqyjHH7eEzW7f9ENcPsaM3bybRSND8hw&dib_tag=se&keywords=5.4m%2B%E7%AB%BF%2B%E3%82%B7%E3%83%9E%E3%83%8E&qid=1772878339&sprefix=5.4m%2B%E7%A3%AF%E7%AB%BF%2B%E3%82%B7%E3%83%9E%E3%83%8E%2Caps%2C192&sr=8-6&ufe=app_do%3Aamzn1.fos.bf5b3200-08a5-4406-bf4b-e679e8ebbcc3&th=1&linkCode=ll2&tag=sasisi344-22&linkId=e90438334d25a8ae3b45799c856d0c8a&ref_=as_li_ss_tl
 
 サビキ釣りは磯竿がおすすめ。理由は、リールを使えるのでタナを自由に変更できるから。竿の長さは5.4mを選ぶのがおすすめ。5.4mあればクロダイのウキフカセにも使えるし、キビレのウキ釣りでも使えるから、汎用性能が高い。リールはcommonの3000番でいい。
+
+- hayabusa-sabiki-set
+    https://www.amazon.co.jp/%E3%83%8F%E3%83%A4%E3%83%96%E3%82%B5-Hayabusa-HA195-%E3%81%8B%E3%82%93%E3%81%9F%E3%82%93%E9%A3%9B%E3%81%B0%E3%81%97%E3%82%B5%E3%83%93%E3%82%AD%E3%82%BB%E3%83%83%E3%83%88-4%E6%9C%AC%E9%88%8E/dp/B08XM5WNRC?source=ps-sl-shoppingads-lpcontext&smid=AN1VRQENFRJN5&th=1&psc=1&linkCode=ll2&tag=sasisi344-22&linkId=82c83a456eb11e370c031c17c2091aa4&ref_=as_li_ss_tl
+

@@ -36,3 +36,6 @@
 
 ウキ下は1~1.5mくらいからはじめて、ポイントの水深と状況によって変える。例えば水深2ｍくらいならウキ下1mで、反応がなければ変える。ウキは自立型かつ飛ばしタイプのほうが飛距離と安定性が高いし、ウキ下の仕掛けをフリーに落とせるので食いもいい。
 このタックルはキビレの電気ウキ釣りでも流用可能。
+
+- shimano-exsence-silent-assassin-99f
+    https://www.amazon.co.jp/%E3%82%B7%E3%83%9E%E3%83%8E-SHIMANO-%E3%82%B5%E3%82%A4%E3%83%AC%E3%83%B3%E3%83%88%E3%82%A2%E3%82%B5%E3%82%B7%E3%83%B3-XM-199N-%E3%82%AD%E3%83%A7%E3%82%A6%E3%83%AA%E3%83%B3SB/dp/B082DYP2F4?crid=3W2KD16RY9VX3&dib=eyJ2IjoiMSJ9.X02kgB1olTUMMrH2VemZ1VFMAXEF5cskW3M1srDrqM2gImHo8qJtLEVwpCIJbe6ry9ERQbd8NuJLAIxbXDStNhH8ceC3eJRGNyRWQVYhsqhC9G1ZFGVYCL4P26rzbB5BKducOSXB53iiAswYPcu2H_qEPt2TCKBhxr8bjwR7rE7EGwRZQcex0uyS9hnHHQbF1UaEHD0m_SoyUoJVn-XatjYqZywbmfNCSKXfYUudFdd_DVmSHf3HCOUVOCpsWu6NGZUtzEAa5TnezA9nhAHeGQ1r8IL7WWLzQMO9zvh08ZU.c7hcn3rnw58KtUPpNnAsmdcLIkj1Gtz7jPf1xM90gKk&dib_tag=se&keywords=%E3%82%B5%E3%82%A4%E3%83%AC%E3%83%B3%E3%83%88%E3%82%A2%E3%82%B5%E3%82%B7%E3%83%B3%2B99f&qid=1773129177&sprefix=%E3%82%B5%E3%82%A4%E3%83%AC%E3%83%B3%E3%83%88%E3%82%A2%E3%82%B5%E3%82%B7%E3%83%B3%2Caps%2C194&sr=8-2&ufe=app_do%3Aamzn1.fos.d8e7ee72-073f-4b97-8ec0-59c18d6dfebe&th=1&linkCode=ll2&tag=sasisi344-22&linkId=1d0e0ae606245ecdd5197d475ebbee5f&ref_=as_li_ss_tl

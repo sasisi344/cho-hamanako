@@ -77,3 +77,9 @@ https://www.amazon.co.jp/%E3%83%A9%E3%83%83%E3%82%AD%E3%83%BC%E3%82%AF%E3%83%A9%
 https://www.amazon.co.jp/%E3%82%AB%E3%83%84%E3%82%A4%E3%83%81-Katsuichi-%E3%83%87%E3%82%B3%E3%82%A4-DK-10-%E3%82%A4%E3%83%BC%E3%82%B8%E3%83%BC%E3%82%BB%E3%83%83%E3%83%88%E3%83%81%E3%83%8B%E3%83%B3%E3%82%B0/dp/B0D9PVLNH1?__mk_ja_JP=%E3%82%AB%E3%82%BF%E3%82%AB%E3%83%8A&crid=3I7B382CT2DV8&dib=eyJ2IjoiMSJ9.lqFj25jZzXd5sPYaRKbu3Z0bzXU1ASLS2vk7HaCUmGTrUk30sC8CJYWjJz_d1_dMTOQey9qLZTNAv6iEiuxV9YWWVnQrkA80vfvPeB36XZILKB68CrZuDHQtSDo09mvKmlLJOvPmJzCPsJy7zNZziVihDQ7apcoh75OtxLRmnUIKGyImDQxdoUVizSoEXBDIKNl8Cph8rwIzw6HuxRdG-pHDgdOUy-9S2HrCG7h3HLVuK4vMM8tRG7v3EFfP31orZMdvikzCO8j-3Gb4pm1wMBiDQC5QDhtKlNzkC9yjm74.oEv_7mjnNmzOjvxlfzcuYzxM3wwcKrgRtc3RxvwBzL4&dib_tag=se&keywords=%E3%83%81%E3%83%8B%E3%83%B3%E3%82%B0+%E3%83%AF%E3%83%BC%E3%83%A0%E3%82%BB%E3%83%83%E3%83%88&qid=1772963177&sprefix=%E3%83%81%E3%83%8B%E3%83%B3%E3%82%B0+%E3%83%AF%E3%83%BC%E3%83%A0%E3%82%BB%E3%83%83%E3%83%88%2Caps%2C364&sr=8-1&ufe=app_do%3Aamzn1.fos.bf5b3200-08a5-4406-bf4b-e679e8ebbcc3&linkCode=ll2&tag=sasisi344-22&linkId=19b1c4167205c307eec9df107b371796&ref_=as_li_ss_tl
 
 どれでもいいけど時期にもよる。秋から春にかけてはボトム寄り。夏はトップでも出る感じ。
+
+- kurodai/megabass-popping-duck
+- kurodai/zipbaits-zabra-popper
+- kurodai/zipbaits-fakee-dog-ds
+
+- 

@@ -1,18 +1,26 @@
 ---
 import { getEntry } from "astro:content";
 import AffiliateCard from "./AffiliateCard.astro";
+import BannerCard from "./BannerCard.astro";
 
 interface Props {
   id: string;
+  isVertical?: boolean;
+  noMargin?: boolean;
 }
 
-const { id } = Astro.props;
+const { id, isVertical = false, noMargin = false } = Astro.props;
 const entry = await getEntry("affiliates", id);
+const isTravel = id.startsWith("travel/");
 ---
 
 {entry ? (
-  <div class="my-8">
-    <AffiliateCard product={entry.data} />
+  <div class={noMargin ? "" : "my-8"}>
+    {isTravel ? (
+      <BannerCard product={entry.data} />
+    ) : (
+      <AffiliateCard product={entry.data} isVertical={isVertical} />
+    )}
   </div>
 ) : (
   <div class="my-8 p-4 border border-red-500/30 bg-red-500/10 rounded-xl text-red-500 text-sm font-semibold">

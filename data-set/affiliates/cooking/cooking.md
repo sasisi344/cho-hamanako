@@ -34,6 +34,8 @@ https://www.amazon.co.jp/%E3%80%90%E6%96%99%E7%90%86%E7%A0%94%E7%A9%B6%E5%AE%B6%
 *   **砥石（シャプトン セラミック砥石 刃の黒幕 #1000）**: 切れ味を保つために。良い包丁を長く使うためにも必要。
 https://www.amazon.co.jp/IROKCAKPT-%E5%8C%85%E4%B8%81%E7%A0%94%E3%81%8E%E7%9F%B3-%E4%B8%AD%E7%A0%A5%E3%81%8E%E3%81%8B%E3%82%89%E4%BB%95%E4%B8%8A%E3%81%92-%E5%9C%92%E8%8A%B8%E7%94%A8%E3%81%AE%E3%83%8F%E3%82%B5%E3%83%9F%E3%81%AA-%E3%82%AD%E3%83%A3%E3%83%B3%E3%83%97%E7%94%A8%E3%81%AE%E3%83%8A%E3%82%A4%E3%83%95%E7%A0%A5%E7%9F%B3%E3%81%AB%E6%9C%80%E9%81%A9/dp/B0B7JP85XH?__mk_ja_JP=%E3%82%AB%E3%82%BF%E3%82%AB%E3%83%8A&content-id=amzn1.sym.55817948-ae07-4a88-8153-6be6bc9e3814%3Aamzn1.sym.55817948-ae07-4a88-8153-6be6bc9e3814&crid=MEI5T3SU5041&cv_ct_cx=%E7%A0%A5%E7%9F%B3&keywords=%E7%A0%A5%E7%9F%B3&pd_rd_i=B0B7JP85XH&pd_rd_r=23aac738-4167-4871-bc82-959a2ca1af0d&pd_rd_w=8C0uW&pd_rd_wg=Vp2qS&pf_rd_p=55817948-ae07-4a88-8153-6be6bc9e3814&pf_rd_r=NDEJCHCYTP8R7ZC2YXZE&qid=1773070349&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sprefix=%E7%A0%A5%E7%9F%B3%2Caps%2C232&sr=1-2-9ad0563b-de06-426f-a1d3-3a92323660bd-spons&ufe=app_do%3Aamzn1.fos.bf5b3200-08a5-4406-bf4b-e679e8ebbcc3&sp_csd=d2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM&th=1&linkCode=ll2&tag=sasisi344-22&linkId=0a600b3b7ec0154b23b603dbef0e9333&ref_=as_li_ss_tl
 
+<TackleCard id="cooking/okamoto-pichit-regular-32" />
+
 ---
 上記の商品から、アフィリエイト用のYAMLデータを作成しました。
 
@@ -46,7 +48,7 @@ https://www.amazon.co.jp/IROKCAKPT-%E5%8C%85%E4%B8%81%E7%A0%94%E3%81%8E%E7%9F%B3
 *   `cooking/wadaisuke-brass-scaler` (真鍮ウロコ取り)
 *   `cooking/hayakawa-sasara` (ササラ)
 *   `cooking/pearlmetal-bone-tweezers` (骨抜き)
-*   `cooking/okamoto-pichit-regular` (ピチットシート)
+*   `cooking/okamoto-pichit-regular-32` (ピチットシート)
 *   `cooking/green-perch` (グリーンパーチ)
 *   `cooking/lumica-ikijime-set` (神経締めセット)
 *   `cooking/latuna-cutting-board` (抗菌まな板)

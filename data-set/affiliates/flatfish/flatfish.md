@@ -32,3 +32,6 @@ https://www.amazon.co.jp/dp/B0D92PWFCP?tag=sasisi344-22
 https://www.amazon.co.jp/dp/B08DLDT6N9?tag=sasisi344-22
 - **メタルジグ：** DUO ビーチウォーカー フリッパー Z24
 https://www.amazon.co.jp/dp/B08CD6G3K1?tag=sasisi344-22
+
+- major-craft-maki-jig-jet
+    https://www.amazon.co.jp/%E3%83%A1%E3%82%B8%E3%83%A3%E3%83%BC%E3%82%AF%E3%83%A9%E3%83%95%E3%83%88-%E3%83%A1%E3%82%BF%E3%83%AB%E3%82%B8%E3%82%B0-%E3%83%9E%E3%82%AD%E3%82%B8%E3%82%B0-%E3%83%96%E3%83%AB%E3%83%BC%E3%83%94%E3%83%B3%E3%82%AF%E3%82%A4%E3%83%AF%E3%82%B7-78/dp/B08HZ26HMZ?source=ps-sl-shoppingads-lpcontext&smid=AN1VRQENFRJN5&th=1&linkCode=ll2&tag=sasisi344-22&linkId=39b30b0f74354eaaf0e89d7aecd8df52&ref_=as_li_ss_tl

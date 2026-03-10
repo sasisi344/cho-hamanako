@@ -1,0 +1,63 @@
+---
+import type { CollectionEntry } from "astro:content";
+
+interface Props {
+  product: CollectionEntry<"affiliates">["data"];
+}
+
+const { product } = Astro.props;
+
+// Logic for lazy data extraction from SiteStripe HTML (same as AffiliateCard)
+let finalLink = product.link;
+let finalImage = product.image;
+
+if (product.html) {
+  const linkMatch = product.html.match(/href="([^"]+)"/);
+  if (linkMatch) finalLink = linkMatch[1];
+
+  const srcMatches = [...product.html.matchAll(/src="([^"]+)"/g)];
+  const productImages = srcMatches
+    .map(m => m[1])
+    .filter(src => !src.includes('/ir?') && !src.includes('1x1'));
+    
+  if (productImages.length > 0) {
+    finalImage = productImages[0];
+    if (finalImage.startsWith('//')) finalImage = 'https:' + finalImage;
+  }
+}
+
+// アイコンの選定
+const getIcon = (name: string) => {
+  if (name.includes('宿泊')) return '🏨';
+  if (name.includes('レンタカー')) return '🚗';
+  if (name.includes('体験') || name.includes('asoview')) return '🎟️';
+  if (name.includes('予約')) return '📅';
+  return '🔗';
+};
+
+const icon = getIcon(product.name);
+const brandName = product.brand || "";
+// Remove brand name from product name if brand is already there to avoid recursion e.g. "楽天トラベル 楽天トラベル"
+let cleanName = product.name.split('（')[0].split('(')[0];
+if (brandName && cleanName.includes(brandName)) {
+  cleanName = cleanName.replace(brandName, '').trim();
+}
+
+const linkText = `${brandName}${cleanName} 予約 ${icon}`;
+---
+
+<div class="p-4 border border-slate-200 dark:border-slate-800 rounded-xl bg-white dark:bg-slate-900 shadow-sm text-center">
+  <a href={finalLink} target="_blank" rel="noopener noreferrer" class="no-underline group block">
+    {finalImage && (
+      <img src={finalImage} alt={product.name} class="mx-auto mb-2 group-hover:scale-105 transition-transform duration-300" />
+    )}
+    <p class="text-blue-600 dark:text-blue-400 font-bold hover:underline m-0">
+      {linkText}
+    </p>
+    {product.description && (
+      <p class="text-xs text-slate-500 dark:text-slate-400 mt-1 mb-0 line-clamp-1">
+        {product.description}
+      </p>
+    )}
+  </a>
+</div>

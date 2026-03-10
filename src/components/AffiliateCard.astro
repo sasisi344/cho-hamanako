@@ -3,9 +3,10 @@ import type { CollectionEntry } from "astro:content";
 
 interface Props {
   product: CollectionEntry<"affiliates">["data"];
+  isVertical?: boolean;
 }
 
-const { product } = Astro.props;
+const { product, isVertical = false } = Astro.props;
 
 // Logic for lazy data extraction from SiteStripe HTML
 let finalLink = product.link;
@@ -20,7 +21,7 @@ if (product.html) {
   const srcMatches = [...product.html.matchAll(/src="([^"]+)"/g)];
   const productImages = srcMatches
     .map(m => m[1])
-    .filter(src => !src.includes('/ir?') && !src.includes('1x1')); // Filter tracking pixels
+    .filter(src => !src.includes('/ir?') && !src.includes('1x1'));
     
   if (productImages.length > 0) {
     finalImage = productImages[0];
@@ -29,9 +30,9 @@ if (product.html) {
 }
 ---
 
-<div class="not-prose group relative flex flex-col sm:flex-row gap-6 p-6 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 hover:border-blue-400 dark:hover:border-blue-500 transition-all duration-300 shadow-sm hover:shadow-xl overflow-hidden">
+<div class:list={["not-prose group relative flex gap-6 p-6 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 hover:border-blue-400 dark:hover:border-blue-500 transition-all duration-300 shadow-sm hover:shadow-xl overflow-hidden", isVertical ? "flex-col" : "flex-col sm:flex-row"]}>
   
-  <div class="shrink-0 w-full sm:w-48 h-48 rounded-xl overflow-hidden bg-white dark:bg-slate-800 border border-slate-100 dark:border-slate-700 flex items-center justify-center p-2">
+  <div class:list={["shrink-0 w-full h-48 rounded-xl overflow-hidden bg-white dark:bg-slate-800 border border-slate-100 dark:border-slate-700 flex items-center justify-center p-2", isVertical ? "" : "sm:w-48"]}>
     {finalImage ? (
       <img 
         src={finalImage} 

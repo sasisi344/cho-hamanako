@@ -207,18 +207,18 @@ fishinginfo:
 - **Categorization**: 管理DBは魚種名などのフォルダで分類されています。紹介する際は、攻略対象に最適なフォルダから商品を選んでください。
 - **Comparison**: 複数の道具を紹介する場合は、それぞれの特徴を前後の文脈で補足すること。
 
-### ✅ Component Syntax
-- **Workflow**: 
-  1. ファイル拡張子が `.mdx` であることを確認する（`.md` の場合は変更する）。
-  2. コンポーネントをインポートする（通常はページ上部で一括読み込み）：
-     ```mdx
-     import TackleCard from "@components/TackleCard.astro";
-     ```
-  3. 管理ページ（`/affiliates`）で表示されているIDを使用して配置する：
-     ```mdx
-     <TackleCard id="kurodai/sample" />
-     <TackleCard id="common/daiwa-legalis" />
-     ```
+### ✅ Layout & Grid Rules (Strict)
+- **Vertical Stacking**: Multi-product links must be displayed in a **vertical list**, NOT a horizontal grid. This ensures content readability and prevents broken layouts on varying screen sizes.
+- **Container Class**: Wrap multiple cards in a `div` with `class="flex flex-col gap-4"`.
+- **Component Props**: Use `noMargin={true}` when inside a flex container to let the container handle spacing.
+
+#### Standard Example
+```mdx
+<div class="flex flex-col gap-4">
+  <TackleCard id="category/item-1" noMargin={true} />
+  <TackleCard id="category/item-2" noMargin={true} />
+</div>
+```
 
 ### ✅ When to Use
 - **Gear Introductions**: 「おすすめの仕掛け」「推奨タックル」といったセクションで、具体的な製品を紹介する場合。

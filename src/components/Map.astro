@@ -68,6 +68,15 @@ const mapId = `map-${Math.random().toString(36).substring(2, 9)}`;
 
 <style>
   :global(.leaflet-popup-content-wrapper) {
-    border-radius: 8px;
+    border-radius: 12px;
+    background: white !important;
+    color: #334155 !important; /* slate-700 */
+  }
+  :global(.leaflet-popup-tip) {
+    background: white !important;
+  }
+  :global(.leaflet-popup-content) {
+    font-weight: 600;
+    color: #334155 !important;
   }
 </style>

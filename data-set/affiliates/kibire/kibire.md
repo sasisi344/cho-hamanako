@@ -37,3 +37,14 @@
     - トップ: ペンシルベイト
     - ボトム: ワームかクランクベイト
 
+- ima-chappy-80
+    https://www.amazon.co.jp/%E3%82%A2%E3%83%A0%E3%82%BA%E3%83%87%E3%82%B6%E3%82%A4%E3%83%B3-%E3%83%81%E3%83%A3%E3%83%83%E3%83%94%E3%83%BC-CP80-CP80-009-%E3%82%B5%E3%82%A4%E3%83%88%E3%83%9C%E3%83%A9/dp/B08ZHLQCPB?__mk_ja_JP=%E3%82%AB%E3%82%BF%E3%82%AB%E3%83%8A&crid=1O1COXEK9GN7U&dib=eyJ2IjoiMSJ9.FyAz3CiGr7NlpE7w_u1PqEw4tPqxcqOJej48hCxuknTGjHj071QN20LucGBJIEps.wQD05STy1W8Nul2aFqkRpZCje9waNipOtk6L7TMxpCk&dib_tag=se&keywords=ima-chappy-80&qid=1773128810&sprefix=ima-chappy-80%2Caps%2C200&sr=8-1&ufe=app_do%3Aamzn1.fos.d8e7ee72-073f-4b97-8ec0-59c18d6dfebe&th=1&linkCode=ll2&tag=sasisi344-22&linkId=479aa9b686b62da0d4a14bba19c7cca5&ref_=as_li_ss_tl
+
+- ima-popkey-80
+    https://www.amazon.co.jp/%E3%82%A2%E3%83%A0%E3%82%BA%E3%83%87%E3%82%B6%E3%82%A4%E3%83%B3-Ima-%E3%82%A2%E3%82%A4%E3%83%9E%E3%83%9D%E3%83%83%E3%82%AD%E3%83%BC-IP80-203-%E3%82%B3%E3%83%83%E3%83%88%E3%83%B3%E3%82%AD%E3%83%A3%E3%83%B3%E3%83%87%E3%82%A3%E3%83%BC/dp/B0BNHD92BR?__mk_ja_JP=%E3%82%AB%E3%82%BF%E3%82%AB%E3%83%8A&crid=45V7UEXQ2SXN&dib=eyJ2IjoiMSJ9.wm0CczuoEhwRPCALB52VnHI7p9m4m-hC2Lhl-PQjrrkWn_Dr65scKcdS2owADl8A4qJLsqpTZdFB6oni03lYUq8pAkZP8kRFGqqkHOQ0fRo.GgYiqKQpkqn7vYb16KNdU5dhIhHnJdMMjSfp0KOzEbQ&dib_tag=se&keywords=ima-popkey-80&qid=1773128891&sprefix=ima-popkey-80%2Caps%2C215&sr=8-3&ufe=app_do%3Aamzn1.fos.d8e7ee72-073f-4b97-8ec0-59c18d6dfebe&th=1&linkCode=ll2&tag=sasisi344-22&linkId=dc6d0fd388346752f4924f1bf658d2ed&ref_=as_li_ss_tl
+
+- shimano-bremia-bb-s78ml
+    https://www.amazon.co.jp/%E3%82%B7%E3%83%9E%E3%83%8E-SHIMANO-%E3%83%96%E3%83%AA%E3%83%BC%E3%83%A0%E5%B0%82%E7%94%A8%E3%83%AD%E3%83%83%E3%83%89-%E3%82%B9%E3%83%94%E3%83%8B%E3%83%B3%E3%82%B0%E3%83%A2%E3%83%87%E3%83%AB-SiC%E3%83%AA%E3%83%B3%E3%82%B0%E3%82%AC%E3%82%A4%E3%83%89/dp/B0BW33DNQ5?__mk_ja_JP=%E3%82%AB%E3%82%BF%E3%82%AB%E3%83%8A&crid=3VZG9LN0LEQUR&dib=eyJ2IjoiMSJ9.Tfle-p1nyl76Ks892jDjQP2hQjqWro7PRZ7Ct21bm-xVjsVKm8QAY-DMuH0pbaYzsKgdt0MSJTabcEsPfuNaLw.b5v2X2IizSOWycEVwuSiScAIStPCoxROFtSyvMGCV9Y&dib_tag=se&keywords=s78ml&qid=1773128968&sprefix=s78ml%2Caps%2C269&sr=8-5&ufe=app_do%3Aamzn1.fos.d8e7ee72-073f-4b97-8ec0-59c18d6dfebe&th=1&linkCode=ll2&tag=sasisi344-22&linkId=90c1e951be6e693ede95fda807bee287&ref_=as_li_ss_tl
+
+ - bremia-risewalk-65f
+    https://www.amazon.co.jp/%E3%82%B7%E3%83%9E%E3%83%8E-SHIMANO-%E3%83%A9%E3%82%A4%E3%82%BA%E3%82%A6%E3%82%A9%E3%83%BC%E3%82%AF-XH-T65S-ST%E3%82%AF%E3%83%AA%E3%82%A2%E3%83%94%E3%83%B3%E3%82%AF/dp/B0BTLRJLFW?crid=1GMEK98GSSF16&dib=eyJ2IjoiMSJ9.rev3twjPT-6m7RLvz2d3m76YRWaQJTeQKN_vqIfc8GFQYDKedkr7kyJJW9ba5Iup.aLvt3HEw2vZlkpYyzgSUEOH2gpRyuJhPi7ObVoTBC0Q&dib_tag=se&keywords=rise%2Bwalk%2B65f&qid=1773130109&sprefix=risewalk-65f%2Caps%2C206&sr=8-2&ufe=app_do%3Aamzn1.fos.d8e7ee72-073f-4b97-8ec0-59c18d6dfebe&th=1&psc=1&linkCode=ll2&tag=sasisi344-22&linkId=da16adbc317fad225fba24468fb013cd&ref_=as_li_ss_tl

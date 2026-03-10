@@ -1,0 +1,10 @@
+id: cooking/okamoto-pichit-regular-32
+name: オカモト 業務用ピチット レギュラー 32枚ロール
+link: https://www.amazon.co.jp/dp/B003VQQP7C?tag=sasisi344-22&linkCode=ll2&linkId=535706310aba13b056a606547b04242c
+image: https://m.media-amazon.com/images/P/B003VQQP7C.01.LZZZZZZZ.jpg
+description: 旨味を凝縮させ、生臭さを防ぐ魔法のシート。32枚入りの業務用ロールタイプで、頻繁に魚をさばく方に最適です。
+targetFish: ["全魚種"]
+methods: ["料理", "熟成"]
+categories: ["消耗品"]
+brand: オカモト
+isRecommended: true
