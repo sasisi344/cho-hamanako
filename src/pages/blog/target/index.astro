@@ -7,7 +7,7 @@ import SearchCollection from "@components/SearchCollection";
 
 const targetPosts = (await getCollection("blog"))
   .filter((post) => !post.data.draft && post.data.category === "target")
-  .sort((a, b) => (b.data.pubDate || b.data.date).getTime() - (a.data.pubDate || a.data.date).getTime());
+  .sort((a, b) => (b.data.pubDate || b.data.pubDate).getTime() - (a.data.pubDate || a.data.pubDate).getTime());
 
 const title = "釣れる魚・ターゲット解説";
 const description = "浜名湖で狙える主要なターゲット魚種ごとの攻略法、時期、ポイントを詳しく解説。";

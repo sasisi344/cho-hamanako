@@ -16,7 +16,7 @@ const { title, description, image = "/open-graph.jpg", noindex = false } = Astro
 <!-- Global Metadata -->
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1" />
-<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<link rel="icon" type="image/png" href="/favicon.png" />
 <meta name="generator" content={Astro.generator} />
 {noindex && <meta name="robots" content="noindex" />}
 
@@ -56,6 +56,16 @@ const { title, description, image = "/open-graph.jpg", noindex = false } = Astro
 <script is:inline src="/js/scroll.js"></script>
 <script is:inline src="/js/animate.js"></script>
 <script defer is:inline src="/js/copy.js"></script>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-BTZTZ7TNDK"></script>
+<script is:inline>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-BTZTZ7TNDK');
+</script>
 
 <!-- <ViewTransitions  /> -->
 

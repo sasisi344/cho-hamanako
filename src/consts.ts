@@ -4,7 +4,7 @@ import type { Site, Page, Links, Socials } from "@types"
 export const SITE: Site = {
   TITLE: "釣！浜名湖",
   DESCRIPTION: "浜名湖の釣りポイント、仕掛け、ターゲット魚種、周辺情報を網羅した総合フィッシングガイド。初心者からベテランまで、「釣れる」情報を発信します。",
-  AUTHOR: "Cho! Hamanako Team",
+  AUTHOR: "さしし",
 }
 
 // Work Page
@@ -56,8 +56,8 @@ export const SOCIALS: Socials = [
   {
     NAME: "Twitter",
     ICON: "twitter-x",
-    TEXT: "@cho_hamanako",
-    HREF: "https://twitter.com/",
+    TEXT: "@sasisi344",
+    HREF: "https://x.com/sasisi344",
   },
 ]
 

@@ -26,13 +26,13 @@ const mapPoints = allPosts
 
     return {
       name: post.data.title,
-      lat: post.data.location.lat,
-      lng: post.data.location.lng,
+      lat: post.data.location?.lat,
+      lng: post.data.location?.lng,
       url,
       summary: post.data.summary || "",
       category: post.data.category,
       tags: normalizedTags,
-      pubDate: post.data.pubDate || post.data.date
+      pubDate: post.data.pubDate || post.data.pubDate
     };
   });
 

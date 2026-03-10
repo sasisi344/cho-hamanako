@@ -7,7 +7,7 @@ import SearchCollection from "@components/SearchCollection";
 import { POINTS } from "@consts";
 const points = (await getCollection("blog"))
   .filter((post) => !post.data.draft && post.data.category === "points")
-  .sort((a, b) => (b.data.pubDate || b.data.date).getTime() - (a.data.pubDate || a.data.date).getTime());
+  .sort((a, b) => (b.data.pubDate || b.data.pubDate).getTime() - (a.data.pubDate || a.data.pubDate).getTime());
 
 const tags = [
   ...new Set(points.flatMap((post) => post.data.tags)),

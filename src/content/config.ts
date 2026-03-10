@@ -65,7 +65,7 @@ const blog = defineCollection({
       draft: z.boolean().default(false).optional(),
       noindex: z.boolean().default(false).optional(),
       slug: z.string().regex(/^[a-z0-9]+(?:-[a-z0-9]+)*$/).optional(),
-      category: z.enum(['guide', 'target', 'cooking', 'news', 'test', 'season', 'travel']).optional(),
+      category: z.enum(['guide', 'target', 'cooking', 'news', 'test', 'season', 'travel', 'method']).optional(),
       cover: image().optional(),
       location: locationSchema,
       fishinginfo: fishinginfoSchema,

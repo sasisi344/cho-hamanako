@@ -1,0 +1,10 @@
+id: common/oakley-frogskins-polarized
+name: オークリー (Oakley) Frogskins (偏光モデル)
+link: https://www.amazon.co.jp/%E3%82%AA%E3%83%BC%E3%82%AF%E3%83%AA%E3%83%BC-Oakley-%E3%82%B5%E3%83%B3%E3%82%B0%E3%83%A9%E3%82%B9-0OO9245-Polished/dp/B07C4PS3QS?tag=sasisi344-22&linkCode=ll2&linkId=8f1ef923867b9de3a211cf40cff89afc
+image: https://m.media-amazon.com/images/P/B07C4PS3QS.01.LZZZZZZZ.jpg
+description: 釣り以外でも使える高いデザイン性と、圧倒的な解像度。サイトフィッシングだけでなく観光でも活躍する偏光グラス。
+targetFish: ["クロダイ", "キビレ", "シーバス"]
+methods: ["観光", "ルアーフィッシング"]
+categories: ["アイウェア"]
+brand: オークリー
+isRecommended: true

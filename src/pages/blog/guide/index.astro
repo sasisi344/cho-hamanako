@@ -7,7 +7,7 @@ import SearchCollection from "@components/SearchCollection";
 
 const guidePosts = (await getCollection("blog"))
   .filter((post) => !post.data.draft && post.data.category === "guide")
-  .sort((a, b) => (b.data.pubDate || b.data.date).getTime() - (a.data.pubDate || a.data.date).getTime());
+  .sort((a, b) => (b.data.pubDate || b.data.pubDate).getTime() - (a.data.pubDate || a.data.pubDate).getTime());
 
 const title = "初心者向け解説ガイド";
 const description = "浜名湖での釣りを始める方に向けた、基礎知識や入門ガイドをまとめています。";
