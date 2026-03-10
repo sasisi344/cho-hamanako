@@ -29,12 +29,59 @@ const getHref = (e: any) => {
   }
   return `/${e.collection}/${e.slug}`
 }
+import { ADSENSE } from "@consts"
+
+const isBlog = collection === "blog"
 ---
 
 <div>
-  <article>
+  <article id="article">
     <Content/>
   </article>
+
+  {isBlog && (
+    <div class="my-12 animate adsense-multiplex">
+       <ins class="adsbygoogle"
+            style="display:block"
+            data-ad-format="autorelaxed"
+            data-ad-client={ADSENSE.CLIENT_ID}
+            data-ad-slot={ADSENSE.MULTIPLEX_SLOT}></ins>
+       <script is:inline>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+    </div>
+  )}
+
+  {isBlog && (
+    <script is:inline define:vars={{ ADSENSE }}>
+      function injectRectangleAd() {
+        const article = document.getElementById("article");
+        const firstH2 = article?.querySelector("h2");
+        if (firstH2 && !article.querySelector(".adsense-rectangle")) {
+          const adContainer = document.createElement("div");
+          adContainer.className = "my-8 flex justify-center adsense-rectangle";
+          adContainer.innerHTML = `
+            <ins class="adsbygoogle"
+                 style="display:block"
+                 data-ad-client="${ADSENSE.CLIENT_ID}"
+                 data-ad-slot="${ADSENSE.RECTANGLE_SLOT}"
+                 data-ad-format="auto"
+                 data-full-width-responsive="true"></ins>
+          `;
+          firstH2.insertAdjacentElement("afterend", adContainer);
+          (window.adsbygoogle = window.adsbygoogle || []).push({});
+        }
+      }
+
+      // 実行
+      if (document.readyState === "loading") {
+        document.addEventListener("DOMContentLoaded", injectRectangleAd);
+      } else {
+        injectRectangleAd();
+      }
+
+      // Astro ViewTransitions 対応
+      document.addEventListener("astro:page-load", injectRectangleAd);
+    </script>
+  )}
   <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
     <a href={getHref(prev)} class="group p-4 gap-3 flex items-center border rounded-lg hover:bg-black/5 hover:dark:bg-white/10 border-black/15 dark:border-white/20 blend">
       <div class="order-2 w-full h-full group-hover:text-black group-hover:dark:text-white blend">

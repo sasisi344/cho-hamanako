@@ -1,16 +1,18 @@
 ---
 import { ViewTransitions } from "astro:transitions"
+import { ADSENSE } from "@consts"
 
 interface Props {
   title: string
   description: string
   image?: string
   noindex?: boolean
+  hasAds?: boolean
 }
 
 const canonicalURL = new URL(Astro.url.pathname, Astro.site)
 
-const { title, description, image = "/open-graph.jpg", noindex = false } = Astro.props
+const { title, description, image = "/open-graph.jpg", noindex = false, hasAds = false } = Astro.props
 ---
 
 <!-- Global Metadata -->
@@ -56,6 +58,10 @@ const { title, description, image = "/open-graph.jpg", noindex = false } = Astro
 <script is:inline src="/js/scroll.js"></script>
 <script is:inline src="/js/animate.js"></script>
 <script defer is:inline src="/js/copy.js"></script>
+
+{hasAds && (
+  <script is:inline async src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${ADSENSE.CLIENT_ID}`} crossorigin="anonymous"></script>
+)}
 
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-BTZTZ7TNDK"></script>

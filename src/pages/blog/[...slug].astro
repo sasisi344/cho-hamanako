@@ -21,7 +21,7 @@ const post = Astro.props
 const { title, summary, noindex } = post.data
 ---
 
-<PageLayout title={title} description={summary} noindex={noindex}>
+<PageLayout title={title} description={summary} noindex={noindex} hasAds={true}>
   <TopLayout>
     <div class="animate">
       <ArticleTopLayout entry={post}/>

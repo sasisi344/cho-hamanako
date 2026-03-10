@@ -61,3 +61,10 @@ export const SOCIALS: Socials = [
   },
 ]
 
+
+// AdSense
+export const ADSENSE = {
+  CLIENT_ID: "ca-pub-9798094072282530",
+  RECTANGLE_SLOT: "5678675074",
+  MULTIPLEX_SLOT: "9983134206",
+}
