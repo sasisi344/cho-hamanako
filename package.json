@@ -6,7 +6,7 @@
     "dev": "astro dev",
     "dev:network": "astro dev --host",
     "start": "astro dev",
-    "build": "astro check && astro build",
+    "build": "astro check && astro build && npx partytown copylib dist/partytown",
     "preview": "astro preview",
     "preview:network": "astro dev --host",
     "astro": "astro",
