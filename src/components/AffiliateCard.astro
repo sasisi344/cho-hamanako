@@ -28,6 +28,16 @@ if (product.html) {
     if (finalImage.startsWith('//')) finalImage = 'https:' + finalImage;
   }
 }
+
+// Optimize Amazon image URLs
+if (finalImage && finalImage.includes('media-amazon.com/images/P/')) {
+  // Replace LZZZZZZZ with size constraints. 
+  // _AC_SY320_ targets max height 320px which fits most card layouts well.
+  finalImage = finalImage.replace(/\.01\.LZZZZZZZ\./, '.01._AC_SY320_.');
+} else if (finalImage && finalImage.includes('media-amazon.com/images/I/')) {
+  // For images in the /I/ format
+  finalImage = finalImage.replace(/\.jpg$/, '._AC_SY320_.jpg');
+}
 ---
 
 <div class:list={["not-prose group relative flex gap-6 p-6 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 hover:border-blue-400 dark:hover:border-blue-500 transition-all duration-300 shadow-sm hover:shadow-xl overflow-hidden", isVertical ? "flex-col" : "flex-col sm:flex-row"]}>
@@ -37,6 +47,10 @@ if (product.html) {
       <img 
         src={finalImage} 
         alt={product.name} 
+        width="320"
+        height="320"
+        loading="lazy"
+        decoding="async"
         class="max-w-full max-h-full object-contain group-hover:scale-110 transition-transform duration-500"
       />
     ) : (

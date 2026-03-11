@@ -1,5 +1,5 @@
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 width="100%" viewBox="255 255 524 524" enable-background="new 0 0 1024 1024" xml:space="preserve">
+	 width="100%" viewBox="0 0 1024 1024" enable-background="new 0 0 1024 1024" xml:space="preserve">
 <path fill="#000000" opacity="1.000000" stroke="none" 
 	d="
 M576.703247,503.765747 
@@ -283,4 +283,4 @@ M446.549591,502.563171
 	C464.551178,515.823547 453.725372,511.820312 443.157532,507.563293 
 	C443.072998,504.711884 445.087189,504.059174 446.549591,502.563171 
 z"/>
-<style>path { fill: #000; } @media (prefers-color-scheme: dark) { path { fill: #FFF; } }</style></svg>
+</svg>

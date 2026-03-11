@@ -85,7 +85,7 @@ import Container from "@components/Container.astro"
 
 </footer>
 
-<script is:inline>
+<script>
   function goBackToTop(event) {
     event.preventDefault()
     window.scrollTo({
@@ -96,6 +96,7 @@ import Container from "@components/Container.astro"
 
   function initializeBackToTop() {
     const backToTop = document.getElementById("back-to-top")
+    backToTop?.removeEventListener("click", goBackToTop)
     backToTop?.addEventListener("click", goBackToTop)
   }
 
