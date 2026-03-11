@@ -22,9 +22,9 @@ const { title, description, image = "/open-graph.jpg", noindex = false, hasAds =
 <meta name="generator" content={Astro.generator} />
 {noindex && <meta name="robots" content="noindex" />}
 
-<!-- Google tag (gtag.js) -->
-<script is:inline async src="https://www.googletagmanager.com/gtag/js?id=G-EC504C30T1"></script>
-<script is:inline>
+<!-- Google tag (gtag.js) via Partytown -->
+<script is:inline type="text/partytown" src="https://www.googletagmanager.com/gtag/js?id=G-EC504C30T1"></script>
+<script is:inline type="text/partytown">
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
@@ -88,5 +88,21 @@ const { title, description, image = "/open-graph.jpg", noindex = false, hasAds =
 </script>
 
 {hasAds && (
-  <script is:inline async src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${ADSENSE.CLIENT_ID}`} crossorigin="anonymous"></script>
+  <script is:inline define:vars={{ clientId: ADSENSE.CLIENT_ID }}>
+    let adsLoaded = false;
+    function lazyLoadAdSense() {
+      if (adsLoaded) return;
+      adsLoaded = true;
+      const script = document.createElement("script");
+      script.src = `https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${clientId}`;
+      script.async = true;
+      script.crossOrigin = "anonymous";
+      document.head.appendChild(script);
+      
+      const events = ['scroll', 'mousemove', 'touchstart', 'keydown'];
+      events.forEach(e => window.removeEventListener(e, lazyLoadAdSense));
+    }
+    const events = ['scroll', 'mousemove', 'touchstart', 'keydown'];
+    events.forEach(e => window.addEventListener(e, lazyLoadAdSense, { passive: true, once: true }));
+  </script>
 )}
