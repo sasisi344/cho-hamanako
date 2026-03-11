@@ -27,6 +27,7 @@ const mapId = `map-${Math.random().toString(36).substring(2, 9)}`;
 <script is:inline src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
 
 <script is:inline define:vars={{ mapId }}>
+  // @ts-nocheck
   function initSingleMap() {
     const el = document.getElementById(mapId);
     if (!el || typeof L === 'undefined') return;

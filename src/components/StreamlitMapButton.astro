@@ -58,6 +58,7 @@ const streamlitUrl = `${streamlitBaseUrl}/?lat=${lat}&lng=${lng}&zoom=${zoom}&em
 </div>
 
 <script is:inline define:vars={{ btnId, containerId, streamlitUrl }}>
+// @ts-nocheck
 (function() {
   const btn = document.getElementById(btnId);
   const container = document.getElementById(containerId);

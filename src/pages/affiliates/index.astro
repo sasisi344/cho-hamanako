@@ -9,7 +9,6 @@ const products = await getCollection("affiliates");
 // Taxonomy extraction
 const allFish = [...new Set(products.flatMap(p => p.data.targetFish))].sort();
 const allMethods = [...new Set(products.flatMap(p => p.data.methods))].sort();
-const allCategories = [...new Set(products.flatMap(p => p.data.categories))].sort();
 
 // Group products by Fish Species
 const productsByFish = allFish.reduce((acc, fish) => {
