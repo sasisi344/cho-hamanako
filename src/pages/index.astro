@@ -4,6 +4,10 @@ import PageLayout from "@layouts/PageLayout.astro"
 import ArrowCard from "@components/ArrowCard"
 import { SITE } from "@consts"
 import HamanakoZoomHero from "@components/HamanakoZoomHero.astro"
+import { Image } from "astro:assets"
+import omoteImg from "../assets/images/omote.webp"
+import nakaImg from "../assets/images/naka.webp"
+import okuImg from "../assets/images/oku.webp"
 
 const allPosts = await getCollection("blog")
 const sortedPosts = allPosts
@@ -23,9 +27,9 @@ const guidePosts = sortedPosts.filter(post => post.data.category === "guide")
 const recentGuides = guidePosts.slice(0, 3)
 
 const areas = [
-  { name: "表浜名湖", slug: "omote", description: "今切口に近く潮通し抜群。シーバス・青物の回遊も。", image: "/images/omote.webp" },
-  { name: "中浜名湖", slug: "naka", description: "広大な干潟が広がる。クロダイの聖地。", image: "/images/naka.webp" },
-  { name: "奥浜名湖", slug: "oku", description: "汽水域の豊かさ。ハゼやシーバスの宝庫。", image: "/images/oku.webp" },
+  { name: "表浜名湖", slug: "omote", description: "今切口に近く潮通し抜群。シーバス・青物の回遊も。", image: omoteImg },
+  { name: "中浜名湖", slug: "naka", description: "広大な干潟が広がる。クロダイの聖地。", image: nakaImg },
+  { name: "奥浜名湖", slug: "oku", description: "汽水域の豊かさ。ハゼやシーバスの宝庫。", image: okuImg },
 ]
 ---
 
@@ -45,7 +49,7 @@ const areas = [
         {areas.map(area => (
           <a href={`/map?area=${area.name}`} class="group relative h-80 overflow-hidden rounded-3xl shadow-2xl transition-all hover:-translate-y-2">
             <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent z-10"></div>
-            <img src={area.image} alt={area.name} class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" />
+            <Image src={area.image} alt={area.name} class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" widths={[400, 800]} sizes="(max-width: 768px) 100vw, 33vw" quality={70} loading="lazy" decoding="async" />
             <div class="absolute bottom-0 left-0 p-8 z-20">
               <h3 class="text-2xl font-bold text-white mb-2">{area.name}</h3>
               <p class="text-white/80 text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300">{area.description}</p>

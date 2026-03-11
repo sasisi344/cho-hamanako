@@ -1,10 +1,12 @@
 ---
+import { Image } from "astro:assets"
+import heroImg from "../assets/images/hamanako_actual.webp"
 ---
 <div id="hero-container" class="relative h-screen w-full overflow-hidden bg-slate-900 flex items-center justify-center">
   <!-- Background Layer (Hamanako Image) -->
   <div id="hamanako-layer" class="absolute inset-0 z-10 flex items-center justify-center opacity-0 transition-opacity duration-[3000ms] ease-in-out">
     <div class="absolute inset-0 bg-slate-900/40 z-20"></div> <!-- Dark overlay for better text contrast -->
-    <img src="/images/hamanako_actual.webp" fetchpriority="high" class="w-full h-full object-cover opacity-70" alt="Lake Hamana">
+    <Image src={heroImg} fetchpriority="high" class="w-full h-full object-cover opacity-70" alt="Lake Hamana" widths={[800, 1600]} sizes="100vw" quality={60} loading="eager" decoding="sync" />
   </div>
 
   <!-- Overlay/Text Layer -->
