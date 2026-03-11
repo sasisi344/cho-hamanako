@@ -19,7 +19,7 @@ summary: "Description for list view (about 70-100 chars)..."
 pubDate: "YYYY-MM-DD" # WordPressの公開日（timeは含めない）
 upDate: "YYYY-MM-DD" # Astroに追加・更新した日（timeは含めない）
 draft: false
-noindex: true # WordPress記事とのカニバリズム対策（移行完了まで）
+noindex: false # WordPress記事とのカニバリズム対策（移行完了まで）
 tags: # 3-5個設定。記事内容から主要キーワードを拾う
   - "表浜名湖"
   - "ポイント紹介"

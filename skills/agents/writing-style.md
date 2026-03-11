@@ -226,3 +226,31 @@ fishinginfo:
 
 ---
 
+## 🐦 SNS Embedding (Twitter/X) (New)
+
+**Rule**: 記事内にSNS（Twitter/X）の投稿を埋め込む際は、専用の `<Tweet>` および `<TwitterScript>` コンポーネントを使用してください。埋め込み用タグをそのまま貼り付けるとエラーが出るため、必ずこのコンポーネントを使用すること。
+
+### ✅ Workflow: URL Placement & Embedding
+効率的な記事作成のため、以下のフローを推奨します。
+
+1.  **[Drafting] URLの配置**: 執筆段階では、引用したいポストのURL（`x.com` または `twitter.com`）をそのまま本文中に記載しておく。
+2.  **[Refinement] コンポーネント化**: 仕上げ段階で、記載したURLを `<Tweet>` コンポーネントに変換する。
+3.  **[Finalize] スクリプトの挿入**: 記事の末尾に、ウィジェット読み込み用の `<TwitterScript />` を1回だけ配置する。
+
+### ✅ Component Implementation
+- **Domain Support**: `x.com` と `twitter.com` の両方をサポートしています。コンポーネント内部で自動的にドメイン置換を行うため、提供されたURLをそのまま `url` プロップスに渡してください。
+- **Import Rules**: 使用する際は、記事の冒頭（Frontmatterの直後）で以下のインポートが必要です。
+
+#### Standard Example
+```mdx
+import Tweet from "@components/Tweet.astro";
+import TwitterScript from "@components/TwitterScript.astro";
+
+## 釣果報告（SNS）
+<Tweet url="https://x.com/username/status/123456789" />
+
+...（記事の内容）...
+
+<TwitterScript />
+```
+
