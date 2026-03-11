@@ -11,6 +11,9 @@ import remarkGfm from "remark-gfm"
 // https://astro.build/config
 export default defineConfig({
   site: "https://cho-hamanako.info",
+  build: {
+    inlineStylesheets: "always",
+  },
   redirects: {
     "/2025/10/【初心者必見】浜名湖釣りのルールとマナー完全/": "/blog/guide/beginner/hamanako-fishing-rules-and-manners",
     "/2024/11/浜名湖周辺にある釣具店をエリア別やおすすめで/": "/blog/guide/logistics/shops",

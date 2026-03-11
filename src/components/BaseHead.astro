@@ -90,17 +90,3 @@ const { title, description, image = "/open-graph.jpg", noindex = false, hasAds =
 {hasAds && (
   <script is:inline async src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${ADSENSE.CLIENT_ID}`} crossorigin="anonymous"></script>
 )}
-
-
-<!-- <ViewTransitions  /> -->
-
-<script>
-  import type { TransitionBeforeSwapEvent } from "astro:transitions/client"
-  document.addEventListener("astro:before-swap", (e) =>
-    [
-      ...(e as TransitionBeforeSwapEvent).newDocument.head.querySelectorAll(
-        "link[as=\"font\"]"
-      ),
-    ].forEach((link) => link.remove())
-  )
-</script>
