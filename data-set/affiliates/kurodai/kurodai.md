@@ -23,3 +23,4 @@
 | デコイ イージーセット チニング | `kurodai/decoy-easyset-chining` | [Amazon](https://www.amazon.co.jp/dp/B0D9PVLNH1?tag=sasisi344-22) |
 | ジップベイツ フェイキードッグ DS | `kurodai/zipbaits-fakee-dog-ds` | [Amazon](https://www.amazon.co.jp/dp/B092SBZPG3?tag=sasisi344-22) |
 | ジップベイツ ザブラポッパー | `kurodai/zipbaits-zabra-popper` | [Amazon](https://www.amazon.co.jp/dp/B09ZB3HQFB?tag=sasisi344-22) |
+| オーナー(OWNER) バラ ボケ専用 (ヒネリなし) | `kurodai/owner-boke-hook` | [Amazon](https://www.amazon.co.jp/dp/B000AR2EW0?tag=sasisi344-22) |

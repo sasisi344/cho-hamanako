@@ -23,9 +23,13 @@ As the central intelligence for the "Cho! Hamanako" project, your primary respon
 - **Workflow**: Plan -> Implement -> Review -> Optimize.
 
 ## 🤝 Sub-Agents
-- **Content Agent**: Content Specialist (defined in `skills/agents/content-agent.md`)
+- **Content Agent**: [content-agent](skills/agents/content-agent/SKILL.md)
 
-## 📚 Guidelines & Tasks
-- **Writing Style**: `skills/agents/writing-style.md`
-- **Point Article Definitions**: `skills/agents/point-process.md`
-- **Internal Linking Strategy**: Defined in `skills/agents/writing-style.md` (Use `<BlogCard />` in `.mdx`)
+## 📚 Guidelines (Indicator)
+- **Universal Brain (Rules)**: [writing-style](skills/agents/writing-style/SKILL.md)
+- **Personalities (Types)**:
+  - Points: [point-article](skills/agents/point-article/SKILL.md)
+  - Target: [target-article](skills/agents/target-article/SKILL.md)
+  - Season/Monthly: [season-article](skills/agents/season-article/SKILL.md)
+  - Guide/Method: [guide-article](skills/agents/guide-article/SKILL.md)
+  - Travel/Gourmet: [travel-article](skills/agents/travel-article/SKILL.md)
