@@ -1,0 +1,10 @@
+id: common/sanka-cooler-6bl
+name: サンカ ワンブッシュで開閉できるクーラー 6BL
+link: https://www.amazon.co.jp/dp/B0F17R49BV?tag=sasisi344-22
+image: https://m.media-amazon.com/images/P/B0F17R49BV.01.LZZZZZZZ.jpg
+description: 低価格でコストパフォーマンスに優れた小型クーラーボックス。ちょい投げ釣りやハゼ釣りなどのライトゲームに。
+targetFish: ["ハゼ", "キス"]
+methods: ["エサ釣り", "ライトゲーム"]
+categories: ["クーラーボックス"]
+brand: サンカ
+isRecommended: true

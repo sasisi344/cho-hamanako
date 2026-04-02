@@ -1,0 +1,10 @@
+id: travel/rakuten-travel-car
+name: 楽天トラベル（レンタカー）
+link: https://hb.afl.rakuten.co.jp/hsc/51b90d90.5d543500.14ff91be.d43d1971/?link_type=pict&ut=eyJwYWdlIjoic2hvcCIsInR5cGUiOiJwaWN0IiwiY29sIjoxLCJjYXQiOjEsImJhbiI6Mjc2MjUyNCwiYW1wIjpmYWxzZX0%3D
+image: https://hbb.afl.rakuten.co.jp/hsb/51b90d90.5d543500.14ff91be.d43d1971/?me_id=2100017&me_adv_id=2762524&t=pict
+description: 浜名湖周辺の機動力を確保するのに便利なレンタカー予約。楽天ポイント対応。
+targetFish: []
+methods: ["観光", "レンタカー"]
+categories: ["旅行・観光"]
+brand: 楽天トラベル
+isRecommended: true

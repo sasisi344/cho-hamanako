@@ -1,0 +1,813 @@
+[
+  {
+    "id": "aeontown-kosai",
+    "name": "イオンタウン湖西周辺",
+    "furigana": "",
+    "area": "naka",
+    "lat": 34.713708,
+    "lng": 137.557069,
+    "facilities": {
+      "parking": true,
+      "parkingFee": "公園内駐車場（無料・数台）",
+      "toilet": true,
+      "convenienceStore": "ファミリーマート湖西鷲津東店、イオンタウン内",
+      "nightFishing": true
+    },
+    "summary": "イオンタウン湖西の裏手に広がる、アクセスの良い海浜公園と遊歩道。ショッピングついでに短時間のルアーゲームや、夜の電気ウキ釣りでキビレ・セイゴと遊べる身近なポイントです。"
+  },
+  {
+    "id": "arai-nakanogo",
+    "name": "新居町中之郷付近",
+    "furigana": "",
+    "area": "naka",
+    "lat": 34.70912,
+    "lng": 137.5663,
+    "facilities": {
+      "parking": false,
+      "parkingFee": "なし（マリーナを利用）",
+      "toilet": false,
+      "convenienceStore": "セブンイレブン新居町中之郷東店、ファミマ新居中之郷店あり",
+      "nightFishing": true
+    },
+    "summary": "陸っぱりが極めて難しいからこそ、ボートアングラーには天国。広大なシャロー帯とソーラーパネル周辺のストラクチャーを狙い撃つ、ボートチニングの穴場ポイントを徹底解説します。"
+  },
+  {
+    "id": "gardenpark",
+    "name": "浜名湖ガーデンパーク南側",
+    "furigana": "",
+    "area": "naka",
+    "lat": 34.712682,
+    "lng": 137.604061,
+    "facilities": {
+      "parking": true,
+      "parkingFee": "ガーデンパークを利用（開園時間外は閉鎖）",
+      "toilet": true,
+      "convenienceStore": "ファミリーマート浜松庄和町店（車で5分）",
+      "nightFishing": true
+    },
+    "summary": "広大なシャローが続くガーデンパーク南側のサーフ。ウェーディングでのシーバス・マゴチ狙いから、遠投でのキス・カレイ釣りまで、多彩なターゲットが狙える広大なフィールドです。"
+  },
+  {
+    "id": "hamayu-ohashi",
+    "name": "はまゆう大橋",
+    "furigana": "",
+    "area": "naka",
+    "lat": 34.727453,
+    "lng": 137.627953,
+    "facilities": {
+      "parking": true,
+      "parkingFee": "無料（料金所の休憩スペース）",
+      "toilet": true,
+      "convenienceStore": "ローソン浜松雄踏山崎店、セブンイレブン浜松佐浜町店",
+      "nightFishing": true
+    },
+    "summary": "夏から秋にかけて賑わうシャローポイント。陸からは秋の夜長にまったりキビレを狙い、ボートからは爽快なトップゲームが楽しめます。"
+  },
+  {
+    "id": "higata-sitefishing",
+    "name": "浜名湖",
+    "furigana": "干潟エリア",
+    "area": "naka",
+    "lat": 34.703316,
+    "lng": 137.592332,
+    "facilities": {
+      "parking": false,
+      "parkingFee": "マリーナや周辺施設の駐車場による",
+      "toilet": false,
+      "convenienceStore": "出船前に周辺店舗で準備が必要",
+      "nightFishing": false
+    },
+    "summary": "夏から秋に人気の干潟ルアーゲーム。ボートや渡船で湖上のシャロー帯に立ち、クロダイやキビレのトップゲームを楽しむ特別な体験ができます。"
+  },
+  {
+    "id": "konankoukou",
+    "name": "湖南高校周辺",
+    "furigana": "新川河口",
+    "area": "naka",
+    "lat": 34.691865,
+    "lng": 137.629522,
+    "facilities": {
+      "parking": false,
+      "parkingFee": "釣座付近の駐車スペースはほぼ無し",
+      "toilet": true,
+      "convenienceStore": "セブンイレブン浜松馬郡店",
+      "nightFishing": true
+    },
+    "summary": "佐鳴湖から続く新川河口エリア。春から夏はチヌのトップゲーム、秋はのんびりハゼ釣りが楽しめる知る人ぞ知る穴場ポイントです。"
+  },
+  {
+    "id": "matsumigaura",
+    "name": "松見ヶ浦",
+    "furigana": "",
+    "area": "naka",
+    "lat": 34.758643,
+    "lng": 137.524157,
+    "facilities": {
+      "parking": true,
+      "parkingFee": "知波田駅などに公共駐車場あり",
+      "toilet": true,
+      "convenienceStore": "セブンイレブン湖西太田店",
+      "nightFishing": true
+    },
+    "summary": "猪鼻湖の手前にある小さな湾で、実は浜名湖屈指の深場ポイント。巨大なランカーシーバスや越冬個体を狙うならボートゲームが熱いエリアです！"
+  },
+  {
+    "id": "megaura",
+    "name": "女河浦海水浴場",
+    "furigana": "",
+    "area": "naka",
+    "lat": 34.74517,
+    "lng": 137.53757,
+    "facilities": {
+      "parking": false,
+      "parkingFee": "なし（近隣の私有地無断駐車は厳禁）",
+      "toilet": false,
+      "convenienceStore": "セブンイレブン湖西太田店",
+      "nightFishing": true
+    },
+    "summary": "夏から秋にかけてハゼやキビレで賑わうポイント。陸からはのんびりウキ釣り、ボートからはサビキで数釣りや深場の大物も狙える隠れた名スポットです。"
+  },
+  {
+    "id": "murakushi-fishing-port",
+    "name": "村櫛漁港",
+    "furigana": "むらくしぎょこう",
+    "area": "naka",
+    "lat": 34.710851,
+    "lng": 137.588051,
+    "facilities": {
+      "parking": false,
+      "parkingFee": "漁港関係者以外禁止",
+      "toilet": false,
+      "convenienceStore": "ファミリーマート浜松庄和町店（車で5分）",
+      "nightFishing": true
+    },
+    "summary": "足場が良く、初心者やファミリーでも安心して楽しめる村櫛漁港。のんびりとした港内でのハゼ釣りや、水路を狙った探り釣りなど、癒やしの釣行にぴったりのポイントです。"
+  },
+  {
+    "id": "murakushi-kaisuiyoku",
+    "name": "村櫛海水浴場",
+    "furigana": "むらくしかいすいよくじょう",
+    "area": "naka",
+    "lat": 34.711447,
+    "lng": 137.583165,
+    "facilities": {
+      "parking": true,
+      "parkingFee": "有り（無料）",
+      "toilet": true,
+      "convenienceStore": "ファミマ浜松庄和町店",
+      "nightFishing": true
+    },
+    "summary": "広大な浅瀬と水深のある航路が隣接する万能ポイント。夏場のトップウォーターや秋の投げ釣りなど、広範囲を歩いて探れる楽しみがあります。"
+  },
+  {
+    "id": "omsolar",
+    "name": "OMソーラー付近",
+    "furigana": "旧：頭脳公園",
+    "area": "naka",
+    "lat": 34.729614,
+    "lng": 137.607779,
+    "facilities": {
+      "parking": false,
+      "parkingFee": "周辺含め駐車厳禁（企業の私有地のため）",
+      "toilet": false,
+      "convenienceStore": "ファミリーマート浜松庄和町店（車で約5分）",
+      "nightFishing": true
+    },
+    "summary": "かつて「頭脳公園」として親しまれたOMソーラー周辺エリア。現在は企業の敷地となっていますが、その沿岸部は今も変わらず良型キビレやシーバスが潜む、中浜名湖の隠れた実力派ポイントです。"
+  },
+  {
+    "id": "syotaijihana",
+    "name": "正太寺鼻",
+    "furigana": "しょうたいじ",
+    "area": "naka",
+    "lat": 34.75735,
+    "lng": 137.53817,
+    "facilities": {
+      "parking": false,
+      "parkingFee": "寺院内への無断駐車は厳禁（離れた場所から徒歩）",
+      "toilet": true,
+      "convenienceStore": "ローソン湖西大知波店（車で約10分）",
+      "nightFishing": true
+    },
+    "summary": "松見ヶ浦の入口に位置する岬、正太寺鼻。浜名湖屈指の水深と複雑な地形を誇り、かつてより大型キビレやシーバス、カレイの名ポイントとして知られる本格派アングラー向けの釣り場です。"
+  },
+  {
+    "id": "utiyama-kaigan",
+    "name": "内山海岸",
+    "furigana": "",
+    "area": "naka",
+    "lat": 34.748536,
+    "lng": 137.597745,
+    "facilities": {
+      "parking": false,
+      "parkingFee": "明確な駐車場なし（路肩への駐車マナー注意）",
+      "toilet": true,
+      "convenienceStore": "ファミマ浜松庄和町店",
+      "nightFishing": true
+    },
+    "summary": "舘山寺と村櫛の中間に位置する、遠浅の砂浜エリア。水深が一定で広いため、ウェーディングでキビレやシーバスを広範囲に探るランガンゲームに最適です。"
+  },
+  {
+    "id": "washidukou",
+    "name": "鷲津湾",
+    "furigana": "",
+    "area": "naka",
+    "lat": 34.728509,
+    "lng": 137.538175,
+    "facilities": {
+      "parking": false,
+      "parkingFee": "マリーナの規定に準じる（陸からの一般駐車場はほぼなし）",
+      "toilet": false,
+      "convenienceStore": "ファミマ鷲津駅前店、ファミマ湖西吉美店",
+      "nightFishing": true
+    },
+    "summary": "陸からのアプローチが難しいため、ボートフィッシングでキビレやシーバスをじっくりと狙うのに最適な、戦略的なルアーゲームが楽しめるエリアです。"
+  },
+  {
+    "id": "yuto-yamazaki",
+    "name": "雄踏山崎",
+    "furigana": "ゆうとうやまざき",
+    "area": "naka",
+    "lat": 34.713289,
+    "lng": 137.618941,
+    "facilities": {
+      "parking": true,
+      "parkingFee": "無料（橋のたもとに数台）",
+      "toilet": false,
+      "convenienceStore": "ローソン浜松雄踏町山崎店（徒歩圏内）",
+      "nightFishing": true
+    },
+    "summary": "はまゆう大橋の南側に位置する雄踏町山崎。車から降りてすぐに竿を出せるアクセスの良さと、春・秋の投げ釣りによるキビレ・ハゼの数釣りが魅力のポイントです。"
+  },
+  {
+    "id": "hanagawa",
+    "name": "花川河口",
+    "furigana": "",
+    "area": "oku",
+    "lat": 34.757267,
+    "lng": 137.651896,
+    "facilities": {
+      "parking": true,
+      "parkingFee": "河口部に2台程度のスペースあり",
+      "toilet": false,
+      "convenienceStore": "ファミリーマート 浜松和地町西店",
+      "nightFishing": true
+    },
+    "summary": "オイスカ高校南側を流れる花川。豊かな砂泥地が広がる河口部は、秋のハゼ釣りとキビレの投げ釣りに定評があり、多種多様な生き物が息づく奥浜名湖の生命のゆりかごです。"
+  },
+  {
+    "id": "hiramatsu",
+    "name": "平松町付近",
+    "furigana": "",
+    "area": "oku",
+    "lat": 34.754378,
+    "lng": 137.638226,
+    "facilities": {
+      "parking": true,
+      "parkingFee": "児童遊園地に数台分のスペースあり",
+      "toilet": false,
+      "convenienceStore": "ファミリーマート 浜松庄和町店",
+      "nightFishing": true
+    },
+    "summary": "庄内湖の北東部に位置する平松町付近。ハゼ釣りの名所として知られ、穏やかなシャローエリアは初心者やファミリーのハゼ・小物釣りに最適なスポットです。"
+  },
+  {
+    "id": "ime",
+    "name": "伊目",
+    "furigana": "いめ",
+    "area": "oku",
+    "lat": 34.784795,
+    "lng": 137.64305,
+    "facilities": {
+      "parking": false,
+      "parkingFee": "明確な駐車場はなし（駐車マナー注意）",
+      "toilet": false,
+      "convenienceStore": "セブンイレブン細江気賀店",
+      "nightFishing": true
+    },
+    "summary": "都田川河口手前に広がる遠浅の湾。ハゼ釣りの名所であり、夏から秋の夜はキビレのブッコミ釣り、ルアーなら強気のウェーディングが楽しめます。"
+  },
+  {
+    "id": "ina",
+    "name": "伊奈",
+    "furigana": "いな",
+    "area": "oku",
+    "lat": 34.780101,
+    "lng": 137.627914,
+    "facilities": {
+      "parking": false,
+      "parkingFee": "釣座付近の駐車スペースはほぼ無し",
+      "toilet": false,
+      "convenienceStore": "セブンイレブン細江気賀店",
+      "nightFishing": true
+    },
+    "summary": "自転車道路沿いに広がる知る人ぞ知る急深ポイント。車でのアクセスに制限がある分、プレッシャーが低く大型キビレやシーバスの期待値が高い穴場です。"
+  },
+  {
+    "id": "isajigawa",
+    "name": "伊左地川河口",
+    "furigana": "",
+    "area": "oku",
+    "lat": 34.738558,
+    "lng": 137.641104,
+    "facilities": {
+      "parking": true,
+      "parkingFee": "公共マリーナ「はまゆうマリーナ」の駐車場が利用可能（営業時間内）",
+      "toilet": true,
+      "convenienceStore": "セブン-イレブン 浜松佐浜町店",
+      "nightFishing": true
+    },
+    "summary": "伊左地川の河口部に広がる穏やかな汽水域。知名度は低いものの、秋のハゼ釣りやチンタ・セイゴ狙いに適した穴場スポットで、周辺のレジャー施設と合わせた釣行も楽しめます。"
+  },
+  {
+    "id": "kanzanji",
+    "name": "舘山寺",
+    "furigana": "内浦湾",
+    "area": "oku",
+    "lat": 34.763757,
+    "lng": 137.623776,
+    "facilities": {
+      "parking": true,
+      "parkingFee": "有料・無料駐車場が点在（MAP確認推奨）",
+      "toilet": true,
+      "convenienceStore": "セブンイレブン浜松舘山寺町店、ファミマ舘山寺温泉店",
+      "nightFishing": true
+    },
+    "summary": "遊園地に温泉街と観光名所が揃う好アクセスポイント。足場が良く初心者にもおすすめですが、場所によっては急深エリアもあり中級者も本気で楽しめます。"
+  },
+  {
+    "id": "kiga",
+    "name": "気賀",
+    "furigana": "プリンス岬",
+    "area": "oku",
+    "lat": 34.799207,
+    "lng": 137.623744,
+    "facilities": {
+      "parking": true,
+      "parkingFee": "向山駐車スペースなど、台数は少なめ",
+      "toilet": true,
+      "convenienceStore": "セブン-イレブン 細江気賀店、ファミリーマート 細江気賀店",
+      "nightFishing": true
+    },
+    "summary": "夏から秋にかけての小物釣りが大人気のエリア。ハゼ釣りはもちろん、夜は電気ウキでキビレやシーバスの数釣りが楽しめるファミリー向けの有名ポイントです。"
+  },
+  {
+    "id": "kohitomi-boat",
+    "name": "古人見ボートエリア",
+    "furigana": "",
+    "area": "oku",
+    "lat": 34.732697,
+    "lng": 137.634688,
+    "facilities": {
+      "parking": true,
+      "parkingFee": "公共マリーナ「はまゆうマリーナ」の駐車場が利用可能（陸釣りの場合）",
+      "toilet": false,
+      "convenienceStore": "セブン-イレブン 浜松佐浜町店",
+      "nightFishing": false
+    },
+    "summary": "はまゆう大橋の北東に広がる広大なシャローエリア。夏から秋にかけてのチヌトップゲームを代表するポイントで、砂地が続く透明度の高い浅瀬はボートフィッシングの醍醐味が詰まっています。"
+  },
+  {
+    "id": "kyowa-boat",
+    "name": "協和町ボートエリア",
+    "furigana": "",
+    "area": "oku",
+    "lat": 34.735418,
+    "lng": 137.612734,
+    "facilities": {
+      "parking": true,
+      "parkingFee": "陸釣りの場合は沿岸公園の小規模スペースを利用可能",
+      "toilet": false,
+      "convenienceStore": "ファミリーマート 浜松庄和町店",
+      "nightFishing": true
+    },
+    "summary": "はまゆう大橋の西側に広がるボートフィッシングの定番ポイント。いくつかの小川が流れ込む栄養豊富な汽水域は、夏のトップゲームから秋のボトムワインドまで、通年で魚影が濃いエリアです。"
+  },
+  {
+    "id": "lakesideway",
+    "name": "レークサイドウェイ周辺",
+    "furigana": "",
+    "area": "oku",
+    "lat": 34.772695,
+    "lng": 137.561088,
+    "facilities": {
+      "parking": true,
+      "parkingFee": "レークサイドウェイ沿いに駐車可能なスペースが数箇所あり",
+      "toilet": true,
+      "convenienceStore": "ファミリーマート 三ヶ日インター店",
+      "nightFishing": true
+    },
+    "summary": "猪鼻湖の東側、三ヶ日ICからのアクセスが良好なレークサイドウェイ周辺。投げ釣りが盛んなエリアで、秋から冬にかけては落ちキビレやカレイの好ポイントとして賑わいます。"
+  },
+  {
+    "id": "mikkabi-eki",
+    "name": "三ヶ日駅周辺",
+    "furigana": "",
+    "area": "oku",
+    "lat": 34.801027,
+    "lng": 137.550939,
+    "facilities": {
+      "parking": true,
+      "parkingFee": "駅周辺や護岸沿いに部分的に駐車可能なスペースあり",
+      "toilet": true,
+      "convenienceStore": "セブン-イレブン 三ヶ日西天王町店",
+      "nightFishing": true
+    },
+    "summary": "天竜浜名湖鉄道「三ヶ日駅」の南側に広がる穏やかな浅瀬エリア。夏から秋にかけてハゼやキビレの数釣りが楽しめ、初心者やファミリーにも最適なスポットです。"
+  },
+  {
+    "id": "miyakodagawa",
+    "name": "都田川河口",
+    "furigana": "みやこだがわかこう",
+    "area": "oku",
+    "lat": 34.79535,
+    "lng": 137.644295,
+    "facilities": {
+      "parking": false,
+      "parkingFee": "明確な駐車場なし（周辺の駐車マナー注意）",
+      "toilet": true,
+      "convenienceStore": "セブンイレブン細江気賀店",
+      "nightFishing": true
+    },
+    "summary": "浜名湖で最も有名なハゼ釣りの聖地。夏から秋にかけては大勢の釣り人で賑わい、エサ釣りはもちろんルアーでのキビレ・シーバス狙いも熱いポイントです。"
+  },
+  {
+    "id": "photonics-under",
+    "name": "ホトニクス下",
+    "furigana": "通称：マイマイ",
+    "area": "oku",
+    "lat": 34.776214,
+    "lng": 137.626361,
+    "facilities": {
+      "parking": true,
+      "parkingFee": "数台停められるスペースあり",
+      "toilet": false,
+      "convenienceStore": "セブンイレブン細江町気賀店、セブンイレブン浜松舘山寺町店",
+      "nightFishing": true
+    },
+    "summary": "小さな湾の見た目に反して急深なカケアガリを持つポイント。大型キビレの実績が高く、春と秋の夜釣り（ブッコミ釣り）で真価を発揮します。"
+  },
+  {
+    "id": "sahama-hakusan",
+    "name": "佐浜・白山周辺",
+    "furigana": "白山鼻",
+    "area": "oku",
+    "lat": 34.747526,
+    "lng": 137.639386,
+    "facilities": {
+      "parking": false,
+      "parkingFee": "花川河口付近のスペースを利用、または配慮ある駐車を",
+      "toilet": false,
+      "convenienceStore": "セブン-イレブン 浜松佐浜町店",
+      "nightFishing": true
+    },
+    "summary": "庄内湖の中央部に突き出した白山鼻周辺。牡蠣の養殖棚が沈む複雑な地形は、秋のブッコミ釣りでの大型キビレ狙いや、静かな環境でのハゼ釣りに最適な隠れ家的スポットです。"
+  },
+  {
+    "id": "sakujyoseki",
+    "name": "佐久城公園周辺",
+    "furigana": "",
+    "area": "oku",
+    "lat": 34.787026,
+    "lng": 137.566701,
+    "facilities": {
+      "parking": true,
+      "parkingFee": "数台停められる駐車場が佐久城公園付近にあり、非常に貴重",
+      "toilet": true,
+      "convenienceStore": "ファミリーマート 三ヶ日インター店",
+      "nightFishing": true
+    },
+    "summary": "猪鼻湖の東、知る人ぞ知る隠れた名スポット。足元から急激に深くなる（急深）地形で、投げ釣りが思い切り楽しめるお宝ポイントです。特にカレイやクロダイが狙える実績の高いエリアとして知られています。"
+  },
+  {
+    "id": "sakumekaigan",
+    "name": "佐久米海岸",
+    "furigana": "さくめかいがん",
+    "area": "oku",
+    "lat": 34.785074,
+    "lng": 137.606548,
+    "facilities": {
+      "parking": true,
+      "parkingFee": "入口などに数台のスペースあり",
+      "toilet": true,
+      "convenienceStore": "ファミマ浜名湖SA店（ぷらっとパーク経由）",
+      "nightFishing": true
+    },
+    "summary": "遠浅の砂場と護岸エリアの2つの顔を持つポイント。夏から秋にかけてのウェーディングや、冬場の居着きランカーシーバス狙いが熱いエリアです。"
+  },
+  {
+    "id": "setosuidou",
+    "name": "瀬戸水道",
+    "furigana": "せとすいどう",
+    "area": "oku",
+    "lat": 34.769507,
+    "lng": 137.548233,
+    "facilities": {
+      "parking": true,
+      "parkingFee": "遊覧船のりばと橋の北西に有料・無料スペースあり",
+      "toilet": true,
+      "convenienceStore": "ファミマ三ヶ日インター店、ミニストップ三ヶ日都筑店",
+      "nightFishing": true
+    },
+    "summary": "浜名湖屈指の激流＆急深スポット。シーバスのパワフルな引きをドリフトで楽しむルアーゲームや、冬場の肉厚カレイ投げ釣りで有名な大場所です。"
+  },
+  {
+    "id": "shimo-ona",
+    "name": "下尾奈",
+    "furigana": "猪鼻湖西側",
+    "area": "oku",
+    "lat": 34.784421,
+    "lng": 137.546814,
+    "facilities": {
+      "parking": true,
+      "parkingFee": "周辺の駐車可能スペースは非常に限られているため、マナーに注意",
+      "toilet": true,
+      "convenienceStore": "セブン-イレブン 三ヶ日町店",
+      "nightFishing": true
+    },
+    "summary": "猪鼻湖の西側に位置する下尾奈地区。リゾートホテル周辺の浅瀬が広がるシャローエリアは、ルアーフィッシングやウェーディングでのチヌ（クロダイ・キビレ）狙いに最高のポイントです。"
+  },
+  {
+    "id": "shiras-boat",
+    "name": "白洲町ボートエリア",
+    "furigana": "",
+    "area": "oku",
+    "lat": 34.743023,
+    "lng": 137.627462,
+    "facilities": {
+      "parking": true,
+      "parkingFee": "利用するマリーナの規定に従ってください",
+      "toilet": false,
+      "convenienceStore": "ファミリーマート 浜松庄和町店",
+      "nightFishing": false
+    },
+    "summary": "庄内湖の南岸に位置する白洲（しらす）エリア。沿岸部は民家が立ち並び陸からのアプローチは困難ですが、ボートから狙う広大なシャロー帯は夏から秋にかけてチヌトップの楽園となります。"
+  },
+  {
+    "id": "sunza",
+    "name": "寸座",
+    "furigana": "マリーナ・砂州",
+    "area": "oku",
+    "lat": 34.790544,
+    "lng": 137.615169,
+    "facilities": {
+      "parking": true,
+      "parkingFee": "周辺の駐車スペースは極めて少ないため、寸座駅周辺など配慮が必要",
+      "toilet": true,
+      "convenienceStore": "ファミリーマート細江西気賀店",
+      "nightFishing": true
+    },
+    "summary": "急深な地形で知られる寸座は、奥浜名湖でも屈指のルアーフィッシング・ポイント。潮が引くと現れる広大な砂州でのサイトフィッシングが熱いエリアです。"
+  },
+  {
+    "id": "syounaiko",
+    "name": "庄内湖エリア",
+    "furigana": "",
+    "area": "oku",
+    "lat": 34.745,
+    "lng": 137.635,
+    "facilities": {},
+    "summary": "庄内湖は、奥浜名湖の中でも複雑な湾曲と豊かなシャロー帯を持つ魅力的なエリアです。ボートフィッシングが盛んですが、一部の陸っぱりポイントでもハゼやチヌの好釣果が期待できます。"
+  },
+  {
+    "id": "tsuzusaki",
+    "name": "津々崎公園周辺",
+    "furigana": "",
+    "area": "oku",
+    "lat": 34.795843,
+    "lng": 137.570957,
+    "facilities": {
+      "parking": true,
+      "parkingFee": "津々崎公園の駐車場が利用可能",
+      "toilet": true,
+      "convenienceStore": "ファミリーマート 三ヶ日インター店",
+      "nightFishing": true
+    },
+    "summary": "猪鼻湖の南側、本湖へと繋がる瀬戸水道のすぐ北に位置するポイント。急深で激流が交差する猪鼻湖随一のダイナミックなフィールドで、大型のシーバス（ランカー）や座布団カレイが狙える通年型の名スポットです。"
+  },
+  {
+    "id": "waji-boat",
+    "name": "和地ボートエリア",
+    "furigana": "",
+    "area": "oku",
+    "lat": 34.759297,
+    "lng": 137.648089,
+    "facilities": {
+      "parking": true,
+      "parkingFee": "利用するマリーナの規定に従ってください",
+      "toilet": false,
+      "convenienceStore": "ファミリーマート 浜松和地町西店",
+      "nightFishing": false
+    },
+    "summary": "庄内湖の最奥部に位置する和地エリア。ボートから狙う養殖棚や沈み杭周りは、ルアー戦略の要素が凝縮されたシーバス・チヌの超定番ポイントです。"
+  },
+  {
+    "id": "amihosiba",
+    "name": "網干場",
+    "furigana": "あみほしば",
+    "area": "omote",
+    "lat": 34.6803531154909,
+    "lng": 137.60332807485867,
+    "facilities": {
+      "parking": true,
+      "parkingFee": "有料（1回410円）",
+      "toilet": true,
+      "convenienceStore": "セブンイレブン浜松舞阪店",
+      "nightFishing": true
+    },
+    "summary": "舞阪漁港にある「網干場」は、初心者からベテランまで楽しめる浜名湖屈指の人気ポイント。通年でクロダイ、シーバス、アジ、タコなど多様な魚種が狙えます。漁業関係者の作業場所でもあるため、マナー厳守が求められるエリアです。"
+  },
+  {
+    "id": "araibenten-umiduripark",
+    "name": "新居弁天海釣公園",
+    "furigana": "あらいべんてんうみづりこうえん",
+    "area": "omote",
+    "lat": 34.682114,
+    "lng": 137.589907,
+    "facilities": {
+      "parking": true,
+      "parkingFee": "有料（1回400円）",
+      "toilet": true,
+      "convenienceStore": "あり",
+      "nightFishing": true
+    },
+    "summary": "浜名湖でもっとも人気の釣りスポット「新居弁天海釣公園」。T字堤から大曲りまで、初心者から熟練者まで楽しめるポイントを徹底解説。サビキ釣りの聖地であり、クロダイの釣果実績も抜群です。"
+  },
+  {
+    "id": "bentenjimakaihinkouen",
+    "name": "弁天島海浜公園",
+    "furigana": "べんてんじまかいひんこうえん",
+    "area": "omote",
+    "lat": 34.68898,
+    "lng": 137.60266,
+    "facilities": {
+      "parking": true,
+      "parkingFee": "有料（1回410円）",
+      "toilet": true,
+      "convenienceStore": "ファミリーマート浜名湖弁天島店",
+      "nightFishing": true
+    },
+    "summary": "浜名湖のシンボル「赤鳥居」を望む絶景ポイント。JR弁天島駅から徒歩ですぐ、設備充実でファミリーフィッシングに最適です。サビキ釣りや夏のクロダイ（チンタ）狙いで賑わう開放的な釣り場を徹底解説します。"
+  },
+  {
+    "id": "boatrace-hamanako",
+    "name": "ボートレース浜名湖",
+    "furigana": "浜名湖競艇場",
+    "area": "omote",
+    "lat": 34.701099,
+    "lng": 137.57467,
+    "facilities": {
+      "parking": false,
+      "parkingFee": "なし（マリーナ利用）",
+      "toilet": false,
+      "convenienceStore": "なし（乗船前に）",
+      "nightFishing": false
+    },
+    "summary": "陸からのアクセスが制限されているボートレース浜名湖周辺。そこは場が荒れにくいボート釣りの聖地です。数釣りが楽しめるサヨリやカワハギ、良型が狙えるマゴチの攻略法を徹底解説します。"
+  },
+  {
+    "id": "imagiremaisakatei",
+    "name": "今切口舞阪堤",
+    "furigana": "いまぎれぐちまいさかてい",
+    "area": "omote",
+    "lat": 34.67956,
+    "lng": 137.599383,
+    "facilities": {
+      "parking": true,
+      "parkingFee": "有料（1回410円）",
+      "toilet": true,
+      "convenienceStore": "あり",
+      "nightFishing": true
+    },
+    "summary": "浜名湖と太平洋が交わる最前線「今切口舞阪堤」。初心者向けの開放的な堤防から、ベテラン専用のテトラ帯まで、腕試しに最適な本格ポイント。クロダイの前打ちやシーバス攻略の秘訣を徹底解説。"
+  },
+  {
+    "id": "kangetsuen",
+    "name": "観月園",
+    "furigana": "かんげつえん",
+    "area": "omote",
+    "lat": 34.69679,
+    "lng": 137.601,
+    "facilities": {
+      "parking": true,
+      "parkingFee": "無料（乙女園駐車場を利用）",
+      "toilet": false,
+      "convenienceStore": "なし",
+      "nightFishing": true
+    },
+    "summary": "弁天島の北西に位置する「観月園」。不思議な小島や橋脚周り、広大なシャローエリアもあれば激流のゴツゴツ底などが混在するテクニカルなポイントです。シーバスの回遊ルートであり、上級者向けの攻略法を徹底解説します。"
+  },
+  {
+    "id": "nagisaen",
+    "name": "渚園",
+    "furigana": "なぎさえん",
+    "area": "omote",
+    "lat": 34.698563,
+    "lng": 137.607007,
+    "facilities": {
+      "parking": true,
+      "parkingFee": "有料（1回400円）",
+      "toilet": true,
+      "convenienceStore": "ファミリーマート浜名湖弁天島店",
+      "nightFishing": true
+    },
+    "summary": "浜名湖のレジャー拠点「渚園」。キャンプ場併設で利便性抜群。夏はクロダイ・キビレのトップゲーム（チヌトップ）、冬はカレイの投げ釣りと、一年中ターゲットが尽きない人気ポイントを解説します。"
+  },
+  {
+    "id": "nakanoshima",
+    "name": "中之島",
+    "furigana": "浜名湖大橋",
+    "area": "omote",
+    "lat": 34.704902,
+    "lng": 137.610151,
+    "facilities": {
+      "parking": true,
+      "parkingFee": "無料",
+      "toilet": false,
+      "convenienceStore": "弁天島方面にあり",
+      "nightFishing": true
+    },
+    "summary": "浜名湖のウェーディングゲームで最も有名な「中之島」。絶好の潮通しが生む強烈なカレント、そしてシーバスやキビレが溜まるカケアガリを徹底攻略するための情報をまとめました。"
+  },
+  {
+    "id": "otomeen",
+    "name": "乙女園",
+    "furigana": "うなぎ観音",
+    "area": "omote",
+    "lat": 34.69490479372826,
+    "lng": 137.59440889631668,
+    "facilities": {
+      "parking": true,
+      "parkingFee": "無料（公園駐車場）",
+      "toilet": true,
+      "convenienceStore": "あり",
+      "nightFishing": true
+    },
+    "summary": "弁天島の西端に位置する「乙女園」。うなぎ観音が見守る静かな護岸は、クロダイやキびレ、ハゼの好ポイント。混雑を避けてのんびり釣いを楽しみたい方におすすめのエリアを紹介します。"
+  },
+  {
+    "id": "parkvillege",
+    "name": "浜名湖パークビレッジ",
+    "furigana": "新居弁天海水浴場",
+    "area": "omote",
+    "lat": 34.68332,
+    "lng": 137.58631,
+    "facilities": {
+      "parking": true,
+      "parkingFee": "有料（24時間300円など）",
+      "toilet": true,
+      "convenienceStore": "あり",
+      "nightFishing": true
+    },
+    "summary": "キャンプと釣りを同時に楽しめるアウトドア拠点。目の前の新居弁天海水浴場でサーフフィッシングやウェーディングが楽しめます。ファミリーでのキャンプフィッシングに最適なエリアを徹底解説。"
+  },
+  {
+    "id": "sakuramaru",
+    "name": "サクラマル",
+    "furigana": "",
+    "area": "omote",
+    "lat": 34.69231,
+    "lng": 137.59374,
+    "facilities": {
+      "parking": true,
+      "parkingFee": "有料（県立公園駐車場）",
+      "toilet": true,
+      "convenienceStore": "あり",
+      "nightFishing": true
+    },
+    "summary": "浜名湖のシンボル「赤鳥居」を目の前に釣りが楽しめる「サクラマル」。古くから大型キビレの実績が高く、投げ釣りからウェーディングまで、季節ごとに多彩なターゲットが狙える魅力的なポイントを紹介。"
+  },
+  {
+    "id": "shinkawa-kakou",
+    "name": "新川河口",
+    "furigana": "",
+    "area": "omote",
+    "lat": 34.700498,
+    "lng": 137.616386,
+    "facilities": {
+      "parking": true,
+      "parkingFee": "1回1台310円（雄踏総合公園）",
+      "toilet": false,
+      "convenienceStore": "あり",
+      "nightFishing": true
+    },
+    "summary": "浜名湖大橋の東側に位置する「新川河口」。淡水と海水が混ざり合う汽水域ならではの豊かな生態系が広がり、シーバスやキビレの回遊はもちろん、秋の大型ハゼ狙いでも人気の高いポイントを紹介。"
+  },
+  {
+    "id": "sunaageba",
+    "name": "砂揚げ場",
+    "furigana": "新居漁港",
+    "area": "omote",
+    "lat": 34.693127,
+    "lng": 137.581769,
+    "facilities": {
+      "parking": true,
+      "parkingFee": "無料（作業優先）",
+      "toilet": false,
+      "convenienceStore": "あり",
+      "nightFishing": true,
+      "carSide": true
+    },
+    "summary": "浜名湖で唯一、車を横付けして釣りができる「砂揚げ場（新居漁港）」。サビキ釣りやチョイ投げに最適で、小さなお子様連れでも安心して楽しめる、利便性抜群の超人気スポットを徹底解説。"
+  }
+]

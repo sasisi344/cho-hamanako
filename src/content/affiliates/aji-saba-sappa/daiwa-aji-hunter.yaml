@@ -1,0 +1,10 @@
+id: aji-saba-sappa/daiwa-aji-hunter
+name: ダイワ(DAIWA) 快適職人サビキ ウィリー5本 MIX
+link: https://www.amazon.co.jp/dp/B09R9VHB39?th=1&linkCode=ll2&tag=sasisi344
+image: https://m.media-amazon.com/images/I/611Zgn7w8eL._AC_SL1134_.jpg
+description: ダイワの定番サビキ。金針仕様でアピール力が高く、浜名湖の強い潮流の中でも魚をしっかり誘い出します。入門用セットとしても最適な仕掛けです。
+targetFish: ["アジ", "サバ", "イワシ", "サッパ"]
+methods: ["サビキ釣り", "投げサビキ"]
+categories: ["仕掛け", "サビキ"]
+brand: ダイワ
+isRecommended: true

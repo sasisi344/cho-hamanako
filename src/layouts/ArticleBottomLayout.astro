@@ -1,0 +1,117 @@
+---
+import { type CollectionEntry, getCollection } from "astro:content"
+
+type Props = {
+  entry: CollectionEntry<"blog"> | CollectionEntry<"projects">
+}
+
+// Get the requested entry
+const { entry } = Astro.props
+const { collection } = entry
+const { Content } = await entry.render()
+
+const posts = (await getCollection("blog"))
+  .filter(post => !post.data.draft)
+  .sort((a, b) => b.data.pubDate.getTime() - a.data.pubDate.getTime())
+
+const projects = (await getCollection("projects"))
+  .filter(project => !project.data.draft)
+  .sort((a, b) => b.data.date.getTime() - a.data.date.getTime())
+
+const items = collection === "blog" ? posts : projects
+const index = items.findIndex(x => x.slug === entry.slug)
+const prev = items[(index - 1 + items.length) % items.length]
+const next = items[(index + 1) % items.length]
+
+const getHref = (e: any) => {
+  if (e.collection === "blog" && e.data.category === "points") {
+    return `/points/${e.slug.replace(/^points\//, '')}`
+  }
+  return `/${e.collection}/${e.slug}`
+}
+import { ADSENSE } from "@consts"
+
+const isBlog = collection === "blog"
+---
+
+<div>
+  <article id="article">
+    <Content/>
+  </article>
+
+  {isBlog && (
+    <div class="my-12 animate adsense-multiplex">
+       <ins class="adsbygoogle"
+            style="display:block"
+            data-ad-format="autorelaxed"
+            data-ad-client={ADSENSE.CLIENT_ID}
+            data-ad-slot={ADSENSE.MULTIPLEX_SLOT}></ins>
+       <script is:inline>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+    </div>
+  )}
+
+  {isBlog && (
+    <script is:inline define:vars={{ ADSENSE }}>
+      function injectRectangleAd() {
+        const article = document.getElementById("article");
+        const firstH2 = article?.querySelector("h2");
+        if (firstH2 && !article.querySelector(".adsense-rectangle")) {
+          const adContainer = document.createElement("div");
+          adContainer.className = "my-8 flex justify-center adsense-rectangle";
+          adContainer.innerHTML = `
+            <ins class="adsbygoogle"
+                 style="display:block"
+                 data-ad-client="${ADSENSE.CLIENT_ID}"
+                 data-ad-slot="${ADSENSE.RECTANGLE_SLOT}"
+                 data-ad-format="auto"
+                 data-full-width-responsive="true"></ins>
+          `;
+          firstH2.insertAdjacentElement("afterend", adContainer);
+          (window.adsbygoogle = window.adsbygoogle || []).push({});
+        }
+      }
+
+      // 実行
+      if (document.readyState === "loading") {
+        document.addEventListener("DOMContentLoaded", injectRectangleAd);
+      } else {
+        injectRectangleAd();
+      }
+
+      // Astro ViewTransitions 対応
+      document.addEventListener("astro:page-load", injectRectangleAd);
+    </script>
+  )}
+  <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+    <a href={getHref(prev)} class="group p-4 gap-3 flex items-center border rounded-lg hover:bg-black/5 hover:dark:bg-white/10 border-black/15 dark:border-white/20 blend">
+      <div class="order-2 w-full h-full group-hover:text-black group-hover:dark:text-white blend">
+        <div class="flex flex-wrap gap-2">
+          <div class="text-sm uppercase">
+            Prev
+          </div>
+        </div>
+        <div class="font-semibold mt-3 text-black dark:text-white">
+          {prev.data.title}
+        </div>
+      </div>
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="order-1 stroke-current group-hover:stroke-black group-hover:dark:stroke-white rotate-180">
+        <line x1="5" y1="12" x2="19" y2="12" class="scale-x-0 group-hover:scale-x-100 translate-x-4 group-hover:translate-x-1 transition-all duration-300 ease-in-out" />
+        <polyline points="12 5 19 12 12 19" class="translate-x-0 group-hover:translate-x-1 transition-all duration-300 ease-in-out" />
+      </svg>
+    </a>
+    <a href={getHref(next)} class="group p-4 gap-3 flex items-center border rounded-lg hover:bg-black/5 hover:dark:bg-white/10 border-black/15 dark:border-white/20 transition-colors duration-300 ease-in-out">
+      <div class="w-full h-full text-right group-hover:text-black group-hover:dark:text-white blend">
+        <div class="text-sm uppercase">
+          Next
+        </div>
+        <div class="font-semibold mt-3 text-black dark:text-white">
+          {next.data.title}
+        </div>
+      </div>
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="stroke-current group-hover:stroke-black group-hover:dark:stroke-white">
+        <line x1="5" y1="12" x2="19" y2="12" class="scale-x-0 group-hover:scale-x-100 translate-x-4 group-hover:translate-x-1 transition-all duration-300 ease-in-out" />
+        <polyline points="12 5 19 12 12 19" class="translate-x-0 group-hover:translate-x-1 transition-all duration-300 ease-in-out" />
+      </svg>
+    </a>
+  </div>
+</div>

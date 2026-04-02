@@ -1,0 +1,104 @@
+# Browser Caching
+<IfModule mod_expires.c>
+  ExpiresActive On
+  
+  # Images
+  ExpiresByType image/x-icon "access plus 1 year"
+  ExpiresByType image/jpeg "access plus 1 year"
+  ExpiresByType image/png "access plus 1 year"
+  ExpiresByType image/svg+xml "access plus 1 year"
+  ExpiresByType image/webp "access plus 1 year"
+
+  # Fonts
+  ExpiresByType font/woff "access plus 1 year"
+  ExpiresByType font/woff2 "access plus 1 year"
+  ExpiresByType application/font-woff "access plus 1 year"
+  ExpiresByType application/font-woff2 "access plus 1 year"
+
+  # CSS and JS
+  ExpiresByType text/css "access plus 1 year"
+  ExpiresByType application/javascript "access plus 1 year"
+  ExpiresByType text/javascript "access plus 1 year"
+
+  # Others
+  ExpiresDefault "access plus 1 month"
+</IfModule>
+
+<IfModule mod_headers.c>
+  # Cache fingerprinted assets (Astro) for 1 year
+  <FilesMatch "\.[a-zA-Z0-9]{8}\.(js|css|webp|jpg|png|svg|woff|woff2)$">
+    Header set Cache-Control "max-age=31536000, public, immutable"
+  </FilesMatch>
+</IfModule>
+
+<IfModule mod_rewrite.c>
+
+  RewriteEngine On
+  RewriteBase /
+
+  # BEGIN GENERATED REDIRECTS
+  RewriteRule ^2025/10/【初心者必見】浜名湖釣りのルールとマナー完全/?$ /blog/guide/beginner/hamanako-fishing-rules-and-manners [R=301,L]
+  RewriteRule ^2024/11/浜名湖周辺にある釣具店をエリア別やおすすめで/?$ /blog/guide/logistics/shops [R=301,L]
+  RewriteRule ^2024/11/浜名湖で楽しむアジングの醍醐味：評価の高いポ/?$ /blog/guide/method/ajing-guide [R=301,L]
+  RewriteRule ^2025/09/9月の浜名湖投げ釣り五目！キス・カワハギ・ヘダ/?$ /blog/guide/method/casting-gomoku [R=301,L]
+  RewriteRule ^2025/12/winter12-3-lightgame-rockfish/?$ /blog/guide/method/winter-lightgame [R=301,L]
+  RewriteRule ^2024/11/釣りにめっちゃ役立つ！浜名湖全域の水深を知る/?$ /blog/guide/theory/water-temperature-checking [R=301,L]
+  RewriteRule ^2024/09/家族で安心！浜名湖で車横付け可能な釣り場と設/?$ /blog/points/family-car-points [R=301,L]
+  RewriteRule ^2024/08/新居町中之郷付近～中浜名湖の釣りポイント紹介/?$ /blog/points/naka/arai-nakanogo [R=301,L]
+  RewriteRule ^2024/08/はまゆう大橋～中浜名湖の釣りポイント紹介～/?$ /blog/points/naka/hamayu-ohashi [R=301,L]
+  RewriteRule ^2024/08/浜名湖の干潟サイトフィッシング～中浜名湖の釣/?$ /blog/points/naka/higata-sitefishing [R=301,L]
+  RewriteRule ^2024/11/omote-hamanako-konankoukou/?$ /blog/points/naka/konankoukou [R=301,L]
+  RewriteRule ^2024/08/松見ヶ浦～中浜名湖の釣りポイント紹介～/?$ /blog/points/naka/matsumigaura [R=301,L]
+  RewriteRule ^2024/08/女河浦海水浴場～中浜名湖の釣りポイント紹介～/?$ /blog/points/naka/megaura [R=301,L]
+  RewriteRule ^2024/08/村櫛漁港付近・ガーデンパーク～中浜名湖の釣り/?$ /blog/points/naka/murakushi-fishing-port [R=301,L]
+  RewriteRule ^2024/08/村櫛海水浴場～中浜名湖の釣りポイント紹介～/?$ /blog/points/naka/murakushi-kaisuiyoku [R=301,L]
+  RewriteRule ^2024/08/内山海岸～中浜名湖の釣りポイント紹介～/?$ /blog/points/naka/utiyama-kaigan [R=301,L]
+  RewriteRule ^2024/08/鷲津湾周辺～中浜名湖の釣りポイント紹介～/?$ /blog/points/naka/washidukou [R=301,L]
+  RewriteRule ^2024/08/伊目～奥浜名湖の釣りポイント紹介～/?$ /blog/points/oku/ime [R=301,L]
+  RewriteRule ^2024/08/舘山寺（内浦湾）～奥浜名湖の釣りポイント紹介/?$ /blog/points/oku/kanzanji [R=301,L]
+  RewriteRule ^2024/08/気賀・寸座～奥浜名湖の釣りポイント紹介～/?$ /blog/points/oku/kiga [R=301,L]
+  RewriteRule ^2024/08/猪鼻湖（三ヶ日）～奥浜名湖の釣りポイント紹介/?$ /blog/points/oku/mikkabi-eki [R=301,L]
+  RewriteRule ^2024/08/都田川河口～奥浜名湖の釣りポイント紹介～/?$ /blog/points/oku/miyakodagawa [R=301,L]
+  RewriteRule ^2024/08/ホトニクス下（通称：マイマイ）～奥浜名湖の釣/?$ /blog/points/oku/photonics-under [R=301,L]
+  RewriteRule ^2024/08/佐久米海岸～奥浜名湖の釣りポイント紹介～/?$ /blog/points/oku/sakumekaigan [R=301,L]
+  RewriteRule ^2024/08/瀬戸水道～奥浜名湖の釣りポイント紹介～/?$ /blog/points/oku/setosuidou [R=301,L]
+  RewriteRule ^2024/08/庄内湖～奥浜名湖の釣りポイント紹介～/?$ /blog/points/oku/syounaiko [R=301,L]
+  RewriteRule ^2024/08/弁天島海浜公園・網干場～表浜名湖の釣りポイン/?$ /blog/points/omote/amihosiba [R=301,L]
+  RewriteRule ^2024/08/新居弁天海釣公園～表浜名湖の釣りポイント～/?$ /blog/points/omote/araibenten-umiduripark [R=301,L]
+  RewriteRule ^2024/10/弁天島海浜公園～表浜名湖のポイント紹介～/?$ /blog/points/omote/bentenjimakaihinkouen [R=301,L]
+  RewriteRule ^2024/08/ボートレース浜名湖（浜名湖競艇場）～表浜名湖/?$ /blog/points/omote/boatrace-hamanako [R=301,L]
+  RewriteRule ^2024/08/今切口舞阪堤～表浜名湖の釣りポイント紹介～/?$ /blog/points/omote/imagiremaisakatei [R=301,L]
+  RewriteRule ^2024/08/中之島・渚園～表浜名湖の釣りポイント紹介～/?$ /blog/points/omote/nagisaen [R=301,L]
+  RewriteRule ^2025/02/乙女園（うなぎ観音）～表浜名湖の釣りポイント/?$ /blog/points/omote/otomeen [R=301,L]
+  RewriteRule ^2024/11/浜名湖パークビレッジ付近～表浜名湖の釣りポイ/?$ /blog/points/omote/parkvillege [R=301,L]
+  RewriteRule ^2024/08/乙女園・サクラマル（弁天島）～表浜名湖の釣り/?$ /blog/points/omote/sakuramaru [R=301,L]
+  RewriteRule ^2024/08/砂揚げ場（浜名港）～表浜名湖の釣りポイント紹/?$ /blog/points/omote/sunaageba [R=301,L]
+  RewriteRule ^2024/11/浜名湖でおすすめのウェーディングポイント10選と/?$ /blog/points/wading-points [R=301,L]
+  RewriteRule ^2024/11/1月の浜名湖で狙える！釣り人おすすめポイントと/?$ /blog/season/monthly/1-month [R=301,L]
+  RewriteRule ^2024/09/10月の浜名湖でおすすめの釣りポイント8選/?$ /blog/season/monthly/10-month [R=301,L]
+  RewriteRule ^2024/10/11月の浜名湖でおすすめの釣りポイント5選/?$ /blog/season/monthly/11-month [R=301,L]
+  RewriteRule ^2024/10/12月の浜名湖でおすすめの釣りポイント/?$ /blog/season/monthly/12-month [R=301,L]
+  RewriteRule ^2024/12/2月の浜名湖でおすすめの釣りポイント6選/?$ /blog/season/monthly/2-month [R=301,L]
+  RewriteRule ^2025/01/3月の浜名湖でおすすめの釣りポイント10選/?$ /blog/season/monthly/3-month [R=301,L]
+  RewriteRule ^2025/02/4月の浜名湖でおすすめの釣りポイント8選/?$ /blog/season/monthly/4-month [R=301,L]
+  RewriteRule ^2025/02/5月の浜名湖でおすすめの釣りポイント9選/?$ /blog/season/monthly/5-month [R=301,L]
+  RewriteRule ^2025/02/6月の浜名湖でおすすめの釣りポイント9選/?$ /blog/season/monthly/6-month [R=301,L]
+  RewriteRule ^2025/02/7月の浜名湖でおすすめの釣りポイント7選/?$ /blog/season/monthly/7-month [R=301,L]
+  RewriteRule ^2025/02/8月の浜名湖でおすすめの釣りポイント10選/?$ /blog/season/monthly/8-month [R=301,L]
+  RewriteRule ^2024/09/9月の浜名湖でおすすめの釣りポイント6選/?$ /blog/season/monthly/9-month [R=301,L]
+  RewriteRule ^hamanako-seasonal-fishing-patterns-guide/?$ /blog/season/seasonal-patterns-guide [R=301,L]
+  RewriteRule ^2024/09/9月の浜名湖でおすすめの釣りポイント6選/?$ /blog/season/yearly-fishing-calendar [R=301,L]
+  RewriteRule ^2024/11/浜名湖でサビキ釣りを楽しもう！おすすめのシー/?$ /blog/target/aji-saba-sappa [R=301,L]
+  RewriteRule ^2025/11/egingu-nyumon-guide/?$ /blog/target/eging [R=301,L]
+  RewriteRule ^2024/11/【完全ガイド】浜名湖でハゼ釣りを楽しむ！おす/?$ /blog/target/haze [R=301,L]
+  RewriteRule ^2024/11/【初心者必見】冬の浜名湖でカレイを釣る方法！/?$ /blog/target/karei [R=301,L]
+  RewriteRule ^2024/11/浜名湖でカワハギを釣る方法完全ガイド！釣れる/?$ /blog/target/kawahagi [R=301,L]
+  RewriteRule ^2024/10/浜名湖でキビレを釣るおすすめのポイントと方法/?$ /blog/target/kibire [R=301,L]
+  RewriteRule ^2024/11/浜名湖シロギス釣りのベストポイント5選！初心者/?$ /blog/target/kisu [R=301,L]
+  RewriteRule ^2024/09/浜名湖でクロダイ釣りを楽しむ！おすすめポイン/?$ /blog/target/kurodai [R=301,L]
+  RewriteRule ^2024/11/浜名湖でメバルを釣る方法～初心者から上級者ま/?$ /blog/target/mebaru-kasago/mebaru-beginner [R=301,L]
+  RewriteRule ^2024/12/tactics-fish-kasago/?$ /blog/target/mebaru-kasago/points [R=301,L]
+  RewriteRule ^2024/10/浜名湖でスズキ（シーバス）釣りのおすすめポイ/?$ /blog/target/seabass [R=301,L]
+  # END GENERATED REDIRECTS
+
+</IfModule>

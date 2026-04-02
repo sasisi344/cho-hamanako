@@ -1,0 +1,10 @@
+id: common/daiwa-liberty-club-isokaze
+name: ダイワ リバティクラブ 磯風
+link: https://www.amazon.co.jp/dp/B00T494ZMM?tag=sasisi344-22
+image: https://m.media-amazon.com/images/P/B00T494ZMM.01.LZZZZZZZ.jpg
+description: 堤防釣りの万能ロッド。サビキ釣り、ウキフカセ、電気ウキ釣りなど、浜名湖の堤防釣りに幅広く対応。
+targetFish: ["クロダイ", "メジナ", "キビレ", "アジ", "サバ"]
+methods: ["サビキ釣り", "ウキフカセ", "ウキ釣り"]
+categories: ["ロッド"]
+brand: ダイワ
+isRecommended: true

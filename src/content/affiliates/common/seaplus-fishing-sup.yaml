@@ -1,0 +1,10 @@
+id: common/seaplus-fishing-sup
+name: SEAPLUS サップ スタンドアップパドルボード 釣りフルセット
+link: https://www.amazon.co.jp/dp/B09BCLZBXW?tag=sasisi344-22&linkCode=ll2&linkId=e17ffa1ad2a13800348c0debee57fcc0
+image: https://m.media-amazon.com/images/P/B09BCLZBXW.01.LZZZZZZZ.jpg
+description: 幅広く安定性に特化した釣り専用SUPモデル。クーラーボックスを固定できるDリングが豊富で、サイトフィッシングに最適です。
+targetFish: ["全魚種"]
+methods: ["ボート釣り", "SUP"]
+categories: ["ボート・SUP"]
+brand: SEAPLUS
+isRecommended: true

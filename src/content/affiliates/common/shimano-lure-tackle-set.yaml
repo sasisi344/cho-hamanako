@@ -1,0 +1,10 @@
+id: common/shimano-lure-tackle-set
+name: シマノ ルアー釣りセット（ルアーマチック S86ML & PEライン糸巻済リール）
+link: https://www.amazon.co.jp/dp/B0FLCRHZ65?tag=sasisi344-22
+image: https://m.media-amazon.com/images/P/B0FLCRHZ65.01.LZZZZZZZ.jpg
+description: 浜名湖のシーバスやクロダイ狙いに最適な、シマノの本格ルアー釣りセット。これさえあればすぐに釣行可能なPEライン糸巻済みリールと、名竿ルアーマチックの組み合わせ。
+targetFish: ["シーバス", "クロダイ", "キビレ", "マゴチ"]
+methods: ["ルアーフィッシング", "チニング"]
+categories: ["タックルセット", "ロッド", "リール"]
+brand: シマノ
+isRecommended: true

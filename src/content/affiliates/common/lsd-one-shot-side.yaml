@@ -1,0 +1,10 @@
+id: common/lsd-one-shot-side
+name: LSDデザインズ ワンショットサイド
+link: https://www.amazon.co.jp/Love-Soul-Dream-%E3%83%AF%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88%E3%82%B5%E3%82%A4%E3%83%89-%E3%82%B3%E3%83%BC%E3%83%87%E3%83%A5%E3%83%A9%E3%83%96%E3%83%A9%E3%83%83%E3%82%AF/dp/B08VW19VNY?tag=sasisi344-22&linkCode=ll2&linkId=99f34580a68e97a8ae373726cc50ddf0
+image: https://m.media-amazon.com/images/P/B08VW19VNY.01.LZZZZZZZ.jpg
+description: 縦型の設計でキャスト時の腕の動きを邪魔しない。コンパクトながら収納力があり、ハゼクラやライトゲームに最適。
+targetFish: ["ハゼ", "メバル", "カサゴ"]
+methods: ["ハゼクラ", "ライトゲーム"]
+categories: ["収納・バッグ"]
+brand: LSDデザインズ
+isRecommended: true

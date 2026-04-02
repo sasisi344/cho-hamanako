@@ -1,0 +1,10 @@
+id: common/hewflit-rowboat
+name: Hewflit フィッシングボート オール2本セット
+link: https://www.amazon.co.jp/dp/B07FQBXW3P?tag=sasisi344-22&linkCode=ll2&linkId=a27aba1b3d4288b8511ac0e9803f41e6
+image: https://m.media-amazon.com/images/P/B07FQBXW3P.01.LZZZZZZZ.jpg
+description: 海岸から近めのポイントで、家族でのびのび釣りをするならローボートも便利。
+targetFish: ["全魚種"]
+methods: ["ボート釣り"]
+categories: ["ボート・SUP"]
+brand: Hewflit
+isRecommended: true

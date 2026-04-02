@@ -1,0 +1,10 @@
+id: flatfish/magochi-worm
+name: オンスタックル(OZ Tackle) マナティー
+link: "https://www.amazon.co.jp/%E3%82%AA%E3%83%B3%E3%82%B9%E3%82%BF%E3%83%83%E3%82%AF%E3%83%AB%E3%83%87%E3%82%B6%E3%82%A4%E3%83%B3-%E3%83%9E%E3%83%8A%E3%83%86%E3%82%A3%E3%83%BC-90-02-%E3%82%B9%E3%83%91%E3%83%BC%E3%82%AF%E3%83%AB%E3%83%AC%E3%83%83%E3%83%89%E3%83%98%E3%83%83%E3%83%89/dp/B005F0CI5U?__mk_ja_JP=%E3%82%AB%E3%82%BF%E3%82%AB%E3%83%8A&crid=14P7246FJVGZX&dib=eyJ2IjoiMSJ9.ZF0e4bo_EzOXMnpOo7dEag1N1Cr3-AK46JuQD-I33qw-_dw2mP2pM2mZeO5kj0TPms-9HjwoJGaWxM5GEJ8gl4X9ARsQIEAPGQuB3D1Hb-dho6-rMdWoQ5E_CFkpCC7myxGORZXiyPAm9cS18j__eI0WJ8FRO9iHnUHg2WOofjbQhRtkWdoscmXGo_f2Cb-BpbgBc7wjj0FWykFxYeAp7fdde36s_XyibNdvFmU7oss8VDlPw1eeROQ3e4fk50g6l26uw-rjfsZ746ObRlfpVgQhXvCMlAEgzUNU7yy8Mhk.Y3naNGVOaaOft9EUkW6JsEJHroLArrJysHK7hEa3OWE&dib_tag=se&keywords=%E3%82%AA%E3%83%B3%E3%82%B9%E3%82%BF%E3%83%83%E3%82%AF%E3%83%AB%2B%E3%83%9E%E3%83%8A%E3%83%86%E3%82%A3%E3%83%BC&qid=1774412711&sprefix=%E3%82%AA%E3%83%B3%E3%82%B9%E3%82%BF%E3%83%83%E3%82%AF%E3%83%AB%2B%E3%83%9E%E3%83%8A%E3%83%86%E3%82%A3%E3%83%BC%2Caps%2C182&sr=8-1&ufe=app_do%3Aamzn1.fos.bf5b3200-08a5-4406-bf4b-e679e8ebbcc3&th=1&psc=1&linkCode=ll2&tag=sasisi344-22&linkId=e1fb5907908265d21b1452b1efcdd298&ref_=as_li_ss_tl"
+image: "https://m.media-amazon.com/images/I/81CsxixVpUL._AC_SL1500_.jpg"
+description: "ワインド釣法に特化した専用ワーム。ZZヘッドとの組み合わせにより、唯一無二のダートアクションを実現します。"
+targetFish: ["マゴチ", "シーバス"]
+methods: ["ボトムワインド"]
+categories: ["ルアー", "ワーム"]
+brand: OZ Tackle
+isRecommended: true

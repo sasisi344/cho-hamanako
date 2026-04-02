@@ -1,0 +1,10 @@
+id: cooking/hayakawa-sasara
+name: 早川工業 PP魚の内臓取り ササラ
+link: https://www.amazon.co.jp/dp/B005H2FNXA?tag=sasisi344-22&linkCode=ll2&linkId=e39dc1e3123d56328558ab60a2fbd982
+image: https://m.media-amazon.com/images/P/B005H2FNXA.01.LZZZZZZZ.jpg
+description: 中骨の血合いをきれいに掻き出すための必須アイテム。使い古した歯ブラシでもアリ。
+targetFish: ["全魚種"]
+methods: ["料理"]
+categories: ["小物"]
+brand: 早川工業
+isRecommended: true

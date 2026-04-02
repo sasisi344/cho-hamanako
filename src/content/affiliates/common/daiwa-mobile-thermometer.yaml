@@ -1,0 +1,10 @@
+id: common/daiwa-mobile-thermometer
+name: ダイワ 水温チェッカー
+brand: ダイワ
+link: "https://www.amazon.co.jp/%E3%83%80%E3%82%A4%E3%83%AF-DAIWA-936323-%E6%B0%B4%E6%B8%A9%E3%83%81%E3%82%A7%E3%83%83%E3%82%AB%E3%83%BC-WP/dp/B00D3RM2XK?__mk_ja_JP=%E3%82%AB%E3%82%BF%E3%82%AB%E3%83%8A&crid=3QQAPJR3HLA52&dib=eyJ2IjoiMSJ9.JhVVNH66XT-7KZb2mwbwiebVtLs3ml09M5fFnO0fxRKLO1q3eAwCsrN4HVIJLSLdnpF9lOuXSIOW2O8dzyH2leN80MgYDJlVmpjdyjpw5uGOmXBgaYhPpt0_hMUotpKEPq6NmGvA_yXicxa6i9TpmwQF7tK3OnvgU5I-6N6pBGgKLjkbVj59mHOhRnmVexmir3R8xTvvrRepW3inT2VEXK65qoo_d-XrXKoVwYW2CB3tFXFNpwtOScjRmMtjMItPnR-f05Wy1Ky_BcBjygVk-AsB6VPZTSPm-w1I-EDJu7A.UJKYY2FqAgFj3K7UxfUabUsiiQY8UPVbAllJmyHk0AE&dib_tag=se&keywords=%E3%83%80%E3%82%A4%E3%83%AF+%E3%83%87%E3%82%B8%E3%82%BF%E3%83%AB%E6%B0%B4%E6%B8%A9%E8%A8%88&qid=1774420957&sprefix=%E3%83%80%E3%82%A4%E3%83%AF+%E3%83%87%E3%82%B8%E3%82%BF%E3%83%AB%E6%B0%B4%E6%B8%A9%E8%A8%88%2Caps%2C191&sr=8-1&ufe=app_do%3Aamzn1.fos.d8e7ee72-073f-4b97-8ec0-59c18d6dfebe&linkCode=ll2&tag=sasisi344-22&linkId=d7b177e6842419534139ca3aa805cc8d&ref_=as_li_ss_tl"
+image: https://m.media-amazon.com/images/I/61tUv+Ix+kL._AC_SL1500_.jpg
+description: 釣り場ですぐに水温を測れるデジタル水温計。非接触タイプで瞬時に計測可能です。
+targetFish: ["全魚種"]
+methods: ["水温計測"]
+categories: ["common"]
+isRecommended: true

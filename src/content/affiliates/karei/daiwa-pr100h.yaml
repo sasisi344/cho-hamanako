@@ -1,0 +1,10 @@
+id: karei/daiwa-pr100h
+name: ダイワ PR100H
+link: https://www.amazon.co.jp/dp/B0BSTMC8RN?tag=sasisi344-22
+image: https://m.media-amazon.com/images/P/B0BSTMC8RN.01.LZZZZZZZ.jpg
+description: コストパフォーマンスに優れた両軸リール。ボートからのエサ釣りやルアー釣りに。
+targetFish: ["カレイ", "カワハギ", "カサゴ"]
+methods: ["船釣り", "ボート釣り"]
+categories: ["リール"]
+brand: ダイワ
+isRecommended: true

@@ -1,0 +1,13 @@
+
+    Directory: C:\Users\sasis\344dev\cho-hama\node_modules\fast-uri\.github
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a---          2026/02/08    20:07            771 .stale.yml
+
+    Directory: C:\Users\sasis\344dev\cho-hama\tmp
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a---          2026/03/10    14:54            255 stale_search.txt
+

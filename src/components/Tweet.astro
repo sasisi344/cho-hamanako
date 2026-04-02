@@ -1,0 +1,15 @@
+---
+interface Props {
+  url: string;
+}
+
+const { url } = Astro.props;
+// twitter-widgets only supports twitter.com domain for now, so we replace x.com if needed
+const tweetUrl = url.replace("x.com", "twitter.com");
+---
+
+<div class="flex justify-center my-6 overflow-hidden">
+  <blockquote class="twitter-tweet" data-dnt="true" data-theme="light">
+    <a href={tweetUrl}></a>
+  </blockquote>
+</div>

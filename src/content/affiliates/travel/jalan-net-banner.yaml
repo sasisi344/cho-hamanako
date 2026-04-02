@@ -1,0 +1,10 @@
+id: travel/jalan-net-banner
+name: じゃらんnet（バナー）
+link: https://px.a8.net/svt/ejp?a8mat=2NI007+15325E+14CS+6C9LD
+image: https://www20.a8.net/svt/bgt?aid=160403335069&wid=007&eno=01&mid=s00000005230001065000&mc=1
+description: 浜名湖エリアの宿泊予約。会員限定プランやポイント還元でお得に旅行を。
+targetFish: []
+methods: ["遠征", "宿泊"]
+categories: ["旅行・宿泊"]
+brand: リクルート
+isRecommended: true

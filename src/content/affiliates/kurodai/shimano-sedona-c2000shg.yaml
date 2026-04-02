@@ -1,0 +1,10 @@
+id: kurodai/shimano-sedona-c2000shg
+name: シマノ セドナ C2000SHG
+link: https://www.amazon.co.jp/dp/B0C7B325BT?tag=sasisi344-22
+image: https://m.media-amazon.com/images/P/B0C7B325BT.01.LZZZZZZZ.jpg
+description: 2000番のハイギア。糸フケを素早く取れ、汎用性が高い。PEを巻けば投げ釣りやシーバスにも。
+targetFish: ["クロダイ", "メバル", "アジ", "シーバス"]
+methods: ["ウキフカセ", "ライトゲーム"]
+categories: ["リール"]
+brand: シマノ
+isRecommended: true

@@ -1,0 +1,10 @@
+id: kurodai/gamakatsu-chinu-hook
+name: がまかつ 糸付 海上のチヌ
+link: https://www.amazon.co.jp/dp/B015IBSPX4?tag=sasisi344-22
+image: https://m.media-amazon.com/images/P/B015IBSPX4.01.LZZZZZZZ.jpg
+description: クロダイ用の定番針。今切口なら2~4号の範囲、カニエサなら3号、20cm以下のチンタなら1号が目安。
+targetFish: ["クロダイ"]
+methods: ["前打ち", "ダンゴ釣り", "ウキフカセ"]
+categories: ["針"]
+brand: がまかつ
+isRecommended: true
