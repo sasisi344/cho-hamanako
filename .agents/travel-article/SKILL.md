@@ -72,7 +72,7 @@ facilities: # 拠点施設の設備
 
 ### 2. コンポーネントと外部連携の活用
 
-- **宿泊予約**: `<TackleCard>` を使用し、楽天トラベルやじゃらん等のアフィリエイトIDを連携させて予約導線を作る。[08_blog-master\01_cho-hamanako\.workspace\.data-set\.index\tackle-card-list.md] から取得。
+- **宿泊予約**: `<TackleCard>` を使用し、楽天トラベルやじゃらん等のアフィリエイトIDを連携させて予約導線を作る。`[.workspace/.data-set/.index/tackle-card-list.md](file:///c:/Users/sasis/344dev/cho-hamanako/.workspace/.data-set/.index/tackle-card-list.md)` から取得。
 - **相互リンク**: 関連するポイント（`points/`）や釣法（`guide/method/`）の記事を `<BlogCard />` で繋ぎ、回遊性を高める。
 
 ### 3. 表形式による比較とプランの可視化

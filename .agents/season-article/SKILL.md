@@ -55,7 +55,7 @@ fishinginfo:
 ---
 
 ## 📈 データに基づく信頼性
-- **SSOT参照**: `[.workspace/.data-set/.index/season-fishing/](file:///c:/Users/sasis/344ob/344ob/08_blog-master/01_cho-hamanako/.workspace/.data-set/.index/season-fishing/)` 配下の月別・季節別データに基づき、過去の実績を根拠とした提案を行うこと。
+- **SSOT参照**: `[.workspace/.data-set/.index/season-fishing/](file:///c:/Users/sasis/344dev/cho-hamanako/.workspace/.data-set/.index/season-fishing/)` 配下の月別・季節別データに基づき、過去の実績を根拠とした提案を行うこと。
 - **時系列の連動**: 前後の月との比較（例：「先月より水温が1度上がり、〇〇が入ってきました」）を入れることで、情報の説得力を高める。
 
 ---

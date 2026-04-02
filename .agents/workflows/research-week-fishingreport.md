@@ -40,8 +40,8 @@ description: 週間で浜名湖の釣果情報を取得してレポート作成
 
 出力フォーマット:
 
-- 出力フォルダ[08_blog-master\01_cho-hamanako\.data-set\research\week-report]
-- ファイル名: 【週刊】浜名湖釣況レポート（YYYY/MM/DD）
+- 出力フォルダ: .data-set/research/week-report/YYYY/MM/W[n]
+- ファイル名: index.md
 
 1. 今週の概況
    （1週間の総括を200文字程度で。先週と比較して良くなったか悪くなったか）

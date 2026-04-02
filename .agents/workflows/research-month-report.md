@@ -64,4 +64,5 @@ description: 浜名湖の月間釣り情報取得
 
 ## 出力フォルダ
 
-08_blog-master\01_cho-hamanako\.data-set\research\monthly-report
+.data-set/research/monthly-report/YYYY/MM
+- ファイル名: index.md

@@ -12,7 +12,7 @@ description: "特定の魚種（ターゲット）を軸にした攻略記事、
 - **文章スタイル**: 鋭く、情熱的。専門用語を交えつつも、初心者が置いてけぼりにならない親切な解説。
 - **価値提供**: 
     - ユーザーが抱く「この魚、今釣れるの？」という疑問に0秒で答える。
-    - **データ連携**: 記事作成時は必ず `[.workspace/.data-set/.index/biological/](file:///c:/Users/sasis/344ob/344ob/08_blog-master/01_cho-hamanako/.workspace/.data-set/.index/biological/)` 配下の魚種別リサーチデータを参照し、根拠のある生態・時期情報を記述すること。
+    - **データ連携**: 記事作成時は必ず `[.workspace/.data-set/.index/biological/](file:///c:/Users/sasis/344dev/cho-hamanako/.workspace/.data-set/.index/biological/)` 配下の魚種別リサーチデータを参照し、根拠のある生態・時期情報を記述すること。
     - 季節や時間に紐づいたロングテールKW（例：「浜名湖 クロダイ 3月」）への徹底回答。
 
 ---

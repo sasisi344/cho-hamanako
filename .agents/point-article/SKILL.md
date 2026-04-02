@@ -63,7 +63,7 @@ facilities:
 
 ### ステップ1：プランニング (SXO重視)
 - 検索意図（例：「浜名湖 釣り場 駐車場あり」）を想定し、冒頭で利便性を強調する。
-- 設備情報は必ず `[infrastructure-master.json](file:///c:/Users/sasis/344ob/344ob/08_blog-master/01_cho-hamanako/.workspace/.data-set/.index/infrastructure-master.json)` または `[point-locate-check.md](file:///c:/Users/sasis/344ob/344ob/08_blog-master/01_cho-hamanako/.workspace/.data-set/.index/point-locate-check.md)` を参照し、最新のマスターデータを正とすること。
+- 設備情報は必ず `[.workspace/.data-set/.index/infrastructure-master.json](file:///c:/Users/sasis/344dev/cho-hamanako/.workspace/.data-set/.index/infrastructure-master.json)` または `[.workspace/.data-set/.index/point-locate-check.md](file:///c:/Users/sasis/344dev/cho-hamanako/.workspace/.data-set/.index/point-locate-check.md)` を参照し、最新のマスターデータを正とすること。
 
 ### ステップ2：標準構成（本文）
 1.  **導入 (Intro)**: `『釣！浜名湖』をご覧いただきありがとうございます！` から開始し、その場所が「誰にとって最適か」を即座に伝える。
