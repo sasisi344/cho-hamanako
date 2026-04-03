@@ -29,8 +29,9 @@ As the central intelligence for the "Cho! Hamanako" project, your primary respon
 ## 📚 Guidelines (Indicator)
 - **Universal Brain (Rules)**: [writing-style](skills/agents/writing-style/SKILL.md)
 - **Personalities (Types)**:
-  - Points: [point-article](skills/agents/point-article/SKILL.md)
-  - Target: [target-article](skills/agents/target-article/SKILL.md)
+  - Points: [point-article](.agents/point-article/SKILL.md)
+  - Fukabori: [fukabori-article](.agents/fukabori-article/SKILL.md)
+  - Target: [target-article](.agents/target-article/SKILL.md)
   - Season/Monthly: [season-article](skills/agents/season-article/SKILL.md)
   - Guide/Method: [guide-article](skills/agents/guide-article/SKILL.md)
   - Travel/Gourmet: [travel-article](skills/agents/travel-article/SKILL.md)

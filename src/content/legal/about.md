@@ -39,6 +39,7 @@ date: "2026-03-06"
 #### 4. お問い合わせ
 もし掲載内容が不利益になると感じられた場合や、情報の修正依頼等は、下記よりご連絡ください。
 
--責任者:さしし(@344dev)
-- <strong>Email</strong>: sasisi344@gmail.com
-- SNS: [X (Twitter)](https://twitter.com/cho_hamanako)
+- **責任者・管理者**: さしし (sasisi344)
+- **Email**: sasisi344@gmail.com
+- **公式SNS**: [X (@cho_hamanako)](https://x.com/cho_hamanako)
+- **サイト管理者個人**: [さしし (@sasisi344)](https://x.com/sasisi344)

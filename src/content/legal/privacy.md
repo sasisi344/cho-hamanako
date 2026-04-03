@@ -48,7 +48,10 @@ date: "2026-03-06"
 
 当サイトは、個人情報の取扱いに関する担当窓口及び責任者を以下の通り設けます。
 
-<strong>責任者・管理者</strong>:さしし（sasisi344@gmail.com）
+- **責任者・管理者**: さしし
+- **Email**: sasisi344@gmail.com
+- **公式SNS**: [X (@cho_hamanako)](https://x.com/cho_hamanako)
+- **管理用アカウント**: [さしし (@sasisi344)](https://x.com/sasisi344)
 
 ### 9. ウェブ広告の配信について
 

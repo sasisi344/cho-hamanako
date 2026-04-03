@@ -53,3 +53,9 @@ description: 週間で浜名湖の釣果情報を取得してレポート作成
 3. エリア別コンディション
    奥浜名湖: > - 表〜中浜名湖: > - 今切口〜サーフ: > ### 5. 週末に向けた戦略アドバイス
    （リサーチ結果に基づき、どのエリアで何を狙うのが「期待値が高い」か、1日のリサーチを締めくくる考察）
+
+---
+
+## 🛠️ 次のステップ：SNSプロモーション (連携)
+レポートが完成したら、直ちに [.agents/workflows/sns-promotion-workflow.md](file:///c:/Users/sasis/344dev/cho-hamanako/.agents/workflows/sns-promotion-workflow.md) を実行してください。
+金曜日の「週末釣行準備」に合わせた、XおよびInstagram用の投稿テキスト（「私（さしし）」スタイル）を自動生成できます。
