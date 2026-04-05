@@ -1,0 +1,563 @@
+
+> cho-hama@1.0.0 build
+> astro check && astro build && npx partytown copylib dist/partytown
+
+11:20:02 [types] Generated 1.19s
+11:20:02 [check] Getting diagnostics for Astro files in C:\Users\sasis\344dev\cho-hamanako...
+Result (53 files): 
+- 0 errors
+- 0 warnings
+- 0 hints
+
+11:20:12 [types] Generated 1.13s
+11:20:12 [build] output: "static"
+11:20:12 [build] directory: C:\Users\sasis\344dev\cho-hamanako\dist\
+11:20:12 [build] Collecting build info...
+11:20:12 [build] ✓ Completed in 1.22s.
+11:20:13 [build] Building static entrypoints...
+11:20:27 [vite] [32m✓ built in 14.60s[39m
+11:20:27 [build] ✓ Completed in 14.65s.
+
+ building client (vite) 
+11:20:27 [vite] transforming...
+11:20:28 [vite] [32m✓[39m 22 modules transformed.
+11:20:28 [vite] rendering chunks...
+11:20:28 [vite] computing gzip size...
+11:20:28 [vite] [2mdist/[22m[36m_astro/Search.Dzq2s78K.js            [39m[1m[2m 1.22 kB[22m[1m[22m[2m │ gzip:  0.71 kB[22m
+11:20:28 [vite] [2mdist/[22m[36m_astro/SearchCollection.CbgsWW9z.js  [39m[1m[2m 4.35 kB[22m[1m[22m[2m │ gzip:  1.95 kB[22m
+11:20:28 [vite] [2mdist/[22m[36m_astro/client.CDFLX9LH.js            [39m[1m[2m 5.61 kB[22m[1m[22m[2m │ gzip:  2.44 kB[22m
+11:20:28 [vite] [2mdist/[22m[36m_astro/web.CL2iH6DP.js               [39m[1m[2m13.66 kB[22m[1m[22m[2m │ gzip:  5.56 kB[22m
+11:20:28 [vite] [2mdist/[22m[36m_astro/SearchBar.DXPeW7QB.js         [39m[1m[2m42.21 kB[22m[1m[22m[2m │ gzip: 14.80 kB[22m
+11:20:28 [vite] [32m✓ built in 410ms[39m
+
+ generating static routes 
+11:20:28 ▶ src/pages/affiliates/index.astro
+11:20:28   └─ /affiliates/index.html (+414ms)
+11:20:29 λ src/pages/api/points.json.ts
+11:20:29   └─ /api/points.json (+157ms)
+11:20:29 ▶ src/pages/blog/guide/index.astro
+11:20:29   └─ /blog/guide/index.html (+30ms)
+11:20:29 ▶ src/pages/blog/target/index.astro
+11:20:29   └─ /blog/target/index.html (+51ms)
+11:20:29 ▶ src/pages/blog/index.astro
+11:20:29   └─ /blog/index.html (+91ms)
+11:20:29 ▶ src/pages/blog/[...slug].astro
+The collection "projects" does not exist or is empty. Ensure a collection directory with this name exists.
+11:20:29   ├─ /blog/cooking/beginner/koaji-karaage-recipe/index.html (+22ms)
+The collection "projects" does not exist or is empty. Ensure a collection directory with this name exists.
+11:20:29   ├─ /blog/guide/beginner/family-car-fishing-points/index.html (+14ms)
+The collection "projects" does not exist or is empty. Ensure a collection directory with this name exists.
+11:20:29   ├─ /blog/guide/beginner/hamanako-fishing-rules-and-manners/index.html (+15ms)
+The collection "projects" does not exist or is empty. Ensure a collection directory with this name exists.
+11:20:29   ├─ /blog/guide/beginner/hamanako-poisonous-fish-guide/index.html (+15ms)
+The collection "projects" does not exist or is empty. Ensure a collection directory with this name exists.
+11:20:29   ├─ /blog/guide/beginner/hamanako-sabiki-best-season/index.html (+15ms)
+The collection "projects" does not exist or is empty. Ensure a collection directory with this name exists.
+11:20:29   ├─ /blog/bait-vending-machines/index.html (+15ms)
+The collection "projects" does not exist or is empty. Ensure a collection directory with this name exists.
+11:20:29   ├─ /blog/parking-toilet-guide/index.html (+12ms)
+The collection "projects" does not exist or is empty. Ensure a collection directory with this name exists.
+11:20:29   ├─ /blog/rental-boat-guide/index.html (+12ms)
+The collection "projects" does not exist or is empty. Ensure a collection directory with this name exists.
+11:20:29   ├─ /blog/shops/index.html (+15ms)
+The collection "projects" does not exist or is empty. Ensure a collection directory with this name exists.
+11:20:29   ├─ /blog/ajing-guide/index.html (+13ms)
+The collection "projects" does not exist or is empty. Ensure a collection directory with this name exists.
+11:20:29   ├─ /blog/anazuri/index.html (+10ms)
+The collection "projects" does not exist or is empty. Ensure a collection directory with this name exists.
+11:20:29   ├─ /blog/benten-nagashi-fishing/index.html (+11ms)
+The collection "projects" does not exist or is empty. Ensure a collection directory with this name exists.
+11:20:29   ├─ /blog/boat-autumn/index.html (+9ms)
+The collection "projects" does not exist or is empty. Ensure a collection directory with this name exists.
+11:20:29   ├─ /blog/casting-gomoku/index.html (+9ms)
+The collection "projects" does not exist or is empty. Ensure a collection directory with this name exists.
+11:20:29   ├─ /blog/chinutop-july/index.html (+11ms)
+The collection "projects" does not exist or is empty. Ensure a collection directory with this name exists.
+11:20:29   ├─ /blog/guide/method/cho-nage-fishing/index.html (+9ms)
+The collection "projects" does not exist or is empty. Ensure a collection directory with this name exists.
+11:20:29   ├─ /blog/guide/method/fukase-fishing/index.html (+10ms)
+The collection "projects" does not exist or is empty. Ensure a collection directory with this name exists.
+11:20:29   ├─ /blog/guide/method/hamanako-boat-fishing/index.html (+11ms)
+The collection "projects" does not exist or is empty. Ensure a collection directory with this name exists.
+11:20:29   ├─ /blog/hamanako-kayak-fishing/index.html (+11ms)
+The collection "projects" does not exist or is empty. Ensure a collection directory with this name exists.
+11:20:29   ├─ /blog/hamanako-kurodai-topwater/index.html (+11ms)
+The collection "projects" does not exist or is empty. Ensure a collection directory with this name exists.
+11:20:29   ├─ /blog/guide/method/hamanako-sup-fishing/index.html (+10ms)
+The collection "projects" does not exist or is empty. Ensure a collection directory with this name exists.
+11:20:29   ├─ /blog/guide/method/index.html (+10ms)
+The collection "projects" does not exist or is empty. Ensure a collection directory with this name exists.
+11:20:29   ├─ /blog/guide/method/myaku-hechi-fishing/index.html (+8ms)
+The collection "projects" does not exist or is empty. Ensure a collection directory with this name exists.
+11:20:29   ├─ /blog/night-chining/index.html (+12ms)
+The collection "projects" does not exist or is empty. Ensure a collection directory with this name exists.
+11:20:29   ├─ /blog/night-fishing/index.html (+12ms)
+The collection "projects" does not exist or is empty. Ensure a collection directory with this name exists.
+11:20:29   ├─ /blog/guide/method/night-float-fishing/index.html (+10ms)
+The collection "projects" does not exist or is empty. Ensure a collection directory with this name exists.
+11:20:29   ├─ /blog/night-seabass/index.html (+11ms)
+The collection "projects" does not exist or is empty. Ensure a collection directory with this name exists.
+11:20:29   ├─ /blog/okuhamanako-haze-fishing/index.html (+10ms)
+The collection "projects" does not exist or is empty. Ensure a collection directory with this name exists.
+11:20:29   ├─ /blog/winter-lightgame/index.html (+13ms)
+The collection "projects" does not exist or is empty. Ensure a collection directory with this name exists.
+11:20:29   ├─ /blog/hamana-depth-map-guide/index.html (+11ms)
+The collection "projects" does not exist or is empty. Ensure a collection directory with this name exists.
+11:20:29   ├─ /blog/guide/theory/area-strategy-theory/index.html (+10ms)
+The collection "projects" does not exist or is empty. Ensure a collection directory with this name exists.
+11:20:29   ├─ /blog/guide/theory/day-vs-night/index.html (+10ms)
+The collection "projects" does not exist or is empty. Ensure a collection directory with this name exists.
+11:20:29   ├─ /blog/guide/theory/imagiri-current-logic/index.html (+13ms)
+The collection "projects" does not exist or is empty. Ensure a collection directory with this name exists.
+11:20:29   ├─ /blog/guide/theory/index.html (+12ms)
+The collection "projects" does not exist or is empty. Ensure a collection directory with this name exists.
+11:20:29   ├─ /blog/guide/theory/mazume-logic/index.html (+10ms)
+The collection "projects" does not exist or is empty. Ensure a collection directory with this name exists.
+11:20:29   ├─ /blog/guide/theory/nokkomi-season/index.html (+10ms)
+The collection "projects" does not exist or is empty. Ensure a collection directory with this name exists.
+11:20:29   ├─ /blog/guide/theory/seasonal-patterns-guide/index.html (+12ms)
+The collection "projects" does not exist or is empty. Ensure a collection directory with this name exists.
+11:20:29   ├─ /blog/guide/theory/tidal-timing-logic/index.html (+10ms)
+The collection "projects" does not exist or is empty. Ensure a collection directory with this name exists.
+11:20:29   ├─ /blog/tide-table-logic/index.html (+8ms)
+The collection "projects" does not exist or is empty. Ensure a collection directory with this name exists.
+11:20:29   ├─ /blog/water-temperature-checking/index.html (+8ms)
+The collection "projects" does not exist or is empty. Ensure a collection directory with this name exists.
+11:20:29   ├─ /blog/water-temperature-logic/index.html (+11ms)
+The collection "projects" does not exist or is empty. Ensure a collection directory with this name exists.
+11:20:29   ├─ /blog/weekly-report-2026-03-29/index.html (+10ms)
+The collection "projects" does not exist or is empty. Ensure a collection directory with this name exists.
+11:20:30   ├─ /blog/weekly-report-2026-04-02/index.html (+8ms)
+The collection "projects" does not exist or is empty. Ensure a collection directory with this name exists.
+11:20:30   ├─ /blog/01-january-kasago/index.html (+8ms)
+The collection "projects" does not exist or is empty. Ensure a collection directory with this name exists.
+11:20:30   ├─ /blog/11-november-karei/index.html (+9ms)
+The collection "projects" does not exist or is empty. Ensure a collection directory with this name exists.
+11:20:30   ├─ /blog/12-december-chinta/index.html (+9ms)
+The collection "projects" does not exist or is empty. Ensure a collection directory with this name exists.
+11:20:30   ├─ /blog/bachinuke-season-forecast-2026/index.html (+11ms)
+The collection "projects" does not exist or is empty. Ensure a collection directory with this name exists.
+11:20:30   ├─ /blog/hamanako-karei-fishing-season-opener/index.html (+11ms)
+The collection "projects" does not exist or is empty. Ensure a collection directory with this name exists.
+11:20:30   ├─ /blog/1-month/index.html (+11ms)
+The collection "projects" does not exist or is empty. Ensure a collection directory with this name exists.
+11:20:30   ├─ /blog/10-month/index.html (+12ms)
+The collection "projects" does not exist or is empty. Ensure a collection directory with this name exists.
+11:20:30   ├─ /blog/11-month/index.html (+14ms)
+The collection "projects" does not exist or is empty. Ensure a collection directory with this name exists.
+11:20:30   ├─ /blog/12-month/index.html (+9ms)
+The collection "projects" does not exist or is empty. Ensure a collection directory with this name exists.
+11:20:30   ├─ /blog/2-month/index.html (+11ms)
+The collection "projects" does not exist or is empty. Ensure a collection directory with this name exists.
+11:20:30   ├─ /blog/3-month/index.html (+11ms)
+The collection "projects" does not exist or is empty. Ensure a collection directory with this name exists.
+11:20:30   ├─ /blog/4-month/index.html (+10ms)
+The collection "projects" does not exist or is empty. Ensure a collection directory with this name exists.
+11:20:30   ├─ /blog/5-month/index.html (+13ms)
+The collection "projects" does not exist or is empty. Ensure a collection directory with this name exists.
+11:20:30   ├─ /blog/6-month/index.html (+12ms)
+The collection "projects" does not exist or is empty. Ensure a collection directory with this name exists.
+11:20:30   ├─ /blog/7-month/index.html (+12ms)
+The collection "projects" does not exist or is empty. Ensure a collection directory with this name exists.
+11:20:30   ├─ /blog/8-month/index.html (+11ms)
+The collection "projects" does not exist or is empty. Ensure a collection directory with this name exists.
+11:20:30   ├─ /blog/9-month/index.html (+12ms)
+The collection "projects" does not exist or is empty. Ensure a collection directory with this name exists.
+11:20:30   ├─ /blog/seasonal-patterns-guide/index.html (+11ms)
+The collection "projects" does not exist or is empty. Ensure a collection directory with this name exists.
+11:20:30   ├─ /blog/winter-anazuri-guide-2026/index.html (+11ms)
+The collection "projects" does not exist or is empty. Ensure a collection directory with this name exists.
+11:20:30   ├─ /blog/yearly-fishing-calendar/index.html (+13ms)
+The collection "projects" does not exist or is empty. Ensure a collection directory with this name exists.
+11:20:30   ├─ /blog/method-kayaking-intro/index.html (+10ms)
+The collection "projects" does not exist or is empty. Ensure a collection directory with this name exists.
+11:20:30   ├─ /blog/aji-saba-sappa-beginner/index.html (+8ms)
+The collection "projects" does not exist or is empty. Ensure a collection directory with this name exists.
+11:20:30   ├─ /blog/aji-saba-sappa-cooking/index.html (+9ms)
+The collection "projects" does not exist or is empty. Ensure a collection directory with this name exists.
+11:20:30   ├─ /blog/aji-saba-sappa/index.html (+9ms)
+The collection "projects" does not exist or is empty. Ensure a collection directory with this name exists.
+11:20:30   ├─ /blog/aji-saba-sappa-points/index.html (+10ms)
+The collection "projects" does not exist or is empty. Ensure a collection directory with this name exists.
+11:20:30   ├─ /blog/sabiki-guide/index.html (+9ms)
+The collection "projects" does not exist or is empty. Ensure a collection directory with this name exists.
+11:20:30   ├─ /blog/aji-saba-sappa-tactics/index.html (+9ms)
+The collection "projects" does not exist or is empty. Ensure a collection directory with this name exists.
+11:20:30   ├─ /blog/sabiki-set-comparison/index.html (+11ms)
+The collection "projects" does not exist or is empty. Ensure a collection directory with this name exists.
+11:20:30   ├─ /blog/aori-guide/index.html (+10ms)
+The collection "projects" does not exist or is empty. Ensure a collection directory with this name exists.
+11:20:30   ├─ /blog/eging-beginner/index.html (+10ms)
+The collection "projects" does not exist or is empty. Ensure a collection directory with this name exists.
+11:20:30   ├─ /blog/eging-cooking/index.html (+7ms)
+The collection "projects" does not exist or is empty. Ensure a collection directory with this name exists.
+11:20:30   ├─ /blog/eging/index.html (+7ms)
+The collection "projects" does not exist or is empty. Ensure a collection directory with this name exists.
+11:20:30   ├─ /blog/eging-points/index.html (+10ms)
+The collection "projects" does not exist or is empty. Ensure a collection directory with this name exists.
+11:20:30   ├─ /blog/squid-complete/index.html (+8ms)
+The collection "projects" does not exist or is empty. Ensure a collection directory with this name exists.
+11:20:30   ├─ /blog/eging-tactics/index.html (+8ms)
+The collection "projects" does not exist or is empty. Ensure a collection directory with this name exists.
+11:20:30   ├─ /blog/flatfish-beginner/index.html (+8ms)
+The collection "projects" does not exist or is empty. Ensure a collection directory with this name exists.
+11:20:30   ├─ /blog/flatfish-cooking/index.html (+8ms)
+The collection "projects" does not exist or is empty. Ensure a collection directory with this name exists.
+11:20:30   ├─ /blog/flatfish/index.html (+11ms)
+The collection "projects" does not exist or is empty. Ensure a collection directory with this name exists.
+11:20:30   ├─ /blog/november-guide/index.html (+7ms)
+The collection "projects" does not exist or is empty. Ensure a collection directory with this name exists.
+11:20:30   ├─ /blog/bentenjima/index.html (+8ms)
+The collection "projects" does not exist or is empty. Ensure a collection directory with this name exists.
+11:20:30   ├─ /blog/flatfish-points/index.html (+8ms)
+The collection "projects" does not exist or is empty. Ensure a collection directory with this name exists.
+11:20:30   ├─ /blog/flatfish-tactics/index.html (+9ms)
+The collection "projects" does not exist or is empty. Ensure a collection directory with this name exists.
+11:20:30   ├─ /blog/hazekura-gear/index.html (+10ms)
+The collection "projects" does not exist or is empty. Ensure a collection directory with this name exists.
+11:20:30   ├─ /blog/hazekura-intro/index.html (+11ms)
+The collection "projects" does not exist or is empty. Ensure a collection directory with this name exists.
+11:20:30   ├─ /blog/haze-beginner/index.html (+12ms)
+The collection "projects" does not exist or is empty. Ensure a collection directory with this name exists.
+11:20:30   ├─ /blog/haze-cooking/index.html (+14ms)
+The collection "projects" does not exist or is empty. Ensure a collection directory with this name exists.
+11:20:30   ├─ /blog/haze/index.html (+12ms)
+The collection "projects" does not exist or is empty. Ensure a collection directory with this name exists.
+11:20:30   ├─ /blog/haze-points/index.html (+18ms)
+The collection "projects" does not exist or is empty. Ensure a collection directory with this name exists.
+11:20:30   ├─ /blog/august-hazekura/index.html (+12ms)
+The collection "projects" does not exist or is empty. Ensure a collection directory with this name exists.
+11:20:30   ├─ /blog/november-ochihaze/index.html (+8ms)
+The collection "projects" does not exist or is empty. Ensure a collection directory with this name exists.
+11:20:30   ├─ /blog/haze-tactics/index.html (+10ms)
+The collection "projects" does not exist or is empty. Ensure a collection directory with this name exists.
+11:20:30   ├─ /blog/karei-beginner/index.html (+9ms)
+The collection "projects" does not exist or is empty. Ensure a collection directory with this name exists.
+11:20:30   ├─ /blog/karei-cooking/index.html (+9ms)
+The collection "projects" does not exist or is empty. Ensure a collection directory with this name exists.
+11:20:30   ├─ /blog/karei/index.html (+9ms)
+The collection "projects" does not exist or is empty. Ensure a collection directory with this name exists.
+11:20:30   ├─ /blog/kareing/index.html (+10ms)
+The collection "projects" does not exist or is empty. Ensure a collection directory with this name exists.
+11:20:30   ├─ /blog/karei-points/index.html (+8ms)
+The collection "projects" does not exist or is empty. Ensure a collection directory with this name exists.
+11:20:30   ├─ /blog/spring-hanami-karei/index.html (+9ms)
+The collection "projects" does not exist or is empty. Ensure a collection directory with this name exists.
+11:20:30   ├─ /blog/karei-tactics/index.html (+9ms)
+The collection "projects" does not exist or is empty. Ensure a collection directory with this name exists.
+11:20:30   ├─ /blog/kawahagi-beginner/index.html (+9ms)
+The collection "projects" does not exist or is empty. Ensure a collection directory with this name exists.
+11:20:30   ├─ /blog/kawahagi-boat-guide/index.html (+11ms)
+The collection "projects" does not exist or is empty. Ensure a collection directory with this name exists.
+11:20:30   ├─ /blog/kawahagi-complete-guide/index.html (+10ms)
+The collection "projects" does not exist or is empty. Ensure a collection directory with this name exists.
+11:20:30   ├─ /blog/kawahagi-cooking/index.html (+12ms)
+The collection "projects" does not exist or is empty. Ensure a collection directory with this name exists.
+11:20:30   ├─ /blog/kawahagi/index.html (+9ms)
+The collection "projects" does not exist or is empty. Ensure a collection directory with this name exists.
+11:20:30   ├─ /blog/kawahagi-points/index.html (+9ms)
+The collection "projects" does not exist or is empty. Ensure a collection directory with this name exists.
+11:20:30   ├─ /blog/kawahagi-tactics/index.html (+8ms)
+The collection "projects" does not exist or is empty. Ensure a collection directory with this name exists.
+11:20:30   ├─ /blog/kibire-beginner/index.html (+9ms)
+The collection "projects" does not exist or is empty. Ensure a collection directory with this name exists.
+11:20:30   ├─ /blog/comparison/index.html (+12ms)
+The collection "projects" does not exist or is empty. Ensure a collection directory with this name exists.
+11:20:30   ├─ /blog/kibire-complete-guide/index.html (+9ms)
+The collection "projects" does not exist or is empty. Ensure a collection directory with this name exists.
+11:20:30   ├─ /blog/kibire/index.html (+7ms)
+The collection "projects" does not exist or is empty. Ensure a collection directory with this name exists.
+11:20:30   ├─ /blog/kibire-points/index.html (+7ms)
+The collection "projects" does not exist or is empty. Ensure a collection directory with this name exists.
+11:20:30   ├─ /blog/kibire-tactics/index.html (+8ms)
+The collection "projects" does not exist or is empty. Ensure a collection directory with this name exists.
+11:20:30   ├─ /blog/kisu-beginner/index.html (+8ms)
+The collection "projects" does not exist or is empty. Ensure a collection directory with this name exists.
+11:20:30   ├─ /blog/kisu-cooking/index.html (+8ms)
+The collection "projects" does not exist or is empty. Ensure a collection directory with this name exists.
+11:20:30   ├─ /blog/points-top5/index.html (+12ms)
+The collection "projects" does not exist or is empty. Ensure a collection directory with this name exists.
+11:20:30   ├─ /blog/kisu-points/index.html (+14ms)
+The collection "projects" does not exist or is empty. Ensure a collection directory with this name exists.
+11:20:30   ├─ /blog/may-fishing-top5/index.html (+11ms)
+The collection "projects" does not exist or is empty. Ensure a collection directory with this name exists.
+11:20:30   ├─ /blog/may-fishing/index.html (+17ms)
+The collection "projects" does not exist or is empty. Ensure a collection directory with this name exists.
+11:20:30   ├─ /blog/seasonal-guide/index.html (+14ms)
+The collection "projects" does not exist or is empty. Ensure a collection directory with this name exists.
+11:20:30   ├─ /blog/kisu-tactics/index.html (+11ms)
+The collection "projects" does not exist or is empty. Ensure a collection directory with this name exists.
+11:20:30   ├─ /blog/kurodai-beginner/index.html (+11ms)
+The collection "projects" does not exist or is empty. Ensure a collection directory with this name exists.
+11:20:30   ├─ /blog/boke-bait-tackle/index.html (+16ms)
+The collection "projects" does not exist or is empty. Ensure a collection directory with this name exists.
+11:20:30   ├─ /blog/kurodai-complete-guide/index.html (+14ms)
+The collection "projects" does not exist or is empty. Ensure a collection directory with this name exists.
+11:20:30   ├─ /blog/kurodai-cooking/index.html (+11ms)
+The collection "projects" does not exist or is empty. Ensure a collection directory with this name exists.
+11:20:30   ├─ /blog/fukase-nimaishio-logic/index.html (+11ms)
+The collection "projects" does not exist or is empty. Ensure a collection directory with this name exists.
+11:20:30   ├─ /blog/kurodai/index.html (+10ms)
+The collection "projects" does not exist or is empty. Ensure a collection directory with this name exists.
+11:20:30   ├─ /blog/kurodai-points/index.html (+10ms)
+The collection "projects" does not exist or is empty. Ensure a collection directory with this name exists.
+11:20:30   ├─ /blog/chinu-nokkomi-bait/index.html (+7ms)
+The collection "projects" does not exist or is empty. Ensure a collection directory with this name exists.
+11:20:30   ├─ /blog/spring-nokkomi-guide/index.html (+8ms)
+The collection "projects" does not exist or is empty. Ensure a collection directory with this name exists.
+11:20:30   ├─ /blog/winter-tactics/index.html (+8ms)
+The collection "projects" does not exist or is empty. Ensure a collection directory with this name exists.
+11:20:30   ├─ /blog/chinutop-lures/index.html (+9ms)
+The collection "projects" does not exist or is empty. Ensure a collection directory with this name exists.
+11:20:30   ├─ /blog/kurodai-tactics/index.html (+9ms)
+The collection "projects" does not exist or is empty. Ensure a collection directory with this name exists.
+11:20:30   ├─ /blog/magochi-bottom-wind/index.html (+9ms)
+The collection "projects" does not exist or is empty. Ensure a collection directory with this name exists.
+11:20:30   ├─ /blog/mebaru-kasago-beginner/index.html (+8ms)
+The collection "projects" does not exist or is empty. Ensure a collection directory with this name exists.
+11:20:30   ├─ /blog/mebaru-kasago-cooking/index.html (+13ms)
+The collection "projects" does not exist or is empty. Ensure a collection directory with this name exists.
+11:20:30   ├─ /blog/mebaru-kasago/index.html (+9ms)
+The collection "projects" does not exist or is empty. Ensure a collection directory with this name exists.
+11:20:30   ├─ /blog/kasago-guide/index.html (+11ms)
+The collection "projects" does not exist or is empty. Ensure a collection directory with this name exists.
+11:20:30   ├─ /blog/mebaru-beginner/index.html (+10ms)
+The collection "projects" does not exist or is empty. Ensure a collection directory with this name exists.
+11:20:30   ├─ /blog/amihoshiba/index.html (+11ms)
+The collection "projects" does not exist or is empty. Ensure a collection directory with this name exists.
+11:20:31   ├─ /blog/mebaru-kasago-points/index.html (+11ms)
+The collection "projects" does not exist or is empty. Ensure a collection directory with this name exists.
+11:20:31   ├─ /blog/mebaru-kasago-tactics/index.html (+9ms)
+The collection "projects" does not exist or is empty. Ensure a collection directory with this name exists.
+11:20:31   ├─ /blog/winter-kasago/index.html (+13ms)
+The collection "projects" does not exist or is empty. Ensure a collection directory with this name exists.
+11:20:31   ├─ /blog/mejina-beginner/index.html (+9ms)
+The collection "projects" does not exist or is empty. Ensure a collection directory with this name exists.
+11:20:31   ├─ /blog/mejina-cooking/index.html (+8ms)
+The collection "projects" does not exist or is empty. Ensure a collection directory with this name exists.
+11:20:31   ├─ /blog/mejina/index.html (+10ms)
+The collection "projects" does not exist or is empty. Ensure a collection directory with this name exists.
+11:20:31   ├─ /blog/mejina-points/index.html (+9ms)
+The collection "projects" does not exist or is empty. Ensure a collection directory with this name exists.
+11:20:31   ├─ /blog/mejina-tactics/index.html (+10ms)
+The collection "projects" does not exist or is empty. Ensure a collection directory with this name exists.
+11:20:31   ├─ /blog/sayori-beginner-guide/index.html (+11ms)
+The collection "projects" does not exist or is empty. Ensure a collection directory with this name exists.
+11:20:31   ├─ /blog/sayori-boat-guide/index.html (+10ms)
+The collection "projects" does not exist or is empty. Ensure a collection directory with this name exists.
+11:20:31   ├─ /blog/sayori/index.html (+8ms)
+The collection "projects" does not exist or is empty. Ensure a collection directory with this name exists.
+11:20:31   ├─ /blog/april-guide/index.html (+13ms)
+The collection "projects" does not exist or is empty. Ensure a collection directory with this name exists.
+11:20:31   ├─ /blog/large-sayori-guide/index.html (+12ms)
+The collection "projects" does not exist or is empty. Ensure a collection directory with this name exists.
+11:20:31   ├─ /blog/urayasu-choho/index.html (+9ms)
+The collection "projects" does not exist or is empty. Ensure a collection directory with this name exists.
+11:20:31   ├─ /blog/bachinuke-forecast/index.html (+16ms)
+The collection "projects" does not exist or is empty. Ensure a collection directory with this name exists.
+11:20:31   ├─ /blog/bachinuke-lures/index.html (+10ms)
+The collection "projects" does not exist or is empty. Ensure a collection directory with this name exists.
+11:20:31   ├─ /blog/bachinuke-prep/index.html (+8ms)
+The collection "projects" does not exist or is empty. Ensure a collection directory with this name exists.
+11:20:31   ├─ /blog/bachinuke-spots-yore/index.html (+8ms)
+The collection "projects" does not exist or is empty. Ensure a collection directory with this name exists.
+11:20:31   ├─ /blog/bachinuke-tackle/index.html (+7ms)
+The collection "projects" does not exist or is empty. Ensure a collection directory with this name exists.
+11:20:31   ├─ /blog/seabass-beginner/index.html (+8ms)
+The collection "projects" does not exist or is empty. Ensure a collection directory with this name exists.
+11:20:31   ├─ /blog/seabass-cooking/index.html (+8ms)
+The collection "projects" does not exist or is empty. Ensure a collection directory with this name exists.
+11:20:31   ├─ /blog/seabass/index.html (+12ms)
+The collection "projects" does not exist or is empty. Ensure a collection directory with this name exists.
+11:20:31   ├─ /blog/seabass-points/index.html (+8ms)
+The collection "projects" does not exist or is empty. Ensure a collection directory with this name exists.
+11:20:31   ├─ /blog/autumn-guide/index.html (+10ms)
+The collection "projects" does not exist or is empty. Ensure a collection directory with this name exists.
+11:20:31   ├─ /blog/haku-pattern/index.html (+11ms)
+The collection "projects" does not exist or is empty. Ensure a collection directory with this name exists.
+11:20:31   ├─ /blog/haku-sasuke/index.html (+8ms)
+The collection "projects" does not exist or is empty. Ensure a collection directory with this name exists.
+11:20:31   ├─ /blog/winter-lunker/index.html (+7ms)
+The collection "projects" does not exist or is empty. Ensure a collection directory with this name exists.
+11:20:31   ├─ /blog/winter-shinp-strategy/index.html (+9ms)
+The collection "projects" does not exist or is empty. Ensure a collection directory with this name exists.
+11:20:31   ├─ /blog/seabass-tactics/index.html (+7ms)
+The collection "projects" does not exist or is empty. Ensure a collection directory with this name exists.
+11:20:31   ├─ /blog/sayori-pattern/index.html (+11ms)
+The collection "projects" does not exist or is empty. Ensure a collection directory with this name exists.
+11:20:31   ├─ /blog/tako-beginner/index.html (+11ms)
+The collection "projects" does not exist or is empty. Ensure a collection directory with this name exists.
+11:20:31   ├─ /blog/tako-cooking/index.html (+9ms)
+The collection "projects" does not exist or is empty. Ensure a collection directory with this name exists.
+11:20:31   ├─ /blog/guide-2025/index.html (+12ms)
+The collection "projects" does not exist or is empty. Ensure a collection directory with this name exists.
+11:20:31   ├─ /blog/tako/index.html (+8ms)
+The collection "projects" does not exist or is empty. Ensure a collection directory with this name exists.
+11:20:31   ├─ /blog/tako-points/index.html (+9ms)
+The collection "projects" does not exist or is empty. Ensure a collection directory with this name exists.
+11:20:31   ├─ /blog/early-summer/index.html (+9ms)
+The collection "projects" does not exist or is empty. Ensure a collection directory with this name exists.
+11:20:31   ├─ /blog/target/tako/season/june-tako-opening/index.html (+11ms)
+The collection "projects" does not exist or is empty. Ensure a collection directory with this name exists.
+11:20:31   ├─ /blog/tako-tactics/index.html (+10ms)
+The collection "projects" does not exist or is empty. Ensure a collection directory with this name exists.
+11:20:31   ├─ /blog/temp-lag-science/index.html (+8ms)
+The collection "projects" does not exist or is empty. Ensure a collection directory with this name exists.
+11:20:31   ├─ /blog/travel/golden-week-family-sabiki-debut/index.html (+13ms)
+The collection "projects" does not exist or is empty. Ensure a collection directory with this name exists.
+11:20:31   ├─ /blog/travel/hamamatsu-festival-fishing-trip/index.html (+11ms)
+The collection "projects" does not exist or is empty. Ensure a collection directory with this name exists.
+11:20:31   ├─ /blog/travel/hamanako-clam-digging-fishing-2026/index.html (+11ms)
+The collection "projects" does not exist or is empty. Ensure a collection directory with this name exists.
+11:20:31   ├─ /blog/travel/hamanako-march-gourmet-shirasu-sayori/index.html (+10ms)
+The collection "projects" does not exist or is empty. Ensure a collection directory with this name exists.
+11:20:31   ├─ /blog/travel/hamanako-rental-fishing-guide/index.html (+10ms)
+The collection "projects" does not exist or is empty. Ensure a collection directory with this name exists.
+11:20:31   ├─ /blog/travel/hamanako-traditional-fishing-guide/index.html (+11ms)
+The collection "projects" does not exist or is empty. Ensure a collection directory with this name exists.
+11:20:31   ├─ /blog/travel/hamanako-winter-fishing-oyster-trip/index.html (+9ms)
+The collection "projects" does not exist or is empty. Ensure a collection directory with this name exists.
+11:20:31   └─ /blog/travel/kanzanji-fishing-walk-guide/index.html (+9ms)
+11:20:31 ▶ src/pages/legal/[...slug].astro
+11:20:31   ├─ /legal/about/index.html (+7ms)
+11:20:31   ├─ /legal/privacy/index.html (+5ms)
+11:20:31   └─ /legal/terms/index.html (+6ms)
+11:20:31 λ src/pages/llms.txt.ts
+11:20:31   └─ /llms.txt (+2ms)
+11:20:31 ▶ src/pages/map.astro
+11:20:31   └─ /map/index.html (+4ms)
+11:20:31 ▶ src/pages/points/index.astro
+11:20:31   └─ /points/index.html (+44ms)
+11:20:31 ▶ src/pages/points/[...slug].astro
+The collection "projects" does not exist or is empty. Ensure a collection directory with this name exists.
+11:20:31   ├─ /points/family-car-points/index.html (+11ms)
+The collection "projects" does not exist or is empty. Ensure a collection directory with this name exists.
+11:20:31   ├─ /points/ajing-fukabori/index.html (+10ms)
+The collection "projects" does not exist or is empty. Ensure a collection directory with this name exists.
+11:20:31   ├─ /points/bachinuke-fukabori/index.html (+18ms)
+The collection "projects" does not exist or is empty. Ensure a collection directory with this name exists.
+11:20:31   ├─ /points/boat-gomoku-fukabori/index.html (+12ms)
+The collection "projects" does not exist or is empty. Ensure a collection directory with this name exists.
+11:20:31   ├─ /points/boat-seabass-fukabori/index.html (+15ms)
+The collection "projects" does not exist or is empty. Ensure a collection directory with this name exists.
+11:20:31   ├─ /points/fukabori/chining-fukabori/index.html (+13ms)
+The collection "projects" does not exist or is empty. Ensure a collection directory with this name exists.
+11:20:31   ├─ /points/fukabori/eging-fukabori/index.html (+9ms)
+The collection "projects" does not exist or is empty. Ensure a collection directory with this name exists.
+11:20:31   ├─ /points/fukabori/haze-fukabori/index.html (+12ms)
+The collection "projects" does not exist or is empty. Ensure a collection directory with this name exists.
+11:20:31   ├─ /points/imagire-area-fukabori/index.html (+14ms)
+The collection "projects" does not exist or is empty. Ensure a collection directory with this name exists.
+11:20:31   ├─ /points/kibire-bottom-fukabori/index.html (+16ms)
+The collection "projects" does not exist or is empty. Ensure a collection directory with this name exists.
+11:20:31   ├─ /points/fukabori/kisu-fukabori/index.html (+10ms)
+The collection "projects" does not exist or is empty. Ensure a collection directory with this name exists.
+11:20:31   ├─ /points/lunker-seabass-fukabori/index.html (+12ms)
+The collection "projects" does not exist or is empty. Ensure a collection directory with this name exists.
+11:20:31   ├─ /points/fukabori/magochi-fukabori/index.html (+12ms)
+The collection "projects" does not exist or is empty. Ensure a collection directory with this name exists.
+11:20:31   ├─ /points/mejina-fukabori/index.html (+9ms)
+The collection "projects" does not exist or is empty. Ensure a collection directory with this name exists.
+11:20:31   ├─ /points/mio-suji-area-fukabori/index.html (+15ms)
+The collection "projects" does not exist or is empty. Ensure a collection directory with this name exists.
+11:20:31   ├─ /points/fukabori/sayori-fukabori/index.html (+13ms)
+The collection "projects" does not exist or is empty. Ensure a collection directory with this name exists.
+11:20:31   ├─ /points/seabass-season-fukabori/index.html (+11ms)
+The collection "projects" does not exist or is empty. Ensure a collection directory with this name exists.
+11:20:31   ├─ /points/tako-fukabori/index.html (+11ms)
+The collection "projects" does not exist or is empty. Ensure a collection directory with this name exists.
+11:20:31   ├─ /points/wading-seabass-fukabori/index.html (+11ms)
+The collection "projects" does not exist or is empty. Ensure a collection directory with this name exists.
+11:20:31   ├─ /points/aeontown-kosai/index.html (+11ms)
+The collection "projects" does not exist or is empty. Ensure a collection directory with this name exists.
+11:20:31   ├─ /points/arai-nakanogo/index.html (+10ms)
+The collection "projects" does not exist or is empty. Ensure a collection directory with this name exists.
+11:20:31   ├─ /points/gardenpark/index.html (+14ms)
+The collection "projects" does not exist or is empty. Ensure a collection directory with this name exists.
+11:20:31   ├─ /points/hamayu-ohashi/index.html (+13ms)
+The collection "projects" does not exist or is empty. Ensure a collection directory with this name exists.
+11:20:31   ├─ /points/higata-sitefishing/index.html (+12ms)
+The collection "projects" does not exist or is empty. Ensure a collection directory with this name exists.
+11:20:31   ├─ /points/konankoukou/index.html (+10ms)
+The collection "projects" does not exist or is empty. Ensure a collection directory with this name exists.
+11:20:31   ├─ /points/matsumigaura/index.html (+10ms)
+The collection "projects" does not exist or is empty. Ensure a collection directory with this name exists.
+11:20:31   ├─ /points/megaura/index.html (+11ms)
+The collection "projects" does not exist or is empty. Ensure a collection directory with this name exists.
+11:20:31   ├─ /points/murakushi-fishing-port/index.html (+11ms)
+The collection "projects" does not exist or is empty. Ensure a collection directory with this name exists.
+11:20:31   ├─ /points/murakushi-kaisuiyoku/index.html (+11ms)
+The collection "projects" does not exist or is empty. Ensure a collection directory with this name exists.
+11:20:31   ├─ /points/omsolar/index.html (+10ms)
+The collection "projects" does not exist or is empty. Ensure a collection directory with this name exists.
+11:20:31   ├─ /points/syotaijihana/index.html (+10ms)
+The collection "projects" does not exist or is empty. Ensure a collection directory with this name exists.
+11:20:31   ├─ /points/utiyama-kaigan/index.html (+9ms)
+The collection "projects" does not exist or is empty. Ensure a collection directory with this name exists.
+11:20:31   ├─ /points/washidukou/index.html (+11ms)
+The collection "projects" does not exist or is empty. Ensure a collection directory with this name exists.
+11:20:31   ├─ /points/yuto-yamazaki/index.html (+14ms)
+The collection "projects" does not exist or is empty. Ensure a collection directory with this name exists.
+11:20:31   ├─ /points/hanagawa/index.html (+10ms)
+The collection "projects" does not exist or is empty. Ensure a collection directory with this name exists.
+11:20:31   ├─ /points/hiramatsu/index.html (+10ms)
+The collection "projects" does not exist or is empty. Ensure a collection directory with this name exists.
+11:20:31   ├─ /points/ime/index.html (+10ms)
+The collection "projects" does not exist or is empty. Ensure a collection directory with this name exists.
+11:20:31   ├─ /points/ina/index.html (+13ms)
+The collection "projects" does not exist or is empty. Ensure a collection directory with this name exists.
+11:20:31   ├─ /points/isajigawa/index.html (+12ms)
+The collection "projects" does not exist or is empty. Ensure a collection directory with this name exists.
+11:20:32   ├─ /points/kanzanji/index.html (+14ms)
+The collection "projects" does not exist or is empty. Ensure a collection directory with this name exists.
+11:20:32   ├─ /points/kiga/index.html (+11ms)
+The collection "projects" does not exist or is empty. Ensure a collection directory with this name exists.
+11:20:32   ├─ /points/kohitomi-boat/index.html (+12ms)
+The collection "projects" does not exist or is empty. Ensure a collection directory with this name exists.
+11:20:32   ├─ /points/kyowa-boat/index.html (+12ms)
+The collection "projects" does not exist or is empty. Ensure a collection directory with this name exists.
+11:20:32   ├─ /points/lakesideway/index.html (+10ms)
+The collection "projects" does not exist or is empty. Ensure a collection directory with this name exists.
+11:20:32   ├─ /points/mikkabi-eki/index.html (+11ms)
+The collection "projects" does not exist or is empty. Ensure a collection directory with this name exists.
+11:20:32   ├─ /points/miyakodagawa/index.html (+12ms)
+The collection "projects" does not exist or is empty. Ensure a collection directory with this name exists.
+11:20:32   ├─ /points/photonics-under/index.html (+15ms)
+The collection "projects" does not exist or is empty. Ensure a collection directory with this name exists.
+11:20:32   ├─ /points/pokochan-coast/index.html (+12ms)
+The collection "projects" does not exist or is empty. Ensure a collection directory with this name exists.
+11:20:32   ├─ /points/sahama-hakusan/index.html (+12ms)
+The collection "projects" does not exist or is empty. Ensure a collection directory with this name exists.
+11:20:32   ├─ /points/sakujyoseki/index.html (+9ms)
+The collection "projects" does not exist or is empty. Ensure a collection directory with this name exists.
+11:20:32   ├─ /points/sakumekaigan/index.html (+11ms)
+The collection "projects" does not exist or is empty. Ensure a collection directory with this name exists.
+11:20:32   ├─ /points/setosuidou/index.html (+13ms)
+The collection "projects" does not exist or is empty. Ensure a collection directory with this name exists.
+11:20:32   ├─ /points/shimo-ona/index.html (+14ms)
+The collection "projects" does not exist or is empty. Ensure a collection directory with this name exists.
+11:20:32   ├─ /points/shiras-boat/index.html (+11ms)
+The collection "projects" does not exist or is empty. Ensure a collection directory with this name exists.
+11:20:32   ├─ /points/sunza/index.html (+10ms)
+The collection "projects" does not exist or is empty. Ensure a collection directory with this name exists.
+11:20:32   ├─ /points/syounaiko/index.html (+14ms)
+The collection "projects" does not exist or is empty. Ensure a collection directory with this name exists.
+11:20:32   ├─ /points/tsuzusaki/index.html (+12ms)
+The collection "projects" does not exist or is empty. Ensure a collection directory with this name exists.
+11:20:32   ├─ /points/waji-boat/index.html (+10ms)
+The collection "projects" does not exist or is empty. Ensure a collection directory with this name exists.
+11:20:32   ├─ /points/amihosiba/index.html (+15ms)
+The collection "projects" does not exist or is empty. Ensure a collection directory with this name exists.
+11:20:32   ├─ /points/araibenten-umiduripark/index.html (+12ms)
+The collection "projects" does not exist or is empty. Ensure a collection directory with this name exists.
+11:20:32   ├─ /points/bentenjimakaihinkouen/index.html (+11ms)
+The collection "projects" does not exist or is empty. Ensure a collection directory with this name exists.
+[Error] Expected component `TackleCard` to be defined: you likely forgot to import, pass, or provide it.
+  Hint:
+    This issue often occurs when your MDX component encounters runtime errors.
+  Stack trace:
+    at _missingMdxReference (file:///C:/Users/sasis/344dev/cho-hamanako/dist/chunks/index_BuBlfK2d.mjs:349:9)
+    at MDXContent (file:///C:/Users/sasis/344dev/cho-hamanako/dist/chunks/index_BuBlfK2d.mjs:346:8)
+    at Object.check (file:///C:/Users/sasis/344dev/cho-hamanako/dist/renderers.mjs:115:26)
+    at async renderComponent (file:///C:/Users/sasis/344dev/cho-hamanako/dist/chunks/astro/server_BS8dIL38.mjs:1752:10)
+11:20:32   ├─ /points/boatrace-hamanako/index.html

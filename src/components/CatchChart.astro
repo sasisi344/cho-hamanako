@@ -1,11 +1,29 @@
 ---
+interface FishDataItem {
+  name: string;
+  seasons: number[];
+}
+
+interface MonthlyDataItem {
+  month: number;
+  level: string | number;
+  note?: string;
+  value?: number;
+  label?: string;
+}
+
 interface Props {
-  fish: string;
-  data: string[]; // 12 elements: ["爆釣", "好調", "散発", "圏外", ...]
+  fish?: string;
+  fishName?: string; // Alias sometimes used by agents
+  data?: (string | MonthlyDataItem)[];
+  fishData?: FishDataItem[]; // Used for multi-fish comparison
   unit?: string;
 }
 
-const { fish, data, unit = "期待度" } = Astro.props;
+const { fish: fishProp, fishName, data: dataProp = [], fishData, unit = "期待度" } = Astro.props;
+
+// Use fishProp or fishName alias
+const fish = fishProp || fishName || (fishData && fishData.length > 0 ? fishData[0].name : "主なターゲット");
 
 const levelMap: Record<string, { height: string; color: string; label: string }> = {
   "爆釣": { height: "h-32", color: "bg-rose-500 shadow-rose-200 dark:shadow-rose-900/40", label: "爆釣" },
@@ -14,7 +32,56 @@ const levelMap: Record<string, { height: string; color: string; label: string }>
   "圏外": { height: "h-6", color: "bg-slate-300 dark:bg-slate-700 shadow-transparent", label: "圏外" },
 };
 
+// Numeric level mapping (1-5) to strings
+const numLevelMap: Record<number, string> = {
+  5: "爆釣",
+  4: "好調",
+  3: "散発",
+  2: "散発",
+  1: "圏外",
+  0: "圏外"
+};
+
 const months = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
+
+// Data Normalization
+let normalizedData: string[] = Array(12).fill("圏外");
+
+if (fishData && fishData.length > 0) {
+  // If multi-fish data is provided, use the first one or combine them
+  // For the bar chart, we'll use the first one for now
+  const seasons = fishData[0].seasons;
+  if (Array.isArray(seasons)) {
+    normalizedData = seasons.map(s => (s > 0 ? "好調" : "圏外"));
+  }
+} else if (Array.isArray(dataProp)) {
+  if (dataProp.length === 12 && typeof dataProp[0] === 'string') {
+    normalizedData = dataProp as string[];
+  } else {
+    // Handle sparse or object-based data
+    dataProp.forEach((item: any) => {
+      if (typeof item === 'string') return; // Should have been caught by length check or handled differently
+      
+      const m = item.month || item.m;
+      if (m >= 1 && m <= 12) {
+        let levelStr = "圏外";
+        if (typeof item.level === 'string') {
+          levelStr = item.level;
+        } else if (typeof item.level === 'number') {
+          levelStr = numLevelMap[item.level] || "圏外";
+        } else if (typeof item.value === 'number') {
+          // Handle { value: 95 } style from lunker-seabass
+          if (item.value >= 80) levelStr = "爆釣";
+          else if (item.value >= 50) levelStr = "好調";
+          else if (item.value >= 20) levelStr = "散発";
+        }
+        normalizedData[m - 1] = levelStr;
+      }
+    });
+  }
+}
+
+const data = normalizedData;
 ---
 
 <div class="catch-chart-card my-8 p-6 rounded-2xl bg-white/50 dark:bg-slate-900/50 border border-slate-200 dark:border-slate-800 backdrop-blur-md shadow-xl transition-all duration-300 hover:shadow-2xl">
@@ -43,6 +110,17 @@ const months = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
       ))}
     </div>
   </div>
+
+  {fishData && fishData.length > 1 && (
+    <div class="mb-4 flex flex-wrap gap-2">
+      {fishData.map((f, i) => (
+        <span class={`px-2 py-0.5 rounded-full text-[10px] font-bold ${i === 0 ? 'bg-blue-100 text-blue-700 dark:bg-blue-900/50 dark:text-blue-300' : 'bg-slate-100 text-slate-500 dark:bg-slate-800 dark:text-slate-400'}`}>
+          {f.name}
+        </span>
+      ))}
+      <span class="text-[10px] text-slate-400 ml-1">※代表して「{fishData[0].name}」を表示</span>
+    </div>
+  )}
 
   <div class="relative h-40 flex items-end justify-between gap-1 sm:gap-2 px-1">
     {data.map((level, i) => {
