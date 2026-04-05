@@ -84,6 +84,11 @@ import Callout from "@components/Callout.astro";
 <Map lat={34.6803531154909} lng={137.60332807485867} name="網干場（舞阪漁港）" />
 <GMapButton url="https://maps.app.goo.gl/9yGgqP23p8n53GvH6" />
 
+<Callout type="warning" title="エキスパート専用：深掘り攻略">
+網干場の「特定の沈み根」や「砂地の盛り上がり（貝殻の島）」まで踏み込んだミクロな攻略ポイントは、こちらの深掘り記事で。
+<BlogCard slug="imagire-area-fukabori" />
+</Callout>
+
 ---
 
 ## 🔍 ポイント概要と詳細アクセス
@@ -147,7 +152,7 @@ import Callout from "@components/Callout.astro";
 - <strong>戦略</strong>: ウキフカセ・前打ちで沈み石のキワをタイトに攻める
 - <strong>関連記事</strong>:
 
-<BlogCard id="target/kurodai" />
+<BlogCard slug="kurodai" />
 
 ### ☀️ 夏（6月〜8月）：サビキ・タコ・夜のアジ
 
@@ -156,9 +161,9 @@ import Callout from "@components/Callout.astro";
 - <strong>戦略</strong>: タコエギを足元に落とすタコ狙いも夏の裏メニュー
 - <strong>関連記事</strong>:
 
-<BlogCard id="target/aji-saba-sappa/sabiki-guide" />
-
-<BlogCard id="target/tako/beginner" />
+<BlogCard slug="sabiki-guide" />
+<BlogCard slug="tako-fukabori" />
+網干場の岩礁帯に潜む大型タコ。根掛かりを恐れずボトムを叩くための「底剥がし」テクニック。
 
 ### 🍂 秋（9月〜11月）：数釣りのベストシーズン
 
@@ -167,9 +172,8 @@ import Callout from "@components/Callout.astro";
 - <strong>戦略</strong>: 日中は投げ釣りでキスを狙い、夕まずめからルアーでシーバスを狙うリレー釣行がおすすめ
 - <strong>関連記事</strong>:
 
-<BlogCard id="target/kisu/tactics" />
-
-<BlogCard id="target/seabass/tactics" />
+<BlogCard slug="kisu-tactics" />
+<BlogCard slug="seabass-tactics" />
 
 ### ❄️ 冬（12月〜2月）：投げのカレイと夜の根魚
 
@@ -178,9 +182,25 @@ import Callout from "@components/Callout.astro";
 - <strong>戦略</strong>: じっくり待ちの「カレイ」投げ釣り、またはソフトルアーで根魚を攻める
 - <strong>関連記事</strong>:
 
-<BlogCard id="target/karei/tactics" />
+<BlogCard slug="karei-tactics" />
+<BlogCard slug="mejina-fukabori" />
+網干場の反転流を突くメジナ狙い。激流の中の「コマセワーク」と「同調」の攻略法。
 
-<BlogCard id="target/mebaru-kasago/beginner" />
+<BlogCard slug="points/fukabori/eging-fukabori" />
+網干場周辺のコウイカ攻略術。エギを底に安定させ、逃げ惑うベイトを演出するズル引きの極意。
+
+<BlogCard slug="points/fukabori/magochi-fukabori" />
+網干場の砂地に潜むマゴチを「ボトムワインド」で直撃。深場と浅場が絡むカケアガリの攻略法。
+
+<BlogCard slug="points/fukabori/sayori-fukabori" />
+冬の人気ターゲット、サンマ級のサヨリ。網干場から沖の潮目を狙うための遠投カゴ釣り攻略。
+
+<BlogCard slug="ajing-fukabori" />
+網干場の常夜灯周りで静かに楽しむアジング。ライトゲームでアジ・メバル・ハナダイを誘い出すメソッド。
+
+<BlogCard slug="seabass-season-fukabori" />
+季節ごとに回遊ルートが変わるシーバス。今切口に隣接する網干場での「乗っ込み・落ち」攻略の核心。
+<BlogCard slug="mebaru-kasago-beginner" />
 
 ---
 
@@ -201,7 +221,17 @@ import Callout from "@components/Callout.astro";
 
 ---
 
-## 📜 網干場独自のローカルルールとマナー
+<Callout type="danger" title="浜名湖の危険生物：アカエイ">
+網干場周辺の浅瀬（特に南側の砂浜方面）で立ち込みを行う際は <strong>アカエイ</strong> に厳重注意してください。尾の毒棘はウェットスーツも貫通します。移動の際は必ず <strong>「すり足（エイガード歩行）」</strong> を行いましょう。
+</Callout>
+
+<Callout type="important" title="駐車場・路上駐車厳禁">
+舞阪港周辺は <strong>路上駐車に対して非常に厳しい</strong> エリアです。通報や警察の巡回も頻繁に行われます。必ず舞阪表浜駐車場を利用し、釣り場存続にご協力ください。
+</Callout>
+
+---
+
+## 🚀 まとめ：網干場を攻略して浜名湖マスターへ
 
 網干場は私たち釣り人のものではなく、<strong>「漁師さんの仕事場」をお借りしている場所</strong> です。
 
@@ -219,6 +249,10 @@ import Callout from "@components/Callout.astro";
 ## まとめ：網干場を攻略して浜名湖マスターへ
 
 圧倒的な魚影の濃さとアクセスの良さを誇る網干場。地形を読み、潮を読み、そしてマナーを守る。これが網干場を楽しむ最高の方法です。
+
+<BlogCard slug="imagire-area-fukabori" />
+本記事で解説した網干場や舞阪堤、新居弁天を含む「今切口エリア」の海底急所・潮流攻略ガイド。
+
 
 > [!IMPORTANT]
 > 釣り場を守る活動にご協力を。来た時よりも美しく。

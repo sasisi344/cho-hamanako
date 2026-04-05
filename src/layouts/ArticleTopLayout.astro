@@ -2,6 +2,8 @@
 import type { CollectionEntry } from "astro:content"
 import { formatDate, readingTime } from "@lib/utils"
 
+import { Image } from "astro:assets"
+
 type Props = {
   entry: CollectionEntry<"projects"> | CollectionEntry<"blog">
 }
@@ -9,6 +11,7 @@ type Props = {
 const { entry } = Astro.props
 const { collection, data, body } = entry
 const { title, summary } = data
+const cover = 'cover' in data ? data.cover : null
 
 const date = collection === "blog" ? data.pubDate : data.date
 const upDate = collection === "blog" ? data.upDate : null
@@ -55,6 +58,15 @@ const repoUrl = collection === "projects" ? data.repoUrl : null
       {summary}
     </div>
   </div>
+  {cover && (
+    <div class="mt-8 overflow-hidden rounded-3xl shadow-xl border border-black/10 dark:border-white/10 animate">
+      <Image 
+        src={cover} 
+        alt={title} 
+        class="w-full h-auto object-cover max-h-[500px] hover:scale-105 transition-transform duration-700" 
+      />
+    </div>
+  )}
   {(demoUrl || repoUrl) && 
   <div class="mt-4 flex flex-wrap gap-2">
     {demoUrl && 

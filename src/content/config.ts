@@ -15,6 +15,7 @@ const fishinginfoSchema = z.object({
   difficulty: z.string().default('Beginner'),
   familyFriendly: z.boolean().default(false), // ファミリーフィッシング特化フラグ
   bestSeason: z.array(z.string()).optional(),
+  bestMonths: z.array(z.number()).optional(), // 推奨月（数値配列）
   methods: z.array(z.string()).optional(),
   targetFish: z.array(z.string()).optional(),
 }).optional();
@@ -23,7 +24,8 @@ const facilitiesSchema = z.object({
   parking: z.union([z.boolean(), z.string()]).default(false),
   parkingFee: z.string().optional(),
   toilet: z.union([z.boolean(), z.string()]).default(false),
-  convenienceStore: z.string().optional(),
+  convenienceStore: z.union([z.boolean(), z.string()]).optional(),
+  nearbyTackleShop: z.union([z.boolean(), z.string()]).optional(), // 近くの釣具店
   nightFishing: z.union([z.boolean(), z.string()]).default(true),
   streetLights: z.union([z.boolean(), z.string()]).default(false),
   carSide: z.union([z.boolean(), z.string()]).default(false), // "車横付け" flag
@@ -39,40 +41,21 @@ const locationSchema = z.object({
 
 const blog = defineCollection({
   type: "content",
-  schema: ({ image }) => z.union([
-    z.object({
-      title: z.string(),
-      summary: z.string(),
-      pubDate: z.coerce.date(), // 初回公開日
-      upDate: z.coerce.date().optional(), // 最終更新日
-      tags: z.array(z.string()).default([]),
-      draft: z.boolean().default(false).optional(),
-      noindex: z.boolean().default(false).optional(),
-      slug: z.string().optional(),
-      category: z.literal('points'),
-      cover: image().optional(),
-      location: locationSchema,
-      fishinginfo: fishinginfoSchema,
-      facilities: facilitiesSchema,
-      wpSlug: z.string().optional(),
-    }),
-    z.object({
-      title: z.string(),
-      summary: z.string(),
-      pubDate: z.coerce.date(), // 初回公開日
-      upDate: z.coerce.date().optional(), // 最終更新日
-      tags: z.array(z.string()).default([]),
-      draft: z.boolean().default(false).optional(),
-      noindex: z.boolean().default(false).optional(),
-      slug: z.string().optional(),
-      category: z.enum(['guide', 'target', 'cooking', 'news', 'test', 'season', 'travel', 'method', 'reporting']).optional(),
-      cover: image().optional(),
-      location: locationSchema,
-      fishinginfo: fishinginfoSchema,
-      facilities: facilitiesSchema,
-      wpSlug: z.string().optional(),
-    })
-  ]),
+  schema: ({ image }) => z.object({
+    title: z.string(),
+    summary: z.string(),
+    pubDate: z.coerce.date(), // 初回公開日
+    upDate: z.coerce.date().optional(), // 最終更新日
+    tags: z.array(z.string()).default([]),
+    draft: z.boolean().default(false).optional(),
+    noindex: z.boolean().default(false).optional(),
+    category: z.enum(['points', 'guide', 'target', 'cooking', 'news', 'test', 'season', 'travel', 'method', 'reporting']).optional(),
+    cover: image().optional(),
+    location: locationSchema,
+    fishinginfo: fishinginfoSchema,
+    facilities: facilitiesSchema,
+    wpSlug: z.string().optional(),
+  }),
 })
 
 const projects = defineCollection({

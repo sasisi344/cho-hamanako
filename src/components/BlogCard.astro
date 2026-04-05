@@ -13,7 +13,17 @@ interface Props {
 const { slug, url, title, summary, cover } = Astro.props;
 const entry = slug ? await getEntry("blog", slug) : null;
 
-const finalUrl = url || (entry ? `/blog/${entry.slug}` : "#");
+const getPrefix = (entry: any) => {
+  if (entry?.data.category === 'points') return '/points';
+  return '/blog';
+};
+
+const getSlugPart = (entry: any) => {
+  if (!entry) return '';
+  return entry.slug.replace(/^points\//, '');
+};
+
+const finalUrl = url || (entry ? `${getPrefix(entry)}/${getSlugPart(entry)}` : "#");
 const finalTitle = title || (entry ? entry.data.title : "Link");
 const finalSummary = summary || (entry ? entry.data.summary : "");
 const finalCover = cover || (entry ? entry.data.cover : null);
