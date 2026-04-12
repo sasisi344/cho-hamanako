@@ -1,5 +1,10 @@
 ---
-import { ADSENSE } from "@consts"
+import { ADSENSE, SITE, SOCIALS } from "@consts"
+import {
+  buildDefaultJsonLd,
+  mergeJsonLdGraphs,
+  serializeJsonLd,
+} from "@lib/jsonld"
 
 interface Props {
   title: string
@@ -7,11 +12,46 @@ interface Props {
   image?: string
   noindex?: boolean
   hasAds?: boolean
+  /** Open Graph type. Use `article` for blog/point posts. */
+  ogType?: "website" | "article"
+  /** Article / BreadcrumbList など BaseHead 内の WebSite・Organization に追加するノード */
+  jsonLdExtra?: Record<string, unknown>[]
 }
 
 const canonicalURL = new URL(Astro.url.pathname, Astro.site)
 
-const { title, description, image = "/open-graph.jpg", noindex = false, hasAds = false } = Astro.props
+const {
+  title,
+  description,
+  image = "/open-graph.jpg",
+  noindex = false,
+  hasAds = false,
+  ogType = "website",
+  jsonLdExtra,
+} = Astro.props
+
+const siteUrl =
+  Astro.site == null
+    ? "https://cho-hamanako.info"
+    : typeof Astro.site === "string"
+      ? Astro.site
+      : Astro.site.href
+
+const defaultJsonLd = buildDefaultJsonLd({
+  siteUrl,
+  siteName: SITE.TITLE,
+  siteDescription: SITE.DESCRIPTION,
+  authorName: SITE.AUTHOR,
+  socialProfileUrls: SOCIALS.map((s) => s.HREF),
+})
+
+const jsonLdMerged = jsonLdExtra?.length
+  ? mergeJsonLdGraphs(defaultJsonLd, jsonLdExtra)
+  : defaultJsonLd
+
+const jsonLdHtml = serializeJsonLd(jsonLdMerged)
+
+const ogUrl = canonicalURL.href
 ---
 
 <!-- Global Metadata -->
@@ -35,6 +75,8 @@ const { title, description, image = "/open-graph.jpg", noindex = false, hasAds =
 <link rel="preload" href="/fonts/atkinson-regular.woff" as="font" type="font/woff" crossorigin>
 <link rel="preload" href="/fonts/atkinson-bold.woff" as="font" type="font/woff" crossorigin>
 
+<script is:inline type="application/ld+json" set:html={jsonLdHtml} />
+
 <!-- Canonical URL -->
 <link rel="canonical" href={canonicalURL} />
 
@@ -44,18 +86,18 @@ const { title, description, image = "/open-graph.jpg", noindex = false, hasAds =
 <meta name="description" content={description} />
 
 <!-- Open Graph / Facebook -->
-<meta property="og:type" content="website" />
-<meta property="og:url" content={Astro.url} />
+<meta property="og:type" content={ogType} />
+<meta property="og:url" content={ogUrl} />
 <meta property="og:title" content={title} />
 <meta property="og:description" content={description} />
-<meta property="og:image" content={new URL(image, Astro.url)} />
+<meta property="og:image" content={new URL(image, Astro.site)} />
 
 <!-- Twitter -->
 <meta property="twitter:card" content="summary_large_image" />
-<meta property="twitter:url" content={Astro.url} />
+<meta property="twitter:url" content={ogUrl} />
 <meta property="twitter:title" content={title} />
 <meta property="twitter:description" content={description} />
-<meta property="twitter:image" content={new URL(image, Astro.url)} />
+<meta property="twitter:image" content={new URL(image, Astro.site)} />
 
 <!-- Sitemap -->
 <link rel="sitemap" href="/sitemap-index.xml" />

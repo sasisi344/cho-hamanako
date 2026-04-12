@@ -1,5 +1,7 @@
 ---
+import { getImage } from "astro:assets"
 import { type CollectionEntry, getCollection } from "astro:content"
+import { buildPointArticleAndBreadcrumbJsonLd } from "@lib/jsonld"
 import PageLayout from "@layouts/PageLayout.astro"
 import TopLayout from "@layouts/TopLayout.astro"
 import BottomLayout from "@layouts/BottomLayout.astro"
@@ -8,7 +10,10 @@ import ArticleBottomLayout from "@layouts/ArticleBottomLayout.astro"
 
 // Create the static points pages
 export async function getStaticPaths() {
-	const points = await getCollection("blog", (post) => post.data.category === "points")
+	const points = await getCollection(
+		"blog",
+		(post) => post.data.category === "points" && !post.data.draft,
+	)
 	return points.map((post) => ({
 		params: { slug: post.slug.replace(/^points\//, '') },
 		props: post,
@@ -18,10 +23,40 @@ export async function getStaticPaths() {
 // Get the requested point
 type Props = CollectionEntry<"blog">
 const point = Astro.props
-const { title, summary } = point.data
+const { title, summary, cover, noindex } = point.data
+
+let ogImage: string | undefined
+if (cover) {
+  const { src } = await getImage({ src: cover, width: 1200 })
+  ogImage = src
+}
+
+const siteUrl =
+  Astro.site == null
+    ? "https://cho-hamanako.info"
+    : typeof Astro.site === "string"
+      ? Astro.site
+      : Astro.site.href
+
+const canonicalUrl = new URL(Astro.url.pathname, Astro.site).href
+
+const jsonLdExtra = buildPointArticleAndBreadcrumbJsonLd({
+  siteUrl,
+  canonicalUrl,
+  post: point,
+  ogImageSrc: ogImage,
+})
 ---
 
-<PageLayout title={title} description={summary} hasAds={true}>
+<PageLayout
+  title={title}
+  description={summary}
+  noindex={noindex}
+  hasAds={true}
+  image={ogImage}
+  ogType="article"
+  jsonLdExtra={jsonLdExtra}
+>
   <TopLayout>
     <div class="animate">
       <ArticleTopLayout entry={point} />

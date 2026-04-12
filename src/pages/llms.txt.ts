@@ -1,6 +1,14 @@
 import type { APIRoute } from "astro";
 import { getCollection } from "astro:content";
 
+function blogPostUrl(siteUrl: string, slug: string, category: string | undefined) {
+    const path =
+        category === "points"
+            ? `/points/${slug.replace(/^points\//, "")}/`
+            : `/blog/${slug}/`;
+    return new URL(path, siteUrl).href;
+}
+
 export const GET: APIRoute = async () => {
     // 1. Fetch non-draft blog posts to build an index
     const blogPosts = await getCollection("blog", ({ data }) => !data.draft);
@@ -8,7 +16,7 @@ export const GET: APIRoute = async () => {
     // Sort by most recent
     const recentPosts = blogPosts.sort((a, b) => b.data.pubDate.getTime() - a.data.pubDate.getTime()).slice(0, 20);
 
-    const siteUrl = import.meta.env.SITE;
+    const siteUrl = import.meta.env.SITE ?? "https://cho-hamanako.info";
 
     const llmsTxt = `
 # Cho! Hamanako (釣！浜名湖) - Hamanako Fishing Database
@@ -25,13 +33,13 @@ export const GET: APIRoute = async () => {
 ### 📍 Fishing Points (Database Ground Truth)
 ${blogPosts
   .filter(post => post.data.category === 'points')
-  .map(post => `- [${post.data.title}](${new URL(`/blog/points/${post.slug}`, siteUrl).href}): ${post.data.summary}`)
+  .map(post => `- [${post.data.title}](${blogPostUrl(siteUrl, post.slug, post.data.category)}): ${post.data.summary}`)
   .join('\n')}
 
 ### 🎣 Recent Tactics & Guides
 ${recentPosts
   .filter(post => post.data.category !== 'points')
-  .map(post => `- [${post.data.title}](${new URL(`/blog/${post.data.category}/${post.slug}`, siteUrl).href}): ${post.data.summary}`)
+  .map(post => `- [${post.data.title}](${blogPostUrl(siteUrl, post.slug, post.data.category)}): ${post.data.summary}`)
   .slice(0, 10)
   .join('\n')}
 
