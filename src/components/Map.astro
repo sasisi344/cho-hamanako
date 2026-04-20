@@ -70,14 +70,20 @@ const mapId = `map-${Math.random().toString(36).substring(2, 9)}`;
 <style>
   :global(.leaflet-popup-content-wrapper) {
     border-radius: 12px;
-    background: white !important;
-    color: #334155 !important; /* slate-700 */
+    background: #ffffff !important;
+    color: #1e293b !important;
   }
   :global(.leaflet-popup-tip) {
-    background: white !important;
+    background: #ffffff !important;
   }
   :global(.leaflet-popup-content) {
     font-weight: 600;
-    color: #334155 !important;
+    color: #1e293b !important;
+  }
+  :global(.leaflet-popup-content p) {
+    color: #1e293b !important;
+  }
+  :global(.leaflet-popup-content strong) {
+    color: #1e293b !important;
   }
 </style>
