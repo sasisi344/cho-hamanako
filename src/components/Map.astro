@@ -35,8 +35,10 @@ const mapId = `map-${Math.random().toString(36).substring(2, 9)}`;
 
     const lat = parseFloat(el.dataset.lat);
     const lng = parseFloat(el.dataset.lng);
-    const name = el.dataset.name;
-    const zoom = parseInt(el.dataset.zoom);
+    const name = el.dataset.name || "";
+    const zoom = parseInt(el.dataset.zoom, 10);
+
+    if (Number.isNaN(lat) || Number.isNaN(lng) || Number.isNaN(zoom)) return;
 
     const map = L.map(mapId, {
       center: [lat, lng],
@@ -53,18 +55,30 @@ const mapId = `map-${Math.random().toString(36).substring(2, 9)}`;
     }).addTo(map);
 
     const marker = L.marker([lat, lng]).addTo(map);
-    marker.bindPopup(`<strong>${name}</strong>`).openPopup();
+    marker.bindPopup("<strong>" + name + "</strong>").openPopup();
+
+    requestAnimationFrame(function () {
+      map.invalidateSize();
+    });
+    setTimeout(function () {
+      map.invalidateSize();
+    }, 200);
   }
 
-  // Handle both initial load and view transitions
-  if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', initSingleMap);
-  } else {
+  function runWhenReady() {
+    if (typeof L === "undefined") return;
     initSingleMap();
   }
-  
-  // Re-init on Astro View Transitions if used
-  document.addEventListener('astro:after-swap', initSingleMap);
+
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", runWhenReady);
+  } else {
+    runWhenReady();
+  }
+
+  window.addEventListener("load", runWhenReady);
+
+  document.addEventListener("astro:after-swap", initSingleMap);
 </script>
 
 <style>

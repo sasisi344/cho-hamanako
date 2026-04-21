@@ -1,0 +1,31 @@
+---
+description: src/content の MD/MDX 執筆時 — .agents の執筆ルールと整合
+globs: src/content/**/*.{md,mdx}
+alwaysApply: false
+---
+
+# コンテンツ（MD/MDX）編集時
+
+このリポジトリの執筆・コンポーネント規約の**詳細**は [.agents/writing-style/SKILL.md](.agents/writing-style/SKILL.md) にある。編集・新規作成時は必ず目を通す。**読者の習熟度（初級／中級／上級・分析）とトーン・本文ボリューム（目安3000字以上、タイプ別は各 SKILL 優先）**も同ファイルの「読者ペルソナとトーン・カラー」に従う。
+
+## 記事タイプ別（ペルソナ・構成）
+
+作業対象に応じて該当 SKILL を開くこと。
+
+- **Points**: [.agents/point-article/SKILL.md](.agents/point-article/SKILL.md)
+- **深掘り**: [.agents/fukabori-article/SKILL.md](.agents/fukabori-article/SKILL.md)
+- **ターゲット**: [.agents/target-article/SKILL.md](.agents/target-article/SKILL.md)
+- **季節・月次**: [.agents/season-article/SKILL.md](.agents/season-article/SKILL.md)
+- **ガイド・手法**: [.agents/guide-article/SKILL.md](.agents/guide-article/SKILL.md)
+- **旅行・グルメ**: [.agents/travel-article/SKILL.md](.agents/travel-article/SKILL.md)
+
+## すぐ効くチェック（抜粋）
+
+- 本番 `src/content/` では強調は `<strong>...</strong>`（`**` 禁止）。1文1段落（文ごとに空行）。
+- `BlogCard slug="..."` はフロントマターの `slug` 値のみ。ファイルパスと混同しない。
+- `TackleCard id="category/id"` は `src/content/affiliates/` の実在に基づく。捏造禁止。
+- カテゴリ・URL ルール: [.agents/category-slug-rules.md](.agents/category-slug-rules.md)、構造化データ: [.agents/structured-data-rules.md](.agents/structured-data-rules.md)。
+
+## 公開前ワークフロー
+
+手順の全体像は [.agents/workflows/](.agents/workflows/)（例: `post-complete.md`, `article-creation-workflow.md`）を参照。

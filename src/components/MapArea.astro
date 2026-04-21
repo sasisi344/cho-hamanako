@@ -3,19 +3,42 @@ interface Point {
   lat: number;
   lng: number;
   name: string;
-  url: string;
+  url?: string;
   summary?: string;
+  /** MDX 側でよく使われる説明文（summary の別名） */
+  description?: string;
 }
 
 interface Props {
-  lat: number;
-  lng: number;
+  /** 省略時は points から重心を算出 */
+  lat?: number;
+  lng?: number;
   points: Point[];
   zoom?: number;
   height?: string;
 }
 
-const { lat, lng, points, zoom = 13, height = "450px" } = Astro.props;
+const { lat: latProp, lng: lngProp, points, zoom = 13, height = "450px" } = Astro.props;
+
+function centroid(ps: Point[]) {
+  if (!ps.length) return { lat: 34.73, lng: 137.58 };
+  let slat = 0;
+  let slng = 0;
+  for (const p of ps) {
+    slat += p.lat;
+    slng += p.lng;
+  }
+  return { lat: slat / ps.length, lng: slng / ps.length };
+}
+
+const hasExplicitCenter =
+  typeof latProp === "number" &&
+  typeof lngProp === "number" &&
+  !Number.isNaN(latProp) &&
+  !Number.isNaN(lngProp);
+
+const center = hasExplicitCenter ? { lat: latProp, lng: lngProp } : centroid(points);
+const useFitBounds = !hasExplicitCenter && points.length > 1;
 
 // Generate a unique ID for the map container
 const mapId = `map-area-${Math.random().toString(36).substring(2, 9)}`;
@@ -23,12 +46,20 @@ const jsonPoints = JSON.stringify(points);
 ---
 
 <div class={`relative w-full rounded-3xl overflow-hidden border-2 border-slate-100 dark:border-zinc-800 shadow-xl my-8 group animate`} style={{ height }}>
-  <div id={mapId} class="w-full h-full z-10" data-lat={lat} data-lng={lng} data-zoom={zoom}></div>
-  
+  <div
+    id={mapId}
+    class="w-full h-full z-10"
+    data-lat={center.lat}
+    data-lng={center.lng}
+    data-zoom={zoom}
+    data-fit-bounds={useFitBounds ? "1" : ""}
+  >
+  </div>
+
   <!-- Overlay for hover instructions -->
   <div class="absolute inset-0 z-20 pointer-events-none bg-black/0 group-hover:bg-black/5 transition-colors duration-300 flex items-end justify-center pb-4">
     <span class="text-[10px] font-bold text-white bg-black/50 px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity">
-      ピンをクリックすると記事へ移動できます
+      ピンをタップすると説明を表示できます
     </span>
   </div>
 </div>
@@ -40,54 +71,86 @@ const jsonPoints = JSON.stringify(points);
   // @ts-nocheck
   function initAreaMap() {
     const el = document.getElementById(mapId);
-    if (!el || typeof L === 'undefined') return;
+    if (!el || typeof L === "undefined") return;
     if (el._leaflet_id) return;
 
     const lat = parseFloat(el.dataset.lat);
     const lng = parseFloat(el.dataset.lng);
-    const zoom = parseInt(el.dataset.zoom);
+    const zoom = parseInt(el.dataset.zoom, 10);
+    const fitBounds = el.dataset.fitBounds === "1";
     const points = JSON.parse(jsonPoints);
+
+    if (Number.isNaN(lat) || Number.isNaN(lng) || Number.isNaN(zoom)) return;
 
     const map = L.map(mapId, {
       center: [lat, lng],
       zoom: zoom,
       scrollWheelZoom: false,
-      zoomControl: true
+      zoomControl: true,
     });
 
-    // Enable scroll zoom on click
-    map.on('focus', function() { map.scrollWheelZoom.enable(); });
+    map.on("focus", function () {
+      map.scrollWheelZoom.enable();
+    });
 
-    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+    L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
     }).addTo(map);
 
-    points.forEach(point => {
+    const leafletMarkers = [];
+
+    points.forEach(function (point) {
       const marker = L.marker([point.lat, point.lng]).addTo(map);
-      
-      const popupContent = `
-        <div class="p-2">
-          <h4 class="font-bold text-slate-900 mb-1" style="margin: 0 0 4px 0;">${point.name}</h4>
-          ${point.summary ? `<p class="text-xs text-slate-600 mb-2" style="margin: 0 0 8px 0;">${point.summary}</p>` : ''}
-          <a href="${point.url}" class="inline-block bg-blue-600 text-white px-3 py-1 rounded text-xs font-bold no-underline hover:bg-blue-700 transition-colors">
-            詳細を見る 🎣
-          </a>
-        </div>
-      `;
-      
+      leafletMarkers.push(marker);
+
+      const blurb = point.summary || point.description || "";
+      const link =
+        point.url &&
+        '<a href="' +
+          point.url +
+          '" class="inline-block bg-blue-600 text-white px-3 py-1 rounded text-xs font-bold no-underline hover:bg-blue-700 transition-colors">詳細を見る 🎣</a>';
+
+      const popupContent =
+        '<div class="p-2">' +
+        '<h4 class="font-bold text-slate-900 mb-1" style="margin: 0 0 4px 0;">' +
+        point.name +
+        "</h4>" +
+        (blurb ? '<p class="text-xs text-slate-600 mb-2" style="margin: 0 0 8px 0;">' + blurb + "</p>" : "") +
+        (link ? link : "") +
+        "</div>";
+
       marker.bindPopup(popupContent, { maxWidth: 240 });
     });
+
+    if (fitBounds && leafletMarkers.length > 1) {
+      const fg = L.featureGroup(leafletMarkers);
+      map.fitBounds(fg.getBounds().pad(0.12), { maxZoom: zoom });
+    }
+
+    requestAnimationFrame(function () {
+      map.invalidateSize();
+    });
+    setTimeout(function () {
+      map.invalidateSize();
+    }, 200);
   }
 
-  // Handle both initial load and view transitions
-  if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', initAreaMap);
-  } else {
+  function runWhenReady() {
+    if (typeof L === "undefined") {
+      return;
+    }
     initAreaMap();
   }
-  
-  // Re-init on Astro View Transitions if used
-  document.addEventListener('astro:after-swap', initAreaMap);
+
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", runWhenReady);
+  } else {
+    runWhenReady();
+  }
+
+  window.addEventListener("load", runWhenReady);
+
+  document.addEventListener("astro:after-swap", initAreaMap);
 </script>
 
 <style>

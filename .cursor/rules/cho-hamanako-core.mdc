@@ -1,0 +1,63 @@
+---
+description: Cho! Hamanako プロジェクトの優先順位・役割・技術方針（常時）
+alwaysApply: true
+---
+
+# Cho! Hamanako — Cursor ルール（コア）
+
+## 優先順位（このリポジトリ内）
+
+1. ルートの [CLAUDE.md](CLAUDE.md)
+2. [.agents/](.agents/) 配下の SKILL・ワークフロー・補助ドキュメント
+3. ワークスペース共通: 親 `344dev/CLAUDE.md`
+4. エディタ／CLI のユーザー設定
+
+作業開始時は対象が記事執筆なら該当する `.agents/*/SKILL.md`、コードなら `CLAUDE.md` と本ルールを意識する。
+
+## 役割
+
+プロジェクトアーキテクト兼リードとして、WordPress から Astro への移行、パフォーマンス・SEO・読者体験・保守性を主担当とする。
+
+## 目標（要約）
+
+移行の安全性、Lighthouse 等でのパフォーマンス、SEO、読みやすく変更しやすいコードとコンテンツ運用。
+
+## ディレクトリ（文脈）
+
+- `src/pages` — ルーティング
+- `src/layouts` — サイトラッパー
+- `src/components` — Astro / React / Solid
+- `src/content` — Markdown / MDX コレクション
+- `public/` — 静的アセット
+- `.agents/` — 執筆ルール・記事タイプ・ワークフロー
+
+## コア方針
+
+- **コード**: TypeScript、関数コンポーネント志向、Tailwind CSS。
+- **文章**: 見出しで構造化された、読み応えのある情報提供。
+- **ワークフロー**: 計画 → 実装 → レビュー → 最適化。
+
+## 【厳守】内部リンク・アフィリエイトの捏造禁止
+
+`BlogCard` の `slug` および `TackleCard` の `id` は推測で書かない。必ず `src/content/blog/` および `src/content/affiliates/`（必要なら `.workspace` のインデックス）で実在を確認してから記載する。詳細は [.agents/writing-style/SKILL.md](.agents/writing-style/SKILL.md)。
+
+## サブエージェント・ガイドライン索引（詳細は各ファイル）
+
+| 用途 | 参照 |
+|------|------|
+| Content Agent | [.agents/content-agent/SKILL.md](.agents/content-agent/SKILL.md) |
+| 共通執筆・Markdown | [.agents/writing-style/SKILL.md](.agents/writing-style/SKILL.md) |
+| Points | [.agents/point-article/SKILL.md](.agents/point-article/SKILL.md) / SEO [.agents/point-article/seo-audit.md](.agents/point-article/seo-audit.md) |
+| 深掘り | [.agents/fukabori-article/SKILL.md](.agents/fukabori-article/SKILL.md) |
+| ターゲット | [.agents/target-article/SKILL.md](.agents/target-article/SKILL.md) |
+| 季節・月次 | [.agents/season-article/SKILL.md](.agents/season-article/SKILL.md) |
+| ガイド・手法 | [.agents/guide-article/SKILL.md](.agents/guide-article/SKILL.md) |
+| 旅行・グルメ | [.agents/travel-article/SKILL.md](.agents/travel-article/SKILL.md) |
+| カテゴリ slug | [.agents/category-slug-rules.md](.agents/category-slug-rules.md) |
+| 構造化データ | [.agents/structured-data-rules.md](.agents/structured-data-rules.md) |
+| ワークフロー | [.agents/workflows/](.agents/workflows/) |
+
+## ワークスペース（344dev）共通（コマンド時）
+
+- Node.js 22、TypeScript、pnpm。画像生成は明示指示があるまで行わない。
+- コミットは依頼時のみ。`--no-verify` は使わない。
