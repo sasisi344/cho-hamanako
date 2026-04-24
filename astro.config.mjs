@@ -39,7 +39,9 @@ export default defineConfig({
     mdx({
       remarkPlugins: [remarkGfm, remarkAlert, remarkLinkCard],
     }),
-    sitemap(),
+    sitemap({
+      filter: (page) => page !== "https://cho-hamanako.info/search/",
+    }),
     solidJs(),
     tailwind({ applyBaseStyles: false }),
     partytown({
