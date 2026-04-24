@@ -21,6 +21,7 @@ alwaysApply: false
 
 ## すぐ効くチェック（抜粋）
 
+- **編集メモ `> [!forAI]`**: リライトで本文へ取り込みたい論点を箇条書きで置く合図。エージェントは作業時に内容を本文へ統合し、**公開前（`draft: false`）にはブロックごと削除**する。詳細は [.agents/writing-style/SKILL.md](.agents/writing-style/SKILL.md) の「編集メモ」。
 - 本番 `src/content/` では強調は `<strong>...</strong>`（`**` 禁止）。1文1段落（文ごとに空行）。
 - `BlogCard slug="..."` はフロントマターの `slug` 値のみ。ファイルパスと混同しない。
 - `TackleCard id="category/id"` は `src/content/affiliates/` の実在に基づく。捏造禁止。
