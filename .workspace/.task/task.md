@@ -12,11 +12,12 @@
     [x]beginner
     [x]logistics
     [x]shops
-- method(NOW)
+    [x]method
 - points/family-car-points
 - points/weding-points
 - season
-- tactics
+    [x]tactics
+    [x]season（月別12記事・特別記事7本）
 - target
 - theory
 - travel
