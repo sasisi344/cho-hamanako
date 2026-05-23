@@ -1,6 +1,7 @@
 import rss from "@astrojs/rss"
 import { getCollection } from "astro:content"
 import { SITE } from "@consts"
+import { blogPostHref, projectPostHref } from "@lib/paths"
 
 type Context = {
   site: string
@@ -32,11 +33,10 @@ export async function GET(context: Context) {
       title: item.data.title,
       description: item.data.summary,
       pubDate: item.collection === "blog" ? item.data.pubDate : item.data.date,
-      link: item.collection === "blog"
-        ? (item.data.category === "points"
-          ? `/points/${item.slug.replace(/^points\//, '')}/`
-          : `/blog/${item.slug}/`)
-        : `/projects/${item.slug}/`,
+      link:
+        item.collection === "blog"
+          ? blogPostHref(item.slug, item.data.category)
+          : projectPostHref(item.slug),
     })),
   })
 }

@@ -91,7 +91,8 @@ for (const filePath of allFiles) {
             // Escape special regex characters in decodedPath (simplified)
             const escapedMatchPath = matchPath.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
             
-            redirectRules.push(`  RewriteRule ^${escapedMatchPath}/?$ ${newPath} [R=301,L]`);
+            const dest = newPath.endsWith('/') ? newPath : `${newPath}/`;
+            redirectRules.push(`  RewriteRule ^${escapedMatchPath}/?$ ${dest} [R=301,L]`);
             console.log(`Found: ${matchPath} -> ${newPath}`);
         }
     }

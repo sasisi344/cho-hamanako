@@ -5,6 +5,7 @@ import {
   mergeJsonLdGraphs,
   serializeJsonLd,
 } from "@lib/jsonld"
+import { withTrailingSlash } from "@lib/paths"
 
 interface Props {
   title: string
@@ -18,7 +19,7 @@ interface Props {
   jsonLdExtra?: Record<string, unknown>[]
 }
 
-const canonicalURL = new URL(Astro.url.pathname, Astro.site)
+const canonicalURL = new URL(withTrailingSlash(Astro.url.pathname), Astro.site)
 
 const {
   title,

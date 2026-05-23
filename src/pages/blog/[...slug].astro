@@ -2,6 +2,7 @@
 import { getImage } from "astro:assets"
 import { type CollectionEntry, getCollection } from "astro:content"
 import { buildBlogArticleAndBreadcrumbJsonLd } from "@lib/jsonld"
+import { withTrailingSlash } from "@lib/paths"
 import PageLayout from "@layouts/PageLayout.astro"
 import TopLayout from "@layouts/TopLayout.astro"
 import BottomLayout from "@layouts/BottomLayout.astro"
@@ -38,7 +39,7 @@ const siteUrl =
       ? Astro.site
       : Astro.site.href
 
-const canonicalUrl = new URL(Astro.url.pathname, Astro.site).href
+const canonicalUrl = new URL(withTrailingSlash(Astro.url.pathname), Astro.site).href
 
 const jsonLdExtra = buildBlogArticleAndBreadcrumbJsonLd({
   siteUrl,

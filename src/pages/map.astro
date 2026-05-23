@@ -3,6 +3,7 @@ import { getCollection } from "astro:content";
 import PageLayout from "@layouts/PageLayout.astro";
 import TopLayout from "@layouts/TopLayout.astro";
 import BottomLayout from "@layouts/BottomLayout.astro";
+import { blogPostHref } from "@lib/paths";
 
 // 釣果ポイント記事をすべて取得
 const allPosts = await getCollection("blog");
@@ -13,9 +14,7 @@ const monthTags = ["1月", "2月", "3月", "4月", "5月", "6月", "7月", "8月
 const mapPoints = allPosts
   .filter(post => !post.data.draft && post.data.location && post.data.location.lat && post.data.location.lng)
   .map(post => {
-    const url = post.data.category === "points" 
-      ? `/points/${post.slug.replace(/^points\//, '')}/` 
-      : `/blog/${post.slug}/`;
+    const url = blogPostHref(post.slug, post.data.category);
     
     // タグを正規化（「11月の釣り」などを「11月」として扱えるようにする）
     const rawTags = post.data.tags || [];

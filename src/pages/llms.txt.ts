@@ -1,12 +1,9 @@
 import type { APIRoute } from "astro";
 import { getCollection } from "astro:content";
+import { blogPostHref } from "@lib/paths";
 
 function blogPostUrl(siteUrl: string, slug: string, category: string | undefined) {
-    const path =
-        category === "points"
-            ? `/points/${slug.replace(/^points\//, "")}/`
-            : `/blog/${slug}/`;
-    return new URL(path, siteUrl).href;
+    return new URL(blogPostHref(slug, category), siteUrl).href;
 }
 
 export const GET: APIRoute = async () => {

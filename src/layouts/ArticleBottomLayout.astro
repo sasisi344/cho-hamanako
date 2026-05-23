@@ -23,13 +23,12 @@ const index = items.findIndex(x => x.slug === entry.slug)
 const prev = items[(index - 1 + items.length) % items.length]
 const next = items[(index + 1) % items.length]
 
-const getHref = (e: any) => {
-  if (e.collection === "blog" && e.data.category === "points") {
-    return `/points/${e.slug.replace(/^points\//, '')}`
-  }
-  return `/${e.collection}/${e.slug}`
-}
+const getHref = (e: (typeof items)[number]) =>
+  e.collection === "blog"
+    ? blogPostHref(e.slug, e.data.category)
+    : `/${e.collection}/${e.slug}/`
 import { ADSENSE } from "@consts"
+import { blogPostHref } from "@lib/paths"
 
 const isBlog = collection === "blog"
 ---

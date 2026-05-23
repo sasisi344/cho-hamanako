@@ -1,6 +1,7 @@
 ---
 import { getEntry } from "astro:content";
 import { Image } from "astro:assets";
+import { blogPostHref, withTrailingSlash } from "@lib/paths";
 
 interface Props {
   slug?: string;
@@ -13,17 +14,11 @@ interface Props {
 const { slug, url, title, summary, cover } = Astro.props;
 const entry = slug ? await getEntry("blog", slug) : null;
 
-const getPrefix = (entry: any) => {
-  if (entry?.data.category === 'points') return '/points';
-  return '/blog';
-};
-
-const getSlugPart = (entry: any) => {
-  if (!entry) return '';
-  return entry.slug.replace(/^points\//, '');
-};
-
-const finalUrl = url || (entry ? `${getPrefix(entry)}/${getSlugPart(entry)}` : "#");
+const finalUrl = url
+  ? (url.startsWith("http") ? url : withTrailingSlash(url))
+  : entry
+    ? blogPostHref(entry.slug, entry.data.category)
+    : "#";
 const finalTitle = title || (entry ? entry.data.title : "Link");
 const finalSummary = summary || (entry ? entry.data.summary : "");
 const finalCover = cover || (entry ? entry.data.cover : null);

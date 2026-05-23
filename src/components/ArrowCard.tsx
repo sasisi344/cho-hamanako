@@ -1,4 +1,5 @@
 import { formatDate, truncateText } from "@lib/utils"
+import { blogPostHref, projectPostHref } from "@lib/paths"
 import type { CollectionEntry } from "astro:content"
 
 type Props = {
@@ -7,9 +8,10 @@ type Props = {
 }
 
 export default function ArrowCard({ entry, pill }: Props) {
-  const href = (entry.collection === "blog" && entry.data.category === "points")
-    ? `/points/${entry.slug.replace(/^points\//, '')}`
-    : `/${entry.collection}/${entry.slug}`;
+  const href =
+    entry.collection === "blog"
+      ? blogPostHref(entry.slug, entry.data.category)
+      : projectPostHref(entry.slug)
 
   return (
     <a href={href} class="group p-4 gap-3 flex items-center border rounded-lg hover:bg-black/5 hover:dark:bg-white/10 border-black/15 dark:border-white/20 transition-colors duration-300 ease-in-out">
