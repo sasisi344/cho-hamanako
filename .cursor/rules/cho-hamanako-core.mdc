@@ -55,6 +55,7 @@ alwaysApply: true
 | 旅行・グルメ | [.agents/travel-article/SKILL.md](.agents/travel-article/SKILL.md) |
 | カテゴリ slug | [.agents/category-slug-rules.md](.agents/category-slug-rules.md) |
 | 構造化データ | [.agents/structured-data-rules.md](.agents/structured-data-rules.md) |
+| 釣りの法律・条例 | [.agents/fishing-laws-hamanako.md](.agents/fishing-laws-hamanako.md) |
 | ワークフロー | [.agents/workflows/](.agents/workflows/) |
 
 ## ワークスペース（344dev）共通（コマンド時）

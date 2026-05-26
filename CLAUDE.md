@@ -53,5 +53,6 @@
 
 - カテゴリ slug: [.agents/category-slug-rules.md](.agents/category-slug-rules.md)
 - 構造化データ: [.agents/structured-data-rules.md](.agents/structured-data-rules.md)
+- 浜名湖の釣りに関する法律・条例（漁業権・漁期・リリース基準など）: [.agents/fishing-laws-hamanako.md](.agents/fishing-laws-hamanako.md)
 - ポイント記事 SEO 監査: [.agents/point-article/seo-audit.md](.agents/point-article/seo-audit.md)
 - ワークフロー: [.agents/workflows/](.agents/workflows/)
