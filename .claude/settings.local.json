@@ -4,7 +4,8 @@
       "Bash(xargs grep *)",
       "Bash(echo '=== __TRACKED_VAR__ ===')",
       "Bash(wc -m C:/Users/sasis/344dev/cho-hamanako/src/content/blog/guide/method/__TRACKED_VAR__/index.mdx)",
-      "Bash(echo \"ファイルなし\")"
+      "Bash(echo \"ファイルなし\")",
+      "Bash(pnpm astro *)"
     ]
   }
 }
