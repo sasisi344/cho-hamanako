@@ -18,8 +18,8 @@
 - season
     [x]tactics
     [x]season（月別12記事・特別記事7本）
-- target
-- theory
+- target[x]
+- theory[x]
 - travel
 
 この辺りはまだ量も多いためCursorと共同で進める。
