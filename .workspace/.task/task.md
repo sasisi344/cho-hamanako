@@ -13,8 +13,8 @@
     [x]logistics
     [x]shops
     [x]method
-- points/family-car-points
-- points/weding-points
+- points/family-car-points[x]
+- points/weding-points[x]
 - season
     [x]tactics
     [x]season（月別12記事・特別記事7本）
