@@ -118,26 +118,26 @@ travel/
 
 **優先度：高（Cursor共同作業前に完了させる）**
 
-- [ ] `hamanako-kanko-hub` リライト
-  - H2を3本→6本以上に拡充
-  - エリア別（表・中・奥）× 目的別（釣りメイン/グルメメイン/体験）のマトリクスへ
+- [x] `hamanako-kanko-hub` リライト（2026-06-03）
+  - H2を3本→6本以上に拡充（エリア別・マトリクス・目的別・電車・季節別・まとめ）
+  - エリア別（表・中・奥）× 目的別（釣りメイン/グルメメイン/体験）のマトリクス表追加
   - 各エリア記事・時期記事・体験記事への BlogCard 導線を整備
 
-- [ ] `kanzanji-fishing-walk-guide` 拡張リライト → 「奥浜名湖エリアガイド」へ
-  - 舘山寺だけでなく三ヶ日・気賀・猪鼻湖エリアも包含
-  - 移動手段（車/天浜線）× 目的別プランを追加
-  - 対応ポイント記事（kanzanji / kiga / mikkabi-eki）への BlogCard 追加
+- [x] `kanzanji-fishing-walk-guide` 拡張リライト → 「奥浜名湖エリアガイド」へ（2026-06-03）
+  - 舘山寺・三ヶ日・気賀・猪鼻湖の4エリアを包含
+  - 移動手段（車/天浜線）× 目的別プラン表を追加
+  - kanzanji / kiga / mikkabi-eki / sakumekaigan / sakujyoseki / miyakodagawa BlogCard 追加
 
 **優先度：中（エリア統合）**
 
-- [ ] `omote-area-travel` 新規作成（表浜名湖エリアガイド）
-  - 弁天島・新居・今切口エリアを1記事に統合
-  - `hamanako-winter-fishing-oyster-trip`（70行・薄い）を吸収 or 誘導
-  - 釣り×牡蠣小屋×弁天島観光の動線
+- [x] `omote-area-travel` 新規作成（表浜名湖エリアガイド）（2026-06-03）
+  - 弁天島・新居・舞阪の3エリアを統合、H2 × 7本、2,000字+
+  - `hamanako-winter-fishing-oyster-trip` を BlogCard で誘導
+  - 釣り×牡蠣小屋×弁天島観光の動線整備、電車アクセス専用H2追加
 
 **優先度：低（現状維持 or 後回し）**
 
-- [ ] `hamanako-clam-digging-fishing-2026` タイトルから年号を除去（陳腐化防止）
+- [x] `hamanako-clam-digging-fishing-2026` タイトルから年号を除去（2026-06-03）
 - [ ] 時期特化5記事（GW・春休み・3月・浜松まつり・冬牡蠣）は現状維持
 - [ ] 中浜名湖エリア記事（ガーデンパーク・村櫛周辺）は需要確認後に判断
 
@@ -180,6 +180,6 @@ travel/
 
 #### フェーズ3（後回し）：観光×釣り導線整備
 
-- [ ] `travel/hamanako-kanko-hub` へ除外KW群（1-B）から既存ガイドへの BlogCard 導線確認
-- [ ] 観光名所×釣りサジェストKWの調査（kanko-hub 方向性確定後）
-- [ ] グルメ×釣り場記事は kanko-hub のグルメ節への追記で対応
+- [x] `travel/hamanako-kanko-hub` へ除外KW群（1-B）から既存ガイドへの BlogCard 導線確認（2026-06-03）
+- [x] 観光名所×釣りサジェストKWの調査（chousa-file.md に結果まとめ済み、2026-06-03）
+- [ ] グルメ×釣り場記事（うなぎ×釣り旅・キャンプ×釣り）は次フェーズで判断

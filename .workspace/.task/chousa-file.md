@@ -1,0 +1,143 @@
+# 観光名所 × 釣り サジェストKW調査ファイル
+
+**調査日**: 2026-06-03  
+**目的**: 観光スポット×釣りKWを洗い出し、`travel/hamanako-kanko-hub` との役割分担を確定する  
+**対象タスク**: niche-kw-tasks.md セクション1「観光×釣りハイブリッド」
+
+---
+
+## 1. 既存コンテンツのカバー状況
+
+### travel 記事（9本）
+
+| 記事タイトル（概要） | slug | 対応KW |
+| :--- | :--- | :--- |
+| 釣り×観光ハブ（ターミナル） | `travel/hamanako-kanko-hub` | 浜名湖 釣り 観光 |
+| 舘山寺温泉×釣り散歩 | `travel/kanzanji-fishing-walk-guide` | 舘山寺 温泉 釣り |
+| GW×ファミリーサビキデビュー | `travel/golden-week-family-sabiki-debut` | GW 浜名湖 釣り 家族 |
+| たきや漁・えびすき漁 | `travel/hamanako-traditional-fishing-guide` | たきや漁 えびすき漁 浜名湖 |
+| 潮干狩り×釣り（春休み） | `travel/hamanako-clam-digging-fishing-2026` | 潮干狩り 浜名湖 釣り |
+| 手ぶら釣り（レンタル竿） | `travel/hamanako-rental-fishing-guide` | 浜名湖 手ぶら 釣り レンタル |
+| 冬の牡蠣小屋×釣り | `travel/hamanako-winter-fishing-oyster-trip` | 浜名湖 牡蠣 釣り 冬 |
+| 浜松まつり×釣り | `travel/hamamatsu-festival-fishing-trip` | 浜松まつり 釣り |
+| 3月の生シラス×サヨリ | `travel/hamanako-march-gourmet-shirasu-sayori` | 浜名湖 シラス 釣り 春 |
+
+### kanko-hub 内でリンク済みのポイント記事
+
+| ポイント名 | slug | kanko-hub内の扱い |
+| :--- | :--- | :--- |
+| 弁天島海浜公園 | `bentenjimakaihinkouen` | 表浜名湖節にBlogCard |
+| 新居弁天海釣公園 | `araibenten-umiduripark` | 表浜名湖節にBlogCard |
+| 浜名湖ガーデンパーク | `gardenpark` | 中浜名湖節にBlogCard |
+| 舘山寺 | `kanzanji` | 奥浜名湖節にBlogCard |
+| 気賀（プリンス岬） | `kiga` | 奥浜名湖節にBlogCard |
+| 三ヶ日駅周辺 | `mikkabi-eki` | 奥浜名湖節にBlogCard |
+
+---
+
+## 2. KW × カバー状況マトリクス
+
+### 観光地系
+
+| サジェストKW候補 | 検索意図 | カバー状況 | 対応方針 |
+| :--- | :--- | :--- | :--- |
+| 弁天島 釣り | ポイント×観光 | ✅ カバー済み | ポイント記事＋kanko-hub |
+| ガーデンパーク 釣り | ポイント×観光 | ✅ カバー済み | ポイント記事＋kanko-hub |
+| 舘山寺 釣り 温泉 | 温泉旅×釣り | ✅ カバー済み | walk-guide＋kanko-hub |
+| 渚園 釣り キャンプ | キャンプ×釣り | ⚠️ ポイント記事のみ | kanko-hubに「アウトドア節」追記 |
+| 気賀関所 釣り 観光 | 歴史観光×釣り | ⚠️ 部分カバー | `kiga`記事への言及強化で対応可 |
+| 新居関所 釣り | 歴史観光×釣り | ❌ 未対応 | `araibenten`記事への言及追記で可 |
+| はまゆう大橋 釣り | ポイント×橋名 | ✅ カバー済み | `hamayu-ohashi`ポイント記事あり |
+| 猪鼻湖 釣り | 湖名+釣り | ⚠️ 部分カバー | mikkabi-eki / sakumekaigan で言及済み |
+| 中田島砂丘 釣り | 砂浜×キス釣り | ⚠️ 未対応 | 浜名湖外縁のため優先度低 |
+
+### グルメ系
+
+| サジェストKW候補 | 検索意図 | カバー状況 | 対応方針 |
+| :--- | :--- | :--- | :--- |
+| 浜名湖 うなぎ 釣り | グルメ旅×釣り | ❌ **未対応** | **新規記事化の最有力候補** |
+| 浜名湖 牡蠣 釣り | グルメ旅×釣り | ✅ カバー済み | winter-oyster-trip |
+| 浜名湖 シラス 釣り | グルメ旅×釣り | ✅ カバー済み | march-gourmet-shirasu |
+| 三ヶ日 みかん 釣り | 農産物観光×釣り | ❌ **未対応** | kanko-hub 奥浜名湖節への追記で可 |
+| 浜松 餃子 釣り | グルメ旅×釣り | ⚠️ kanko-hubにテキスト言及のみ | BlogCard 設置まで不要。言及で十分 |
+
+### 体験・アクティビティ系
+
+| サジェストKW候補 | 検索意図 | カバー状況 | 対応方針 |
+| :--- | :--- | :--- | :--- |
+| 浜名湖 たきや漁 | 体験×観光 | ✅ カバー済み | traditional-fishing-guide |
+| 浜名湖 潮干狩り 釣り | 体験×釣り | ✅ カバー済み | clam-digging-fishing-2026 |
+| 浜名湖 キャンプ 釣り | アウトドア×釣り | ❌ **未対応** | 渚園を軸に新規記事化の余地あり |
+| 浜名湖 電車 釣り | 交通×釣り | ✅ 今回対応済み | hamanako-train-fishing-spots |
+| 浜名湖 SUP 釣り | マリンスポーツ×釣り | ✅ カバー済み | hamanako-sup-fishing |
+| 浜名湖 カヤック 釣り | マリンスポーツ×釣り | ✅ カバー済み | hamanako-kayak-fishing |
+
+---
+
+## 3. kanko-hub との役割分担（確定方針）
+
+```
+kanko-hub = ターミナル（全コンテンツへの誘導）
+          ↓
+  独立記事を持つKW → BlogCardで接続
+  独立記事がないKW → kanko-hub内に簡潔な節を追記
+```
+
+### kanko-hub に追記すべき節（未接続コンテンツ）
+
+| 追記内容 | 場所 | 理由 |
+| :--- | :--- | :--- |
+| 渚園（キャンプ×釣り）のBlogCard | 「体験・アクティビティ」節 | `nagisaen`が未リンク |
+| 三ヶ日みかん×釣り ドライブ案内 | 「奥浜名湖」節のテキスト補足 | みかん直売所への動線 |
+| うなぎ×釣り旅への導線 | 「グルメ」節 | うなぎ新規記事化後に BlogCard 設置 |
+
+---
+
+## 4. 新規記事化の優先度
+
+### 🔴 優先度 A：「浜名湖うなぎ×釣り旅」
+
+**slug候補**: `travel/hamanako-unagi-fishing-trip`  
+**検索意図**: うなぎ料理を目当てに来た観光客 → 釣り体験も組み込みたい  
+**差別化**: うなぎ漁の歴史・うなぎ料理店紹介・釣りスポット（ウナギが釣れる奥浜名湖）をセットで扱う  
+**参考リンク先**: `kanzanji`, `miyakodagawa`, `mikkabi-eki`  
+**kanko-hub との関係**: グルメ節に BlogCard 設置  
+**判断根拠**: 「浜名湖=うなぎ」の認知が全国規模。旅行者の検索需要が高く、既存記事に当たるコンテンツが皆無
+
+### 🟡 優先度 B：「浜名湖キャンプ×釣り」
+
+**slug候補**: `travel/hamanako-camp-fishing`  
+**検索意図**: キャンプしながら釣りもしたい（夏〜秋需要）  
+**差別化**: 渚園キャンプ場を軸に、弁天島・新居弁天との組み合わせ行程を提示  
+**参考リンク先**: `nagisaen`, `bentenjimakaihinkouen`, `araibenten-umiduripark`  
+**判断根拠**: 渚園（nagisaen）はキャンプ×チヌトップで有名だが、「キャンプしながら釣り」という記事が存在しない  
+**注意**: 渚園の設備情報（営業状況・予約方法）の確認が必要
+
+### ⚪ 優先度 C（kanko-hub追記で対応・新規記事化不要）
+
+- **三ヶ日みかん×釣り**: kanko-hub の奥浜名湖節にテキスト補足＋みかん直売所のリンク
+- **新居関所×釣り**: `araibenten-umiduripark` 記事の「観光スポット」節に1段落追加
+- **渚園のBlogCard**: kanko-hub の「体験・アクティビティ」節に `nagisaen` BlogCard を追加
+
+---
+
+## 5. 即実施可能な kanko-hub 追記リスト
+
+新規記事を作らずにすぐできる対応。
+
+1. **渚園 BlogCard を kanko-hub「体験・アクティビティ」節に追加**
+   - `<BlogCard slug="nagisaen" />` を追記
+   
+2. **奥浜名湖節に三ヶ日みかん直売所のテキスト補足**
+   - 「三ヶ日駅周辺では、釣りの前後に三ヶ日みかんの直売所に立ち寄れます」などの一文追加
+
+3. **電車釣行記事の BlogCard を表浜名湖節または「ファミリー・初心者」節に追加**
+   - `<BlogCard slug="hamanako-train-fishing-spots" />` を設置
+
+---
+
+## 6. 進捗チェックリスト
+
+- [ ] kanko-hub 追記3点（渚園BlogCard / みかん補足テキスト / 電車4選BlogCard）
+- [ ] 優先度A「うなぎ×釣り旅」記事の新規作成
+- [ ] 優先度B「キャンプ×釣り」記事（渚園設備情報確認後）
