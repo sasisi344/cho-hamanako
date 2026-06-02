@@ -16,6 +16,7 @@ slug: hamanako-kurodai-topwater
 ---
 
 import TackleCard from "@components/TackleCard.astro";
+import Mermaid from "@components/Mermaid.astro";
 
 「バシャッ！」という爆音と共に、水面が大きく割れる。
 
@@ -46,6 +47,36 @@ import TackleCard from "@components/TackleCard.astro";
 こうした条件が重なり、浜名湖は日本全国でも最高クラスのチヌトップフィールドとなっているのです。
 
 ---
+
+## チヌトップ実行フロー
+
+<Mermaid
+  caption="浜名湖チヌトップ：条件判断フロー"
+  code={`
+flowchart TD
+    A([チヌトップをやりたい]) --> B{季節は？}
+    B -->|6〜9月 ◎| C{時間帯は？}
+    B -->|それ以外 ❌| X[水面への反応なし\n→ ボトムチニングへ]
+    C -->|朝凪 〜8時 ◎◎| D[最高条件\n風がなく水面が鏡状態]
+    C -->|夕マズメ ◎| E[次点の好条件\n潮が動き始めるタイミング]
+    C -->|昼間・風あり △| F[難しい\nシェード・潮目に絞る]
+    D --> G{場所は？}
+    E --> G
+    F --> G
+    G -->|干潟・シャロー| H[渚園 / ガーデンパーク\n庄内湖 カキ棚のキワ]
+    G -->|ウェーディング| I[中之島 / 村櫛沖\nカキ棚エリア]
+    H --> J[ペンシルベイト 8〜10cm\nドッグウォーク → ポーズ]
+    I --> J
+    J --> K[クロダイ・キビレ 🎣]
+    K --> L[外道]
+    L --> L1[マゴチ ○ 底付近で食う]
+    L --> L2[セイゴ ○ 表層に飛び出る]
+    style A fill:#e0f2fe,stroke:#38bdf8
+    style K fill:#d1fae5,stroke:#34d399
+    style D fill:#d1fae5,stroke:#34d399
+    style X fill:#fee2e2,stroke:#f87171
+`}
+/>
 
 ## チヌトップのシーズンと最適な時間帯
 

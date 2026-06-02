@@ -27,6 +27,7 @@ slug: tako
 ---
 
 import BlogCard from "@components/BlogCard.astro";
+import Mermaid from "@components/Mermaid.astro";
 
 浜名湖の夏、堤防が最も熱く盛り上がるターゲットが<strong>マダコ</strong>です。
 
@@ -51,6 +52,36 @@ import BlogCard from "@components/BlogCard.astro";
 水温が<strong>20〜25℃</strong>になる夏（6〜8月）がタコの最活性期で、特に6月の漁解禁直後は産卵前の大型が浅場に集結する「タコ天国」状態になります。
 
 ---
+
+## タコを釣るための判断フロー
+
+<Mermaid
+  caption="浜名湖タコ釣り：スタイル×ポイント別判断フロー"
+  code={`
+flowchart TD
+    A([浜名湖でタコを狙う]) --> B{季節は？}
+    B -->|夏 6〜9月 ◎| C[タコの最盛期\n浅場に集まる]
+    B -->|秋 10〜11月 ○| D[水温下降で深場へ移行\n護岸際はまだ釣れる]
+    B -->|冬〜春 △| X[深場に潜り陸から難しい]
+    C --> E{スタイルは？}
+    D --> E
+    E -->|陸っぱり| F[タコテンヤ / タコエギ\n護岸の際を丁寧に探る]
+    E -->|ボート ◎| G[カキ棚周辺を広く探索\n奥浜名湖が実績高い]
+    F --> H[弁天島 / 砂揚げ場 / 中之島シャロー]
+    G --> I[庄内湖 / 和地ボートエリア]
+    H --> J[タコ 🐙]
+    I --> J
+    J --> K[外道]
+    K --> K1[キビレ ◎ タコテンヤに食う]
+    K --> K2[コウイカ ○ 夏〜秋]
+    style A fill:#e0f2fe,stroke:#38bdf8
+    style J fill:#d1fae5,stroke:#34d399
+    style C fill:#d1fae5,stroke:#34d399
+    style G fill:#d1fae5,stroke:#34d399
+    style X fill:#fee2e2,stroke:#f87171
+    style K1 fill:#fef9c3,stroke:#fbbf24
+`}
+/>
 
 ## 浜名湖タコ攻略ガイド：4つの切り口
 

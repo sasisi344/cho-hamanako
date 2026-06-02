@@ -27,6 +27,7 @@ slug: kawahagi
 ---
 
 import BlogCard from "@components/BlogCard.astro";
+import Mermaid from "@components/Mermaid.astro";
 
 カワハギは、その<strong>おちょぼ口</strong>で巧みにエサをかすめ取る、非常に賢いターゲットです。
 
@@ -49,6 +50,33 @@ import BlogCard from "@components/BlogCard.astro";
 水温が20〜25℃になる<strong>夏から秋（7〜11月）</strong>が主なシーズンで、特に9〜10月の秋は産卵に向けてエサを荒食いし、肝（キモ）が大きく膨らむベストシーズンです。
 
 ---
+
+## カワハギを釣るための判断フロー
+
+<Mermaid
+  caption="浜名湖カワハギ：スタイル×季節別判断フロー"
+  code={`
+flowchart TD
+    A([浜名湖でカワハギを狙う]) --> B{スタイルは？}
+    B -->|堤防・陸っぱり| C{季節は？}
+    B -->|ボート釣り ◎| D[年間通じて安定した釣果]
+    C -->|夏〜秋 7〜11月 ◎| E[活性高く餌盗りも激しい\n陸からのチャンス大]
+    C -->|冬〜春 △| X[深場に落ちて難しい\n→ ボート有利]
+    D --> F[水深5〜10mのカキ棚周辺\nアサリ・モエビで誘う]
+    E --> G[T字堤の根元 / テトラ際\n胴突き仕掛け + アサリ]
+    F --> H[カワハギ 🐟\n肝が絶品]
+    G --> H
+    H --> I[外道]
+    I --> I1[ベラ ◎ 彩り豊か]
+    I --> I2[メバル ○]
+    I --> I3[フグ △ 針を取られる]
+    style A fill:#e0f2fe,stroke:#38bdf8
+    style H fill:#d1fae5,stroke:#34d399
+    style D fill:#d1fae5,stroke:#34d399
+    style X fill:#fee2e2,stroke:#f87171
+    style I3 fill:#fee2e2,stroke:#f87171
+`}
+/>
 
 ## 浜名湖カワハギ攻略ガイド：4つの切り口
 

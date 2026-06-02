@@ -27,6 +27,7 @@ slug: eging
 ---
 
 import BlogCard from "@components/BlogCard.astro";
+import Mermaid from "@components/Mermaid.astro";
 
 浜名湖の今切口（外海との合流点）付近は、非常に潮通しが良いエリアです。
 
@@ -57,6 +58,35 @@ import BlogCard from "@components/BlogCard.astro";
 水温が<strong>13〜18℃</strong>になる冬でも底層を狙えば釣果が出るため、エギングの「オフシーズン」の楽しみとして重宝します。
 
 ---
+
+## イカを釣るための判断フロー
+
+<Mermaid
+  caption="浜名湖エギング：ターゲット・シーズン別判断フロー"
+  code={`
+flowchart TD
+    A([浜名湖でイカを狙う]) --> B{ターゲットは？}
+    B -->|アオリイカ| C{季節は？}
+    B -->|コウイカ| D{季節は？}
+    C -->|春 3〜5月 ◎ 大型| E[産卵前の大型狙い\n今切口・表浜名湖サーフ]
+    C -->|秋 9〜11月 ◎ 数釣り| F[新子の数釣り\n表浜名湖全域]
+    C -->|冬〜夏 △| XA[アオリは難しい → コウイカへ]
+    D -->|春〜秋 4〜11月 ◎| G[コウイカはほぼ通年狙える\nボートエギング◎]
+    D -->|冬 △| XB[水温低下で難しい]
+    E --> H[エギ 3.5〜4号 ジャーク]
+    F --> I[エギ 2.5〜3号 軽めのアクション]
+    G --> J[エギ 2.5〜3号 ボトム中心]
+    H --> K[アオリイカ 🦑 + 外道: ヒラメ マゴチ]
+    I --> K
+    J --> L[コウイカ 🦑 + 外道: タコ カサゴ]
+    style A fill:#e0f2fe,stroke:#38bdf8
+    style K fill:#d1fae5,stroke:#34d399
+    style L fill:#d1fae5,stroke:#34d399
+    style E fill:#d1fae5,stroke:#34d399
+    style XA fill:#fee2e2,stroke:#f87171
+    style XB fill:#fee2e2,stroke:#f87171
+`}
+/>
 
 ## 浜名湖エギング攻略ガイド：4つの切り口
 

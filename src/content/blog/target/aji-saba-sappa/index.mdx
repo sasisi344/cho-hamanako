@@ -32,6 +32,7 @@ slug: aji-saba-sappa
 ---
 
 import BlogCard from "@components/BlogCard.astro";
+import Mermaid from "@components/Mermaid.astro";
 
 浜名湖の夏から秋にかけて、堤防が最も賑わうのが<strong>アジ・サバ・サッパ（ママカリ）</strong>などの回遊魚狙いです。
 
@@ -54,6 +55,34 @@ import BlogCard from "@components/BlogCard.astro";
 水温が<strong>20〜25℃</strong>になる8〜10月が群れの密度・サイズともに最高潮のピーク期で、朝マズメには竿を出せばすぐにヒットが連発することも珍しくありません。
 
 ---
+
+## 回遊魚を釣るための判断フロー
+
+<Mermaid
+  caption="浜名湖アジ・サバ・サッパ：サビキ釣り判断フロー"
+  code={`
+flowchart TD
+    A([浜名湖でアジ・サバ・サッパを狙う]) --> B{季節は？}
+    B -->|7〜10月 ◎| C{ポイントは？}
+    B -->|11〜6月 △| X[回遊薄い → アジング or クロダイへ]
+    C -->|堤防・海釣り公園| D[新居弁天T字堤 / 砂揚げ場]
+    C -->|漁港内| E[村櫛漁港 / 網干場]
+    D --> F[サビキ仕掛け + アミエビ撒き餌]
+    E --> F
+    F --> G{時間帯}
+    G -->|朝夕マズメ ◎| H[アジ 🎣 サバ 🎣 サッパ 🎣\n入れ食いチャンス]
+    G -->|昼間 △| I[タナを深めに\n表層より底付近を探る]
+    H --> J[外道]
+    I --> J
+    J --> J1[イワシ ◎ 秋に大群]
+    J --> J2[カマス ○ 晩秋]
+    J --> J3[メバル ○ 夕方以降]
+    style A fill:#e0f2fe,stroke:#38bdf8
+    style H fill:#d1fae5,stroke:#34d399
+    style X fill:#fee2e2,stroke:#f87171
+    style J1 fill:#fef9c3,stroke:#fbbf24
+`}
+/>
 
 ## 浜名湖の回遊魚攻略ガイド：4つの切り口
 

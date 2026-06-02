@@ -4,8 +4,9 @@
 
 1. **本書**（`CLAUDE.md`）
 2. **エージェント詳細**（`.agents/` 配下の SKILL・ワークフロー）
-3. **ワークスペース共通**: 親ディレクトリ `344dev/CLAUDE.md`
-4. **エディタ／CLI グローバル**: `~/.claude/settings.json` など
+3. **Claude Code プロジェクト SKILL**（`.claude/skills/` — 記事作成・画像・文体・タスクの入口）
+4. **ワークスペース共通**: 親ディレクトリ `344dev/CLAUDE.md`
+5. **エディタ／CLI グローバル**: `~/.claude/settings.json` など
 
 ## 役割: プロジェクトアーキテクト兼リード
 
@@ -34,12 +35,30 @@
 - **ワークフロー**: 計画 → 実装 → レビュー → 最適化。
 - **【厳守】ハルシネーション防止**: 記事内の内部リンク（`BlogCard`）やアフィリエイト（`TackleCard`）は、**推測で slug やパスを書かない**。必ず `src/content/blog/` および `src/content/affiliates/` に実在するエントリを確認してから記載する。
 
+## Claude Code プロジェクト SKILL（`.claude/skills/`）
+
+Claude Code セッションでは、下記を用途に応じて読み込む（詳細の正本は `.agents/`）。
+
+| SKILL | 用途 |
+|-------|------|
+| `cho-hamanako-article-creation` | 記事新規・リライト、MDX 配置、BlogCard/TackleCard 検証 |
+| `cho-hamanako-writing-voice` | 読者レベル・温度・深度・文字数目安 |
+| `cho-hamanako-image-generation` | Antigravity-nanobana（`generate-cover.js` / `generate-image.js`） |
+| `cho-hamanako-workspace-tasks` | `.workspace/.task`・`.data-set`・バックログの場所 |
+| `cho-hamanako-article-rewrite` | リライト・forAI 統合・深度・ポイントマトリクス |
+| `cho-hamanako-base-structure` | モジュール構成・深度ティア（通常2,000字+） |
+| `cho-hamanako-data-set` | `.data-set/.index/manifest.json` 経由のナレッジ参照 |
+
 ## サブエージェント
 
 - **Content Agent**: [.agents/content-agent/SKILL.md](.agents/content-agent/SKILL.md)
 
 ## ガイドライン（参照先）
 
+- **データセット参照（記事執筆時）**: [.agents/data-set-access/SKILL.md](.agents/data-set-access/SKILL.md) / 入口 [`.workspace/.data-set/.index/manifest.json`](.workspace/.data-set/.index/manifest.json)
+- **基本記事構成・深度**: [.agents/base-article-structure/SKILL.md](.agents/base-article-structure/SKILL.md)
+- **記事リライト**: [.agents/article-rewrite/SKILL.md](.agents/article-rewrite/SKILL.md)
+- **ポイント比較マトリクス**: [.agents/point-article/point-comparison-matrix.md](.agents/point-article/point-comparison-matrix.md)
 - **共通執筆・Markdown**: [.agents/writing-style/SKILL.md](.agents/writing-style/SKILL.md)
 - **記事タイプ（ペルソナ）**
   - Points: [.agents/point-article/SKILL.md](.agents/point-article/SKILL.md) / SEO監査: [.agents/point-article/seo-audit.md](.agents/point-article/seo-audit.md)

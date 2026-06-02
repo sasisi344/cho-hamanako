@@ -1,0 +1,129 @@
+{
+  "$schema": "cho-hamanako-data-set-manifest",
+  "version": "1.0.0",
+  "updated": "2026-06-02",
+  "base_path": ".workspace/.data-set",
+  "description": "AI向けナレッジベースの入口。記事執筆・リライト時は本ファイルを先に読み、必要なリソースだけを開く。",
+  "read_order": [
+    "manifest.json",
+    "README.md",
+    "task-specific resource from lookup below"
+  ],
+  "lookup_by_task": {
+    "blogcard_slug": [".index/blog-card-index.md", "llms.json"],
+    "tacklecard_id": [".index/tackle-card-list.md", "affiliates/README.md"],
+    "point_facilities": [".index/infrastructure-master.json", "tsuriguten-shoplist.md"],
+    "point_matrix": ["point-matrix.md", "point-article-template.md"],
+    "fish_biology": [".index/biological/{fish}.md"],
+    "season_fishing": [".index/season-fishing/{season}-fishing.md"],
+    "monthly_report": ["water-tempature.md", "llms.json"],
+    "affiliate_research": ["affiliates/{category}/*.md"],
+    "seo_redirect": ["301redirect/301list.md", "301redirect/checklist.md"],
+    "site_structure": [".index/sitemap.md", "sitemap.md", "archive-index.md"]
+  },
+  "resources": [
+    {
+      "id": "blog-card-index",
+      "path": ".index/blog-card-index.md",
+      "format": "markdown-table",
+      "priority": 1,
+      "use_when": ["BlogCard", "internal-link", "slug-verify"],
+      "note": "slug 推測禁止。本表または src/content の frontmatter と照合。"
+    },
+    {
+      "id": "tackle-card-list",
+      "path": ".index/tackle-card-list.md",
+      "format": "markdown-list",
+      "priority": 1,
+      "use_when": ["TackleCard", "affiliate-id"],
+      "note": "形式 category:id。本番は src/content/affiliates/*.yaml"
+    },
+    {
+      "id": "infrastructure-master",
+      "path": ".index/infrastructure-master.json",
+      "format": "json-array",
+      "priority": 1,
+      "use_when": ["points", "parking", "toilet", "facilities", "lat-lng"],
+      "fields": ["id", "name", "area", "lat", "lng", "facilities", "summary"]
+    },
+    {
+      "id": "llms-json",
+      "path": "llms.json",
+      "format": "json",
+      "priority": 2,
+      "use_when": ["article-search", "title-to-path", "shops-list", "water-temperature"],
+      "sections": ["articles[]", "knowledge_base.shops", "knowledge_base.water_temperature"]
+    },
+    {
+      "id": "point-matrix",
+      "path": "point-matrix.md",
+      "format": "markdown-tables",
+      "priority": 1,
+      "use_when": ["point-summary", "method-x-point", "internal-link-matrix"]
+    },
+    {
+      "id": "point-article-template",
+      "path": "point-article-template.md",
+      "format": "markdown",
+      "priority": 2,
+      "use_when": ["points-pillar", "frontmatter", "area-blogcard-list"]
+    },
+    {
+      "id": "tsuriguten-shoplist",
+      "path": "tsuriguten-shoplist.md",
+      "format": "markdown",
+      "priority": 1,
+      "use_when": ["tackle-shop", "hours", "point-access-h3"]
+    },
+    {
+      "id": "biological-index",
+      "path": ".index/biological/",
+      "format": "markdown-per-fish",
+      "priority": 2,
+      "use_when": ["target-fish", "season", "ecology"],
+      "files_example": ["aji.md", "seabass-seasonal.md", "kurodai-spring.md"]
+    },
+    {
+      "id": "season-fishing-index",
+      "path": ".index/season-fishing/",
+      "format": "markdown",
+      "priority": 2,
+      "use_when": ["season-article", "monthly-report"],
+      "files": ["spring-fishing.md", "summer-fishing.md", "autumn-fishing.md", "winter-fishing.md"]
+    },
+    {
+      "id": "affiliates-research",
+      "path": "affiliates/",
+      "format": "markdown",
+      "priority": 3,
+      "use_when": ["tackle-research", "product-memo"],
+      "entry": "affiliates/README.md"
+    },
+    {
+      "id": "fukabori-workspace",
+      "path": "fukabori-workspace/",
+      "format": "markdown",
+      "priority": 3,
+      "use_when": ["fukabori", "point-cluster", "beginner-targets-by-area"]
+    },
+    {
+      "id": "redirect-301",
+      "path": "301redirect/301list.md",
+      "format": "markdown",
+      "priority": 3,
+      "use_when": ["migration", "old-url", "rewrite-seo"]
+    }
+  ],
+  "duplicates_warning": {
+    "blog-card-index": [
+      ".index/blog-card-index.md",
+      "blog-card-index.md"
+    ],
+    "rule": "更新時は .index/ を正とし、ルートの同名ファイルがあれば同期する"
+  },
+  "production_ssot": {
+    "articles": "src/content/blog/**/index.mdx",
+    "affiliates": "src/content/affiliates/**/*.yaml",
+    "rule": "data-set は調査・インデックス。公開事実の最終確認は本番コンテンツ"
+  }
+}

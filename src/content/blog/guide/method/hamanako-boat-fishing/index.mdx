@@ -19,6 +19,7 @@ fishinginfo:
 ---
 
 import TackleCard from "@components/TackleCard.astro";
+import Mermaid from "@components/Mermaid.astro";
 
 「浜名湖って広すぎて、どこを釣ればいいかわからない」——そんな悩みを持つ方に、最もシンプルな答えをお伝えします。
 
@@ -125,6 +126,31 @@ import TackleCard from "@components/TackleCard.astro";
 <a href="/blog/guide/theory/area-strategy-theory/">浜名湖エリア戦略理論ガイド</a>
 
 ---
+
+## 季節×ターゲット選択フロー
+
+<Mermaid
+  caption="浜名湖ボート釣り：季節×ターゲット決定フロー"
+  code={`
+flowchart TD
+    A([浜名湖でボート釣り]) --> B{季節は？}
+    B -->|春 3〜5月| C[バチ抜けシーバス\n稚アユパターン]
+    B -->|夏 6〜9月 ◎| D[チニング トップ全盛\nマゴチ・コウイカも]
+    B -->|秋 10〜11月 ◎| E[コウイカエギング\nワインド ランカーシーバス]
+    B -->|冬 12〜2月| F[カレイ・カワハギ\n深場のミオ筋]
+    C --> G[今切口 / 瀬戸水道\nドリフト釣法]
+    D --> H[庄内湖 / 干潟シャロー\nカキ棚のキワ]
+    E --> I[中浜名湖 航路周辺\nボトムワインド]
+    F --> J[中〜表浜名湖 水深5m以上]
+    G --> K[シーバス 🎣 + クロダイ◎]
+    H --> L[クロダイ・キビレ 🎣 + マゴチ◎]
+    E --> M[コウイカ 🦑 + シーバス◎ カワハギ◎]
+    F --> N[カレイ 🐟 + カワハギ◎ キビレ◎]
+    style A fill:#e0f2fe,stroke:#38bdf8
+    style D fill:#d1fae5,stroke:#34d399
+    style E fill:#d1fae5,stroke:#34d399
+`}
+/>
 
 ## ターゲット別・季節別の攻略法
 

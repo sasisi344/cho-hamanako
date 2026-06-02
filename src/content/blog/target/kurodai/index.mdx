@@ -33,6 +33,7 @@ slug: kurodai
 ---
 
 import BlogCard from "@components/BlogCard.astro";
+import Mermaid from "@components/Mermaid.astro";
 
 浜名湖は、日本屈指の<strong>クロダイ（チヌ）の宝庫</strong>として知られています。
 
@@ -57,6 +58,56 @@ import BlogCard from "@components/BlogCard.astro";
 水温の適応範囲が広く、<strong>10℃〜30℃前後</strong>の幅広い水温に対応できるため、真冬の低水温期でも湖の深場に居着き、一年を通じて狙うことができます。
 
 ---
+
+## クロダイ・キビレを釣るための判断フロー
+
+釣り方の選択肢が多いクロダイ。自分のスタイルと季節からアプローチを選びましょう。
+
+<Mermaid
+  caption="浜名湖クロダイ・キビレ：スタイル別アプローチ決定フロー"
+  code={`
+flowchart TD
+    A([浜名湖でクロダイ・キビレを狙う]) --> B{釣り方スタイルは？}
+
+    B -->|エサ釣り 入門| C[ブッコミ・ウキ釣り]
+    B -->|ルアー チニング| D{時間帯は？}
+    B -->|トップウォーター| E{季節は？}
+    B -->|前打ち・落とし込み| F[テトラ・護岸際を直撃]
+
+    C --> G[アオイソメ / ボケ / コーン\nブッコミ仕掛け or 電気ウキ]
+    G --> H[新居弁天 / 砂揚げ場\n表浜名湖の堤防]
+
+    D -->|昼間| I[ボトムチニング\nクロー系ワーム ズル引き]
+    D -->|夜間 ◎| J[ナイトチニング\n常夜灯・橋脚周辺]
+
+    E -->|夏 6〜9月 ◎| K[チヌトップ炸裂\n朝凪のシャロー]
+    E -->|冬 ❌| L[水温低下でトップは難しい\nボトムゲームへ]
+
+    I --> M[中〜奥浜名湖\nシャローフラット]
+    J --> M
+    K --> N[渚園 / 庄内湖 / 干潟エリア]
+    F --> O[今切口舞阪堤 / 舞阪漁港\n港内の際]
+
+    M --> P[釣果]
+    N --> P
+    H --> P
+    O --> P
+
+    P --> Q[クロダイ 🎣]
+    P --> R[キビレ 🎣 外道扱いだが美味]
+    P --> S[外道]
+    S --> S1[セイゴ シーバス幼魚 ◎]
+    S --> S2[マゴチ △ ボトム中心]
+    S --> S3[ヘダイ △ 見た目は似てる]
+
+    style A fill:#e0f2fe,stroke:#38bdf8
+    style Q fill:#d1fae5,stroke:#34d399
+    style R fill:#d1fae5,stroke:#34d399
+    style K fill:#d1fae5,stroke:#34d399
+    style S1 fill:#fef9c3,stroke:#fbbf24
+    style L fill:#fee2e2,stroke:#f87171
+`}
+/>
 
 ## 浜名湖クロダイ攻略ガイド：5つの切り口
 

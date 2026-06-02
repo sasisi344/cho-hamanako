@@ -27,6 +27,7 @@ slug: karei
 ---
 
 import BlogCard from "@components/BlogCard.astro";
+import Mermaid from "@components/Mermaid.astro";
 
 浜名湖は全国的にも珍しい、<strong>良型カレイの宝庫</strong>として知られています。
 
@@ -53,6 +54,36 @@ import BlogCard from "@components/BlogCard.astro";
 水温が<strong>10〜15℃</strong>になる晩秋から初冬がカレイの最活性期で、産卵前の荒食いが始まります。
 
 ---
+
+## カレイを釣るための判断フロー
+
+<Mermaid
+  caption="浜名湖カレイ：シーズン×エリア別判断フロー"
+  code={`
+flowchart TD
+    A([浜名湖でカレイを狙う]) --> B{季節は？}
+    B -->|12〜2月 ◎ 最盛期| C[産卵前の大型が接岸\n遠投でミオ筋狙い]
+    B -->|3〜4月 ○ 春カレイ| D[水温上昇で浅場に移動\n近投でも釣れる]
+    B -->|5〜11月 △| X[水温高く難しい\n→ キス・ハゼ・マゴチへ]
+    C --> E{エリアは？}
+    D --> E
+    E -->|表浜名湖 ◎| F[砂揚げ場 / 新居弁天\nパークビレッジサーフ]
+    E -->|中〜奥浜名湖| G[雄踏山崎 / 津々崎公園\n瀬戸水道周辺]
+    F --> H[L字天秤 + カレイ針 10〜12号\nイソメ多め掛け 遠投]
+    G --> H
+    H --> I[カレイ 🐟]
+    H --> J[外道]
+    J --> J1[キビレ ◎]
+    J --> J2[ヒラメ 🎰 稀に大物]
+    J --> J3[メゴチ ◎]
+    style A fill:#e0f2fe,stroke:#38bdf8
+    style I fill:#d1fae5,stroke:#34d399
+    style C fill:#d1fae5,stroke:#34d399
+    style X fill:#fee2e2,stroke:#f87171
+    style J2 fill:#fce7f3,stroke:#f472b6
+    style J1 fill:#fef9c3,stroke:#fbbf24
+`}
+/>
 
 ## 浜名湖カレイ攻略：5つの切り口
 

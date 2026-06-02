@@ -17,6 +17,7 @@ fishinginfo:
 ---
 
 import TackleCard from "@components/TackleCard.astro";
+import Mermaid from "@components/Mermaid.astro";
 
 「バコッ！」という激しい音と共に、水面が炸裂する。
 
@@ -131,6 +132,34 @@ import TackleCard from "@components/TackleCard.astro";
 バイトを感じたら、一瞬重みが乗るのを感じてからしっかりフッキングしましょう。
 
 ---
+
+## 7月チヌトップ：当日の実行フロー
+
+<Mermaid
+  caption="浜名湖7月チヌトップ：当日の判断フロー"
+  code={`
+flowchart TD
+    A([7月 チヌトップに出かける]) --> B{天気・風の確認}
+    B -->|無風〜微風 ◎| C[朝マズメ出撃]
+    B -->|強風 ❌| X[トップは難しい\n→ ボトムチニングに切替]
+    C --> D{エントリーポイント}
+    D -->|渚園 / 中之島シャロー| E[ウェーディング\nエイガード必須]
+    D -->|庄内湖 カキ棚周辺| F[ボート / カヤックで沖へ]
+    E --> G[ペンシルベイト 8cm前後\nドッグウォーク 2〜3回 → ロングポーズ]
+    F --> G
+    G --> H{反応は？}
+    H -->|バイト ✅| I[クロダイ・キビレ 🎣\n水柱が立つ瞬間が最高]
+    H -->|無反応| J[移動 or ルアーチェンジ\nポッパー / バジング系も試す]
+    J --> G
+    I --> K[外道も嬉しい]
+    K --> K1[セイゴ ○ 勢いよく飛び出る]
+    K --> K2[マゴチ △ 表層のルアーに食う]
+    style A fill:#e0f2fe,stroke:#38bdf8
+    style I fill:#d1fae5,stroke:#34d399
+    style C fill:#d1fae5,stroke:#34d399
+    style X fill:#fee2e2,stroke:#f87171
+`}
+/>
 
 ## チヌトップで狙うべき黄金のポイント3選
 

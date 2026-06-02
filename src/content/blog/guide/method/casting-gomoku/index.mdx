@@ -47,6 +47,7 @@ slug: casting-gomoku
 ---
 
 import TackleCard from "@components/TackleCard.astro";
+import Mermaid from "@components/Mermaid.astro";
 
 9月の浜名湖は、投げ釣り師にとって「1年で最も贅沢な月」です。
 
@@ -61,6 +62,32 @@ import TackleCard from "@components/TackleCard.astro";
 この記事では、9月の浜名湖で複数の魚種を同時に攻略する「五目釣り」の実践的な方法を、ポイント選びから仕掛け・エサの使い分けまで徹底解説します。
 
 ---
+
+## 9月五目釣り：ターゲット選択フロー
+
+<Mermaid
+  caption="浜名湖9月投げ五目：ターゲット×釣り方フロー"
+  code={`
+flowchart TD
+    A([9月 浜名湖で投げ五目釣り]) --> B{メインターゲットは？}
+    B -->|キス ◎| C[砂浜・遠浅サーフ\n砂揚げ場 / ガーデンパーク]
+    B -->|ハゼ ◎| D[奥浜名湖 河口・汽水域\n都田川 / 気賀 / 三ヶ日]
+    B -->|カワハギ ◎| E[堤防の根回り\n胴突き仕掛け]
+    C --> F[キス天秤 + キス針 6〜7号\n石ゴカイ / ジャリメ]
+    D --> G[テンビン + ハゼ針\n赤イソメ]
+    E --> H[胴突き 2〜3本針\nアサリ / 石ゴカイ]
+    F --> I[キス 🎣]
+    G --> J[ハゼ 🎣]
+    H --> K[カワハギ 🎣]
+    I --> L[外道: メゴチ◎ ヒラメ🎰 カレイ🎰]
+    J --> M[外道: キビレ◎ セイゴ◎]
+    K --> N[外道: ベラ◎ メバル○ フグ△]
+    style A fill:#e0f2fe,stroke:#38bdf8
+    style I fill:#d1fae5,stroke:#34d399
+    style J fill:#d1fae5,stroke:#34d399
+    style K fill:#d1fae5,stroke:#34d399
+`}
+/>
 
 ## 9月に狙う3魚種の特徴と攻略ポイント
 

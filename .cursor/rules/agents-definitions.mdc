@@ -10,3 +10,4 @@ alwaysApply: false
 - 各 `SKILL.md` は既存と同様、YAML frontmatter（`name` / `description`）と見出し構造を踏襲する。
 - ワークフローは [.agents/workflows/](.agents/workflows/) の命名・相互参照と整合させる。
 - 執筆ルールの変更は [.agents/writing-style/SKILL.md](.agents/writing-style/SKILL.md) と矛盾させない。記事タイプ固有のことは各 `*-article/SKILL.md` に閉じる。
+- data-set 構造・manifest の変更は [.agents/data-set-access/SKILL.md](.agents/data-set-access/SKILL.md) と `.workspace/.data-set/.index/manifest.json` を同期する。

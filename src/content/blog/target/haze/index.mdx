@@ -30,6 +30,7 @@ slug: haze
 ---
 
 import BlogCard from "@components/BlogCard.astro";
+import Mermaid from "@components/Mermaid.astro";
 
 浜名湖のハゼは、その<strong>魚影の濃さ</strong>で日本一とも評されます。
 
@@ -50,6 +51,56 @@ import BlogCard from "@components/BlogCard.astro";
 水温が18〜25℃になる<strong>夏から秋（7月〜11月）</strong>が主な釣り期で、特に10〜11月の「落ちハゼ」シーズンは大型が狙えます。
 
 ---
+
+## ハゼを釣るまでの判断フロー
+
+まず自分のスタイルと季節を確認して、最短ルートで釣果に近づきましょう。
+
+<Mermaid
+  caption="浜名湖ハゼ釣り：状況別アプローチ決定フロー"
+  code={`
+flowchart TD
+    A([浜名湖でハゼを釣りたい]) --> B{今の季節は？}
+
+    B -->|6〜11月 ✅| C{スタイルは？}
+    B -->|12〜5月 ❌| X[ハゼは難しい\n→ カレイ or キビレ釣りへ]
+
+    C -->|初心者・ファミリー| D[エサ釣り入門ルート]
+    C -->|ゲーム性重視| E[ハゼクラ ルアールート]
+    C -->|大物を狙いたい| F[落ちハゼ 秋〜11月]
+
+    D --> G[のべ竿 or チョイ投げ\n赤イソメ + ハゼ針 6〜7号]
+    E --> H[1〜2g ジグヘッド\nクランクベイト ボトムノック]
+    F --> I[深場狙い\n流線型ハゼ針 + 細仕掛け]
+
+    G --> J{どこへ行く？}
+    H --> J
+    I --> J
+
+    J -->|奥浜名湖| K[都田川 / 気賀 / 三ヶ日駅\n川が絡む汽水域]
+    J -->|中浜名湖| L[村櫛漁港 / 雄踏山崎\n護岸沿い]
+    J -->|表浜名湖| M[弁天島 / 新川河口\n堤防・干潟際]
+
+    K --> N[釣果]
+    L --> N
+    M --> N
+
+    N --> P[ハゼ 🎣]
+    N --> Q[外道も楽しもう]
+    Q --> Q1[キビレ ◎ 大物注意]
+    Q --> Q2[セイゴ シーバス幼魚 ◎]
+    Q --> Q3[テナガエビ ◎ 初夏限定]
+    Q --> Q4[マハゼ以外のウロハゼ △]
+
+    style A fill:#e0f2fe,stroke:#38bdf8
+    style P fill:#d1fae5,stroke:#34d399
+    style K fill:#d1fae5,stroke:#34d399
+    style Q1 fill:#fef9c3,stroke:#fbbf24
+    style Q2 fill:#fef9c3,stroke:#fbbf24
+    style Q3 fill:#fce7f3,stroke:#f472b6
+    style X fill:#fee2e2,stroke:#f87171
+`}
+/>
 
 ## 浜名湖ハゼ釣り攻略：4つの切り口
 

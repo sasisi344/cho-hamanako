@@ -9,8 +9,9 @@ alwaysApply: true
 
 1. ルートの [CLAUDE.md](CLAUDE.md)
 2. [.agents/](.agents/) 配下の SKILL・ワークフロー・補助ドキュメント
-3. ワークスペース共通: 親 `344dev/CLAUDE.md`
-4. エディタ／CLI のユーザー設定
+3. Claude Code 用 [.claude/skills/](.claude/skills/)（記事・画像・文体・タスクの入口）
+4. ワークスペース共通: 親 `344dev/CLAUDE.md`
+5. エディタ／CLI のユーザー設定
 
 作業開始時は対象が記事執筆なら該当する `.agents/*/SKILL.md`、コードなら `CLAUDE.md` と本ルールを意識する。
 
@@ -53,6 +54,10 @@ alwaysApply: true
 | 季節・月次 | [.agents/season-article/SKILL.md](.agents/season-article/SKILL.md) |
 | ガイド・手法 | [.agents/guide-article/SKILL.md](.agents/guide-article/SKILL.md) |
 | 旅行・グルメ | [.agents/travel-article/SKILL.md](.agents/travel-article/SKILL.md) |
+| データセット | [.agents/data-set-access/SKILL.md](.agents/data-set-access/SKILL.md)（入口: `.workspace/.data-set/.index/manifest.json`） |
+| 基本構成・深度 | [.agents/base-article-structure/SKILL.md](.agents/base-article-structure/SKILL.md) |
+| 記事リライト | [.agents/article-rewrite/SKILL.md](.agents/article-rewrite/SKILL.md) |
+| ポイント比較マトリクス | [.agents/point-article/point-comparison-matrix.md](.agents/point-article/point-comparison-matrix.md) |
 | カテゴリ slug | [.agents/category-slug-rules.md](.agents/category-slug-rules.md) |
 | 構造化データ | [.agents/structured-data-rules.md](.agents/structured-data-rules.md) |
 | 釣りの法律・条例 | [.agents/fishing-laws-hamanako.md](.agents/fishing-laws-hamanako.md) |

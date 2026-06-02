@@ -33,6 +33,7 @@ slug: seabass
 ---
 
 import BlogCard from "@components/BlogCard.astro";
+import Mermaid from "@components/Mermaid.astro";
 
 浜名湖のシーバス釣りは、全国から本気のアングラーが集まる、日本トップクラスの<strong>シーバスフィッシングの聖地</strong>です。
 
@@ -63,6 +64,55 @@ import BlogCard from "@components/BlogCard.astro";
 今切口から入る新鮮な潮が浜名湖全体を循環させ、<strong>常に回遊魚が入ってくる環境</strong>が整っているのです。
 
 ---
+
+## シーバスを釣るための判断フロー
+
+シーズン・時間帯・スタイルから最適なアプローチを選んでください。
+
+<Mermaid
+  caption="浜名湖シーバス：シーズン×スタイル別アプローチ決定フロー"
+  code={`
+flowchart TD
+    A([浜名湖でシーバスを狙う]) --> B{今のシーズンは？}
+
+    B -->|春 2〜4月 ◎| C[バチ抜けパターン]
+    B -->|春〜初夏 4〜6月| D[ハクパターン 稚鮎]
+    B -->|夏〜秋 7〜11月 ◎| E[コノシロ・落ちアユパターン]
+    B -->|冬 12〜1月| F[ランカー狙い ディープ]
+
+    C --> G[シンキングペンシル 表層デッドスロー\n都田川 / 今切口 / 瀬戸水道]
+    D --> H[小型ミノー マッチザベイト\n河川絡みのシャロー]
+    E --> I[大型ミノー / バイブ\n今切口 / 中之島 / 潮目]
+    F --> J[重めジグ / バイブ ボトム付近\n水深のあるミオ筋]
+
+    G --> K{スタイルは？}
+    H --> K
+    I --> K
+    J --> K
+
+    K -->|ウェーディング ◎| L[中之島 / 渚園 / ガーデンパーク\nエイガード必須]
+    K -->|陸っぱり 入門| M[新居弁天T字堤 / 橋脚明暗\n常夜灯周り]
+
+    L --> N{時間帯}
+    M --> N
+
+    N -->|夜〜朝マズメ ◎| O[シーバス 🎣\n60〜80cmクラス期待]
+    N -->|昼間 △| P[難易度高め\nプレッシャー低いポイントを選ぶ]
+
+    O --> Q[外道も楽しもう]
+    Q --> Q1[クロダイ・キビレ ◎]
+    Q --> Q2[マゴチ ◎ 夏]
+    Q --> Q3[ヒラメ 🎰 冬〜春]
+
+    style A fill:#e0f2fe,stroke:#38bdf8
+    style O fill:#d1fae5,stroke:#34d399
+    style C fill:#d1fae5,stroke:#34d399
+    style E fill:#d1fae5,stroke:#34d399
+    style Q1 fill:#fef9c3,stroke:#fbbf24
+    style Q2 fill:#fef9c3,stroke:#fbbf24
+    style Q3 fill:#fce7f3,stroke:#f472b6
+`}
+/>
 
 ## 浜名湖シーバス攻略ガイド：5つの切り口
 

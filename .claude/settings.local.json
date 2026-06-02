@@ -5,7 +5,13 @@
       "Bash(echo '=== __TRACKED_VAR__ ===')",
       "Bash(wc -m C:/Users/sasis/344dev/cho-hamanako/src/content/blog/guide/method/__TRACKED_VAR__/index.mdx)",
       "Bash(echo \"ファイルなし\")",
-      "Bash(pnpm astro *)"
+      "Bash(pnpm astro *)",
+      "Bash(powershell -Command ' *)",
+      "Bash(Select-Object -First 80)",
+      "Bash(grep -A2 ^summary: C:/Users/sasis/344dev/cho-hamanako/src/content/blog/points/oku/__TRACKED_VAR__/index.mdx)",
+      "Bash(pnpm add *)",
+      "Bash(pnpm dev *)",
+      "Bash(grep '^## \\\\|^import' C:/Users/sasis/344dev/cho-hamanako/src/content/blog/target/__TRACKED_VAR__/index.mdx)"
     ]
   }
 }

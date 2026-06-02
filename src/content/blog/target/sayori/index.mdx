@@ -31,6 +31,7 @@ slug: sayori
 ---
 
 import BlogCard from "@components/BlogCard.astro";
+import Mermaid from "@components/Mermaid.astro";
 
 浜名湖のサヨリ釣りは、単なる数釣りではありません。
 
@@ -59,6 +60,37 @@ import BlogCard from "@components/BlogCard.astro";
 <strong>冬〜春（1〜4月）</strong>は「サンマ級」と呼ばれる30cm超えの大型個体が接岸するシーズンで、型狙いの釣りが楽しめます。
 
 ---
+
+## サヨリを釣るための判断フロー
+
+<Mermaid
+  caption="浜名湖サヨリ：シーズン×ポイント別判断フロー"
+  code={`
+flowchart TD
+    A([浜名湖でサヨリを狙う]) --> B{季節は？}
+    B -->|春 3〜5月 ◎| C[産卵前の大型が接岸\n表浜名湖に群れる]
+    B -->|秋 9〜11月 ◎| D[新子が成長し数釣りシーズン\n湾内にも入る]
+    B -->|初夏 6〜7月 ○| E[表浜名湖で散発的に釣れる]
+    B -->|冬 ❌| X[沖に落ちて陸から難しい]
+    C --> F{ポイントは？}
+    D --> F
+    E --> F
+    F -->|堤防先端| G[新居弁天T字堤\n砂揚げ場 先端部]
+    F -->|港湾内| H[村櫛漁港 / 弁天島周辺\n潮通しの良い場所]
+    G --> I[ウキカゴ釣り: 遠投カゴ + サヨリ針\nアミエビ + サビキ代わりにスキンバリ]
+    H --> I
+    I --> J[サヨリ 🐟 細長い銀鱗\n刺身・干物が美味]
+    J --> K[外道]
+    K --> K1[アジ ◎ 混在することが多い]
+    K --> K2[イワシ ◎ 秋に多い]
+    style A fill:#e0f2fe,stroke:#38bdf8
+    style J fill:#d1fae5,stroke:#34d399
+    style C fill:#d1fae5,stroke:#34d399
+    style D fill:#d1fae5,stroke:#34d399
+    style X fill:#fee2e2,stroke:#f87171
+    style K1 fill:#fef9c3,stroke:#fbbf24
+`}
+/>
 
 ## 浜名湖サヨリ攻略：3つの切り口
 

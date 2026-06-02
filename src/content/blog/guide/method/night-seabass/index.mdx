@@ -32,6 +32,7 @@ slug: night-seabass
 ---
 
 import TackleCard from "@components/TackleCard.astro";
+import Mermaid from "@components/Mermaid.astro";
 
 浜名湖の夜、無数に点在する橋脚や堤防の「明暗（めいあん）」には、大型のシーバスがベイトを待ち構えて潜んでいます。
 
@@ -123,6 +124,33 @@ import TackleCard from "@components/TackleCard.astro";
 <TackleCard id="seabass/bassday-range-vib-70es" />
 
 ---
+
+## ナイトシーバス：実行フロー
+
+<Mermaid
+  caption="浜名湖ナイトシーバス：ポイント×アプローチ判断フロー"
+  code={`
+flowchart TD
+    A([夜の浜名湖でシーバスを狙う]) --> B{シーズンは？}
+    B -->|2〜4月 バチ抜け ◎| C[シンペン 細身 表層デッドスロー\n都田川 / 今切口 / 瀬戸水道]
+    B -->|5〜11月 通常 ◎| D{ポイントタイプは？}
+    B -->|冬 1月| E[難しい\nランカー狙いなら深場のミオ筋]
+    D -->|橋脚・常夜灯| F[明暗ラインへドリフト\nシンペン 8〜12cm]
+    D -->|ウェーディング ◎| G[中之島 / 渚園シャロー\nミノー・バイブ]
+    D -->|河川流れ込み| H[都田川 / 浜名湖大橋下\n下げ潮ドリフト]
+    C --> I[シーバス 🎣 バチ抜けパターン]
+    F --> J[シーバス 🎣 橋脚パターン]
+    G --> K[シーバス 🎣 ウェーディングパターン]
+    H --> L[シーバス 🎣 河川パターン]
+    I --> M[外道: クロダイ◎ キビレ◎]
+    J --> M
+    K --> M
+    style A fill:#e0f2fe,stroke:#38bdf8
+    style I fill:#d1fae5,stroke:#34d399
+    style J fill:#d1fae5,stroke:#34d399
+    style K fill:#d1fae5,stroke:#34d399
+`}
+/>
 
 ## 浜名湖ナイトシーバスのおすすめポイント
 

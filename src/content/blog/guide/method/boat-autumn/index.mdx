@@ -45,6 +45,7 @@ slug: boat-autumn
 ---
 
 import TackleCard from "@components/TackleCard.astro";
+import Mermaid from "@components/Mermaid.astro";
 
 10月の浜名湖を「釣れない季節」と思っている方がいたとしたら、それは大きな誤解です。
 
@@ -61,6 +62,31 @@ import TackleCard from "@components/TackleCard.astro";
 ボートならではの機動力を活かして、秋の旬なターゲットを一気に狙い打ちにしましょう。
 
 ---
+
+## 10月ボート釣り：ターゲット選択フロー
+
+<Mermaid
+  caption="浜名湖10月ボート釣り：ターゲット×釣り方フロー"
+  code={`
+flowchart TD
+    A([10月 浜名湖でボート釣り]) --> B{何を狙う？}
+    B -->|コウイカ ◎ 最盛期| C[エギング 2.5〜3号\n航路周辺 ボトム中心]
+    B -->|シーバス・キビレ ◎| D[ワインド釣法\nジグヘッド + シャッドワーム]
+    B -->|マゴチ ○ 終盤| E[ボトムワインド\nシャローフラット]
+    B -->|カレイ 準備 ○| F[投げ釣り 先行スタート\n水深5m以上のミオ筋]
+    C --> G[中浜名湖 航路付近\n水深3〜7m]
+    D --> H[今切口周辺 / 潮目のヨレ]
+    E --> I[ガーデンパーク沖 / 中之島シャロー]
+    F --> J[表浜名湖 砂揚げ場沖]
+    G --> K[コウイカ 🦑 外道: タコ◎ カワハギ◎]
+    H --> L[シーバス 🎣 外道: クロダイ◎ キビレ◎]
+    E --> M[マゴチ 🐟 外道: ヒラメ🎰]
+    style A fill:#e0f2fe,stroke:#38bdf8
+    style K fill:#d1fae5,stroke:#34d399
+    style L fill:#d1fae5,stroke:#34d399
+    style C fill:#d1fae5,stroke:#34d399
+`}
+/>
 
 ## 10月の主役：コウイカエギング
 

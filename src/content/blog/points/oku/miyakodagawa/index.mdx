@@ -59,6 +59,7 @@ slug: miyakodagawa
 ---
 
 import Map from "@components/Map.astro";
+import MapArea from "@components/MapArea.astro";
 import GMapButton from "@components/GMapButton.astro";
 import Callout from "@components/Callout.astro";
 import BlogCard from "@components/BlogCard.astro";
@@ -207,3 +208,53 @@ import BlogCard from "@components/BlogCard.astro";
 <BlogCard slug="isajigawa" />
 
 <BlogCard slug="haze-fukabori" />
+
+---
+
+## 同じエリアの釣りスポット（奥浜名湖）
+
+都田川河口は奥浜名湖釣行の定番拠点。同じ奥浜名湖エリアにある以下のポイントも合わせて回ることで、釣行の幅が大きく広がります。
+
+<MapArea
+  lat={34.780}
+  lng={137.607}
+  zoom={11}
+  points={[
+    {
+      name: "庄内湖エリア",
+      lat: 34.745,
+      lng: 137.635,
+      url: "/blog/points/oku/syounaiko",
+      summary: "世界屈指のチヌトップ聖地。ボート・ウェーディング釣行の核心部。",
+    },
+    {
+      name: "舘山寺（内浦湾）",
+      lat: 34.763757,
+      lng: 137.623776,
+      url: "/blog/points/oku/kanzanji",
+      summary: "観光と釣りが融合した奥浜名湖屈指の実力派ポイント。",
+    },
+    {
+      name: "気賀（プリンス岬）",
+      lat: 34.799207,
+      lng: 137.623744,
+      url: "/blog/points/oku/kiga",
+      summary: "朝ドラロケ地で楽しむハゼ・キビレの数釣り。ファミリー最適。",
+    },
+    {
+      name: "三ヶ日駅周辺",
+      lat: 34.801027,
+      lng: 137.550939,
+      url: "/blog/points/oku/mikkabi-eki",
+      summary: "猪鼻湖最北部。夏〜秋のハゼ・キビレ数釣りに最適な穏やかポイント。",
+    },
+  ]}
+/>
+
+<BlogCard slug="syounaiko" />
+
+<BlogCard slug="kanzanji" />
+
+<BlogCard slug="kiga" />
+
+<BlogCard slug="mikkabi-eki" />

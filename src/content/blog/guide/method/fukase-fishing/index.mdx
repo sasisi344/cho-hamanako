@@ -19,6 +19,7 @@ fishinginfo:
 ---
 
 import TackleCard from "@components/TackleCard.astro";
+import Mermaid from "@components/Mermaid.astro";
 
 浜名湖の堤防で一際大きなタモ網を構え、ウキの動きに集中する釣り人たち。
 
@@ -115,6 +116,33 @@ import TackleCard from "@components/TackleCard.astro";
 この同調を実現するために、「ラインの流れ具合」「ウキの速度」「撒き餌の沈下速度」を計算しながら仕掛けを操作することが求められます。
 
 ---
+
+## フカセ釣り：ターゲット×ポイント選択フロー
+
+<Mermaid
+  caption="浜名湖フカセ釣り：ターゲット×ポイント決定フロー"
+  code={`
+flowchart TD
+    A([浜名湖でフカセ釣り]) --> B{ターゲットは？}
+    B -->|クロダイ・キビレ ◎| C{季節は？}
+    B -->|メジナ ◎| D[冬〜春\n今切口テトラ際]
+    B -->|ヘダイ ○| E[通年\n港内の護岸沿い]
+    C -->|春〜秋 5〜11月| F[浜名湖クロダイの最盛期\n各エリアの堤防]
+    C -->|冬 12〜2月| G[深場狙い\nウキを深めに設定]
+    F --> H[ポイント: 今切口 / 舞阪堤 / 砂揚げ場周辺]
+    G --> H
+    D --> I[0〜2Bのウキ + 沖アミ\n二枚潮に注意しながら流す]
+    E --> I
+    H --> I
+    I --> J{アタリの取り方}
+    J -->|ウキが沈む| K[クロダイ・キビレ・メジナ 🎣]
+    J -->|ウキが横走り| L[シーバス 🎰 まれにヒット]
+    K --> M[外道: ウミタナゴ◎ ボラ△ フグ❌]
+    style A fill:#e0f2fe,stroke:#38bdf8
+    style K fill:#d1fae5,stroke:#34d399
+    style F fill:#d1fae5,stroke:#34d399
+`}
+/>
 
 ## おすすめの攻略ポイント
 

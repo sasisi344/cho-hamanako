@@ -32,6 +32,7 @@ slug: kibire
 ---
 
 import BlogCard from "@components/BlogCard.astro";
+import Mermaid from "@components/Mermaid.astro";
 
 浜名湖において、キビレ（キチヌ）は<strong>一年中釣果が期待できる</strong>非常に優秀なターゲットです。
 
@@ -58,6 +59,37 @@ import BlogCard from "@components/BlogCard.astro";
 水温への適応範囲はクロダイと同様に広く、真冬の低水温期でも深場の温かい場所に居着くため、<strong>一年中狙えるターゲット</strong>として浜名湖でも最も人気のある魚の一つです。
 
 ---
+
+## キビレを釣るための判断フロー
+
+<Mermaid
+  caption="浜名湖キビレ：時間帯×釣り方別判断フロー"
+  code={`
+flowchart TD
+    A([浜名湖でキビレを狙う]) --> B{時間帯と釣り方は？}
+    B -->|昼間 ルアー| C[チニング ボトム系]
+    B -->|夜間 エサ釣り ◎| D[電気ウキ / ブッコミ]
+    B -->|朝マズメ トップ| E{夏 6〜9月？}
+    E -->|はい ◎| F[チヌトップ炸裂\n渚園 / 庄内湖 / 干潟]
+    E -->|それ以外| G[水面への反応薄い\nボトムゲームへ]
+    C --> H[クロー系ワーム 3〜4インチ\nズル引き → ステイ]
+    D --> I[アオイソメ / ボケ\n中〜奥浜名湖の護岸]
+    F --> J[ペンシルベイト / ポッパー\n8〜10cm]
+    H --> K[キビレ 🎣 + 外道]
+    I --> K
+    J --> K
+    K --> L[外道]
+    L --> L1[クロダイ ◎ 同じポイントで混在]
+    L --> L2[セイゴ シーバス ◎]
+    L --> L3[ヘダイ △ 外見が似てる]
+    style A fill:#e0f2fe,stroke:#38bdf8
+    style K fill:#d1fae5,stroke:#34d399
+    style F fill:#d1fae5,stroke:#34d399
+    style D fill:#d1fae5,stroke:#34d399
+    style L1 fill:#fef9c3,stroke:#fbbf24
+    style L2 fill:#fef9c3,stroke:#fbbf24
+`}
+/>
 
 ## 浜名湖キビレ攻略ガイド：4つの切り口
 

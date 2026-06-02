@@ -20,6 +20,7 @@ fishinginfo:
 ---
 
 import TackleCard from "@components/TackleCard.astro";
+import Mermaid from "@components/Mermaid.astro";
 
 浜名湖の夜、橋の上や護岸から赤い光が水面を漂っているのを見たことはありませんか？
 
@@ -82,6 +83,31 @@ import TackleCard from "@components/TackleCard.astro";
 <TackleCard id="common/gentos-headlight-cb-300d" />
 
 ---
+
+## 電気ウキ釣り：ポイント選択フロー
+
+<Mermaid
+  caption="浜名湖電気ウキ釣り：ターゲット×ポイント選択フロー"
+  code={`
+flowchart TD
+    A([夜の浜名湖で電気ウキ釣り]) --> B{ターゲットは？}
+    B -->|キビレ・クロダイ ◎| C{ポイントは？}
+    B -->|シーバス ◎| D[橋脚・常夜灯の明暗ライン]
+    B -->|メバル ○| E[テトラ際・港内の常夜灯下]
+    C -->|中〜奥浜名湖| F[雄踏山崎 / 舘山寺\n電気ウキ定番エリア]
+    C -->|表浜名湖| G[砂揚げ場 / 新居弁天\n常夜灯周り]
+    F --> H[仕掛け: 電気ウキ 3〜5号\nエサ: アオイソメ / ボケ]
+    G --> H
+    D --> I[シンキングペンシルを流す\nドリフト釣法が有効]
+    E --> J[0.5〜1gジグヘッド + ワーム\n表層〜中層ゆっくり]
+    H --> K[キビレ・クロダイ 🎣]
+    I --> L[シーバス 🎣]
+    J --> M[メバル 🎣 + 外道: アジ◎ セイゴ◎]
+    style A fill:#e0f2fe,stroke:#38bdf8
+    style K fill:#d1fae5,stroke:#34d399
+    style L fill:#d1fae5,stroke:#34d399
+`}
+/>
 
 ## 攻略のセオリー：明暗と流れを釣る
 

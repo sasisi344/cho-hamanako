@@ -34,6 +34,7 @@ slug: night-chining
 ---
 
 import TackleCard from "@components/TackleCard.astro";
+import Mermaid from "@components/Mermaid.astro";
 
 浜名湖はチニング（クロダイ・キビレのルアー釣り）発祥の地と言われています。
 
@@ -127,6 +128,33 @@ import TackleCard from "@components/TackleCard.astro";
 夜は魚からシルエットがはっきり見えるため、黒いワームが最も自然に見えると言われています。
 
 ---
+
+## ナイトチニング：実行判断フロー
+
+<Mermaid
+  caption="浜名湖ナイトチニング：場所×リグ選択フロー"
+  code={`
+flowchart TD
+    A([夜の浜名湖でチニング]) --> B{ポイントタイプは？}
+    B -->|護岸・砂地・干潟| C[ボトムズル引きリグ]
+    B -->|テトラ・石積み際| D[テキサスリグ / フリーリグ\n根掛かり回避優先]
+    B -->|シャロー・藻場| E[フリーリグ スローフォール\n夏のチヌトップ後の追い食い]
+    C --> F[クロー系ワーム 3〜4インチ\n2〜7g シンカー]
+    D --> F
+    E --> G[ソフトシェルクラブ系\n軽めシンカー 0.9〜2g]
+    F --> H[アクション: ズル引き → ステイ 5秒\n底の感触を感じながら]
+    G --> H
+    H --> I{アタリ？}
+    I -->|コツ → グン ✅| J[クロダイ・キビレ 🎣\n40〜50cmクラスも]
+    I -->|かじるだけ| K[ワームカラー変更\nより小さいアクションに]
+    K --> H
+    J --> L[外道]
+    L --> L1[マゴチ ◎ ボトム中心]
+    L --> L2[セイゴ ○ 活性高い夜に]
+    style A fill:#e0f2fe,stroke:#38bdf8
+    style J fill:#d1fae5,stroke:#34d399
+`}
+/>
 
 ## 攻略のポイントとアクション
 

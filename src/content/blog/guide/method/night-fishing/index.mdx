@@ -50,6 +50,7 @@ slug: night-fishing
 ---
 
 import TackleCard from "@components/TackleCard.astro";
+import Mermaid from "@components/Mermaid.astro";
 
 夜の浜名湖は、日中とはまったく別の釣り場に変貌します。
 
@@ -111,6 +112,32 @@ import TackleCard from "@components/TackleCard.astro";
 2〜4月の夜間、潮のヨレに溜まるゴカイの産卵個体をシーバスが追いかけ、常夜灯周りで毎晩のようにボイルが発生します。
 
 ---
+
+## 夜釣りスタイル選択フロー
+
+<Mermaid
+  caption="浜名湖夜釣り：スタイル×ターゲット判断フロー"
+  code={`
+flowchart TD
+    A([浜名湖で夜釣りをする]) --> B{釣りスタイルは？}
+    B -->|電気ウキ エサ釣り| C{ターゲットは？}
+    B -->|ルアー シーバス| D[橋脚・常夜灯のドリフト]
+    B -->|ルアー チニング| E[ボトム ズル引き]
+    B -->|ライトゲーム メバル| F[常夜灯下 表〜中層]
+    C -->|キビレ・クロダイ| G[中〜奥浜名湖の護岸\n電気ウキ + アオイソメ]
+    C -->|シーバス| H[橋脚の明暗ライン\n電気ウキ流し]
+    G --> I[キビレ・クロダイ 🎣]
+    H --> J[シーバス 🎣]
+    D --> J
+    E --> K[クロダイ・キビレ 🎣]
+    F --> L[メバル 🎣 + 外道: アジ◎ セイゴ◎]
+    I --> M[外道: セイゴ◎ ヘダイ△]
+    style A fill:#e0f2fe,stroke:#38bdf8
+    style I fill:#d1fae5,stroke:#34d399
+    style J fill:#d1fae5,stroke:#34d399
+    style K fill:#d1fae5,stroke:#34d399
+`}
+/>
 
 ## 代表的な3つの夜釣り攻略法
 

@@ -17,6 +17,7 @@ slug: benten-nagashi-fishing
 ---
 
 import TackleCard from "@components/TackleCard.astro";
+import Mermaid from "@components/Mermaid.astro";
 
 浜名湖と遠州灘をつなぐ唯一の水路、<strong>「今切口（いまぎれぐち）」</strong>。
 
@@ -80,6 +81,31 @@ import TackleCard from "@components/TackleCard.astro";
 道糸を絶妙な角度で送り出し、湖底を「トントントン」と叩くように流す繊細なコントロールが求められる、職人芸的な釣りです。
 
 ---
+
+## 弁天流し釣り：ターゲット×タイミングフロー
+
+<Mermaid
+  caption="浜名湖弁天流し釣り：季節×ターゲット判断フロー"
+  code={`
+flowchart TD
+    A([浜名湖 弁天流し釣りに乗船]) --> B{季節は？}
+    B -->|春 3〜5月 ◎| C[活き餌流し → シーバス・クロダイ]
+    B -->|夏 6〜9月 ◎| D[コウイカ・タコ + マゴチ]
+    B -->|秋 10〜11月 ◎| E[コウイカ最盛期\nシーバスも回遊]
+    B -->|冬 12〜2月 ○| F[カレイ・カワハギ\n深場狙い]
+    C --> G[今切口の激流を利用\nドリフトで広く流す]
+    D --> H[エギ + テンヤ\n航路周辺ボトム]
+    E --> H
+    F --> I[胴突き + 投げ釣り\n水深5〜8mのミオ筋]
+    G --> J[シーバス 🎣 + クロダイ◎]
+    H --> K[コウイカ 🦑 + タコ◎ マゴチ◎]
+    I --> L[カレイ 🐟 + カワハギ◎]
+    style A fill:#e0f2fe,stroke:#38bdf8
+    style J fill:#d1fae5,stroke:#34d399
+    style K fill:#d1fae5,stroke:#34d399
+    style C fill:#d1fae5,stroke:#34d399
+`}
+/>
 
 ## 狙い目とタイミング
 

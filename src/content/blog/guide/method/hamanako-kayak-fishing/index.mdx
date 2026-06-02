@@ -33,6 +33,7 @@ slug: hamanako-kayak-fishing
 ---
 
 import TackleCard from "@components/TackleCard.astro";
+import Mermaid from "@components/Mermaid.astro";
 
 岸からは絶対に届かない、カキ棚の奥やシャローフラットの最深部。
 
@@ -134,6 +135,34 @@ import TackleCard from "@components/TackleCard.astro";
 <a href="/points/pokochan-coast/">ポコちゃん海岸の詳細ガイド</a>
 
 ---
+
+## カヤック釣り：ターゲット×エリア選択フロー
+
+<Mermaid
+  caption="浜名湖カヤックフィッシング：ターゲット別アプローチフロー"
+  code={`
+flowchart TD
+    A([浜名湖でカヤック釣り]) --> B{安全確認 風速3m以下？}
+    B -->|OK ✅| C{ターゲットは？}
+    B -->|強風 ❌| X[出艇中止]
+    C -->|チニング・クロダイ ◎| D[庄内湖 カキ棚周辺\n陸から届かないシャロー]
+    C -->|マゴチ・ヒラメ ◎| E[中浜名湖沖 ミオ筋カケアガリ\nガーデンパーク沖]
+    C -->|シーバス ◎| F[今切口周辺 / 河川絡み\n潮目を流す]
+    C -->|ハゼ・キビレ 入門| G[奥浜名湖 干潟エリア\nアンカーで安定]
+    D --> H[ペンシルベイト / クロー系ワーム\nSUP同様 機動力で広く]
+    E --> I[ボトムワインド\n14〜21g ジグヘッド]
+    F --> J[ミノー / シンペン ドリフト]
+    G --> K[チョイ投げ / テンビン仕掛け]
+    H --> L[クロダイ・キビレ 🎣]
+    I --> M[マゴチ・ヒラメ 🐟]
+    J --> N[シーバス 🎣]
+    K --> O[ハゼ・キビレ 🎣]
+    style A fill:#e0f2fe,stroke:#38bdf8
+    style L fill:#d1fae5,stroke:#34d399
+    style M fill:#d1fae5,stroke:#34d399
+    style X fill:#fee2e2,stroke:#f87171
+`}
+/>
 
 ## ターゲット別攻略法
 

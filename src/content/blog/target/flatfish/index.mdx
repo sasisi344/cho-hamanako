@@ -29,6 +29,7 @@ slug: flatfish
 ---
 
 import BlogCard from "@components/BlogCard.astro";
+import Mermaid from "@components/Mermaid.astro";
 
 浜名湖の広大な砂地や駆け上がりには、夢の高級ターゲット<strong>ヒラメとマゴチ</strong>が潜んでいます。
 
@@ -55,6 +56,36 @@ import BlogCard from "@components/BlogCard.astro";
 マゴチは<strong>水温25〜30℃</strong>の高水温でも活発なため、夏（7〜8月）が「照りゴチ」と呼ばれる最盛期になります。
 
 ---
+
+## ヒラメ・マゴチを釣るための判断フロー
+
+<Mermaid
+  caption="浜名湖ヒラメ・マゴチ：ターゲット別判断フロー"
+  code={`
+flowchart TD
+    A([浜名湖でフラットフィッシュを狙う]) --> B{ターゲットは？}
+    B -->|マゴチ| C{季節は？}
+    B -->|ヒラメ| D{季節は？}
+    C -->|初夏〜夏 5〜8月 ◎| E[ベイトが接岸する時期\nシャローを広く探る]
+    C -->|秋 9〜10月 ○| F[サイズアップ期\n深場も意識]
+    C -->|冬 ❌| XC[マゴチはほぼ釣れない]
+    D -->|秋〜冬 9〜2月 ◎| G[ヒラメの荒食いシーズン\n今切口周辺]
+    D -->|春 3〜5月 ○| H[産卵後の回復個体\nサーフのシャロー]
+    D -->|真夏 ❌| XH[水温が高すぎる]
+    E --> I[ボトムワインド ジグヘッド 14〜21g\nガーデンパーク / 中之島シャロー]
+    F --> I
+    G --> J[泳がせ釣り or ミノー\n今切口 / 表浜名湖サーフ]
+    H --> J
+    I --> K[マゴチ 🐟 + 外道: キビレ セイゴ]
+    J --> L[ヒラメ 🐟 + 外道: マゴチ カレイ]
+    style A fill:#e0f2fe,stroke:#38bdf8
+    style K fill:#d1fae5,stroke:#34d399
+    style L fill:#d1fae5,stroke:#34d399
+    style E fill:#d1fae5,stroke:#34d399
+    style XC fill:#fee2e2,stroke:#f87171
+    style XH fill:#fee2e2,stroke:#f87171
+`}
+/>
 
 ## 浜名湖フラットフィッシュ攻略ガイド：4つの切り口
 

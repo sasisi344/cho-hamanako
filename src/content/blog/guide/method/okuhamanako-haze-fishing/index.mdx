@@ -17,6 +17,7 @@ slug: okuhamanako-haze-fishing
 ---
 
 import TackleCard from "@components/TackleCard.astro";
+import Mermaid from "@components/Mermaid.astro";
 
 秋になると、奥浜名湖（汽水域）はハゼを狙う多くの釣り人で賑わいます。
 
@@ -55,6 +56,36 @@ import TackleCard from "@components/TackleCard.astro";
 - <strong>11月以降（落ちハゼ期）</strong>：寒くなるとハゼは深場（ミオ筋の底など）へ移動します。この時期は「ちょい投げ」や「ボート釣り」で深場を狙うのがコツです。落ちハゼは型が大きく、天ぷらに最高です。
 
 ---
+
+## 奥浜名湖ハゼ釣り：釣り方選択フロー
+
+<Mermaid
+  caption="奥浜名湖ハゼ釣り：状況別釣り方決定フロー"
+  code={`
+flowchart TD
+    A([奥浜名湖でハゼを釣る]) --> B{月は？}
+    B -->|7〜9月 数釣り最盛期| C{釣り方スタイルは？}
+    B -->|10〜11月 落ちハゼ| D[大型狙い 深場へ]
+    B -->|12〜6月 ❌| X[ハゼは少ない → キビレ・クロダイへ]
+    C -->|入門・ファミリー| E[延べ竿ミャク釣り\n護岸際を丁寧に]
+    C -->|ゲーム性重視| F[ハゼクラ クランクベイト\nボトムノックで砂煙]
+    C -->|数を稼ぐ| G[チョイ投げ テンビン仕掛け\n広範囲を探る]
+    D --> H[延べ竿 or 脈釣り\n深場のミオ筋際]
+    E --> I[ポイント: 都田川 / 気賀 / 三ヶ日]
+    F --> I
+    G --> I
+    H --> I
+    I --> J[ハゼ 🎣 数釣り楽しい]
+    J --> K[外道]
+    K --> K1[キビレ ◎ 突然の大物]
+    K --> K2[セイゴ ◎ ハゼクラに食う]
+    K --> K3[テナガエビ ○ 初夏限定]
+    style A fill:#e0f2fe,stroke:#38bdf8
+    style J fill:#d1fae5,stroke:#34d399
+    style C fill:#d1fae5,stroke:#34d399
+    style X fill:#fee2e2,stroke:#f87171
+`}
+/>
 
 ## 仕掛けの選択：状況に合わせて使い分ける
 

@@ -29,6 +29,7 @@ slug: mejina
 ---
 
 import BlogCard from "@components/BlogCard.astro";
+import Mermaid from "@components/Mermaid.astro";
 
 メジナ（グレ）は、その<strong>圧倒的なスピードと力強い突っ込み</strong>が魅力の、海釣りの王道ターゲットです。
 
@@ -53,6 +54,37 @@ import BlogCard from "@components/BlogCard.astro";
 水温が<strong>18〜25℃</strong>になる初夏から秋（5〜11月）が活発に動く時期ですが、冬（12〜2月）は「<strong>寒グレ</strong>」と呼ばれる、脂が最も乗った美味しい時期になります。
 
 ---
+
+## メジナを釣るための判断フロー
+
+<Mermaid
+  caption="浜名湖メジナ：季節×ポイント別判断フロー"
+  code={`
+flowchart TD
+    A([浜名湖でメジナを狙う]) --> B{季節は？}
+    B -->|冬〜春 11〜5月 ◎| C[低水温期が本番\n30cm超の大型期待]
+    B -->|秋 9〜10月 ○| D[秋口から活性UP\n数釣りも楽しい]
+    B -->|真夏 △| X[水温高く難しい\n早朝・深場狙いに限定]
+    C --> E{ポイントは？}
+    D --> E
+    E -->|テトラ帯| F[今切口 / 新居弁天外側\n際を丁寧に探る]
+    E -->|堤防の壁面| G[舞阪堤 / 港内の垂直護岸\nフカセで流し込む]
+    F --> H[ウキフカセ: 0〜G2号ウキ\n沖アミ + 集魚材]
+    G --> H
+    H --> I[メジナ 🐟\n強烈な引きを味わう]
+    H --> J[外道]
+    J --> J1[クロダイ ◎ 同じ仕掛けで狙える]
+    J --> J2[ウミタナゴ ◎ 冬に多い]
+    J --> J3[フグ △ 仕掛けを切る]
+    style A fill:#e0f2fe,stroke:#38bdf8
+    style I fill:#d1fae5,stroke:#34d399
+    style C fill:#d1fae5,stroke:#34d399
+    style J1 fill:#fef9c3,stroke:#fbbf24
+    style J2 fill:#fef9c3,stroke:#fbbf24
+    style X fill:#fee2e2,stroke:#f87171
+    style J3 fill:#fee2e2,stroke:#f87171
+`}
+/>
 
 ## 浜名湖メジナ攻略ガイド：4つの切り口
 

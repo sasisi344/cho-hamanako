@@ -31,6 +31,7 @@ slug: mebaru-kasago
 ---
 
 import BlogCard from "@components/BlogCard.astro";
+import Mermaid from "@components/Mermaid.astro";
 
 浜名湖の護岸や石積み、桟橋周りには、多くの<strong>ロックフィッシュ（根魚）</strong>が生息しています。
 
@@ -59,6 +60,39 @@ import BlogCard from "@components/BlogCard.astro";
 カサゴは年間を通じて安定した釣果が出るため、「寒い時期でも楽しめる」ターゲットとして特に初心者に人気があります。
 
 ---
+
+## メバル・カサゴを釣るための判断フロー
+
+<Mermaid
+  caption="浜名湖ロックフィッシュ：ターゲット×季節別判断フロー"
+  code={`
+flowchart TD
+    A([浜名湖でメバル・カサゴを狙う]) --> B{どちらを狙う？}
+    B -->|カサゴ メイン| C{季節は？}
+    B -->|メバル メイン| D{季節は？}
+    B -->|両方狙いたい| E[冬〜春 穴釣り で両方OK]
+    C -->|冬 12〜2月 ◎| F[テトラ・石積みの穴を直撃\n新居弁天 / 舞阪堤]
+    C -->|秋 10〜11月 ○| G[浅場の根回り\n夕方から活性UP]
+    C -->|夏 △| XC[深場へ移動\n陸から難しい]
+    D -->|冬〜春 12〜4月 ◎| H[夜のメバリング最盛期\n常夜灯 / テトラ際]
+    D -->|夏〜秋 △| XD[水温高く活性低下]
+    F --> I[ブラクリ 8〜10号\n魚の切り身 / イカ短冊]
+    G --> I
+    H --> J[メバリング: 0.5〜1gジグヘッド + ワーム\n表層〜中層をスロー引き]
+    E --> I
+    I --> K[カサゴ 🎣]
+    J --> L[メバル 🎣]
+    K --> M[外道: タコ ◎ ウナギ ○]
+    L --> N[外道: メジナ ○ アジ ○]
+    style A fill:#e0f2fe,stroke:#38bdf8
+    style K fill:#d1fae5,stroke:#34d399
+    style L fill:#d1fae5,stroke:#34d399
+    style F fill:#d1fae5,stroke:#34d399
+    style H fill:#d1fae5,stroke:#34d399
+    style XC fill:#fee2e2,stroke:#f87171
+    style XD fill:#fee2e2,stroke:#f87171
+`}
+/>
 
 ## 浜名湖ロックフィッシュ攻略ガイド：4つの切り口
 

@@ -1,0 +1,65 @@
+---
+interface Props {
+  code: string;
+  caption?: string;
+}
+const { code, caption } = Astro.props;
+const id = `mermaid-${Math.random().toString(36).slice(2, 9)}`;
+---
+
+<figure class="mermaid-wrap not-prose my-8 overflow-x-auto rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-sm">
+  <div class="p-4 sm:p-6">
+    <div id={`${id}-out`} class="mermaid-out flex justify-center min-h-[60px]">
+      <span class="text-slate-400 text-sm animate-pulse">図解を読み込み中...</span>
+    </div>
+    <div id={id} class="mermaid-src hidden" aria-hidden="true">{code}</div>
+  </div>
+  {caption && (
+    <figcaption class="px-4 pb-4 text-center text-xs text-slate-500 dark:text-slate-400">
+      {caption}
+    </figcaption>
+  )}
+</figure>
+
+<script>
+  import mermaid from "mermaid";
+
+  async function renderMermaid() {
+    mermaid.initialize({
+      startOnLoad: false,
+      theme: "default",
+      flowchart: { curve: "basis", useMaxWidth: true },
+      themeVariables: {
+        fontFamily: "'Noto Sans JP', 'Hiragino Sans', sans-serif",
+        fontSize: "14px",
+        primaryColor: "#e0f2fe",
+        primaryTextColor: "#0f172a",
+        primaryBorderColor: "#38bdf8",
+        lineColor: "#64748b",
+        secondaryColor: "#f0fdf4",
+        tertiaryColor: "#fefce8",
+      },
+    });
+
+    const srcs = document.querySelectorAll<HTMLElement>(".mermaid-src");
+    for (const src of srcs) {
+      const outId = `${src.id}-out`;
+      const outEl = document.getElementById(outId);
+      const code = src.textContent?.trim();
+      if (!outEl || !code) continue;
+      try {
+        const { svg } = await mermaid.render(`render-${src.id}`, code);
+        outEl.innerHTML = svg;
+      } catch (e) {
+        outEl.innerHTML = `<span class="text-red-500 text-xs">図解の読み込みに失敗しました</span>`;
+        console.error("Mermaid render error:", e);
+      }
+    }
+  }
+
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", renderMermaid);
+  } else {
+    renderMermaid();
+  }
+</script>
