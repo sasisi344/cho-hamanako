@@ -1,126 +1,188 @@
-import fs from 'fs';
-import path from 'path';
+import fs from "fs"
+import path from "path"
 
-const CONTENT_DIR = path.join(process.cwd(), 'src/content/blog');
-const CONTENT_DIRS = [
-    path.join(process.cwd(), 'src/content/blog'),
-    path.join(process.cwd(), 'src/content/points')
-];
-const HTACCESS_PATH = path.join(process.cwd(), 'public/.htaccess');
+const CONTENT_DIR = path.join(process.cwd(), "src/content/blog")
+const HTACCESS_PATH = path.join(process.cwd(), "public/.htaccess")
+
+const TRAILING_SLASH_RULES = `
+  # Legacy wrong path: /blog/points/* -> /points/*
+  RewriteRule ^blog/points/(.*)$ /points/$1/ [R=301,L]
+
+  # Enforce trailing slash (single hop; must run after all path redirects)
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_URI} !/$
+  RewriteCond %{REQUEST_URI} !\\.[a-zA-Z0-9]{1,5}$
+  RewriteRule ^ %{REQUEST_URI}/ [R=301,L]
+`.trim()
 
 function getAllFiles(dirPath, arrayOfFiles = []) {
-    if (!fs.existsSync(dirPath)) return arrayOfFiles;
-    const files = fs.readdirSync(dirPath);
-    files.forEach(function (file) {
-        if (fs.statSync(dirPath + "/" + file).isDirectory()) {
-            arrayOfFiles = getAllFiles(dirPath + "/" + file, arrayOfFiles);
-        } else {
-            if (file.endsWith('.md') || file.endsWith('.mdx')) {
-                arrayOfFiles.push(path.join(dirPath, file));
-            }
-        }
-    });
-    return arrayOfFiles;
+  if (!fs.existsSync(dirPath)) return arrayOfFiles
+  for (const file of fs.readdirSync(dirPath)) {
+    const full = path.join(dirPath, file)
+    if (fs.statSync(full).isDirectory()) {
+      getAllFiles(full, arrayOfFiles)
+    } else if (/\.mdx?$/.test(file)) {
+      arrayOfFiles.push(full)
+    }
+  }
+  return arrayOfFiles
 }
 
-console.log('Scanning content for wpSlug...');
+function parseFrontmatter(content) {
+  const match = content.match(/^---\r?\n([\s\S]*?)\r?\n---/)
+  return match ? match[1] : ""
+}
 
-let allFiles = [];
-CONTENT_DIRS.forEach(dir => {
-    allFiles = allFiles.concat(getAllFiles(dir));
-});
+function getField(frontmatter, field) {
+  const scalar = frontmatter.match(
+    new RegExp(`^${field}:\\s*["']([^"'\\n\\r]+)["']`, "m"),
+  )
+  if (scalar) return scalar[1].trim()
 
-let redirectRules = [];
+  const plain = frontmatter.match(new RegExp(`^${field}:\\s*(\\S+)`, "m"))
+  if (plain) {
+    const value = plain[1].trim()
+    if (value === ">-" || value === ">" || value === "|") return null
+    return value
+  }
+
+  return null
+}
+
+function getWpSlug(frontmatter) {
+  const folded = frontmatter.match(/^wpSlug:\s*(?:>-|>\||\|)\s*\n\s*(.+)$/m)
+  if (folded) {
+    const value = folded[1].trim()
+    return value || null
+  }
+  return getField(frontmatter, "wpSlug")
+}
+
+function getCanonicalPath(relativePath, category) {
+  let rel = relativePath.replace(/\.mdx?$/, "")
+  if (rel.endsWith("/index")) rel = rel.slice(0, -6)
+
+  if (category === "points") {
+    return `/points/${rel.replace(/^points\//, "")}/`
+  }
+  return `/blog/${rel}/`
+}
+
+function normalizeSourcePath(raw) {
+  if (!raw) return null
+  let value = raw.trim()
+  if (value.startsWith("http")) {
+    try {
+      value = new URL(value).pathname
+    } catch {
+      return null
+    }
+  }
+  if (!value.startsWith("/")) value = `/${value}`
+  if (!value.endsWith("/")) value = `${value}/`
+  return value
+}
+
+function toRewritePattern(pathname) {
+  let p = pathname
+  if (p.startsWith("/")) p = p.slice(1)
+  if (p.endsWith("/")) p = p.slice(0, -1)
+  try {
+    p = decodeURIComponent(p)
+  } catch {
+    /* keep encoded */
+  }
+  return p.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")
+}
+
+function addRule(rules, seen, sourcePath, dest) {
+  const normalized = normalizeSourcePath(sourcePath)
+  if (!normalized || normalized === dest) return
+  if (normalized.includes(">-") || normalized.includes(">")) return
+
+  const key = `${normalized} -> ${dest}`
+  if (seen.has(key)) return
+  seen.add(key)
+
+  const pattern = toRewritePattern(normalized)
+  rules.push(`  RewriteRule ^${pattern}/?$ ${dest} [R=301,L]`)
+}
+
+console.log("Scanning content for redirects...")
+
+const allFiles = getAllFiles(CONTENT_DIR)
+const redirectRules = []
+const seen = new Set()
 
 for (const filePath of allFiles) {
-    const content = fs.readFileSync(filePath, 'utf8');
+  const content = fs.readFileSync(filePath, "utf8")
+  const frontmatter = parseFrontmatter(content)
+  if (!frontmatter) continue
 
-    const match = content.match(/^---\r?\n([\s\S]*?)\r?\n---/);
-    if (match) {
-        const frontmatter = match[1];
+  const category = getField(frontmatter, "category") ?? ""
+  const wpSlug = getWpSlug(frontmatter)
+  const shortSlug = getField(frontmatter, "slug")
 
-        // Match wpSlug or wpslug
-        const slMatch = frontmatter.match(/^wp[sS]lug:\s*["']?([^"'\r\n]+)["']?/m);
+  const relativePath = path
+    .relative(CONTENT_DIR, filePath)
+    .split(path.sep)
+    .join("/")
+  const dest = getCanonicalPath(relativePath, category)
 
-        if (slMatch) {
-            let rawSlug = slMatch[1].trim();
-
-            // Extract path if it's a full URL
-            let oldPath = '';
-            if (rawSlug.startsWith('http')) {
-                try {
-                    const url = new URL(rawSlug);
-                    oldPath = url.pathname;
-                } catch (e) {
-                    oldPath = rawSlug;
-                }
-            } else {
-                oldPath = rawSlug;
-            }
-
-            // Decode URL-encoded characters (like %e4...)
-            let decodedPath;
-            try {
-                decodedPath = decodeURIComponent(oldPath);
-            } catch (e) {
-                decodedPath = oldPath;
-            }
-
-            // Remove leading/trailing slashes for RewriteRule regex
-            let matchPath = decodedPath;
-            if (matchPath.startsWith('/')) matchPath = matchPath.substring(1);
-            if (matchPath.endsWith('/')) matchPath = matchPath.slice(0, -1);
-            
-            // Construct new path
-            // Find which content dir this file belongs to
-            const parentDir = CONTENT_DIRS.find(dir => filePath.startsWith(dir));
-            let relativePath = path.relative(parentDir, filePath).split(path.sep).join('/');
-            
-            relativePath = relativePath.replace(/\.mdx?$/, '');
-            if (relativePath.endsWith('/index')) relativePath = relativePath.slice(0, -6);
-
-            const categoryMatch = frontmatter.match(/^category:\s*["']?([^"'\n\r]+)["']?/m);
-            let newPath = '';
-            
-            if (parentDir.endsWith('points')) {
-                newPath = `/points/${relativePath}`;
-            } else {
-                newPath = `/blog/${relativePath}`;
-            }
-
-            // Escape special regex characters in decodedPath (simplified)
-            const escapedMatchPath = matchPath.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
-            
-            const dest = newPath.endsWith('/') ? newPath : `${newPath}/`;
-            redirectRules.push(`  RewriteRule ^${escapedMatchPath}/?$ ${dest} [R=301,L]`);
-            console.log(`Found: ${matchPath} -> ${newPath}`);
-        }
+  if (wpSlug) {
+    if (wpSlug.startsWith("http") || wpSlug.includes("/")) {
+      addRule(redirectRules, seen, wpSlug, dest)
+    } else {
+      addRule(redirectRules, seen, `/${wpSlug}/`, dest)
+      addRule(redirectRules, seen, `/blog/${wpSlug}/`, dest)
     }
+  }
+
+  if (shortSlug) {
+    addRule(redirectRules, seen, `/blog/${shortSlug}/`, dest)
+    const tail = dest.split("/").filter(Boolean).at(-1)
+    if (shortSlug !== tail) {
+      addRule(redirectRules, seen, `/${shortSlug}/`, dest)
+    }
+  }
 }
 
+const markerBegin = "# BEGIN GENERATED REDIRECTS"
+const markerEnd = "# END GENERATED REDIRECTS"
+const generatedBlock = [
+  markerBegin,
+  ...redirectRules,
+  TRAILING_SLASH_RULES,
+  markerEnd,
+].join("\n")
+
 if (fs.existsSync(HTACCESS_PATH)) {
-    let htaccess = fs.readFileSync(HTACCESS_PATH, 'utf8');
-    const markerBegin = '# BEGIN GENERATED REDIRECTS';
-    const markerEnd = '# END GENERATED REDIRECTS';
-    
-    const newContent = `${markerBegin}\n${redirectRules.join('\n')}\n  ${markerEnd}`;
-    
-    if (htaccess.includes(markerBegin) && htaccess.includes(markerEnd)) {
-        const regex = new RegExp(`${markerBegin}[\\s\\S]*?${markerEnd}`, 'g');
-        htaccess = htaccess.replace(regex, newContent);
-    } else {
-        // Append inside mod_rewrite block if exists
-        if (htaccess.includes('RewriteEngine On')) {
-            htaccess = htaccess.replace('RewriteEngine On', `RewriteEngine On\n\n  ${newContent}`);
-        } else {
-            htaccess += `\n\n<IfModule mod_rewrite.c>\n  RewriteEngine On\n  ${newContent}\n</IfModule>\n`;
-        }
-    }
-    
-    fs.writeFileSync(HTACCESS_PATH, htaccess);
-    console.log(`\nSuccessfully updated ${HTACCESS_PATH} with ${redirectRules.length} rules.`);
+  let htaccess = fs.readFileSync(HTACCESS_PATH, "utf8")
+
+  // Remove legacy trailing-slash block if duplicated outside generated section
+  htaccess = htaccess.replace(
+    /\n\s*# Astro pages: enforce trailing slash[\s\S]*?RewriteRule \^ %\{REQUEST_URI\}\/ \[R=301,L\]\n?/,
+    "\n",
+  )
+
+  if (htaccess.includes(markerBegin) && htaccess.includes(markerEnd)) {
+    htaccess = htaccess.replace(
+      new RegExp(`${markerBegin}[\\s\\S]*?${markerEnd}`, "g"),
+      generatedBlock,
+    )
+  } else if (htaccess.includes("RewriteEngine On")) {
+    htaccess = htaccess.replace(
+      "RewriteEngine On",
+      `RewriteEngine On\n\n  ${generatedBlock}`,
+    )
+  } else {
+    htaccess += `\n\n<IfModule mod_rewrite.c>\n  RewriteEngine On\n  ${generatedBlock}\n</IfModule>\n`
+  }
+
+  fs.writeFileSync(HTACCESS_PATH, htaccess)
+  console.log(`Updated ${HTACCESS_PATH} with ${redirectRules.length} redirect rules.`)
 } else {
-    const htaccessContent = `<IfModule mod_rewrite.c>\n  RewriteEngine On\n  # BEGIN GENERATED REDIRECTS\n${redirectRules.join('\n')}\n  # END GENERATED REDIRECTS\n</IfModule>\n`;
-    fs.writeFileSync(HTACCESS_PATH, htaccessContent);
-    console.log(`\nCreated ${HTACCESS_PATH} with ${redirectRules.length} rules.`);
+  const htaccessContent = `<IfModule mod_rewrite.c>\n  RewriteEngine On\n  ${generatedBlock}\n</IfModule>\n`
+  fs.writeFileSync(HTACCESS_PATH, htaccessContent)
+  console.log(`Created ${HTACCESS_PATH} with ${redirectRules.length} redirect rules.`)
 }
