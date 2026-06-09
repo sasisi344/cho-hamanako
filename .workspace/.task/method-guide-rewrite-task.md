@@ -114,13 +114,13 @@
 |----|-----|------|------|
 | 1 | S0-1 | GSC 更新 → `query-compare-priority.md` 差し替え | [ ] |
 | 2 | A-1 | `family-car-fishing-points` へ旧「車横付け」URL の 301 | [ ] |
-| 3 | B-1 | `hamana-depth-map-guide` 追記（水深図・エリア別タナ・内部リンク）＋旧水深 URL の 301 | [ ] |
+| 3 | B-1 | `hamana-depth-map-guide` 追記（水深図・エリア別タナ・内部リンク）＋旧水深 URL の 301 | [x] 本文完了 2026-06-09 / 301 は S0 後 |
 
 **S0 完了後に並べ替え**（現 GSC では参考程度）:
 
 | 候補 | 旧ラベル | メモ |
 |------|----------|------|
-| `guide/theory/water-temperature-*` 他 | — | 薄い理論のうち imp の高い順 |
+| `guide/theory` 10本 | — | **2026-06-09 一括リライト完了**（各 2,000〜2,500 字）|
 | `guide/method/anazuri` | 旧 P0 | リライト済→再点検 |
 | `guide/method/ajing-guide` | 旧 P0 | 監視 |
 | `guide/beginner/hamanako-fishing-rules-and-manners` | 旧 P1 | 本文済 |
@@ -133,20 +133,20 @@
 
 `ajing-guide` `anazuri` `winter-lightgame` `casting-gomoku` `boat-autumn` `night-chining` `night-fishing` `night-seabass` `night-float-fishing` `okuhamanako-haze-fishing` `hamanako-boat-fishing` `hamanako-kayak-fishing` `hamanako-sup-fishing` `benten-nagashi-fishing` `cho-nage-fishing` `myaku-hechi-fishing` `fukase-fishing` `chinutop-july` `hamanako-kurodai-topwater` — すべて **完了**
 
-### `guide/theory` — 🔴 未リライト（優先）
+### `guide/theory` — ⚪ 一括完了（2026-06-09）
 
-| スラッグ | 状態 | おおよそ文字数 |
-|----------|------|----------------|
-| `guide/theory/nokkomi-season` | [ ] | ~1,100 |
-| `guide/theory/area-strategy-theory` | [ ] | ~1,100 |
-| `guide/theory/mazume-logic` | [ ] | ~1,150 |
-| `guide/theory/day-vs-night` | [ ] | ~1,170 |
-| `guide/theory/tide-table-logic` | [ ] | ~1,190 |
-| `guide/theory/imagiri-current-logic` | [ ] | ~1,300 |
-| `guide/theory/tidal-timing-logic` | [ ] | ~1,320 |
-| `guide/theory/water-temperature-logic` | [ ] | ~1,340 |
-| `guide/theory/water-temperature-checking` | [ ] | ~1,600 |
-| `guide/theory/seasonal-patterns-guide` | [ ] | ~1,900 |
+| スラッグ | 状態 |
+|----------|------|
+| `guide/theory/nokkomi-season` | [x] 2026-06-09 |
+| `guide/theory/area-strategy-theory` | [x] 2026-06-09 |
+| `guide/theory/mazume-logic` | [x] 2026-06-09 |
+| `guide/theory/day-vs-night` | [x] 2026-06-09 |
+| `guide/theory/tide-table-logic` | [x] 2026-06-09 |
+| `guide/theory/imagiri-current-logic` | [x] 2026-06-09 |
+| `guide/theory/tidal-timing-logic` | [x] 2026-06-09 |
+| `guide/theory/water-temperature-logic` | [x] 2026-06-09 |
+| `guide/theory/water-temperature-checking` | [x] 2026-06-09 |
+| `guide/theory/seasonal-patterns-guide` | [x] 2026-06-09 |
 
 **リライトタスク未掲載だが同フォルダに存在**（必要なら表に追加）:  
 `autumn-fall-pattern` `baitfish-tracking` `moon-phase-pattern` `wind-direction-fish` `dissolved-oxygen` `structure-theory` `barometric-pressure-fishing` `night-fishing-light` `turbidity-water-color` `feeding-switch` など（おおむね 2,900〜3,300 字 — **method よりマシだが SKILL 下限付近**）
@@ -163,7 +163,7 @@
 | `guide/logistics/parking-toilet-guide` | 🟡 | |
 | `guide/logistics/bait-vending-machines` | 🟡 | |
 | `guide/logistics/rental-boat-guide` | 🟡 | |
-| `guide/points/hamana-depth-map-guide` | 🔴 | 薄い・301 要 |
+| `guide/points/hamana-depth-map-guide` | ⚪ 本文完了 2026-06-09 | 301 は S0 後 |
 
 ### その他
 
