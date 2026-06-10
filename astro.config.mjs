@@ -35,6 +35,10 @@ export default defineConfig({
     "/2024/09/9月の浜名湖でおすすめの釣りポイント6選/": "/blog/season/monthly/9-month/",
     "/hamanako-seasonal-fishing-patterns-guide/": "/blog/season/seasonal-patterns-guide/",
     "/hamanako-fishing-calendar-guide/": "/blog/season/yearly-fishing-calendar/",
+    "/2024/09/家族で安心！浜名湖で車横付け可能な釣り場と設/": "/blog/guide/beginner/family-car-fishing-points/",
+    "/2024/11/釣りにめっちゃ役立つ！浜名湖全域の水深を知る/": "/blog/guide/points/hamana-depth-map-guide/",
+    "/blog/anazuri/": "/blog/guide/method/anazuri/",
+    "/blog/hamana-depth-map-guide/": "/blog/guide/points/hamana-depth-map-guide/",
   },
   integrations: [
     mdx({

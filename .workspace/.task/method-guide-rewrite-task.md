@@ -13,8 +13,8 @@
 | `guide/method/*`（17本） | **本文リライト済** | commit `5645dc7`（2026-05-24）で全件更新。文字数はおおむね 2,400〜3,500 字 |
 | `guide/beginner`・`logistics` | **一部済・一部要インフラ** | `b9aac6c` / `5645dc7` 前後。`hamanako-fishing-rules-and-manners` は約 7,800 字・`upDate` 2026-05-26 |
 | `guide/theory/*` | **未着手に近い** | theory 配下に `rewrite` コミットなし。多くが **1,100〜1,900 字**で SKILL 目安未満 |
-| `guide/points/hamana-depth-map-guide` | **薄い＋旧URL流入** | 約 1,800 字。GSC では旧 WP URL が主。301 未設定 |
-| GSC 優先表（§5） | **要再取得** | `query-compare-priority.md` は **2026-04-07 時点の28日**。季節変動・5月リライト後の効果が未反映 |
+| `guide/points/hamana-depth-map-guide` | **本文済・301済** | 2026-06-09 に約3,724字へ追記。旧WP URL・旧Astroスラッグとも301設定済（2026-06-10） |
+| GSC 優先表（§5） | **一部更新・本格再取得は保留** | `query-compare-priority.md` 自体は **2026-04-07 時点の28日**のまま。`.workspace/access-data/2026/w24/`（1週間・ページ単位）で個別ページの現況は確認済 |
 | `forAI` ブロック | **リポジトリに残存なし** | リライト後は本文に統合済みとみなす |
 
 **`.workspace/.task/task.md` との関係**: `task.md` の `guide [x] method` は **5月一括リライト完了**と整合。`theory [x]` は **移行完了**の意味で、**厚みリライトは未完了**と解釈する。
@@ -47,9 +47,10 @@
 
 | 旧URLの例（GSC） | 正本 slug | 状態 |
 |------------------|-------------|------|
-| `/2024/09/家族で安心！…車横付け…/` | `guide/beginner/family-car-fishing-points` | 🔴 301 未設定（本文は ~2,600 字で済） |
-| `/2024/11/釣りにめっちゃ役立つ！…水深…/` | `guide/points/hamana-depth-map-guide` | 🔴 301 未設定 |
-| `/blog/anazuri` 等（要確認） | `guide/method/anazuri` | 🟡 slug・canonical 要確認後に 301 |
+| `/2024/09/家族で安心！…車横付け…/` | `guide/beginner/family-car-fishing-points` | ⚪ 301 設定済（2026-06-10） |
+| `/2024/11/釣りにめっちゃ役立つ！…水深…/` | `guide/points/hamana-depth-map-guide` | ⚪ 301 設定済（2026-06-10） |
+| `/blog/anazuri/`（旧Astroスラッグ・w24で imp12/click2 確認） | `guide/method/anazuri` | ⚪ 301 設定済（2026-06-10） |
+| `/blog/hamana-depth-map-guide/`（旧Astroスラッグ・w24で imp13/click2 確認） | `guide/points/hamana-depth-map-guide` | ⚪ 301 設定済（2026-06-10） |
 | `/2025/10/【初心者必見】…ルール…/` | `guide/beginner/hamanako-fishing-rules-and-manners` | ⚪ 301 済 |
 | `/2024/11/浜名湖周辺にある釣具店…/` | `guide/logistics/shops` | ⚪ 301 済 |
 
@@ -86,9 +87,9 @@
 
 | 優先 | パス | 2026-06 の扱い |
 |------|------|----------------|
-| 🔴 | `guide/theory/**` | **主戦場**（未リライト） |
-| 🔴 | `guide/points/hamana-depth-map-guide` | 薄い正本＋301 |
-| 🟡 | `guide/beginner/**`・`guide/logistics/**` | 追記・GSC 次第。family-car は 301 優先 |
+| 🟢 | `guide/theory/**` | 2026-06-09 一括リライト完了。GSC上位5本の再点検待ち（S0-1本格版後） |
+| ⚪ | `guide/points/hamana-depth-map-guide` | 本文・301とも完了（2026-06-09/10） |
+| 🟡 | `guide/beginner/**`・`guide/logistics/**` | 追記・GSC 次第。family-car は本文済・301完了 |
 | 🟢 | `guide/method/**` | 完了。個別は S0 後の微修正のみ |
 | 別枠 | `season/monthly/*` | `task.md` / 季節記事タスク |
 | 除外 | `category: points` ピラー | `seo-audit.md` |
@@ -112,9 +113,12 @@
 
 | 順 | ID | 作業 | 完了 |
 |----|-----|------|------|
-| 1 | S0-1 | GSC 更新 → `query-compare-priority.md` 差し替え | [ ] |
-| 2 | A-1 | `family-car-fishing-points` へ旧「車横付け」URL の 301 | [ ] |
-| 3 | B-1 | `hamana-depth-map-guide` 追記（水深図・エリア別タナ・内部リンク）＋旧水深 URL の 301 | [x] 本文完了 2026-06-09 / 301 は S0 後 |
+| 1 | S0-1 | GSC 更新 → `query-compare-priority.md` 差し替え | [ ]（下記メモ参照。28日クエリ単位の再比較は保留） |
+| 2 | A-1 | `family-car-fishing-points` へ旧「車横付け」URL の 301 | [x] 2026-06-10 |
+| 3 | B-1 | `hamana-depth-map-guide` 追記（水深図・エリア別タナ・内部リンク）＋旧水深 URL の 301 | [x] 本文完了 2026-06-09 / 301 も2026-06-10完了 |
+| 4 | A-2（新規） | `/blog/anazuri/`・`/blog/hamana-depth-map-guide/`（旧Astroスラッグ）の 301 | [x] 2026-06-10（w24データで404流入を確認し追加） |
+
+**S0-1メモ**: `query-compare-priority.md`が前提とする「WP約92日 vs Astro28日・クエリ単位」の再比較は、`.workspace/.task/query-datacheck/compare_gsc_queries.py`が特定の2ファイル（クエリ単位CSV）を読む構成のため、`.workspace/access-data/2026/w24/`のページ単位・GA4結合・1週間データはそのままでは流用不可。今回はw24データで `/blog/anazuri/` `/blog/hamana-depth-map-guide/` の404流入（imp12/click2、imp13/click2）を確認し、A-2の301根拠とした。本格的な28日・クエリ単位の再集計は、GSCから新規にクエリ単位CSVを再エクスポートするまで保留。
 
 **S0 完了後に並べ替え**（現 GSC では参考程度）:
 
