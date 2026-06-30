@@ -2,7 +2,6 @@
 import { getCollection } from "astro:content"
 import PageLayout from "@layouts/PageLayout.astro"
 import ArrowCard from "@components/ArrowCard"
-import { SITE } from "@consts"
 import { blogPostHref, withTrailingSlash } from "@lib/paths"
 import HamanakoZoomHero from "@components/HamanakoZoomHero.astro"
 import { Image } from "astro:assets"
@@ -41,7 +40,7 @@ const areas = [
 ]
 ---
 
-<PageLayout title="浜名湖釣りガイド" description={SITE.DESCRIPTION} hasAds={true}>
+<PageLayout title="浜名湖釣りガイド｜ポイント・水深図・ライブカメラ" description="浜名湖の釣りポイント（表・中・奥）、ターゲット魚種の攻略、水深図・ライブカメラなど実用ツールを網羅。初心者のサビキからベテラン向けの深掘りまで、釣れる情報を発信します。" hasAds={true}>
   
   <HamanakoZoomHero />
 

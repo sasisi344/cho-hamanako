@@ -3,7 +3,7 @@ import type { Site, Page, Links, Socials } from "@types"
 // Global
 export const SITE: Site = {
   TITLE: "釣！浜名湖",
-  DESCRIPTION: "浜名湖の釣りポイント、仕掛け、ターゲット魚種、周辺情報を網羅した総合フィッシングガイド。初心者からベテランまで、「釣れる」情報を発信します。",
+  DESCRIPTION: "浜名湖の釣りポイント・仕掛け・ターゲット魚種を網羅した総合ガイド。表・中・奥浜名湖のポイント解説、水深図、ライブカメラ、初心者向けサビキから上級者の攻略まで。",
   AUTHOR: "さしし",
 }
 
