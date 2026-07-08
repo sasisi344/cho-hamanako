@@ -149,6 +149,9 @@ kanko-hub = ターミナル（全コンテンツへの誘導）
 
 ## 6. 進捗チェックリスト
 
-- [ ] kanko-hub 追記3点（渚園BlogCard / みかん補足テキスト / 電車4選BlogCard）
-- [ ] 優先度A「うなぎ×釣り旅」記事の新規作成
-- [ ] 優先度B「キャンプ×釣り」記事（渚園設備情報確認後）
+- [x] kanko-hub 追記3点（渚園BlogCard / みかん補足テキスト / 電車4選BlogCard） ← 既存記事確認済み（すでに対応済み）、うなぎBlogCard追加 2026-07-08
+- [x] 優先度A「うなぎ×釣り旅」記事の新規作成 → `travel/hamanako-unagi-fishing-trip` 2026-07-08
+- [x] 優先度B「キャンプ×釣り」記事 → `travel/hamanako-camp-fishing` 2026-07-08（nagisaenと役割分担済み）
+- [x] 優先度C補足：新居関所（araibenten記事に節追加） / 気賀関所（kiga記事に節追加） 2026-07-08
+- [x] 猪鼻湖 釣り KW強化：lakesideway にエリア全体見取り図節＋4スポットBlogCard / mikkabi-ekiに lakesideway への誘導追加 2026-07-08
+- [~] 中田島砂丘 釣り：浜名湖外縁のため対応スキップ（方針通り）

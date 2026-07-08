@@ -1,12 +1,6 @@
 # 釣！浜名湖のWeeklytask
 
-w28
-
-Act（次週のToDo・優先度つき）
-- [ ] `/points/wading-points/`（🟢CTR39.1%・順位4.17）へ内部リンクを集中させ、上位表示を維持・強化
-- [ ] `/points/amihosiba/`（表示156・CTR3.8%）はリライト/内容刷新を検討
-- [ ] `/blog/guide/beginner/hamanako-fishing-rules-and-manners/`（表示279・CTR9.3%・直帰85.1%）は上位化施策（被リンク等）と合わせて直帰率改善のCTA/導線見直しを実施
-- [ ] `/map/`のPV回復要因（季節/流入経路）を確認し、再現性があれば横展開
+W28-complete!
 
 ---
 

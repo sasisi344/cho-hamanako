@@ -19,7 +19,8 @@
     "monthly_report": ["water-tempature.md", "llms.json"],
     "affiliate_research": ["affiliates/{category}/*.md"],
     "seo_redirect": ["301redirect/301list.md", "301redirect/checklist.md"],
-    "site_structure": [".index/sitemap.md", "sitemap.md", "archive-index.md"]
+    "site_structure": [".index/sitemap.md", "sitemap.md", "archive-index.md"],
+    "travel_article": ["travel-research/unagi-fishing-trip.md", "travel-research/camp-fishing-nagisaen.md", "travel-research/kanko-kw-supplement.md"]
   },
   "resources": [
     {
@@ -112,6 +113,19 @@
       "format": "markdown",
       "priority": 3,
       "use_when": ["migration", "old-url", "rewrite-seo"]
+    },
+    {
+      "id": "travel-research",
+      "path": "travel-research/",
+      "format": "markdown",
+      "priority": 2,
+      "use_when": ["travel-article", "kanko-hub", "unagi", "camp", "kanko-kw"],
+      "files": [
+        "unagi-fishing-trip.md",
+        "camp-fishing-nagisaen.md",
+        "kanko-kw-supplement.md"
+      ],
+      "note": "観光×釣りKWのリサーチデータ。chousa-file.md §2の未対応KW用。2026-07-08調査。"
     }
   ],
   "duplicates_warning": {
