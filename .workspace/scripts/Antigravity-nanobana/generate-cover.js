@@ -30,7 +30,7 @@ if (fs.existsSync(envPath)) {
 }
 
 const API_KEY = process.env.GEMINI_API_KEY;
-const MODEL = 'gemini-3.1-flash-image';
+const MODEL = 'gemini-3.1-flash-lite-image';
 const API_URL = `https://generativelanguage.googleapis.com/v1beta/models/${MODEL}:generateContent`;
 
 // ── サイトコンテキスト ──────────────────────────────────────────────────────
