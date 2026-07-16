@@ -15,12 +15,7 @@ task>>[access-data/gsc-data/2026]
 
 ### TODO（優先施策・2026-06-17データ分析より）
 
-### Act（前週完了分・2026-07-03確認）
-
-- [x] 🔥【7/10プライムセール】専用記事 `/blog/amazon-sale-tackle-strategy/` を新規作成（消耗品より高単価・コンフォート系を狙う理由＋TackleCard厳選。詳細は `.workspace/.task/weeklyu-task.md`）
-- [x] 専用記事公開後、Top LP 3本（`june-tako-opening` / `hamanako-kayak-fishing` / `hamanako-fishing-rules-and-manners`）のまとめに `BlogCard slug="amazon-sale-tackle-strategy"` を1本のみ設置
-- [x] `/blog/june-tako-opening/` から関連ポイント記事へ内部リンク強化（舞阪＝`amihosiba` 等）
-- [x] SEO継続：`/points/family-car-points/`（表示44・CTR2.3%）のタイトル・説明文改善（2026-07-03実施）
+@tactics-expansion-planを実行。これは釣り情報を拡充させる重要なタスクでもある。
 
 ---
 

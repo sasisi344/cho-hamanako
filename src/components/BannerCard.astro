@@ -50,7 +50,15 @@ const linkText = product.brand && product.brand.toLowerCase().includes('naturum'
 ---
 
 <div class="p-4 border border-slate-200 dark:border-slate-800 rounded-xl bg-white dark:bg-slate-900 shadow-sm text-center">
-  <a href={finalLink} target="_blank" rel="noopener noreferrer" class="no-underline group block">
+  <a
+    href={finalLink}
+    target="_blank"
+    rel="noopener noreferrer sponsored"
+    class="no-underline group block affiliate-link"
+    data-aff-id={product.id}
+    data-aff-brand={product.brand ?? ""}
+    data-aff-name={product.name}
+  >
     {finalImage && (
       <img src={finalImage} alt={product.name} class="mx-auto mb-2 group-hover:scale-105 transition-transform duration-300" />
     )}
