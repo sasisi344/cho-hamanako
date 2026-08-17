@@ -39,6 +39,7 @@ export default defineConfig({
     "/2024/11/釣りにめっちゃ役立つ！浜名湖全域の水深を知る/": "/blog/guide/points/hamana-depth-map-guide/",
     "/blog/anazuri/": "/blog/guide/method/anazuri/",
     "/blog/hamana-depth-map-guide/": "/blog/guide/points/hamana-depth-map-guide/",
+    "/blog/guide-2025/": "/blog/tako-kanzen-guide/",
   },
   integrations: [
     mdx({

@@ -101,6 +101,14 @@
       "entry": "affiliates/README.md"
     },
     {
+      "id": "tako-points-research",
+      "path": "affiliates/tako/tako-points.md",
+      "format": "markdown",
+      "priority": 2,
+      "use_when": ["tako", "octopus", "タコ", "ポイント", "point", "season", "シーズン"],
+      "note": "2026-08-17 Agent-C 調査。陸っぱり5ポイント・今切口テトラ・ボート・潮汐ズレ"
+    },
+    {
       "id": "fukabori-workspace",
       "path": "fukabori-workspace/",
       "format": "markdown",
