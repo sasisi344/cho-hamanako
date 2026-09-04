@@ -16,11 +16,8 @@ const sortedPosts = allPosts
 
 const currentMonth = new Date().getMonth() + 1
 
-const latestReport = sortedPosts
-  .find(post => post.data.category === "reporting")
-
 const monthTrend = allPosts.find(post => post.slug === "6-month")
-const latestIntelligence = allPosts.find(post => post.slug === "5-month") ?? latestReport
+const latestIntelligence = allPosts.find(post => post.slug === "5-month")
 const analysisMonth = 6
 
 const pointPosts = sortedPosts.filter(post => post.data.category === "points")
