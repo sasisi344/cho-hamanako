@@ -20,7 +20,7 @@
     "affiliate_research": ["affiliates/{category}/*.md"],
     "seo_redirect": ["301redirect/301list.md", "301redirect/checklist.md"],
     "site_structure": [".index/sitemap.md", "sitemap.md", "archive-index.md"],
-    "travel_article": ["travel-research/unagi-fishing-trip.md", "travel-research/camp-fishing-nagisaen.md", "travel-research/kanko-kw-supplement.md"]
+    "travel_article": ["travel-research/unagi-fishing-trip.md", "travel-research/camp-fishing-nagisaen.md", "travel-research/kanko-kw-supplement.md", "travel-research/kanzanji-palpal-group-experience.md"]
   },
   "resources": [
     {
@@ -82,7 +82,15 @@
       "format": "markdown-per-fish",
       "priority": 2,
       "use_when": ["target-fish", "season", "ecology"],
-      "files_example": ["aji.md", "seabass-seasonal.md", "kurodai-spring.md"]
+      "files_example": ["aji.md", "seabass-seasonal.md", "kurodai-spring.md", "kurodai-tsurenai-research.md"]
+    },
+    {
+      "id": "kurodai-textbook-research",
+      "path": ".index/biological/kurodai-tsurenai-research.md",
+      "format": "markdown",
+      "priority": 1,
+      "use_when": ["kurodai", "クロダイ", "教科書", "釣れない", "chiniing", "チニング", "釣法比較", "第6章", "第8章"],
+      "note": "2026-09-04 調査。釣れない原因2分類・釣法比較表・潮汐条件・夜ライトプラッギング・2025タックルトレンド。教科書記事執筆用。"
     },
     {
       "id": "season-fishing-index",
@@ -127,13 +135,14 @@
       "path": "travel-research/",
       "format": "markdown",
       "priority": 2,
-      "use_when": ["travel-article", "kanko-hub", "unagi", "camp", "kanko-kw"],
+      "use_when": ["travel-article", "kanko-hub", "unagi", "camp", "kanko-kw", "palpal", "たきや漁", "えびすき漁", "団体", "慰安会", "グループ", "舘山寺温泉"],
       "files": [
         "unagi-fishing-trip.md",
         "camp-fishing-nagisaen.md",
-        "kanko-kw-supplement.md"
+        "kanko-kw-supplement.md",
+        "kanzanji-palpal-group-experience.md"
       ],
-      "note": "観光×釣りKWのリサーチデータ。chousa-file.md §2の未対応KW用。2026-07-08調査。"
+      "note": "観光×釣りKWのリサーチデータ。2026-09-04追記: 舘山寺温泉・パルパル・たきや漁/えびすき漁の団体・SNS・宿泊需要調査を追加。"
     }
   ],
   "duplicates_warning": {

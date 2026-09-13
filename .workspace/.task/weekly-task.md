@@ -73,8 +73,28 @@ target 記事（haze・kisu・kawahagi・mebaru-kasago・karei 等）と相互 B
 
 ---
 
+## 5. 効果測定タスク（GSC/GA4確認が必要なもの）
+
+### 5-1. クロダイ順位回復対応
+- [ ] 「浜名湖 クロダイ」1位→約20位に急落の要因調査（GSCデータで確認）
+- [ ] 要因特定後、クロダイ記事統合プランと連動して対策を決定
+
+### 5-2. 「新居海釣り公園 ライブカメラ」CTR改善
+- [ ] タイトル/metaの改善（表示回数557・順位7.24 → CTR1.80%）
+  - タイトルと需要のミスマッチを解消
+  - 表記ブレ対応：サイト内は「新居弁天海釣公園」に統一。「海釣り公園」はmeta keywordsで対処
+- [ ] 改善後 2週間でGSCのCTR変化を確認
+
+### 5-3. GA4 管理画面設定（ユーザー側作業）
+- [ ] `affiliate_click` のカスタムディメンション（aff_id / page_path）をGA4管理画面で登録
+- [ ] キーイベント指定
+- [ ] 反映後48h → GA4リアルタイムレポートで発火確認
+
+---
+
 ## 進捗ログ
 
 - 2026-07-09: Track A〜E 完了（Track B・A・D・E・C の順で実施）。詳細は `.workspace/.task/task-archieve/w29-seo-tracks-completed.md` 参照。
 - 2026-07-14: Track F 1-1 完了。`cooking/autumn,summer,spring,winter-hamanako-recipe` の4記事を並列エージェントで作成・カバー画像生成済み。`family-car-fishing-points` の BlogCard import 欠落を修正。pnpm build 通過（306ページ）。
 - 2026-07-14: tactics 拡充プランを `.workspace/.task/tactics-expansion-plan.md` に書き出し。4記事構成（猪鼻湖・内浦湾・中浜名湖ボート・表浜名湖）。
+- 2026-09-04: tactics 4記事完了（inahako・uchibay-kanzanji・naka-boat・omote）。season/monthly 1〜12月に「正直なところ」コラム追加。効果測定タスク（クロダイ順位・新居CTR・GA4）を weekly に移動。

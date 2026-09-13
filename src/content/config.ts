@@ -49,7 +49,7 @@ const blog = defineCollection({
     tags: z.array(z.string()).default([]),
     draft: z.boolean().default(false).optional(),
     noindex: z.boolean().default(false).optional(),
-    category: z.enum(['points', 'guide', 'target', 'cooking', 'news', 'test', 'season', 'travel', 'method', 'reporting']).optional(),
+    category: z.enum(['points', 'guide', 'target', 'cooking', 'news', 'test', 'season', 'travel', 'method']).optional(),
     cover: image().optional(),
     location: locationSchema,
     fishinginfo: fishinginfoSchema,
