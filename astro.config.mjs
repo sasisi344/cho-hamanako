@@ -40,6 +40,7 @@ export default defineConfig({
     "/blog/anazuri/": "/blog/guide/method/anazuri/",
     "/blog/hamana-depth-map-guide/": "/blog/guide/points/hamana-depth-map-guide/",
     "/blog/guide-2025/": "/blog/tako-kanzen-guide/",
+    "/blog/travel/hamanako-rental-fishing-guide/": "/points/araibenten-umiduripark/",
   },
   integrations: [
     mdx({
