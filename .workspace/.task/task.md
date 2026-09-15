@@ -1,15 +1,7 @@
 # 釣！浜名湖 — アクティブタスク
 
-**最終整理**: 2026-09-04  
+**最終整理**: 2026-09-16  
 **管理方針**: このファイルが「今やること」の一覧。完了したタスクは `archive/` へ移動。詳細プランは個別ファイル参照。
-
----
-
-## 🟠 優先度 中（順次着手）
-
-### 1. travel 中浜名湖版記事
-- [ ] 「ガーデンパーク・村櫛エリア観光×釣り」記事  
-  ※着手前にGSCで「ガーデンパーク」系表示回数を確認してから判断
 
 ---
 
@@ -24,7 +16,6 @@
   - ゆるキャン聖地×釣りセグメント・レンタル重要度分析済み
   - data-set更新済み: `.workspace/.data-set/travel-research/camp-fishing-nagisaen.md`
 - [x] 記事化完了（2026-09-04）: `travel/hamanako-camp-fishing` リライト＆5施設拡張
-- [ ] 釣具レンタルオンラインサービス調査: ネット予約完結の釣具レンタルサービスを調査しアフィリエイト候補に追加（data-set forAI指示）
 
 ---
 
@@ -38,6 +29,7 @@
 ## アーカイブ済みファイル（参照のみ）
 
 `archive/` フォルダに格納。完了・不要と判断したもの。
+- `murakushi-rental-completed-2026-09-16.md`（村櫛エリア新規記事見送り判断＋既存記事リライト、釣具レンタルオンラインサービス調査＆新規記事化・旧記事統合 完了 2026-09-16）
 - `tactics-article-briefs.md`・`tactics-expansion-plan.md`（tactics 4記事完了 2026-09-04）
 - `kurodai-new-session.md`・`search-intent-content-restructure.md`（クロダイ教科書完成・complete-guide削除・BlogCard修正完了 2026-09-04）
 - 旅行アフィリエイト基本配置（unagi/camp/kanko-hub の3記事に楽天・じゃらん・asoview 配置完了 2026-09-04）
