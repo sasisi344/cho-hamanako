@@ -14,6 +14,10 @@
 
 ## アジ・サバ・サッパ
 
+### 実アングラー傾向メモ（tackle-research由来、2026-09-25追記）
+
+市場調査で「トリックサビキ+しらす」が浜名湖の地域トレンドとして複数ソースで確認されたが、当サイトの採用ラインナップに「トリックサビキ」を明記した商品が見当たらない。`sabiki-set-comparison`記事はトリックサビキ vs カゴサビキを比較しているため、記事内容とTackleCardのズレがないか要確認。詳細: [match-rate-analysis.md](tackle-research/match-rate-analysis.md)
+
 ### TODOリスト
 
 - [ ] 【サビキ釣り入門】誰でも簡単！浜名湖のアジ・サバ数釣りの基礎知識（`aji-saba-sappa-beginner` / TackleCard 2件）
@@ -85,6 +89,10 @@
 ---
 
 ## エギング（アオリイカ・コウイカ）
+
+### 実アングラー傾向メモ（tackle-research由来、2026-09-25追記）
+
+**優先対応候補（最重要）**: 市場調査で明確なブランド乖離を確認。当サイトの採用はダイワ系（エメラルダス）だが、市場推奨はシマノ セフィアSS・ジャッカル ゲキダキTRが中心。魚速タックルDBには浜名湖のエギングデータがなく実アングラー裏付けは未取得（追加調査が必要）。「ダイワ派 vs シマノ・ジャッカル派」の選好差の可能性があり、TackleCard選定の見直しか両ブランド併記を検討。詳細: [match-rate-analysis.md](tackle-research/match-rate-analysis.md)
 
 ### TODOリスト
 
@@ -158,6 +166,10 @@
 
 ## ヒラメ・マゴチ
 
+### 実アングラー傾向メモ（tackle-research由来、2026-09-25追記）
+
+市場調査ではボトムワインド釣法・ダート系ジグヘッド＋ワームの組み合わせが推奨の中心。当サイトの`flatfish/magochi-jighead`（OZ Tackle ZZヘッド）・`flatfish/magochi-worm`（OZ Tackle マナティー）はボトムワインド専業ブランドで釣法適合度が高く、良好な一致。実アングラーデータ（魚速タックルDB等）は浜名湖のヒラメ・マゴチについて今回未取得。詳細: [match-rate-analysis.md](tackle-research/match-rate-analysis.md)
+
 ### TODOリスト
 
 - [ ] 【ヒラメ・マゴチ入門】泳がせ釣りで高級魚をGET！基本の仕掛けと合わせの極意（`flatfish-beginner` / TackleCard 0件）
@@ -229,6 +241,10 @@
 ---
 
 ## ハゼ
+
+### 実アングラー傾向メモ（tackle-research由来、2026-09-25追記）
+
+**優先対応候補（最重要）**: メディア推奨（バスデイ はぜむしSS）・実アングラー使用（魚速タックルDBのKURAKURA Sinking、個人ブログでは110円のダイソー製トラウト用クランクベイトを自作フック換装して使用）のいずれも、当サイトの採用ラインナップ（ラッキークラフト ハゼアン35DR・クラッチDR）と一致しない。特にダイソークランクは低価格帯の実需として市場調査・実アングラー調査の両方で言及されており無視できない。商品入れ替えの優先度が高い。詳細: [actual-angler-tackle.md](tackle-research/actual-angler-tackle.md)
 
 ### TODOリスト
 
@@ -392,6 +408,10 @@
 
 ## カワハギ
 
+### 実アングラー傾向メモ（tackle-research由来、2026-09-25追記）
+
+実アングラーの使用実績（釣果ブログ）で「ダイワ ネオフック5号」への言及を確認。当サイトの`kawahagi/daiwa-d-max-kawahagi-ss`（ダイワ D-MAX カワハギ糸付き30SS ネオフック）とブランド・製品名（ネオフック）まで一致しており、今回のリサーチ全体の中で最も精度高く裏付けが取れた魚種。詳細: [actual-angler-tackle.md](tackle-research/actual-angler-tackle.md)
+
 ### TODOリスト
 
 - [ ] 【カワハギ入門】堤防で最初の一匹を釣るための基本ガイド（`kawahagi-beginner` / TackleCard 0件）
@@ -454,6 +474,10 @@
 ---
 
 ## キビレ
+
+### 実アングラー傾向メモ（tackle-research由来、2026-09-25追記）
+
+魚速タックルDB（浜名湖・クロダイ/キビレの複数投稿集計）で、`kibire/shimano-bremia-bb-s78ml`（ブレニアスBB）と同系列の「ブレニアス XR」の実使用を確認。良好な一致。詳細はクロダイの項目・[actual-angler-tackle.md](tackle-research/actual-angler-tackle.md)を参照（当サイトではクロダイ・キビレが同ブランド群で語られることが多いため、実データもクロダイと合わせて集計されている）。
 
 ### TODOリスト
 
@@ -608,6 +632,10 @@
 
 ## クロダイ
 
+### 実アングラー傾向メモ（tackle-research由来、2026-09-25追記）
+
+今回のリサーチで実アングラーデータ（魚速タックルDB）が最も豊富だった魚種。当サイトの`seabass/daiwa-silverwolf-76ml-s-w`・`kurodai/zipbaits-zabra-popper`・`seabass/duo-bay-ruf-manic-95`は実使用データと系列一致し、信頼度が高い。一方`kurodai/megabass-popping-duck`・`kurodai/decoy-easy-set-chining`は実データ側に登場せず（悪いという意味ではなく、裏付けが取れなかったという意味）。詳細: [actual-angler-tackle.md](tackle-research/actual-angler-tackle.md)
+
 ### TODOリスト
 
 - [ ] クロダイ釣り入門｜浜名湖の仕掛け（オモリ・ハリス・針）・エサ・ポイント・コツ（`kurodai-beginner` / TackleCard 0件）
@@ -733,6 +761,10 @@
 ---
 
 ## メバル・カサゴ
+
+### 実アングラー傾向メモ（tackle-research由来、2026-09-25追記）
+
+**優先対応候補**: 実アングラー使用データ（釣果ブログ）で「シュガーミノー50S」「エバーグリーン マービー50」への言及を確認したが、当サイトの採用ラインナップ（`mebaru-kasago/tiemco-super-living-fish`）とブランドが一致しない。ロッドは「ダイワ月下美人70UL-S」の実使用に対し、当サイトは`aji-saba-sappa/gekkabijin-ajing-68ls`（68L-S、長さ違い）のみで近いが同一ではない。商品入れ替えの優先度が高い。詳細: [actual-angler-tackle.md](tackle-research/actual-angler-tackle.md)
 
 ### TODOリスト
 
@@ -878,6 +910,10 @@
 
 ## サヨリ
 
+### 実アングラー傾向メモ（tackle-research由来、2026-09-25追記）
+
+当サイトの`sayori/ss-2-ex`（工房浦安 スーパーサヨリン2EX）は、市場調査で確認した「浦安釣法」の本家ブランド「工房浦安」とメーカー名まで完全一致。今回のリサーチ全体で最も強い一致が確認できた魚種のひとつ（実アングラー個別データは今回未取得だが、メディア側の一致度が非常に高い）。詳細: [match-rate-analysis.md](tackle-research/match-rate-analysis.md)
+
 ### TODOリスト
 
 - [ ] 浜名湖サヨリ釣り入門｜初心者でも簡単に数釣りできる仕掛けとコツ（`sayori-beginner-guide` / TackleCard 1件）
@@ -949,6 +985,10 @@
 ---
 
 ## シーバス
+
+### 実アングラー傾向メモ（tackle-research由来、2026-09-25追記）
+
+実アングラー使用データ（魚速タックルDB）は、モアザン ブランジーノEX・ヴァンキッシュ・ロキサーニ等**上位機種のロッド・リール**への言及が中心だった。当サイトはヴァンフォード・アルテグラ等の中位機種中心の構成で、上位機種を検索するユーザーの意図には応えられていない可能性がある。一方ルアー（コルセア65・レンジバイブ70ES・マニック95）はメディア推奨・実アングラーの双方と一致しており良好。詳細: [actual-angler-tackle.md](tackle-research/actual-angler-tackle.md)
 
 ### TODOリスト
 
@@ -1104,6 +1144,10 @@
 ---
 
 ## タコ
+
+### 実アングラー傾向メモ（tackle-research由来、2026-09-25追記）
+
+アングラーズ（anglers.jp）の検索結果summaryから、実アングラーが「Tsulino THE EGI OCTVIUS」を使用している情報を確認。当サイトの採用（`tako/dragon-octopus-tap`＝マルシン漁具、`tako/yamashita-tako-tenya`＝ヤマシタ）とはブランドが異なる。Tsulinoはクロダイの実使用データにも登場したブランド（KAHUNAロッド）で、浜名湖アングラーの間で一定の支持がある可能性。anglers.jpの個別投稿はJS描画でWebFetch取得できなかったため、母数の裏付けは弱い（追加調査推奨）。詳細: [actual-angler-tackle.md](tackle-research/actual-angler-tackle.md)
 
 ### TODOリスト
 

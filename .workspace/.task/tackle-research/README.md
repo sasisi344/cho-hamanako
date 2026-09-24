@@ -9,6 +9,9 @@
 2. [market-research.md](market-research.md) — 「浜名湖 釣り タックル」系KWでのWeb検索結果。魚種別に市場（メディア・個人ブログ・釣具店）が推奨する具体的な商品名・仕様をまとめたもの
 3. [actual-angler-tackle.md](actual-angler-tackle.md) — 魚速タックルDB・個人釣行ブログ由来の**実アングラー使用タックル**（メディア推奨よりさらに一次情報寄り）。メディア推奨との差分も整理
 4. [match-rate-analysis.md](match-rate-analysis.md) — 現在庫とメディア推奨を突き合わせた一致率分析。◎完全一致〜✕乖離の4段階で判定し、優先対応候補を整理
+5. [price-benchmark.md](price-benchmark.md) — 採用中タックルのカテゴリ別価格帯サンプル調査（ロッド・リール・ルアー・仕掛け等）。実アングラーとの価格帯ギャップの裏取り
+
+実アングラー傾向の要点は魚種ごとに [../tackle-matching-review.md](../tackle-matching-review.md) の各H2にも転記済み。
 
 ## 現時点の結論（サマリー）
 
