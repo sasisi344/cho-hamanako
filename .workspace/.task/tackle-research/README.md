@@ -9,7 +9,8 @@
 2. [market-research.md](market-research.md) — 「浜名湖 釣り タックル」系KWでのWeb検索結果。魚種別に市場（メディア・個人ブログ・釣具店）が推奨する具体的な商品名・仕様をまとめたもの
 3. [actual-angler-tackle.md](actual-angler-tackle.md) — 魚速タックルDB・個人釣行ブログ由来の**実アングラー使用タックル**（メディア推奨よりさらに一次情報寄り）。メディア推奨との差分も整理
 4. [match-rate-analysis.md](match-rate-analysis.md) — 現在庫とメディア推奨を突き合わせた一致率分析。◎完全一致〜✕乖離の4段階で判定し、優先対応候補を整理
-5. [price-benchmark.md](price-benchmark.md) — 採用中タックルのカテゴリ別価格帯サンプル調査（ロッド・リール・ルアー・仕掛け等）。実アングラーとの価格帯ギャップの裏取り
+5. [price-benchmark.md](price-benchmark.md) — 採用中タックルのカテゴリ別価格帯サンプル調査（ロッド・リール・ルアー・仕掛け等）。実アングラーとの価格帯ギャップの裏取り（サンプル30商品・うち27商品で価格確認）
+6. [link-creation-candidates.md](link-creation-candidates.md) — 分析で見つかった「未所持の商品」をリンク作成・YAML新設が必要な実装タスクとして独立管理。優先度高/中/低で整理
 
 実アングラー傾向の要点は魚種ごとに [../tackle-matching-review.md](../tackle-matching-review.md) の各H2にも転記済み。
 
@@ -23,9 +24,8 @@
 
 ## 次にやること（未着手）
 
-- [ ] 優先対応候補4件（match-rate-analysis.md末尾）の一次情報を個別に再確認
+- [ ] **リンク作成・商品追加の実行**: [link-creation-candidates.md](link-creation-candidates.md)の優先度高3件（エギング2件・ハゼ2件）から着手
 - [ ] アングラーズ（anglers.jp）は個別釣果投稿がJS描画でWebFetch取得不可だった。ブラウザで直接開いての手動収集が必要
 - [ ] YouTube・Instagram・X等、未調査のソースでの実釣タックル調査（エギング・サヨリ・メジナ・カレイは実アングラーデータが今回見つからず）
-- [ ] エギングのブランド乖離について、ダイワ系メディアでの評判を追加調査
-- [ ] ハゼ・メバル/カサゴの商品入れ替え（優先度高、actual-angler-tackle.md参照）
-- [ ] 調査結果を踏まえた`affiliates/`商品追加・入れ替えの実行（このリサーチの先の工程）
+- [ ] 価格不明のまま残っている3商品（ラッキークラフト ハゼアン35DR等）の価格再調査（price-benchmark.md参照）
+- [ ] 未使用アイテム43件の価格帯調査（「使われていない＝価格帯のミスマッチ」仮説の検証）

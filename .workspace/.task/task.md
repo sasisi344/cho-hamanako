@@ -8,7 +8,8 @@
 商品紹介の深度・マッチング率向上プロジェクト。ルール整備（[target-article/SKILL.md](../../.agents/target-article/SKILL.md) 王道ゾーン／地元ゾーン）完了、シーバス2記事（`seabass-points`・`seabass-tactics`）でパイロット実装済み。残り13魚種・約80記事を1本ずつレビューする。
 
 - [ ] 詳細タスクリスト: [tackle-matching-review.md](tackle-matching-review.md)（魚種ごとにH2、記事ごとにTODO＋修正案入力欄のH3）
-- [ ] マッチング率リサーチ（採用タックル vs 市場推奨）: [tackle-research/](tackle-research/README.md)（現在庫一覧・市場調査・一致率分析の3ファイル。エギングのブランド乖離等の優先対応候補あり）
+- [ ] マッチング率リサーチ（採用タックル vs 市場推奨）: [tackle-research/](tackle-research/README.md)（現在庫一覧・市場調査・実アングラー調査・一致率分析・価格帯ベンチマークの5ファイル）
+- [ ] リンク作成・商品追加の実行: [tackle-research/link-creation-candidates.md](tackle-research/link-creation-candidates.md)（優先度高3件から着手）
 
 ## ✅ 完了フェーズ: 既存記事の整理・リライト（2026-09-22 完了分を反映）
 
