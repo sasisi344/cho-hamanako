@@ -1,6 +1,6 @@
 # 釣！浜名湖 — アクティブタスク
 
-**最終整理**: 2026-09-22
+**最終整理**: 2026-09-26
 **管理方針**: このファイルが「今やること」の一覧。完了したタスクは `archive/` へ移動。詳細プランは個別ファイル参照。
 
 ## ✅ 完了フェーズ: 既存記事の整理・リライト（2026-09-22 完了分を反映）
@@ -15,6 +15,8 @@ re-createフェーズ全タスク完了。詳細は `archive/re-create-phase-com
 - W39優先度「高」3件中2件完了: `points/fukabori/ajing-fukabori`・`target/kibire/cooking`（キビレ食べ方導線追加）
 - W39優先度「中」5件中3件完了: `points/family-car-points`・`points/omote/amihosiba`・`points/naka/washidukou`・`guide/logistics/rental-boat-guide`
 - W39優先度「低」1件完了: `guide/theory/hamanako-weather-vs-hamamatsu`
+- 2026-09-26: W39優先度「低」`points/omote/nagisaen` エンゲージメント改善（導入Callout＋キャンプ/表浜名湖ハブへのBlogCard）→ **W39全件完了**
+- 2026-09-26: `Callout.astro` の `title` prop が描画されていなかった不具合を修正
 
 ---
 

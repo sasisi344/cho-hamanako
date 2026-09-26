@@ -37,18 +37,18 @@
 
 #### 優先度：高（表示回数が多く、CTR が低い → タイトル・meta desc 改善でクリック増が見込める）
 
-- [ ] `/points/ajing-fukabori`
+- [x] `/points/ajing-fukabori`
   （表示 708・順位 8.79・CTR 5.93%）
   → タイトルとmeta descを「アジング 浜名湖」「浜名湖アジング ポイント」に合わせて改善
   （優先度：**高**）
 
-- [ ] `/blog/kibire-cooking`
+- [x] `/blog/kibire-cooking`
   （表示 504・順位 9.93・CTR 2.18%・エンゲージメント率 0%）
   → タイトル・meta desc 改善、導入文を「キビレ 食べ方」クエリに最適化
   「キビレ 食べ方」（表示 101・CTR 0%）も同記事でカバー。
   （優先度：**高**）
 
-- [ ] `/points/araibenten-umiduripark`（新居弁天ポイント）
+- [x] `/points/araibenten-umiduripark`（新居弁天ポイント）
   （表示 1,348・順位 10.65・CTR 6.08%）
   → タイトル・meta desc 改善 + 本文に「新居 弁天 海釣公園 ライブカメラ」「サビキ」「タコ釣り」
   クエリを盛り込み内部リンク追加
@@ -56,46 +56,54 @@
 
 #### 優先度：中（低順位×高CTR → 本文強化・内部リンクで順位改善）
 
-- [ ] `/points/family-car-points`（車横付け）
+- [x] `/points/family-car-points`（車横付け）
   （クリック 117・順位 9.73・CTR 12.87%）
   → 本文強化・内部リンク追加（「浜名湖 釣り 車 横付け」クエリは CTR 27.5%・順位 2.26 と強力、
   ポイント記事がカバーを引き上げ中。順位を 5〜7 台に改善すれば大幅クリック増が見込める）
   （優先度：**中**）
 
-- [ ] `/points/amihosiba`（網干場）
+- [x] `/points/amihosiba`（網干場）
   （表示 1,246・順位 8.94・CTR 5.14%）
   → タイトル改善＋本文強化・内部リンク追加（「網干場」クエリ群の CTR が低い）
   （優先度：**中**）
 
-- [ ] `/points/miyakodagawa`（都田川河口）
+- [x] `/points/miyakodagawa`（都田川河口）
   （表示 489・順位 8.82・CTR 3.07%）
   → タイトル見直し・導入文を「都田川 ハゼ釣り 時期」「都田川 ハゼ釣り」クエリに合わせて改善
   （優先度：**中**）
 
-- [ ] `/blog/rental-boat-guide`（レンタルボートガイド）
+- [x] `/blog/rental-boat-guide`（レンタルボートガイド）
   （クリック 54・順位 9.18・CTR 15.7%）
   → 本文強化・内部リンク追加（CTR は高い。順位改善で大幅クリック増の余地あり）
   （優先度：**中**）
 
-- [ ] `/points/washidukou/`（鷲津港）
+- [x] `/points/washidukou/`（鷲津港）
   （表示 24・順位 6.0・CTR 0%）
   → タイトル確認・meta desc 追加（順位 6 なのにクリックゼロ、タイトルに問題の可能性）
   （優先度：**中**）
 
 #### 優先度：低（観察・小改善）
 
-- [ ] `/blog/9-month`（9月ガイド）
+- [x] `/blog/9-month`（9月ガイド）
   （エンゲージメント率 12.5%・直帰率≈87.5%）
   → 導入文を秋シーズン（落ちアユ・シーバス・秋クロダイ）向けに強化。
   秋の月別記事（10-month）への内部リンクを追加
   （優先度：低）
 
-- [ ] `/blog/guide/theory/hamanako-weather-vs-hamamatsu/`
+- [x] `/blog/guide/theory/hamanako-weather-vs-hamamatsu/`
   （表示 50・順位 7.36・CTR 0%）
   → タイトル確認・meta desc の有無チェック
   （優先度：低）
 
-- [ ] `/points/nagisaen`（渚園）のエンゲージメント改善
+- [x] `/points/nagisaen`（渚園）のエンゲージメント改善
   （セッション 20・エンゲージメント率 33%）
   → 導入文にキャンプ×釣りの強みを明示し直帰を減らす
   （優先度：低）
+
+---
+
+### 完了記録
+
+- 2026-09-22: 優先度高3件・中5件・低2件（9-month / weather-vs-hamamatsu）を対応（コミット `d279407` `b76743a` `9328a7e`）
+- 2026-09-26: 残り1件 `/points/nagisaen` のエンゲージメント改善を対応。導入直後に「キャンプ×釣りに強い3つの理由」Callout（徒歩数十秒・夜間トイレ/駐車場・季節別の主役、秋の狙い方、釣具レンタルなしの注意）を追加し、末尾に `travel/hamanako-camp-fishing`・`omote-hamanako-fishing-points` への BlogCard を追加。あわせて `Callout.astro` が `title` prop を無視していた不具合を修正（既存22記事の title 付き Callout も表示されるように）
+- **W39 タスクは全件完了**。効果測定は W41（2026-10月上旬）の GSC データで確認
