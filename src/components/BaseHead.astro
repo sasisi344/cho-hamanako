@@ -73,10 +73,13 @@ const ogUrl = canonicalURL.href
   gtag('config', 'G-EC504C30T1');
 </script>
 
-<!-- Main-thread gtag shim: forwards to the Partytown-worker gtag.js above via dataLayer.push (see astro.config.mjs forward: ["dataLayer.push"]) -->
+<!-- Main-thread gtag shim: forwards to the Partytown-worker gtag.js above via dataLayer.push (see astro.config.mjs forward: ["dataLayer.push"]).
+     Do NOT pre-create window.dataLayer here as a plain array — Partytown's own bootstrap script (injected later in <head>)
+     must be the one to create it, so it can install the forwarding push() that relays calls into the worker. Creating a
+     plain array first leaves Partytown's forward config unused and push() stays native, so custom events (affiliate_click,
+     scroll_depth) get queued locally and never reach gtag.js. -->
 <script is:inline>
-  window.dataLayer = window.dataLayer || [];
-  window.gtag = window.gtag || function () { window.dataLayer.push(arguments); };
+  window.gtag = window.gtag || function () { (window.dataLayer = window.dataLayer || []).push(arguments); };
 </script>
 
 <link rel="preload" href="/fonts/atkinson-regular.woff" as="font" type="font/woff" crossorigin>
