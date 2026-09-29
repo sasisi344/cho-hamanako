@@ -49,8 +49,33 @@
 
 一覧は[current-tackle-inventory.md](current-tackle-inventory.md)の該当セクションを参照。本ファイルでは重複記載しない。
 
+**✅ 2026-09-29 全17件対応済み**（参照側を既存の同カテゴリ商品へ差し替え。新規YAMLは作成せず、推測のASIN・リンクは追加していない）
+
+| 旧ID | 差し替え先 | 記事 |
+|---|---|---|
+| `seabass/daiwa-lates-93ml` | `seabass/shimano-encounter-s96m` | `wading-seabass-fukabori` |
+| `common/shimano-stradic-c3000hg` | `common/shimano-vanford` | `wading-seabass-fukabori` |
+| `common/shimano-vanquish-c3000` | `common/shimano-ultegra-c3000` | `boat-seabass-fukabori` |
+| `mu-mukai-haze-crank` | `haze/lucky-craft-hazedra` | `haze-fukabori` |
+| `ogk-hasu-combo` | `haze/sasame-choi-haze-set-5go` | `haze-fukabori` |
+| `daiwa-cool-line-800` | `common/daiwa-light-trunk-alpha-gu3200` | `haze-fukabori` |
+| `daiwa-emeraldas-air` | `eging/daiwa-emeraldas-83m-j` | `eging-fukabori` |
+| `daiwa-kisu-special` | `kisu/shimano-kisu-special-taper-pl-n71q` | `kisu-fukabori` |
+| `daiwa-silver-wolf-air` | `seabass/daiwa-silverwolf-76ml-s-w` | `magochi-fukabori` |
+| `daiwa-silver-wolf-air` | `seabass/daiwa-silverwolf-76ml-s-w` | `chining-fukabori` |
+| `fishing-gear/tsurikens-zen-circular` | `mejina/duel-tg-wave-master` | `mejina-fukabori` |
+| `fishing-gear/daiwa-nanome-iso` | `mejina/daiwa-liberty-club-isokaze-mejina` | `mejina-fukabori` |
+| `kisu-tactics/sasame-karei-assault` | `karei/sasame-canon-ball-karei` | `mio-suji-area-fukabori` |
+| `seabass/switch-hitter-85s` | `seabass/duo-bay-ruf-manic-95` | `mio-suji-area-fukabori` |
+| `octopus/megabass-taco-le-99` | `tako/dragon-octopus-tap` | `tako-fukabori` |
+| `octopus/daiwa-taco-x` | `tako/abu-tacosfield-762h` | `tako-fukabori` |
+| `seabass/shimano-exsence-silent-assassin-129f` | `seabass/pickup-nogare-120f` | `seabass-season-fukabori` |
+| `kurodai/decoy-easyset-chining` | `kurodai/decoy-easy-set-chining`（ID表記ゆれ） | `target/kurodai` |
+
+元の商品（ラテオ・ストラディック・ヴァンキッシュ等）を正式に採用したい場合は、上表「優先度：高/中」と同様にAmazonリンク発行 → YAML新設 → 差し替えの流れで対応する。
+
 ---
 
 ## 完了ログ
 
-（まだなし。対応が完了したらここに日付・内容を追記）
+- 2026-09-29: 壊れているTackleCard参照17件を既存商品へ差し替え（本番の「⚠️ Tackle ID not found」表示を解消）

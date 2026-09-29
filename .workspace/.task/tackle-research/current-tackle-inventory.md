@@ -4,7 +4,7 @@
 **集計方法**: `src/content/affiliates/` 配下の全YAML（221件）と、`src/content/blog` 全体での `<TackleCard id="...">` 実使用回数を突合。
 **サマリー**: 登録商品 221件のうち、記事内で実際に使用されているのは 178件。未使用は 43件。
 
-## ⚠️ 壊れているTackleCard参照（要修正・別件バグ）
+## ✅ 壊れているTackleCard参照（2026-09-29 全件修正済み → [link-creation-candidates.md](link-creation-candidates.md)）
 
 記事内で `<TackleCard id="...">` が指定されているが、対応する `affiliates/` のYAMLが存在しないもの。本番では赤い「⚠️ Tackle ID not found」エラー枠が表示されている状態。合計 17件。今回のリサーチとは別件だが、実装済みの記事に実害が出ているため優先度高で別タスク化を推奨。
 
