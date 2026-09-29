@@ -24,9 +24,9 @@
 - [ ] 浜名湖で釣ったアジ・サバ・サッパの食べ方・レシピ｜南蛮漬け・酢漬け・唐揚げまで（`aji-saba-sappa-cooking` / TackleCard 4件）
 - [ ] 浜名湖アジ・サバ・サッパ釣りの教科書｜群れの読み方とサビキ釣果最大化の全法則（`aji-saba-sappa` / TackleCard 17件）
 - [ ] 【サビキ実績ポイント】浜名湖海釣公園・網干場。手軽に数が出る場所（`aji-saba-sappa-points` / TackleCard 0件）
-- [ ] 浜名湖のアジをサビキで釣る！秋の数釣りとポイント選びのコツ（`sabiki-guide` / TackleCard 3件）
+- [x] 浜名湖のアジをサビキで釣る！秋の数釣りとポイント選びのコツ（`sabiki-guide` / TackleCard 3件）
 - [ ] 【サビキ攻略】数釣りを極める！タナ合わせと「追い食い」の高等テクニック（`aji-saba-sappa-tactics` / TackleCard 2件）
-- [ ] 浜名湖サビキ釣り攻略｜トリックサビキ vs カゴサビキ徹底比較（`sabiki-set-comparison` / TackleCard 4件）
+- [x] 浜名湖サビキ釣り攻略｜トリックサビキ vs カゴサビキ徹底比較（`sabiki-set-comparison` / TackleCard 4件）
 
 ### 記事別メモ・修正案
 
@@ -66,7 +66,8 @@
 
 - slug: `sabiki-guide` / ファイル: `src/content/blog/target/aji-saba-sappa/sabiki-guide/index.mdx`
 - 現状のTackleCard設置数: 3件
-- ステータス: 未着手
+- ステータス: 対応済み（2026-09-29）
+- 修正内容: 「タックルの選び方」を二層化。王道＝ハヤブサ 小アジ専科（秋15cm前後・3号前後）、地元＝ハヤブサ かんたん飛ばしサビキセット（新居弁天T字堤の沖の良型狙い。記事内既述の投げサビキ根拠）。エサつけ器は晩秋のトリックサビキ文脈に位置づけ直し`sabiki-set-comparison`へBlogCard誘導。網干場BlogCardのslug誤記（amihoshiba→amihosiba）も修正
 - 修正案:
   - 
 
@@ -82,7 +83,8 @@
 
 - slug: `sabiki-set-comparison` / ファイル: `src/content/blog/target/aji-saba-sappa/tactics/sabiki-set-comparison/index.mdx`
 - 現状のTackleCard設置数: 4件
-- ステータス: 未着手
+- ステータス: 対応済み（2026-09-29）
+- 修正内容: カゴサビキ章を二層化。王道＝ダイワ 快適職人サビキ、地元＝オーナー ショートハイパーパニック7（砂揚げ場の足元4〜6m・車横付けファミリー。`sunaageba`記事の記述が根拠）。トリックサビキ章に地元ゾーン（新居弁天T-1〜T-2の緩い潮）の本文とBlogCardを追加。**トリックサビキ仕掛け本体の商品が未整備のため地元ゾーンTackleCardは棚卸し行き**（記事内にTODOコメント、link-creation-candidates.md既載）
 - 修正案:
   - 
 
