@@ -9,8 +9,8 @@ const targetPosts = (await getCollection("blog"))
   .filter((post) => !post.data.draft && post.data.category === "target")
   .sort((a, b) => (b.data.pubDate || b.data.pubDate).getTime() - (a.data.pubDate || a.data.pubDate).getTime());
 
-const title = "釣れる魚・ターゲット解説";
-const description = "浜名湖で狙える主要なターゲット魚種ごとの攻略法、時期、ポイントを詳しく解説。";
+const title = "浜名湖で釣れる魚一覧｜魚種別の釣り方・時期・ポイント解説";
+const description = "浜名湖で釣れる魚を魚種別に解説。シーバス・クロダイ・キビレ・タコ・ハゼ・キスなど、釣り方・シーズン・おすすめポイントを一覧から探せます。";
 
 // 魚種名だけをフィルタリング用のタグとして抽出・定義
 const FISH_NAMES = [
