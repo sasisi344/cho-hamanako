@@ -3,13 +3,13 @@
 **最終整理**: 2026-09-29
 **管理方針**: このファイルが「今やること」の一覧。完了したタスクは `archive/` へ移動。詳細プランは個別ファイル参照。
 
-## 🔴 次回アクセス解析時に確認（2026-09-27〜）
+## ✅ 完了: `affiliate_click` 計測不備の修正（2026-09-26〜2026-10-05）
 
-週間PDCAのGA4/GSC取得パラメータ乖離を調査した際、GA4で `affiliate_click`（TackleCardクリック）が過去28日間一度も観測されておらず、原因はBaseHead.astroのgtagシムがPartytownの`dataLayer.push`転送設定より先に素の配列を生成してしまい、独自イベントがワーカー側gtag.jsに届いていなかったことと判明。修正済み・本番デプロイ済み（コミット `3778ad9`、[Deploy Hamanako run](https://github.com/sasisi344/cho-hamanako/actions/runs/36236577590)成功）。
+GA4で `affiliate_click`（TackleCardクリック）が観測されていなかった件。当初の原因特定と修正（`3778ad9`、gtagシムの `dataLayer` 生成順）は不十分で、2026-10-05 の再調査で Partytown の worker 起動失敗（約10秒でフォールバック）が真因と判明。GA4 を Partytown 経由から通常のメインスレッド読み込みに変更し（`6573423`）、デプロイ後に発火を確認済み（2026-10-05、オーナー確認）。詳細は [archive/w40-task-archived-2026-10-05.md](archive/w40-task-archived-2026-10-05.md) 参照。
 
-- [ ] GA4管理画面（プロパティ: chohama-main）→ 管理 → イベント → 「最近のイベント」タブで `affiliate_click` が観測されているか確認
-- [ ] 観測されていれば「キーイベントとしてマークを付ける」で登録
-- [ ] 観測されていなければ、Partytown周りの追加調査が必要（コード修正が不十分だった可能性）
+- [x] `affiliate_click` の発火確認（2026-10-05 完了）
+- [x] キーイベント指定は 2026-09-22 に完了済み（`weekly-task.md` 参照）
+- [ ] 次回W{nn}データ取得時に `キーイベント` 列へ件数が計上されているか確認（週次解析のなかで実施）
 - [ ] あわせて `.claude/skills/cho-hamanako-weekly-pdca/SKILL.md` 更新に伴い、次回W{nn}データ取得時はGA4探索レポート形式（デバイス軸・キーイベント含む）で取得できているか確認
 
 ## 🟡 進行中: TackleCard 二層マッチング レビュー（2026-09-24〜）
@@ -33,9 +33,9 @@ re-createフェーズ、W39優先度タスク、5エリアまとめページ新�
 
 ---
 
-## 🟡 優先度：中（W40-task.md に集約）
+## 🟡 優先度：中（W41-task.md に集約）
 
-W39クエリ再確認の修正候補・低アクセス記事の改善（nagisaen／ライブカメラCTR／megaura／nakanoshima／常夜灯／舞阪／伊勢海老／kisuインデックス／エンゲージメント／GSC手動作業）は [W40-task.md](W40-task.md) の「優先度：中（W39以前からの持ち越し）」へ移動（2026-09-29）。W40で追加された未着手タスク（turbidity-water-color・nokkomi-season・/map・drive-fishing-spots・night-chining）も同ファイル参照。
+W39クエリ再確認の修正候補・低アクセス記事の改善（nagisaen／ライブカメラCTR／megaura／nakanoshima／常夜灯／舞阪／伊勢海老／kisuインデックス／エンゲージメント／GSC手動作業）は W40-task.md に集約していたが、2026-10-05 に W39・W40 のタスクファイルを archive へ移動（[archive/w39-task-completed-2026-10-05.md](archive/w39-task-completed-2026-10-05.md)／[archive/w40-task-archived-2026-10-05.md](archive/w40-task-archived-2026-10-05.md)）。**W40 の未完了タスクは [W41-task.md](W41-task.md) に引き継ぎ済み**。
 
 - [ ] `target/kibire/cooking`（キビレ 食べ方）: 表示101・CTR0%・順位10.58。W39時点で対応済みだが効果反映前のデータのため要再測定（W41）
 - [ ] 浜名湖ポイント（表示56・CTR0%・順位7.38）: 広域クエリにつき優先度低、様子見

@@ -242,6 +242,8 @@
 
 ## ハゼ
 
+> **2026-10-05 記事統合**: ハゼ記事は3本に統合済み。以下の個別記事のうち `haze` `haze-points` `haze-tactics` `november-ochihaze` `okuhamanako-haze-fishing` は教科書 `haze-fukabori` に、`haze-cooking` は `haze-beginner` に、`hazekura-gear` `august-hazekura` は `hazekura-intro` に統合され削除された。TackleCard のレビューは統合後の3本（`haze-fukabori`・`haze-beginner`・`hazekura-intro`）で行う。
+
 ### 実アングラー傾向メモ（tackle-research由来、2026-09-25追記）
 
 **優先対応候補（最重要）**: メディア推奨（バスデイ はぜむしSS）・実アングラー使用（魚速タックルDBのKURAKURA Sinking、個人ブログでは110円のダイソー製トラウト用クランクベイトを自作フック換装して使用）のいずれも、当サイトの採用ラインナップ（ラッキークラフト ハゼアン35DR・クラッチDR）と一致しない。特にダイソークランクは低価格帯の実需として市場調査・実アングラー調査の両方で言及されており無視できない。商品入れ替えの優先度が高い。詳細: [actual-angler-tackle.md](tackle-research/actual-angler-tackle.md)

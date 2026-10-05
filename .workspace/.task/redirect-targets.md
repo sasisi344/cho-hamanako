@@ -110,7 +110,7 @@
 | /2024/10/浜名湖でスズキ（シーバス）釣りのおすすめポイ/ | 446 | `/blog/seabass-points/` | ○ | シーバスのポイント記事 | タイトル類似では圏外。1位は/blog/seabass-cooking/(0.31) |
 | /2024/12/浜名湖でカサゴを釣りたいならここ！おすすめの/ | 356 | `/blog/kasago-guide/` | ◎ | 公開月一致（2024-12） | タイトル類似では圏外。1位は/blog/winter-kasago/(0.32)／公開年月一致 |
 | /2024/11/【初心者必見】冬の浜名湖でカレイを釣る方法！/ | 354 | `/blog/karei-beginner/` | ○ | 初心者向けカレイ。代替: /blog/karei/ | タイトル類似では圏外。1位は/blog/winter-kasago/(0.31) |
-| /2024/11/【完全ガイド】浜名湖でハゼ釣りを楽しむ！おす/ | 318 | `/blog/haze-points/` | ○ | ポイント紹介系。代替: /blog/haze/ | タイトル類似では圏外。1位は/blog/hazekura-gear/(0.39) |
+| /2024/11/【完全ガイド】浜名湖でハゼ釣りを楽しむ！おす/ | 318 | `/points/haze-fukabori/`（2026-10-05 ハゼ記事統合により `/blog/haze-points/` から変更） | ○ | ポイント紹介系。代替: /blog/haze/ | タイトル類似では圏外。1位は/blog/hazekura-gear/(0.39) |
 | /2025/10/冬の浜名湖釣りガイド｜初心者向けの釣り方とお/ | 247 | `/blog/seasonal-patterns-guide/` | ◎ | 【転送先確定】「冬」単独の総合記事は現行になく、タイトルに春夏秋冬を含む四季ガイドへ。転送先は改稿予定（seasonal-guide-rewrite.md）。12mの「冬」クエリは179クリック/817表示（「浜名湖 冬 釣り」98クリック・平均3.1位）で、冬の総合ページ新設も検討余地あり。代替: /blog/12-month/ /blog/winter-lightgame/ | タイトル類似では圏外。1位は/blog/karei-beginner/(0.29) |
 | /2024/11/浜名湖でサヨリを釣る方法！おすすめのシーズン/ | 207 | `/blog/sayori-beginner-guide/` | ○ | 代替: /blog/sayori/ | タイトル類似では圏外。1位は/blog/guide/beginner/hamanako-sabiki-best-season/(0.41) |
 | /2025/01/3月の浜名湖でおすすめの釣りポイント9選/ | 192 | `/blog/3-month/` | ◎ | 既存設定は「10選」で不一致。公開日2025-01が一致 | タイトル類似では圏外。1位は/points/wading-points/(0.43)／公開年月一致 |

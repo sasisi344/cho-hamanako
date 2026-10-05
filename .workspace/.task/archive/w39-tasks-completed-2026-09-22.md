@@ -29,7 +29,7 @@ W39優先度中5件・全対応完了。
 
 ## W39 残タスク → 2026-09-22 完了
 
-詳細・根拠: `.workspace/.task/W39-task.md`
+詳細・根拠: `.workspace/.task/archive/w39-task-completed-2026-10-05.md`
 
 - [x] `/points/araibenten-umiduripark` タイトル・meta desc改善（「ライブカメラ・サビキ・青物」をタイトルに明示。GSCで表示114件・CTR6.1%の「新居弁天海釣公園 ライブカメラ」等を狙う）
 - [x] `/points/miyakodagawa`（都田川河口） タイトルに「時期・仕掛け」追加＋冒頭に「ハゼ釣りの時期はいつ？」即答Calloutを新設（「都田川 ハゼ釣り 時期」等のクエリ対応）
