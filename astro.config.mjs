@@ -3,7 +3,6 @@ import mdx from "@astrojs/mdx"
 import sitemap from "@astrojs/sitemap"
 import tailwind from "@astrojs/tailwind"
 import solidJs from "@astrojs/solid-js"
-import partytown from "@astrojs/partytown"
 
 import remarkLinkCard from "remark-link-card"
 import remarkAlert from "remark-github-alerts"
@@ -139,11 +138,5 @@ export default defineConfig({
     }),
     solidJs(),
     tailwind({ applyBaseStyles: false }),
-    partytown({
-      config: {
-        forward: ["dataLayer.push"],
-        lib: "/partytown/",
-      },
-    }),
   ],
 })
