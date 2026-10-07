@@ -49,28 +49,19 @@
 
 ### Act（W41 → W42 タスク）
 
-> 2026-10-05 整理: 完了した項目（`nagisaen`・`affiliate_click`・`amihosiba`・サヨリ記事・ハゼ記事3本統合・`/affiliates/`・GA4セグメント）は [archive/w41-completed-2026-10-05.md](archive/w41-completed-2026-10-05.md) へ移動。完了項目から出た残件は、下の「完了項目からの残件・要確認」に集約した。
+> 2026-10-05 整理: 完了項目は [archive/w41-completed-2026-10-05.md](archive/w41-completed-2026-10-05.md) へ移動。
+> 2026-10-08 整理: 完了項目は [archive/w41-completed-2026-10-08.md](archive/w41-completed-2026-10-08.md) へ移動。
 
-#### 優先度：高
+#### 優先度：高（残件）
 
-- [x] `/blog/kibire-cooking/`（表示550・順位8.17・CTR2.18%、関連クエリ: 「キビレ 食べ方」164/「キビレ レシピ」45/「キビレ 魚 食べ方」44/「キビレ 刺身」30/「キチヌ 食べ方」28/「キビレ 美味しい食べ方」22）
-  → 2026-10-08: title を「キビレの食べ方｜臭み対策・下処理…」に改訂、summary に「臭みが出にくい」「刺身・唐揚げ・ムニエル」を前面化、冒頭にサイズ別早見表＋下処理2ステップの結論節を追加。効果測定は W43 目安。
-- [ ] `/blog/guide/theory/turbidity-water-color/`（W40 から引き継ぎ、表示25・順位4.96・CTR8%、優先A）
-  → 2026-10-05 に検索意図を推定して title・summary・冒頭の結論節・内部リンクを改善済み。内部リンク3本（`dissolved-oxygen`・`hamanako-rainy-day-fishing`・`water-temperature-logic`）の存在確認済み（2026-10-08）。
-  **残**: W41・W40クエリCSVには濁り関連クエリなし（表示数少のため匿名化）。Search ConsoleのUIでURLフィルタしても同様の可能性大。現titleはCTR8%と良好なため、**W43効果測定後にクエリが増えていれば title を再調整**。
+- [ ] `/blog/guide/theory/turbidity-water-color/`（W40: 表示25・順位4.96・CTR8%）
+  → 改善済み（2026-10-05）。クエリ匿名化のため W43 効果測定後に title を再調整。
 
-#### 優先度：中（優先B: 低順位×高CTR → 本文強化・内部リンクで順位改善）
+#### 優先度：中（残件）
 
-- [x] `/points/family-car-points/`（表示80・順位8.9・CTR12.5%、「浜名湖 釣り 車 横付け」8クリック・順位1.67）→ 2026-10-08: W41 で順位 9.94→8.9 に改善確認。内部リンク・役割分担の整理は残件（優先度：中）
-- [x] `/blog/rental-boat-guide/`（表示75・順位8.4・CTR16%、直帰 67%）→ 2026-10-08: W41 で順位 9.13→8.4 に改善確認。「浜名湖レンタルボート おすすめ」本文強化は残件（優先度：中）
-- [x] `/map/`（表示136・順位7.92・CTR5.88%）→ 2026-10-08: エリアまとめ3本（`omote`・`naka`・`oku`）＋`nagisaen`・`araibenten-umiduripark` の末尾に `hamanako-depth-map` BlogCard を追加。`/map/` からは既存リンク済み。計9ページから新記事への導線が開通。効果測定は W43。
-- [x] `/blog/araibenten-live-camera/`（新タイトル側 直帰 80%・エンゲージ 3.8秒）→ 2026-10-08: 冒頭を「提供終了＋代替3カメラの即時リンク表」に刷新し、告知前の個人挨拶を削除。効果測定は W43。
-- [x] `/points/araibenten-umiduripark/`（モバイル直帰 60% / デスクトップ 31%）→ 2026-10-08: W41 で順位 10.49→7.11・CTR 5.97%→10.11% に大幅改善。GA4 モバイル直帰 62.5%・エンゲージ 17.75秒で問題なし。冒頭構成・内部リンク確認済み。
-- [x] `/blog/kurodai/`（表示56・順位9.27・CTR3.57%）、`/points/imagiremaisakatei/`（表示76・CTR2.63%）、`/points/miyakodagawa/`（表示66・CTR3.03%）、`/blog/shops/`（表示101・CTR3.96%）
-  → 2026-10-08: `kurodai` summary を「経験者向け攻略リファレンス」表現に改善、`imagiremaisakatei` title の括弧を「・」に変更＋「禁止エリア」統一、`miyakodagawa` title から「（みやこだがわ）」「No.1」を削除し駐車場クエリを追加。`shops` は現状良好（変更なし）。効果測定は W43。
-- [x] `nakanoshima`（浜名湖 中之島）: 2026-10-05 にタイトル変更・「聖地」除去済み。W41 で順位 7.33→6.63 に改善確認。W43 で CTR・クリック効果測定。
-- [x] 滞在時間0秒のページ（`mebaru-kasago-beginner` 0秒・`bait-vending-machines` 等）→ 2026-10-08: `bait-vending-machines` の挨拶文を削除し「設置場所まとめ」の導入に変更、`mebaru-kasago-beginner` に「この記事で分かること」結論節を追加。
-- [ ] `target/kisu`（index・0refs）の GSC インデックス状況を Search Console で確認（※GSC ページ.csv に /blog/kisu/ 行なし → インデックス未取得の可能性）※ユーザー操作
+- [ ] `/points/family-car-points/` — 内部リンク・役割分担（`drive-fishing-spots`・`family-car-fishing-points`）の整理
+- [ ] `/blog/rental-boat-guide/` — 「浜名湖レンタルボート おすすめ」クエリの本文強化
+- [ ] `target/kisu`（index・0refs）の GSC インデックス状況を Search Console で確認（※GSC ページ.csv に行なし → インデックス未取得の可能性）※ユーザー操作
 - [ ] 浜名湖ポイントのインデックス確認（Search Console から手動リクエスト）／OGP画像更新（主要points記事）※ユーザー操作
 
 #### 優先度：中（データ整備）
@@ -78,18 +69,15 @@
 - [ ] ファイル名規則を SKILL（`chohama-ga4-w{nn}.csv` / `chohama-gsc-w{nn}.csv`）とデータ置き場の実態（`w{nn}-ga4-chohama.csv`、GSC は日本語名2ファイル）のどちらかに統一する（W40 から引き継ぎ）
 - [ ] GSC を GA4 探索レポート内の Search Console データソース（ランディングページ+クエリ文字列統合）で取得し、ページ×クエリを突合できるようにする。当面は「7日間」のページ.csv／クエリ.csv で運用
 
-#### 完了項目からの残件・要確認（2026-10-05 整理で新設）
+#### 引き継ぎ残件（W42 以降）
 
 **記事の残件**
-- [x] `ajing-fukabori` → `amihosiba` の逆方向リンクを追加 → 2026-10-08: 末尾「あわせて読みたい」節に BlogCard を追加。
 - [ ] サヨリの旧時期記述の見直し（月別ガイド `4-month`・`3-month`・`9-month`、`travel/hamanako-march-gourmet-shirasu-sayori`、`.workspace/.data-set/fukabori-workspace/fukabori-point-sort.md` の旧方針「冬〜春」、`sayori-fukabori` 本文の冬の陸っぱり前提）。確定事項は `.workspace/.data-set/.index/biological/sayori.md`
 - [ ] `.workspace/.data-set/sitemap.md`・`.index/sitemap.md`（生成物）に、削除したハゼ記事8本の旧slugが残っている
+- [ ] ハゼ3本（`haze-fukabori`・`haze-beginner`・`hazekura-intro`）の数値をナレッジ情報に統一: ①針の号数（4〜7号の範囲を併記）、②デキハゼ時期（グラフを6月開幕に修正）、③都田川駐車場（「専用なし」で確定）、④時合い（ナレッジ優先）
 
 **オーナー確認が必要な点**
-- [x] サヨリが10月前後に狙い目になる理由（産卵との関係）→ 2026-10-08 確認済み: 産卵期4〜8月（最盛期5〜6月）で既存ナレッジは正確。記事では産卵と直結させず「水温」「活性」軸で説明済みで正しい。10月は水温が高く沿岸で大型狙い可能（記事内の「秋〜10月が本番」の根拠に一致）。
 - [ ] サヨリ本体の「浦掛け」の説明（複数の小型針を並べる仕掛け）と、`urayasu-choho`（浦安釣法＝ゆっくり巻く引き釣り）の関係
-- [ ] ハゼ記事の統合時に揃えた数値: ①ハゼ針の号数（当サイト記事4〜5号／地元釣具店6〜7号 → 範囲を併記）、②「デキハゼ」の時期（グラフを6月開幕に修正）、③都田川の駐車場（現地確認「専用なし」を採用。外部サイトは「みおつくし橋周辺に駐車スペースあり」）、④時合い（当サイト「満潮前後」／外部「干潮から上げ潮」）
-> [!forAI]ナレッジ情報を優先
 
 **効果測定（目安 W43＝2026-10月下旬、ハゼは W45 も）**
 - [ ] `nagisaen`: GA4 エンゲージ率・GSC CTR
