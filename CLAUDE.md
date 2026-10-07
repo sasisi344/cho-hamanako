@@ -49,6 +49,7 @@ Claude Code セッションでは、下記を用途に応じて読み込む（�
 | `cho-hamanako-base-structure` | モジュール構成・深度ティア（通常2,000字+） |
 | `cho-hamanako-data-set` | `.data-set/.index/manifest.json` 経由のナレッジ参照 |
 | `cho-hamanako-weekly-pdca` | GA4/GSC CSV を読み込み、週次 PDCA タスク（W{nn}-task.md）を生成 |
+| `cho-hamanako-schedule-task` | 効果測定・経過観察タスクを W{nn}-task.md から schedule-task.md へ仕分ける |
 
 ## サブエージェント
 
