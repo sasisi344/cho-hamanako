@@ -55,14 +55,14 @@
 #### 優先度：高（残件）
 
 - [ ] `/blog/guide/theory/turbidity-water-color/`（W40: 表示25・順位4.96・CTR8%）
-  → 改善済み（2026-10-05）。クエリ匿名化のため W43 効果測定後に title を再調整。
+  → 改善済み（2026-10-05）。効果測定は [schedule-task.md](schedule-task.md) へ移動。
 
 #### 優先度：中（残件）
 
 - [ ] `/points/family-car-points/` — 内部リンク・役割分担（`drive-fishing-spots`・`family-car-fishing-points`）の整理
-- [ ] `/blog/rental-boat-guide/` — 「浜名湖レンタルボート おすすめ」クエリの本文強化
-- [ ] `target/kisu`（index・0refs）の GSC インデックス状況を Search Console で確認（※GSC ページ.csv に行なし → インデックス未取得の可能性）※ユーザー操作
-- [ ] 浜名湖ポイントのインデックス確認（Search Console から手動リクエスト）／OGP画像更新（主要points記事）※ユーザー操作
+- [ ] `/blog/rental-boat-guide/` — 「浜名湖レンタルボート おすすめ 釣りポイント」で1位を取る施策（公式比較不要）。競合調査してから実施
+- [ ] `target/kisu` — GSC でインデックス確認。キスは浜名湖でメインターゲットになるほど釣れないため、需要自体が弱い点を踏まえて記事全体の方針を見直す ※ユーザー操作
+- [ ] ポイントのOGP画像更新（現状 favicon が採用されている）※ユーザー操作
 
 #### 優先度：中（データ整備）
 
@@ -77,21 +77,15 @@
 - [ ] ハゼ3本（`haze-fukabori`・`haze-beginner`・`hazekura-intro`）の数値をナレッジ情報に統一: ①針の号数（4〜7号の範囲を併記）、②デキハゼ時期（グラフを6月開幕に修正）、③都田川駐車場（「専用なし」で確定）、④時合い（ナレッジ優先）
 
 **オーナー確認が必要な点**
-- [ ] サヨリ本体の「浦掛け」の説明（複数の小型針を並べる仕掛け）と、`urayasu-choho`（浦安釣法＝ゆっくり巻く引き釣り）の関係
+- [ ] サヨリ記事から「浦掛け」表記を削除（KW も実態もなし。サヨリ仕掛けは1本針交換式が正解。複数針は口の硬さ・細糸の交換手間から非推奨）
 
-**効果測定（目安 W43＝2026-10月下旬、ハゼは W45 も）**
-- [ ] `nagisaen`: GA4 エンゲージ率・GSC CTR
-- [ ] `amihosiba`: 順位・「網干場 浜名湖」系クエリ・クリック
-- [ ] サヨリ記事（`sayori`・`large-sayori-guide`・`april-guide`・`sayori-boat-guide`）: 「浜名湖 サヨリ」「サヨリ 時期」系の順位・クリック
-- [ ] ハゼ3本（`haze-fukabori`・`haze-beginner`・`hazekura-intro`）＋個別ポイント記事の合計。ベースライン: W41 約190表示・6クリック／3か月で62クリック・952表示。旧8URLの転送は本番で確認済み。順位が落ちた場合は git 履歴（`8af7715` より前）から旧記事を復元できる
+**効果測定** → [schedule-task.md](schedule-task.md) に集約（W43目安・W45目安・継続観察）
 
 #### 優先度：低
 
-- [ ] CTR0%・表示10以上のページ → タイトル・導入文が検索意図と合っているか確認:
+- [ ] CTR0%・表示10以上のページ → タイトル・導入文が検索意図と合っているか確認（競合調査してから実施）:
   `/blog/kibire-beginner/`（表示30・順位7.83）、`/blog/flatfish-beginner/`（表示26・順位22.4）、`/blog/night-chining/`（表示24・順位9.5）、
-  `/points/sunaageba/`（表示23・順位8.7）、`/blog/7-month/`（表示20・順位19.6）、`/points/pokochan-coast/`（表示15・順位5.87）、`/blog/june-tako-opening/`（表示11・順位4.91。高順位で0クリックのためやや優先）
-- [ ] 高順位（≤5）で 0 クリックの `/points/hamayu-ohashi/`（表示9・順位3.44）、`/blog/mejina/`（表示8・順位5.0）、`/blog/night-seabass/`（表示7・順位4.29）→ サンプル少のため経過観察
-- [ ] AIアシスタント経由流入の継続観察（GA4 側の設定変更はしない方針。`セッションの参照元/メディア` で代替し、件数が閾値を超えたら専用の分析・対策を検討）。W40 時点で 17 → 35 セッション（+105.9%）
-- [ ] `/blog/guide/theory/nokkomi-season/` の効果確認: オフシーズンで表示5件のため、春シーズン（3月〜）に入ってから GSC で再確認
-- [ ] 新湖沼図の公開をウォッチ: 国土地理院の湖沼図は令和5〜7年度の3か年計画で更新作業中（オーナー確認ベース）。公開されたら `guide/theory/hamanako-depth-map`・`/map/` の記事・図を更新する
-- [ ] 「浜名湖 水深マップ」の GSC 順位を W43 目安で確認（`guide/theory/hamanako-depth-map` の効果測定）
+  `/points/sunaageba/`（表示23・順位8.7）、`/blog/7-month/`（表示20・順位19.6）、`/points/pokochan-coast/`（表示15・順位5.87）、`/blog/june-tako-opening/`（表示11・順位4.91。高順位で0クリック）
+  ※ `7-month`・`june-tako-opening` は釣りシーズン外（10月現在）のため正常。春以降に再確認。
+
+経過観察・効果測定待ち → [schedule-task.md](schedule-task.md) に集約
