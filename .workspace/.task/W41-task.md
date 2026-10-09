@@ -59,10 +59,14 @@
 
 #### 優先度：中（残件）
 
-- [ ] `/points/family-car-points/` — 内部リンク・役割分担（`drive-fishing-spots`・`family-car-fishing-points`）の整理
-- [ ] `/blog/rental-boat-guide/` — 「浜名湖レンタルボート おすすめ 釣りポイント」で1位を取る施策（公式比較不要）。競合調査してから実施
+- [x] `/points/family-car-points/` — 内部リンク・役割分担（`drive-fishing-spots`・`family-car-fishing-points`）の整理
+  → 2026-10-10 完了。役割分担: `drive-fishing-spots`＝全域12選ハブ／`family-car-points`＝子連れ厳選7選／`family-car-fishing-points`＝砂揚げ場の魚種・時期ガイド。3記事を相互にBlogCardでリンク
+- [x] `/blog/rental-boat-guide/` — 2026-10-10 再構成済み（免許不要の現実／今切口の遊漁禁止水域／カヤック・SUPとの比較／出艇ポイントへの内部リンク／借りる日の流れ／安全）。詳細は [rental-boat-research.md](rental-boat-research.md)。今切口の禁止範囲は財団ページの図解に合わせて反映済み
 - [ ] `target/kisu` — GSC でインデックス確認。キスは浜名湖でメインターゲットになるほど釣れないため、需要自体が弱い点を踏まえて記事全体の方針を見直す ※ユーザー操作
 - [ ] ポイントのOGP画像更新（現状 favicon が採用されている）※ユーザー操作
+- [ ] 画像生成プロンプトの調整（OGP更新と合わせて実施）— 現状は「テキストなし・左40%は文字用の余白」のサムネ（`.workspace/scripts/Antigravity-nanobana/generate-cover.js` の `SITE_CONTEXT`／`coverPrompt`）。クリックされる魅力あるサムネを作れるよう、構図・色味・被写体の見せ方（必要ならタイトル文字の有無）を見直す
+  - 手順案: ①既存カバーのうちCTRが高い／低い記事を見比べて傾向を整理 → ②プロンプト案を2〜3パターン作成し数枚試作 → ③採用案を `generate-cover.js` に反映し、ポイントOGPにも適用
+  - 注意: 画像生成は明示的な指示があるまで実行しない（CLAUDE.md）。試作の実行はユーザーの指示後
 
 #### 優先度：中（データ整備）
 
@@ -72,12 +76,13 @@
 #### 引き継ぎ残件（W42 以降）
 
 **記事の残件**
-- [ ] サヨリの旧時期記述の見直し（月別ガイド `4-month`・`3-month`・`9-month`、`travel/hamanako-march-gourmet-shirasu-sayori`、`.workspace/.data-set/fukabori-workspace/fukabori-point-sort.md` の旧方針「冬〜春」、`sayori-fukabori` 本文の冬の陸っぱり前提）。確定事項は `.workspace/.data-set/.index/biological/sayori.md`
-- [ ] `.workspace/.data-set/sitemap.md`・`.index/sitemap.md`（生成物）に、削除したハゼ記事8本の旧slugが残っている
-- [ ] ハゼ3本（`haze-fukabori`・`haze-beginner`・`hazekura-intro`）の数値をナレッジ情報に統一: ①針の号数（4〜7号の範囲を併記）、②デキハゼ時期（グラフを6月開幕に修正）、③都田川駐車場（「専用なし」で確定）、④時合い（ナレッジ優先）
+- [x] サヨリの旧時期記述の見直し（月別ガイド `4-month`・`3-month`・`9-month`、`travel/hamanako-march-gourmet-shirasu-sayori`、`.workspace/.data-set/fukabori-workspace/fukabori-point-sort.md` の旧方針「冬〜春」、`sayori-fukabori` 本文の冬の陸っぱり前提）。確定事項は `.workspace/.data-set/.index/biological/sayori.md`
+  → 2026-10-10 対応済み（`4-month`・`travel/hamanako-march-gourmet-shirasu-sayori`・`sayori-fukabori`・`fukabori-point-sort.md`。`3-month`・`9-month` は修正不要）
+- [x] `.workspace/.data-set/sitemap.md`・`.index/sitemap.md`（生成物）に、削除したハゼ記事8本の旧slugが残っている
+- [x] ハゼ3本（`haze-fukabori`・`haze-beginner`・`hazekura-intro`）の数値をナレッジ情報に統一: ①針の号数（4〜7号の範囲を併記）、②デキハゼ時期（グラフを6月開幕に修正）、③都田川駐車場（「専用なし」で確定）、④時合い（ナレッジ優先）
 
 **オーナー確認が必要な点**
-- [ ] サヨリ記事から「浦掛け」表記を削除（KW も実態もなし。サヨリ仕掛けは1本針交換式が正解。複数針は口の硬さ・細糸の交換手間から非推奨）
+- [x] サヨリ記事から「浦掛け」表記を削除（KW も実態もなし。サヨリ仕掛けは1本針交換式が正解。複数針は口の硬さ・細糸の交換手間から非推奨）
 
 **効果測定** → [schedule-task.md](schedule-task.md) に集約（W43目安・W45目安・継続観察）
 

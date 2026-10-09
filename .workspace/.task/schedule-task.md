@@ -10,6 +10,7 @@
 - [ ] `amihosiba`（網干場）: 順位・「網干場 浜名湖」系クエリ・クリック — W41 で ajing-fukabori から逆リンク追加済み
 - [ ] `hamanako-depth-map`（水深マップ）: 「浜名湖 水深マップ」GSC 順位 — 複数ページから BlogCard 追加済み
 - [ ] `araibenten-live-camera`（ライブカメラ終了告知）: 新タイトル側の直帰率・エンゲージ改善確認
+- [ ] `rental-boat-guide`（2026-10-10 再構成）: 「浜名湖レンタルボート免許不要」の順位・CTR維持、カヤック・SUP系ポイント記事への回遊
 - [ ] `kibire-cooking`（キビレの食べ方）: 表示550・CTR 2.18% → 改善後の CTR・順位
 - [ ] `kurodai`・`imagiremaisakatei`・`miyakodagawa`（CTR改善グループ）: title/summary 変更後の CTR・クリック
 - [ ] `nakanoshima`: 順位 6.63 → さらなる改善確認
