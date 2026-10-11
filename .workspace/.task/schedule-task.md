@@ -10,8 +10,11 @@
 - [ ] `amihosiba`（網干場）: 順位・「網干場 浜名湖」系クエリ・クリック — W41 で ajing-fukabori から逆リンク追加済み
 - [ ] `hamanako-depth-map`（水深マップ）: 「浜名湖 水深マップ」GSC 順位 — 複数ページから BlogCard 追加済み
 - [ ] `araibenten-live-camera`（ライブカメラ終了告知）: 新タイトル側の直帰率・エンゲージ改善確認
+- [ ] **GA4 ベースライン再設定**: 2026-10-05 の gtag メインスレッド化（`6573423`）以降の1週間（W43）を新ベースラインとする。W42 は計測切替の混在週のため直帰率・エンゲージの前週比は使わない。`affiliate_click` のキーイベント化確認後に TackleCard クリックを再評価
+- [ ] `araibenten-umiduripark`（9/29 にタイトルから「ライブカメラ」除去）: W42 でクリック 18 → 3（CTR 10.1% → 2.2%）。「新居弁天 釣り」系クエリでの回復を確認
+- [ ] `family-car-points`・`family-car-fishing-points`（2026-10-10 内部リンク整理）: W42 の順位 11.09 / 11.92 から改善するか確認
 - [ ] `rental-boat-guide`（2026-10-10 再構成）: 「浜名湖レンタルボート免許不要」の順位・CTR維持、カヤック・SUP系ポイント記事への回遊
-- [ ] `kibire-cooking`（キビレの食べ方）: 表示550・CTR 2.18% → 改善後の CTR・順位
+- [ ] `kibire-cooking`（キビレの食べ方）: 10/8 更新の効果は W43〜W44 で確認。W42 ベースライン 表示857・順位9.12・CTR 1.05%（W41: 表示550・順位8.17・CTR 2.18%）。W44 で順位が 8 位以内に入らなければ「刺身」独立 H2・「塩焼き」強化などの本文拡充を検討
 - [ ] `kurodai`・`imagiremaisakatei`・`miyakodagawa`（CTR改善グループ）: title/summary 変更後の CTR・クリック
 - [ ] `nakanoshima`: 順位 6.63 → さらなる改善確認
 - [ ] `turbidity-water-color`: クエリ匿名化のためデータが増えていれば title 再調整

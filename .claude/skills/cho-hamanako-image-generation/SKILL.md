@@ -27,23 +27,30 @@ description: Generates cover and inline images for Cho! Hamanako using the Antig
 - モデル: `gemini-3.1-flash-image-preview`（Google Generative Language API）
 - 全プロンプトに **SITE_CONTEXT** が前置され、浜名湖・汽水域・海釣り以外（淡水・山岳など）を除外
 
-## 1. カバー画像（推奨・ポイント/季節記事）
+## 1. カバー画像（サムネイル）
 
-**入力**: 記事 MDX のパス  
-**出力**: 同ディレクトリの `cover.jpg`（図鑑風 16:9 フラットイラスト）
+**入力**: 記事 MDX のパス（＋任意で記事に合わせたシーン指示）
+**出力**: 同ディレクトリの `cover.jpg`（クリックされる構図のイラスト 16:9。**テキスト用の余白は作らず、画面全体を使う**）
+
+記事の内容に合わせたシーン指示の作り方は [cho-hamanako-thumbnail-prompt](../cho-hamanako-thumbnail-prompt/SKILL.md) を参照。
 
 ```bash
 cd c:/Users/sasis/344dev/cho-hamanako
-node .workspace/scripts/Antigravity-nanobana/generate-cover.js "src/content/blog/points/naka/gardenpark/index.mdx"
+
+# プロンプトの確認だけ（API は呼ばない）
+node .workspace/scripts/Antigravity-nanobana/generate-cover.js "src/content/blog/points/naka/gardenpark/index.mdx" --dry-run
+
+# 記事に合わせたシーン指示つきで生成（ユーザーが生成を明示したときのみ）
+node .workspace/scripts/Antigravity-nanobana/generate-cover.js "<index.mdx>" --scene-file "<scene.txt>"
 ```
 
-フロントマターから読む項目:
+オプション: `--scene "<英語>"` / `--scene-file <path>`（記事固有のシーン指示）、`--out <path>`（出力先変更）、`--dry-run`（プロンプト表示のみ）。
 
-- `fishinginfo.targetFish` → 被写体
-- `fishinginfo.bestSeason` → 水中トーン（春/夏/秋/冬）
-- `location.name` → 構図のニュアンス
+共通で適用されるデザイン方針（スクリプト内 `THUMBNAIL_STYLE` / `THUMBNAIL_COMPOSITION`）: 主役1つで画面の50〜65%、動きのある構図、補色コントラスト、中央80%に要素を収める、文字・ロゴなし。
 
-実行後、MDX の `heroImage: "./cover.jpg"` を設定（既存が `cover.png` ならファイル名を揃える）。
+`--scene` 省略時はフロントマター（`title` / `category` / `tags` / `fishinginfo.targetFish・methods・bestSeason` / `location.name`）と記事タイプ（料理・ポイント・魚種・季節・手法など）から簡易シーンを自動生成する。`bestSeason` が1〜2季節の記事のみ季節ライティングが付く。
+
+実行後、MDX の `cover: ./cover.jpg` を確認（既存が `cover.png` ならファイル名を揃える）。
 
 ## 2. 任意プロンプト1枚
 
@@ -64,10 +71,10 @@ node .workspace/scripts/Antigravity-nanobana/generate-image.js "Flat illustratio
 本文にコメントで残す形式（生成前の設計用）:
 
 ```mdx
-{/* Image Prompt (cover): 図鑑風、右60%にクロダイ、左40%はテキスト用余白、16:9 */}
+{/* Image Prompt (cover): 主役=クロダイが跳ねる、夕焼け、補色コントラスト、16:9 */}
 ```
 
-ユーザー指示後、上記を `generate-cover.js` または `generate-image.js` に反映する。
+ユーザー指示後、`cho-hamanako-thumbnail-prompt` の手順でシーン指示にして `generate-cover.js` に渡す（`generate-image.js` は任意の1枚用）。
 
 ## 失敗時
 
