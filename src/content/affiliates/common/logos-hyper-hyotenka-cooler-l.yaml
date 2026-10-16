@@ -8,3 +8,4 @@ methods: ["キャンプ", "遠征", "宿泊"]
 categories: ["クーラーボックス"]
 brand: ロゴス
 isRecommended: true
+scenes: ["car"]

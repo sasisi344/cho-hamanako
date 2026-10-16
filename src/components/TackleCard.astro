@@ -2,20 +2,26 @@
 import { getEntry } from "astro:content";
 import AffiliateCard from "./AffiliateCard.astro";
 import BannerCard from "./BannerCard.astro";
+import AffiliateTextLink from "./AffiliateTextLink.astro";
 
 interface Props {
   id: string;
   isVertical?: boolean;
   noMargin?: boolean;
+  // 記事内のどの節に置いたか。affiliate_click の aff_position として送信する（値は .agents/affiliate-placement-rules.md）
+  position?: string;
 }
-const { id, isVertical = false, noMargin = false } = Astro.props;
+const { id, isVertical = false, noMargin = false, position } = Astro.props;
 const entry = await getEntry("affiliates", id);
-const isBanner = id.startsWith("travel/") || id.startsWith("naturum/");
+// format 未指定のエントリは従来どおり ID の接頭辞で判定する
+const format = entry?.data.format ?? (id.startsWith("travel/") || id.startsWith("naturum/") ? "banner" : "card");
 ---
 
 {entry ? (
-  <div class={noMargin ? "" : "my-8"}>
-    {isBanner ? (
+  <div class={noMargin ? "" : format === "text" ? "my-4" : "my-8"} data-aff-position={position}>
+    {format === "text" ? (
+      <AffiliateTextLink product={entry.data} />
+    ) : format === "banner" ? (
       <BannerCard product={entry.data} />
     ) : (
       <AffiliateCard product={entry.data} isVertical={isVertical} />

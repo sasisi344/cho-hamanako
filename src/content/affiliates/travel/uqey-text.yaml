@@ -8,3 +8,5 @@ methods: ["観光", "レンタカー"]
 categories: ["旅行・観光"]
 brand: Uqey
 isRecommended: true
+format: text
+scenes: ["rental-car"]

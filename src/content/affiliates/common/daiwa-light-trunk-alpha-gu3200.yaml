@@ -8,3 +8,4 @@ methods: ["ルアーフィッシング", "船釣り", "エサ釣り"]
 categories: ["クーラーボックス"]
 brand: ダイワ
 isRecommended: true
+scenes: ["car"]

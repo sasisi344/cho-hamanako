@@ -8,3 +8,4 @@ methods: ["遠征", "車中泊", "キャンプ"]
 categories: ["車中泊グッズ"]
 brand: Amazon
 isRecommended: true
+scenes: ["car"]

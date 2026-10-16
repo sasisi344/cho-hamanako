@@ -8,3 +8,4 @@ methods: ["遠征", "宿泊", "車中泊"]
 categories: ["車中泊グッズ"]
 brand: EENOUR
 isRecommended: true
+scenes: ["car"]

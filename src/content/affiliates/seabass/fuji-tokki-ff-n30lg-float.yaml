@@ -8,3 +8,4 @@ methods: ["ウキ釣り", "夜釣り"]
 categories: ["その他"]
 brand: 富士灯器
 isRecommended: true
+scenes: ["night"]

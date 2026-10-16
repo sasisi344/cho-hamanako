@@ -93,6 +93,14 @@ const affiliates = defineCollection({
     categories: z.array(z.string()).default([]),
     brand: z.string().optional(),
     isRecommended: z.boolean().default(false),
+    // 表示形式。未指定なら TackleCard が ID の接頭辞から判定する（travel/・naturum/ → banner、それ以外 → card）
+    format: z.enum(["card", "banner", "text"]).optional(),
+    // ポイント記事で「必要が生まれる場面」。配置ルールは .agents/affiliate-placement-rules.md
+    scenes: z
+      .array(z.enum(["wading", "night", "car", "family", "safety", "boat", "bait", "stay", "activity", "rental-car"]))
+      .default([]),
+    // 旅行系リンクの対象エリア（エリア指定のディープリンクのみ）
+    area: z.enum(["kanzanji", "bentenjima-maisaka", "arai", "oku-hamanako"]).optional(),
   }),
 })
 

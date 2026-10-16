@@ -8,3 +8,4 @@ methods: ["ミャク釣り", "ウキ釣り", "投げ釣り"]
 categories: ["エサ"]
 brand: マルキュー
 isRecommended: true
+scenes: ["bait"]

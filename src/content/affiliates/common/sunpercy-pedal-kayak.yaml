@@ -8,3 +8,4 @@ methods: ["ボート釣り", "カヤック"]
 categories: ["ボート・SUP"]
 brand: サンパーシー
 isRecommended: true
+scenes: ["boat"]

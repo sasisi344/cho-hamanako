@@ -8,3 +8,4 @@ methods: ["ボート釣り"]
 categories: ["ボート・SUP"]
 brand: Hewflit
 isRecommended: true
+scenes: ["boat"]

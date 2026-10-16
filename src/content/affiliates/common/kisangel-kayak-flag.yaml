@@ -8,3 +8,4 @@ methods: ["ボート釣り", "カヤック", "SUP"]
 categories: ["安全装備"]
 brand: Kisangel
 isRecommended: true
+scenes: ["boat", "safety"]

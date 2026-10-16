@@ -8,3 +8,4 @@ methods: ["観光", "レジャー"]
 categories: ["旅行・観光"]
 brand: asoview!
 isRecommended: true
+scenes: ["activity"]

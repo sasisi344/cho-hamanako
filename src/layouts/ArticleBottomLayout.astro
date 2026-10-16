@@ -34,7 +34,7 @@ const isBlog = collection === "blog"
 ---
 
 <div>
-  <article id="article">
+  <article id="article" data-category={entry.collection === "blog" ? entry.data.category : entry.collection}>
     <Content/>
   </article>
 

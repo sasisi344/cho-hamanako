@@ -8,3 +8,4 @@ methods: ["ボート釣り"]
 categories: ["ボート・SUP"]
 brand: AQUA MARINA
 isRecommended: true
+scenes: ["boat"]

@@ -8,3 +8,4 @@ methods: ["夜釣り"]
 categories: ["その他"]
 brand: ジェントス
 isRecommended: true
+scenes: ["night", "safety"]

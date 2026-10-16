@@ -8,3 +8,5 @@ methods: ["遠征", "宿泊"]
 categories: ["旅行・宿泊"]
 brand: リクルート
 isRecommended: true
+format: text
+scenes: ["stay"]

@@ -8,3 +8,4 @@ methods: ["ボート釣り", "SUP"]
 categories: ["ボート・SUP"]
 brand: SEAPLUS
 isRecommended: true
+scenes: ["boat"]

@@ -8,3 +8,4 @@ methods: ["エサ釣り", "ライトゲーム"]
 categories: ["クーラーボックス"]
 brand: サンカ
 isRecommended: true
+scenes: ["car", "family"]
