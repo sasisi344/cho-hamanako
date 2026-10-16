@@ -5,6 +5,8 @@ description: Generates weekly PDCA task files for Cho! Hamanako from GA4 and GSC
 
 # Cho! Hamanako — 週間 PDCA ワークフロー
 
+> **2026-10-17 運用変更**: 週次 PDCA（`W{nn}-task.md` の毎週作成）は廃止。**月末に1か月分の GA4・GSC で分析し、翌月のタスクを洗い出す**運用に移行した。データの取得範囲・重視するディメンション・ファイル名は [schedule-task.md](../../../.workspace/.task/schedule-task.md) 冒頭の TIPS が正本。本 SKILL の週次前提の記述（W 番号・前週比など）は月次に読み替える。
+
 ## 概要
 
 週次のアクセスデータ（GA4 / GSC）を読み込み、Check（分析・要因仮説）と Act（優先度付きタスク）を生成して `.workspace/.task/W{nn}-task.md` に書き出す。
@@ -18,14 +20,16 @@ description: Generates weekly PDCA task files for Cho! Hamanako from GA4 and GSC
 ### ファイルパス規則
 
 ```
-.workspace/access-data/2026/w{nn}/
-  chohama-ga4-w{nn}.csv   ← GA4 探索レポート（自由形式）
-  chohama-gsc-w{nn}.csv   ← GA4 探索レポート内の Search Console データソース（ランディングページ+クエリ文字列 統合）
+.workspace/access-data/{年}/{年}-{月}/        ← 2026-10-17〜 月次運用（例: 2026/2026-10/）
+  chohama-ga4-landing-{年}-{月}.csv  ← GA4 探索レポート（ランディングページ）
+  chohama-gsc-pages-{年}-{月}.csv    ← GSC ページ
+  （ほかのファイル名は schedule-task.md 冒頭の TIPS「ファイルの置き場所と名前」）
+  w{nn}/                              ← 週次運用時代のデータ（データ終了日の月に格納。中身は週単位のまま）
 ```
 
-ユーザーが週番号を指定したらそのフォルダを読む。指定がなければ `.workspace/access-data/2026/` 内で最新フォルダ（数値が最大の `w{nn}`）を選ぶ。
+ユーザーが月を指定したらそのフォルダを読む。指定がなければ `.workspace/access-data/` 内で最新の `{年}-{月}` フォルダを選ぶ。過去の週次データ（`w{nn}/`）は前月比較や長期推移の参考にのみ使い、月次の数値と直接合算しない（週ごとの CSV を足すとエンゲージメント率などの率が崩れる）。
 
-**禁止**: Search Console UI（search.google.com/search-console）から直接エクスポートする「ページ.csv」「クエリ.csv」形式は使わない。ページとクエリが分離され、4-Box分析に必要なクエリ内訳・アクティブユーザー・キーイベント列が失われるため。
+**優先**: GA4 探索レポート内の Search Console データソース（ランディングページ+クエリ文字列 統合）を使う。Search Console UI（search.google.com/search-console）の「ページ.csv」「クエリ.csv」はページとクエリが分離され、4-Box分析に必要なクエリ内訳・アクティブユーザー・キーイベント列が失われるため。**GA4 と Search Console が未連携の間は**、UI のページ.csv・クエリ.csv に加え、効果測定の対象ページをページで絞り込んだクエリ.csv を取得して代替する（W37〜W42 の実態。手順は schedule-task.md の TIPS）。
 
 ### GA4 探索レポート定義（自由形式）
 

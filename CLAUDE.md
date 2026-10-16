@@ -49,8 +49,8 @@ Claude Code セッションでは、下記を用途に応じて読み込む（�
 | `cho-hamanako-article-rewrite` | リライト・forAI 統合・深度・ポイントマトリクス |
 | `cho-hamanako-base-structure` | モジュール構成・深度ティア（通常2,000字+） |
 | `cho-hamanako-data-set` | `.data-set/.index/manifest.json` 経由のナレッジ参照 |
-| `cho-hamanako-weekly-pdca` | GA4/GSC CSV を読み込み、週次 PDCA タスク（W{nn}-task.md）を生成 |
-| `cho-hamanako-schedule-task` | 効果測定・経過観察タスクを W{nn}-task.md から schedule-task.md へ仕分ける |
+| `cho-hamanako-weekly-pdca` | GA4/GSC CSV を読み込み、分析とタスク洗い出しを行う（2026-10-17〜 週次を廃止し**月末の月次分析**に移行。取得手順は `.workspace/.task/schedule-task.md` 冒頭の TIPS） |
+| `cho-hamanako-schedule-task` | 効果測定・経過観察タスクを schedule-task.md に集約し、月次分析の日にまとめて確認する |
 
 ## サブエージェント
 

@@ -44,7 +44,7 @@ node .workspace/scripts/Antigravity-nanobana/generate-cover.js "src/content/blog
 node .workspace/scripts/Antigravity-nanobana/generate-cover.js "<index.mdx>" --scene-file "<scene.txt>"
 ```
 
-オプション: `--scene "<英語>"` / `--scene-file <path>`（記事固有のシーン指示）、`--out <path>`（出力先変更）、`--dry-run`（プロンプト表示のみ）。
+オプション: `--scene "<英語>"` / `--scene-file <path>`（記事固有のシーン指示）、`--style illust|photo|poster`（画風プリセット、既定 illust）、`--out <path>`（出力先変更）、`--dry-run`（プロンプト表示のみ）。
 
 共通で適用されるデザイン方針（スクリプト内 `THUMBNAIL_STYLE` / `THUMBNAIL_COMPOSITION`）: 主役1つで画面の50〜65%、動きのある構図、補色コントラスト、中央80%に要素を収める、文字・ロゴなし。
 

@@ -100,4 +100,4 @@ GSC 12ヶ月データ（`.workspace/access-data/gsc-data/2026-0617/12month-data/
 
 - コンポーネント: `src/components/TackleCard.astro`, `BannerCard.astro`, `AffiliateCard.astro`
 - 旅行アセット: `src/content/affiliates/travel/*.yaml`
-- アクセスデータ: `.workspace/access-data/2026/w29/`, `.workspace/access-data/gsc-data/2026-0617/12month-data/`
+- アクセスデータ: `.workspace/access-data/2026/2026-07/w29/`, `.workspace/access-data/gsc-data/2026-0617/12month-data/`

@@ -95,7 +95,8 @@ node .workspace/scripts/Antigravity-nanobana/generate-cover.js "<記事のindex.
 ```
 
 - 出力されたプロンプトを **ユーザーに見せて承認を取る**。承認前に `--dry-run` なしで実行しない
-- `--scene` / `--scene-file` を省略すると、記事メタ（魚種・場所・タイプ）から自動で簡易シーンを作る。ポイント記事は魚が先頭2種になるため、基本は **手動でシーンを書く**
+- `--scene` / `--scene-file` を省略すると、記事メタ（魚種・場所・タイプ・`summary`）から自動で簡易シーンを作る。ポイント記事は記事ディレクトリ名と一致する `infrastructure-master.json` の `summary` を「描いてよい特徴」として自動で渡し、魚は添え役の1種だけにする。施設マスタに無いポイント（まとめ・深掘り記事など）は **手動でシーンを書く**
+- 画風の比較は `--style illust|photo|poster`（既定 illust）。同じシーンで `--out cover-photo.jpg` のように出力先を分けて試作する
 - 生成後は MDX の `cover: ./cover.jpg` を確認（既存が `cover.png` ならファイル名を揃える、または `--out` を指定）
 - 複数案を比較したい場合は `--out` を変えて2〜3枚作り、ユーザーに選んでもらう
 

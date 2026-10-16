@@ -57,26 +57,28 @@
 
 - [ ] `target/kisu` — GSC でインデックス確認。キスは浜名湖でメインターゲットになるほど釣れないため、需要自体が弱い点を踏まえて記事全体の方針を見直す ※ユーザー操作
 - [x] ポイントのOGP画像更新（2026-10-11 対応）— 原因は共通フォールバック `public/open-graph.jpg` が 500×500 の白地「Cho! Hama」プレースホルダーだったこと。新OGP（1200×630・表浜名湖イラスト＋ブランド名）に差し替え、cover 未設定だったポイント系4記事（表・中・奥エリアまとめ、車横付けまとめ）に `cover.jpg` を追加。生成は `.workspace/scripts/make-ogp.mjs`（API不使用）。デプロイ後に SNS カードのキャッシュ更新（X Card Validator 等）を確認 ※ユーザー操作
-- [ ] 画像生成プロンプトの調整（OGP更新と合わせて実施）— 現状は「テキストなし・左40%は文字用の余白」のサムネ（`.workspace/scripts/Antigravity-nanobana/generate-cover.js` の `SITE_CONTEXT`／`coverPrompt`）。クリックされる魅力あるサムネを作れるよう、構図・色味・被写体の見せ方（必要ならタイトル文字の有無）を見直す
+- [x] 画像生成プロンプトの調整（2026-10-17 完了）（OGP更新と合わせて実施）— 現状は「テキストなし・左40%は文字用の余白」のサムネ（`.workspace/scripts/Antigravity-nanobana/generate-cover.js` の `SITE_CONTEXT`／`coverPrompt`）。クリックされる魅力あるサムネを作れるよう、構図・色味・被写体の見せ方（必要ならタイトル文字の有無）を見直す
   - 手順案: ①既存カバーのうちCTRが高い／低い記事を見比べて傾向を整理 → ②プロンプト案を2〜3パターン作成し数枚試作 → ③採用案を `generate-cover.js` に反映し、ポイントOGPにも適用
   - 注意: 画像生成は明示的な指示があるまで実行しない（CLAUDE.md）。試作の実行はユーザーの指示後
+  - 進捗（2026-10-17）: 左40%余白の撤廃・記事タイプ別の主役設計・魚種の見た目辞書・季節ライティングは 10/11 に反映済み。10/17 に追加で、`--style illust|photo|poster`（試作比較用の画風プリセット）、ポイント記事で `infrastructure-master.json` の `summary` を自動参照（実在の特徴だけを描かせる）、全記事で frontmatter `summary` をシーンの文脈に追加、ポイント記事の魚を添え役1種に絞る、を実装。カバー未設定7記事（季節レシピ4本・`koaji-karaage-recipe`・`guide/logistics/shops`・`target/kisu`）で試作し全て採用（画風は既定の illust のまま）。底物を跳ねさせない修正も追加
+  - ①CTR比較について: Google 検索の通常結果ではサムネがほぼ表示されないため、GSC の CTR はサムネ効果の指標として弱い。測るなら Discover／SNS 流入（GA4 の参照元）で比較する
 
 #### 優先度：中（データ整備）
 
-- [ ] ファイル名規則を SKILL（`chohama-ga4-w{nn}.csv` / `chohama-gsc-w{nn}.csv`）とデータ置き場の実態（`w{nn}-ga4-chohama.csv`、GSC は日本語名2ファイル）のどちらかに統一する（W40 から引き継ぎ）
-- [ ] GSC を GA4 探索レポート内の Search Console データソース（ランディングページ+クエリ文字列統合）で取得し、ページ×クエリを突合できるようにする。当面は「7日間」のページ.csv／クエリ.csv で運用
+- [x] （2026-10-17 月次運用への移行で解決: 命名は [schedule-task.md](schedule-task.md) の TIPS「ファイルの置き場所と名前」に統一）ファイル名規則を SKILL（`chohama-ga4-w{nn}.csv` / `chohama-gsc-w{nn}.csv`）とデータ置き場の実態（`w{nn}-ga4-chohama.csv`、GSC は日本語名2ファイル）のどちらかに統一する（W40 から引き継ぎ）
+- [ ] （手順は [schedule-task.md](schedule-task.md) の TIPS「GA4 探索レポート」5番に記載。10/30〜31 の月次分析で実施）GSC を GA4 探索レポート内の Search Console データソース（ランディングページ+クエリ文字列統合）で取得し、ページ×クエリを突合できるようにする。当面は「7日間」のページ.csv／クエリ.csv で運用
 
 #### 引き継ぎ残件（W42 以降）
 
 **記事の残件**
 
-**効果測定** → [schedule-task.md](schedule-task.md) に集約（W43目安・W45目安・継続観察）
+**効果測定** → [schedule-task.md](schedule-task.md) に統合（2026-10-17 週次 PDCA 廃止。確認は 2026-10-30〜31 の月次分析）
 
 #### 優先度：低
 
 - [ ] CTR0%・表示10以上のページ → タイトル・導入文が検索意図と合っているか確認（競合調査してから実施）:
   `/blog/kibire-beginner/`（表示30・順位7.83）、`/blog/flatfish-beginner/`（表示26・順位22.4）、`/blog/night-chining/`（表示24・順位9.5）、
   `/points/sunaageba/`（表示23・順位8.7）、`/blog/7-month/`（表示20・順位19.6）、`/points/pokochan-coast/`（表示15・順位5.87）、`/blog/june-tako-opening/`（表示11・順位4.91。高順位で0クリック）
-  ※ `7-month`・`june-tako-opening` は釣りシーズン外（10月現在）のため正常。春以降に再確認。
+  ※ `7-month`・`june-tako-opening` は釣りシーズン外（10月現在）のため正常。再確認は [schedule-task.md](schedule-task.md) の「春シーズン」に移動。
 
 経過観察・効果測定待ち → [schedule-task.md](schedule-task.md) に集約

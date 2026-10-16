@@ -14,7 +14,7 @@
 | `guide/beginner`・`logistics` | **一部済・一部要インフラ** | `b9aac6c` / `5645dc7` 前後。`hamanako-fishing-rules-and-manners` は約 7,800 字・`upDate` 2026-05-26 |
 | `guide/theory/*` | **未着手に近い** | theory 配下に `rewrite` コミットなし。多くが **1,100〜1,900 字**で SKILL 目安未満 |
 | `guide/points/hamana-depth-map-guide` | **本文済・301済** | 2026-06-09 に約3,724字へ追記。旧WP URL・旧Astroスラッグとも301設定済（2026-06-10） |
-| GSC 優先表（§5） | **一部更新・本格再取得は保留** | `query-compare-priority.md` 自体は **2026-04-07 時点の28日**のまま。`.workspace/access-data/2026/w24/`（1週間・ページ単位）で個別ページの現況は確認済 |
+| GSC 優先表（§5） | **一部更新・本格再取得は保留** | `query-compare-priority.md` 自体は **2026-04-07 時点の28日**のまま。`.workspace/access-data/2026/2026-06/w24/`（1週間・ページ単位）で個別ページの現況は確認済 |
 | `forAI` ブロック | **リポジトリに残存なし** | リライト後は本文に統合済みとみなす |
 
 **`.workspace/.task/task.md` との関係**: `task.md` の `guide [x] method` は **5月一括リライト完了**と整合。`theory [x]` は **移行完了**の意味で、**厚みリライトは未完了**と解釈する。
@@ -118,7 +118,7 @@
 | 3 | B-1 | `hamana-depth-map-guide` 追記（水深図・エリア別タナ・内部リンク）＋旧水深 URL の 301 | [x] 本文完了 2026-06-09 / 301 も2026-06-10完了 |
 | 4 | A-2（新規） | `/blog/anazuri/`・`/blog/hamana-depth-map-guide/`（旧Astroスラッグ）の 301 | [x] 2026-06-10（w24データで404流入を確認し追加） |
 
-**S0-1メモ**: `query-compare-priority.md`が前提とする「WP約92日 vs Astro28日・クエリ単位」の再比較は、`.workspace/.task/query-datacheck/compare_gsc_queries.py`が特定の2ファイル（クエリ単位CSV）を読む構成のため、`.workspace/access-data/2026/w24/`のページ単位・GA4結合・1週間データはそのままでは流用不可。今回はw24データで `/blog/anazuri/` `/blog/hamana-depth-map-guide/` の404流入（imp12/click2、imp13/click2）を確認し、A-2の301根拠とした。本格的な28日・クエリ単位の再集計は、GSCから新規にクエリ単位CSVを再エクスポートするまで保留。
+**S0-1メモ**: `query-compare-priority.md`が前提とする「WP約92日 vs Astro28日・クエリ単位」の再比較は、`.workspace/.task/query-datacheck/compare_gsc_queries.py`が特定の2ファイル（クエリ単位CSV）を読む構成のため、`.workspace/access-data/2026/2026-06/w24/`のページ単位・GA4結合・1週間データはそのままでは流用不可。今回はw24データで `/blog/anazuri/` `/blog/hamana-depth-map-guide/` の404流入（imp12/click2、imp13/click2）を確認し、A-2の301根拠とした。本格的な28日・クエリ単位の再集計は、GSCから新規にクエリ単位CSVを再エクスポートするまで保留。
 
 **S0 完了後に並べ替え**（現 GSC では参考程度）:
 

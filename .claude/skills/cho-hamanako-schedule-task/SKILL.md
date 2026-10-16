@@ -5,6 +5,8 @@ description: Moves effect-measurement and watch items from W{nn}-task.md to sche
 
 # Cho! Hamanako — 効果測定・経過観察のスケジュール管理
 
+> **2026-10-17 運用変更**: 週次 PDCA は廃止し、月末の月次分析に移行。効果測定・経過観察は `schedule-task.md` に集約し、**月次分析の日にまとめて確認**する（初回 2026-10-30〜31）。データ取得の手順は `schedule-task.md` 冒頭の TIPS を参照。
+
 ## ファイルの役割
 
 | ファイル | 用途 |

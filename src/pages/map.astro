@@ -42,6 +42,28 @@ const mapPoints = allPosts
 // 表示するタグを厳選（存在するエリア + 1-12月）
 const displayTags = [...areaTags, ...monthTags];
 
+// 初期表示（全エリア選択）のポイント一覧。JS 実行前の HTML にも一覧とリンクを出すため、
+// クライアント側 updateMap() の初期フィルタと同じ条件でサーバー側でも描画する
+const initialPoints = mapPoints.filter(p => p.tags.some(t => areaTags.includes(t)));
+const formatListDate = (d?: Date) =>
+  d ? new Date(d).toLocaleDateString("en-US", { month: "short", day: "2-digit", year: "numeric" }) : "---";
+
+// エリアの概要と、エリアまとめ記事へのリンク（slug は実在エントリから引く）
+const AREA_GUIDES = [
+  { tag: "表浜名湖", slug: "omote-hamanako-fishing-points", text: "今切口から外海の潮が直接入る、浜名湖の玄関口。新居弁天海釣公園・弁天島から浜名湖大橋周辺まで、クロダイ・シーバス・サビキ釣りの好ポイントが集まります。" },
+  { tag: "中浜名湖", slug: "naka-hamanako-fishing-points", text: "村櫛海水浴場・村櫛漁港を中心に、鷲津湾から雄踏方面まで広がるエリア。クロダイ・キビレ・シーバスが主なターゲットです。" },
+  { tag: "奥浜名湖", slug: "oku-hamanako-fishing-points", text: "猪鼻湖・庄内湖・内浦湾（舘山寺）の3つの顔を持つエリア。都田川河口を含む内浦湾周辺に、観光と組み合わせやすい釣り場がそろいます。" },
+];
+const areaGuides = AREA_GUIDES.flatMap(g => {
+  const post = allPosts.find(p => p.slug === g.slug && !p.data.draft);
+  if (!post) return [];
+  return [{
+    ...g,
+    href: blogPostHref(post.slug, post.data.category),
+    count: initialPoints.filter(p => p.tags.includes(g.tag)).length,
+  }];
+});
+
 const jsonPoints = JSON.stringify(mapPoints);
 ---
 
@@ -93,9 +115,38 @@ const jsonPoints = JSON.stringify(mapPoints);
     </div>
 
     <div class="mt-12 animate">
+        <h2 class="text-2xl font-bold mb-6">エリア別の特徴</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+            {areaGuides.map(g => (
+              <section class="p-5 border rounded-lg border-black/15 dark:border-white/20 bg-white dark:bg-zinc-900">
+                <h3 class="font-bold text-lg mb-2">{g.tag}の釣り場（{g.count}ポイント）</h3>
+                <p class="text-sm opacity-80 mb-3">{g.text}</p>
+                <a href={g.href} class="text-sm font-bold text-blue-600 dark:text-blue-400 underline">{g.tag}の釣りポイント完全ガイドを読む</a>
+              </section>
+            ))}
+        </div>
+    </div>
+
+    <div class="mt-12 animate">
         <h2 class="text-2xl font-bold mb-6">表示中のポイント一覧</h2>
         <div id="point-list" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-            <!-- JSで動的に追加 -->
+            {/* 初期表示はサーバー側で描画し、フィルタ操作時は JS（updateMap）が置き換える */}
+            {initialPoints.map(point => (
+              <a href={point.url} class="group flex flex-col p-4 gap-3 border rounded-lg hover:bg-black/5 hover:dark:bg-white/10 border-black/15 dark:border-white/20 transition-all duration-300 ease-in-out bg-white dark:bg-zinc-900 shadow-sm">
+                <div class="flex flex-col w-full group-hover:text-black group-hover:dark:text-white transition-colors duration-300">
+                  <div class="flex items-center gap-2 text-xs uppercase opacity-70">
+                    <span>{formatListDate(point.pubDate)}</span>
+                  </div>
+                  <h3 class="font-bold mt-2 text-black dark:text-white line-clamp-2 leading-snug">{point.name}</h3>
+                  <p class="text-sm mt-1 line-clamp-2 opacity-80">{point.summary}</p>
+                  <ul class="flex flex-wrap mt-3 gap-1">
+                    {point.tags.slice(0, 3).map(t => (
+                      <li class="text-[10px] uppercase py-0.5 px-2 rounded bg-black/5 dark:bg-white/20 text-black/75 dark:text-white/75">{t}</li>
+                    ))}
+                  </ul>
+                </div>
+              </a>
+            ))}
         </div>
     </div>
   </BottomLayout>

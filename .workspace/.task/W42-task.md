@@ -57,35 +57,29 @@
 
 #### 優先度：高
 
-> `kibire-cooking` は 10/8 更新の効果待ちのため、高優先から外して観察扱いにしている（下記）。
-
 - [x] **GA4 の計測状況を確認**（※ユーザー操作）— 2026-10-16: リアルタイムで `affiliate_click` 受信を確認し、キーイベントに設定（[affiliate-normalization-plan.md](affiliate-normalization-plan.md) Phase 1-3）
   - ①本番へのデプロイ日時を確認し、gtag メインスレッド化（`6573423`）がいつから本番反映されたか特定する
   - ②GA4 管理 > イベント で `affiliate_click` が受信できているか確認。届いていれば「キーイベントとしてマーク」を ON にする（届いていなければ GA4 リアルタイム／DebugView で TackleCard をクリックして発火を確認）
   - ③確認結果を W43 のベースライン条件（開始日）として記録する
-- [ ] `/blog/target/kibire/cooking/`（`kibire-cooking`、表示857・順位9.12・CTR1.05%）→ **10/8 の更新直後のため再改稿は保留し、W43〜W44 で効果を観察**（[schedule-task.md](schedule-task.md) に移動）
-  - W44 時点で順位が 8 位以内に入らない場合のみ、競合上位記事の見出し構成を確認したうえで本文拡充を検討
-  - 拡充する場合の候補（クエリ別需要）: **「刺身」独立 H2**（136表示・順位10.3）、**「塩焼き」の手順強化**（25表示・順位7.84）、**「キチヌ」表記で食べ方を明示**（67表示）、「美味しい食べ方」ランキング形式の導入（34表示）
 
 #### 優先度：中
 
-- [ ] `/points/omote/araibenten-umiduripark/`（表示136・順位8.28・クリック 18 → 3）→ 「新居弁天 釣り」「新居弁天海釣公園 サビキ／タコ」系クエリの取りこぼし確認。GSC のページフィルタでクエリ内訳を確認し、title・summary に釣り物キーワードを足す（ライブカメラは戻さない）（※GSCのUI操作はユーザー）
-- [ ] `/blog/guide/beginner/hamanako-fishing-rules-and-manners/`（PV 66・クリック 41・順位 5.66）→ サイト最大の入口記事。初心者向けの「初めての道具」「ルール確認後に行く釣り場」への BlogCard（実在slug確認）と、必要なら TackleCard を自然な位置に追加（押し売りにならない範囲で）
-- [ ] `/map/`（表示167・順位8.11・CTR8.38%）→ 「浜名湖 釣り場 マップ」「浜名湖 水深マップ」での順位改善（本文強化・`hamanako-depth-map` 等からの内部リンク追加）。W43 効果測定項目（水深マップ）と合わせて確認
-- [ ] `/points/family-car-points/`・`/blog/guide/beginner/family-car-fishing-points/`（順位 11.09 / 11.92 に悪化）→ 10/10 の内部リンク整理後の順位を W43 で確認。改善しなければ2記事のキーワード住み分け（カニバリ）を再点検
+- [x] `/points/omote/araibenten-umiduripark/`（表示136・順位8.28・クリック 18 → 3）→ 「新居弁天 釣り」「新居弁天海釣公園 サビキ／タコ」系クエリの取りこぼし確認。GSC のページフィルタでクエリ内訳を確認し、title・summary に釣り物キーワードを足す（ライブカメラは戻さない）（※GSCのUI操作はユーザー）
+  - 2026-10-17: サイト全体のクエリ.csv で確認。検索者は正式名より「新居海釣り公園」表記を使い、施設名のみの検索で順位17〜37位と弱かったため、title 先頭を「新居海釣り公園（新居弁天）」に変更し summary を釣り物優先に（本文導入には別称の記載が既にあり変更なし）。ベースラインは [schedule-task.md](schedule-task.md) に記録
+- [x] `/blog/guide/beginner/hamanako-fishing-rules-and-manners/`（PV 66・クリック 41・順位 5.66）→ サイト最大の入口記事。初心者向けの「初めての道具」「ルール確認後に行く釣り場」への BlogCard（実在slug確認）と、必要なら TackleCard を自然な位置に追加（押し売りにならない範囲で）
+  - 2026-10-17: 道具（`hamanako-complete-tackle-guide`）・釣り場（`family-car-fishing-points`・`sunaageba` 等）への BlogCard は既に配置済みだったため追加なし。「安全管理とライフジャケット」節の夜釣りの段落に `common/gentos-headlight-cb-300d`（`position="safety"`）を1枚追加。ライフジャケットは本文が護岸向けに浮力体入りベストを勧めている一方、登録商品が手動膨張式（ボート・カヤック向け）しかないため置かず → **ベスト型ライフジャケットの商品データ追加が候補**（リンク取得はユーザー作業）
+- [x] `/map/`（表示167・順位8.11・CTR8.38%）→ 「浜名湖 釣り場 マップ」「浜名湖 水深マップ」での順位改善（本文強化・`hamanako-depth-map` 等からの内部リンク追加）。W43 効果測定項目（水深マップ）と合わせて確認
+  - 2026-10-17: ①ポイント一覧が JS 描画のみで、HTML にはほぼ H1 と導入文しかなかったため、初期表示の一覧（58リンク）をサーバー側で描画するよう変更（フィルタ操作時は従来どおり JS で置換）。②「エリア別の特徴」節を追加し、表・中・奥のエリアまとめ記事へリンク。③エリアまとめ3記事の地図直後に `/map/` へのテキストリンクを追加（従来 `/map/` への本文リンクは水深マップ記事のみ）。水深マップ記事との競合を避けるため、`/map/` は「釣り場マップ」に寄せ、title は変更なし。効果測定は 10/30〜31 の月次分析（[schedule-task.md](schedule-task.md)）
 - [ ] `/points/eging-fukabori/`（表示49・順位9.57）・`/blog/points-top5/`（表示50・順位8.24）→ CTR は全体以上なので本文強化・内部リンク追加（優先B）
 - [ ] `/blog/guide/theory/night-fishing-light/`（表示30・順位6.23・クリック 3 → 0）→ タイトル・導入が検索意図と合っているか確認（競合調査してから実施）
-- [ ] TackleCard 配置の見直し — GA4 計測が揃った W43 のデータで、PV 上位かつ affiliate_click 0 のページを再抽出して実施（現時点では計測自体が確認できていないため保留）
 
 #### 優先度：低
 
-- [ ] 優先A のサンプル不足ページ（`syotaijihana`・`bachinuke-fukabori`・`turbidity-water-color`）→ 表示が10を超えたら title / meta 見直し
 - [ ] CTR0%・表示10以上のページ → タイトル・導入文が検索意図と合っているか確認（競合調査してから実施）:
-  `/affiliates/`（表示26・順位8.62）、`/blog/9-month/`（17・6.94）、`/blog/sabiki-set-comparison/`（17・8.12）、`/blog/hazekura-intro/`（16・7.81。統合後の3本編成の一部。W45 の効果測定と合わせて観察）、`/blog/mejina/`（15・10.53）
-  ※ `june-tako-opening`（表示24・順位5.33）は釣りシーズン外のため春以降に再確認。
+  `/affiliates/`（表示26・順位8.62）、`/blog/9-month/`（17・6.94）、`/blog/sabiki-set-comparison/`（17・8.12）、`/blog/hazekura-intro/`（16・7.81。統合後の3本編成の一部。効果測定は [schedule-task.md](schedule-task.md) のハゼ3本と合わせて確認）、`/blog/mejina/`（15・10.53）
+  ※ `june-tako-opening`（表示24・順位5.33）は釣りシーズン外。再確認は [schedule-task.md](schedule-task.md) の「春シーズン」に移動。
 - [ ] 前週 Act の残件を W41-task.md から引き継ぎ（`target/kisu` 方針見直し、ポイントOGP画像更新、画像生成プロンプト調整、ファイル名規則統一、GSC の GA4 探索形式での再取得）— 詳細は [W41-task.md](W41-task.md) の「優先度：中（残件）」「優先度：中（データ整備）」を参照
 
-#### 効果測定（→ [schedule-task.md](schedule-task.md) に追記済み）
+#### 効果測定
 
-- W43: GA4 ベースライン再設定（計測安定後の1週間）、`araibenten-umiduripark` のクリック推移、車横付け2記事の順位
-- W43〜W44: `kibire-cooking` の順位・CTR（W42 ベースライン: 表示857・順位9.12・CTR1.05%、10/8 更新の効果待ち）
+2026-10-17 に週次 PDCA を廃止し、効果測定（`kibire-cooking`・車横付け2記事・TackleCard 配置見直しの抽出・優先A のサンプル不足ページを含む）は [schedule-task.md](schedule-task.md) に統合。確認は 2026-10-30〜31 の月次分析で行う

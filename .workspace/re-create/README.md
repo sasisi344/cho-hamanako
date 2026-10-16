@@ -22,7 +22,7 @@
 
 ## データソース
 
-- GSC/GA4: `.workspace/access-data/2026/w37/`（2026-08-14〜09-12、直近30日）
+- GSC/GA4: `.workspace/access-data/2026/2026-09/w37/`（2026-08-14〜09-12、直近30日）
 - 全記事一覧: `src/content/blog/` 配下の `index.mdx`（296本）
 
 ## 関連（旧タスクファイル）
