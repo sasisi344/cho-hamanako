@@ -105,9 +105,10 @@ description: "浜名湖Webサイト全体の執筆スタイル・読者ペルソ
 
 ### ✅ 道具紹介 (TackleCard)
 
-- 形式： `<TackleCard id="category/id" />`
-- **【重要: IDの捏造禁止】**: `src/content/affiliates/` 配下にある実際のディレクトリ名とID（ファイル名）を組み合わせて指定してください。
+- 形式： `<TackleCard id="category/id" position="safety" />`（`position` は記事内の節の種類。値は正本参照）
+- **【重要: IDの捏造禁止】**: ID は [tackle-card-list.md](../../.workspace/.data-set/.index/tackle-card-list.md)（自動生成）の「ID」列からそのまま書く。書いたら `pnpm run check:tackle` で存在を確認する。
 - 記事冒頭に `import TackleCard from "@components/TackleCard.astro";` が必要です。
+- **置く場所・枚数・カード直前の誘導文**は正本 [affiliate-placement-rules.md](../affiliate-placement-rules.md) に従う。
 
 ---
 

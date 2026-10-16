@@ -47,7 +47,7 @@ description: Creates or rewrites Cho! Hamanako MDX articles in src/content/blog 
 - **段落**: 1文1段落（文のあと空行）
 - **import**: 本文で `BlogCard` / `TackleCard` を使うならファイル先頭で import
 - **内部リンク**: `<BlogCard slug="frontmatterのslug値" />` — `.workspace/.data-set/.index/blog-card-index.md` または `src/content/blog/**` で実在確認
-- **アフィリエイト**: `<TackleCard id="category/id" />` — `src/content/affiliates/` で実在確認
+- **アフィリエイト**: `<TackleCard id="category/id" position="..." />` — ID は `.workspace/.data-set/.index/tackle-card-list.md`（自動生成）から選び、`pnpm run check:tackle` で検証。置く場所・枚数・カード直前の誘導文は正本 `.agents/affiliate-placement-rules.md`（ポイント記事も「必要が生まれる場面」に限り設置可）
 - **リライト**: ユーザーが `> [!forAI]` に一次情報を書いている場合はそれを本文へ反映し、公開前にブロック削除
 
 ## フロントマター（共通）
@@ -61,7 +61,8 @@ description: Creates or rewrites Cho! Hamanako MDX articles in src/content/blog 
 ```
 - [ ] 記事タイプ SKILL を読んだ
 - [ ] category / ディレクトリ / slug がルールと一致
-- [ ] BlogCard・TackleCard を実ファイルで確認した
+- [ ] BlogCard・TackleCard を実ファイルで確認した（TackleCard は `pnpm run check:tackle` が通る）
+- [ ] TackleCard の直前に誘導文がある・記事タイプ別の枚数上限内（`.agents/affiliate-placement-rules.md`）
 - [ ] 文字数がタイプ別 SKILL の目安を満たす（guide 2,500+、point 3,000+ 等）
 - [ ] forAI を削除（公開時）
 - [ ] 釣り法令・マナーが必要なら .agents/fishing-laws-hamanako.md

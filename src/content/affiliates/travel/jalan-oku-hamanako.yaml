@@ -1,0 +1,13 @@
+id: travel/jalan-oku-hamanako
+name: 奥浜名湖（三ヶ日）周辺の宿をじゃらんで探す
+link: "https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3748070&pid=892690810&vc_url=https%3A%2F%2Fwww.jalan.net%2Fuw%2Fuwp2011%2Fuww2011init.do%3Fkeyword%3D%2589%259C%2595l%2596%25BC%258C%25CE%26distCd%3D06%26rootCd%3D7701%26screenId%3DFWPCTOP%26ccnt%3Dbutton-fw%26image1%3D"
+image: "https://ad.jp.ap.valuecommerce.com/servlet/gifbanner?sid=3748070&pid=892690810"
+description: 奥浜名湖（三ヶ日）周辺のホテル・旅館の検索結果（じゃらんnet）。
+targetFish: []
+methods: ["宿泊", "遠征"]
+categories: ["旅行・宿泊"]
+brand: じゃらんnet
+isRecommended: true
+format: text
+scenes: ["stay"]
+area: oku-hamanako

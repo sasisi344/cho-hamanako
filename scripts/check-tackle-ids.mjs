@@ -29,11 +29,19 @@ const pathId = (f) => toPosix(path.relative(AFFILIATES_DIR, f)).replace(/\.(ya?m
 const definedIds = new Set(affiliateFiles.map(pathId));
 
 // yaml の id: とファイルパスがずれていると、id: を見て書いた記事が壊れるため不一致も検出する
+// あわせて、仮のリンク（amzn.to/example-… など）が残っていないかも検出する
 const idMismatch = [];
+const placeholderLinks = [];
 for (const file of affiliateFiles) {
-  const m = fs.readFileSync(file, 'utf-8').match(/^id:\s*["']?([^"'\r\n]+?)["']?\s*$/m);
+  const text = fs.readFileSync(file, 'utf-8');
+  const rel = toPosix(path.relative(process.cwd(), file));
+  const m = text.match(/^id:\s*["']?([^"'\r\n]+?)["']?\s*$/m);
   if (m && m[1] !== pathId(file)) {
-    idMismatch.push(`${toPosix(path.relative(process.cwd(), file))}  id: ${m[1]}`);
+    idMismatch.push(`${rel}  id: ${m[1]}`);
+  }
+  const link = text.match(/^link:\s*["']?([^"'\r\n]+)/m);
+  if (link && /example/i.test(link[1])) {
+    placeholderLinks.push(`${rel}  link: ${link[1]}`);
   }
 }
 
@@ -57,6 +65,10 @@ if (idMismatch.length > 0) {
   console.error(`❌ ファイルパスと id: が一致しないエントリが ${idMismatch.length} 件あります:`);
   for (const line of idMismatch) console.error(`  ${line}`);
 }
-if (missing.length > 0 || idMismatch.length > 0) process.exit(1);
+if (placeholderLinks.length > 0) {
+  console.error(`❌ 仮のリンクのままのエントリが ${placeholderLinks.length} 件あります:`);
+  for (const line of placeholderLinks) console.error(`  ${line}`);
+}
+if (missing.length > 0 || idMismatch.length > 0 || placeholderLinks.length > 0) process.exit(1);
 
 console.log(`✅ TackleCard ID チェック OK（affiliates ${definedIds.size} 件）`);

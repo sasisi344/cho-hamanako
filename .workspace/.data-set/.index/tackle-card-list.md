@@ -4,7 +4,7 @@
 > 正本は `src/content/affiliates/`。記事では「ID」列の値をそのまま `<TackleCard id="..." />` に書く。
 > 配置ルール: `.agents/affiliate-placement-rules.md` ／ 存在確認: `pnpm run check:tackle`
 
-- 登録数: 218 件（記事で未使用: 40 件）
+- 登録数: 219 件（記事で未使用: 46 件）
 - 表示: card = 商品カード / banner = バナー / text = 文中テキストリンク
 - 場面（scenes）: wading・night・car・family・safety・boat・bait・stay・activity・rental-car
 
@@ -65,35 +65,32 @@
 | `common/shimano-polarize-hg-066n` | シマノ (SHIMANO) 撥水ハーフフィッシンググラスPC HG-066N | アイウェア | 全魚種 |  |  | card | 1 |
 | `common/shimano-sedona-c3000` | シマノ セドナ C3000 | リール | 全魚種 |  |  | card | 3 |
 | `common/shimano-ultegra-c3000` | シマノ アルテグラ C3000 | リール | 全魚種 |  |  | card | 5 |
-| `common/shimano-vanford` | シマノ (SHIMANO) スピニングリール 24 ヴァンフォード C3000HG | リール | シーバス・クロダイ・キビレ・メバル |  |  | card | 4 |
+| `common/shimano-vanford` | シマノ (SHIMANO) スピニングリール 24 ヴァンフォード 各種 | リール | シーバス・クロダイ・キビレ・メバル |  |  | card | 4 |
 | `common/sunpercy-pedal-kayak` | サンパーシー ペダル式カヤック フィッシング | ボート・SUP | 全魚種 | boat |  | card | 3 |
 
-## cooking（15）
+## cooking（12）
 
 | ID | 商品名 | 種類 | 対象魚 | 場面 | エリア | 表示 | 使用数 |
 |---|---|---|---|---|---|---|---:|
 | `cooking/green-perch` | グリーンパーチ 魚を包む緑の紙 | 消耗品 | 全魚種 |  |  | card | 0 |
 | `cooking/hayakawa-sasara` | 早川工業 PP魚の内臓取り ササラ | 小物 | 全魚種 |  |  | card | 0 |
 | `cooking/irokcakpt-whetstone` | IROKCAKPT 包丁研ぎ石 | 小物 | 全魚種 |  |  | card | 0 |
-| `cooking/kai-fish-bone-tweezers` | 貝印 骨抜き（先斜め）DH7134 | 小物 | 全魚種 |  |  | card | 2 |
 | `cooking/latuna-cutting-board` | Latuna 抗菌 まな板 ノンスリップ 33.5ｘ23.5cm | 小物 | 全魚種 |  |  | card | 0 |
 | `cooking/lumica-ikijime-set` | ルミカ 神経締めセット ロング A20242 | 小物 | 全魚種 |  |  | card | 2 |
 | `cooking/okamoto-pichit-regular-32` | オカモト 業務用ピチット レギュラー 32枚ロール | 消耗品 | 全魚種 |  |  | card | 2 |
-| `cooking/pearlmetal-bone-tweezers` | パール金属 ベジライブ ステンレス 骨抜き CC-1101 | 小物 | 全魚種 |  |  | card | 0 |
+| `cooking/pearlmetal-bone-tweezers` | パール金属 ベジライブ ステンレス 骨抜き CC-1101 | 小物 | 全魚種 |  |  | card | 2 |
 | `cooking/sekimagoroku-ginju-sashimi-210` | 貝印 関孫六 銀寿 本鋼 刺身包丁 210mm AK5207 | 包丁 | 全魚種 |  |  | card | 1 |
-| `cooking/sekimagoroku-hekiju-sashimi-210` | 貝印 関孫六 碧寿 ST 和包丁 刺身 210mm AK5076 | 包丁 | 全魚種 |  |  | card | 0 |
 | `cooking/shapton-ha-no-kuromaku-1000` | シャプトン 刃の黒幕 オレンジ 中砥 | 小物 | 全魚種 |  |  | card | 0 |
 | `cooking/shimomura-verdun-deba-150` | 下村工業 ヴェルダン 出刃庖丁 150mm OVD-15 | 包丁 | 全魚種 |  |  | card | 4 |
 | `cooking/shimomura-verdun-scissors` | 下村工業 ヴェルダン キッチンバサミ2 OVK-2 | 小物 | 全魚種 |  |  | card | 4 |
-| `cooking/shinden-brass-scaler` | 浅野木工所 真鍮ウロコ取 大 08035 | 小物 | 全魚種・マダイ・クロダイ |  |  | card | 1 |
-| `cooking/wadaisuke-brass-scaler` | 和平フレイズ 味道 真鍮うろコ取り 大 AD-235 | 小物 | 全魚種・マダイ・クロダイ |  |  | card | 4 |
+| `cooking/wadaisuke-brass-scaler` | 和平フレイズ 味道 真鍮うろコ取り 大 AD-235 | 小物 | 全魚種・マダイ・クロダイ |  |  | card | 5 |
 
 ## eging（9）
 
 | ID | 商品名 | 種類 | 対象魚 | 場面 | エリア | 表示 | 使用数 |
 |---|---|---|---|---|---|---|---:|
 | `eging/daiwa-emeraldas-83m` | ダイワ エメラルダス 83M・J | ロッド | アオリイカ・コウイカ |  |  | card | 4 |
-| `eging/daiwa-emeraldas-83m-j` | ダイワ エメラルダス 83M・J | ロッド | アオリイカ・コウイカ |  |  | card | 2 |
+| `eging/daiwa-emeraldas-83m-j` | ダイワ エメラルダス 83M・J | ロッド | アオリイカ・コウイカ |  |  | card | 1 |
 | `eging/duel-ez-q-a1756-kvrp` | デュエル EZ-Q キャスト 喰わせ 3号 | ルアー | アオリイカ・コウイカ |  |  | card | 2 |
 | `eging/duel-ez-q-mag-cast` | DUEL EZ-Q マグキャスト 3.0号 | ルアー | アオリイカ・コウイカ |  |  | card | 3 |
 | `eging/friday-ika-gaff-300` | Friday イカギャフ 300 | その他 | アオリイカ・コウイカ |  |  | card | 1 |
@@ -113,7 +110,7 @@
 | `flatfish/major-craft-maki-jig-jet` | メジャークラフト マキジグ ジェット 30g | ルアー・メタルジグ | マゴチ・ヒラメ・シーバス・青物 |  |  | card | 2 |
 | `flatfish/owner-teibo-nomase-set-h6253` | オーナー 堤防 泳がせのませ遊動胴突 H-6253 | 仕掛け | ヒラメ・マゴチ・青物 |  |  | card | 3 |
 | `flatfish/shimano-silent-assassin-80s` | シマノ エクスセンス サイレントアサシン 80S AR-C | ルアー | ヒラメ・マゴチ・シーバス |  |  | card | 4 |
-| `flatfish/tacklehouse-rolling-bait-77` | タックルハウス ローリングベイト 77 | ルアー | ヒラメ・マゴチ・シーバス |  |  | card | 2 |
+| `flatfish/tacklehouse-rolling-bait-77` | タックルハウス ローリングベイト 77 | ルアー | ヒラメ・マゴチ・シーバス |  |  | card | 8 |
 
 ## haze（16）
 
@@ -142,7 +139,7 @@
 |---|---|---|---|---|---|---|---:|
 | `karei/berkley-sw-pulse-worm` | バークレー SWパルスワーム | ルアー | カレイ・アイナメ・カサゴ |  |  | card | 3 |
 | `karei/daiwa-21-karei-82-160` | ダイワ 21 カレイ 82-160 | ロッド | カレイ |  |  | card | 1 |
-| `karei/daiwa-pr100h` | ダイワ PR100H | リール | カレイ・カワハギ・カサゴ |  |  | card | 2 |
+| `karei/daiwa-pr100h` | ダイワ PR100H | リール | カレイ・カワハギ・カサゴ |  |  | card | 1 |
 | `karei/daiwa-prime-surf-t25-405-w` | ダイワ プライムサーフ T25-405・W | ロッド | カレイ・キス |  |  | card | 4 |
 | `karei/owner-funa-karei-base` | オーナー 船カレイの基本 | 仕掛け | カレイ |  |  | card | 2 |
 | `karei/sasame-canon-ball-karei` | ささめ針 一投入魂キャノンボールカレイ | 仕掛け | カレイ |  |  | card | 4 |
@@ -156,7 +153,7 @@
 | `kawahagi/daiwa-pr100h` | ダイワ PR100H | リール | カワハギ・カレイ |  |  | card | 3 |
 | `kawahagi/gamakatsu-iso-kawahagi-perfect` | がまかつ 磯カワハギパーフェクト仕掛 | 仕掛け | カワハギ |  |  | card | 3 |
 | `kawahagi/marukyu-power-isome-brown-m` | マルキュー パワーイソメ (中) 茶イソメ | エサ | カワハギ・ハゼ・キス |  |  | card | 3 |
-| `kawahagi/prox-kawahagi-game-st2` | プロックス カワハギゲームST2 | ロッド | カワハギ |  |  | card | 5 |
+| `kawahagi/prox-kawahagi-game-st2` | プロックス カワハギゲームST2 | ロッド | カワハギ |  |  | card | 4 |
 | `kawahagi/sasame-k-902-nage-kawahagi` | ささめ針 投げカワハギ | 仕掛け | カワハギ |  |  | card | 2 |
 | `kawahagi/shimano-kawahagi-miki-ito` | シマノ カワハギ幹糸仕掛け | 仕掛け | カワハギ |  |  | card | 2 |
 
@@ -222,7 +219,7 @@
 | `mebaru-kasago/daiwa-hardrock-k` | ダイワ HARDROCK X 86MHB・K | ロッド | メバル・カサゴ・キジハタ |  |  | card | 3 |
 | `mebaru-kasago/daiwa-pr100-h` | ダイワ PR100H | リール | カサゴ・アイナメ |  |  | card | 2 |
 | `mebaru-kasago/daiwa-pr100-hl` | ダイワ PR100HL | リール | メバル・カサゴ |  |  | card | 1 |
-| `mebaru-kasago/daiwa-tatula-100-xhl` | ダイワ 24 TATULA TW 100XHL | リール | メバル・クロダイ・シーバス |  |  | card | 1 |
+| `mebaru-kasago/daiwa-tatula-100-xhl` | ダイワ 24 TATULA TW 100XHL | リール | メバル・クロダイ・シーバス |  |  | card | 2 |
 | `mebaru-kasago/goture-fly-rod-set` | Goture フライフィッシング スターターキット | ロッド | メバル・ニジマス |  |  | card | 1 |
 | `mebaru-kasago/maxcatch-fly-line` | Maxcatch フライフィッシングライン | ライン | メバル |  |  | card | 1 |
 | `mebaru-kasago/ogk-fune-kawahagi` | OGK 船カワハギ 175 | ロッド | カサゴ・カワハギ |  |  | card | 2 |
@@ -265,15 +262,12 @@
 | `sayori/owner-sokkou` | オーナー(OWNER) 釣り日和 速攻サヨリ仕掛 3-0.8-2 | 仕掛け | サヨリ |  |  | card | 7 |
 | `sayori/ss-2-ex` | 工房浦安 スーパーサヨリン2EX 夜光 M 黄プロペラ | 仕掛け・ウキ | サヨリ |  |  | card | 4 |
 
-## seabass（22）
+## seabass（16）
 
 | ID | 商品名 | 種類 | 対象魚 | 場面 | エリア | 表示 | 使用数 |
 |---|---|---|---|---|---|---|---:|
-| `seabass/bassday-range-vib-70es` | バスデイ レンジバイブ 70ES | ルアー | シーバス・クロダイ・フラットフィッシュ |  |  | card | 6 |
 | `seabass/corsair-65` | エバーグリーン(EVERGREEN) コルセア65 | ルアー・シンペン | シーバス・クロダイ |  |  | card | 3 |
-| `seabass/daiwa-hvf-land-surf` | ダイワ ランドサーフT 25-405・J | ロッド | シーバス・クロダイ・キス |  |  | card | 1 |
 | `seabass/daiwa-liberty-club-t15-300-k` | ダイワ リバティクラブ T15-300・K | ロッド | シーバス・クロダイ・キス |  |  | card | 0 |
-| `seabass/daiwa-morethan-pe-tw` | ダイワ モアザン PE TW 1000XH-TW | リール | シーバス |  |  | card | 2 |
 | `seabass/daiwa-seabass-hunter-x` | ダイワ シーバスハンターX 90L・R | ロッド | シーバス・クロダイ |  |  | card | 6 |
 | `seabass/daiwa-silverwolf-76ml-s-w` | ダイワ シルバーウルフ 76ML-S・W | ロッド | シーバス・クロダイ・キビレ |  |  | card | 6 |
 | `seabass/dress-chloroprene-wader-winter` | DRESS クロロプレン ラジアルソール ウェーダー | その他 | シーバス・クロダイ | wading |  | card | 5 |
@@ -282,15 +276,12 @@
 | `seabass/jackson-nyoro-nyoro-85` | ジャクソン(Jackson) シンキングペンシル にょろにょろ 85mm | ルアー・シンキングペンシル | シーバス・メバル |  |  | card | 10 |
 | `seabass/little-presents-ray-guard-oa-24` | リトルプレゼンツ エイガード OA-24 | その他 | 全魚種 | wading・safety |  | card | 6 |
 | `seabass/little-presents-wading-staff-ac-184` | リトルプレゼンツ ウェーディングスタッフ AC-184 | その他 | 全魚種 | wading・safety |  | card | 2 |
-| `seabass/lumica-power-float` | ルミカ 烈光 Aタイプ 3号 | その他 | シーバス・タチウオ・クロダイ | night |  | card | 0 |
-| `seabass/owner-maru-seigo-hook` | オーナー 糸付 丸セイゴ 14号 | 針 | シーバス・セイゴ・マダイ |  |  | card | 0 |
 | `seabass/pazdesign-feel-120` | パズデザイン(Pazdesign) フィール 120 (feel 120) | ルアー・シンキングペンシル | シーバス・クロダイ |  |  | card | 4 |
 | `seabass/pickup-nogare-120f` | ピックアップ(Pick Up) ノガレ120F | ルアー・フローティング | シーバス |  |  | card | 8 |
 | `seabass/pykes-peak-wader-summer` | PYKES PEAK 夏用ウェーダー ラジアルソール | その他 | シーバス・クロダイ | wading |  | card | 7 |
 | `seabass/sasuke-sf75` | アイマ(ima) サスケ(sasuke) SF-75 | ルアー・ミノー | シーバス・クロダイ |  |  | card | 6 |
 | `seabass/shimano-encounter-s96m` | シマノ エンカウンター S96M | ロッド | シーバス・クロダイ・ヒラメ |  |  | card | 5 |
-| `seabass/shimano-exsence-silent-assassin` | シマノ エクスセンス サイレントアサシン 99F | ルアー | シーバス・サワラ |  |  | card | 6 |
-| `seabass/shimano-exsence-silent-assassin-99f` | シマノ エクスセンス サイレントアサシン 99F | ルアー・フローティングミノー | シーバス・クロダイ・サワラ |  |  | card | 5 |
+| `seabass/shimano-exsence-silent-assassin-99f` | シマノ エクスセンス サイレントアサシン 99F | ルアー・フローティングミノー | シーバス・クロダイ・サワラ |  |  | card | 10 |
 
 ## tako（6）
 
@@ -303,15 +294,25 @@
 | `tako/marushin-tako-net-dx` | マルシン漁具 タコ入れ網DX L | その他 | タコ |  |  | card | 4 |
 | `tako/yamashita-tako-tenya` | ヤマシタ タコ掛 投用 LL40 | その他 | タコ |  |  | card | 10 |
 
-## travel（8）
+## travel（18）
 
 | ID | 商品名 | 種類 | 対象魚 | 場面 | エリア | 表示 | 使用数 |
 |---|---|---|---|---|---|---|---:|
 | `travel/asoview-banner` | asoview!（アソビュー！）バナー | 旅行・観光 |  | activity |  | banner | 4 |
 | `travel/asoview-text` | asoview!（アソビュー！） | 旅行・観光 |  | activity |  | text | 0 |
+| `travel/jalan-arai` | 新居周辺の宿をじゃらんで探す | 旅行・宿泊 |  | stay | arai | text | 0 |
+| `travel/jalan-bentenjima` | 弁天島温泉の宿をじゃらんで探す | 旅行・宿泊 |  | stay | bentenjima | text | 0 |
+| `travel/jalan-kanzanji` | 舘山寺温泉周辺の宿をじゃらんで探す | 旅行・宿泊 |  | stay | kanzanji | text | 0 |
+| `travel/jalan-maisaka` | 舞阪周辺の宿をじゃらんで探す | 旅行・宿泊 |  | stay | maisaka | text | 0 |
 | `travel/jalan-net-banner` | じゃらんnet（バナー） | 旅行・宿泊 |  | stay |  | banner | 13 |
 | `travel/jalan-net-text` | じゃらんnet | 旅行・宿泊 |  | stay |  | text | 0 |
+| `travel/jalan-oku-hamanako` | 奥浜名湖（三ヶ日）周辺の宿をじゃらんで探す | 旅行・宿泊 |  | stay | oku-hamanako | text | 0 |
+| `travel/rakuten-travel-arai` | 新居周辺の宿を楽天トラベルで探す | 旅行・宿泊 |  | stay | arai | text | 0 |
+| `travel/rakuten-travel-bentenjima` | 弁天島周辺の宿を楽天トラベルで探す | 旅行・宿泊 |  | stay | bentenjima | text | 0 |
 | `travel/rakuten-travel-car` | 楽天トラベル（レンタカー） | 旅行・観光 |  | rental-car |  | banner | 4 |
+| `travel/rakuten-travel-kanzanji` | 舘山寺温泉周辺の宿を楽天トラベルで探す | 旅行・宿泊 |  | stay | kanzanji | text | 0 |
+| `travel/rakuten-travel-maisaka` | 舞阪周辺の宿を楽天トラベルで探す | 旅行・宿泊 |  | stay | maisaka | text | 0 |
+| `travel/rakuten-travel-oku-hamanako` | 奥浜名湖（三ヶ日）周辺の宿を楽天トラベルで探す | 旅行・宿泊 |  | stay | oku-hamanako | text | 0 |
 | `travel/rakuten-travel-stay` | 楽天トラベル（宿泊） | 旅行・観光 |  | stay |  | banner | 13 |
 | `travel/uqey-banner` | Uqey（ユーキー）バナー | 旅行・観光 |  | rental-car |  | banner | 0 |
 | `travel/uqey-text` | 待たないレンタカー【Uqey（ユーキー）】 | 旅行・観光 |  | rental-car |  | text | 0 |

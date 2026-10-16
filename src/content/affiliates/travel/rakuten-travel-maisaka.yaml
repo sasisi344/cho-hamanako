@@ -1,0 +1,13 @@
+id: travel/rakuten-travel-maisaka
+name: 舞阪周辺の宿を楽天トラベルで探す
+link: "https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3748070&pid=892569778&vc_url=https%3A%2F%2Fkw.travel.rakuten.co.jp%2Fkeyword%2FSearch.do%3Fcharset%3Dutf-8%26f_max%3D30%26l-id%3DtopC_search_keyword%26f_query%3D%25E8%2588%259E%25E9%2598%25AA"
+image: "https://ad.jp.ap.valuecommerce.com/servlet/gifbanner?sid=3748070&pid=892569778"
+description: 舞阪周辺のホテル・旅館の検索結果（楽天トラベル）。
+targetFish: []
+methods: ["宿泊", "遠征"]
+categories: ["旅行・宿泊"]
+brand: 楽天トラベル
+isRecommended: true
+format: text
+scenes: ["stay"]
+area: maisaka

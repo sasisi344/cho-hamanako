@@ -100,7 +100,7 @@ const affiliates = defineCollection({
       .array(z.enum(["wading", "night", "car", "family", "safety", "boat", "bait", "stay", "activity", "rental-car"]))
       .default([]),
     // 旅行系リンクの対象エリア（エリア指定のディープリンクのみ）
-    area: z.enum(["kanzanji", "bentenjima-maisaka", "arai", "oku-hamanako"]).optional(),
+    area: z.enum(["kanzanji", "bentenjima", "maisaka", "arai", "oku-hamanako"]).optional(),
   }),
 })
 

@@ -50,7 +50,7 @@ description: Defines modular MDX article skeletons, flexible depth tiers, and mi
 | M2 | 前提・定義 | 用語・浜名湖限定の注意 | 200〜500 |
 | M3 | 核心解説 | 理由・地形・時期 | 400〜800 × n |
 | M4 | 実践・手順 | 再現可能なアクション | 400〜800 |
-| M5 | 道具・タックル | TackleCard（guide 等） | 各カード前後に文 |
+| M5 | 道具・タックル | TackleCard（guide 等。ポイント記事は M5 を独立させず、必要が生まれる節に分散） | 各カード直前に誘導文（[affiliate-placement-rules.md](../affiliate-placement-rules.md)） |
 | M6 | エリア・ポイント | BlogCard / Map | 差別化文 + カード |
 | M7 | 安全・マナー | 毒魚・禁止・騒音 | 200〜400 |
 | M8 | まとめ | Callout TIP + IMPORTANT | 200〜400 |
@@ -112,7 +112,7 @@ slug:
 - [ ] 深度ティアの下限を満たす
 - [ ] 1文1段落、`<strong>` のみ
 - [ ] 各 H2 に実質コンテンツ（見出しだけ不可）
-- [ ] BlogCard / TackleCard 実在確認
+- [ ] BlogCard / TackleCard 実在確認（TackleCard は `pnpm run check:tackle`）
 - [ ] `> [!forAI]` 削除（リライト時は内容を本文へ反映済み）
 
 ## 関連

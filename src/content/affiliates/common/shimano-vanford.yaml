@@ -1,7 +1,7 @@
 id: common/shimano-vanford
-name: シマノ (SHIMANO) スピニングリール 24 ヴァンフォード C3000HG
-link: https://amzn.to/example-vanford
-image: https://m.media-amazon.com/images/I/711GGjCtEGL._AC_SL1500_.jpg
+name: シマノ (SHIMANO) スピニングリール 24 ヴァンフォード 各種
+link: https://www.amazon.co.jp/dp/B0D95C1QQ9?tag=sasisi344-22&linkCode=ll2&linkId=8f8582b13275789e3076ef0bedbd3b63&ref_=as_li_ss_tl
+image: https://m.media-amazon.com/images/I/71in8t4x3CL.jpg
 description: 軽量・高感度で浜名湖のライトゲームやチニング、シーバスに最適なリール。
 targetFish: ["シーバス", "クロダイ", "キビレ", "メバル"]
 methods: ["ルアー釣り", "チニング"]

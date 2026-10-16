@@ -15,6 +15,7 @@ description: Rewrites Cho! Hamanako MDX articles with forAI integration, tone ma
 3. 深度: 通常 **2,000字+** / ポイントピラー **3,000字+** → `.agents/base-article-structure/SKILL.md`
 4. points まとめ・複数紹介 → **マトリクス必須** → `.agents/point-article/point-comparison-matrix.md`
 5. Phase 1 診断 → 構成案 → 執筆 → forAI 削除・`upDate` 更新
+6. TackleCard: 置き方・枚数・誘導文は `.agents/affiliate-placement-rules.md`。ポイント記事の汎用タックル羅列・終盤のまとめ置きは場面別に置き直す。最後に `pnpm run check:tackle`
 
 ## 温度の基準記事（例）
 

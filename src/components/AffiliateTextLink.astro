@@ -14,8 +14,8 @@ if (product.html) {
   if (linkMatch) finalLink = linkMatch[1];
 }
 
-// A8.net のテキストリンクはインプレッション計測用の 1x1 画像とセットで設置する
-const impressionPixel = product.image && product.image.includes("a8.net") ? product.image : undefined;
+// テキストリンク（A8.net / ValueCommerce MyLink 等）の image はインプレッション計測用の画像として扱い、1x1 で出力する
+const impressionPixel = product.image || undefined;
 ---
 
 {finalLink && (

@@ -1,0 +1,13 @@
+id: travel/rakuten-travel-oku-hamanako
+name: 奥浜名湖（三ヶ日）周辺の宿を楽天トラベルで探す
+link: "https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3748070&pid=892569778&vc_url=https%3A%2F%2Fkw.travel.rakuten.co.jp%2Fkeyword%2FSearch.do%3Fcharset%3Dutf-8%26f_max%3D30%26l-id%3DtopC_search_keyword%26f_query%3D%25E5%25A5%25A5%25E6%25B5%259C%25E5%2590%258D%25E6%25B9%2596"
+image: "https://ad.jp.ap.valuecommerce.com/servlet/gifbanner?sid=3748070&pid=892569778"
+description: 奥浜名湖（三ヶ日）周辺のホテル・旅館の検索結果（楽天トラベル）。
+targetFish: []
+methods: ["宿泊", "遠征"]
+categories: ["旅行・宿泊"]
+brand: 楽天トラベル
+isRecommended: true
+format: text
+scenes: ["stay"]
+area: oku-hamanako

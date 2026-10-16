@@ -77,6 +77,7 @@ Claude Code セッションでは、下記を用途に応じて読み込む（�
 - 構造化データ: [.agents/structured-data-rules.md](.agents/structured-data-rules.md)
 - 浜名湖の釣りに関する法律・条例（漁業権・漁期・リリース基準など）: [.agents/fishing-laws-hamanako.md](.agents/fishing-laws-hamanako.md)
 - ポイント記事 SEO 監査: [.agents/point-article/seo-audit.md](.agents/point-article/seo-audit.md)
+- アフィリエイト配置（TackleCard の置き場所・枚数・誘導文・ID 検証）の正本: [.agents/affiliate-placement-rules.md](.agents/affiliate-placement-rules.md)
 - ワークフロー: [.agents/workflows/](.agents/workflows/)
 
 ## タスク管理（GitHub Project 統合、2026-09-25〜）

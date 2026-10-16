@@ -72,7 +72,8 @@ facilities: # 拠点施設の設備
 
 ### 2. コンポーネントと外部連携の活用
 
-- **宿泊予約**: `<TackleCard>` を使用し、楽天トラベルやじゃらん等のアフィリエイトIDを連携させて予約導線を作る。`[.workspace/.data-set/.index/tackle-card-list.md](file:///c:/Users/sasis/344dev/cho-hamanako/.workspace/.data-set/.index/tackle-card-list.md)` から取得。
+- **宿泊・体験・レンタカー予約**: `<TackleCard>` を使用し、楽天トラベル・じゃらん・asoview! 等の予約導線を作る。ID は [tackle-card-list.md](../../.workspace/.data-set/.index/tackle-card-list.md)（自動生成）の `travel/` から選ぶ（`scenes`: stay / activity / rental-car、エリア指定リンク（楽天トラベル・じゃらんの検索結果ページ）は `travel/rakuten-travel-{area}`・`travel/jalan-{area}`）。置く場所・枚数・誘導文・`position="trip"` は正本 [affiliate-placement-rules.md](../affiliate-placement-rules.md) に従う。
+- **ポイント記事からの受け皿**: 遠方から来る読者は、ポイント記事の「釣行プラン」節から BlogCard で送られてくる。導入で「どのエリアの釣りと組み合わせるプランか」が分かるようにする。
 - **相互リンク**: 関連するポイント（`points/`）や釣法（`guide/method/`）の記事を `<BlogCard />` で繋ぎ、回遊性を高める。
 
 ### 3. 表形式による比較とプランの可視化

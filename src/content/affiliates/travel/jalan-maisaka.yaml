@@ -1,0 +1,13 @@
+id: travel/jalan-maisaka
+name: 舞阪周辺の宿をじゃらんで探す
+link: "https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3748070&pid=892690810&vc_url=https%3A%2F%2Fwww.jalan.net%2Fuw%2Fuwp2011%2Fuww2011init.do%3Fkeyword%3D%2595l%258F%25BC%2B%2595%2591%258D%25E3%26distCd%3D06%26rootCd%3D7701%26screenId%3DFWPCTOP%26ccnt%3Dbutton-fw%26image1%3D"
+image: "https://ad.jp.ap.valuecommerce.com/servlet/gifbanner?sid=3748070&pid=892690810"
+description: 舞阪周辺のホテル・旅館の検索結果（じゃらんnet）。
+targetFish: []
+methods: ["宿泊", "遠征"]
+categories: ["旅行・宿泊"]
+brand: じゃらんnet
+isRecommended: true
+format: text
+scenes: ["stay"]
+area: maisaka

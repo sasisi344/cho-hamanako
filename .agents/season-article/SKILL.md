@@ -37,7 +37,7 @@ description: "季節別・月別の「旬」を伝える記事、および釣り
     - 熱中症、防寒、季節風（遠州の空っ風）への対策アドバイス。
 5.  **旅のフック（宿泊・観光）**:
     - 季節の行事（牡蠣小屋、潮干狩り、花火）と合わせた宿泊プランの提案。
-    - `<TackleCard />` での旅行予約導線。
+    - `<TackleCard />` での旅行予約導線（`position="trip"`。置き方は [affiliate-placement-rules.md](../affiliate-placement-rules.md)）。
 
 ---
 

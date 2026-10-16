@@ -1,0 +1,13 @@
+id: travel/jalan-bentenjima
+name: 弁天島温泉の宿をじゃらんで探す
+link: "https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3748070&pid=892690810&vc_url=https%3A%2F%2Fwww.jalan.net%2Fuw%2Fuwp1400%2Fuww1400.do%3FlrgOsnCd%3D50297%26kenCd%3D210000%26distCd%3D03%26roomCount%3D1%26roomCrack%3D200000%26dateUndecided%3D1%26careOnsen%3D1%26convertedFlg%3D1%26ccnt%3Dlink-onsen-50297-%25E5%25BC%2581%25E5%25A4%25A9%25E5%25B3%25B6-0"
+image: "https://ad.jp.ap.valuecommerce.com/servlet/gifbanner?sid=3748070&pid=892690810"
+description: 弁天島温泉のホテル・旅館の一覧（じゃらんnet）。
+targetFish: []
+methods: ["宿泊", "遠征"]
+categories: ["旅行・宿泊"]
+brand: じゃらんnet
+isRecommended: true
+format: text
+scenes: ["stay"]
+area: bentenjima
