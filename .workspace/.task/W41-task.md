@@ -66,7 +66,7 @@
 #### 優先度：中（データ整備）
 
 - [x] （2026-10-17 月次運用への移行で解決: 命名は [schedule-task.md](schedule-task.md) の TIPS「ファイルの置き場所と名前」に統一）ファイル名規則を SKILL（`chohama-ga4-w{nn}.csv` / `chohama-gsc-w{nn}.csv`）とデータ置き場の実態（`w{nn}-ga4-chohama.csv`、GSC は日本語名2ファイル）のどちらかに統一する（W40 から引き継ぎ）
-- [ ] （手順は [schedule-task.md](schedule-task.md) の TIPS「GA4 探索レポート」5番に記載。10/30〜31 の月次分析で実施）GSC を GA4 探索レポート内の Search Console データソース（ランディングページ+クエリ文字列統合）で取得し、ページ×クエリを突合できるようにする。当面は「7日間」のページ.csv／クエリ.csv で運用
+- [x] （2026-10-17: GA4 と GSC は連携済みと確認。ページ別は GA4 レポート > Search Console「Google オーガニック検索トラフィック」、ページ×クエリは GSC 画面で取得する手順を [schedule-task.md](schedule-task.md) の TIPS に記載。※探索レポートでは Search Console のデータは選べない）GSC を GA4 探索レポート内の Search Console データソース（ランディングページ+クエリ文字列統合）で取得し、ページ×クエリを突合できるようにする。当面は「7日間」のページ.csv／クエリ.csv で運用
 
 #### 引き継ぎ残件（W42 以降）
 

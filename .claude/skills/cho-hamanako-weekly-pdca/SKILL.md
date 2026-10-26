@@ -22,14 +22,14 @@ description: Generates weekly PDCA task files for Cho! Hamanako from GA4 and GSC
 ```
 .workspace/access-data/{年}/{年}-{月}/        ← 2026-10-17〜 月次運用（例: 2026/2026-10/）
   chohama-ga4-landing-{年}-{月}.csv  ← GA4 探索レポート（ランディングページ）
-  chohama-gsc-pages-{年}-{月}.csv    ← GSC ページ
+  chohama-gsc-organic-{年}-{月}.csv  ← GA4 レポート > Search Console「Google オーガニック検索トラフィック」（ランディングページ単位の検索成績＋エンゲージメント）
   （ほかのファイル名は schedule-task.md 冒頭の TIPS「ファイルの置き場所と名前」）
   w{nn}/                              ← 週次運用時代のデータ（データ終了日の月に格納。中身は週単位のまま）
 ```
 
 ユーザーが月を指定したらそのフォルダを読む。指定がなければ `.workspace/access-data/` 内で最新の `{年}-{月}` フォルダを選ぶ。過去の週次データ（`w{nn}/`）は前月比較や長期推移の参考にのみ使い、月次の数値と直接合算しない（週ごとの CSV を足すとエンゲージメント率などの率が崩れる）。
 
-**優先**: GA4 探索レポート内の Search Console データソース（ランディングページ+クエリ文字列 統合）を使う。Search Console UI（search.google.com/search-console）の「ページ.csv」「クエリ.csv」はページとクエリが分離され、4-Box分析に必要なクエリ内訳・アクティブユーザー・キーイベント列が失われるため。**GA4 と Search Console が未連携の間は**、UI のページ.csv・クエリ.csv に加え、効果測定の対象ページをページで絞り込んだクエリ.csv を取得して代替する（W37〜W42 の実態。手順は schedule-task.md の TIPS）。
+**優先**: ページ別の検索成績は GA4 レポート > Search Console「Google オーガニック検索トラフィック」（ランディング ページ + クエリ文字列）を使う（GA4 と GSC は連携済み、2026-10-17 確認）。クリック・表示・順位とアクティブユーザー・エンゲージメント・キーイベントが1枚に入るため。GA4 にはページ×クエリのレポートがないので、効果測定の対象ページだけは GSC 画面でページを絞り込んだ「クエリ」を取得する。Search Console のデータは GA4 の探索レポートでは選べない（通常レポートから CSV を出す）。手順は schedule-task.md の TIPS。
 
 ### GA4 探索レポート定義（自由形式）
 
