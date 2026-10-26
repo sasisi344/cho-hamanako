@@ -46,7 +46,7 @@ W39・W40 の未完了タスクは [W41-task.md](W41-task.md) に集約済み（
 ## 🟡 優先度 低・時期指定
 
 ### amazon-sale-tackle-strategy 更新
-- [ ] **2026-10月末**: `amazon-sale-tackle-strategy` の `upDate` 更新＋冬版チェックリスト差し替え（メバル・シーバス・防寒・照明）
+- [x] **2026-10月末**: `amazon-sale-tackle-strategy` の `upDate` 更新＋冬版チェックリスト差し替え（メバル・シーバス・防寒・照明）→ 2026-10-27 実施（未デプロイ）。11月前後の節を夏の節より前に移し、4項目に TackleCard 3枚・BlogCard 3枚を追加
 
 ---
 
