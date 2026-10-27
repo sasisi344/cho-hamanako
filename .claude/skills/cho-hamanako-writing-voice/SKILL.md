@@ -41,9 +41,10 @@ description: Sets reader level, tone, depth, and word-count targets for Cho! Ham
 
 ## 「体温」を入れる箇所
 
-- **冒頭**: 最近の釣行の一言 + 読者へのメッセージ
+- **冒頭**: 読者へのメッセージ + 専門家としての判断の一言
 - **結び**: 行動・マナー・次に読む記事への橋
 - **専門パート**: 読者レベルに合わせた用語密度（初級では言い換え）
+- **思い出（ポイント記事だけ）**: 釣行の感想・エピソードは `category: points` に「思い出」の範囲で1〜3文。素材は `.workspace/.data-set/point-memories.md` か `> [!forAI]` の筆者の記述だけ。なければ `MEMORY_NOTE` コメントを残し、**AI が釣行を創作しない**（詳細は正本「記事の体温」）
 
 ## 現場至上主義
 
