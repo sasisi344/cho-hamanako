@@ -1,0 +1,14 @@
+{
+  "fetchedAt": "2026-10-29T01:50:34.016Z",
+  "site": "CH",
+  "command": "gsc",
+  "args": {
+    "site": "CH",
+    "start": "2026-01-01",
+    "end": "2026-01-31",
+    "dims": "query",
+    "out": "C:/Users/sasis/344dev/cho-hamanako/.workspace/access-data/2026/yoy-2025-11_2026-01/_api-tmp/query-2026-01"
+  },
+  "start": "2026-01-01",
+  "end": "2026-01-31"
+}
