@@ -1,0 +1,15 @@
+{
+  "fetchedAt": "2026-10-30T03:33:55.052Z",
+  "site": "CH",
+  "command": "gsc",
+  "args": {
+    "site": "CH",
+    "start": "2026-09-01",
+    "end": "2026-09-30",
+    "dims": "page",
+    "out": "C:/Users/sasis/344dev/cho-hamanako/.workspace/access-data/2026/2026-10/m10-api/gsc-sep-page",
+    "limit": "5000"
+  },
+  "start": "2026-09-01",
+  "end": "2026-09-30"
+}

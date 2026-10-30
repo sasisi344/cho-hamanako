@@ -1,0 +1,15 @@
+{
+  "fetchedAt": "2026-10-30T03:34:17.066Z",
+  "site": "CH",
+  "command": "ga4",
+  "args": {
+    "site": "CH",
+    "start": "2026-09-01",
+    "end": "2026-09-30",
+    "dims": "deviceCategory",
+    "metrics": "sessions,engagedSessions,bounceRate",
+    "out": "C:/Users/sasis/344dev/cho-hamanako/.workspace/access-data/2026/2026-10/m10-api/ga4-sep-device"
+  },
+  "start": "2026-09-01",
+  "end": "2026-09-30"
+}

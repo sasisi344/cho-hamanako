@@ -1,0 +1,15 @@
+{
+  "fetchedAt": "2026-10-30T03:34:18.887Z",
+  "site": "CH",
+  "command": "ga4",
+  "args": {
+    "site": "CH",
+    "start": "2026-10-16",
+    "end": "2026-10-29",
+    "event": "affiliate_click",
+    "dims": "pagePath",
+    "out": "C:/Users/sasis/344dev/cho-hamanako/.workspace/access-data/2026/2026-10/m10-api/ga4-oct-affiliate-click"
+  },
+  "start": "2026-10-16",
+  "end": "2026-10-29"
+}

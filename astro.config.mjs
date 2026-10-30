@@ -87,7 +87,7 @@ export default defineConfig({
     "/2025/04/浜名湖でメジナを釣る方法のまとめ！初心者にも/": "/blog/mejina/",
     "/2024/12/釣りに行く直前、浜名湖の状況をライブカメラや/": "/blog/araibenten-live-camera/",
     "/2025/12/seabass-winter-pointtactics/": "/blog/winter-lunker/",
-    "/2025/09/9月の浜名湖カレイ釣り開幕！投げ釣りで狙う秋の/": "/blog/hamanako-karei-fishing-season-opener/",
+    "/2025/09/9月の浜名湖カレイ釣り開幕！投げ釣りで狙う秋の/": "/blog/karei/",
     "/2025/12/hamana-winter-tinu-tactics/": "/blog/winter-tactics/",
     "/2026/02/bachinuke-forecast/": "/blog/bachinuke-forecast/",
     "/2025/01/浜名湖の水温をチェックできる有能なウェブサイ/": "/blog/water-temperature-checking/",
@@ -98,7 +98,7 @@ export default defineConfig({
     "/2024/09/今何が釣れる？浜名湖釣魚カレンダーを公開/": "/blog/yearly-fishing-calendar/",
     "/2025/12/hamana-kasago-bignner-winter/": "/blog/winter-kasago/",
     "/2025/10/10月の浜名湖ハゼ釣り完全ガイド！秋の大型ハゼを/": "/points/haze-fukabori/",
-    "/2025/11/hama11-karei-jsseki/": "/blog/11-november-karei/",
+    "/2025/11/hama11-karei-jsseki/": "/blog/karei/",
     "/2025/12/hamanako-mebaru-winter-ptactics/": "/blog/winter-lightgame/",
     "/2026/01/hamanako-tsurigushop-choice/": "/blog/shops/",
     "/2026/02/feb-season-forecast/": "/blog/2-month/",
@@ -110,6 +110,12 @@ export default defineConfig({
     "/2025/11/11bansyu-kibire-float/": "/blog/kibire/",
     "/2025/11/bansyu-seabass-area/": "/blog/seabass/",
     "/2024/11/浜名湖の魚を全て釣るには？エサ釣りとルアー釣/": "/blog/seasonal-patterns-guide/",
+
+    // カレイ・サヨリ記事の統合（2026-10-30）: 魚種別の教科書1本に集約
+    "/blog/hamanako-karei-fishing-season-opener/": "/blog/karei/",
+    "/blog/11-november-karei/": "/blog/karei/",
+    "/blog/large-sayori-guide/": "/blog/sayori/",
+    "/blog/april-guide/": "/blog/sayori/",
 
     // ハゼ記事の統合（2026-10-05）: 統合して削除した旧slugはすべて教科書 /points/haze-fukabori/ へ転送
     "/blog/haze/": "/points/haze-fukabori/",

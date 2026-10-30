@@ -1,0 +1,15 @@
+{
+  "fetchedAt": "2026-10-30T03:34:15.434Z",
+  "site": "CH",
+  "command": "ga4",
+  "args": {
+    "site": "CH",
+    "start": "2026-09-01",
+    "end": "2026-09-30",
+    "dims": "sessionDefaultChannelGroup",
+    "metrics": "sessions,engagedSessions,bounceRate,keyEvents",
+    "out": "C:/Users/sasis/344dev/cho-hamanako/.workspace/access-data/2026/2026-10/m10-api/ga4-sep-channel"
+  },
+  "start": "2026-09-01",
+  "end": "2026-09-30"
+}

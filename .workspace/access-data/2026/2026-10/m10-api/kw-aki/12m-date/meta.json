@@ -1,0 +1,14 @@
+{
+  "fetchedAt": "2026-10-30T03:43:49.659Z",
+  "site": "CH",
+  "command": "gsc",
+  "args": {
+    "site": "CH",
+    "start": "2025-10-01",
+    "end": "2026-10-27",
+    "dims": "date",
+    "out": "C:/Users/sasis/344dev/cho-hamanako/.workspace/access-data/2026/2026-10/m10-api/kw-aki/12m-date"
+  },
+  "start": "2025-10-01",
+  "end": "2026-10-27"
+}
