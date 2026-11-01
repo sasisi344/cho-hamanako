@@ -1,5 +1,7 @@
 # 2026-10 月次データ（GA4・GSC）と先月比レポート
 
+> **訂正（2026-11-01）**: 下の `affiliate_click`（2,002件）とキーイベント（2,000）は、GA4 の「イベントを作成」ルールでページビューが複製された数で、本当のクリックではない。本当のクリック（`aff_id` のある行）は 10/16〜31 で27件。詳細と11月の判定は [`.workspace/.task/monthly-analysis-2026-10.md`](../../../../.task/monthly-analysis-2026-10.md) §0
+
 - 取得日: 2026-10-30（Claude が `hq/tools/analytics-fetch/fetch.mjs` で API 取得。読み取りのみ）
 - 条件は各フォルダの `meta.json`。GSC は検索タイプ web・サイト全体、GA4 は釣！浜名湖プロパティ
 - 期間は `schedule-task.md` の TIPS に合わせた
