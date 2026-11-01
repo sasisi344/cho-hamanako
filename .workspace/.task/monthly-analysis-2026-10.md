@@ -26,6 +26,7 @@
 - **ユーザーの作業**: GA4 管理 → データストリーム「サイト解析」→ イベントの変更・作成 → `affiliate_click` の作成ルールを削除する
   - サイト側の送信（`src/scripts/affiliate-tracking.js`）は正しいので、ルールを消すだけでよい
   - 削除するまでは、`affiliate_click` を `aff_id` が空でない行に絞って数える
+- **2026-11-01 にユーザーが削除済み**（Admin API で作成ルールが空になったことを確認）。11/01 以前の `affiliate_click`・キーイベントは、`aff_id` が空でない行だけを数える。11/02 以降の数字は、そのまま本当のクリックとして使える
 
 ## 1. 全体
 
@@ -105,7 +106,7 @@ TackleCard があって、クリックが0のページ（PV の多い順）
 
 ## 3. 11月にやること（提案）
 
-1. **GA4 の `affiliate_click` 作成ルールを消す**（ユーザー）: §0。消した日を記録し、それ以降でキーイベントの基準を取り直す
+1. ~~GA4 の `affiliate_click` 作成ルールを消す~~ 2026-11-01 済み。11/02 以降でキーイベントの基準を取り直す（11/30 の月次）
 2. **TackleCard の配置の見直し**: `kibire-cooking`（料理記事でカードの目的が合っているか）、`kurodai`（13枚）、`family-car-points`・`benten-nagashi-fishing`。正本は `.agents/affiliate-placement-rules.md`
 3. **カードのない釣り場記事へ置くか検討**: `araibenten-umiduripark`・`ajing-fukabori`・`miyakodagawa`
 4. **`kibire-cooking` の刺身の H2**: 「キビレ 刺身」274表示・順位8.9。ほかの食べ方のクエリは5位前後まで上がったので、残りはここだけ
