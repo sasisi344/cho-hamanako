@@ -1,0 +1,188 @@
+{
+  "site": "CH",
+  "month": "2026-09",
+  "start": "2026-09-01",
+  "end": "2026-09-30",
+  "tables": {
+    "gsc-page": {
+      "source": "gsc",
+      "id": null,
+      "dims": [
+        "page"
+      ],
+      "metrics": null,
+      "events": null,
+      "exclude": null,
+      "rows": 223,
+      "fetchedAt": "2026-11-01T00:46:39.880Z"
+    },
+    "gsc-query": {
+      "source": "gsc",
+      "id": null,
+      "dims": [
+        "query"
+      ],
+      "metrics": null,
+      "events": null,
+      "exclude": null,
+      "rows": 485,
+      "fetchedAt": "2026-11-01T00:46:40.517Z"
+    },
+    "gsc-device": {
+      "source": "gsc",
+      "id": null,
+      "dims": [
+        "device"
+      ],
+      "metrics": null,
+      "events": null,
+      "exclude": null,
+      "rows": 3,
+      "fetchedAt": "2026-11-01T00:46:41.096Z"
+    },
+    "gsc-date": {
+      "source": "gsc",
+      "id": null,
+      "dims": [
+        "date"
+      ],
+      "metrics": null,
+      "events": null,
+      "exclude": null,
+      "rows": 30,
+      "fetchedAt": "2026-11-01T00:46:41.704Z"
+    },
+    "gsc-country": {
+      "source": "gsc",
+      "id": null,
+      "dims": [
+        "country"
+      ],
+      "metrics": null,
+      "events": null,
+      "exclude": null,
+      "rows": 39,
+      "fetchedAt": "2026-11-01T00:46:42.133Z"
+    },
+    "gsc-appearance": {
+      "source": "gsc",
+      "id": null,
+      "dims": [
+        "searchAppearance"
+      ],
+      "metrics": null,
+      "events": null,
+      "exclude": null,
+      "rows": 0,
+      "fetchedAt": "2026-11-01T00:46:42.657Z"
+    },
+    "gsc-page-query": {
+      "source": "gsc",
+      "id": null,
+      "dims": [
+        "page",
+        "query"
+      ],
+      "metrics": null,
+      "events": null,
+      "exclude": null,
+      "rows": 599,
+      "fetchedAt": "2026-11-01T00:46:43.578Z"
+    },
+    "ga4-events": {
+      "source": "ga4",
+      "id": "A2",
+      "dims": [
+        "eventName",
+        "pagePath",
+        "sessionSource"
+      ],
+      "metrics": [
+        "eventCount",
+        "totalUsers"
+      ],
+      "events": null,
+      "exclude": "page_view|session_start|first_visit|user_engagement|scroll|form_start|form_submit|video_start|video_progress|video_complete",
+      "rows": 58,
+      "fetchedAt": "2026-11-01T00:46:44.773Z"
+    },
+    "ga4-device": {
+      "source": "ga4",
+      "id": "A3",
+      "dims": [
+        "deviceCategory",
+        "sessionDefaultChannelGroup"
+      ],
+      "metrics": [
+        "sessions",
+        "engagedSessions",
+        "engagementRate",
+        "userEngagementDuration",
+        "keyEvents"
+      ],
+      "events": null,
+      "exclude": null,
+      "rows": 14,
+      "fetchedAt": "2026-11-01T00:46:45.849Z"
+    },
+    "ga4-lp": {
+      "source": "ga4",
+      "id": "A1",
+      "dims": [
+        "landingPagePlusQueryString",
+        "sessionSourceMedium",
+        "country"
+      ],
+      "metrics": [
+        "sessions",
+        "activeUsers",
+        "engagedSessions",
+        "engagementRate",
+        "userEngagementDuration",
+        "screenPageViews",
+        "keyEvents",
+        "sessionKeyEventRate"
+      ],
+      "events": null,
+      "exclude": null,
+      "rows": 437,
+      "fetchedAt": "2026-11-01T00:46:47.445Z"
+    },
+    "ga4-affiliate": {
+      "source": "ga4",
+      "id": "A2+",
+      "dims": [
+        "customEvent:aff_id",
+        "customEvent:aff_position",
+        "customEvent:page_type",
+        "customEvent:page_path"
+      ],
+      "metrics": [
+        "eventCount",
+        "totalUsers"
+      ],
+      "events": "affiliate_click",
+      "exclude": null,
+      "rows": 0,
+      "fetchedAt": "2026-11-01T00:46:48.882Z"
+    },
+    "bing-traffic": {
+      "source": "bing",
+      "bing": "https://cho-hamanako.info/",
+      "rows": 30,
+      "fetchedAt": "2026-11-02T03:05:14.099Z"
+    },
+    "bing-query": {
+      "source": "bing",
+      "bing": "https://cho-hamanako.info/",
+      "rows": 205,
+      "fetchedAt": "2026-11-02T03:05:14.099Z"
+    },
+    "bing-page": {
+      "source": "bing",
+      "bing": "https://cho-hamanako.info/",
+      "rows": 119,
+      "fetchedAt": "2026-11-02T03:05:14.099Z"
+    }
+  }
+}

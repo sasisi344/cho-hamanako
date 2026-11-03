@@ -1,0 +1,120 @@
+{
+  "site": "CH",
+  "month": "2026-10",
+  "start": "2026-10-01",
+  "end": "2026-10-31",
+  "tables": {
+    "ga4-events": {
+      "source": "ga4",
+      "id": "A2",
+      "dims": [
+        "eventName",
+        "pagePath",
+        "sessionSource"
+      ],
+      "metrics": [
+        "eventCount",
+        "totalUsers"
+      ],
+      "events": null,
+      "exclude": "page_view|session_start|first_visit|user_engagement|scroll|form_start|form_submit|video_start|video_progress|video_complete",
+      "rows": 1222,
+      "fetchedAt": "2026-11-02T01:59:38.885Z"
+    },
+    "ga4-device": {
+      "source": "ga4",
+      "id": "A3",
+      "dims": [
+        "deviceCategory",
+        "sessionDefaultChannelGroup"
+      ],
+      "metrics": [
+        "sessions",
+        "engagedSessions",
+        "engagementRate",
+        "userEngagementDuration",
+        "keyEvents"
+      ],
+      "events": null,
+      "exclude": null,
+      "rows": 14,
+      "fetchedAt": "2026-11-02T01:59:39.719Z"
+    },
+    "ga4-lp": {
+      "source": "ga4",
+      "id": "A1",
+      "dims": [
+        "landingPagePlusQueryString",
+        "sessionSourceMedium",
+        "country"
+      ],
+      "metrics": [
+        "sessions",
+        "activeUsers",
+        "engagedSessions",
+        "engagementRate",
+        "userEngagementDuration",
+        "screenPageViews",
+        "keyEvents",
+        "sessionKeyEventRate"
+      ],
+      "events": null,
+      "exclude": null,
+      "rows": 567,
+      "fetchedAt": "2026-11-02T01:59:41.442Z"
+    },
+    "ga4-affiliate": {
+      "source": "ga4",
+      "id": "A2+",
+      "dims": [
+        "customEvent:aff_id",
+        "customEvent:aff_position",
+        "customEvent:page_type",
+        "customEvent:page_path"
+      ],
+      "metrics": [
+        "eventCount",
+        "totalUsers"
+      ],
+      "events": "affiliate_click",
+      "exclude": null,
+      "rows": 31,
+      "fetchedAt": "2026-11-02T01:59:42.825Z"
+    },
+    "ga4-ads": {
+      "source": "ga4",
+      "id": "hq:A4",
+      "dims": [
+        "landingPage"
+      ],
+      "metrics": [
+        "screenPageViews",
+        "totalAdRevenue",
+        "publisherAdImpressions",
+        "publisherAdClicks"
+      ],
+      "events": null,
+      "exclude": null,
+      "rows": 211,
+      "fetchedAt": "2026-11-02T01:59:40.378Z"
+    },
+    "bing-traffic": {
+      "source": "bing",
+      "bing": "https://cho-hamanako.info/",
+      "rows": 30,
+      "fetchedAt": "2026-11-02T03:05:17.469Z"
+    },
+    "bing-query": {
+      "source": "bing",
+      "bing": "https://cho-hamanako.info/",
+      "rows": 200,
+      "fetchedAt": "2026-11-02T03:05:17.469Z"
+    },
+    "bing-page": {
+      "source": "bing",
+      "bing": "https://cho-hamanako.info/",
+      "rows": 99,
+      "fetchedAt": "2026-11-02T03:05:17.469Z"
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "fetchedAt": "2026-11-01T03:18:15.665Z",
+  "site": "CH",
+  "command": "gsc",
+  "args": {
+    "site": "CH",
+    "start": "2026-09-01",
+    "end": "2026-09-30",
+    "dims": "page,date",
+    "limit": "25000",
+    "slug": "m09-page-date"
+  },
+  "start": "2026-09-01",
+  "end": "2026-09-30"
+}

@@ -17,7 +17,11 @@
 `points/omote/imagiremaisakatei` の「舞阪堤テトラ帯での釣り自体は禁止されていません」（202行付近）が、`.agents/fishing-laws-hamanako.md` の「今切口から左右・沖合1,400m、導流堤上は釣り禁止エリア」と食い違う。AKI-C の Codex 報告書（`.workspace/codex/reports/2026-11-01-AKI-C.md`）で指摘。
 
 - [x] 2026-11-01 ユーザーの判断で `imagiremaisakatei` の該当文を「テトラ帯の一部は釣り禁止エリアから外れるが、危険な場所に変わりはない」に変更（CC）
-- [ ] 関連記事（シーバス・クロダイ等で今切口・舞阪堤に触れる記事）に同じ食い違いがないか確認する
+- [x] 2026-11-03 関連記事を洗い出し、食い違いを一覧化 → [imagire-restriction-audit.md](imagire-restriction-audit.md)（A 2本・B 5本・C 9本）
+- [x] 2026-11-03 基準をユーザー確認で確定し `.agents/fishing-laws-hamanako.md` を更新（船: 釣り・停泊禁止／陸: 導流堤は立入禁止、今切大橋より南の突堤は進入禁止、その他は禁止なし）。罰則の数字は出典未確認のため削除
+- [x] 2026-11-03 一覧の A 2本・B 4本・C 9本を Codex で修正（指示書 `.workspace/codex/orders/2026-11-03-IMG-1.md`、報告書 `.workspace/codex/reports/2026-11-03-IMG-1.md`）。CC 検収済み
+- [ ] `points/wading-points` 77行「弁天島ミオ筋周辺: 鉄橋付近や導流堤まわり」の導流堤がどれか確認する（Codex が特定できず未修正）
+- [ ] `hamanako-fishing-rules-and-manners` の特定水産動植物の罰則の金額表記が見出し・本文・まとめで一致していない（Codex 報告）
 - [ ] あわせて、シーバスのランカー定義（60／70／80cm超）と水温の目安が教科書・月別記事・データセットで食い違う件を整理する（同報告書「止めた箇所」）
 
 ## 🟡 計測確認: `affiliate_click`

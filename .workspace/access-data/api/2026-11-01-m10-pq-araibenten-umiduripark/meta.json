@@ -1,0 +1,15 @@
+{
+  "fetchedAt": "2026-11-01T03:20:45.710Z",
+  "site": "CH",
+  "command": "gsc",
+  "args": {
+    "site": "CH",
+    "start": "2026-09-17",
+    "end": "2026-10-29",
+    "dims": "query,date",
+    "page": "araibenten-umiduripark",
+    "slug": "m10-pq-araibenten-umiduripark"
+  },
+  "start": "2026-09-17",
+  "end": "2026-10-29"
+}

@@ -1,0 +1,15 @@
+{
+  "fetchedAt": "2026-11-01T03:20:47.787Z",
+  "site": "CH",
+  "command": "gsc",
+  "args": {
+    "site": "CH",
+    "start": "2026-09-17",
+    "end": "2026-10-29",
+    "dims": "query,date",
+    "page": "kibire-cooking",
+    "slug": "m10-pq-kibire-cooking"
+  },
+  "start": "2026-09-17",
+  "end": "2026-10-29"
+}

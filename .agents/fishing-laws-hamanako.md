@@ -19,7 +19,19 @@
 > [!CAUTION]
 > 「浜名湖には共同漁業権が設定されている」という大雑把な書き方は<strong>不正確</strong>になりがちです。共同漁業権の指定水域は<strong>大橋以南の太平洋・遠州灘側</strong>であり、湖内は浜名湖の漁業ルールに従う旨を分けて書いてください。
 
-加えて、今切口周辺は<strong>釣り禁止エリア</strong>（今切口から左右・沖合1,400m、導流堤上、浜名バイパス以南など）が法的に設定されています。詳細は [hamanako-fishing-rules-and-manners](../src/content/blog/guide/beginner/hamanako-fishing-rules-and-manners/index.mdx) を参照。
+加えて、今切口周辺には次の規制があります（2026-11-03 ユーザー確認。正本はこの表）。
+
+| 対象 | 規制 | 範囲 |
+| :--- | :--- | :--- |
+| <strong>船（プレジャーボート）</strong> | <strong>釣り・停泊とも禁止</strong>（遊漁禁止水域） | 導流堤の南側（砂揚げ場・舞阪港までの水路）と、今切大橋から南へ約1,400m沖まで（東西約2,800m）。出典: [浜名湖総合環境財団](https://hamanako-zaidan.or.jp/cp-bin/wordpress/rules/imakirikuchi/)（範囲は同ページの図） |
+| <strong>陸</strong>: 導流堤 | <strong>立入禁止</strong> | 今切口の導流堤 |
+| <strong>陸</strong>: 今切大橋より南の突堤 | <strong>進入禁止</strong> | 今切大橋から南にある突堤 |
+| <strong>陸</strong>: 上記以外 | 釣りの禁止は<strong>ない</strong> | 舞阪堤のテトラ帯など。ただし現地の立入禁止看板（舞阪堤テトラ先端など）・施設のルール（新居海釣公園は有料）に従う |
+
+> [!CAUTION]
+> 「今切口から左右1,400mは陸も含めて釣り禁止」のように、<strong>船の遊漁禁止水域を陸の規制と混同して書かない</strong>。陸で禁止されているのは導流堤（立入禁止）と今切大橋より南の突堤（進入禁止）。舞阪堤など陸のその他の場所は釣りが禁止されていないが、激流と巨大テトラで危険な場所であることは必ず添える。
+
+詳細は [hamanako-fishing-rules-and-manners](../src/content/blog/guide/beginner/hamanako-fishing-rules-and-manners/index.mdx) を参照（記事側の記述は 2026-11-03 時点で上の表に未対応。[imagire-restriction-audit.md](../.workspace/.task/imagire-restriction-audit.md)）。
 
 ---
 
@@ -198,7 +210,7 @@
 | :--- | :--- | :--- |
 | 通常の<strong>漁業権侵害</strong>（共第20号のアサリ・ハマグリ・ナマコ等を採捕） | <strong>100万円以下の罰金</strong> | 漁業法 |
 | <strong>特定水産動植物</strong>（あわび・なまこ・うなぎ稚魚）の無許可採捕 | <strong>3年以下の懲役 または 3000万円以下の罰金</strong> | 漁業法 第132条 |
-| 今切口の釣り禁止エリアへの立入・釣行 | 6ヶ月以下の懲役 または 10万円以下の罰金 | 港則法等 |
+| 今切口の導流堤・突堤への立入、船の遊漁禁止水域での釣り・停泊 | 罰則の根拠は未確認（旧記載「6ヶ月以下の懲役 または 10万円以下の罰金（港則法等）」は出典が見つからない。確認できるまで記事に罰則の数字を書かない） | 未確認 |
 
 > [!CAUTION]
 > 「漁業権侵害は10万円〜の罰金」のような曖昧な表現は<strong>過小評価</strong>になりやすい。執筆時は<strong>「100万円以下」「特定水産動植物なら最大3000万円・懲役3年」</strong>を原則として書き、必要なら「実際の量刑は事案による」と添える。

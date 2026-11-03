@@ -1,0 +1,15 @@
+{
+  "fetchedAt": "2026-11-01T03:21:27.953Z",
+  "site": "CH",
+  "command": "ga4",
+  "args": {
+    "site": "CH",
+    "start": "2026-10-06",
+    "end": "2026-10-29",
+    "dims": "sessionDefaultChannelGroup",
+    "metrics": "sessions,engagedSessions,screenPageViews,keyEvents",
+    "slug": "m10-baseline-1006"
+  },
+  "start": "2026-10-06",
+  "end": "2026-10-29"
+}
