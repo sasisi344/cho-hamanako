@@ -2,7 +2,7 @@
 
 表・中・奥浜名湖のポイント記事から移動する「深堀り記事」を作成する。
 
-- skills: C:\Users\sasis\344dev\cho-hamanako\.agents\fukabori-article\SKILL.md
+- skills: C:\Users\sasis\344blog\cho-hamanako\.agents\fukabori-article\SKILL.md
 
 ## 深堀り記事の作成意義
 

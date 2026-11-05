@@ -1,0 +1,15 @@
+{
+  "fetchedAt": "2026-11-05T04:21:42.490Z",
+  "site": "CH",
+  "command": "gsc",
+  "args": {
+    "site": "CH",
+    "start": "2025-11-01",
+    "end": "2026-11-02",
+    "dims": "page,query",
+    "query": "冬",
+    "slug": "w-冬"
+  },
+  "start": "2025-11-01",
+  "end": "2026-11-02"
+}

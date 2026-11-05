@@ -1,0 +1,15 @@
+{
+  "fetchedAt": "2026-11-05T04:21:49.776Z",
+  "site": "CH",
+  "command": "gsc",
+  "args": {
+    "site": "CH",
+    "start": "2025-11-01",
+    "end": "2026-11-02",
+    "dims": "page,query",
+    "query": "防寒",
+    "slug": "w-防寒"
+  },
+  "start": "2025-11-01",
+  "end": "2026-11-02"
+}

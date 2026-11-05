@@ -117,6 +117,13 @@ GA4 と Search Console は**連携済み**（2026-10-17 確認）。取れるも
 - [ ] 統合先 `/blog/karei/`・`/blog/sayori/` の表示・クリックの変化（統合 10/31 の前後で同じ日数）
 - [ ] 「秋」を含むクエリの表示数（7/1〜10/27 は 0）
 
+### 冬の収益化（詳細: [winter-monetization-2026-11.md](winter-monetization-2026-11.md) §7）
+
+- [ ] 未登録7本の登録状況（URL 検査 API）: `1-month`・`2-month`・`kasago-guide`・`winter-lightgame`・`winter-lunker`・`winter-tactics`・`hamanako-winter-fishing-oyster-trip`、および `amazon-sale-tackle-strategy` の再クロール
+- [ ] Google クリック/日の前年同月比（前年11月 73.8）
+- [ ] `affiliate_click`/日（基準 1.7）と、防寒カード・仕掛けカードの PV あたりクリック率
+- [ ] 冬ハブの登録と「浜名湖 冬 釣り」の順位
+
 ## 春シーズン（2027年3月〜）
 
 - [ ] `nokkomi-season`（乗っ込みシーズン）: オフシーズンのため現在は表示5件。春（3月〜）に GSC で再確認。なお forAI メモ: 魚種別攻略（チヌ・シーバス）へ知識を統合する方針も検討する

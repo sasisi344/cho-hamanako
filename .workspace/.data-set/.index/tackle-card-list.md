@@ -4,7 +4,7 @@
 > 正本は `src/content/affiliates/`。記事では「ID」列の値をそのまま `<TackleCard id="..." />` に書く。
 > 配置ルール: `.agents/affiliate-placement-rules.md` ／ 存在確認: `pnpm run check:tackle`
 
-- 登録数: 219 件（記事で未使用: 46 件）
+- 登録数: 237 件（記事で未使用: 64 件）
 - 表示: card = 商品カード / banner = バナー / text = 文中テキストリンク
 - 場面（scenes）: wading・night・car・family・safety・boat・bait・stay・activity・rental-car
 
@@ -43,7 +43,7 @@
 | `common/daiwa-polarize-dn-8025` | ダイワ (DAIWA) 偏光グラス DN-8025 | アイウェア | クロダイ・キビレ・シーバス |  |  | card | 0 |
 | `common/eenour-car-refrigerator` | EENOUR 車内冷蔵庫 | 車中泊グッズ |  | car |  | card | 0 |
 | `common/fkstyle-2hp-outboard` | Fkstyle 空冷式2ストローク 2馬力船外機モーター | ボート・SUP | 全魚種 | boat |  | card | 0 |
-| `common/gentos-headlight-cb-300d` | ジェントス LEDヘッドライト CB-300D | その他 | 全魚種 | night・safety |  | card | 7 |
+| `common/gentos-headlight-cb-300d` | ジェントス LEDヘッドライト CB-300D | その他 | 全魚種 | night・safety |  | card | 8 |
 | `common/gymax-floattube` | GYMAX 釣り用フローター | ボート・SUP | 全魚種 | boat |  | card | 0 |
 | `common/hamamatsu-gyoza-gomihatchin` | 五味八珍「冷凍」浜松餃子 | お土産・グルメ |  |  |  | card | 0 |
 | `common/hamanako-unagi-deshiko` | 浜名湖うなぎ「でしこ」 | お土産・グルメ |  |  |  | card | 0 |
@@ -140,7 +140,7 @@
 | `karei/berkley-sw-pulse-worm` | バークレー SWパルスワーム | ルアー | カレイ・アイナメ・カサゴ |  |  | card | 3 |
 | `karei/daiwa-21-karei-82-160` | ダイワ 21 カレイ 82-160 | ロッド | カレイ |  |  | card | 1 |
 | `karei/daiwa-pr100h` | ダイワ PR100H | リール | カレイ・カワハギ・カサゴ |  |  | card | 1 |
-| `karei/daiwa-prime-surf-t25-405-w` | ダイワ プライムサーフ T25-405・W | ロッド | カレイ・キス |  |  | card | 4 |
+| `karei/daiwa-prime-surf-t25-405-w` | ダイワ プライムサーフ T25-405・W | ロッド | カレイ・キス |  |  | card | 3 |
 | `karei/owner-funa-karei-base` | オーナー 船カレイの基本 | 仕掛け | カレイ |  |  | card | 2 |
 | `karei/sasame-canon-ball-karei` | ささめ針 一投入魂キャノンボールカレイ | 仕掛け | カレイ |  |  | card | 4 |
 | `karei/yamatoyo-flouro-shock-leader` | ヤマトヨテグス フロロショックリーダー | ライン | カレイ・シーバス |  |  | card | 1 |
@@ -215,7 +215,7 @@
 
 | ID | 商品名 | 種類 | 対象魚 | 場面 | エリア | 表示 | 使用数 |
 |---|---|---|---|---|---|---|---:|
-| `mebaru-kasago/23-gekkabijin-lt2000s-p` | ダイワ 23 月下美人 LT2000S-P | リール・スピニングリール | メバル・カサゴ・アジ |  |  | card | 4 |
+| `mebaru-kasago/23-gekkabijin-lt2000s-p` | ダイワ 23 月下美人 LT2000S-P | リール・スピニングリール | メバル・カサゴ・アジ |  |  | card | 5 |
 | `mebaru-kasago/daiwa-hardrock-k` | ダイワ HARDROCK X 86MHB・K | ロッド | メバル・カサゴ・キジハタ |  |  | card | 3 |
 | `mebaru-kasago/daiwa-pr100-h` | ダイワ PR100H | リール | カサゴ・アイナメ |  |  | card | 2 |
 | `mebaru-kasago/daiwa-pr100-hl` | ダイワ PR100HL | リール | メバル・カサゴ |  |  | card | 1 |
@@ -259,8 +259,8 @@
 |---|---|---|---|---|---|---|---:|
 | `sayori/marufuji-trick` | マルフジ(Marufuji) P-084 サヨリトリック 4号 | 仕掛け | サヨリ |  |  | card | 1 |
 | `sayori/owner-buttobasi` | オーナー(OWNER) ぶっ飛びサヨリ仕掛け 3.5-0.6-4 | 仕掛け | サヨリ |  |  | card | 1 |
-| `sayori/owner-sokkou` | オーナー(OWNER) 釣り日和 速攻サヨリ仕掛 3-0.8-2 | 仕掛け | サヨリ |  |  | card | 7 |
-| `sayori/ss-2-ex` | 工房浦安 スーパーサヨリン2EX 夜光 M 黄プロペラ | 仕掛け・ウキ | サヨリ |  |  | card | 4 |
+| `sayori/owner-sokkou` | オーナー(OWNER) 釣り日和 速攻サヨリ仕掛 3-0.8-2 | 仕掛け | サヨリ |  |  | card | 5 |
+| `sayori/ss-2-ex` | 工房浦安 スーパーサヨリン2EX 夜光 M 黄プロペラ | 仕掛け・ウキ | サヨリ |  |  | card | 3 |
 
 ## seabass（16）
 
@@ -268,9 +268,9 @@
 |---|---|---|---|---|---|---|---:|
 | `seabass/corsair-65` | エバーグリーン(EVERGREEN) コルセア65 | ルアー・シンペン | シーバス・クロダイ |  |  | card | 3 |
 | `seabass/daiwa-liberty-club-t15-300-k` | ダイワ リバティクラブ T15-300・K | ロッド | シーバス・クロダイ・キス |  |  | card | 0 |
-| `seabass/daiwa-seabass-hunter-x` | ダイワ シーバスハンターX 90L・R | ロッド | シーバス・クロダイ |  |  | card | 6 |
+| `seabass/daiwa-seabass-hunter-x` | ダイワ シーバスハンターX 90L・R | ロッド | シーバス・クロダイ |  |  | card | 7 |
 | `seabass/daiwa-silverwolf-76ml-s-w` | ダイワ シルバーウルフ 76ML-S・W | ロッド | シーバス・クロダイ・キビレ |  |  | card | 6 |
-| `seabass/dress-chloroprene-wader-winter` | DRESS クロロプレン ラジアルソール ウェーダー | その他 | シーバス・クロダイ | wading |  | card | 5 |
+| `seabass/dress-chloroprene-wader-winter` | DRESS クロロプレン ラジアルソール ウェーダー | その他 | シーバス・クロダイ | wading |  | card | 6 |
 | `seabass/duo-bay-ruf-manic-95` | DUO(デュオ) シンキングペンシル ベイルーフ マニック95 | ルアー・シンキングペンシル | シーバス・キビレ |  |  | card | 10 |
 | `seabass/fuji-tokki-ff-n30lg-float` | 富士灯器 涙型自立電気ウキ FF-N30LG 3号 緑 | その他 | シーバス・タチウオ・キビレ | night |  | card | 4 |
 | `seabass/jackson-nyoro-nyoro-85` | ジャクソン(Jackson) シンキングペンシル にょろにょろ 85mm | ルアー・シンキングペンシル | シーバス・メバル |  |  | card | 10 |
@@ -281,7 +281,7 @@
 | `seabass/pykes-peak-wader-summer` | PYKES PEAK 夏用ウェーダー ラジアルソール | その他 | シーバス・クロダイ | wading |  | card | 7 |
 | `seabass/sasuke-sf75` | アイマ(ima) サスケ(sasuke) SF-75 | ルアー・ミノー | シーバス・クロダイ |  |  | card | 6 |
 | `seabass/shimano-encounter-s96m` | シマノ エンカウンター S96M | ロッド | シーバス・クロダイ・ヒラメ |  |  | card | 5 |
-| `seabass/shimano-exsence-silent-assassin-99f` | シマノ エクスセンス サイレントアサシン 99F | ルアー・フローティングミノー | シーバス・クロダイ・サワラ |  |  | card | 10 |
+| `seabass/shimano-exsence-silent-assassin-99f` | シマノ エクスセンス サイレントアサシン 99F | ルアー・フローティングミノー | シーバス・クロダイ・サワラ |  |  | card | 11 |
 
 ## tako（6）
 
@@ -316,3 +316,26 @@
 | `travel/rakuten-travel-stay` | 楽天トラベル（宿泊） | 旅行・観光 |  | stay |  | banner | 13 |
 | `travel/uqey-banner` | Uqey（ユーキー）バナー | 旅行・観光 |  | rental-car |  | banner | 0 |
 | `travel/uqey-text` | 待たないレンタカー【Uqey（ユーキー）】 | 旅行・観光 |  | rental-car |  | text | 0 |
+
+## winter（18）
+
+| ID | 商品名 | 種類 | 対象魚 | 場面 | エリア | 表示 | 使用数 |
+|---|---|---|---|---|---|---|---:|
+| `winter/daiwa-anazuri-senka` | ダイワ 穴釣り専科 | ロッド | カサゴ・メバル・アイナメ |  |  | card | 0 |
+| `winter/daiwa-rainmax-winter-suit` | ダイワ RAINMAX ウインタースーツ DW-3525 | 防寒 | 全魚種 | night |  | card | 0 |
+| `winter/daiwa-winter-boots-wr3302` | ダイワ 防寒ブーツ WR-3302 | 防寒 | 全魚種 |  |  | card | 0 |
+| `winter/fivestar-kiwakko` | FIVE STAR 防波堤 穴釣り竿 キワっ子 | ロッド | カサゴ・メバル |  |  | card | 0 |
+| `winter/hakkin-warmer-standard` | ハクキンカイロ ハクキンウォーマー スタンダード | 防寒 | 全魚種 | night |  | card | 0 |
+| `winter/hokkairo-haru-30` | ホッカイロ 貼る レギュラー 30個入 | 防寒 | 全魚種 |  |  | card | 0 |
+| `winter/makku-bousui-bokan-suit` | マック 防水防寒スーツ 耐水圧10,000mm | 防寒 | 全魚種 | night |  | card | 0 |
+| `winter/mazume-winter-boots` | マズメ ウインターブーツ MZRB-806 | 防寒 | 全魚種 |  |  | card | 0 |
+| `winter/nt-benzine-500ml` | タカビシ化学 カイロ用NTベンジン 500ml | 防寒 | 全魚種 |  |  | card | 0 |
+| `winter/otafuku-inner-glove` | おたふく手袋 冬用防寒インナーグローブ 下履き用 | 防寒 | 全魚種 |  |  | card | 0 |
+| `winter/otafuku-neckwarmer-jw124` | おたふく手袋 冬用ネックウォーマー JW-124 | 防寒 | 全魚種 |  |  | card | 0 |
+| `winter/otafuku-thermodeo-highneck` | おたふく手袋 冬用インナー 長袖ハイネック サーモデオ JW-275 | 防寒 | 全魚種 |  |  | card | 0 |
+| `winter/otafuku-thermodeo-tights` | おたふく手袋 冬用ロングタイツ サーモデオ JW-274 | 防寒 | 全魚種 |  |  | card | 0 |
+| `winter/samonic-rechargeable-warmer` | SAMONIC 充電式カイロ 12000mAh | 防寒 | 全魚種 | car |  | card | 0 |
+| `winter/shimano-basic-warm-glove` | シマノ ベーシックウォーム グローブ 3本カット | 防寒 | 全魚種 | night |  | card | 0 |
+| `winter/ten-anazuri-set` | つり具TEN 穴釣り 完全釣りセット エサ付 | セット | カサゴ・メバル・アイナメ | family |  | card | 0 |
+| `winter/thermos-ffx-502` | サーモス 山専用ステンレスボトル FFX-502 0.5L | 防寒 | 全魚種 | family |  | card | 0 |
+| `winter/umibozu-3finger-glove` | UMIBOZU フィッシンググローブ 3フィンガー 裏起毛 | 防寒 | 全魚種 | night |  | card | 0 |

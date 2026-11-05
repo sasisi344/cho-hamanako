@@ -9,7 +9,7 @@ description: Creates or rewrites Cho! Hamanako MDX articles in src/content/blog 
 
 1. リポジトリ `CLAUDE.md`
 2. 本 SKILL → 詳細は `.agents/`（**正本は `.agents`、本 SKILL は Claude Code 用の入口**）
-3. 親 `344dev/CLAUDE.md`（Node 22 / pnpm）
+3. 親 `344blog/CLAUDE.md`（Node 22 / pnpm）
 
 ## 作業フロー（標準）
 

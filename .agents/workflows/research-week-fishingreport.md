@@ -57,5 +57,5 @@ description: 週間で浜名湖の釣果情報を取得してレポート作成
 ---
 
 ## 🛠️ 次のステップ：SNSプロモーション (連携)
-レポートが完成したら、直ちに [.agents/workflows/sns-promotion-workflow.md](file:///c:/Users/sasis/344dev/cho-hamanako/.agents/workflows/sns-promotion-workflow.md) を実行してください。
+レポートが完成したら、直ちに [.agents/workflows/sns-promotion-workflow.md](file:///c:/Users/sasis/344blog/cho-hamanako/.agents/workflows/sns-promotion-workflow.md) を実行してください。
 金曜日の「週末釣行準備」に合わせた、XおよびInstagram用の投稿テキスト（「私（さしし）」スタイル）を自動生成できます。

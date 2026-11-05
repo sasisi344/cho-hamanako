@@ -1,0 +1,11 @@
+id: winter/ten-anazuri-set
+name: つり具TEN 穴釣り 完全釣りセット エサ付
+link: https://www.amazon.co.jp/dp/B0GN64MRSH?tag=sasisi344-22
+image: https://m.media-amazon.com/images/I/71Pec4Cy4YL.jpg
+description: 90cmの穴釣り竿、糸付きリール、ブラクリ、エサ、水汲みバケツまで入ったセット。これだけで始められる。
+targetFish: ["カサゴ", "メバル", "アイナメ"]
+methods: ["穴釣り"]
+categories: ["セット"]
+brand: つり具TEN
+isRecommended: true
+scenes: ["family"]

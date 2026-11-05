@@ -89,7 +89,7 @@ Accuracy notes: horse mackerel has a blue-green back, silver belly and a line of
 ### 5. dry-run で確認 → 生成
 
 ```bash
-cd c:/Users/sasis/344dev/cho-hamanako
+cd c:/Users/sasis/344blog/cho-hamanako
 # シーン指示をファイルに書いて確認（クォートの問題を避けるため --scene-file 推奨）
 node .workspace/scripts/Antigravity-nanobana/generate-cover.js "<記事のindex.mdx>" --scene-file "<scene.txt>" --dry-run
 ```

@@ -143,5 +143,5 @@ T((50, 822), "※位置関係を示す図ではありません。数値は昭和
 T((50, 858), "出典：浜松市史 一（浜松市役所、昭和43年刊）／国土地理院 湖沼図（1965年）　　cho-hamanako.info", 19, SUB)
 
 out = img.resize((W, H), Image.LANCZOS)
-out.save("C:/Users/sasis/344dev/cho-hamanako/src/content/blog/guide/theory/hamanako-depth-map/infographic.png", optimize=True)
+out.save("C:/Users/sasis/344blog/cho-hamanako/src/content/blog/guide/theory/hamanako-depth-map/infographic.png", optimize=True)
 print("ok")

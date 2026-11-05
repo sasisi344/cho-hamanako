@@ -22,8 +22,8 @@ description: 執筆したドラフトを本番用コンテンツに変換・移�
 // turbo
 3.  **パラメータ・ファクトチェック（厳守）**
     - 記事内の `<BlogCard />` および `<TackleCard />` のパラメータが実在するか検証する。
-    - **BlogCard検証**: `slug` が `[.workspace/.data-set/blog-card-index.md](file:///c:/Users/sasis/344dev/cho-hamanako/.workspace/.data-set/blog-card-index.md)` に存在することを確認。
-    - **TackleCard検証**: `pnpm run check:tackle` を実行し、存在しない ID が0件であることを確認（`id` は `[.workspace/.data-set/.index/tackle-card-list.md](file:///c:/Users/sasis/344dev/cho-hamanako/.workspace/.data-set/.index/tackle-card-list.md)` の「ID」列の値）。
+    - **BlogCard検証**: `slug` が `[.workspace/.data-set/blog-card-index.md](file:///c:/Users/sasis/344blog/cho-hamanako/.workspace/.data-set/blog-card-index.md)` に存在することを確認。
+    - **TackleCard検証**: `pnpm run check:tackle` を実行し、存在しない ID が0件であることを確認（`id` は `[.workspace/.data-set/.index/tackle-card-list.md](file:///c:/Users/sasis/344blog/cho-hamanako/.workspace/.data-set/.index/tackle-card-list.md)` の「ID」列の値）。
     - **TackleCard配置**: カードの直前に誘導文があるか、ポイント記事の枚数上限を超えていないかを [affiliate-placement-rules.md](../affiliate-placement-rules.md) で確認。
     - **不一致がある場合**: 変換を中断し、正しいパラメータに修正するかユーザーに確認する。
 

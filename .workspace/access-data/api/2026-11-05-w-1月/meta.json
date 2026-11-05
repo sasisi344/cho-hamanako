@@ -1,0 +1,15 @@
+{
+  "fetchedAt": "2026-11-05T04:21:44.891Z",
+  "site": "CH",
+  "command": "gsc",
+  "args": {
+    "site": "CH",
+    "start": "2025-11-01",
+    "end": "2026-11-02",
+    "dims": "page,query",
+    "query": "1月",
+    "slug": "w-1月"
+  },
+  "start": "2025-11-01",
+  "end": "2026-11-02"
+}

@@ -7,7 +7,7 @@ description: Generates cover and inline images for Cho! Hamanako using the Antig
 
 ## 原則
 
-- **ユーザーが画像生成を明示したときだけ**実行する（`CLAUDE.md` / 344dev 共通ルール）
+- **ユーザーが画像生成を明示したときだけ**実行する（`CLAUDE.md` / 344blog 共通ルール）
 - Cursor の `generate_image` ツールは使わず、**本リポジトリの Node スクリプト**を使う
 - 生成物は **記事と同じフォルダ**（`src/content/blog/.../`）に置く
 
@@ -35,7 +35,7 @@ description: Generates cover and inline images for Cho! Hamanako using the Antig
 記事の内容に合わせたシーン指示の作り方は [cho-hamanako-thumbnail-prompt](../cho-hamanako-thumbnail-prompt/SKILL.md) を参照。
 
 ```bash
-cd c:/Users/sasis/344dev/cho-hamanako
+cd c:/Users/sasis/344blog/cho-hamanako
 
 # プロンプトの確認だけ（API は呼ばない）
 node .workspace/scripts/Antigravity-nanobana/generate-cover.js "src/content/blog/points/naka/gardenpark/index.mdx" --dry-run

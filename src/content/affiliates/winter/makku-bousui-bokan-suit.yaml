@@ -1,0 +1,11 @@
+id: winter/makku-bousui-bokan-suit
+name: マック 防水防寒スーツ 耐水圧10,000mm
+link: https://www.amazon.co.jp/dp/B09HMG9LBF?tag=sasisi344-22
+image: https://m.media-amazon.com/images/I/71VIIwQGMkL.jpg
+description: 耐水圧10,000mmの防水防寒スーツ。上下で揃えられ、初めての冬の釣りに買いやすい。反射プリント付き。リンク先でサイズを選ぶ。
+targetFish: ["全魚種"]
+methods: ["冬の釣り"]
+categories: ["防寒"]
+brand: マック
+isRecommended: true
+scenes: ["night"]

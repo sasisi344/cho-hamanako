@@ -21,7 +21,7 @@
 
 ## フロントマター定義（MASTER）
 
-カテゴリー `points` のピラーページ用定義です。[point-pillar-template.mdx](file:///c:/Users/sasis/344dev/cho-hamanako/.workspace/_point-pillar-migration/point-pillar-template.mdx) を正とします。
+カテゴリー `points` のピラーページ用定義です。[point-pillar-template.mdx](file:///c:/Users/sasis/344blog/cho-hamanako/.workspace/_point-pillar-migration/point-pillar-template.mdx) を正とします。
 
 ```yaml
 title: "記事タイトル" # 地名＋ベネフィット（例：～表浜名湖の極上ポイント～）

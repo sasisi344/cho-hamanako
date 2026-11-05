@@ -10,7 +10,7 @@ alwaysApply: true
 1. ルートの [CLAUDE.md](CLAUDE.md)
 2. [.agents/](.agents/) 配下の SKILL・ワークフロー・補助ドキュメント
 3. Claude Code 用 [.claude/skills/](.claude/skills/)（記事・画像・文体・タスクの入口）
-4. ワークスペース共通: 親 `344dev/CLAUDE.md`
+4. ワークスペース共通: 親 `344blog/CLAUDE.md`
 5. エディタ／CLI のユーザー設定
 
 作業開始時は対象が記事執筆なら該当する `.agents/*/SKILL.md`、コードなら `CLAUDE.md` と本ルールを意識する。
@@ -63,7 +63,7 @@ alwaysApply: true
 | 釣りの法律・条例 | [.agents/fishing-laws-hamanako.md](.agents/fishing-laws-hamanako.md) |
 | ワークフロー | [.agents/workflows/](.agents/workflows/) |
 
-## ワークスペース（344dev）共通（コマンド時）
+## ワークスペース（344blog）共通（コマンド時）
 
 - Node.js 22、TypeScript、pnpm。画像生成は明示指示があるまで行わない。
 - コミットは依頼時のみ。`--no-verify` は使わない。
