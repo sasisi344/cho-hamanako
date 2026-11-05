@@ -115,6 +115,91 @@
       "bing": "https://cho-hamanako.info/",
       "rows": 99,
       "fetchedAt": "2026-11-02T03:05:17.469Z"
+    },
+    "gsc-page": {
+      "source": "gsc",
+      "id": null,
+      "dims": [
+        "page"
+      ],
+      "metrics": null,
+      "events": null,
+      "exclude": null,
+      "rows": 213,
+      "fetchedAt": "2026-11-05T02:57:58.832Z"
+    },
+    "gsc-query": {
+      "source": "gsc",
+      "id": null,
+      "dims": [
+        "query"
+      ],
+      "metrics": null,
+      "events": null,
+      "exclude": null,
+      "rows": 642,
+      "fetchedAt": "2026-11-05T02:57:59.217Z"
+    },
+    "gsc-device": {
+      "source": "gsc",
+      "id": null,
+      "dims": [
+        "device"
+      ],
+      "metrics": null,
+      "events": null,
+      "exclude": null,
+      "rows": 3,
+      "fetchedAt": "2026-11-05T02:57:59.731Z"
+    },
+    "gsc-date": {
+      "source": "gsc",
+      "id": null,
+      "dims": [
+        "date"
+      ],
+      "metrics": null,
+      "events": null,
+      "exclude": null,
+      "rows": 31,
+      "fetchedAt": "2026-11-05T02:57:59.916Z"
+    },
+    "gsc-country": {
+      "source": "gsc",
+      "id": null,
+      "dims": [
+        "country"
+      ],
+      "metrics": null,
+      "events": null,
+      "exclude": null,
+      "rows": 45,
+      "fetchedAt": "2026-11-05T02:58:00.292Z"
+    },
+    "gsc-appearance": {
+      "source": "gsc",
+      "id": null,
+      "dims": [
+        "searchAppearance"
+      ],
+      "metrics": null,
+      "events": null,
+      "exclude": null,
+      "rows": 0,
+      "fetchedAt": "2026-11-05T02:58:01.249Z"
+    },
+    "gsc-page-query": {
+      "source": "gsc",
+      "id": null,
+      "dims": [
+        "page",
+        "query"
+      ],
+      "metrics": null,
+      "events": null,
+      "exclude": null,
+      "rows": 797,
+      "fetchedAt": "2026-11-05T02:58:01.494Z"
     }
   }
 }
