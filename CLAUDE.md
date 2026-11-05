@@ -5,7 +5,7 @@
 1. **本書**（`CLAUDE.md`）
 2. **エージェント詳細**（`.agents/` 配下の SKILL・ワークフロー）
 3. **Claude Code プロジェクト SKILL**（`.claude/skills/` — 記事作成・画像・文体・タスクの入口）
-4. **ワークスペース共通**: 親ディレクトリ `344dev/CLAUDE.md`
+4. **ワークスペース共通**: 親ディレクトリ `344blog/CLAUDE.md`
 5. **エディタ／CLI グローバル**: `~/.claude/settings.json` など
 
 ## 役割: プロジェクトアーキテクト兼リード
@@ -82,4 +82,4 @@ Claude Code セッションでは、下記を用途に応じて読み込む（�
 
 ## タスク管理（GitHub Project 統合、2026-09-25〜）
 
-ブログ横断の中期〜長期タスクは GitHub Project で一元管理: https://github.com/users/sasisi344/projects/1 （「ブログ運営タスク」）。カンバン列は `Backlog → Todo → In Progress → Done`。短期〜中期の目標タスクは Start date / End date を設定し、ロードマップビューで期間の進捗を管理する。新規タスクは `gh issue create --repo sasisi344/cho-hamanako` でIssue化 → `gh project item-add 1 --owner sasisi344 --url <issue-url>` でボードに追加。詳細は `344ob/07_workspace/.agents/blog-registry.md` 参照。日々の細かい実行タスクは `.workspace/.task/` が引き続き正本。
+ブログ横断の中期〜長期タスクは GitHub Project で一元管理: https://github.com/users/sasisi344/projects/1 （「ブログ運営タスク」）。カンバン列は `Backlog → Todo → In Progress → Done`。短期〜中期の目標タスクは Start date / End date を設定し、ロードマップビューで期間の進捗を管理する。新規タスクは `gh issue create --repo sasisi344/cho-hamanako` でIssue化 → `gh project item-add 1 --owner sasisi344 --url <issue-url>` でボードに追加。詳細は `344ob/344ob/07_workspace/.agents/blog-registry.md` 参照。日々の細かい実行タスクは `.workspace/.task/` が引き続き正本。

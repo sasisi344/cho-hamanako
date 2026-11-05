@@ -26,11 +26,8 @@ description: Navigates Cho! Hamanako .workspace task files, datasets, drafts, an
 | ファイル | 内容 |
 |----------|------|
 | `.workspace/.task/task.md` | **最新の全体タスク**（リライト進捗、週間 PDCA、内部リンク） |
-| `.workspace/.task/method-guide-rewrite-task.md` | guide/method・theory リライト方針と優先度 |
-| `.workspace/.task/niche-kw-tasks.md` | ニッチ KW 施策 |
-| `.workspace/.task/content-linking-map.md` | 内部リンク設計 |
-| `.workspace/.task/seo-site-tasks.md` | サイト SEO タスク |
-| `.workspace/.task/query-datacheck/` | GSC CSV・比較スクリプト |
+| `.workspace/.task/archive/method-guide-rewrite-task.md` | guide/method・theory リライト方針と優先度 |
+| `.workspace/.task/archive/content-linking-map.md` | 内部リンク設計 |
 
 タスク着手時は **まず `task.md` を読み**、該当バックログ MD を開く。
 
