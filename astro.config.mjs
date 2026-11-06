@@ -74,7 +74,7 @@ export default defineConfig({
     "/2024/12/浜名湖でカサゴを釣りたいならここ！おすすめの/": "/blog/kasago-guide/",
     "/2024/11/【初心者必見】冬の浜名湖でカレイを釣る方法！/": "/blog/karei-beginner/",
     "/2024/11/【完全ガイド】浜名湖でハゼ釣りを楽しむ！おす/": "/points/haze-fukabori/",
-    "/2025/10/冬の浜名湖釣りガイド｜初心者向けの釣り方とお/": "/blog/seasonal-patterns-guide/",
+    "/2025/10/冬の浜名湖釣りガイド｜初心者向けの釣り方とお/": "/blog/hamanako-winter-fishing/",
     "/2024/11/浜名湖でおすすめのウェーディングポイント10選と/": "/points/wading-points/",
     "/2024/11/浜名湖でサヨリを釣る方法！おすすめのシーズン/": "/blog/sayori-beginner-guide/",
     "/2025/01/3月の浜名湖でおすすめの釣りポイント9選/": "/blog/3-month/",

@@ -122,11 +122,11 @@
 
 ### フェーズ1: 登録の回復と今ある商品（〜11/8）
 
-- [ ] **U-1（ユーザー）** GSC の URL 検査で登録をリクエスト: `/blog/1-month/`・`/blog/2-month/`・`/blog/kasago-guide/`・`/blog/winter-lightgame/`・`/blog/winter-lunker/`・`/blog/winter-tactics/`・`/blog/travel/hamanako-winter-fishing-oyster-trip/`・`/blog/amazon-sale-tackle-strategy/`。統合する `winter-kasago` は外す
+- [ ] **U-1（ユーザー）** GSC の URL 検査で登録をリクエスト（2026-11-06 の確認で更新）: `/blog/kasago-guide/`・`/blog/winter-tactics/`・`/blog/amazon-sale-tackle-strategy/`。`/blog/travel/hamanako-winter-fishing-oyster-trip/` は FUYU-9 の後。`1-month`・`2-month`・`winter-lightgame`・`winter-lunker`・冬ハブ・防寒ガイドは 11/05 に登録済み
 - [ ] **FUYU-1（CC→Codex）** カードの先行配置。既存の商品だけを使い、`.agents/affiliate-placement-rules.md` に従う
   - 優先順: `mebaru-kasago-beginner` → `11-month` → `12-month` → `karei-beginner` → `winter-anazuri-guide-2026` → `1-month` → `2-month` → `ajing-fukabori`
   - 使える例: `mebaru-kasago/owner-ainame-brakuri`・`mebaru-kasago/23-gekkabijin-lt2000s-p`・`karei/sasame-canon-ball-karei`・`common/gentos-headlight-cb-300d`。ID は `tackle-card-list.md` で確認する
-- [ ] **FUYU-2（CC）** 内部リンク: 登録済みで表示の多い記事（`yearly-fishing-calendar`・`12-month`・`11-month`）から、未登録の `1-month`・`2-month`・`winter-lunker` へ理由を添えて送る
+- [x] **FUYU-2（CC）** 2026-11-06 完了（`yearly-fishing-calendar`・`12-month`・`11-month` から送った）。内部リンク: 登録済みで表示の多い記事（`yearly-fishing-calendar`・`12-month`・`11-month`）から、未登録の `1-month`・`2-month`・`winter-lunker` へ理由を添えて送る
 
 ### フェーズ2: 商品の用意（〜11/10）
 
@@ -148,14 +148,14 @@
 
 - [x] **FUYU-5（CC→Codex）** 2026-11-05 執筆・検収済み（未コミット）。`winter-cold-protection-guide`。サムネイルは未生成で、公開時の日程の追記は FUYU-11。報告書 `.workspace/codex/reports/2026-11-05-FUYU-5.md`
 - [x] **FUYU-6（CC→Codex）** 2026-11-05 検収済み（未コミット）。冬ハブを新規作成。タイトルは「浜名湖 冬 釣り」で始める。構成は結論→行く理由→月別・魚種別の早見表→風裏のポイント3〜5選→防寒→旅。競合の上位は公開前に画面で確認する
-- [ ] **FUYU-7（CC）** 冬ハブの公開時に転送先と四季ガイドのタイトルを変更（§3）
+- [x] **FUYU-7（CC）** 2026-11-06 完了。冬ハブの公開時に転送先と四季ガイドのタイトルを変更（§3）
 - [ ] **U-3（ユーザー）** 体験メモ3つ（1行ずつでよい）: ①冬に実際に行く理由 ②空っ風の日に選ぶ釣り場 ③自分の防寒で効いたもの。無ければ一般論で書き、一人称の体験は入れない
 
 ### フェーズ4: 12月の山に備える（〜11/30）
 
 - [x] **FUYU-8（CC→Codex）** 2026-11-05 統合・検収済み（未コミット）。6本を削除し転送8件を反映。報告書 `.workspace/codex/reports/2026-11-05-FUYU-8.md`
 - [ ] **FUYU-12（CC）** FUYU-8 の報告書で止めた数字の食い違いを正本で揃える: 穴釣りの号数・待ち時間、ヒラメの産卵期とアワセ、カワハギの肝の時期、秋ボートの水深。あわせて `12-month` のカイロの案内（衣類用を足裏に使う書き方）を直す
-- [ ] **FUYU-13（CC）** 公開後、`yearly-fishing-calendar`・`12-month`・`amazon-sale-tackle-strategy` から `winter-cold-protection-guide` へリンクを張り、GSC で登録をリクエスト
+- [x] **FUYU-13（CC）** 2026-11-06 完了（`12-month` は FUYU-15 で済み。登録は 11/05 に確認済み）。公開後、`yearly-fishing-calendar`・`12-month`・`amazon-sale-tackle-strategy` から `winter-cold-protection-guide` へリンクを張り、GSC で登録をリクエスト
 - [ ] **FUYU-9（CC→Codex）** `hamanako-winter-fishing-oyster-trip` を書き足す。牡蠣小屋の営業は公式で確認し、エリア指定の宿リンクに差し替える
 - [ ] **FUYU-10（CC→Codex）** 未登録の4本（`karei-points`・`karei-tactics`・`mebaru-kasago-points`・`mebaru-kasago-tactics`）の重なりを点検し、残すものを直してから再依頼
 - [ ] **FUYU-11（CC）** 公式発表の後、`amazon-sale-tackle-strategy` の日付・防寒の節を更新。発表前に日程を断定しない
@@ -171,7 +171,7 @@
 - [x] **FUYU-17** `karei-beginner`（前年260、カード0）
 - FUYU-12 に追加（各報告書の「止めた箇所」）: カレイの産卵時期・座布団の基準・リリース寸法・待ち時間、12月と1月の水温、メバルの産卵時期、ブラクリ号数とカード説明、底からの高さ・アワセ、風速の切り上げ基準、`kasago-guide` の舞阪堤「小型テトラ」、`thermos-ffx-502` の「スープが飲める」
 - 判断待ち: `12-month`・`1-month` のタイトル変更案（FUYU-15・FUYU-16 の報告書）
-- 残り: `11-month`・`ajing-fukabori`・`winter-anazuri-guide-2026`・`2-month` のカード配置（FUYU-1 の残り）
+- 残り: `11-month`・`ajing-fukabori`・`winter-anazuri-guide-2026`・`2-month` のカード配置（FUYU-1 の残り。指示書 `.workspace/codex/orders/2026-11-06-FUYU-1.md`、検収 11/07）
 
 ### 月次分析から引き継ぐもの
 
