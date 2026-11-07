@@ -68,7 +68,7 @@ SKILL: `cho-hamanako-data-set` / `.agents/data-set-access/SKILL.md`
 2. 対象カテゴリの `.agents/*-article/SKILL.md` と specialty タスク MD（例: `method-guide-rewrite-task.md`）を読む
 3. 必要なら `.data-set` で slug・魚種・GSC を確認
 4. `src/content/blog/.../index.mdx` を編集
-5. 画像は明示指示時のみ `cho-hamanako-image-generation`
+5. 画像は記事にプロンプトを書いた段階で生成してよい。 `cho-hamanako-image-generation`
 6. 完了したら `task.md` のチェックを更新（ユーザーが依頼した場合）
 
 ## `> [!forAI]` 運用（リライト）

@@ -59,7 +59,7 @@ description: Rewrites existing Cho! Hamanako MDX articles using forAI notes, liv
 - [ ] `draft: false` なら forAI 残存なし
 - [ ] 同エリア BlogCard（ポイントピラーは末尾5本目安）
 
-画像: ユーザー明示時のみ `.claude/skills/cho-hamanako-image-generation`
+画像: プロンプトを書いた段階で生成してよい（2026-11-06 ユーザー決定） `.claude/skills/cho-hamanako-image-generation`
 
 ## 深度の上げ方（2,000字未満の通常記事）
 

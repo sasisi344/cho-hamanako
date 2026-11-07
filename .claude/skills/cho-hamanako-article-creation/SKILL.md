@@ -21,7 +21,7 @@ description: Creates or rewrites Cho! Hamanako MDX articles in src/content/blog 
 6. **構造**: `.agents/category-slug-rules.md` で保存先と `slug` を決定
 7. **根拠**: manifest の `lookup_by_task` に従い data-set を参照（推測で書かない）
 8. **執筆**: `.agents/writing-style/SKILL.md` + タイプ別 SKILL（通常記事 **2,000字+**）
-9. **画像**: 明示指示があるときのみ → `cho-hamanako-image-generation` SKILL
+9. **画像**: 記事にプロンプトを書いた段階で生成してよい（2026-11-06 ユーザー決定）。 → `cho-hamanako-image-generation` SKILL
 10. **検証**: BlogCard / TackleCard は `.index/blog-card-index.md` 等で再確認、`draft: false` 前に `> [!forAI]` 削除
 
 詳細手順: `.agents/workflows/article-creation-workflow.md`
@@ -54,7 +54,7 @@ description: Creates or rewrites Cho! Hamanako MDX articles in src/content/blog 
 
 - `title`, `summary`, `pubDate`, `upDate`, `category`, `tags`, `draft`, `slug`
 - ポイント記事: `location`, `fishinginfo`, `facilities` — テンプレは `.workspace/_point-pillar-migration/point-pillar-template.mdx`
-- カバー: `heroImage: "./cover.jpg"` または `./cover.png`（生成後に合わせる）
+- カバー: `cover: "./cover.jpg"` または `./cover.png`（生成後に合わせる）
 
 ## 依頼時のチェックリスト
 

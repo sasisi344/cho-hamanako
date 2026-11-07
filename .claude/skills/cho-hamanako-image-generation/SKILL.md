@@ -1,13 +1,13 @@
 ---
 name: cho-hamanako-image-generation
-description: Generates cover and inline images for Cho! Hamanako using the Antigravity-nanobana Node scripts under .workspace/scripts. Use when the user explicitly asks for cover.png, hero images, thumbnail generation, or Gemini image generation for blog posts.
+description: Generates cover and inline images for Cho! Hamanako using the Antigravity-nanobana Node scripts under .workspace/scripts. Use when an image prompt has been written in an article or when asked for cover.png, hero images, thumbnail generation, or Gemini image generation for blog posts.
 ---
 
 # Cho! Hamanako — 画像生成（Antigravity-nanobana）
 
 ## 原則
 
-- **ユーザーが画像生成を明示したときだけ**実行する（`CLAUDE.md` / 344blog 共通ルール）
+- **記事に画像生成プロンプトを書いた段階で生成してよい（2026-11-06 ユーザー決定。全サイト共通）**
 - Cursor の `generate_image` ツールは使わず、**本リポジトリの Node スクリプト**を使う
 - 生成物は **記事と同じフォルダ**（`src/content/blog/.../`）に置く
 
@@ -40,7 +40,7 @@ cd c:/Users/sasis/344blog/cho-hamanako
 # プロンプトの確認だけ（API は呼ばない）
 node .workspace/scripts/Antigravity-nanobana/generate-cover.js "src/content/blog/points/naka/gardenpark/index.mdx" --dry-run
 
-# 記事に合わせたシーン指示つきで生成（ユーザーが生成を明示したときのみ）
+# 記事に合わせたシーン指示つきで生成
 node .workspace/scripts/Antigravity-nanobana/generate-cover.js "<index.mdx>" --scene-file "<scene.txt>"
 ```
 

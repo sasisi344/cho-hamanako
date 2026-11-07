@@ -32,7 +32,7 @@
 - サムネイル: スキルの手順でシーン指示を作り、`generate-cover.js --scene` に渡す（スタイル・季節の光はスクリプトが前置する）
 - 説明画像: `Clean explanatory diagram for a Japanese saltwater fishing blog about Lake Hamana. Subject: <何を>. Layout: <構図>. Style: simple flat illustration, light background, clear labels in Japanese only where listed: <文言>. No photorealism, no decorative clutter.`
 
-## 5. 生成（サムネイルの段階だけ）
+## 5. 生成
 
 `.claude/skills/cho-hamanako-image-generation/SKILL.md` の手順。`generate-cover.js`（カバー）と `generate-image.js`（説明画像）。保存先は記事と同じフォルダ。先に `--dry-run` でプロンプトを確かめる。
 

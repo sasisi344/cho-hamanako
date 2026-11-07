@@ -8,7 +8,7 @@ description: Builds a click-worthy thumbnail scene brief for a Cho! Hamanako art
 記事の中身から「何を主役に、どう見せるか」を決め、`generate-cover.js` の `--scene` に渡す英語のシーン指示を作る。
 共通のデザイン方針（スタイル・構図ルール・季節ライティング）はスクリプト側に実装済みなので、**このスキルでは記事固有の部分だけを作る**。
 
-画像の実行は **ユーザーが生成を明示したときだけ**（`CLAUDE.md` 共通ルール）。それまでは `--dry-run` でプロンプト確認までに留める。実行方法・失敗時対応は [cho-hamanako-image-generation](../cho-hamanako-image-generation/SKILL.md)。
+画像の実行は、記事に画像生成プロンプトを書いた段階で生成してよい（2026-11-06 ユーザー決定。全サイト共通）。それまでは `--dry-run` でプロンプト確認までに留める。実行方法・失敗時対応は [cho-hamanako-image-generation](../cho-hamanako-image-generation/SKILL.md)。
 
 ## 設計の前提
 
@@ -94,7 +94,7 @@ cd c:/Users/sasis/344blog/cho-hamanako
 node .workspace/scripts/Antigravity-nanobana/generate-cover.js "<記事のindex.mdx>" --scene-file "<scene.txt>" --dry-run
 ```
 
-- 出力されたプロンプトを **ユーザーに見せて承認を取る**。承認前に `--dry-run` なしで実行しない
+- `--dry-run` で出力されたプロンプトを確かめてから生成する（2026-11-06 ユーザー決定。承認は要らない）
 - `--scene` / `--scene-file` を省略すると、記事メタ（魚種・場所・タイプ・`summary`）から自動で簡易シーンを作る。ポイント記事は記事ディレクトリ名と一致する `infrastructure-master.json` の `summary` を「描いてよい特徴」として自動で渡し、魚は添え役の1種だけにする。施設マスタに無いポイント（まとめ・深掘り記事など）は **手動でシーンを書く**
 - 画風の比較は `--style illust|photo|poster`（既定 illust）。同じシーンで `--out cover-photo.jpg` のように出力先を分けて試作する
 - 生成後は MDX の `cover: ./cover.jpg` を確認（既存が `cover.png` ならファイル名を揃える、または `--out` を指定）
