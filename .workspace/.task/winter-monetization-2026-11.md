@@ -122,7 +122,7 @@
 
 ### フェーズ1: 登録の回復と今ある商品（〜11/8）
 
-- [ ] **U-1（ユーザー）** GSC の URL 検査で登録をリクエスト（2026-11-06 の確認で更新）: `/blog/kasago-guide/`・`/blog/winter-tactics/`・`/blog/amazon-sale-tackle-strategy/`。`/blog/travel/hamanako-winter-fishing-oyster-trip/` は FUYU-9 の後。`1-month`・`2-month`・`winter-lightgame`・`winter-lunker`・冬ハブ・防寒ガイドは 11/05 に登録済み
+- [x] **U-1（ユーザー）** 2026-11-06 取りやめ（ユーザー決定: 冬記事は12月以降に読まれればよく、登録リクエストはしない）。もとの内容: GSC の URL 検査で登録をリクエスト（2026-11-06 の確認で更新）: `/blog/kasago-guide/`・`/blog/winter-tactics/`・`/blog/amazon-sale-tackle-strategy/`。`/blog/travel/hamanako-winter-fishing-oyster-trip/` は FUYU-9 の後。`1-month`・`2-month`・`winter-lightgame`・`winter-lunker`・冬ハブ・防寒ガイドは 11/05 に登録済み
 - [ ] **FUYU-1（CC→Codex）** カードの先行配置。既存の商品だけを使い、`.agents/affiliate-placement-rules.md` に従う
   - 優先順: `mebaru-kasago-beginner` → `11-month` → `12-month` → `karei-beginner` → `winter-anazuri-guide-2026` → `1-month` → `2-month` → `ajing-fukabori`
   - 使える例: `mebaru-kasago/owner-ainame-brakuri`・`mebaru-kasago/23-gekkabijin-lt2000s-p`・`karei/sasame-canon-ball-karei`・`common/gentos-headlight-cb-300d`。ID は `tackle-card-list.md` で確認する
@@ -171,7 +171,8 @@
 - [x] **FUYU-17** `karei-beginner`（前年260、カード0）
 - FUYU-12 に追加（各報告書の「止めた箇所」）: カレイの産卵時期・座布団の基準・リリース寸法・待ち時間、12月と1月の水温、メバルの産卵時期、ブラクリ号数とカード説明、底からの高さ・アワセ、風速の切り上げ基準、`kasago-guide` の舞阪堤「小型テトラ」、`thermos-ffx-502` の「スープが飲める」
 - 判断待ち: `12-month`・`1-month` のタイトル変更案（FUYU-15・FUYU-16 の報告書）
-- 残り: `11-month`・`ajing-fukabori`・`winter-anazuri-guide-2026`・`2-month` のカード配置（FUYU-1 の残り。指示書 `.workspace/codex/orders/2026-11-06-FUYU-1.md`、検収 11/07）
+- 2026-11-07: FUYU-1 残り4本のカード配置を検収済み（未コミット）。指示書 `.workspace/codex/orders/2026-11-07-FUYU-1.md`。`ajing-fukabori` はユーザーの経験則を本文に追記済み。地元ゾーンの商品は選定理由が出たら追加
+- 2026-11-07: `11-month` のカレイの記述をユーザーの指摘で修正（外洋から接岸は誤り）。`spring-hanami-karei`・`karei`・`kareing` も修正（カレイの産卵は冬、花見カレイは3〜5月頃に浅場へ接岸）。FUYU-12 の産卵時期はこの内容で統一する
 
 ### 月次分析から引き継ぐもの
 

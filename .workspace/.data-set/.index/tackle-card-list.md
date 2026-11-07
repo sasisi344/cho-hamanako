@@ -4,7 +4,7 @@
 > 正本は `src/content/affiliates/`。記事では「ID」列の値をそのまま `<TackleCard id="..." />` に書く。
 > 配置ルール: `.agents/affiliate-placement-rules.md` ／ 存在確認: `pnpm run check:tackle`
 
-- 登録数: 237 件（記事で未使用: 52 件）
+- 登録数: 238 件（記事で未使用: 52 件）
 - 表示: card = 商品カード / banner = バナー / text = 文中テキストリンク
 - 場面（scenes）: wading・night・car・family・safety・boat・bait・stay・activity・rental-car
 
@@ -12,11 +12,11 @@
 
 | ID | 商品名 | 種類 | 対象魚 | 場面 | エリア | 表示 | 使用数 |
 |---|---|---|---|---|---|---|---:|
-| `aji-saba-sappa/23-legalis-lt2000s-p` | ダイワ(DAIWA) 23レガリス LT2000S-P | リール | アジ・メバル・カサゴ |  |  | card | 3 |
-| `aji-saba-sappa/ajimebyte-worm-30pcs` | TACKLAND アジメバイト(アジングワーム) 30本セット | ルアー | アジ・メバル・カサゴ |  |  | card | 3 |
+| `aji-saba-sappa/23-legalis-lt2000s-p` | ダイワ(DAIWA) 23レガリス LT2000S-P | リール | アジ・メバル・カサゴ |  |  | card | 4 |
+| `aji-saba-sappa/ajimebyte-worm-30pcs` | TACKLAND アジメバイト(アジングワーム) 30本セット | ルアー | アジ・メバル・カサゴ |  |  | card | 5 |
 | `aji-saba-sappa/ajing-worm-set-55pcs` | アジング・メバリング用 ワーム55本セット | ルアー | アジ・メバル・カサゴ |  |  | card | 2 |
 | `aji-saba-sappa/daiwa-aji-hunter` | ダイワ(DAIWA) 快適職人サビキ ウィリー5本 MIX | 仕掛け・サビキ | アジ・サバ・イワシ・サッパ |  |  | card | 2 |
-| `aji-saba-sappa/gekkabijin-ajing-68ls` | ダイワ(DAIWA) アジングロッド 月下美人 68L-S・R | ロッド | アジ・メバル・カサゴ |  |  | card | 3 |
+| `aji-saba-sappa/gekkabijin-ajing-68ls` | ダイワ(DAIWA) アジングロッド 月下美人 68L-S・R | ロッド | アジ・メバル・カサゴ |  |  | card | 4 |
 | `aji-saba-sappa/hayabusa-koaji-senka` | ハヤブサ(Hayabusa) 小アジ専科 ツイストケイムラレインボー | 仕掛け | アジ・サバ・サッパ |  |  | card | 4 |
 | `aji-saba-sappa/hayabusa-sabiki-set` | ハヤブサ かんたん飛ばしサビキセット 4本鈎 | 仕掛け・サビキセット | アジ・サバ・イワシ・サッパ |  |  | card | 5 |
 | `aji-saba-sappa/morigen-esatsuke-meijin` | もりげん(MORIGEN) P-700 エサつけ名人 | 便利グッズ・サビキ用品 | アジ・サバ・イワシ・サッパ |  |  | card | 4 |
@@ -108,7 +108,7 @@
 | `flatfish/magochi-jighead` | オンスタックル(OZ Tackle) ZZヘッド | ルアー・ジグヘッド | マゴチ・シーバス |  |  | card | 5 |
 | `flatfish/magochi-worm` | オンスタックル(OZ Tackle) マナティー | ルアー・ワーム | マゴチ・シーバス |  |  | card | 5 |
 | `flatfish/major-craft-maki-jig-jet` | メジャークラフト マキジグ ジェット 30g | ルアー・メタルジグ | マゴチ・ヒラメ・シーバス・青物 |  |  | card | 2 |
-| `flatfish/owner-teibo-nomase-set-h6253` | オーナー 堤防 泳がせのませ遊動胴突 H-6253 | 仕掛け | ヒラメ・マゴチ・青物 |  |  | card | 2 |
+| `flatfish/owner-teibo-nomase-set-h6253` | オーナー 堤防 泳がせのませ遊動胴突 H-6253 | 仕掛け | ヒラメ・マゴチ・青物 |  |  | card | 3 |
 | `flatfish/shimano-silent-assassin-80s` | シマノ エクスセンス サイレントアサシン 80S AR-C | ルアー | ヒラメ・マゴチ・シーバス |  |  | card | 3 |
 | `flatfish/tacklehouse-rolling-bait-77` | タックルハウス ローリングベイト 77 | ルアー | ヒラメ・マゴチ・シーバス |  |  | card | 8 |
 
@@ -142,7 +142,7 @@
 | `karei/daiwa-pr100h` | ダイワ PR100H | リール | カレイ・カワハギ・カサゴ |  |  | card | 1 |
 | `karei/daiwa-prime-surf-t25-405-w` | ダイワ プライムサーフ T25-405・W | ロッド | カレイ・キス |  |  | card | 4 |
 | `karei/owner-funa-karei-base` | オーナー 船カレイの基本 | 仕掛け | カレイ |  |  | card | 2 |
-| `karei/sasame-canon-ball-karei` | ささめ針 一投入魂キャノンボールカレイ | 仕掛け | カレイ |  |  | card | 8 |
+| `karei/sasame-canon-ball-karei` | ささめ針 一投入魂キャノンボールカレイ | 仕掛け | カレイ |  |  | card | 9 |
 | `karei/yamatoyo-flouro-shock-leader` | ヤマトヨテグス フロロショックリーダー | ライン | カレイ・シーバス |  |  | card | 1 |
 
 ## kawahagi（7）
@@ -215,7 +215,7 @@
 
 | ID | 商品名 | 種類 | 対象魚 | 場面 | エリア | 表示 | 使用数 |
 |---|---|---|---|---|---|---|---:|
-| `mebaru-kasago/23-gekkabijin-lt2000s-p` | ダイワ 23 月下美人 LT2000S-P | リール・スピニングリール | メバル・カサゴ・アジ |  |  | card | 5 |
+| `mebaru-kasago/23-gekkabijin-lt2000s-p` | ダイワ 23 月下美人 LT2000S-P | リール・スピニングリール | メバル・カサゴ・アジ |  |  | card | 6 |
 | `mebaru-kasago/daiwa-hardrock-k` | ダイワ HARDROCK X 86MHB・K | ロッド | メバル・カサゴ・キジハタ |  |  | card | 3 |
 | `mebaru-kasago/daiwa-pr100-h` | ダイワ PR100H | リール | カサゴ・アイナメ |  |  | card | 2 |
 | `mebaru-kasago/daiwa-pr100-hl` | ダイワ PR100HL | リール | メバル・カサゴ |  |  | card | 1 |
@@ -223,7 +223,7 @@
 | `mebaru-kasago/goture-fly-rod-set` | Goture フライフィッシング スターターキット | ロッド | メバル・ニジマス |  |  | card | 1 |
 | `mebaru-kasago/maxcatch-fly-line` | Maxcatch フライフィッシングライン | ライン | メバル |  |  | card | 1 |
 | `mebaru-kasago/ogk-fune-kawahagi` | OGK 船カワハギ 175 | ロッド | カサゴ・カワハギ |  |  | card | 2 |
-| `mebaru-kasago/owner-ainame-brakuri` | オーナー あいなめブラクリ | その他 | カサゴ・アイナメ |  |  | card | 8 |
+| `mebaru-kasago/owner-ainame-brakuri` | オーナー あいなめブラクリ | その他 | カサゴ・アイナメ |  |  | card | 9 |
 | `mebaru-kasago/tiemco-super-living-fish` | ティムコ スーパーリビングフィッシュ | ルアー | メバル・アジ |  |  | card | 4 |
 | `mebaru-kasago/yamatoyo-flouro-value` | ヤマトヨテグス フロロバリュー 500m | ライン | カサゴ・魚種全般 |  |  | card | 1 |
 
@@ -262,7 +262,7 @@
 | `sayori/owner-sokkou` | オーナー(OWNER) 釣り日和 速攻サヨリ仕掛 3-0.8-2 | 仕掛け | サヨリ |  |  | card | 5 |
 | `sayori/ss-2-ex` | 工房浦安 スーパーサヨリン2EX 夜光 M 黄プロペラ | 仕掛け・ウキ | サヨリ |  |  | card | 3 |
 
-## seabass（16）
+## seabass（17）
 
 | ID | 商品名 | 種類 | 対象魚 | 場面 | エリア | 表示 | 使用数 |
 |---|---|---|---|---|---|---|---:|
@@ -271,8 +271,9 @@
 | `seabass/daiwa-seabass-hunter-x` | ダイワ シーバスハンターX 90L・R | ロッド | シーバス・クロダイ |  |  | card | 7 |
 | `seabass/daiwa-silverwolf-76ml-s-w` | ダイワ シルバーウルフ 76ML-S・W | ロッド | シーバス・クロダイ・キビレ |  |  | card | 6 |
 | `seabass/dress-chloroprene-wader-winter` | DRESS クロロプレン ラジアルソール ウェーダー | その他 | シーバス・クロダイ | wading |  | card | 6 |
-| `seabass/duo-bay-ruf-manic-95` | DUO(デュオ) シンキングペンシル ベイルーフ マニック95 | ルアー・シンキングペンシル | シーバス・キビレ |  |  | card | 10 |
+| `seabass/duo-bay-ruf-manic-95` | DUO(デュオ) シンキングペンシル ベイルーフ マニック95 | ルアー・シンキングペンシル | シーバス・キビレ |  |  | card | 11 |
 | `seabass/fuji-tokki-ff-n30lg-float` | 富士灯器 涙型自立電気ウキ FF-N30LG 3号 緑 | その他 | シーバス・タチウオ・キビレ | night |  | card | 4 |
+| `seabass/ima-komomo-130-slim-tomahawk` | アイマ(ima) コモモ 130 スリム トマホーク | ルアー・ミノー | シーバス |  |  | card | 1 |
 | `seabass/jackson-nyoro-nyoro-85` | ジャクソン(Jackson) シンキングペンシル にょろにょろ 85mm | ルアー・シンキングペンシル | シーバス・メバル |  |  | card | 10 |
 | `seabass/little-presents-ray-guard-oa-24` | リトルプレゼンツ エイガード OA-24 | その他 | 全魚種 | wading・safety |  | card | 6 |
 | `seabass/little-presents-wading-staff-ac-184` | リトルプレゼンツ ウェーディングスタッフ AC-184 | その他 | 全魚種 | wading・safety |  | card | 2 |
@@ -337,5 +338,5 @@
 | `winter/samonic-rechargeable-warmer` | SAMONIC 充電式カイロ 12000mAh | 防寒 | 全魚種 | car |  | card | 0 |
 | `winter/shimano-basic-warm-glove` | シマノ ベーシックウォーム グローブ 3本カット | 防寒 | 全魚種 | night |  | card | 0 |
 | `winter/ten-anazuri-set` | つり具TEN 穴釣り 完全釣りセット エサ付 | セット | カサゴ・メバル・アイナメ | family |  | card | 0 |
-| `winter/thermos-ffx-502` | サーモス 山専用ステンレスボトル FFX-502 0.5L | 防寒 | 全魚種 | family |  | card | 3 |
-| `winter/umibozu-3finger-glove` | UMIBOZU フィッシンググローブ 3フィンガー 裏起毛 | 防寒 | 全魚種 | night |  | card | 4 |
+| `winter/thermos-ffx-502` | サーモス 山専用ステンレスボトル FFX-502 0.5L | 防寒 | 全魚種 | family |  | card | 4 |
+| `winter/umibozu-3finger-glove` | UMIBOZU フィッシンググローブ 3フィンガー 裏起毛 | 防寒 | 全魚種 | night |  | card | 5 |
