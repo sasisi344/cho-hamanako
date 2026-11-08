@@ -156,8 +156,10 @@
 - [x] **FUYU-8（CC→Codex）** 2026-11-05 統合・検収済み（未コミット）。6本を削除し転送8件を反映。報告書 `.workspace/codex/reports/2026-11-05-FUYU-8.md`
 - [ ] **FUYU-12（CC）** FUYU-8 の報告書で止めた数字の食い違いを正本で揃える: 穴釣りの号数・待ち時間、ヒラメの産卵期とアワセ、カワハギの肝の時期、秋ボートの水深。あわせて `12-month` のカイロの案内（衣類用を足裏に使う書き方）を直す
 - [x] **FUYU-13（CC）** 2026-11-06 完了（`12-month` は FUYU-15 で済み。登録は 11/05 に確認済み）。公開後、`yearly-fishing-calendar`・`12-month`・`amazon-sale-tackle-strategy` から `winter-cold-protection-guide` へリンクを張り、GSC で登録をリクエスト
-- [ ] **FUYU-9（CC→Codex）** `hamanako-winter-fishing-oyster-trip` を書き足す。牡蠣小屋の営業は公式で確認し、エリア指定の宿リンクに差し替える
-- [ ] **FUYU-10（CC→Codex）** 未登録の4本（`karei-points`・`karei-tactics`・`mebaru-kasago-points`・`mebaru-kasago-tactics`）の重なりを点検し、残すものを直してから再依頼
+- [x] **FUYU-9（CC→Codex）** `hamanako-winter-fishing-oyster-trip` を書き足す。牡蠣小屋の営業は公式で確認し、エリア指定の宿リンクに差し替える
+  - 2026-11-08 検収済み（CH-1。報告書 `.workspace/codex/reports/2026-11-08-CH-1.md`）。Codex は店の紹介を全部外していたが、CC が公式で確かめた2軒（海湖館: 12/19〜27 プレオープン・1/6 グランドオープン、舞阪マルマ幸福丸: 通年）を確認日つきの表で足した。宿カードは弁天島の楽天・じゃらん。タイトルは「冬の浜名湖釣り旅｜短時間のカレイ狙いと牡蠣小屋・温泉の1泊2日プラン」
+- [x] **FUYU-10（CC→Codex）** 未登録の4本（`karei-points`・`karei-tactics`・`mebaru-kasago-points`・`mebaru-kasago-tactics`）の重なりを点検し、残すものを直してから再依頼
+  - 2026-11-08 検収済み（CH-1）。4本とも役割を絞ってリライト（止めた記事なし）。ポイントは釣り場の比較、攻略は条件を1つずつ変える手順。カバー4枚も作り直し。比較先に残る食い違い（11-month の「30cm超が当たり前」、メバルの産卵月、カサゴの号数・待ち時間、新居弁天の駐車料金 500円/400円）は FUYU-12 で扱う
 - [ ] **FUYU-11（CC）** 公式発表の後、`amazon-sale-tackle-strategy` の日付・防寒の節を更新。発表前に日程を断定しない
 
 ### 今回の Codex 5本（2026-11-05 CC 選定）
