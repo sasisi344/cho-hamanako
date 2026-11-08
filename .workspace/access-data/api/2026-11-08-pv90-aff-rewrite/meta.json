@@ -1,0 +1,15 @@
+{
+  "fetchedAt": "2026-11-08T03:14:06.380Z",
+  "site": "CH",
+  "command": "ga4",
+  "args": {
+    "site": "CH",
+    "dims": "pagePath",
+    "metrics": "screenPageViews",
+    "start": "2026-08-10",
+    "end": "2026-11-07",
+    "slug": "pv90-aff-rewrite"
+  },
+  "start": "2026-08-10",
+  "end": "2026-11-07"
+}
