@@ -120,6 +120,8 @@
 
 担当は CC＝計画・指示書・検収、Codex＝本文、ユーザー＝画面作業。Codex への指示は `.workspace/codex/orders/` に置く。
 
+- **2026-11-10 から変更（ユーザー指示）**: 記事の作成・修正は Codex に回さず CC が自分で行う。以下の「CC→Codex」は CC が執筆まで担当する
+
 ### フェーズ1: 登録の回復と今ある商品（〜11/8）
 
 - [x] **U-1（ユーザー）** 2026-11-06 取りやめ（ユーザー決定: 冬記事は12月以降に読まれればよく、登録リクエストはしない）。もとの内容: GSC の URL 検査で登録をリクエスト（2026-11-06 の確認で更新）: `/blog/kasago-guide/`・`/blog/winter-tactics/`・`/blog/amazon-sale-tackle-strategy/`。`/blog/travel/hamanako-winter-fishing-oyster-trip/` は FUYU-9 の後。`1-month`・`2-month`・`winter-lightgame`・`winter-lunker`・冬ハブ・防寒ガイドは 11/05 に登録済み
@@ -149,12 +151,30 @@
 - [x] **FUYU-5（CC→Codex）** 2026-11-05 執筆・検収済み（未コミット）。`winter-cold-protection-guide`。サムネイルは未生成で、公開時の日程の追記は FUYU-11。報告書 `.workspace/codex/reports/2026-11-05-FUYU-5.md`
 - [x] **FUYU-6（CC→Codex）** 2026-11-05 検収済み（未コミット）。冬ハブを新規作成。タイトルは「浜名湖 冬 釣り」で始める。構成は結論→行く理由→月別・魚種別の早見表→風裏のポイント3〜5選→防寒→旅。競合の上位は公開前に画面で確認する
 - [x] **FUYU-7（CC）** 2026-11-06 完了。冬ハブの公開時に転送先と四季ガイドのタイトルを変更（§3）
-- [ ] **U-3（ユーザー）** 体験メモ3つ（1行ずつでよい）: ①冬に実際に行く理由 ②空っ風の日に選ぶ釣り場 ③自分の防寒で効いたもの。無ければ一般論で書き、一人称の体験は入れない
+- [x] **U-3（ユーザー）** 体験メモ3つ（1行ずつでよい）: ①冬に実際に行く理由 ②空っ風の日に選ぶ釣り場 ③自分の防寒で効いたもの。無ければ一般論で書き、一人称の体験は入れない
+  - 2026-11-10 受領・反映（CC）。①外に出ないと日の光を浴びなさ過ぎるから ②釣りをするのが目的なら車を横付けできる砂揚げ場、釣果狙いなら舞阪堤 ③釣具の手袋は指抜きが多いが指が冷え過ぎるので普通の手袋にした。ルアーなら問題ないが、エサ釣りはつまむたびに汚れるので使い分け
+  - 反映先: 冬ハブ `hamanako-winter-fishing`（行く理由・「空っ風の日に私が選ぶのは、砂揚げ場と舞阪堤」の節・防寒の節に1文）、防寒ガイド `winter-cold-protection-guide`（手の防寒に「ルアー釣りなら、指まで覆う手袋も選べる」の節）
+  - 指まで覆う手袋のカードは未登録（winter/ の手袋は3本カットとインナーのみ）。置くなら FUYU-3 の方法で候補を探す
 
 ### フェーズ4: 12月の山に備える（〜11/30）
 
 - [x] **FUYU-8（CC→Codex）** 2026-11-05 統合・検収済み（未コミット）。6本を削除し転送8件を反映。報告書 `.workspace/codex/reports/2026-11-05-FUYU-8.md`
-- [ ] **FUYU-12（CC）** FUYU-8 の報告書で止めた数字の食い違いを正本で揃える: 穴釣りの号数・待ち時間、ヒラメの産卵期とアワセ、カワハギの肝の時期、秋ボートの水深。あわせて `12-month` のカイロの案内（衣類用を足裏に使う書き方）を直す
+- [x] **FUYU-12（CC）** FUYU-8 の報告書で止めた数字の食い違いを正本で揃える: 穴釣りの号数・待ち時間、ヒラメの産卵期とアワセ、カワハギの肝の時期、秋ボートの水深。あわせて `12-month` のカイロの案内（衣類用を足裏に使う書き方）を直す
+  - **揃える基準（2026-11-10 ユーザー指示）**: 釣！浜名湖にある情報を優先する。外部の情報や Codex の報告書の値で上書きしない。外部で調べるのは、サイト内に情報がない項目だけ
+  - サイト内で食い違うときの順番（CC の既定）: ①ユーザーが直した記述（例: 2026-11-07 のカレイの産卵） ②`.agents/`（`fishing-laws-hamanako.md` など）と `.workspace/.data-set/` の正本（`infrastructure-master.json`・魚の生態） ③教科書・ポイント記事 ④そのほかの記事
+  - 例: 新居弁天の駐車料金は `infrastructure-master.json` が「1回400円」、`araibenten-umiduripark` 284行目が「1回500円」→ ②に合わせて400円へ
+  - 2026-11-10 完了（CC、未コミット）。直したもの（18ファイル）:
+    - 駐車料金: `araibenten-umiduripark` 500円→400円（`infrastructure-master.json`）
+    - ブラクリ号数: 2号が基本、底が取りにくいときは3号（教科書 `mebaru-kasago`・`owner-ainame-brakuri`）。`anazuri` の図 8〜10号、`winter-lightgame` の図 8〜10号、`seasonal-patterns-guide` 5〜8号、`winter-anazuri-guide-2026` 3〜4号を直した。`kasago-guide` の「入らないときは1〜2号」は細い穴の話なので残した
+    - 穴を移る時間: `biological/kasago.md` の「反応がなければ即座に移動」に合わせ、`anazuri` の「2分」と `kasago-guide` の「20〜30秒」を外した
+    - 舞阪堤: `kasago-guide` の「小型テトラ」→巨大テトラ。立入禁止の先端へ進まない注意を追加（`fishing-laws-hamanako.md`）
+    - 風速: `karei` 教科書の7m→8m（`wind-direction-fish`・`barometric-pressure-fishing`・`hamanako-weather-vs-hamamatsu` の8m/s）
+    - カレイ: `11-month` の「座布団（30cm超）が当たり前」「大型が確実」を外し、座布団は40cm超・陸からは運次第に（教科書 `karei`）。`matsumigaura` の「35cm超」→40cm超。`amihosiba`・`karei/cooking` の「乗っ込み」→冬の産卵前・産卵期。データセット `winter-fishing.md` の1月「乗っ込み継続中」も `biological/karei.md` に合わせた
+    - メバルの産卵: `winter-fishing.md`・`2-month` の「1〜2月に産卵、2月から産後の回復」に合わせ、教科書 `mebaru-kasago`・`mebaru-beginner`・`ajing-fukabori`・`amihoshiba` の「3月の産卵」「産卵前」を直した
+    - ヒラメのアワセ: `10-month` の「20〜30秒」を `flatfish/beginner` の「ヒラメ40」に合わせた
+    - カイロ: `mebaru-beginner` の「ホッカイロ（腰と足裏）」→衣類用は腰、足元は靴用（`12-month`）
+    - `thermos-ffx-502` の説明から「スープ」を削除（`1-month` に引いたサーモスの取扱説明書）
+  - 直さなかったもの: カワハギの肝（`kawahagi-beginner` 9〜10月、`kawahagi/cooking` 10〜12月。秋で重なるため）、ヒラメの産卵期（データセットの「晩秋〜冬は産卵前の荒食い」と教科書の「春に産卵」は両立）、秋ボートの水深（1記事内の図と本文の差で、場所ごとに範囲が違う）、カサゴの底からの高さ・アワセ（教科書の「1〜2cm持ち上げる」と食い違う記述は見つからず）
 - [x] **FUYU-13（CC）** 2026-11-06 完了（`12-month` は FUYU-15 で済み。登録は 11/05 に確認済み）。公開後、`yearly-fishing-calendar`・`12-month`・`amazon-sale-tackle-strategy` から `winter-cold-protection-guide` へリンクを張り、GSC で登録をリクエスト
 - [x] **FUYU-9（CC→Codex）** `hamanako-winter-fishing-oyster-trip` を書き足す。牡蠣小屋の営業は公式で確認し、エリア指定の宿リンクに差し替える
   - 2026-11-08 検収済み（CH-1。報告書 `.workspace/codex/reports/2026-11-08-CH-1.md`）。Codex は店の紹介を全部外していたが、CC が公式で確かめた2軒（海湖館: 12/19〜27 プレオープン・1/6 グランドオープン、舞阪マルマ幸福丸: 通年）を確認日つきの表で足した。宿カードは弁天島の楽天・じゃらん。タイトルは「冬の浜名湖釣り旅｜短時間のカレイ狙いと牡蠣小屋・温泉の1泊2日プラン」
