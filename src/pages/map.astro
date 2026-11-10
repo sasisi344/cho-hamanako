@@ -15,7 +15,7 @@ const mapPoints = allPosts
   .filter(post => !post.data.draft && post.data.location && post.data.location.lat && post.data.location.lng)
   .map(post => {
     const url = blogPostHref(post.slug, post.data.category);
-    
+
     // タグを正規化（「11月の釣り」などを「11月」として扱えるようにする）
     const rawTags = post.data.tags || [];
     const normalizedTags = rawTags.map(tag => {
@@ -70,7 +70,7 @@ const jsonPoints = JSON.stringify(mapPoints);
 <PageLayout title="浜名湖の釣り場マップ｜水深・地形つきエリア別ポイント検索" description="浜名湖の釣り場マップ。表浜名湖・中浜名湖・奥浜名湖のエリア別、1月〜12月の季節別に釣りポイントを絞り込めます。各ポイントの詳細記事で水深・地形・駐車場も確認できます。">
   <TopLayout>
     <div class="container">
-      <h1 class="text-4xl font-black mb-4">🎣 浜名湖の釣り場マップ｜エリア・季節別ポイント検索</h1>
+      <h1>浜名湖の釣り場マップ</h1>
       <p class="text-slate-600 dark:text-slate-400 mb-6">
         浜名湖周辺の釣り場を地図にまとめました。エリアや季節で絞り込み、ピンをクリックすると、水深や地形を含む詳細な解説記事を読むことができます。
         水深の全体像は<a href="/blog/guide/theory/hamanako-depth-map/" class="text-blue-600 dark:text-blue-400 underline">浜名湖の水深マップ解説（湖沼図の見方・最深部・浅瀬）</a>もあわせてご覧ください。
@@ -80,10 +80,11 @@ const jsonPoints = JSON.stringify(mapPoints);
       <div class="mb-8 animate">
         <div class="flex flex-wrap gap-2" id="tag-filters">
           {displayTags.map(tag => (
-            <button 
+            <button
               data-tag={tag}
+              aria-pressed={areaTags.includes(tag)}
               class={`px-4 py-2 rounded-full border text-sm font-bold transition-all shadow-sm
-                ${areaTags.includes(tag) 
+                ${areaTags.includes(tag)
                   ? tag === "表浜名湖"
                     ? "bg-blue-600 text-white border-blue-600"
                     : tag === "中浜名湖"
@@ -102,9 +103,9 @@ const jsonPoints = JSON.stringify(mapPoints);
 
   <BottomLayout>
     <!-- Map Container -->
-    <div class="relative w-full h-[600px] rounded-3xl overflow-hidden border-4 border-white dark:border-zinc-800 shadow-2xl animate">
+    <div class="map-frame relative w-full overflow-hidden animate">
       <div id="map" class="w-full h-full z-10"></div>
-      
+
       <!-- Loading Overlay -->
       <div id="map-loader" class="absolute inset-0 z-20 flex items-center justify-center bg-slate-100 dark:bg-zinc-900 transition-opacity duration-500">
         <div class="flex flex-col items-center">
@@ -118,7 +119,7 @@ const jsonPoints = JSON.stringify(mapPoints);
         <h2 class="text-2xl font-bold mb-6">エリア別の特徴</h2>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
             {areaGuides.map(g => (
-              <section class="p-5 border rounded-lg border-black/15 dark:border-white/20 bg-white dark:bg-zinc-900">
+              <section class="map-area-guide p-5 border rounded-lg border-black/15 dark:border-white/20 bg-white dark:bg-zinc-900">
                 <h3 class="font-bold text-lg mb-2">{g.tag}の釣り場（{g.count}ポイント）</h3>
                 <p class="text-sm opacity-80 mb-3">{g.text}</p>
                 <a href={g.href} class="text-sm font-bold text-blue-600 dark:text-blue-400 underline">{g.tag}の釣りポイント完全ガイドを読む</a>
@@ -198,6 +199,7 @@ const jsonPoints = JSON.stringify(mapPoints);
   }
 
   function setFilterButtonActive(btn, isActive) {
+    btn.setAttribute("aria-pressed", String(isActive));
     var tag = btn.getAttribute("data-tag");
     ALL_ACTIVE_BTN_CLASSES.forEach(function (c) { btn.classList.remove(c); });
     INACTIVE_BTN_CLASSES.forEach(function (c) { btn.classList.remove(c); });
@@ -283,10 +285,10 @@ const jsonPoints = JSON.stringify(mapPoints);
     var areaTagsList = AREA_TAGS_ORDER;
     var filteredPoints = points.filter(function(point) {
       if (activeTags.size === 0) return false;
-      
+
       var selectedAreas = [];
       var selectedMonths = [];
-      
+
       activeTags.forEach(function(tag) {
         if (areaTagsList.indexOf(tag) !== -1) {
           selectedAreas.push(tag);
@@ -329,7 +331,7 @@ const jsonPoints = JSON.stringify(mapPoints);
       })
         .bindPopup(popupContent, { maxWidth: 280 })
         .addTo(map);
-      
+
       markers.push(marker);
 
       // リストにも追加 (ArrowCard風のブログカード)
@@ -338,12 +340,12 @@ const jsonPoints = JSON.stringify(mapPoints);
         card.href = point.url;
         // animateクラスを外し、即座に表示させる
         card.className = "group flex flex-col p-4 gap-3 border rounded-lg hover:bg-black/5 hover:dark:bg-white/10 border-black/15 dark:border-white/20 transition-all duration-300 ease-in-out bg-white dark:bg-zinc-900 shadow-sm";
-        
+
         var tagsHtml = (point.tags || []).slice(0, 3).map(function(t) {
           return '<li class="text-[10px] uppercase py-0.5 px-2 rounded bg-black/5 dark:bg-white/20 text-black/75 dark:text-white/75">' + t + '</li>';
         }).join('');
 
-        card.innerHTML = 
+        card.innerHTML =
           '<div class="flex flex-col w-full group-hover:text-black group-hover:dark:text-white transition-colors duration-300">' +
             '<div class="flex items-center gap-2 text-xs uppercase opacity-70">' +
               '<span>' + formatDate(point.pubDate) + '</span>' +
@@ -360,7 +362,7 @@ const jsonPoints = JSON.stringify(mapPoints);
 
   function setupFilters() {
     var filterButtons = document.querySelectorAll('#tag-filters button');
-    
+
     // 初期状態のボタン表示を強制更新
     filterButtons.forEach(function(btn) {
       var tag = btn.getAttribute('data-tag');

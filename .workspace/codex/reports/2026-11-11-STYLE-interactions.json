@@ -1,0 +1,40 @@
+{
+  "status": "passed",
+  "mapFilters": [
+    {
+      "area": "all",
+      "count": 59,
+      "status": "passed"
+    },
+    {
+      "area": "表浜名湖",
+      "count": 14,
+      "status": "passed"
+    },
+    {
+      "area": "中浜名湖",
+      "count": 17,
+      "status": "passed"
+    },
+    {
+      "area": "奥浜名湖",
+      "count": 29,
+      "status": "passed"
+    }
+  ],
+  "themes": [
+    {
+      "path": "dist/index.html",
+      "status": "passed"
+    },
+    {
+      "path": "dist/blog/index.html",
+      "status": "passed"
+    },
+    {
+      "path": "dist/map/index.html",
+      "status": "passed"
+    }
+  ],
+  "method": "Execute generated scripts in isolated Node VM with mock DOM/Leaflet; no visual browser check."
+}

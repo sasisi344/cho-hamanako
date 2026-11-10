@@ -57,7 +57,7 @@ const config = {
 const style = config[type] || config.NOTE
 ---
 
-<div class={`callout-card my-8 rounded-xl border-l-8 shadow-lg overflow-hidden ${style.bg} ${style.border} transition-all duration-300 hover:shadow-xl hover:-translate-y-1`}>
+<div data-callout-type={type} class={`callout-card my-8 rounded-xl border-l-8 shadow-lg overflow-hidden ${style.bg} ${style.border} transition-all duration-300 hover:shadow-xl hover:-translate-y-1`}>
   <div class="px-6 py-4">
     <div class={`flex items-center gap-2 mb-2 font-bold text-sm tracking-wider uppercase ${style.text}`}>
        {style.label}

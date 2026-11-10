@@ -1,9 +1,16 @@
 ---
-import Container from "@components/Container.astro"
+const pathname = Astro.url.pathname
+const label = pathname.startsWith("/map/") || pathname.startsWith("/points/") ? "EXPLORE THE LAKE"
+  : pathname.startsWith("/blog/target/") ? "FISH & TACTICS"
+  : pathname.startsWith("/blog/guide/") ? "FISHING GUIDE"
+  : pathname.startsWith("/search/") ? "FIND YOUR NEXT FISHING TRIP"
+  : pathname.startsWith("/legal/") ? "ABOUT THE SITE"
+  : pathname.startsWith("/affiliates/") ? "TACKLE & GEAR" : "FISHING JOURNAL"
 ---
 
-<div class="pt-36 pb-5">
-  <Container size="md">
+<div class="page-intro">
+  <div class="page-container">
+    <p class="eyebrow" lang="en">{label}<span aria-hidden="true"></span></p>
     <slot/>
-  </Container>
+  </div>
 </div>

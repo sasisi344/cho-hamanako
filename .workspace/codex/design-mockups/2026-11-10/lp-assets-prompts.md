@@ -1,0 +1,24 @@
+# LP画像の生成プロンプト
+
+## hero-mobile
+
+Edit target: the supplied existing aquatic website hero BACKGROUND. Recompose this exact scene for a MOBILE website hero in portrait 4:5 aspect ratio, roughly 1024 x 1280. Keep the same naturally lit Lake Hamana lagoon, subtle Japanese pine shoreline, tiny pier angler, distant low bridge, waterline, turquoise water, silver black sea bream and underwater sandy light caustics. No new subjects. The top 22 percent is pale cyan sky and low shoreline, the waterline at y24 percent. The FULL black sea bream must be visible in the LOWER THIRD, centered x55% y74%, horizontally facing left, about 72 percent canvas width, with margins around its entire tail and head. The middle area from y30% to y57% must be quiet dark teal negative space for a real HTML headline and CTA buttons. Very subtle small seabass in background only. The bottom 10 percent fades into deep navy #032c40 seamlessly. Preserve the fish identity, realistic editorial illustrative style and teal/cyan/navy palette of the input. No text, no logos, no typography, no buttons, no UI, no maps, no cards. Output only one beautiful portrait background scene.
+
+生成手段: 組み込み image_gen。入力: 採用された homepage-mockup-v2.png。
+
+## hero
+
+Edit target: the supplied approved 「釣！浜名湖」 website mockup. Create a clean BACKGROUND IMAGE asset for implementing its hero section. Extract and recompose ONLY the upper scenic hero's environment into a beautiful wide 16:9 image at high resolution: calm Japanese coastal lagoon shoreline with low pine trees and tiny pier/angler at upper left, low distant bridge at far horizon, sunlit pale turquoise sky at top 23%, a beautiful gently rippled air/water split at about 28% down, rich turquoise-to-deep-navy water below. Preserve the reference's beautifully lit silver black sea bream on the RIGHT, anatomically convincing at x73% y63%, about 28% image width, subtle smaller Japanese sea bass in the middle background, small bubbles and rippled sand caustics. The LEFT underwater half must be quiet dark teal negative space for actual HTML heading and buttons. Bottom fades naturally into uniform deep navy #032c40 so it blends seamlessly with the webpage below. Image style: cinematic realistic illustrated aquatic editorial art, elegant natural warm sunbeams, same mood as the approved reference. The scene is Lake Hamana Japan, a brackish coastal lagoon, no mountains, no coral, no whales, no tropical fauna. Remove EVERY piece of text, logo, icon, button, navigation, line divider, SCROLL mark, map, article card, panel, footer and UI from the reference; fill removed elements with natural matching underwater scenery. Output ONE seamless landscape scene image only, no collage, no frames, no typography whatsoever. This image will be a decorative background under real HTML; preserve the original artistic identity of the hero while providing usable left-side contrast and wide framing.
+
+## journal-spots
+
+The input image is the approved website mockup and is an EDIT TARGET for extracting a single standalone website photograph asset. Output only the requested scene, with NO UI, no text, no logo, no border or collage. Recreate the reference's existing photographic style, lighting and composition closely. Wide landscape 16:9. Recreate only the leftmost journal thumbnail: a small shore angler silhouette at the LEFT on a safe low rocky shore casting into calm Lake Hamana at warm sunrise/sunset. Low distant coast and low bridge, orange horizon under pale blue sky, dark rocks at foreground bottom. Calm Japanese brackish lagoon, no mountains, no tropical scenery.
+
+## journal-fish
+
+The input image is the approved website mockup and is an EDIT TARGET for extracting a single standalone website photograph asset. Output only the requested scene, with NO UI, no text, no logo, no border or collage. Recreate the reference's existing photographic style, lighting and composition closely. Wide landscape 16:9. Recreate only the middle journal thumbnail: a beautiful silver Japanese sea bass in clear turquoise lagoon water, facing left, subtle sun rays and small bubbles, anatomically plausible, full fish visible. Refined natural underwater editorial image, no coral, no tropical animals.
+
+## journal-beginner
+
+The input image is the approved website mockup and is an EDIT TARGET for extracting a single standalone website photograph asset. Output only the requested scene, with NO UI, no text, no logo, no border or collage. Recreate the reference's existing photographic style, lighting and composition closely. Wide landscape 16:9. Recreate only the rightmost journal thumbnail: a close-up of a black Japanese fishing rod, spinning reel with subtle gold accents and a small silver minnow lure lying diagonally on sunlit weathered wooden dock boards beside calm blue lagoon water. Clean tasteful outdoor editorial photo. No legible text or manufacturer logos.
+

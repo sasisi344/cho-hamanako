@@ -30,13 +30,13 @@ function formatWorkDate(input: Date | string) {
 
 <PageLayout title={WORK.TITLE} description={WORK.DESCRIPTION}>
   <TopLayout>
-    <div class="animate page-heading">
+    <h1 class="animate page-heading">
       {WORK.TITLE}
-    </div>
+    </h1>
   </TopLayout>
   <BottomLayout>
     <ul>
-      { 
+      {
         work.map((entry) => (
           <li class="animate border-b border-black/10 dark:border-white/25 mt-4 py-8 first-of-type:mt-0 first-of-type:pt-0 last-of-type:border-none">
             <div class="text-sm uppercase mb-4">

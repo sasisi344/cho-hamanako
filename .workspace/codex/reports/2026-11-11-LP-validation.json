@@ -1,0 +1,117 @@
+{
+  "status": "passed",
+  "headings": 1,
+  "internalRoutes": [
+    "/",
+    "/map/",
+    "/blog/target/",
+    "/blog/guide/",
+    "/blog/",
+    "/search/",
+    "/map/?area=%E8%A1%A8%E6%B5%9C%E5%90%8D%E6%B9%96",
+    "/map/?area=%E4%B8%AD%E6%B5%9C%E5%90%8D%E6%B9%96",
+    "/map/?area=%E5%A5%A5%E6%B5%9C%E5%90%8D%E6%B9%96",
+    "/legal/about/",
+    "/legal/privacy/"
+  ],
+  "assetsChecked": 20,
+  "images": [
+    {
+      "asset": "/_astro/hero.CXqJyFhy_2pk5kJ.webp",
+      "width": 1440,
+      "bytes": 88492
+    },
+    {
+      "asset": "/_astro/hero.CXqJyFhy_1DVHoe.webp",
+      "width": 750,
+      "bytes": 36206
+    },
+    {
+      "asset": "/_astro/hero.CXqJyFhy_ZRewPE.webp",
+      "width": 1100,
+      "bytes": 64228
+    },
+    {
+      "asset": "/_astro/hero.CXqJyFhy_ZskrYr.webp",
+      "width": 1672,
+      "bytes": 124844
+    },
+    {
+      "asset": "/_astro/hero-mobile.DBzj4Hcv_ZsJpQ3.webp",
+      "width": 750,
+      "bytes": 60906
+    },
+    {
+      "asset": "/_astro/hero-mobile.DBzj4Hcv_1ym0lT.webp",
+      "width": 480,
+      "bytes": 30828
+    },
+    {
+      "asset": "/_astro/hero-mobile.DBzj4Hcv_ZAMrH5.webp",
+      "width": 1122,
+      "bytes": 121956
+    },
+    {
+      "asset": "/_astro/journal-spots.D-YFdq_0_14o7Gh.webp",
+      "width": 1672,
+      "bytes": 107874
+    },
+    {
+      "asset": "/_astro/journal-spots.D-YFdq_0_Z16h8Jo.webp",
+      "width": 400,
+      "bytes": 11920
+    },
+    {
+      "asset": "/_astro/journal-spots.D-YFdq_0_18brik.webp",
+      "width": 640,
+      "bytes": 24342
+    },
+    {
+      "asset": "/_astro/journal-spots.D-YFdq_0_Z1Y58YD.webp",
+      "width": 800,
+      "bytes": 33598
+    },
+    {
+      "asset": "/_astro/journal-fish.DntHMT0T_1DqtRl.webp",
+      "width": 1672,
+      "bytes": 151100
+    },
+    {
+      "asset": "/_astro/journal-fish.DntHMT0T_ZlNkpo.webp",
+      "width": 400,
+      "bytes": 16472
+    },
+    {
+      "asset": "/_astro/journal-fish.DntHMT0T_1REfCk.webp",
+      "width": 640,
+      "bytes": 33770
+    },
+    {
+      "asset": "/_astro/journal-fish.DntHMT0T_Z1eBkED.webp",
+      "width": 800,
+      "bytes": 47364
+    },
+    {
+      "asset": "/_astro/journal-beginner.9mHjuhB5_Z76mIx.webp",
+      "width": 1672,
+      "bytes": 201918
+    },
+    {
+      "asset": "/_astro/journal-beginner.9mHjuhB5_Z1hao3B.webp",
+      "width": 400,
+      "bytes": 22024
+    },
+    {
+      "asset": "/_astro/journal-beginner.9mHjuhB5_WibY7.webp",
+      "width": 640,
+      "bytes": 45734
+    },
+    {
+      "asset": "/_astro/journal-beginner.9mHjuhB5_Z29XoiQ.webp",
+      "width": 800,
+      "bytes": 63838
+    }
+  ],
+  "mobileHero": "separate portrait image via picture/source",
+  "visualVerification": "Not performed: Computer Use could not determine the browser URL; stopped as instructed."
+}

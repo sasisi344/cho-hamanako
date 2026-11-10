@@ -1,7 +1,8 @@
 ---
 import { getCollection } from "astro:content";
 import PageLayout from "@layouts/PageLayout.astro";
-import Container from "@components/Container.astro";
+import TopLayout from "@layouts/TopLayout.astro";
+import BottomLayout from "@layouts/BottomLayout.astro";
 import AffiliateCard from "@components/AffiliateCard.astro";
 
 const products = await getCollection("affiliates");
@@ -24,20 +25,13 @@ const productsByMethod = allMethods.reduce((acc, method) => {
 ---
 
 <PageLayout title="おすすめタックル・ギア" description="浜名湖の釣りに最適なタックル・ギアのデータベース。魚種や釣法から最適な道具を見つけられます。">
-  <Container size="md">
-    <div class="py-12">
-      <div class="mb-10 text-center">
-        <h1 class="text-4xl font-bold mb-4 bg-gradient-to-r from-blue-600 to-cyan-500 bg-clip-text text-transparent">
-          おすすめタックルDB
-        </h1>
-        <p class="text-slate-600 dark:text-slate-400 max-w-2xl mx-auto">
-          実釣に基づいた浜名湖のおすすめタックルリストです。随時追加・更新中。<br>
-          記事作成時のリンク埋め込み管理ページとしても活用できます。
-        </p>
-      </div>
-
+  <TopLayout>
+    <h1>おすすめタックル・ギア</h1>
+    <p>浜名湖の釣りに使う道具を、魚や釣り方から探せます。</p>
+  </TopLayout>
+  <BottomLayout>
       <!-- Quick Index -->
-      <div class="mb-12 p-8 rounded-2xl bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-inner">
+      <div class="gear-index mb-12 p-8 rounded-2xl bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-inner">
         <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
           <div>
             <h2 class="text-xs font-bold uppercase tracking-widest text-slate-400 mb-5 flex items-center gap-2">
@@ -70,7 +64,7 @@ const productsByMethod = allMethods.reduce((acc, method) => {
 
       <!-- Sections -->
       <div class="space-y-24">
-        
+
         <!-- Fish Group -->
         <section>
           <div class="flex items-center gap-3 mb-10">
@@ -79,7 +73,7 @@ const productsByMethod = allMethods.reduce((acc, method) => {
             </div>
             <h2 class="text-3xl font-bold">魚種別タックル</h2>
           </div>
-          
+
           <div class="space-y-16">
             {allFish.map(fish => (
               <div id={`fish-${fish}`} class="scroll-mt-24">
@@ -113,7 +107,7 @@ const productsByMethod = allMethods.reduce((acc, method) => {
             </div>
             <h2 class="text-3xl font-bold">釣法別タックル</h2>
           </div>
-          
+
           <div class="space-y-16">
             {allMethods.map(method => (
               <div id={`method-${method}`} class="scroll-mt-24">
@@ -159,6 +153,5 @@ const productsByMethod = allMethods.reduce((acc, method) => {
         </section>
 
       </div>
-    </div>
-  </Container>
+  </BottomLayout>
 </PageLayout>

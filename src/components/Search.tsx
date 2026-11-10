@@ -1,17 +1,14 @@
 import type { CollectionEntry } from "astro:content"
-import { createEffect, createSignal } from "solid-js"
+import { createEffect, createSignal, For } from "solid-js"
 import Fuse from "fuse.js"
 import ArrowCard from "@components/ArrowCard"
 import SearchBar from "@components/SearchBar"
 
-type Props = {
-  data: CollectionEntry<"blog">[]
-}
+type Props = { data: CollectionEntry<"blog">[] }
 
 export default function Search({ data }: Props) {
   const [query, setQuery] = createSignal("")
   const [results, setResults] = createSignal<CollectionEntry<"blog">[]>([])
-
   const fuse = new Fuse(data, {
     keys: ["slug", "data.title", "data.summary", "data.tags"],
     includeMatches: true,
@@ -20,36 +17,21 @@ export default function Search({ data }: Props) {
   })
 
   createEffect(() => {
-    if (query().length < 2) {
-      setResults([])
-    } else {
-      setResults(fuse.search(query()).map((result) => result.item))
-    }
+    setResults(query().length < 2 ? [] : fuse.search(query()).map(result => result.item))
   })
-
-  const onSearchInput = (e: Event) => {
-    const target = e.target as HTMLInputElement
-    setQuery(target.value)
-  }
+  const onSearchInput = (event: Event) => setQuery((event.target as HTMLInputElement).value)
 
   return (
-    <div class="flex flex-col">
-      <SearchBar onSearchInput={onSearchInput} query={query} setQuery={setQuery} placeholderText="What are you looking for?" />
-
-      {(query().length >= 2 && results().length >= 1) && (
-        <div class="mt-12">
-          <div class="text-sm uppercase mb-2">
-            Found {results().length} results for {`'${query()}'`}
-          </div>
-          <ul class="flex flex-col gap-3">
-            {results().map(result => (
-              <li>
-                <ArrowCard entry={result} pill={true} />
-              </li>
-            ))}
-          </ul>
-        </div>
-      )}
+    <div class="search-page">
+      <SearchBar onSearchInput={onSearchInput} query={query} setQuery={setQuery} placeholderText="魚・釣り場・釣り方を検索" />
+      {query().length < 2
+        ? <p class="search-hint">「クロダイ」「弁天島」「サビキ」など、2文字以上のキーワードで探せます。</p>
+        : <>
+            <div class="results-toolbar"><p role="status" aria-live="polite"><strong>{results().length}</strong>件見つかりました</p></div>
+            <ul class="collection-list"><For each={results()}>{result => <li><ArrowCard entry={result} pill /></li>}</For></ul>
+            {results().length === 0 && <p class="collection-empty" role="status">条件に合う記事がありません。別のキーワードで探してみてください。</p>}
+          </>
+      }
     </div>
   )
 }

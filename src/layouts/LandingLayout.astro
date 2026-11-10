@@ -1,0 +1,98 @@
+---
+import "@styles/global.css"
+import "@styles/landing.css"
+import "@styles/interior.css"
+import BaseHead from "@components/BaseHead.astro"
+import LandingBrand from "@components/landing/LandingBrand.astro"
+import { SITE } from "@consts"
+
+interface Props {
+  title: string
+  description: string
+  interior?: boolean
+  pageKind?: "article" | "document" | "collection" | "map" | "gear"
+  noindex?: boolean
+  hasAds?: boolean
+  image?: string
+  ogType?: "website" | "article"
+  jsonLdExtra?: Record<string, unknown>[]
+}
+const { title, description, interior = false, pageKind = "collection", noindex, hasAds = true, image, ogType = "website", jsonLdExtra } = Astro.props
+const pathname = Astro.url.pathname
+const activeSection = pathname.startsWith("/map/") || pathname.startsWith("/points/") ? "/map/"
+  : pathname.startsWith("/blog/target/") ? "/blog/target/"
+  : pathname.startsWith("/blog/guide/") ? "/blog/guide/"
+  : pathname.startsWith("/blog/") ? "/blog/" : ""
+const links = [
+  { text: "釣り場を探す", href: "/map/" },
+  { text: "魚から探す", href: "/blog/target/" },
+  { text: "釣りの基本", href: "/blog/guide/" },
+  { text: "記事を読む", href: "/blog/" },
+]
+---
+
+<!doctype html>
+<html lang="ja" class:list={["landing-page", { "site-page": interior }]}>
+  <head>
+    <BaseHead title={`${title} | ${SITE.TITLE}`} description={description} hasAds={hasAds} noindex={noindex} image={image} ogType={ogType} jsonLdExtra={jsonLdExtra} colorMode={interior ? "light" : undefined} />
+    <slot name="head" />
+  </head>
+  <body class:list={["landing-body", { "site-body": interior }, interior && `site-body--${pageKind}`]}>
+    <a class="skip-link" href="#main-content">本文へスキップ</a>
+    <header id="header" class="landing-header">
+      <div class="landing-shell header-inner">
+        <LandingBrand />
+        <nav class="desktop-nav" aria-label="メインナビゲーション">
+          {links.map(link => <a href={link.href} aria-current={interior && activeSection === link.href ? "page" : undefined}>{link.text}</a>)}
+        </nav>
+        <div class="header-actions">
+          <a href="/search/" class="icon-link" aria-label="記事や釣り場を検索">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="10.5" cy="10.5" r="7" /><path d="m16 16 5 5" /></svg>
+          </a>
+          <details class="mobile-menu">
+            <summary aria-label="ナビゲーションメニュー"><span class="menu-icon" aria-hidden="true"><span></span><span></span></span></summary>
+            <nav aria-label="スマートフォン用ナビゲーション">
+              {links.map(link => <a href={link.href} aria-current={interior && activeSection === link.href ? "page" : undefined}>{link.text}<span aria-hidden="true">→</span></a>)}
+            </nav>
+          </details>
+        </div>
+      </div>
+    </header>
+    <main id="main-content" tabindex="-1"><slot /></main>
+    <footer class="landing-footer landing-shell">
+      <div class="footer-identity">
+        <LandingBrand />
+        <p lang="en">LAKE HAMANA FISHING GUIDE</p>
+        <svg class="footer-fish" viewBox="0 0 180 60" fill="none" stroke="currentColor" stroke-width=".7" aria-hidden="true">
+          <path d="M10 32C30 4 86 3 126 24L157 12L149 31L159 49L125 40C88 59 39 57 10 32Z" />
+          <path d="M42 13C34 27 34 38 44 49M54 11L63 3L72 10L80 2L87 11M54 48L65 58L80 49M42 28L66 20L57 34L78 39M58 13C78 22 91 21 111 29M61 45C78 35 97 42 113 34" />
+          <circle cx="26" cy="27" r="2" />
+        </svg>
+      </div>
+      <nav class="footer-nav" aria-label="フッターナビゲーション">{links.map(link => <a href={link.href}>{link.text}</a>)}</nav>
+      <div class="footer-meta">
+        <p>© {new Date().getFullYear()} 釣！浜名湖</p>
+        <div><a href="/legal/about/">このサイトについて</a><a href="/legal/privacy/">プライバシーポリシー</a><a href="https://x.com/cho_hamanako" target="_blank" rel="noopener noreferrer">X <span aria-hidden="true">↗</span></a></div>
+        <a href="#main-content" class="back-to-top" aria-label="ページの先頭へ戻る">TOP ↑</a>
+      </div>
+    </footer>
+  </body>
+</html>
+
+<script>
+  const menu = document.querySelector<HTMLDetailsElement>(".mobile-menu")
+  if (menu) {
+    document.addEventListener("click", (event) => {
+      if (event.target instanceof Node && !menu.contains(event.target)) menu.open = false
+    })
+    document.addEventListener("keydown", (event) => {
+      if (event.key === "Escape" && menu.open) {
+        menu.open = false
+        menu.querySelector("summary")?.focus()
+      }
+    })
+    window.matchMedia("(min-width: 901px)").addEventListener("change", (event) => {
+      if (event.matches) menu.open = false
+    })
+  }
+</script>

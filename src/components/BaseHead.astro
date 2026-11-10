@@ -17,6 +17,7 @@ interface Props {
   ogType?: "website" | "article"
   /** Article / BreadcrumbList など BaseHead 内の WebSite・Organization に追加するノード */
   jsonLdExtra?: Record<string, unknown>[]
+  colorMode?: "light" | "dark"
 }
 
 const canonicalURL = new URL(withTrailingSlash(Astro.url.pathname), Astro.site)
@@ -29,6 +30,7 @@ const {
   hasAds = false,
   ogType = "website",
   jsonLdExtra,
+  colorMode,
 } = Astro.props
 
 const siteUrl =
@@ -109,9 +111,10 @@ const ogUrl = canonicalURL.href
 <link rel="alternate" type="application/rss+xml" title={title} href={`${Astro.site}rss.xml`}/>
 
 <!-- Global Scripts -->
-<script is:inline>
+<script is:inline define:vars={{ colorMode }}>
   function preloadTheme() {
     const theme = (() => {
+      if (colorMode === "light" || colorMode === "dark") return colorMode;
       const userTheme = localStorage.theme;
       if (userTheme === "light" || userTheme === "dark") return userTheme;
       return window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
@@ -119,7 +122,7 @@ const ogUrl = canonicalURL.href
     const element = document.documentElement;
     if (theme === "dark") element.classList.add("dark");
     else element.classList.remove("dark");
-    localStorage.theme = theme;
+    if (!colorMode) localStorage.theme = theme;
   }
   preloadTheme();
   document.addEventListener("astro:after-swap", preloadTheme);
@@ -145,7 +148,7 @@ const ogUrl = canonicalURL.href
       script.async = true;
       script.crossOrigin = "anonymous";
       document.head.appendChild(script);
-      
+
       const events = ['scroll', 'mousemove', 'touchstart', 'keydown'];
       events.forEach(e => window.removeEventListener(e, lazyLoadAdSense));
     }
