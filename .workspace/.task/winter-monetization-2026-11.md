@@ -1,5 +1,7 @@
 # 冬の収益化プラン（2026年11月〜2027年1月）
 
+> **状態: 完了（2026-11-10、ユーザー判断）。** 日付の決まっている FUYU-11（11/19〜のブラックフライデー対応）は `task.md` に、11/30 の測定（§7）は `schedule-task.md` に引き継いだ。§6 の判断待ちは未決のまま残す
+
 - 作成: 2026-11-05（CC）。ユーザー指示「冬の季節記事から始め、寒くなると需要が伸びるアイテムを主体に紹介する。新規か既存強化かを判断し、冬でも釣りに行きたくなる理由をつける」
 - hq の対応: H-36（カード棚卸し）・H-37（ASP 選定）・H-38（冬の記事）。本書は H-38 の企画にあたる。公開が遅れると季節に間に合わないため、H-36 を待たずに進める（hq の backlog の「H-36 が延びたら先に企画に入る」に該当）
 - データ
@@ -125,7 +127,7 @@
 ### フェーズ1: 登録の回復と今ある商品（〜11/8）
 
 - [x] **U-1（ユーザー）** 2026-11-06 取りやめ（ユーザー決定: 冬記事は12月以降に読まれればよく、登録リクエストはしない）。もとの内容: GSC の URL 検査で登録をリクエスト（2026-11-06 の確認で更新）: `/blog/kasago-guide/`・`/blog/winter-tactics/`・`/blog/amazon-sale-tackle-strategy/`。`/blog/travel/hamanako-winter-fishing-oyster-trip/` は FUYU-9 の後。`1-month`・`2-month`・`winter-lightgame`・`winter-lunker`・冬ハブ・防寒ガイドは 11/05 に登録済み
-- [ ] **FUYU-1（CC→Codex）** カードの先行配置。既存の商品だけを使い、`.agents/affiliate-placement-rules.md` に従う
+- [x] **FUYU-1（CC→Codex）** カードの先行配置。既存の商品だけを使い、`.agents/affiliate-placement-rules.md` に従う
   - 優先順: `mebaru-kasago-beginner` → `11-month` → `12-month` → `karei-beginner` → `winter-anazuri-guide-2026` → `1-month` → `2-month` → `ajing-fukabori`
   - 使える例: `mebaru-kasago/owner-ainame-brakuri`・`mebaru-kasago/23-gekkabijin-lt2000s-p`・`karei/sasame-canon-ball-karei`・`common/gentos-headlight-cb-300d`。ID は `tackle-card-list.md` で確認する
 - [x] **FUYU-2（CC）** 2026-11-06 完了（`yearly-fishing-calendar`・`12-month`・`11-month` から送った）。内部リンク: 登録済みで表示の多い記事（`yearly-fishing-calendar`・`12-month`・`11-month`）から、未登録の `1-month`・`2-month`・`winter-lunker` へ理由を添えて送る
@@ -180,7 +182,7 @@
   - 2026-11-08 検収済み（CH-1。報告書 `.workspace/codex/reports/2026-11-08-CH-1.md`）。Codex は店の紹介を全部外していたが、CC が公式で確かめた2軒（海湖館: 12/19〜27 プレオープン・1/6 グランドオープン、舞阪マルマ幸福丸: 通年）を確認日つきの表で足した。宿カードは弁天島の楽天・じゃらん。タイトルは「冬の浜名湖釣り旅｜短時間のカレイ狙いと牡蠣小屋・温泉の1泊2日プラン」
 - [x] **FUYU-10（CC→Codex）** 未登録の4本（`karei-points`・`karei-tactics`・`mebaru-kasago-points`・`mebaru-kasago-tactics`）の重なりを点検し、残すものを直してから再依頼
   - 2026-11-08 検収済み（CH-1）。4本とも役割を絞ってリライト（止めた記事なし）。ポイントは釣り場の比較、攻略は条件を1つずつ変える手順。カバー4枚も作り直し。比較先に残る食い違い（11-month の「30cm超が当たり前」、メバルの産卵月、カサゴの号数・待ち時間、新居弁天の駐車料金 500円/400円）は FUYU-12 で扱う
-- [ ] **FUYU-11（CC）** Amazon ブラックフライデーの日程とセール対象を、公式の発表を確かめてから記事に入れる。発表前に日程を断定しない
+- [ ] **FUYU-11（CC）→ `task.md` に引き継ぎ** Amazon ブラックフライデーの日程とセール対象を、公式の発表を確かめてから記事に入れる。発表前に日程を断定しない
   - 予定（2026-11-10 ユーザー情報）: 期間の発表は 11/19 の見込み、先行セールは 11/21 から。**11/21 の朝までに記事へ反映する**
   - [ ] **FUYU-11a（11/19）** Amazon の公式告知で先行セール・本番の期間を確認し、`amazon-sale-tackle-strategy` と `winter-cold-protection-guide` の日付を更新。発表がなければ翌日に再確認
   - [ ] **FUYU-11b（11/19〜20）** セール対象を取得する。登録済みのカード（`src/content/affiliates/winter/` の18件と、冬の記事に置いている釣具）の商品ページで、セール対象かを確かめて一覧にする（`.workspace/.task/` に保存）。対象になった商品を `amazon-sale-tackle-strategy` の防寒の節と防寒ガイドで案内する。価格・割引率は変わるので書かない（§3）
@@ -202,7 +204,7 @@
 
 ### 月次分析から引き継ぐもの
 
-- [ ] `kibire-cooking` のカード（料理記事で目的が合っていない可能性）と `kurodai` の13枚の見直しは H-36 で扱う
+- [x] `kibire-cooking` のカード（料理記事で目的が合っていない可能性）と `kurodai` の13枚の見直しは H-36 で扱う
   - 2026-11-10 着手（CC）。`kibire-cooking` の2枚は仕掛けではなく料理道具（神経締めセット・ピチット）で、目的は合っていた。カードの前後を配置ルール §3-1 の5段（場面・原因・基準・差し出す・正直さ）で書き直した（未コミット）
   - 2026-11-10 ユーザー判断を反映（未コミット）:
     - `kibire-cooking`: キビレは刺身を勧めない（寄生虫のリスク、特に奥浜名湖）。刺身・昆布締めの節を加熱の案内に変え、タイトル・summary・早見表・画像 `size-guide.png`（作り直し）も合わせた。捌くのは万能包丁で足りると明記。血抜きの節にキッチンバサミのカード（包丁が苦手・けがを避けたい人向け）
