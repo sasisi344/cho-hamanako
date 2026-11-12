@@ -1,0 +1,31 @@
+{
+  "article": "src\\content\\blog\\travel\\hamanako-winter-fishing-oyster-trip\\index.mdx",
+  "approved_content_matches": true,
+  "cover_matches": true,
+  "slug": "travel/hamanako-winter-fishing-oyster-trip",
+  "category": "travel",
+  "blogcards": {
+    "winter-cold-protection-guide": "src\\content\\blog\\guide\\logistics\\winter-cold-protection-guide\\index.mdx",
+    "amihosiba": "src\\content\\blog\\points\\omote\\amihosiba\\index.mdx",
+    "araibenten-umiduripark": "src\\content\\blog\\points\\omote\\araibenten-umiduripark\\index.mdx",
+    "hamanako-winter-fishing": "src\\content\\blog\\season\\hamanako-winter-fishing\\index.mdx"
+  },
+  "tacklecards": [
+    "travel/rakuten-travel-bentenjima",
+    "travel/jalan-bentenjima"
+  ],
+  "instagram_iframes": 2,
+  "source_final_directory_removed": true,
+  "raw_draft_retained": true,
+  "build": {
+    "exit_code": 0,
+    "html": "dist\\blog\\travel\\hamanako-winter-fishing-oyster-trip\\index.html",
+    "canonical": "https://cho-hamanako.info/blog/travel/hamanako-winter-fishing-oyster-trip/",
+    "robots": [],
+    "tables": 4,
+    "h2": 7,
+    "instagram_iframes": 2,
+    "affiliate_links": 2,
+    "preview_route_absent": true
+  }
+}

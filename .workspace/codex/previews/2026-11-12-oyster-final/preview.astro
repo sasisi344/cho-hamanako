@@ -1,0 +1,32 @@
+---
+import { Content, frontmatter } from "../../../../src/content/blog/travel/hamanako-winter-fishing-oyster-trip/index.mdx";
+import source from "../../../../src/content/blog/travel/hamanako-winter-fishing-oyster-trip/index.mdx?raw";
+import cover from "../../../../src/content/blog/travel/hamanako-winter-fishing-oyster-trip/cover.jpg";
+import PageLayout from "@layouts/PageLayout.astro";
+import TopLayout from "@layouts/TopLayout.astro";
+import BottomLayout from "@layouts/BottomLayout.astro";
+import ArticleTopLayout from "@layouts/ArticleTopLayout.astro";
+
+const post = {
+  collection: "blog",
+  slug: frontmatter.slug,
+  body: source,
+  data: {
+    ...frontmatter,
+    pubDate: new Date(frontmatter.pubDate),
+    upDate: new Date(frontmatter.upDate),
+    cover,
+  },
+};
+---
+
+<PageLayout title={frontmatter.title} description={frontmatter.summary} noindex={true} hasAds={false}>
+  <TopLayout>
+    <ArticleTopLayout entry={post as any} />
+  </TopLayout>
+  <BottomLayout>
+    <article id="article" data-category="travel">
+      <Content />
+    </article>
+  </BottomLayout>
+</PageLayout>

@@ -1,0 +1,43 @@
+{
+  "blogcards": {
+    "winter-cold-protection-guide": "src\\content\\blog\\guide\\logistics\\winter-cold-protection-guide\\index.mdx",
+    "amihosiba": "src\\content\\blog\\points\\omote\\amihosiba\\index.mdx",
+    "araibenten-umiduripark": "src\\content\\blog\\points\\omote\\araibenten-umiduripark\\index.mdx",
+    "hamanako-winter-fishing": "src\\content\\blog\\season\\hamanako-winter-fishing\\index.mdx"
+  },
+  "tacklecards": 2,
+  "tables_rendered": 4,
+  "instagram_iframes_rendered": [
+    {
+      "src": "https://www.instagram.com/p/DGrfxqhTjxI/embed/captioned/",
+      "title": "舞阪マルマ幸福丸の公式Instagram：浜名湖産牡蠣の提供例（2025年3月）",
+      "lazy": "lazy"
+    },
+    {
+      "src": "https://www.instagram.com/p/CYqzmX8vtOp/embed/captioned/",
+      "title": "あーやphotoさんのInstagram：弁天島の鳥居と夕日（2022年1月10日撮影）",
+      "lazy": "lazy"
+    }
+  ],
+  "article_h2": 7,
+  "cover_bytes": 168104,
+  "source_draft_unchanged": true,
+  "production_unchanged": true,
+  "rendered_utf8": "ok",
+  "static_preview": {
+    "file": ".workspace\\codex\\previews\\2026-11-12-oyster-final\\dist\\__oyster-final\\index.html",
+    "tables": 4,
+    "h2": 7,
+    "instagram": 2,
+    "internal_links": [
+      "/points/araibenten-umiduripark/",
+      "/points/amihosiba/",
+      "/blog/hamanako-winter-fishing/",
+      "/blog/winter-cold-protection-guide/"
+    ],
+    "robots": [
+      "noindex"
+    ],
+    "utf8": "ok"
+  }
+}
