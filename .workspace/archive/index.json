@@ -1,0 +1,122 @@
+{
+  "archived_on": "2026-11-12",
+  "description": "冬の浜名湖旅行記事の下書き・アウトラインの移動先。アーカイブは検討履歴であり、本番記事はproductionを参照。",
+  "groups": [
+    {
+      "id": "oyster-hut-fishing",
+      "folder": "2026-11-牡蠣小屋と冬の釣り旅",
+      "status": "本番移行済み",
+      "production": "src/content/blog/travel/hamanako-winter-fishing-oyster-trip/index.mdx",
+      "files": [
+        "2026-11-11-oyster-hut-fishing-outline.md",
+        "2026-11-12-oyster-hut-fishing-draft.md"
+      ]
+    },
+    {
+      "id": "kabakadon-photo-trip",
+      "folder": "2026-11-牡蠣カバ丼と冬の写真旅",
+      "status": "本番移行済み",
+      "production": "src/content/blog/travel/hamanako-kabakadon-photo-trip/index.mdx",
+      "files": [
+        "2026-11-11-kabakadon-photo-trip-outline.md",
+        "2026-11-12-kabakadon-photo-trip-draft.md"
+      ]
+    },
+    {
+      "id": "winter-trip-shared",
+      "folder": "2026-11-冬の浜名湖旅行の共通資料",
+      "status": "共通の企画・選定履歴",
+      "production": null,
+      "files": [
+        "2026-11-11-winter-trip-outlines.md",
+        "2026-11-11-instagram-post-candidates.md"
+      ]
+    },
+    {
+      "id": "nature-rest-trip",
+      "folder": "2026-11-自然で休む浜名湖旅",
+      "status": "本番移行済み",
+      "production": "src/content/blog/travel/hamanako-nature-rest-trip/index.mdx",
+      "files": [
+        "2026-11-11-nature-rest-trip-outline.md",
+        "2026-11-12-nature-rest-trip-draft.md"
+      ],
+      "status_updated_on": "2026-11-12",
+      "archived_draft": ".workspace/archive/2026-11-自然で休む浜名湖旅/2026-11-12-nature-rest-trip-draft.md"
+    }
+  ],
+  "moves": [
+    {
+      "from": ".workspace/_draft/2026-11-11-oyster-hut-fishing-outline.md",
+      "to": ".workspace/archive/2026-11-牡蠣小屋と冬の釣り旅/2026-11-11-oyster-hut-fishing-outline.md",
+      "sha256_before_move": "c09b509d0f04ad55ef711a5d2f472e9209dd92dd4823f7c00c081d99680b45a8",
+      "sha256_after_link_update": "99e2e81c344d7ebe09245d90cdefa5f91fd321e56eca8907321b4f295091d752"
+    },
+    {
+      "from": ".workspace/_draft/2026-11-12-oyster-hut-fishing-draft.md",
+      "to": ".workspace/archive/2026-11-牡蠣小屋と冬の釣り旅/2026-11-12-oyster-hut-fishing-draft.md",
+      "sha256_before_move": "5ae503ee605abfa11377d7e2b9df84c813ec2be487909b0ac8f6c48b95b0e4fa",
+      "sha256_after_link_update": "73b6c44ba36c531ad737ffeb8ce9901cb06a1f736f429241fb15cf977ca4559f"
+    },
+    {
+      "from": ".workspace/_draft/2026-11-11-kabakadon-photo-trip-outline.md",
+      "to": ".workspace/archive/2026-11-牡蠣カバ丼と冬の写真旅/2026-11-11-kabakadon-photo-trip-outline.md",
+      "sha256_before_move": "f07a409683b95261129c1e2b6fc997321abf660cfefcb28bfa787b0e981d8358",
+      "sha256_after_link_update": "144fa8e0707b915c1605df84451a8712d62ab9f6a452614ac54a0ded3ef09e16"
+    },
+    {
+      "from": ".workspace/_draft/2026-11-12-kabakadon-photo-trip-draft.md",
+      "to": ".workspace/archive/2026-11-牡蠣カバ丼と冬の写真旅/2026-11-12-kabakadon-photo-trip-draft.md",
+      "sha256_before_move": "0d9db1ed92c61e6ede540ceade00cc5b90e18ee05f384db0e7181072c1335162",
+      "sha256_after_link_update": "eec157a8a6809a818821ec42ee85916a399f23acdfbf9f335f9dedd75c748977"
+    },
+    {
+      "from": ".workspace/_draft/2026-11-11-winter-trip-outlines.md",
+      "to": ".workspace/archive/2026-11-冬の浜名湖旅行の共通資料/2026-11-11-winter-trip-outlines.md",
+      "sha256_before_move": "c1d3c363c5e0ac0dacf66a5aa2bfc328c62aaf38dfa1ad827c52b962ac2c562f",
+      "sha256_after_link_update": "64fd8c5adc313f4b6e66571e2f566d666a163e9c46f62f1a62b4ffba092dbabd"
+    },
+    {
+      "from": ".workspace/_draft/2026-11-11-instagram-post-candidates.md",
+      "to": ".workspace/archive/2026-11-冬の浜名湖旅行の共通資料/2026-11-11-instagram-post-candidates.md",
+      "sha256_before_move": "96ac2dc685520df579a07c53cb8b11b8fa1406499ecb60d49683b121e95eba47",
+      "sha256_after_link_update": "96ac2dc685520df579a07c53cb8b11b8fa1406499ecb60d49683b121e95eba47"
+    },
+    {
+      "from": ".workspace/_draft/2026-11-11-nature-rest-trip-outline.md",
+      "to": ".workspace/archive/2026-11-自然で休む浜名湖旅/2026-11-11-nature-rest-trip-outline.md",
+      "sha256_before_move": "eb0976b684f20b833d7bfa199919c5fc3594ddc41e39ba5838055b99017c6f4f",
+      "sha256_after_link_update": "4936546aa3ba39c22e52bc14a43d5d59e2e615cf65119978181bd8bc70f57162"
+    },
+    {
+      "from": ".workspace/_draft/2026-11-12-nature-rest-trip-draft.md",
+      "to": ".workspace/archive/2026-11-自然で休む浜名湖旅/2026-11-12-nature-rest-trip-draft.md",
+      "sha256_before_move": "2af472e941effc22bada4d9648c459de4c33563dab5e7be8954becfa861b34a5",
+      "sha256_after_link_update": "3cd3bd7885ffec8c945683caac435f641f25e9fedc878c006186109a7d3067bb"
+    }
+  ],
+  "link_updates": [
+    ".workspace/README.md",
+    ".workspace/archive/2026-11-冬の浜名湖旅行の共通資料/2026-11-11-winter-trip-outlines.md",
+    ".workspace/archive/2026-11-牡蠣カバ丼と冬の写真旅/2026-11-11-kabakadon-photo-trip-outline.md",
+    ".workspace/archive/2026-11-牡蠣カバ丼と冬の写真旅/2026-11-12-kabakadon-photo-trip-draft.md",
+    ".workspace/archive/2026-11-牡蠣小屋と冬の釣り旅/2026-11-11-oyster-hut-fishing-outline.md",
+    ".workspace/archive/2026-11-牡蠣小屋と冬の釣り旅/2026-11-12-oyster-hut-fishing-draft.md",
+    ".workspace/archive/2026-11-自然で休む浜名湖旅/2026-11-12-nature-rest-trip-draft.md",
+    ".workspace/archive/2026-11-自然で休む浜名湖旅（未制作案）/2026-11-11-nature-rest-trip-outline.md",
+    ".workspace/archive/README.md",
+    ".workspace/codex/reports/2026-11-12-KABAKADON-PHOTO-DRAFT.md",
+    ".workspace/codex/reports/2026-11-12-KABAKADON-PHOTO-ROUTE.md",
+    ".workspace/codex/reports/2026-11-12-NATURE-REST-DRAFT.md",
+    ".workspace/codex/reports/2026-11-12-NATURE-REST-TWO-PERSPECTIVES.md",
+    ".workspace/codex/reports/2026-11-12-TRAVEL-VOICE-FORMAT.md"
+  ],
+  "relocations": [
+    {
+      "from": ".workspace/archive/2026-11-自然で休む浜名湖旅（未制作案）",
+      "to": ".workspace/archive/2026-11-自然で休む浜名湖旅",
+      "date": "2026-11-12",
+      "reason": "本番移行完了。初期アウトラインの保管先を制作段階に依存しない名称へ変更。"
+    }
+  ]
+}

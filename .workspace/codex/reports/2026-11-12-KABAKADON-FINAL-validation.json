@@ -1,0 +1,71 @@
+{
+  "article": "src\\content\\blog\\travel\\hamanako-kabakadon-photo-trip\\index.mdx",
+  "output": "dist\\blog\\travel\\hamanako-kabakadon-photo-trip\\index.html",
+  "canonical": [
+    "https://cho-hamanako.info/blog/travel/hamanako-kabakadon-photo-trip/"
+  ],
+  "h1_count": 1,
+  "h2_count": 7,
+  "tables": 4,
+  "instagram_count": 2,
+  "instagram": [
+    {
+      "src": "https://www.instagram.com/p/DC3AKrJvbXP/embed/captioned/",
+      "title": "浜菜坊公式Instagram：牡蠣カバ丼の紹介（2024年11月の投稿）",
+      "loading": "lazy",
+      "responsive": true
+    },
+    {
+      "src": "https://www.instagram.com/p/DB2PZmqzB0F/embed/captioned/",
+      "title": "浜名湖遊覧船公式Instagram：ハイビスカス号の紹介（2024年11月の投稿）",
+      "loading": "lazy",
+      "responsive": true
+    }
+  ],
+  "internal_links": {
+    "/points/bentenjimakaihinkouen/": true,
+    "/points/kanzanji/": true,
+    "/blog/winter-cold-protection-guide/": true,
+    "/blog/travel/hamanako-winter-fishing-oyster-trip/": true
+  },
+  "requested_source_present": true,
+  "rejected_post_absent": true,
+  "editorial_notes_absent": true,
+  "robots": [],
+  "visible_characters_estimate": 5696,
+  "cover_dimensions": [
+    1376,
+    768
+  ],
+  "cover_format": "JPEG",
+  "cover_assets": [
+    {
+      "src": "/_astro/cover.DeWFt0Go_1nlyPp.webp",
+      "exists": true
+    },
+    {
+      "src": "/_astro/cover.raQw5976_Z23bckl.webp",
+      "exists": true
+    },
+    {
+      "src": "/_astro/cover.rl-qSXwx_Z1lvnRK.webp",
+      "exists": true
+    },
+    {
+      "src": "/_astro/cover.BYScznGp_zu1Ya.webp",
+      "exists": true
+    },
+    {
+      "src": "/_astro/cover.c6po2RoA_1Kbita.webp",
+      "exists": true
+    }
+  ],
+  "article_sha256": "473795772a927251ba8929a8808d425e9a90cd2d447ac8a48ade760a963476dc",
+  "cover_sha256": "b04994bb4ec68678e88d10ecc79cc83953169c13234be5cc8d4d706a4a38cbd0",
+  "build": {
+    "exit_code": 0,
+    "pages": 295,
+    "seconds": 52.09
+  },
+  "browser_render_checked": false
+}

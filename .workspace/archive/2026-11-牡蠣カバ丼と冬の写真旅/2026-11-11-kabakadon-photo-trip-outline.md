@@ -4,7 +4,7 @@
 - 種別：新規記事候補／categoryはtravelを想定。
 - 状態：アウトライン。新規slug・本番配置は未確定。
 - 記事化時の本文目安：3,000〜4,000字。通常記事の下限2,000字以上。
-- 参照：[キャッチコピーと目的](../_inbox/2026-11-11-winter-trip-copy-and-purpose.md)／[Web調査](../_inbox/2026-11-11-winter-trip-web-research.md)／[候補一覧](2026-11-11-winter-trip-outlines.md)
+- 参照：[キャッチコピーと目的](../../_inbox/2026-11-11-winter-trip-copy-and-purpose.md)／[Web調査](../../_inbox/2026-11-11-winter-trip-web-research.md)／[候補一覧](../2026-11-冬の浜名湖旅行の共通資料/2026-11-11-winter-trip-outlines.md)
 
 ## 企画の目的（編集メモ）
 
@@ -125,13 +125,13 @@
 - [公式の牡蠣カバ丼特集](https://hamamatsu-daisuki.net/pickup/8526/)：地域の提供店と、食・写真を組み合わせた過去企画の参照先。
 - [浜菜坊の公式メニュー](https://www.hamanabo.co.jp/menu.html)：弁天島側の食事候補。
 - [公式の冬の撮影スポット案内](https://hamamatsu-daisuki.net/information/5357/)：過去年の景観案内。今季の撮影日時として転用しない。
-- 実在する関連記事：[弁天島海浜公園](../../src/content/blog/points/omote/bentenjimakaihinkouen/index.mdx)、[舘山寺](../../src/content/blog/points/oku/kanzanji/index.mdx)、[奥浜名湖の旅](../../src/content/blog/travel/kanzanji-fishing-walk-guide/index.mdx)、[観光ハブ](../../src/content/blog/travel/hamanako-kanko-hub/index.mdx)、[牡蠣小屋の現行記事](../../src/content/blog/travel/hamanako-winter-fishing-oyster-trip/index.mdx)。各施設情報の再検証は別途行う。
+- 実在する関連記事：[弁天島海浜公園](../../../src/content/blog/points/omote/bentenjimakaihinkouen/index.mdx)、[舘山寺](../../../src/content/blog/points/oku/kanzanji/index.mdx)、[奥浜名湖の旅](../../../src/content/blog/travel/kanzanji-fishing-walk-guide/index.mdx)、[観光ハブ](../../../src/content/blog/travel/hamanako-kanko-hub/index.mdx)、[牡蠣小屋の現行記事](../../../src/content/blog/travel/hamanako-winter-fishing-oyster-trip/index.mdx)。各施設情報の再検証は別途行う。
 - 画像案：料理と冬の景色が伝わる導入、地域ごとの写真と行程表。Instagram投稿の画像を本番素材として保存・転載・埋め込みする作業は未実施。調査用プレビューのみ一時領域で閲覧した。
 - 新規のアフィリエイトIDや画像生成プロンプトは作成しない。宿泊案を採用する段階で、地区に合う実在カードを確認する。
 
 ## Instagram投稿候補（2026-11-11追加調査）
 
-詳細は[個別投稿候補集](2026-11-11-instagram-post-candidates.md)のBを参照。
+詳細は[個別投稿候補集](../2026-11-冬の浜名湖旅行の共通資料/2026-11-11-instagram-post-candidates.md)のBを参照。
 
 - IG-B01：[浜菜坊の牡蠣カバ丼](https://www.instagram.com/p/DC3AKrJvbXP/)。食べたい一杯から旅行へ誘う、弁天島モデルの料理候補。
 - IG-B02：[夕暮れの弁天島](https://www.instagram.com/p/CWQmZ72Pby_/)。湖畔の散策と写真。太陽は鳥居の中央にない写真。

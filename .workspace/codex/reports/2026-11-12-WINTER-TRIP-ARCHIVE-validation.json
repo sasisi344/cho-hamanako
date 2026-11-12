@@ -1,0 +1,56 @@
+{
+  "moved_files": [
+    {
+      "from": ".workspace/_draft/2026-11-11-oyster-hut-fishing-outline.md",
+      "to": ".workspace/archive/2026-11-牡蠣小屋と冬の釣り旅/2026-11-11-oyster-hut-fishing-outline.md",
+      "ok": true
+    },
+    {
+      "from": ".workspace/_draft/2026-11-12-oyster-hut-fishing-draft.md",
+      "to": ".workspace/archive/2026-11-牡蠣小屋と冬の釣り旅/2026-11-12-oyster-hut-fishing-draft.md",
+      "ok": true
+    },
+    {
+      "from": ".workspace/_draft/2026-11-11-kabakadon-photo-trip-outline.md",
+      "to": ".workspace/archive/2026-11-牡蠣カバ丼と冬の写真旅/2026-11-11-kabakadon-photo-trip-outline.md",
+      "ok": true
+    },
+    {
+      "from": ".workspace/_draft/2026-11-12-kabakadon-photo-trip-draft.md",
+      "to": ".workspace/archive/2026-11-牡蠣カバ丼と冬の写真旅/2026-11-12-kabakadon-photo-trip-draft.md",
+      "ok": true
+    },
+    {
+      "from": ".workspace/_draft/2026-11-11-winter-trip-outlines.md",
+      "to": ".workspace/archive/2026-11-冬の浜名湖旅行の共通資料/2026-11-11-winter-trip-outlines.md",
+      "ok": true
+    },
+    {
+      "from": ".workspace/_draft/2026-11-11-instagram-post-candidates.md",
+      "to": ".workspace/archive/2026-11-冬の浜名湖旅行の共通資料/2026-11-11-instagram-post-candidates.md",
+      "ok": true
+    },
+    {
+      "from": ".workspace/_draft/2026-11-11-nature-rest-trip-outline.md",
+      "to": ".workspace/archive/2026-11-自然で休む浜名湖旅（未制作案）/2026-11-11-nature-rest-trip-outline.md",
+      "ok": true
+    }
+  ],
+  "checked_local_links": 80,
+  "broken_local_links": [],
+  "remaining_drafts": [
+    "RVうみてらす.md",
+    "漁業権について.md"
+  ],
+  "reference_link_updates": [
+    ".workspace/archive/2026-11-牡蠣小屋と冬の釣り旅/2026-11-11-oyster-hut-fishing-outline.md",
+    ".workspace/archive/2026-11-牡蠣小屋と冬の釣り旅/2026-11-12-oyster-hut-fishing-draft.md",
+    ".workspace/archive/2026-11-牡蠣カバ丼と冬の写真旅/2026-11-11-kabakadon-photo-trip-outline.md",
+    ".workspace/archive/2026-11-牡蠣カバ丼と冬の写真旅/2026-11-12-kabakadon-photo-trip-draft.md",
+    ".workspace/archive/2026-11-冬の浜名湖旅行の共通資料/2026-11-11-winter-trip-outlines.md",
+    ".workspace/archive/2026-11-自然で休む浜名湖旅（未制作案）/2026-11-11-nature-rest-trip-outline.md",
+    ".workspace/codex/reports/2026-11-12-KABAKADON-PHOTO-DRAFT.md",
+    ".workspace/codex/reports/2026-11-12-KABAKADON-PHOTO-ROUTE.md",
+    ".workspace/codex/reports/2026-11-12-TRAVEL-VOICE-FORMAT.md"
+  ]
+}

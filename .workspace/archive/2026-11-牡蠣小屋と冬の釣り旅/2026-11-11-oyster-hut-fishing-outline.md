@@ -2,11 +2,11 @@
 
 - 作成日：2026-11-11
 - 種別：既存記事のリライト候補／categoryはtravel。
-- 対象：[現行記事](../../src/content/blog/travel/hamanako-winter-fishing-oyster-trip/index.mdx)
+- 対象：[現行記事](../../../src/content/blog/travel/hamanako-winter-fishing-oyster-trip/index.mdx)
 - 現行slug：`travel/hamanako-winter-fishing-oyster-trip`を維持する案。
 - 状態：アウトライン。本文・フロントマター・公開URLは未変更。
 - 記事化時の本文目安：3,500〜4,500字。通常記事の下限2,000字以上を維持。
-- 詳細：[リライト案](../_inbox/2026-11-11-oyster-trip-rewrite-plan.md)／[候補一覧](2026-11-11-winter-trip-outlines.md)
+- 詳細：[リライト案](../../_inbox/2026-11-11-oyster-trip-rewrite-plan.md)／[候補一覧](../2026-11-冬の浜名湖旅行の共通資料/2026-11-11-winter-trip-outlines.md)
 
 ## 企画の目的（編集メモ）
 
@@ -122,14 +122,14 @@
 
 - [海湖館の今季開始告知](https://hamanako-kosai.jp/news-event/13534/)
 - [舞阪マルマ幸福丸の運営会社](https://west-hamamatsu.com/maruma/)
-- 既存記事の参照候補：[新居弁天](../../src/content/blog/points/omote/araibenten-umiduripark/index.mdx)、[砂揚げ場](../../src/content/blog/points/omote/sunaageba/index.mdx)、[網干場](../../src/content/blog/points/omote/amihosiba/index.mdx)、[冬ハブ](../../src/content/blog/season/hamanako-winter-fishing/index.mdx)、[防寒](../../src/content/blog/guide/logistics/winter-cold-protection-guide/index.mdx)。実在は確認済みで、採用は行程に合わせて決める。
+- 既存記事の参照候補：[新居弁天](../../../src/content/blog/points/omote/araibenten-umiduripark/index.mdx)、[砂揚げ場](../../../src/content/blog/points/omote/sunaageba/index.mdx)、[網干場](../../../src/content/blog/points/omote/amihosiba/index.mdx)、[冬ハブ](../../../src/content/blog/season/hamanako-winter-fishing/index.mdx)、[防寒](../../../src/content/blog/guide/logistics/winter-cold-protection-guide/index.mdx)。実在は確認済みで、採用は行程に合わせて決める。
 - 既存宿カード：`travel/rakuten-travel-bentenjima`、`travel/jalan-bentenjima`。同節2枚まで。
 - 画像案：牡蠣と水辺の導入画像、2地域を選ぶ簡潔な行程表。店舗写真や本人の体験は創作しない。
 - 画像生成プロンプト、追加カード、Instagramの埋め込みは未作成。
 
 ## Instagram投稿候補（2026-11-11追加調査）
 
-詳細は[個別投稿候補集](2026-11-11-instagram-post-candidates.md)のAを参照。
+詳細は[個別投稿候補集](../2026-11-冬の浜名湖旅行の共通資料/2026-11-11-instagram-post-candidates.md)のAを参照。
 
 - IG-A01：[幸福丸の浜名湖産牡蠣](https://www.instagram.com/p/DGrfxqhTjxI/)。舞阪の食事を主目的に誘う第一候補。
 - IG-A02：[海湖館・プリ丸の紹介](https://www.instagram.com/p/CJx3TeTAh-D/)。条件付き。2021年の人物中心の先頭写真で、導入画像の優先度は低い。

@@ -1,0 +1,72 @@
+{
+  "article": "src/content/blog/travel/hamanako-nature-rest-trip/index.mdx",
+  "output": "dist/blog/travel/hamanako-nature-rest-trip/index.html",
+  "canonical": [
+    "https://cho-hamanako.info/blog/travel/hamanako-nature-rest-trip/"
+  ],
+  "h1": 1,
+  "h2": 7,
+  "tables": 2,
+  "instagram": [
+    {
+      "src": "https://www.instagram.com/p/CGM1hCEl3Yz/embed/captioned/",
+      "title": "熊谷真実さんのInstagram：舘山寺・館山周遊路の散策（2020年10月の投稿）",
+      "lazy": true,
+      "responsive": true
+    },
+    {
+      "src": "https://www.instagram.com/p/B756cTwHpuz/embed/captioned/",
+      "title": "rino___11oさんのInstagram：山水館欣龍の貸切風呂からの湖景（2020年1月の投稿）",
+      "lazy": true,
+      "responsive": true
+    }
+  ],
+  "internal_links": {
+    "/points/kanzanji/": true,
+    "/blog/travel/hamanako-kabakadon-photo-trip/": true,
+    "/blog/winter-cold-protection-guide/": true,
+    "/blog/travel/hamanako-winter-fishing-oyster-trip/": true
+  },
+  "affiliate_count": 2,
+  "visible_characters_estimate": 5415,
+  "prompts_or_editorial_notes": false,
+  "rejected_post_present": false,
+  "robots": [],
+  "cover": {
+    "dimensions": [
+      1376,
+      768
+    ],
+    "format": "JPEG",
+    "assets": [
+      {
+        "url": "/_astro/cover.txy9XnT8_Z2wH8XY.webp",
+        "exists": true
+      },
+      {
+        "url": "/_astro/cover.rl-qSXwx_Z1lvnRK.webp",
+        "exists": true
+      },
+      {
+        "url": "/_astro/cover.DeWFt0Go_Z1e5DfN.webp",
+        "exists": true
+      },
+      {
+        "url": "/_astro/cover.BYScznGp_zu1Ya.webp",
+        "exists": true
+      },
+      {
+        "url": "/_astro/cover.c6po2RoA_1Kbita.webp",
+        "exists": true
+      }
+    ]
+  },
+  "article_sha256": "f3462bdd1e812771d513b2ee7208015a961714bfb5e275dd5515463f84ea7a61",
+  "cover_sha256": "934d130a12bd1c9386d2b8c82c0b4d438d957c7b200902416481146623f82b80",
+  "build": {
+    "exit_code": 0,
+    "pages": 296,
+    "seconds": 43.19
+  },
+  "browser_render_checked": false
+}

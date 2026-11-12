@@ -1,0 +1,16 @@
+{
+  "folder_from": ".workspace/archive/2026-11-自然で休む浜名湖旅（未制作案）",
+  "folder_to": ".workspace/archive/2026-11-自然で休む浜名湖旅",
+  "moves": [
+    {
+      "from": ".workspace/archive/2026-11-自然で休む浜名湖旅（未制作案）/2026-11-11-nature-rest-trip-outline.md",
+      "to": ".workspace/archive/2026-11-自然で休む浜名湖旅/2026-11-11-nature-rest-trip-outline.md",
+      "sha256_before_move": "4936546aa3ba39c22e52bc14a43d5d59e2e615cf65119978181bd8bc70f57162"
+    },
+    {
+      "from": ".workspace/_draft/2026-11-12-nature-rest-trip-draft.md",
+      "to": ".workspace/archive/2026-11-自然で休む浜名湖旅/2026-11-12-nature-rest-trip-draft.md",
+      "sha256_before_move": "2af472e941effc22bada4d9648c459de4c33563dab5e7be8954becfa861b34a5"
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+📄 記事メタ:
+  title      : 浜名湖の牡蠣カバ丼と冬の写真旅｜弁天島・舘山寺で景色と短い釣りを楽しむ
+  type       : travel（--scene でシーン上書き）
+  style      : illust
+  targetFish : (未定義)
+  bestSeason : 冬
+  location   : 弁天島海浜公園（弁天島モデルの撮影拠点）
+
+--- 生成プロンプト（--dry-run: API は呼びません）---
+
+[Site Context] This image is for a Japanese saltwater fishing blog exclusively about Lake Hamana (浜名湖), a brackish-water lake in Hamamatsu, Shizuoka, Japan. All imagery must relate to saltwater or brackish-water fishing — marine fish species, tidal environments, fishing gear, and the coastal scenery of Lake Hamana. Do not depict freshwater or mountain fishing elements.
+
+Polished, eye-catching digital illustration made to stand out as a small thumbnail in a list of blog cards. Rich saturated colors, strong value contrast, clean confident outlines with painterly shading, cinematic lighting with a bright rim light on the hero subject. Lively and appetizing, not a dry scientific diagram.
+
+Scene brief:
+Hero: the distinctive red Bentenjima torii-shaped observation symbol tower standing alone in the shallow brackish water of Lake Hamana, seen across a broad, flat, open lakeside waterfront in a low diagonal composition, a winter sunset sun aligned within the opening and shimmering reflections across cool teal water.
+Supporting: one small foreground ceramic bowl on a simple neutral tabletop, of cooked, shucked oysters glazed with kabayaki sauce over white rice, topped with thin seaweed and a little finely shredded orange peel; gentle steam as a subtle accent.
+Setting: winter dusk at Bentenjima, Hamamatsu, Shizuoka, Japan; a vivid warm orange sky against deep blue-green lake water. One unified editorial travel illustration, not a collage, not an actual restaurant photograph.
+Accuracy notes: the torii-shaped symbol stands offshore in the lake, not on a mountain or attached to a shrine. The dish contains cooked oyster meat, never eel pieces, raw shell-on oysters, sushi, or a hippopotamus. Keep the entire lake horizon flat and distant, with absolutely no rocky islands, cliffs, mountains, boulders, wild rocky shoreline, or shrine buildings. The foreground tabletop is an editorial framing device and must not imply an actual restaurant view. No invented landmarks, boats, fish, people, text, labels, logos or interface elements. Landscape is the main subject; the dish is secondary.
+
+Lighting / mood: cold clear winter light, deep navy water with a pale dawn glow on the horizon, crisp breath of cold air.
+
+Composition rules:
+- ONE clear hero subject that fills roughly 50–65% of the frame, placed on a rule-of-thirds point or centered, with a bold readable silhouette that still reads at 300px wide.
+- Dynamic angle (low angle, diagonal, or close-up with slight perspective) and a sense of motion — splash, ripples, a bending rod, steam, or (open-water fish only) a leaping fish.
+- At most 2–3 supporting elements, layered as foreground / midground / background for depth. Keep the background simple and softly blurred or graded so the hero pops.
+- Complementary color contrast between the hero and the background (e.g. warm orange/gold/red accents against cool blue/teal water).
+- Fill the entire 16:9 frame edge to edge. No empty panel, no frame, no border. Keep all important elements inside the central 80% so center-cropping to 16:9, 1.91:1 or 4:3 still works.
+- Absolutely no text, letters, numbers, logos, watermarks or UI elements.
+
+16:9 wide format.

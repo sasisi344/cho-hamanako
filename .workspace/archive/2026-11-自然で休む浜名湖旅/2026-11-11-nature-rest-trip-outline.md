@@ -4,7 +4,7 @@
 - 種別：独立記事にするか比較するための新規候補／categoryはtravelを想定。
 - 状態：保留候補のアウトライン。記事化・新規slugは未決定。
 - 記事化する場合の本文目安：2,500〜3,500字。通常記事の下限2,000字以上。
-- 参照：[自然で休む旅の構想](../_inbox/2026-11-11-hamamatsu-nature-rest-trip-concept.md)／[候補一覧](2026-11-11-winter-trip-outlines.md)
+- 参照：[自然で休む旅の構想](../../_inbox/2026-11-11-hamamatsu-nature-rest-trip-concept.md)／[候補一覧](../2026-11-冬の浜名湖旅行の共通資料/2026-11-11-winter-trip-outlines.md)
 
 ## 企画の目的（編集メモ）
 
@@ -96,16 +96,16 @@
 
 ## 出典・回遊・画像（編集メモ）
 
-- 研究の位置づけは[構想ファイル](../_inbox/2026-11-11-hamamatsu-nature-rest-trip-concept.md)を参照。前段の2026-11-11調査を引き継ぐ。
+- 研究の位置づけは[構想ファイル](../../_inbox/2026-11-11-hamamatsu-nature-rest-trip-concept.md)を参照。前段の2026-11-11調査を引き継ぐ。
 - [NCCIHの説明](https://www.nccih.nih.gov/health/meditation-and-mindfulness-effectiveness-and-safety)：マインドフルネスの定義を扱う際の確認先。釣りによる治療効果の根拠にしない。
 - [自然歩行の原著研究](https://www.pnas.org/doi/10.1073/pnas.1510459112)：冬の浜名湖の釣りや、このプランの効果検証ではない。研究の説明を膨らませず、必要な場合だけ限界を含めて参照する。
-- 実在する回遊先：[観光ハブ](../../src/content/blog/travel/hamanako-kanko-hub/index.mdx)、[冬ハブ](../../src/content/blog/season/hamanako-winter-fishing/index.mdx)、[防寒](../../src/content/blog/guide/logistics/winter-cold-protection-guide/index.mdx)。
+- 実在する回遊先：[観光ハブ](../../../src/content/blog/travel/hamanako-kanko-hub/index.mdx)、[冬ハブ](../../../src/content/blog/season/hamanako-winter-fishing/index.mdx)、[防寒](../../../src/content/blog/guide/logistics/winter-cold-protection-guide/index.mdx)。
 - 画像案：水辺で各自が過ごす時間を伝える導入と、半日の流れを示す表。本人の体験・同行者の感想・写真は創作しない。
 - 画像生成プロンプトや新規カードは未作成。
 
 ## Instagram投稿候補（2026-11-11追加調査）
 
-詳細は[個別投稿候補集](2026-11-11-instagram-post-candidates.md)のCを参照。Cの記事化自体は引き続き保留。
+詳細は[個別投稿候補集](../2026-11-冬の浜名湖旅行の共通資料/2026-11-11-instagram-post-candidates.md)のCを参照。Cの記事化自体は引き続き保留。
 
 - IG-C01：[館山周遊路の散策](https://www.instagram.com/p/CGM1hCEl3Yz/)。自然の広さと散策する人。秋・半袖の写真のため冬景色で統一するなら差し替える。
 - IG-C02：[浜名湖の湖面と自然](https://www.instagram.com/p/B6O76ZJJsk0/)。晩秋〜初冬の参考。撮影地点の詳細は未確定で、釣り場・行程の停車地点には指定しない。
