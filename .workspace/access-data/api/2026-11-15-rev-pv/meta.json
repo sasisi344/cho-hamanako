@@ -1,0 +1,15 @@
+{
+  "fetchedAt": "2026-11-15T12:44:23.134Z",
+  "site": "CH",
+  "command": "ga4",
+  "args": {
+    "site": "CH",
+    "dims": "pagePath",
+    "metrics": "screenPageViews,totalUsers,userEngagementDuration,sessions",
+    "start": "2026-11-02",
+    "end": "2026-11-14",
+    "slug": "rev-pv"
+  },
+  "start": "2026-11-02",
+  "end": "2026-11-14"
+}

@@ -1,0 +1,15 @@
+{
+  "fetchedAt": "2026-11-15T12:44:25.311Z",
+  "site": "CH",
+  "command": "gsc",
+  "args": {
+    "site": "CH",
+    "dims": "page",
+    "start": "2026-10-14",
+    "end": "2026-11-11",
+    "limit": "1000",
+    "slug": "rev-gscpage"
+  },
+  "start": "2026-10-14",
+  "end": "2026-11-11"
+}

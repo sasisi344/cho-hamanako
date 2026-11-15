@@ -1,0 +1,15 @@
+{
+  "fetchedAt": "2026-11-15T12:44:24.473Z",
+  "site": "CH",
+  "command": "gsc",
+  "args": {
+    "site": "CH",
+    "dims": "query",
+    "start": "2026-10-14",
+    "end": "2026-11-11",
+    "limit": "2000",
+    "slug": "rev-query"
+  },
+  "start": "2026-10-14",
+  "end": "2026-11-11"
+}

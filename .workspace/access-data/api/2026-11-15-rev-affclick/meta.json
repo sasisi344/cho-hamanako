@@ -1,0 +1,15 @@
+{
+  "fetchedAt": "2026-11-15T12:43:57.944Z",
+  "site": "CH",
+  "command": "ga4",
+  "args": {
+    "site": "CH",
+    "event": "affiliate_click",
+    "dims": "pagePath,customEvent:aff_id",
+    "start": "2026-11-02",
+    "end": "2026-11-14",
+    "slug": "rev-affclick"
+  },
+  "start": "2026-11-02",
+  "end": "2026-11-14"
+}
