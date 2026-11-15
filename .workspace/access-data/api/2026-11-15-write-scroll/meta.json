@@ -1,0 +1,16 @@
+{
+  "fetchedAt": "2026-11-15T13:48:59.002Z",
+  "site": "CH",
+  "command": "ga4",
+  "args": {
+    "site": "CH",
+    "event": "scroll_depth",
+    "dims": "pagePath,customEvent:percent",
+    "start": "2026-11-01",
+    "end": "2026-11-15",
+    "limit": "2000",
+    "slug": "write-scroll"
+  },
+  "start": "2026-11-01",
+  "end": "2026-11-15"
+}

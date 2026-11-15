@@ -12,12 +12,13 @@ description: Defines modular MDX article skeletons, flexible depth tiers, and mi
 3. 下の **深度ティア** で目標文字数を選ぶ（タイプ別 SKILL が上書きする場合はそちら優先）
 4. **モジュール**を組み合わせて H2 構成案を作る（全部入りにしない）
 5. 文体・温度は [writing-style/SKILL.md](../writing-style/SKILL.md) と **対象記事の既存本文**を参照
+6. タイトル・冒頭・見出しの言葉・節のつなぎは [reader-flow-rules.md](../reader-flow-rules.md) に従う（H2 は5〜8個、冒頭は300字以内、H2 の直下で答えを言う）
 
 ## 深度ティア（柔軟設定）
 
 | ティア | 本文目安（日本語） | 向く記事 | 備考 |
 |--------|-------------------|----------|------|
-| **A 通常** | **2,000字以上**（必須下限） | guide・season・travel・target 残存記事 | 2,000未満はリライト対象。理想は 2,500〜3,500 |
+| **A 通常** | **2,000字以上**（必須下限） | guide・season・travel・target 残存記事 | 2,000未満はリライト対象。理想は 2,500〜3,500。5,000超は理由が要る |
 | **B 充実** | 3,000字以上 | 月次レポート実践パート、旅行ハブ | writing-style のサイト理想に近い |
 | **C ピラー** | 3,000〜5,000+ | `category: points` の単一ポイント記事 | [point-article/SKILL.md](../point-article/SKILL.md) 優先 |
 | **D ハブ・まとめ** | 2,000〜3,500 | 複数ポイント紹介・ターミナル | 子記事へ回遊。各ポイントは短く差別化 |
@@ -30,7 +31,7 @@ description: Defines modular MDX article skeletons, flexible depth tiers, and mi
 
 | 要素 | ポイント単体（例: gardenpark） | ポイントまとめ（例: family-car-points） | ガイド・釣法（例: ajing-guide） |
 |------|-------------------------------|----------------------------------------|--------------------------------|
-| 冒頭 | 「釣！浜名湖」へようこそ + ポイントの核心 | 読者の悩み（家族・車等）→ 選定基準 | 結論・流行・浜名湖固有の一言 |
+| 冒頭 | 読者の場面か問い → ポイントの核心（あいさつから始めない） | 読者の悩み（家族・車等）→ 選定基準 | 読者の問い → 結論・浜名湖固有の一言 |
 | 一人称 | 私（さしし）／私たち | 私（さしし） | 私 or 本記事では（既存に合わせる） |
 | 語尾 | です・ます。「〜してみてください」可 | 短い段落 + 各H2が1ポイント | 断言 + 理由。季節は H3 分割 |
 | 強調 | `<strong>` のみ、KW・地名 | 選定理由・差別化ワード | 技法名・シーズン名 |
@@ -45,7 +46,7 @@ description: Defines modular MDX article skeletons, flexible depth tiers, and mi
 
 | ID | モジュール名 | 役割 | 目安文字数 |
 |----|-------------|------|------------|
-| M0 | リード（H2なし） | 検索意図への即答・歓迎 | 150〜350 |
+| M0 | リード（H2なし） | 読者の場面か問い → 答え → 分かること。カードと大きな表は置かない | 150〜300（上限500） |
 | M1 | 結論・答え（H2） | SXO：最初に答え | 200〜400 |
 | M2 | 前提・定義 | 用語・浜名湖限定の注意 | 200〜500 |
 | M3 | 核心解説 | 理由・地形・時期 | 400〜800 × n |
@@ -53,7 +54,7 @@ description: Defines modular MDX article skeletons, flexible depth tiers, and mi
 | M5 | 道具・タックル | TackleCard（guide 等。ポイント記事は M5 を独立させず、必要が生まれる節に分散） | 各カード直前に誘導文（[affiliate-placement-rules.md](../affiliate-placement-rules.md)） |
 | M6 | エリア・ポイント | BlogCard / Map | 差別化文 + カード |
 | M7 | 安全・マナー | 毒魚・禁止・騒音 | 200〜400 |
-| M8 | まとめ | Callout TIP + IMPORTANT | 200〜400 |
+| M8 | まとめ | Callout TIP + IMPORTANT。次にやること1つで終える | 200〜400 |
 | M9 | 回遊 | 同エリア BlogCard 5本等 | 短い導線文のみ |
 
 ## タイプ別：推奨モジュールの組み合わせ
@@ -110,6 +111,7 @@ slug:
 ## 公開前チェック
 
 - [ ] 深度ティアの下限を満たす
+- [ ] [reader-flow-rules.md](../reader-flow-rules.md) §10 の表を確かめた（タイトル36字以内、冒頭300字以内、H2 5〜8個、H2 の直前がカードで終わっていない）
 - [ ] 1文1段落、`<strong>` のみ
 - [ ] 各 H2 に実質コンテンツ（見出しだけ不可）
 - [ ] BlogCard / TackleCard 実在確認（TackleCard は `pnpm run check:tackle`）

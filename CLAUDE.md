@@ -63,6 +63,7 @@ Claude Code セッションでは、下記を用途に応じて読み込む（�
 - **記事リライト**: [.agents/article-rewrite/SKILL.md](.agents/article-rewrite/SKILL.md)
 - **ポイント比較マトリクス**: [.agents/point-article/point-comparison-matrix.md](.agents/point-article/point-comparison-matrix.md)
 - **共通執筆・Markdown**: [.agents/writing-style/SKILL.md](.agents/writing-style/SKILL.md)
+- **読み進めてもらう書き方（タイトル・冒頭・見出し・節のつなぎ・長さ）の正本**: [.agents/reader-flow-rules.md](.agents/reader-flow-rules.md)
 - **記事タイプ（ペルソナ）**
   - Points: [.agents/point-article/SKILL.md](.agents/point-article/SKILL.md) / SEO監査: [.agents/point-article/seo-audit.md](.agents/point-article/seo-audit.md)
   - 深掘り: [.agents/fukabori-article/SKILL.md](.agents/fukabori-article/SKILL.md)

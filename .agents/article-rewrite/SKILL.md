@@ -11,6 +11,7 @@ description: Rewrites existing Cho! Hamanako MDX articles using forAI notes, liv
 - **`> [!forAI]`** の一次情報（さししの意見）を本文へ統合する
 - **既存記事の温度**を維持しつつ、構成を [base-article-structure/SKILL.md](../base-article-structure/SKILL.md) で整える
 - ポイント系は **類似ポイントのマトリクス**で差別化と内部リンクを設計する
+- **最後まで読まれる形に直す**: タイトル・`summary`・冒頭・見出しの言葉・節のつなぎを [reader-flow-rules.md](../reader-flow-rules.md) に合わせる（2026-11-15〜。リライトでは毎回行う）
 
 ## 着手前（必須）
 
@@ -22,6 +23,7 @@ description: Rewrites existing Cho! Hamanako MDX articles using forAI notes, liv
 | 4 | 同 `category` の良記事 1本を読み、温度の基準にする | 例: `gardenpark` / `family-car-points` / `ajing-guide` |
 | 5 | `> [!forAI]` があれば論点リスト化 | [writing-style/SKILL.md](../writing-style/SKILL.md) |
 | 6 | 深度ティア・タイプ別 SKILL | [base-article-structure/SKILL.md](../base-article-structure/SKILL.md)、`*-article/SKILL.md` |
+| 6b | 読み進めてもらう書き方 | [reader-flow-rules.md](../reader-flow-rules.md) |
 | 7 | points まとめ・複数紹介なら **マトリクス** | [point-comparison-matrix.md](../point-article/point-comparison-matrix.md) + `point-matrix.md` |
 
 タスク文脈: `.workspace/.task/task.md`、専用バックログ（`method-guide-rewrite-task.md` 等）
@@ -37,23 +39,25 @@ description: Rewrites existing Cho! Hamanako MDX articles using forAI notes, liv
 3. **温度**: 冒頭パターン・語尾・段落長が基準記事とずれていないか
 4. **事実**: 店名・料金・座標が `.data-set` / 他記事と矛盾していないか
 5. **リンク**: 壊れ・捏造 slug の有無
+6. **読み進めやすさ**（[reader-flow-rules.md](../reader-flow-rules.md) §10 の表で現状を測る）: タイトルの字数、冒頭の字数とカードの有無、H2 の数、分類名だけの H2、H2 直下で答えているか、H2 の直前がカードで終わっていないか
 
 ### Phase 2 — 構成案
 
-- 既存 H2 は **活かす**（URL・アンカー・SEO を考慮）。不足モジュールだけ追加
-- タイトル・`summary`・**最初の H2** を検索意図で一本化（GSC タスク時）
+- 既存 H2 の**役割と順番は活かし、見出しの言葉は問いか答えの形に直す**（reader-flow-rules.md §5）。H2 を変えたらページ内リンクを検索して直す。不足モジュールだけ追加
+- タイトル・`summary`・**最初の H2** を検索意図で一本化する。タイトルは3案を作って第1案を反映し、報告書に書く（指示書に「タイトル: 変えない」とある記事は変えない。`slug` は変えない）
 - ポイントまとめ: マトリクスでグルーピングした **H2 案**を先に示す（ユーザー承認があればそれに従う）
 
 ### Phase 3 — 執筆
 
 - [writing-style/SKILL.md](../writing-style/SKILL.md): 私（さしし）、1文1段落、`<strong>`
 - forAI の各項目 → 該当 H2・Callout へ分散（一箇所に詰め込まない）
-- **追記優先**: 既存の良い段落は削らず、理由・現場・季節・マナーを足す
+- **足す前に削る**: 同じ内容のくり返し・一般論・前置き・あいさつは削ってよい。事実（料金・場所・規則・筆者の記録）と既存の良い段落は削らず、理由・現場・季節・マナーを足す。5,000字を超えるなら理由を報告書に書く
 - 内部リンク追加時は `manifest.json` → `blog-card-index.md` で slug 確認
 
 ### Phase 4 — 仕上げ
 
 - [ ] 深度下限（通常 **2,000+**、points ピラー **3,000+**）
+- [ ] [reader-flow-rules.md](../reader-flow-rules.md) §10 の表を報告書に書いた
 - [ ] `upDate` を更新
 - [ ] `> [!forAI]` **全削除**
 - [ ] `draft: false` なら forAI 残存なし

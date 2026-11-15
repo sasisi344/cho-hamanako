@@ -27,6 +27,7 @@
 | 作業 | 読むもの |
 |---|---|
 | 文体・語り手・筆者の経緯（正本） | `.agents/writing-style/SKILL.md`、`.claude/skills/cho-hamanako-writing-voice/SKILL.md` |
+| タイトル・冒頭・見出し・節のつなぎ（新規・リライトとも毎回） | `.agents/reader-flow-rules.md` |
 | 記事の構成 | `.agents/base-article-structure/SKILL.md` と、記事の種類ごとの `.agents/<種類>-article/`（point・target・season・guide・travel・fukabori） |
 | 新規記事 | `.claude/skills/cho-hamanako-article-creation/SKILL.md` |
 | リライト | `.claude/skills/cho-hamanako-article-rewrite/SKILL.md`、`.agents/article-rewrite/` |

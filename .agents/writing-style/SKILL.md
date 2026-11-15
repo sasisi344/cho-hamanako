@@ -33,11 +33,15 @@ description: "浜名湖Webサイト全体の執筆スタイル・読者ペルソ
 
 **本文のボリューム（サイト共通の目安）**
 
-- **通常記事**（guide / season / travel / theory 等）: 本文は**2,000文字以上を必須下限**とする。理想は 2,500〜3,500 字。モジュール構成は [base-article-structure/SKILL.md](../base-article-structure/SKILL.md) を参照。
+- **通常記事**（guide / season / travel / theory 等）: 本文は**2,000文字以上を必須下限**とする。理想は 2,500〜3,500 字。5,000字を超えるなら理由が要る（[reader-flow-rules.md](../reader-flow-rules.md) §7）。モジュール構成は [base-article-structure/SKILL.md](../base-article-structure/SKILL.md) を参照。
 - **ポイント単体ピラー**（`category: points` の1ポイント記事）: **3,000文字以上**（[point-article/SKILL.md](../point-article/SKILL.md) 優先）。
 - **まとめ・複数ポイント紹介**: 全体 2,000字以上。各ポイントは差別化中心（[point-comparison-matrix.md](../point-article/point-comparison-matrix.md)）。
 - 意図的に短くする場合（速報・補足ノート等）は、チーム内で理由を共有できるよう冒頭か要約で明示する。
 - 深掘りなど、タイプ別 SKILL で**より大きな最低文字数**がある場合は、**タイプ別を優先**する。
+
+## 🧭 読み進めてもらう書き方（2026-11-15〜）
+
+タイトル・`summary`・冒頭・見出しの言葉・節のつなぎ・長さの上限・人の心の動きを使う書き方は、正本 [reader-flow-rules.md](../reader-flow-rules.md) に従う。新規記事とリライトの両方で、書く前に必ず開く。この文書と食い違う場合は、文体と記法（一人称・`<strong>`・1文1段落）はこの文書、それ以外は reader-flow-rules.md を優先する。
 
 ## ✒️ 文章構成とボリューム（方向性）
 
@@ -48,7 +52,7 @@ description: "浜名湖Webサイト全体の執筆スタイル・読者ペルソ
 
 ### ✅ 記事の「体温」
 
-- 冒頭と結びには、読者への熱いメッセージを一言添えて、血の通った文章にしてください。体温は**専門家としての判断**（「私ならこの潮で入ります」「ここは足場を優先して選びます」）で出す。
+- 冒頭は読者の場面か問いから始め、結びは次にやること1つで終える（[reader-flow-rules.md](../reader-flow-rules.md) §4・§8）。あいさつや励ましの言葉だけの文は置かない。体温は**専門家としての判断**（「私ならこの潮で入ります」「ここは足場を優先して選びます」）で出す。
 - **釣行の感想・エピソードは、ポイント記事（`category: points`）に「思い出」の範囲でだけ入れる**（2026-10-27〜）。ほかの記事タイプには入れない。
   - 素材は [point-memories.md](../../.workspace/.data-set/point-memories.md)（ポイント別の思い出メモ）か、記事の `> [!forAI]` に筆者が書いたものだけ。**AI が釣行・釣果・日付・同行者を創作しない。**
   - 素材がないときは本文に書かず、該当箇所に `{/* MEMORY_NOTE: 候補=〇〇の季節の思い出 / 筆者が point-memories.md に記入 */}` を残す。`draft: false` にする前に、筆者が記入するか削除する。
