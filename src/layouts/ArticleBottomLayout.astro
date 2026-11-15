@@ -91,15 +91,16 @@ const isBlog = collection === "blog"
           targets.push(lastIndex);
         }
         for (const i of targets) {
+          const slot = i === lastIndex ? ADSENSE.IN_ARTICLE_END_SLOT : ADSENSE.IN_ARTICLE_MID_SLOT;
           const adContainer = document.createElement("div");
-          adContainer.className = "my-8 flex justify-center adsense-in-article";
+          adContainer.className = "my-8 adsense-in-article";
           adContainer.innerHTML = `
             <ins class="adsbygoogle"
-                 style="display:block;width:100%"
+                 style="display:block; text-align:center;"
+                 data-ad-layout="in-article"
+                 data-ad-format="fluid"
                  data-ad-client="${ADSENSE.CLIENT_ID}"
-                 data-ad-slot="${ADSENSE.IN_ARTICLE_SLOT}"
-                 data-ad-format="auto"
-                 data-full-width-responsive="true"></ins>
+                 data-ad-slot="${slot}"></ins>
           `;
           h2s[i].insertAdjacentElement("beforebegin", adContainer);
           (window.adsbygoogle = window.adsbygoogle || []).push({});
