@@ -1,0 +1,16 @@
+{
+  "fetchedAt": "2026-11-15T13:58:44.165Z",
+  "site": "CH",
+  "command": "gsc",
+  "args": {
+    "site": "CH",
+    "start": "2026-10-06",
+    "end": "2026-11-11",
+    "dims": "page,query",
+    "page": "/points/nagisaen/",
+    "limit": "40",
+    "slug": "ch3-pq-nagisaen"
+  },
+  "start": "2026-10-06",
+  "end": "2026-11-11"
+}
