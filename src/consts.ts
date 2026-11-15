@@ -66,5 +66,7 @@ export const SOCIALS: Socials = [
 export const ADSENSE = {
   CLIENT_ID: "ca-pub-9798094072282530",
   RECTANGLE_SLOT: "5678675074",
+  // 記事の途中・マップ用。専用の広告ユニットを作るまでは RECTANGLE と同じ枠を使う（hq:H-41）
+  IN_ARTICLE_SLOT: "5678675074",
   MULTIPLEX_SLOT: "9983134206",
 }

@@ -4,6 +4,7 @@ import PageLayout from "@layouts/PageLayout.astro";
 import TopLayout from "@layouts/TopLayout.astro";
 import BottomLayout from "@layouts/BottomLayout.astro";
 import { blogPostHref } from "@lib/paths";
+import { ADSENSE } from "@consts";
 
 // 釣果ポイント記事をすべて取得
 const allPosts = await getCollection("blog");
@@ -67,7 +68,7 @@ const areaGuides = AREA_GUIDES.flatMap(g => {
 const jsonPoints = JSON.stringify(mapPoints);
 ---
 
-<PageLayout title="浜名湖の釣り場マップ｜水深・地形つきエリア別ポイント検索" description="浜名湖の釣り場マップ。表浜名湖・中浜名湖・奥浜名湖のエリア別、1月〜12月の季節別に釣りポイントを絞り込めます。各ポイントの詳細記事で水深・地形・駐車場も確認できます。">
+<PageLayout title="浜名湖の釣り場マップ｜水深・地形つきエリア別ポイント検索" description="浜名湖の釣り場マップ。表浜名湖・中浜名湖・奥浜名湖のエリア別、1月〜12月の季節別に釣りポイントを絞り込めます。各ポイントの詳細記事で水深・地形・駐車場も確認できます。" hasAds={true}>
   <TopLayout>
     <div class="container">
       <h1>浜名湖の釣り場マップ</h1>
@@ -126,6 +127,16 @@ const jsonPoints = JSON.stringify(mapPoints);
               </section>
             ))}
         </div>
+    </div>
+
+    <div class="mt-12 flex justify-center">
+       <ins class="adsbygoogle"
+            style="display:block;width:100%"
+            data-ad-client={ADSENSE.CLIENT_ID}
+            data-ad-slot={ADSENSE.IN_ARTICLE_SLOT}
+            data-ad-format="auto"
+            data-full-width-responsive="true"></ins>
+       <script is:inline>(adsbygoogle = window.adsbygoogle || []).push({});</script>
     </div>
 
     <div class="mt-12 animate">
