@@ -1,0 +1,16 @@
+{
+  "fetchedAt": "2026-11-16T23:10:48.410Z",
+  "site": "CH",
+  "command": "gsc",
+  "args": {
+    "site": "CH",
+    "start": "2026-10-06",
+    "end": "2026-11-13",
+    "dims": "page,query",
+    "page": "family-car-points",
+    "slug": "h45-pq-family-car-points",
+    "limit": "60"
+  },
+  "start": "2026-10-06",
+  "end": "2026-11-13"
+}
