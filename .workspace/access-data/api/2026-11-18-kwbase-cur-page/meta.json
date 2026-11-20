@@ -1,0 +1,15 @@
+{
+  "fetchedAt": "2026-11-18T22:49:10.712Z",
+  "site": "CH",
+  "command": "gsc",
+  "args": {
+    "site": "CH",
+    "start": "2026-10-20",
+    "end": "2026-11-16",
+    "dims": "page",
+    "slug": "kwbase-cur-page",
+    "limit": "25000"
+  },
+  "start": "2026-10-20",
+  "end": "2026-11-16"
+}

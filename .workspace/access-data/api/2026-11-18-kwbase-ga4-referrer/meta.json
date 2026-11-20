@@ -1,0 +1,17 @@
+{
+  "fetchedAt": "2026-11-18T22:49:38.583Z",
+  "site": "CH",
+  "command": "ga4",
+  "args": {
+    "site": "CH",
+    "start": "2026-10-20",
+    "end": "2026-11-16",
+    "dims": "pageReferrer,pagePath",
+    "metrics": "screenPageViews,sessions",
+    "page": "/",
+    "slug": "kwbase-ga4-referrer",
+    "limit": "5000"
+  },
+  "start": "2026-10-20",
+  "end": "2026-11-16"
+}

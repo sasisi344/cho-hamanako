@@ -1,0 +1,16 @@
+{
+  "fetchedAt": "2026-11-18T22:49:14.331Z",
+  "site": "CH",
+  "command": "gsc",
+  "args": {
+    "site": "CH",
+    "start": "2026-09-22",
+    "end": "2026-10-19",
+    "dims": "page,query",
+    "query": "釣り",
+    "slug": "kwbase-prev-pq",
+    "limit": "25000"
+  },
+  "start": "2026-09-22",
+  "end": "2026-10-19"
+}

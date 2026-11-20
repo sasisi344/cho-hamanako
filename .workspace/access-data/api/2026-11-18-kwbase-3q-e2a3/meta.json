@@ -1,0 +1,16 @@
+{
+  "fetchedAt": "2026-11-18T22:49:26.772Z",
+  "site": "CH",
+  "command": "gsc",
+  "args": {
+    "site": "CH",
+    "start": "2026-09-22",
+    "end": "2026-11-16",
+    "dims": "date,device,country,page",
+    "query": "浜名湖 釣り",
+    "slug": "kwbase-3q-e2a3",
+    "limit": "25000"
+  },
+  "start": "2026-09-22",
+  "end": "2026-11-16"
+}

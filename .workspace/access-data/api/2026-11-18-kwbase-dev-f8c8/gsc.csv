@@ -1,0 +1,11 @@
+﻿query,device,clicks,impressions,ctr_pct,position
+浜名湖釣り禁止エリア,MOBILE,2,6,33.33,1.7
+浜名湖釣り場,MOBILE,1,1,100,10
+浜名湖釣り禁止,DESKTOP,1,1,100,1
+浜名湖釣り禁止,MOBILE,1,1,100,1
+浜名湖釣り,DESKTOP,0,2,0,17
+浜名湖釣り,MOBILE,0,7,0,17.3
+浜名湖釣りスポット,MOBILE,0,4,0,14.5
+浜名湖釣りポイント,MOBILE,0,7,0,6.6
+浜名湖釣り情報,DESKTOP,0,1,0,8
+浜名湖釣り情報,MOBILE,0,1,0,4
