@@ -1,0 +1,11 @@
+id: common/daiwa-coolline-s600x
+name: ダイワ(DAIWA) クーラーボックス クールライン S600X 6L（投入口付き）
+link: https://www.amazon.co.jp/dp/B004OU8ZKO?tag=344chohama-22
+image: https://m.media-amazon.com/images/I/811cr6KDv7L.jpg
+description: 容量6L・自重1.5kgの小型クーラー（断熱材はスーパースチロール）。外寸23×31×23cm、内寸15×23×17cm。上ぶたの小さい投入口から出し入れできるので、ふたを大きく開けずに済み、冷気が逃げにくい。エサを冷やしておくキス釣りなどのエサ釣りや、夏の飲み物入れに向く。容量は8Lもある。
+targetFish: ["キス", "ハゼ", "アジ", "全魚種"]
+methods: ["エサ釣り", "ちょい投げ", "サビキ釣り"]
+categories: ["クーラーボックス"]
+brand: ダイワ
+isRecommended: true
+scenes: ["family"]

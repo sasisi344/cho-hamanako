@@ -1,0 +1,11 @@
+id: common/shimano-game-vest-vf278z
+name: シマノ(SHIMANO) ゲームベスト VF-278Z（固型式フローティングベスト）
+link: https://www.amazon.co.jp/dp/B0H8D21SVF?tag=344chohama-22
+image: https://m.media-amazon.com/images/I/71FCBmZZW2L.jpg
+description: 浮力材を入れた固型式のフローティングベスト（L2浮力）。前モデルより10%以上軽く、胸のポーチにスマホが入る。ルアーケースや仕掛けの小物も入るので、堤防でもウェーディングでも持ち物をベストにまとめられる。サイズはフリー。
+targetFish: ["全魚種"]
+methods: ["ルアーフィッシング", "サーフ", "ウェーディング", "エサ釣り"]
+categories: ["安全装備"]
+brand: シマノ
+isRecommended: true
+scenes: ["safety", "wading"]

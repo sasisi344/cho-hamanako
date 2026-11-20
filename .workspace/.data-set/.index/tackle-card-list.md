@@ -4,7 +4,7 @@
 > 正本は `src/content/affiliates/`。記事では「ID」列の値をそのまま `<TackleCard id="..." />` に書く。
 > 配置ルール: `.agents/affiliate-placement-rules.md` ／ 存在確認: `pnpm run check:tackle`
 
-- 登録数: 240 件（記事で未使用: 59 件）
+- 登録数: 246 件（記事で未使用: 65 件）
 - 表示: card = 商品カード / banner = バナー / text = 文中テキストリンク
 - 場面（scenes）: wading・night・car・family・safety・boat・bait・stay・activity・rental-car
 
@@ -24,7 +24,7 @@
 | `aji-saba-sappa/sabiki-starter-set` | つり具TEN サビキ釣り入門 完全セット | セット | アジ・サバ・サッパ | family |  | card | 5 |
 | `aji-saba-sappa/shimano-holiday-iso-450pts` | シマノ(SHIMANO) ホリデー 磯 450PTS | ロッド | アジ・サバ・サッパ・クロダイ・キビレ |  |  | card | 3 |
 
-## common（40）
+## common（45）
 
 | ID | 商品名 | 種類 | 対象魚 | 場面 | エリア | 表示 | 使用数 |
 |---|---|---|---|---|---|---|---:|
@@ -35,6 +35,7 @@
 | `common/captainstag-inflatable-kayak` | キャプテンスタッグ(CAPTAIN STAG) インフレータブルカヤック カヌー US-1003 | ボート・SUP | 全魚種 | boat |  | card | 1 |
 | `common/daiichiseiko-kousoku-recycler` | 第一精工 高速リサイクラー2.0 | メンテナンス・小物 | 全魚種 |  |  | card | 0 |
 | `common/daiwa-coolline-alpha3-gu2500` | ダイワ(DAIWA) クーラーボックス クールラインα3 GU2500 25L | クーラーボックス | 全魚種 | car・family |  | card | 0 |
+| `common/daiwa-coolline-s600x` | ダイワ(DAIWA) クーラーボックス クールライン S600X 6L（投入口付き） | クーラーボックス | キス・ハゼ・アジ・全魚種 | family |  | card | 0 |
 | `common/daiwa-hg-shoulder-bag` | ダイワ (DAIWA) HGショルダーバッグLT (C) | 収納・バッグ | クロダイ・キビレ・シーバス・ハゼ |  |  | card | 0 |
 | `common/daiwa-legalis` | ダイワ(DAIWA) スピニングリール 23レガリス LT3000-CXH | リール | シーバス・クロダイ・マゴチ |  |  | card | 1 |
 | `common/daiwa-liberty-club-isokaze` | ダイワ リバティクラブ 磯風 | ロッド | クロダイ・メジナ・キビレ・アジ・サバ |  |  | card | 3 |
@@ -43,6 +44,7 @@
 | `common/daiwa-mobile-thermometer` | ダイワ 水温チェッカー | common | 全魚種 |  |  | card | 1 |
 | `common/daiwa-polarize-dn-8025` | ダイワ (DAIWA) 偏光グラス DN-8025 | アイウェア | クロダイ・キビレ・シーバス |  |  | card | 0 |
 | `common/eenour-car-refrigerator` | EENOUR 車内冷蔵庫 | 車中泊グッズ |  | car |  | card | 0 |
+| `common/finejapan-junior-floating-vest-fv6116` | ファインジャパン ジュニアフローティングベスト FV-6116（子ども用） | 安全装備 | 全魚種 | safety・family |  | card | 0 |
 | `common/fkstyle-2hp-outboard` | Fkstyle 空冷式2ストローク 2馬力船外機モーター | ボート・SUP | 全魚種 | boat |  | card | 0 |
 | `common/gentos-headlight-cb-300d` | ジェントス LEDヘッドライト CB-300D | その他 | 全魚種 | night・safety |  | card | 9 |
 | `common/gymax-floattube` | GYMAX 釣り用フローター | ボート・SUP | 全魚種 | boat |  | card | 0 |
@@ -59,8 +61,11 @@
 | `common/meihou-vs-3010ndm` | メイホウ (MEIHO) バーサス VS-3010NDM | 収納・ケース | 全魚種 |  |  | card | 2 |
 | `common/oakley-frogskins-polarized` | オークリー (Oakley) Frogskins (偏光モデル) | アイウェア | クロダイ・キビレ・シーバス |  |  | card | 0 |
 | `common/onlystyle-shachuhaku-mat` | オンリースタイル 車中泊専用マット | 車中泊グッズ |  | car |  | card | 0 |
+| `common/ori-blue-larcal-landing-net-set-600` | おり釣具 ランディングネット3点セット BLUE LARCAL 600（玉の柄6m＋ネットL＋タモジョイント） | 小物 | クロダイ・シーバス・キビレ・全魚種 | wading |  | card | 0 |
 | `common/sanka-cooler-6bl` | サンカ ワンブッシュで開閉できるクーラー 6BL | クーラーボックス | ハゼ・キス | car・family |  | card | 2 |
+| `common/sanlike-carbon-tamo-net-3m` | SANLIKE サンライク タモ網 カーボン製 小継玉の柄 3m（オーバル型玉枠） | 小物 | クロダイ・キビレ・カレイ・全魚種 | wading |  | card | 0 |
 | `common/seaplus-fishing-sup` | SEAPLUS サップ スタンドアップパドルボード 釣りフルセット | ボート・SUP | 全魚種 | boat |  | card | 2 |
+| `common/shimano-game-vest-vf278z` | シマノ(SHIMANO) ゲームベスト VF-278Z（固型式フローティングベスト） | 安全装備 | 全魚種 | safety・wading |  | card | 0 |
 | `common/shimano-holiday-iso` | シマノ ホリデー磯 | ロッド | アジ・サバ・クロダイ・キビレ |  |  | card | 3 |
 | `common/shimano-lure-tackle-set` | シマノで揃えるルアーマチック入門セット（エギングセット）PE糸巻き済・エギ8個付 | タックルセット・ロッド・リール | アオリイカ・コウイカ・シーバス・クロダイ・キビレ・マゴチ | family |  | card | 1 |
 | `common/shimano-polarize-hg-066n` | シマノ (SHIMANO) 撥水ハーフフィッシンググラスPC HG-066N | アイウェア | 全魚種 |  |  | card | 1 |
@@ -263,7 +268,7 @@
 | `sayori/owner-sokkou` | オーナー(OWNER) 釣り日和 速攻サヨリ仕掛 3-0.8-2 | 仕掛け | サヨリ |  |  | card | 5 |
 | `sayori/ss-2-ex` | 工房浦安 スーパーサヨリン2EX 夜光 M 黄プロペラ | 仕掛け・ウキ | サヨリ |  |  | card | 4 |
 
-## seabass（18）
+## seabass（19）
 
 | ID | 商品名 | 種類 | 対象魚 | 場面 | エリア | 表示 | 使用数 |
 |---|---|---|---|---|---|---|---:|
@@ -280,6 +285,7 @@
 | `seabass/little-presents-wading-staff-ac-184` | リトルプレゼンツ ウェーディングスタッフ AC-184 | その他 | 全魚種 | wading・safety |  | card | 2 |
 | `seabass/pazdesign-feel-120` | パズデザイン(Pazdesign) フィール 120 (feel 120) | ルアー・シンキングペンシル | シーバス・クロダイ |  |  | card | 4 |
 | `seabass/pickup-nogare-120f` | ピックアップ(Pick Up) ノガレ120F | ルアー・フローティング | シーバス |  |  | card | 8 |
+| `seabass/prox-all-in-one-salt-se` | プロックス(PROX) オールインワンソルトSE ランディングシャフトセット（AIOSS600） | 小物 | シーバス・クロダイ・全魚種 | wading |  | card | 0 |
 | `seabass/pykes-peak-wader-summer` | PYKES PEAK 夏用ウェーダー ラジアルソール | その他 | シーバス・クロダイ | wading |  | card | 8 |
 | `seabass/sasuke-sf75` | アイマ(ima) サスケ(sasuke) SF-75 | ルアー・ミノー | シーバス・クロダイ |  |  | card | 5 |
 | `seabass/shimano-encounter-s96m` | シマノ エンカウンター S96M | ロッド | シーバス・クロダイ・ヒラメ |  |  | card | 5 |

@@ -1,0 +1,11 @@
+id: common/ori-blue-larcal-landing-net-set-600
+name: おり釣具 ランディングネット3点セット BLUE LARCAL 600（玉の柄6m＋ネットL＋タモジョイント）
+link: https://www.amazon.co.jp/dp/B07PR3JSY5?tag=344chohama-22
+image: https://m.media-amazon.com/images/I/71056JayRIL.jpg
+description: 玉の柄・網・タモジョイントの3点セット。柄は全長600cm・仕舞寸法66.5cm・11本継・自重745g（カーボン65%）。網のLサイズは約63×50cmの縦長の楕円枠で、クロダイだけでなくシーバスのような体の長い魚も入れやすい。ジョイントで折りたためるので、ベストの背中やバッグに付けて持ち歩ける。5m以上あれば、たいていの堤防の高さに届く。
+targetFish: ["クロダイ", "シーバス", "キビレ", "全魚種"]
+methods: ["エサ釣り", "ウキ釣り", "ルアーフィッシング"]
+categories: ["小物"]
+brand: おり釣具
+isRecommended: true
+scenes: ["wading"]
