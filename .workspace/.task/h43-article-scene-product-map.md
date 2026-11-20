@@ -136,5 +136,5 @@ Amazon は自動での取得を 503 で拒むため、販売ページはブラ�
 1. ~~ユーザーが §6 に答える~~（11/20 済み）。③④は yaml を作った（11/20、`check:tackle` OK）
 2. ~~①②の型番決定と yaml~~（11/20 済み。ユーザー選定、販売ページで確認）。⑤玉網3本と⑥小型クーラーも yaml を作った（11/21）
 3. §5 のスキーマ変更と、上位の竿・リールの `spec` 入力（CC か Codex のサイト改修）
-4. §2・§3 の記事にカードを置く（書き手のサブエージェント。指示書は CC。ポイント記事は5段の型、上限3枚。§6 の回答を一次情報として渡す）。**CH-KW（hq:H-48）と同時進行**（[ch-kw-revenue-design.md](ch-kw-revenue-design.md)）: `hamanako-fishing-rules-and-manners` と `family-car-points` は 11/27 の `feature/main-kw-entry` でまとめて置き、ここでは先に触らない。それ以外は PV の多い順に、`araibenten-umiduripark`（①）→ `hamanako-fishing-rules-and-manners`（②③）→ `photonics-under`・`imagiremaisakatei`・`sunaageba`（②⑤）→ 家族・車のハブ（①③）→ レンタルボート4本（④）。商品はすべてそろった
+4. **指示書 CH-6（2026-11-21 作成）**: `.workspace/codex/orders/2026-11-21-CH-6.md`（新居弁天・砂揚げ場・マイマイ・舞阪堤・ボート3本・手動膨張式の差し替え4本の計11本、11/23〜26）。§2・§3 の記事にカードを置く（書き手のサブエージェント。指示書は CC。ポイント記事は5段の型、上限3枚。§6 の回答を一次情報として渡す）。**CH-KW（hq:H-48）と同時進行**（[ch-kw-revenue-design.md](ch-kw-revenue-design.md)）: `hamanako-fishing-rules-and-manners` と `family-car-points` は 11/27 の `feature/main-kw-entry` でまとめて置き、ここでは先に触らない。それ以外は PV の多い順に、`araibenten-umiduripark`（①）→ `hamanako-fishing-rules-and-manners`（②③）→ `photonics-under`・`imagiremaisakatei`・`sunaageba`（②⑤）→ 家族・車のハブ（①③）→ レンタルボート4本（④）。商品はすべてそろった
 5. 効果は `affiliate_view` に対するクリック率を公開の前後で比べる（`schedule-task.md` に載せる）
