@@ -1,0 +1,14 @@
+{
+  "fetchedAt": "2026-11-19T23:30:10.487Z",
+  "site": "CH",
+  "command": "gsc",
+  "args": {
+    "site": "CH",
+    "start": "2025-11-15",
+    "end": "2026-02-28",
+    "dims": "page,query",
+    "out": "C:/Users/sasis/344blog/cho-hamanako/.workspace/access-data/api/2026-11-20-h44-ctr/lywinter-page-query"
+  },
+  "start": "2025-11-15",
+  "end": "2026-02-28"
+}

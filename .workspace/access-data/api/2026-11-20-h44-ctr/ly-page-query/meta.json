@@ -1,0 +1,14 @@
+{
+  "fetchedAt": "2026-11-19T23:19:52.832Z",
+  "site": "CH",
+  "command": "gsc",
+  "args": {
+    "site": "CH",
+    "start": "2025-10-01",
+    "end": "2025-11-17",
+    "dims": "page,query",
+    "out": "C:/Users/sasis/344blog/cho-hamanako/.workspace/access-data/api/2026-11-20-h44-ctr/ly-page-query"
+  },
+  "start": "2025-10-01",
+  "end": "2025-11-17"
+}
