@@ -1,0 +1,11 @@
+id: common/daiwa-coolline-alpha3-gu2500
+name: ダイワ(DAIWA) クーラーボックス クールラインα3 GU2500 25L
+link: https://www.amazon.co.jp/dp/B09RQHWTS5?tag=344chohama-22
+image: https://m.media-amazon.com/images/I/41XVzHEVpiL.jpg
+description: 容量25L・自重4.6kgの発泡ウレタンのクーラー。外寸31×58×33.5cm、内寸22×43×25.5cm。両開きの上フタで、座って使える。車で行く釣りで、家族の飲み物と釣った魚をまとめて冷やせる大きさ。
+targetFish: ["全魚種"]
+methods: ["エサ釣り", "サビキ釣り", "ちょい投げ", "ルアーフィッシング"]
+categories: ["クーラーボックス"]
+brand: ダイワ
+isRecommended: true
+scenes: ["car", "family"]
