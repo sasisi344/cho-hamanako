@@ -121,6 +121,7 @@ description: "浜名湖Webサイト全体の執筆スタイル・読者ペルソ
 - `slug` prop にはリンク先記事のフロントマターに定義された **`slug:` フィールドの値**をそのまま渡す。ファイルパスではない。
 - 例: `src/content/blog/target/seabass/tactics/index.mdx` に `slug: seabass-tactics` とあれば → `<BlogCard slug="seabass-tactics" />`
 - **【捏造禁止】**: `.workspace/` 配下のインデックスファイルまたは実在するファイルの frontmatter を必ず確認すること。推測で書かない。
+- 書いたら `pnpm run check:links` で確かめる。BlogCard・本文のリンク・地図データの `url` に行き先のないものがあると、ビルドが止まり公開されない（2026-11-25〜）。
 
 **URL の自動解決ルール**（BlogCard 内部ロジック）:
 

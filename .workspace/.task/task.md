@@ -73,7 +73,8 @@ Codex の提案 [_inbox/2026-11-18-main-keyword-lp-improvement-tasks.md](../_inb
 - [ ] キビレの `kibire-cooking`（1,836表示・6.1位・本文の被リンク1本）へのリンク: 11/10 にカードを変えたので **12/08 以降**に `kurodai/cooking` の「キビレ（キチヌ）の美味しい食べ方」の節から足す
 - [x] 2026-11-24 `target/kibire/index.mdx` の「夏〜秋の個体は刺身でも美味しい」を、`kibire-cooking` に合わせて「刺身はすすめない」に直した
 - [x] 2026-11-25 **リンク切れの BlogCard 14個を修正**: 読者の画面に赤い「not found」が出ていた。`cooking/autumn-hamanako-recipe`（6個: 86・88・126・169・181・183行）、`cooking/winter-hamanako-recipe`（6個: 94・123・167・191・193・195行）、`target/tako/season/june-tako-opening`（2個: 188・210行）。slug にフォルダのパスを書いたのが原因。ハゼの教科書は記事がないので `haze-beginner` に送った
-- [ ] 再発防止の判断: ビルドの前に BlogCard の slug を検査する（`check-tackle-ids.mjs` と同じ仕組み）か。`scripts/`・`package.json` の変更なので承認が要る
+- [x] 2026-11-25 再発防止: `scripts/check-internal-links.mjs` をビルドの前後に入れた（ユーザー承認）。前＝記事の BlogCard・本文のリンク・地図データの `url`（行番号つき）、後＝`dist` の全ページの `<a href>`。手元では `pnpm run check:links`
+- [x] 2026-11-25 検査で見つかった地図のリンク切れ22個を修正（`gardenpark`・`miyakodagawa`・`syounaiko`・`nakanoshima`。`/points/naka/…` などの旧階層の URL で、本番は404だった）
 - [x] 2026-11-25 乙女園公園の駐車台数を、`otomeen`（約20台）・`kangetsuen`（30台以上）とも「20台以上」にそろえた。公式の台数の案内はなく、筆者の目測（ユーザー回答 11/25）
 
 ## 🟡 計測確認: `affiliate_click`
