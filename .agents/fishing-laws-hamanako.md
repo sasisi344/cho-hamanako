@@ -30,6 +30,8 @@
 
 > [!CAUTION]
 > 「今切口から左右1,400mは陸も含めて釣り禁止」のように、<strong>船の遊漁禁止水域を陸の規制と混同して書かない</strong>。陸で禁止されているのは導流堤（立入禁止）と今切大橋より南の突堤（進入禁止）。舞阪堤など陸のその他の場所は釣りが禁止されていないが、激流と巨大テトラで危険な場所であることは必ず添える。
+>
+> <strong>導流堤は釣りの説明に使わない</strong>（2026-11-24 ユーザー決定）。導流堤は今切口の特徴で、魚釣りの説明には要らない。ポイント名・見出し・狙い目・攻め方・釣果の場所として挙げない。書いてよいのは、立入禁止や船の遊漁禁止水域の範囲などの規制の説明だけ。
 
 詳細は [hamanako-fishing-rules-and-manners](../src/content/blog/guide/beginner/hamanako-fishing-rules-and-manners/index.mdx) を参照（記事側の記述は 2026-11-03 時点で上の表に未対応。[imagire-restriction-audit.md](../.workspace/.task/imagire-restriction-audit.md)）。
 

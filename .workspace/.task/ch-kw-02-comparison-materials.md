@@ -185,8 +185,10 @@
 | U6 | 弁天島海浜公園は、赤鳥居が真正面に見える護岸に観光船が停泊する箇所がある。船の出入りを邪魔しないため、釣りは禁止（として扱う）のがよい | 「観光船が停泊する箇所では釣りをしない」と書く。筆者の判断であり、公的な禁止区域とその範囲を確認したものではないので「条例で禁止」「公式に禁止」とは書かない。ルール記事の「護岸の一部は釣り禁止」もこの区別で直す |
 | U7 | 7〜8月は砂浜部分が海水浴場になるため、日中の釣りは実質あきらめたほうがよい。夜釣りならふつうにできる | 夏の材料で使う。海水浴場の開設期間は年ごとに確かめる（2026年は 07-19〜08-31。二次情報アットエス、2026-06-30 現在） |
 | U8 | 四季ガイドの導流堤の記述は直してよい | 直した（下） |
+| U9 | 導流堤は今切口の特徴であって、魚釣りの説明には必要ない | 釣り場・狙い目・攻め方として挙げない。規制（立入禁止・船の遊漁禁止水域）の説明は残す。夏・秋の材料でも使わない |
 
 - 弁天島海浜公園の扱い：季節案の主案にはしない（冬・春の主案は新居弁天のまま）。U6 の場所を避け、U7 の条件を添えれば、別案として載せられる。駐車場の台数の食い違いは残っている。
-- 直した記事（ブランチ `fix/season-facts-1124`。公開はユーザーの承認後）：四季ガイド `season/seasonal-patterns-guide`（導流堤を外し、立入禁止を明記）、`may-fishing`・`may-fishing-top5`・`spring-hanami-karei`（一人称の冒頭を削除）。
-- 同じ導流堤の問題が残る記事（未修正）：`target/eging/points`（ポイント1が「舞阪側導流堤」で、先端から投げる案内。最優先）、`target/kawahagi/points`（ポイント2「今切口・導流堤周辺」）、`points/fukabori/sayori-fukabori`（見出し「網干場・導流堤周辺」）、`guide/theory/seasonal-patterns-guide`（秋の狙い目エリア）、`guide/theory/structure-theory`（「河口付近の導流堤」。今切口のことか要確認）、`season/weekly-2026-03-29`（「各導流堤でキャッチ」）。`points/omote/nagisaen` の「西側導流堤」は別の構造物の可能性があり、要確認。
+- 直した記事（ブランチ `fix/season-facts-1124`。公開はユーザーの承認後）：四季ガイド `season/seasonal-patterns-guide`（導流堤を外した）、`may-fishing`・`may-fishing-top5`・`spring-hanami-karei`（一人称の冒頭を削除）。
+- U9 に従い、同じブランチで導流堤を外した記事：`target/eging/points`（ポイント1を舞阪堤とし、先端でなく立ち入れる範囲から投げる案内に）、`target/kawahagi/points`、`target/mejina/points`、`points/fukabori/sayori-fukabori`、`points/omote/nagisaen`、`guide/theory/structure-theory`、`guide/theory/imagiri-current-logic`、`guide/theory/seasonal-patterns-guide`（下書き）、`season/weekly-2026-03-29`。規則は `.agents/fishing-laws-hamanako.md` に追記。
+- 別件で残る疑い（未修正）：`target/eging/points` の「新居海釣公園の5・6番堤防」。公式は T字堤5本（S2）。
 - 11/27 に一緒に直すもの：ルール記事の弁天島の節（U6・U7）。`points/omote/bentenjimakaihinkouen` も U6・U7 を入れる候補だが、記事への反映の指示はまだない。
