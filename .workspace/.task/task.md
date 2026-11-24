@@ -68,12 +68,13 @@ Codex の提案 [_inbox/2026-11-18-main-keyword-lp-improvement-tasks.md](../_inb
 
 提案・承認・計測の記録: [internal-links-pilot/README.md](internal-links-pilot/README.md)。
 
-- [ ] 提案 A01〜A09 の承認（ユーザー）→ 承認された ID だけ反映し、`log.json` に変更日を書く
-- [ ] 反映の28日後＋3日に `measure.mjs` でまとめて判定（Claude、S）
+- [x] 2026-11-25 A01・A02・A05・A06・A07・A09 を反映（ユーザー承認）。A03・A04・A08 は見送り
+- [ ] **12/28 の月次分析**で `measure.mjs` を実行してまとめて判定（28日後は 12/23、GSC の確定は 12/26。Claude、S）
 - [ ] キビレの `kibire-cooking`（1,836表示・6.1位・本文の被リンク1本）へのリンク: 11/10 にカードを変えたので **12/08 以降**に `kurodai/cooking` の「キビレ（キチヌ）の美味しい食べ方」の節から足す
-- [x] 2026-11-24 `target/kibire/index.mdx` の「夏〜秋の個体は刺身でも美味しい」を、`kibire-cooking` に合わせて「刺身はすすめない」に直した（main 未反映。ブランチ `claude/internal-links-pilot`）
-- [ ] **リンク切れ（本番で確認済み）**: 実在しない slug の BlogCard が14個、読者の画面に赤い「not found」が出ている。`cooking/autumn-hamanako-recipe`（6個: 86・88・126・169・181・183行）、`cooking/winter-hamanako-recipe`（6個: 94・123・167・191・193・195行）、`target/tako/season/june-tako-opening`（2個: 188・210行）。slug にフォルダのパスを書いているのが原因（Claude、S、修正の承認待ち）
-- [ ] 乙女園公園の駐車台数が食い違う: `points/omote/otomeen` は「約20台」、`points/omote/kangetsuen` は「30台以上」。どちらが正しいかユーザー確認。直すまでこの2記事の間にリンクを張らない
+- [x] 2026-11-24 `target/kibire/index.mdx` の「夏〜秋の個体は刺身でも美味しい」を、`kibire-cooking` に合わせて「刺身はすすめない」に直した
+- [x] 2026-11-25 **リンク切れの BlogCard 14個を修正**: 読者の画面に赤い「not found」が出ていた。`cooking/autumn-hamanako-recipe`（6個: 86・88・126・169・181・183行）、`cooking/winter-hamanako-recipe`（6個: 94・123・167・191・193・195行）、`target/tako/season/june-tako-opening`（2個: 188・210行）。slug にフォルダのパスを書いたのが原因。ハゼの教科書は記事がないので `haze-beginner` に送った
+- [ ] 再発防止の判断: ビルドの前に BlogCard の slug を検査する（`check-tackle-ids.mjs` と同じ仕組み）か。`scripts/`・`package.json` の変更なので承認が要る
+- [x] 2026-11-25 乙女園公園の駐車台数を、`otomeen`（約20台）・`kangetsuen`（30台以上）とも「20台以上」にそろえた。公式の台数の案内はなく、筆者の目測（ユーザー回答 11/25）
 
 ## 🟡 計測確認: `affiliate_click`
 

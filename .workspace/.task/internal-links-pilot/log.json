@@ -1,8 +1,51 @@
 {
   "_note": "承認されて反映したリンクだけを links に入れる。change は反映した日（deploy の日）。events は前後28日のあいだに、ここに出るページへ加えたほかの変更（リライト・title・カードなど）。計測は hq/.workspace/seo/tools/internal-links/measure.mjs",
   "site": "CH",
-  "change": "",
-  "links": [],
+  "change": "2026-11-25",
+  "links": [
+    {
+      "id": "A01",
+      "source": "/blog/shops/",
+      "target": "/blog/bait-vending-machines/",
+      "anchor": "エサの自動販売機",
+      "commit": "コミット「内部リンクを6本足す（A01・A02・A05・A06・A07・A09、hq:H-54）」"
+    },
+    {
+      "id": "A02",
+      "source": "/blog/bait-vending-machines/",
+      "target": "/blog/shops/",
+      "anchor": "24時間営業の大型釣具店",
+      "commit": "コミット「内部リンクを6本足す（A01・A02・A05・A06・A07・A09、hq:H-54）」"
+    },
+    {
+      "id": "A05",
+      "source": "/points/yuto-yamazaki/",
+      "target": "/points/hamayu-ohashi/",
+      "anchor": "はまゆう大橋",
+      "commit": "コミット「内部リンクを6本足す（A01・A02・A05・A06・A07・A09、hq:H-54）」"
+    },
+    {
+      "id": "A06",
+      "source": "/blog/aori-guide/",
+      "target": "/points/eging-fukabori/",
+      "anchor": "今切口周辺は潮流が速い",
+      "commit": "コミット「内部リンクを6本足す（A01・A02・A05・A06・A07・A09、hq:H-54）」"
+    },
+    {
+      "id": "A07",
+      "source": "/blog/4-month/",
+      "target": "/points/eging-fukabori/",
+      "anchor": "コウイカのエギング",
+      "commit": "コミット「内部リンクを6本足す（A01・A02・A05・A06・A07・A09、hq:H-54）」"
+    },
+    {
+      "id": "A09",
+      "source": "/blog/guide/method/cho-nage-fishing/",
+      "target": "/blog/points-top5/",
+      "anchor": "キスの好ポイント",
+      "commit": "コミット「内部リンクを6本足す（A01・A02・A05・A06・A07・A09、hq:H-54）」"
+    }
+  ],
   "controls": [
     "/points/konankoukou/",
     "/points/sakujyoseki/",
@@ -11,5 +54,11 @@
     "/points/murakushi-kaisuiyoku/",
     "/blog/guide/theory/hamanako-depth-map/"
   ],
-  "events": []
+  "events": [
+    {
+      "url": "/points/otomeen/",
+      "date": "2026-11-25",
+      "note": "駐車台数の記述を「20台以上（目測）」に変更"
+    }
+  ]
 }
