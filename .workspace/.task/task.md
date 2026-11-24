@@ -71,6 +71,9 @@ Codex の提案 [_inbox/2026-11-18-main-keyword-lp-improvement-tasks.md](../_inb
 
 - [x] 2026-11-25 A01・A02・A05・A06・A07・A09 を反映（ユーザー承認）。A03・A04・A08 は見送り
 - [ ] **12/28 の月次分析**で `measure.mjs` を実行してまとめて判定（28日後は 12/23、GSC の確定は 12/26。Claude、S）
+- [x] 2026-11-25 2巡目: 被リンク0本の4記事（`mejina`・`mejina-fukabori`・`feeding-switch`・`turbidity-water-color`）へ本文リンク7本。比較群・11/25 の6本には触れていない。公開の日は git で見る
+- [ ] `night-fishing-light`（集魚灯。90日 415表示・被リンク0本）: 11/03 に変更したので **12/01 以降**に、`ajing-guide`（常夜灯の明暗）と `hamanako-fishing-rules-and-manners`（灯火の決まり）から足す
+- 見送り: `eging`（計測中の `eging-fukabori` と同じ語を争う。12/28 のあと）、`hamana-depth-map-guide`（比較群の `hamanako-depth-map` と同じテーマ）、`6-month` → `turbidity-water-color`（大雨の翌日の評価が食い違う。記事をそろえてから）、春・夏の料理と `temp-lag-science`（季節が外れる）、週報3本
 - [ ] キビレの `kibire-cooking`（1,836表示・6.1位・本文の被リンク1本）へのリンク: 11/10 にカードを変えたので **12/08 以降**に `kurodai/cooking` の「キビレ（キチヌ）の美味しい食べ方」の節から足す
 - [x] 2026-11-24 `target/kibire/index.mdx` の「夏〜秋の個体は刺身でも美味しい」を、`kibire-cooking` に合わせて「刺身はすすめない」に直した
 - [x] 2026-11-25 **リンク切れの BlogCard 14個を修正**: 読者の画面に赤い「not found」が出ていた。`cooking/autumn-hamanako-recipe`（6個: 86・88・126・169・181・183行）、`cooking/winter-hamanako-recipe`（6個: 94・123・167・191・193・195行）、`target/tako/season/june-tako-opening`（2個: 188・210行）。slug にフォルダのパスを書いたのが原因。ハゼの教科書は記事がないので `haze-beginner` に送った
