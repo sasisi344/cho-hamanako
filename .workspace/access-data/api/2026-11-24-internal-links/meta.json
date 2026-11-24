@@ -1,0 +1,71 @@
+{
+  "fetchedAt": "2026-11-24T14:57:43.548Z",
+  "site": "CH",
+  "commit": "8d988c5",
+  "start": "2026-08-23",
+  "end": "2026-11-20",
+  "pos": [
+    4,
+    15
+  ],
+  "minImpr": 30,
+  "freeze": 28,
+  "extra": "",
+  "articles": 284,
+  "targets": 34,
+  "held": 17,
+  "mentions": 891,
+  "orphans": 19,
+  "hashRowsDropped": 0,
+  "queryVisibleClickShare": 0.277,
+  "unmatchedPages": [
+    [
+      "https://cho-hamanako.info/map/",
+      1569
+    ],
+    [
+      "https://cho-hamanako.info/blog/target/",
+      497
+    ],
+    [
+      "https://cho-hamanako.info/affiliates/",
+      251
+    ],
+    [
+      "https://cho-hamanako.info/",
+      92
+    ],
+    [
+      "https://cho-hamanako.info/blog/guide/",
+      89
+    ],
+    [
+      "https://cho-hamanako.info/blog/",
+      29
+    ],
+    [
+      "https://cho-hamanako.info/points/",
+      12
+    ],
+    [
+      "https://cho-hamanako.info/blog/kurodai-complete-guide/",
+      10
+    ],
+    [
+      "https://cho-hamanako.info/blog/guide/theory/moon-phase-pattern/",
+      9
+    ],
+    [
+      "https://cho-hamanako.info/blog/kurodai-complete-guide",
+      2
+    ],
+    [
+      "https://cho-hamanako.info/legal/about/",
+      1
+    ],
+    [
+      "https://cho-hamanako.info/points/yuto-mizubeno-hiroba/",
+      1
+    ]
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "_note": "承認されて反映したリンクだけを links に入れる。change は反映した日（deploy の日）。events は前後28日のあいだに、ここに出るページへ加えたほかの変更（リライト・title・カードなど）。計測は hq/.workspace/seo/tools/internal-links/measure.mjs",
+  "site": "CH",
+  "change": "",
+  "links": [],
+  "controls": [
+    "/points/konankoukou/",
+    "/points/sakujyoseki/",
+    "/points/drive-fishing-spots/",
+    "/points/otomeen/",
+    "/points/murakushi-kaisuiyoku/",
+    "/blog/guide/theory/hamanako-depth-map/"
+  ],
+  "events": []
+}

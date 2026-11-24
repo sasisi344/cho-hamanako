@@ -64,6 +64,17 @@ Codex の提案 [_inbox/2026-11-18-main-keyword-lp-improvement-tasks.md](../_inb
 - [ ] シーバスの水温の目安が教科書・月別記事・データセットで食い違う件を整理する（同報告書「止めた箇所」）
 - [ ] <strong>罰則DB</strong>: 浜名湖で釣り人に関係する罰則を、根拠の法令・条文・出典URL・確認日つきで1つのデータにまとめる（漁業法、静岡県漁業調整規則、漁業権の行使規則、今切口の遊漁禁止水域の根拠など）。置き場所は `.workspace/.dataset/` 配下。できたら `.agents/fishing-laws-hamanako.md` の「罰則の整理」をこの DB に合わせ、記事の罰則表記を直す（2026-11-03 ユーザー判断）
 
+## 🟡 内部リンクの試行（2026-11-24 起票、hq:H-54）
+
+提案・承認・計測の記録: [internal-links-pilot/README.md](internal-links-pilot/README.md)。
+
+- [ ] 提案 A01〜A09 の承認（ユーザー）→ 承認された ID だけ反映し、`log.json` に変更日を書く
+- [ ] 反映の28日後＋3日に `measure.mjs` でまとめて判定（Claude、S）
+- [ ] キビレの `kibire-cooking`（1,836表示・6.1位・本文の被リンク1本）へのリンク: 11/10 にカードを変えたので **12/08 以降**に `kurodai/cooking` の「キビレ（キチヌ）の美味しい食べ方」の節から足す
+- [x] 2026-11-24 `target/kibire/index.mdx` の「夏〜秋の個体は刺身でも美味しい」を、`kibire-cooking` に合わせて「刺身はすすめない」に直した（main 未反映。ブランチ `claude/internal-links-pilot`）
+- [ ] **リンク切れ（本番で確認済み）**: 実在しない slug の BlogCard が14個、読者の画面に赤い「not found」が出ている。`cooking/autumn-hamanako-recipe`（6個: 86・88・126・169・181・183行）、`cooking/winter-hamanako-recipe`（6個: 94・123・167・191・193・195行）、`target/tako/season/june-tako-opening`（2個: 188・210行）。slug にフォルダのパスを書いているのが原因（Claude、S、修正の承認待ち）
+- [ ] 乙女園公園の駐車台数が食い違う: `points/omote/otomeen` は「約20台」、`points/omote/kangetsuen` は「30台以上」。どちらが正しいかユーザー確認。直すまでこの2記事の間にリンクを張らない
+
 ## 🟡 計測確認: `affiliate_click`
 
 2026-10-05 に Partytown の worker 起動失敗が真因と判明し、GA4 を通常のメインスレッド読み込みに変更して発火確認まで完了した（`6573423`）。経緯と詳細は [archive/w40-task-archived-2026-10-05.md](archive/w40-task-archived-2026-10-05.md) と [archive/w41-completed-2026-10-05.md](archive/w41-completed-2026-10-05.md) を参照。残りは確認のみ。

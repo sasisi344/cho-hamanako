@@ -127,6 +127,18 @@ description: "浜名湖Webサイト全体の執筆スタイル・読者ペルソ
 - `category: points` の記事 → `/points/{slug}`
 - それ以外の記事 → `/blog/{slug}`
 
+### ✅ 本文中のテキストリンク（2026-11-24〜）
+
+文の流れの中で、読者の次の疑問に答える記事へ送るときは、本文の語句をそのままリンクにしてよい。節の区切りで案内するときは BlogCard を使う。
+
+- 形式: `[語句](/blog/{slug}/)`、`category: points` の記事は `[語句](/points/{slug}/)`（`slug` が `points/` で始まるものは、その部分を除く）。**末尾の `/` を必ず付ける**。転送される旧URLは使わない
+- `slug` は BlogCard と同じく、実在する記事の frontmatter で確かめる
+- 置かない場所: 見出し、最初の H2 より前、既存のリンクの中、表の見出し行、TackleCard の誘導文
+- 同じ記事から同じ記事へは、BlogCard とテキストリンクを合わせて1本。自分自身へは張らない
+- 語句は「こちら」「詳しくは」にしない。リンク先で分かることが伝わる、本文にある言葉を使う
+- リンクの前後の文とリンク先の結論が食い違うとき（料金・台数・食べ方・規制など）は、張る前に記事のほうをそろえる
+- 既存記事へ後から足すときは、1記事に新しく2本まで。手順は `344blog/hq/.workspace/seo/tools/internal-links/README.md`
+
 ### ✅ 道具紹介 (TackleCard)
 
 - 形式： `<TackleCard id="category/id" position="safety" />`（`position` は記事内の節の種類。値は正本参照）
