@@ -42,6 +42,15 @@ Codex の提案 [_inbox/2026-11-18-main-keyword-lp-improvement-tasks.md](../_inb
 - 公開は deploy が走る変更（`src/**`）。main へは、リポジトリ・理由のファイル・公開内容の表を見せて承認をもらう
 - 公開後の測定は 12/28 の月次分析（[schedule-task.md](schedule-task.md)）。少数表示なので、足りなければ 56〜84日へ延ばす
 
+## 🟡 新規: deploy の短縮（2026-11-26 起票、hq:H-56）
+
+生ごみ手帖が deploy を約20分から短くした方法の横展開。直近の deploy は約3.3分で、FTP が114件・27MB（1件あたりが大きい）。手順はレファレンス `namagomi-techo/.workspace/projects/build-speedup/reference.md` §2。
+
+| 状態 | ID | 作業 | 規模 | 担当・所要の目安 | 日 |
+|---|---|---|---|---|---|
+| [ ] | CH-DEP-01 | 何も変えずに2回ビルドして `diff -rq dist` の件数を見る。あわせて `scripts/` の OG 生成が CI で全件を作り直していないか（mtime 判定なら checkout で揃うので効かない）、`public/` などの画像が毎回変わっていないかを見る。原因の部品・改修案（OG はタイトル＋説明文＋テンプレートのハッシュで差分生成など）・見込みの短縮を hq に返す | M | Claude 45分 | 11/28〜12/01 |
+| [ ] | CH-DEP-02 | 改修（`scripts/`・`src/lib` など）。テンプレート・設定の変更なので、承認の表を見せてから main へ。合格は2回ビルドの差分0件と、次の deploy の `Making changes to N files` が変えたページ数と見合うこと | M | Codex または Claude | 承認後 |
+
 ## 🔴 新規: 秋KW改善（2026-10-30〜）
 
 秋記事16本のうち9本がインデックス未登録と判明。診断・想定クエリ・競合・タスク詳細は [autumn-kw-index-report.md](autumn-kw-index-report.md)。
