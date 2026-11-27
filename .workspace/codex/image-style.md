@@ -32,9 +32,13 @@
 - サムネイル: スキルの手順でシーン指示を作り、`generate-cover.js --scene` に渡す（スタイル・季節の光はスクリプトが前置する）
 - 説明画像: `Clean explanatory diagram for a Japanese saltwater fishing blog about Lake Hamana. Subject: <何を>. Layout: <構図>. Style: simple flat illustration, light background, clear labels in Japanese only where listed: <文言>. No photorealism, no decorative clutter.`
 
-## 5. 生成
+## 5. 生成（2026-11-27 改定）
 
-`.claude/skills/cho-hamanako-image-generation/SKILL.md` の手順。`generate-cover.js`（カバー）と `generate-image.js`（説明画像）。保存先は記事と同じフォルダ。先に `--dry-run` でプロンプトを確かめる。
+**画像の作成は Codex に任せ、Codex の組み込み画像生成 `image_gen` で作る。Codex のリソースがない（使用量の上限・起動できない・組み込みの生成が使えない）ときだけ API スクリプトを使う**（2026-11-27 ユーザー決定。手順・保存・確認・報告の正本は `C:\Users\sasis\344blog\hq\.workspace\task\org\codex-imagegen.md`）。保存先は記事と同じフォルダ。
+
+- サムネイル: `node .workspace/scripts/Antigravity-nanobana/generate-cover.js "<index.mdx>" --scene-file "<scene.txt>" --dry-run` で、スクリプトが組み立てる完成のプロンプト（SITE_CONTEXT・スタイル・季節の光を含む）を出し、それをそのまま `image_gen` に渡す（`--dry-run` は API を呼ばない）。こうすると、API で作った既存のカバーとトーンがそろう
+- 説明画像: §4 の型のプロンプトを `image_gen` に渡す
+- 代わりの API スクリプト: `.claude/skills/cho-hamanako-image-generation/SKILL.md` の手順。`generate-cover.js`（カバー）と `generate-image.js`（説明画像）。先に `--dry-run` でプロンプトを確かめる
 
 ## 6. 未決（ユーザー確認）
 

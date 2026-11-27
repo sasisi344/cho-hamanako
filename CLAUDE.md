@@ -43,7 +43,7 @@ Claude Code セッションでは、下記を用途に応じて読み込む（�
 |-------|------|
 | `cho-hamanako-article-creation` | 記事新規・リライト、MDX 配置、BlogCard/TackleCard 検証 |
 | `cho-hamanako-writing-voice` | 読者レベル・温度・深度・文字数目安 |
-| `cho-hamanako-image-generation` | Antigravity-nanobana（`generate-cover.js` / `generate-image.js`） |
+| `cho-hamanako-image-generation` | Antigravity-nanobana（`generate-cover.js` / `generate-image.js`）。画像の作成は Codex の組み込み `image_gen` が基本で、このスクリプトは Codex のリソースがないときの代わり（2026-11-27 ユーザー決定。`.workspace/codex/image-style.md` §5） |
 | `cho-hamanako-thumbnail-prompt` | 記事内容に合わせたサムネイルのシーン指示作成（`generate-cover.js --scene`） |
 | `cho-hamanako-workspace-tasks` | `.workspace/.task`・`.data-set`・バックログの場所 |
 | `cho-hamanako-article-rewrite` | リライト・forAI 統合・深度・ポイントマトリクス |

@@ -1,14 +1,15 @@
 ---
 name: cho-hamanako-image-generation
-description: Generates cover and inline images for Cho! Hamanako using the Antigravity-nanobana Node scripts under .workspace/scripts. Use when an image prompt has been written in an article or when asked for cover.png, hero images, thumbnail generation, or Gemini image generation for blog posts.
+description: Fallback image generation for Cho! Hamanako with the Antigravity-nanobana Node scripts (Gemini API), used only when Codex's built-in image_gen is unavailable (2026-11-27). Also builds the cover prompt via generate-cover.js --dry-run for Codex. Use when an image prompt has been written in an article or when asked for cover.png, hero images, thumbnail generation, or Gemini image generation for blog posts.
 ---
 
 # Cho! Hamanako — 画像生成（Antigravity-nanobana）
 
 ## 原則
 
+- **画像の作成は Codex に任せ、Codex の組み込み画像生成 `image_gen` で作る。このスキルの API スクリプトは、Codex のリソースがない（使用量の上限・起動できない・組み込みの生成が使えない）ときの代わり**（2026-11-27 ユーザー決定。`.workspace/codex/image-style.md` §5、`C:\Users\sasis\344blog\hq\.workspace\task\org\codex-imagegen.md`）。Codex が `image_gen` で作るときも、カバーのプロンプトは `generate-cover.js --dry-run` で組み立てる
 - **記事に画像生成プロンプトを書いた段階で生成してよい（2026-11-06 ユーザー決定。全サイト共通）**
-- Cursor の `generate_image` ツールは使わず、**本リポジトリの Node スクリプト**を使う
+- Cursor の `generate_image` ツールは使わない。代わりに API で作るときは、**本リポジトリの Node スクリプト**を使う
 - 生成物は **記事と同じフォルダ**（`src/content/blog/.../`）に置く
 
 ## 配置

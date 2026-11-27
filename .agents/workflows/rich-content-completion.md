@@ -33,7 +33,7 @@ description: ドラフトから「内部リンク・商品紹介・AI画像」�
 - **商品紹介**: タックル紹介には `src/content/affiliates/` から最適なIDを検索・確認し、`<TackleCard id="{category}/{id}" />` を垂直リストで配置（実在するファイル名から拡張子を省いたIDを使用）。
 
 ### ステップ 4: [Visualizing] 専用カバー画像の生成
-- **スクリプト**: `node scripts/Antigravity-nanobana/generate-image.js` を使用。
+- **手段**: Codex に任せ、組み込みの画像生成 `image_gen` で作る。Codex のリソースがないときだけ `node .workspace/scripts/Antigravity-nanobana/generate-image.js` を使用（2026-11-27 ユーザー決定。`.workspace/codex/image-style.md` §5）。
 - **プロンプト**: 16:9、高コントラスト、プロフェッショナルな釣り写真スタイル。英語で詳細に記述。
 - **出力**: 記事ディレクトリ内に `cover.jpg` として保存。
 
