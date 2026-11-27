@@ -15,18 +15,18 @@
 | `blog-card-index.md` | MD 表 | `<BlogCard slug="..." />` |
 | `tackle-card-list.md` | MD リスト | `<TackleCard id="cat/id" />` |
 | `infrastructure-master.json` | JSON 配列 | ポイント id・施設・緯度経度 |
-| `biological/*.md` | MD | 魚種・時期・生態 |
-| `season-fishing/*.md` | MD | 春夏秋冬の釣り傾向 |
+| `../knowledge/species/*.md` | MD | 魚種・時期・生態（2026-11-27 に knowledge へ移した） |
+| `../knowledge/seasons/*.md` | MD | 春夏秋冬の釣り傾向（2026-11-27 に knowledge へ移した） |
 | `sitemap.md` | MD | サイト構造 |
 | `point-locate-check.md` | MD | 座標・地名チェック用 |
 
 ## `lookup_by_task`（manifest より抜粋）
 
 - **内部リンク** → `blog-card-index.md`
-- **道具紹介** → `tackle-card-list.md` + `../affiliates/README.md`
-- **ポイント設備** → `infrastructure-master.json` + `../tsuriguten-shoplist.md`
+- **道具紹介** → `tackle-card-list.md` + `../knowledge/products/tackle/README.md`
+- **ポイント設備** → `infrastructure-master.json` + `../knowledge/places/tsuriguten-shoplist.md`
 - **ポイント×釣り方** → `../point-matrix.md`
-- **月次・水温** → `../llms.json`（`knowledge_base`）+ `../water-tempature.md`
+- **月次・水温** → `../llms.json`（`knowledge_base`）+ `../knowledge/data/water-temperature.md`
 
 ## 本番との関係
 

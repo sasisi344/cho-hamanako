@@ -20,7 +20,7 @@ description: 週間レポートから週末釣行に向けたSNS（X・Instagram
 - **投稿推奨**: 金曜朝 07:00 〜 08:30 または 金曜夜 19:00 〜 21:00
 
 ## 📝 入力データ
-- `.data-set/research/week-report/YYYY/MM/W[n]/index.md` の内容
+- `.workspace/.data-set/knowledge/data/reports/week-report/YYYY/MM/W[n]/index.md` の内容
 
 ---
 

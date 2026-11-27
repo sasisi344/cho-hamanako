@@ -24,7 +24,7 @@ description: draftにある下書き（アウトライン）を完成させて�
 
 - **ドラフト確認**: 対象 MDX またはタスク MD を読み、SEOターゲットと構成を把握する。
 - **データセット入口**: [data-set-access/SKILL.md](../data-set-access/SKILL.md) に従い、まず `.workspace/.data-set/.index/manifest.json` を読む。
-- **ナレッジ同期**: manifest の `lookup_by_task` で必要なファイルのみ開く（例: 魚種 → `.index/biological/`、ポイント → `infrastructure-master.json` + `point-matrix.md`、内部リンク → `blog-card-index.md`）。
+- **ナレッジ同期**: manifest の `lookup_by_task` で必要なファイルのみ開く（例: 魚種 → `knowledge/species/`、ポイント → `infrastructure-master.json` + `point-matrix.md`、内部リンク → `blog-card-index.md`）。
 
 ### ステップ 2: [Structuring] カテゴリとスラッグの決定
 

@@ -19,11 +19,12 @@ description: Accesses Cho! Hamanako .workspace/.data-set via .index/manifest.jso
 
 | 目的 | パス |
 |------|------|
+| 調べた事実（knowledge） | `.workspace/.data-set/knowledge/index.md`（書き方は同じフォルダの `CLAUDE.md`） |
 | BlogCard slug | `.workspace/.data-set/.index/blog-card-index.md` |
 | TackleCard id | `.workspace/.data-set/.index/tackle-card-list.md` |
 | ポイント設備・GPS | `.workspace/.data-set/.index/infrastructure-master.json` |
 | 釣り方×ポイント | `.workspace/.data-set/point-matrix.md` |
-| 魚種リサーチ | `.workspace/.data-set/.index/biological/*.md` |
+| 魚種リサーチ | `.workspace/.data-set/knowledge/species/*.md` |
 | 記事横断検索 | `.workspace/.data-set/llms.json` |
 
 ## ルール

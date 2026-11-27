@@ -112,7 +112,7 @@ facilities:
 - **見出し番号**: 見出しに番号（1. 2. 3.）を振らない。
 - **テキストリンク**: 公式サイトやGoogleマップへの誘導は、可能な限りテキストリンクを使用する（公式サイト・地図の誘導にアフィリエイトカードを使わない）。
 - **アフィリエイト（2026-10-17 改定）**: 旧ルールの「ポイント記事ではアフィリエイト禁止」は廃止。**このスポットだから必要になるもの**に限り、その必要が生まれる節（駐車場・足場・時間帯・安全・施設・釣行プラン）の中に、誘導文を付けて置く。スポット単体は最大3枚、条件別ハブは最大5枚。汎用タックルの羅列や、記事終盤の「推奨タックル」節へのまとめ置きは禁止。詳細・誘導文の型・`position` の値は正本 [affiliate-placement-rules.md](../affiliate-placement-rules.md) に従う。道具の比較など深い内容は、`<BlogCard>` でターゲット記事へ送ってよい（BlogCard の直前に「読むと何が分かるか」を1文書く）。
-- **データ参照**: 設備情報は必ず `tsuriguten-shoplist.md` 等の最新マスターデータを参照し、推測で書かないこと。
+- **データ参照**: 設備情報は必ず `knowledge/places/tsuriguten-shoplist.md` 等の最新マスターデータを参照し、推測で書かないこと。
 
 ---
 
@@ -150,7 +150,7 @@ Markdownのネストリストは Prettier によって破壊されるため、�
 - 特徴や使い勝手を一言添える
 ```
 
-複数店舗ある場合は同じブロックを並べる。店舗情報は必ず `tsuriguten-shoplist.md` から取得し、推測で書かない。
+複数店舗ある場合は同じブロックを並べる。店舗情報は必ず `knowledge/places/tsuriguten-shoplist.md` から取得し、推測で書かない。
 
 ---
 
@@ -165,7 +165,7 @@ Markdownのネストリストは Prettier によって破壊されるため、�
 
 - **SXO重視**: 冒頭で利便性を強調し、読者の離脱を防ぐ。
 - **座標精度**: GPS座標は Google Map から正確に取得し、数値型で格納する。
-- **SSOT**: 設備情報は [data-set-access/SKILL.md](../data-set-access/SKILL.md) → `.index/infrastructure-master.json` と `tsuriguten-shoplist.md` を参照する。
+- **SSOT**: 設備情報は [data-set-access/SKILL.md](../data-set-access/SKILL.md) → `.index/infrastructure-master.json` と `knowledge/places/tsuriguten-shoplist.md` を参照する。
 
 ---
 

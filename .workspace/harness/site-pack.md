@@ -73,7 +73,7 @@
 | 規制・漁業権 | `.agents/fishing-laws-hamanako.md` |
 | カテゴリ・構造化データ | `.agents/category-slug-rules.md`・`.agents/structured-data-rules.md` |
 | 指示書で書く回 | 指示書 → `.workspace/codex/order-base.md`（§4 は検収で繰り返し直した点） |
-| 事実を探す | `.workspace/.data-set/knowledge/index.md`（未作成のあいだは `.workspace/.data-set/.index/manifest.json` と `.agents/data-set-access/SKILL.md`） |
+| 事実を探す・残す | `.workspace/.data-set/knowledge/index.md` と `knowledge/CLAUDE.md`（状態が「事実の表」の行だけ根拠にできる）。カード・リンクの ID は `.index/manifest.json` |
 | 画像 | `.workspace/codex/image-style.md` |
 
 ## 7. 検査（書き終えたら）

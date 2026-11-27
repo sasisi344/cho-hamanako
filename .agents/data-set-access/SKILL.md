@@ -26,15 +26,16 @@ description: Routes Cho! Hamanako agents to .workspace/.data-set and .index reso
 
 | フェーズ | manifest キー / 開くファイル |
 |----------|---------------------------|
+| 事実を探す・調べたら残す | `knowledge/index.md` と `rg`。書き方・使える状態の見分けは `knowledge/CLAUDE.md`（2026-11-27〜。記事の frontmatter `research:` から ID で指す） |
 | BlogCard 追加・検証 | `blogcard_slug` → `.index/blog-card-index.md` |
 | TackleCard 追加・検証 | `tacklecard_id` → `.index/tackle-card-list.md` |
-| ポイント H3（駐車・店） | `point_facilities` → `.index/infrastructure-master.json` + `tsuriguten-shoplist.md` |
+| ポイント H3（駐車・店） | `point_facilities` → `.index/infrastructure-master.json` + `knowledge/places/tsuriguten-shoplist.md` |
 | まとめ・類似ポイント | `point_matrix` → `point-matrix.md` + `point-article-template.md` |
-| 魚種・季節の根拠 | `fish_biology` → `.index/biological/{魚}.md` |
-| 季節・月次記事 | `season_fishing` → `.index/season-fishing/{季}.md` |
+| 魚種・季節の根拠 | `fish_biology` → `knowledge/species/{魚}.md` |
+| 季節・月次記事 | `season_fishing` → `knowledge/seasons/{季}.md` |
 | 記事名からパス特定 | `llms.json` の `articles[]`（slug は frontmatter で再確認） |
 | リライト・旧 URL | `301redirect/301list.md` |
-| アフィリエイト下書き | `affiliates/README.md` → 魚種フォルダ |
+| アフィリエイト下書き | `knowledge/products/tackle/README.md` → 魚種フォルダ |
 
 ## 記事作成フローへの組み込み
 

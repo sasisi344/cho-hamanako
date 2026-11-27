@@ -40,7 +40,7 @@ description: 週間で浜名湖の釣果情報を取得してレポート作成
 
 出力フォーマット:
 
-- 出力フォルダ: .data-set/research/week-report/YYYY/MM/W[n]
+- 出力フォルダ: .workspace/.data-set/knowledge/data/reports/week-report/YYYY/MM/W[n]
 - ファイル名: index.md
 
 1. 今週の概況

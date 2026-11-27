@@ -1,7 +1,7 @@
 {
   "$schema": "cho-hamanako-data-set-manifest",
   "version": "1.0.0",
-  "updated": "2026-06-02",
+  "updated": "2026-11-27",
   "base_path": ".workspace/.data-set",
   "description": "AI向けナレッジベースの入口。記事執筆・リライト時は本ファイルを先に読み、必要なリソースだけを開く。",
   "read_order": [
@@ -11,16 +11,16 @@
   ],
   "lookup_by_task": {
     "blogcard_slug": [".index/blog-card-index.md", "llms.json"],
-    "tacklecard_id": [".index/tackle-card-list.md", "affiliates/README.md"],
-    "point_facilities": [".index/infrastructure-master.json", "tsuriguten-shoplist.md"],
+    "tacklecard_id": [".index/tackle-card-list.md", "knowledge/products/tackle/README.md"],
+    "point_facilities": [".index/infrastructure-master.json", "knowledge/places/tsuriguten-shoplist.md"],
     "point_matrix": ["point-matrix.md", "point-article-template.md"],
-    "fish_biology": [".index/biological/{fish}.md"],
-    "season_fishing": [".index/season-fishing/{season}-fishing.md"],
-    "monthly_report": ["water-tempature.md", "llms.json"],
-    "affiliate_research": ["affiliates/{category}/*.md"],
+    "fish_biology": ["knowledge/species/{fish}.md"],
+    "season_fishing": ["knowledge/seasons/{season}-fishing.md"],
+    "monthly_report": ["knowledge/data/water-temperature.md", "llms.json"],
+    "affiliate_research": ["knowledge/products/tackle/{category}/*.md"],
     "seo_redirect": ["301redirect/301list.md", "301redirect/checklist.md"],
     "site_structure": [".index/sitemap.md", "sitemap.md", "archive-index.md"],
-    "travel_article": ["travel-research/unagi-fishing-trip.md", "travel-research/camp-fishing-nagisaen.md", "travel-research/kanko-kw-supplement.md", "travel-research/kanzanji-palpal-group-experience.md"]
+    "travel_article": ["knowledge/places/unagi-fishing-trip.md", "knowledge/places/camp-fishing-nagisaen.md", "knowledge/places/kanko-kw-supplement.md", "knowledge/places/kanzanji-palpal-group-experience.md"]
   },
   "resources": [
     {
@@ -71,14 +71,14 @@
     },
     {
       "id": "tsuriguten-shoplist",
-      "path": "tsuriguten-shoplist.md",
+      "path": "knowledge/places/tsuriguten-shoplist.md",
       "format": "markdown",
       "priority": 1,
       "use_when": ["tackle-shop", "hours", "point-access-h3"]
     },
     {
       "id": "biological-index",
-      "path": ".index/biological/",
+      "path": "knowledge/species/",
       "format": "markdown-per-fish",
       "priority": 2,
       "use_when": ["target-fish", "season", "ecology"],
@@ -86,7 +86,7 @@
     },
     {
       "id": "kurodai-textbook-research",
-      "path": ".index/biological/kurodai-tsurenai-research.md",
+      "path": "knowledge/species/kurodai-tsurenai-research.md",
       "format": "markdown",
       "priority": 1,
       "use_when": ["kurodai", "クロダイ", "教科書", "釣れない", "chiniing", "チニング", "釣法比較", "第6章", "第8章"],
@@ -94,7 +94,7 @@
     },
     {
       "id": "season-fishing-index",
-      "path": ".index/season-fishing/",
+      "path": "knowledge/seasons/",
       "format": "markdown",
       "priority": 2,
       "use_when": ["season-article", "monthly-report"],
@@ -102,15 +102,15 @@
     },
     {
       "id": "affiliates-research",
-      "path": "affiliates/",
+      "path": "knowledge/products/tackle/",
       "format": "markdown",
       "priority": 3,
       "use_when": ["tackle-research", "product-memo"],
-      "entry": "affiliates/README.md"
+      "entry": "knowledge/products/tackle/README.md"
     },
     {
       "id": "tako-points-research",
-      "path": "affiliates/tako/tako-points.md",
+      "path": "knowledge/products/tackle/tako/tako-points.md",
       "format": "markdown",
       "priority": 2,
       "use_when": ["tako", "octopus", "タコ", "ポイント", "point", "season", "シーズン"],
@@ -132,7 +132,7 @@
     },
     {
       "id": "travel-research",
-      "path": "travel-research/",
+      "path": "knowledge/places/",
       "format": "markdown",
       "priority": 2,
       "use_when": ["travel-article", "kanko-hub", "unagi", "camp", "kanko-kw", "palpal", "たきや漁", "えびすき漁", "団体", "慰安会", "グループ", "舘山寺温泉"],

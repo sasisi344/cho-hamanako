@@ -24,13 +24,15 @@ Claude Code / Cursor では SKILL **`.agents/data-set-access/SKILL.md`**（入�
 │   ├── blog-card-index.md    ← BlogCard slug
 │   ├── tackle-card-list.md   ← TackleCard id
 │   ├── infrastructure-master.json  ← ポイント設備・座標
-│   ├── biological/           ← 魚種別リサーチ
-│   ├── season-fishing/       ← 季節別釣り情報
 │   └── sitemap.md
+├── knowledge/                ← ★ 調べた事実（2026-11-27〜。index.md と CLAUDE.md から入る）
+│   ├── species/ seasons/     ← 魚種の生態・季節の釣り物（旧 .index/biological・season-fishing）
+│   ├── places/               ← 釣具店・カヤック・旅行先（旧 tsuriguten-shoplist・travel-research）
+│   ├── products/tackle/      ← タックルの調べメモ（旧 affiliates/。本番は src/content/affiliates）
+│   ├── data/                 ← 水温・月別釣果・週報と月報（旧ルートの .data-set/research）
+│   └── serp/                 ← 検索意図・トップクエリ・サジェスト
 ├── point-matrix.md           ← 釣り方×ポイントマトリクス
 ├── point-article-template.md ← ポイント記事 MDX テンプレ
-├── tsuriguten-shoplist.md    ← 釣具店マスタ
-├── affiliates/               ← アフィリエイト調査メモ（本番は src/content/affiliates）
 ├── fukabori-workspace/       ← 深掘り・クラスター用
 ├── 301redirect/              ← 旧 WP URL・301
 └── （ルートの重複 index あり—.index/ を正とする）
@@ -40,14 +42,15 @@ Claude Code / Cursor では SKILL **`.agents/data-set-access/SKILL.md`**（入�
 
 | やりたいこと | 開くファイル |
 |--------------|--------------|
+| 調べた事実（料金・規則・仕様・生態）を探す・足す | `knowledge/index.md` → 書き方は `knowledge/CLAUDE.md` |
 | BlogCard の slug | `.index/blog-card-index.md` |
 | TackleCard の id | `.index/tackle-card-list.md` |
 | 駐車場・トイレ・座標 | `.index/infrastructure-master.json` |
 | 似たポイント・釣り方別一覧 | `point-matrix.md` |
-| 魚種の生態・シーズン | `.index/biological/{魚}.md` |
-| 季節記事の根拠 | `.index/season-fishing/*.md` |
+| 魚種の生態・シーズン | `knowledge/species/{魚}.md` |
+| 季節記事の根拠 | `knowledge/seasons/*.md` |
 | 記事タイトルからパス探索 | `llms.json` → `articles[]` |
-| 釣具店の営業時間 | `tsuriguten-shoplist.md` |
+| 釣具店の営業時間 | `knowledge/places/tsuriguten-shoplist.md` |
 | 旧 URL リライト | `301redirect/301list.md` |
 
 ## `llms.json` について
