@@ -15,6 +15,14 @@ const description = "浜名湖での釣りを始める方に向けた、基礎�
 // Extract all unique tags used in guide posts
 const activeGuideTags = [...new Set(guidePosts.flatMap((post) => post.data.tags))];
 
+// 最初に読む入口（CH-KW-05）。一覧の前に、初めての人が検索語やタグを選ばずに1本目へ進めるようにする
+const startLinks = [
+  { label: "最初の釣行を決める", text: "季節に合う魚と場所、子ども連れで行きやすい釣り場を選ぶ", links: [{ text: "浜名湖の魚釣りガイド", href: "/#start" }] },
+  { label: "釣り方を学ぶ", text: "初めてならサビキか、ちょい投げから", links: [{ text: "サビキ釣り", href: "/blog/sabiki-guide/" }, { text: "ちょい投げ", href: "/blog/guide/method/cho-nage-fishing/" }] },
+  { label: "道具を借りる・そろえる", text: "現地や宅配で借りる方法と、買うときの選び方", links: [{ text: "釣り具のレンタル", href: "/blog/guide/beginner/hamanako-tackle-rental-delivery-guide/" }, { text: "タックルの選び方", href: "/blog/hamanako-complete-tackle-guide/" }] },
+  { label: "出発前に確認する", text: "入ってはいけない場所、持ち帰れない魚介、ライフジャケット", links: [{ text: "浜名湖の釣りのルール", href: "/blog/guide/beginner/hamanako-fishing-rules-and-manners/" }] },
+];
+
 const estimated_initial_size = 28 + guidePosts.length * 158 + (guidePosts.length - 1) * 12;
 ---
 
@@ -30,6 +38,21 @@ const estimated_initial_size = 28 + guidePosts.length * 158 + (guidePosts.length
     </div>
   </TopLayout>
   <BottomLayout>
+    <section class="animate mb-10" aria-labelledby="guide-start-title">
+      <h2 id="guide-start-title" class="text-xl font-semibold text-black dark:text-white">初めての人が最初に読む4つ</h2>
+      <ol class="mt-4 grid gap-3 sm:grid-cols-2">
+        {startLinks.map((item, i) => (
+          <li class="rounded-lg border border-black/15 dark:border-white/20 p-4">
+            <p class="font-semibold text-black dark:text-white"><span class="mr-2 text-sm opacity-60">{i + 1}</span>{item.label}</p>
+            <p class="mt-1 text-sm">{item.text}</p>
+            <p class="mt-2 flex flex-wrap gap-x-4 gap-y-1 text-sm">
+              {item.links.map(l => <a href={l.href} class="underline underline-offset-4">{l.text} →</a>)}
+            </p>
+          </li>
+        ))}
+      </ol>
+      <p class="mt-6 text-sm">下の一覧は、入門・道具・天気などの記事を、言葉やタグで探すためのものです。</p>
+    </section>
     <div
       id="search-collection-wrapper"
       class="animate"

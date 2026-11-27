@@ -8,14 +8,80 @@ import spotsImage from "../assets/landing/journal-spots.webp"
 import fishImage from "../assets/landing/journal-fish.webp"
 import beginnerImage from "../assets/landing/journal-beginner.webp"
 
-const title = "浜名湖釣りガイド｜釣り場・魚・はじめての浜名湖釣り"
-const description = "浜名湖の釣りを、もっと深く。表浜名湖・中浜名湖・奥浜名湖の釣り場マップ、魚から探す釣り方、道具選びやマナーまで。浜名湖の釣りを楽しむための総合ガイドです。"
+const title = "浜名湖の魚釣りガイド｜釣り場・魚・季節から選ぶ"
+const description = "浜名湖の魚釣りは、季節・一緒に行く人・道具の有無で行き先が決まります。春夏秋冬の初めての釣り、家族で行きやすい釣り場の比べ方、道具がないときの準備、出発前に確かめることをまとめた総合ガイドです。"
 const areas = ["表浜名湖", "中浜名湖", "奥浜名湖"]
 const journal = [
   { category: "釣り場", title: "釣り場の選び方", href: "/map/", image: spotsImage, alt: "夕日に照らされた湖畔で釣りをする人のイメージ" },
   { category: "魚と釣り方", title: "魚から釣り方を探す", href: "/blog/target/", image: fishImage, alt: "青緑の水中を泳ぐシーバスのイメージ" },
-  { category: "入門ガイド", title: "はじめての浜名湖釣り", href: "/blog/guide/", image: beginnerImage, alt: "水辺に並べた釣り竿とリール、ルアーのイメージ" },
+  { category: "入門ガイド", title: "入門記事を探す", href: "/blog/guide/", image: beginnerImage, alt: "水辺に並べた釣り竿とリール、ルアーのイメージ" },
 ]
+
+// 季節別の釣行案内（材料: .workspace/.task/ch-kw-02-comparison-materials.md §6-1・§6-6-1、2026-11-24・26 照合）
+// months は端末の日付で「今の季節」の印を付けるためだけに使う（本文は静的。更新はこの配列を直してビルド）
+const seasons = [
+  {
+    key: "spring", name: "春", months: [3, 4, 5], range: "3〜5月",
+    headline: "5月ごろから、新居弁天でシロギスのちょい投げ",
+    body: "流れの緩い北側の堤防（T-1〜T-2）から20〜30mほど投げ、砂底をゆっくり引きます。5月は始まりで、数が釣れる本番は夏です。",
+    prep: "2〜3mの竿と小型リール、5〜10号のちょい投げ仕掛け、アオイソメかジャリメ",
+    avoid: "潮の速い時間（仕掛けが流されたら潮止まりを待つ）。GWは駐車場が満車になることもあります",
+    links: [{ text: "5月のキス釣り", href: "/blog/may-fishing/" }, { text: "新居弁天海釣公園", href: "/points/araibenten-umiduripark/" }],
+    alt: { lead: "慣れた人は、3〜4月の乗っ込みクロダイ", text: "春のクロダイ", href: "/blog/spring-nokkomi-guide/" },
+  },
+  {
+    key: "summer", name: "夏", months: [6, 7, 8], range: "6〜8月",
+    headline: "朝・夕の涼しい時間に、新居弁天でサビキ",
+    body: "竿を下ろすだけで始められ、家族で同じ釣りができます。アジ・イワシが相手で、最盛期は8〜9月。日中の暑さの中では粘りません。",
+    prep: "2〜3mの竿と小型リール、サビキ仕掛け（針4〜5号）とカゴ、アミエビ、水と日よけ",
+    avoid: "日中の暑さ。夏休みは駐車場が満車になることもあります",
+    links: [{ text: "サビキ釣りの始め方", href: "/blog/sabiki-guide/" }, { text: "新居弁天海釣公園", href: "/points/araibenten-umiduripark/" }],
+    alt: { lead: "慣れた人は、タコ（湖内の漁期は5〜9月）", text: "タコ釣りの解禁", href: "/blog/june-tako-opening/" },
+  },
+  {
+    key: "autumn", name: "秋", months: [9, 10, 11], range: "9〜11月",
+    headline: "9〜10月は、都田川河口でハゼ釣り",
+    body: "足元にエサを落とせば、すぐ反応が返ってきます。11月は型の大きい落ちハゼ。泥砂の浅瀬なので、岸から釣り、水に立ち込みません。",
+    prep: "2〜3mののべ竿でウキ釣りか、ちょい投げ（オモリ3〜5号）。石ゴカイを1〜2cmに切る",
+    avoid: "専用の駐車場はありません。路上に停めず、停める場所を先に決めてから行きます",
+    links: [{ text: "都田川河口の釣り場", href: "/points/miyakodagawa/" }, { text: "ハゼ釣りの始め方", href: "/blog/haze-beginner/" }],
+    alt: { lead: "トイレのある場所がよければ、新居弁天のサビキ（アジは10月まで）", text: "新居弁天海釣公園", href: "/points/araibenten-umiduripark/" },
+  },
+  {
+    key: "winter", name: "冬", months: [12, 1, 2], range: "12〜2月",
+    headline: "風の弱い昼に、新居弁天の足元でカサゴの穴釣り",
+    body: "護岸の隙間へ仕掛けを落とし、反応がなければ次の隙間へ。1〜2時間で切り上げ、体が冷える前に帰ります。",
+    prep: "短い竿と小型リール、ブラクリ2号（予備も）、アオイソメかサバの切り身、手・足・体の防寒",
+    avoid: "強風・うねり・波しぶきの日。防寒をしていても、風の中では粘りません",
+    links: [{ text: "冬の浜名湖の釣り", href: "/blog/hamanako-winter-fishing/" }, { text: "冬の防寒", href: "/blog/winter-cold-protection-guide/" }],
+    alt: { lead: "慣れた人は、穏やかな夜のメバル", text: "冬のライトゲーム", href: "/blog/winter-lightgame/" },
+  },
+]
+
+// 初めての釣り場の比較（材料: 同 §1。砂揚げ場は現在の駐車・立入条件の一次確認がそろうまで単独では載せない）
+const spots = [
+  {
+    name: "新居弁天海釣公園", href: "/points/araibenten-umiduripark/", label: "迷ったらここ",
+    rows: [
+      ["向く人", "初めての人、子ども連れ、道具を持っていない人"],
+      ["足場", "堤防の上は足場がよい。柵はT字堤の一部だけ"],
+      ["駐車", "有料駐車場から道具を運ぶ。GW・夏休みは満車になることも"],
+      ["トイレ", "駐車場内に公衆トイレ"],
+      ["釣り方", "サビキ・ちょい投げ・穴釣り。園内の今切ショップで竿を借りられる"],
+    ],
+  },
+  {
+    name: "家族で行きやすい7か所", href: "/points/family-car-points/", label: "車とトイレで選ぶ",
+    rows: [
+      ["向く人", "車の近さとトイレのどちらを優先するかで選びたい家族"],
+      ["足場", "場所ごとに違う。柵のない護岸もある"],
+      ["駐車", "車を釣り座の横に置けるのは砂揚げ場と、雄踏山崎のごく一部。ほかは駐車場から歩く"],
+      ["トイレ", "場所ごとに違う。近くにない所もある"],
+      ["釣り方", "サビキ・ハゼ釣り・ちょい投げなど"],
+    ],
+  },
+]
+
 const heroWidths = [750, 1100, 1440, 1672]
 const heroSources = await Promise.all(heroWidths.map(width => getImage({ src: heroImage, width, format: "webp", quality: 84 })))
 const heroSrcset = heroSources.map((image, i) => `${image.src} ${heroWidths[i]}w`).join(", ")
@@ -38,24 +104,127 @@ const mobileSrcset = mobileSources.map((image, i) => `${image.src} ${mobileWidth
     <div class="hero-shade" aria-hidden="true"></div>
     <div class="hero-content landing-shell">
       <p class="eyebrow hero-eyebrow" lang="en">LAKE HAMANA FISHING GUIDE<span aria-hidden="true"></span></p>
-      <h1 id="hero-title">浜名湖の釣りを、<br />もっと深く。</h1>
-      <p class="hero-description">釣り場も、魚も、楽しみ方も。</p>
+      <h1 id="hero-title">浜名湖の魚釣りガイド<span class="hero-title-sub">釣り場・魚・季節から選ぶ</span></h1>
+      <p class="hero-description">浜名湖の釣りを、もっと深く。</p>
       <div class="hero-actions">
         <a href="/map/" class="coral-button">釣り場を探す<span aria-hidden="true">→</span></a>
-        <a href="/blog/guide/" class="text-link">はじめての浜名湖<span aria-hidden="true">→</span></a>
+        <a href="#start" class="text-link">初めての人の選び方<span aria-hidden="true">↓</span></a>
       </div>
     </div>
-    <a href="#explore" class="scroll-cue" aria-label="エリアから釣り場を探すセクションへ">
+    <a href="#start" class="scroll-cue" aria-label="浜名湖の魚釣りの選び方へ">
       <span lang="en">SCROLL</span><span class="scroll-line" aria-hidden="true">↓</span>
     </a>
   </section>
 
   <div class="ocean-content">
+    <section id="start" class="guide-intro landing-shell" aria-labelledby="start-title">
+      <p class="eyebrow" lang="en">HOW TO CHOOSE<span aria-hidden="true"></span></p>
+      <h2 id="start-title">浜名湖の魚釣りは、季節・一緒に行く人・道具で選ぶ</h2>
+      <p class="guide-lead">浜名湖は外海とつながる湖で、季節によって釣れる魚と場所が変わります。初めてなら、次の3つを決めれば行き先はほぼ決まります。</p>
+      <ol class="choose-steps">
+        <li><a href="#season"><span class="step-label">いつ行く？</span><span class="step-text">季節に合う魚と場所を選ぶ</span><span aria-hidden="true">↓</span></a></li>
+        <li><a href="#first-spots"><span class="step-label">誰と行く？</span><span class="step-text">子ども連れなら、足場・駐車・トイレで比べる</span><span aria-hidden="true">↓</span></a></li>
+        <li><a href="#prepare"><span class="step-label">道具はある？</span><span class="step-text">なければ現地で借りる・事前に宅配で借りる</span><span aria-hidden="true">↓</span></a></li>
+      </ol>
+      <p class="guide-note">迷ったら<a href="/points/araibenten-umiduripark/">新居弁天海釣公園</a>から。トイレと園内の竿のレンタルがあり、堤防の上の足場もよい釣り場です。</p>
+    </section>
+
+    <section id="season" class="season landing-shell" aria-labelledby="season-title">
+      <p class="eyebrow" lang="en">FOUR SEASONS<span aria-hidden="true"></span></p>
+      <h2 id="season-title">季節ごとの、初めての釣り</h2>
+      <p class="section-description">春夏秋冬に1つずつ、初めての人と家族で行きやすい釣りを選びました。どの季節も、岸から釣る全員がライフジャケットを着ます。</p>
+      <div class="season-grid">
+        {seasons.map(s => (
+          <article class="season-card" data-months={s.months.join(",")} aria-labelledby={`season-${s.key}`}>
+            <p class="season-name"><span class="season-kanji">{s.name}</span><span class="season-range">{s.range}</span><span class="season-now" hidden>今の季節</span></p>
+            <h3 id={`season-${s.key}`}>{s.headline}</h3>
+            <p>{s.body}</p>
+            <dl>
+              <div><dt>準備</dt><dd>{s.prep}</dd></div>
+              <div><dt>避けたい</dt><dd>{s.avoid}</dd></div>
+            </dl>
+            <ul class="season-links">
+              {s.links.map(l => <li><a href={l.href}>{l.text}<span aria-hidden="true">→</span></a></li>)}
+            </ul>
+            <p class="season-alt">{s.alt.lead}：<a href={s.alt.href}>{s.alt.text}</a></p>
+          </article>
+        ))}
+      </div>
+      <p class="season-more">月ごとの魚は<a href="/blog/yearly-fishing-calendar/">浜名湖の釣りカレンダー</a>で確かめられます。</p>
+    </section>
+
+    <section id="first-spots" class="first-spots landing-shell" aria-labelledby="first-spots-title">
+      <p class="eyebrow" lang="en">FIRST SPOTS<span aria-hidden="true"></span></p>
+      <h2 id="first-spots-title">初めての釣り場を比べる</h2>
+      <p class="section-description">設備で選ぶなら新居弁天海釣公園、車の近さで選ぶなら家族向けの7か所から。</p>
+      <div class="spot-grid">
+        {spots.map(spot => (
+          <article class="spot-card" aria-labelledby={`spot-${spot.href.split("/").filter(Boolean).at(-1)}`}>
+            <p class="spot-label">{spot.label}</p>
+            <h3 id={`spot-${spot.href.split("/").filter(Boolean).at(-1)}`}><a href={spot.href}>{spot.name}<span aria-hidden="true">→</span></a></h3>
+            <dl>
+              {spot.rows.map(([k, v]) => <div><dt>{k}</dt><dd>{v}</dd></div>)}
+            </dl>
+          </article>
+        ))}
+      </div>
+      <p class="guide-note">柵がある場所でも、水際で子どもから目を離さないでください。柵は落ちにくくするだけで、落ちる危険がなくなるわけではありません。</p>
+    </section>
+
+    <section id="prepare" class="prepare landing-shell" aria-labelledby="prepare-title">
+      <p class="eyebrow" lang="en">BEFORE YOUR FIRST TRIP<span aria-hidden="true"></span></p>
+      <h2 id="prepare-title">道具がない・初めて来る人の準備</h2>
+      <div class="prepare-grid">
+        <div class="prepare-item">
+          <h3>道具を持っていない</h3>
+          <p>新居弁天海釣公園の園内にある今切ショップで、サビキ用ののべ竿やリール付きの竿を借りられます（エサ代は別）。営業は平日8〜16時、土日祝6:30〜17時で、季節や天気で変わることがあります。</p>
+          <ul class="season-links">
+            <li><a href="/points/araibenten-umiduripark/">料金と借り方（新居弁天）<span aria-hidden="true">→</span></a></li>
+            <li><a href="/blog/guide/beginner/hamanako-tackle-rental-delivery-guide/">事前に宅配で借りる<span aria-hidden="true">→</span></a></li>
+          </ul>
+        </div>
+        <div class="prepare-item">
+          <h3>身を守る準備</h3>
+          <p>岸からの釣りでも、全員がライフジャケットを着ます。子どもには浮力材の入ったベスト型を選び、親も一緒に着ると、子どもが脱ぎたがりません。</p>
+          <ul class="season-links">
+            <li><a href="/blog/guide/beginner/hamanako-fishing-rules-and-manners/">安全とルールを確かめる<span aria-hidden="true">→</span></a></li>
+          </ul>
+        </div>
+        <div class="prepare-item">
+          <h3>道具をそろえる</h3>
+          <p>買うなら、浜名湖でする釣り方に合わせて竿・リール・仕掛けを選びます。釣り方ごとの選び方をまとめています。</p>
+          <ul class="season-links">
+            <li><a href="/blog/hamanako-complete-tackle-guide/">浜名湖のタックルの選び方<span aria-hidden="true">→</span></a></li>
+          </ul>
+        </div>
+        <div class="prepare-item">
+          <h3>遠くから来る</h3>
+          <p>釣りの前後に観光や食事を組み合わせるなら、エリアごとの宿と過ごし方から計画します。</p>
+          <ul class="season-links">
+            <li><a href="/blog/travel/hamanako-kanko-hub/">釣りと観光のプラン<span aria-hidden="true">→</span></a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="before" class="before landing-shell" aria-labelledby="before-title">
+      <p class="eyebrow" lang="en">CHECK BEFORE YOU GO<span aria-hidden="true"></span></p>
+      <h2 id="before-title">出発前に、全員が確かめること</h2>
+      <ol class="check-list">
+        <li><strong>入ってはいけない場所と、持ち帰れない魚介</strong>。今切口の導流堤は立入禁止です。湖内ではアサリ・ナマコを採れず、マダコは10月〜翌4月が禁漁です。<a href="/blog/guide/beginner/hamanako-fishing-rules-and-manners/">浜名湖の釣りのルール</a></li>
+        <li><strong>天気・風・波</strong>。荒れそうな日は出かけません。</li>
+        <li><strong>ひとりで行かない</strong>。行き先と帰る時間を、家族か知人に伝えておきます。</li>
+        <li><strong>毒のある魚は素手で触らない</strong>。見慣れない魚が掛かったら、大人が確かめてから外します。<a href="/blog/guide/beginner/hamanako-poisonous-fish-guide/">浜名湖の毒魚</a></li>
+        <li><strong>現地の看板と施設のルール</strong>。立入禁止の表示がある場所には入りません。</li>
+      </ol>
+      <p class="check-source">天気・単独行動の確認は、<a href="https://www6.kaiho.mlit.go.jp/watersafety/fishing/01_action/" target="_blank" rel="noopener noreferrer">海上保安庁「釣りをする際の行動について」</a>に沿っています。</p>
+    </section>
+
     <section id="explore" class="explore landing-shell" aria-labelledby="explore-title">
       <div class="explore-copy">
         <p class="eyebrow" lang="en">EXPLORE THE LAKE<span aria-hidden="true"></span></p>
         <h2 id="explore-title">エリアから探す</h2>
-        <p class="section-description">表・中・奥。それぞれの浜名湖へ。</p>
+        <p class="section-description">行き先の条件が決まったら、表・中・奥のエリアから。</p>
         <nav class="area-links" aria-label="浜名湖のエリア">
           {areas.map(area => <a href={`/map/?area=${encodeURIComponent(area)}`}><span>{area}</span><span class="area-arrow" aria-hidden="true">→</span></a>)}
         </nav>
@@ -68,7 +237,7 @@ const mobileSrcset = mobileSources.map((image, i) => `${image.src} ${mobileWidth
 
     <section class="journal landing-shell" aria-labelledby="journal-title">
       <p class="eyebrow" lang="en">FISHING JOURNAL<span aria-hidden="true"></span></p>
-      <h2 id="journal-title">浜名湖を楽しむヒント</h2>
+      <h2 id="journal-title">魚・釣り方・入門記事から探す</h2>
       <div class="journal-grid">
         {journal.map(item => (
           <a class="journal-card" href={item.href}>
@@ -84,8 +253,19 @@ const mobileSrcset = mobileSources.map((image, i) => `${image.src} ${mobileWidth
       <div class="beginner-panel">
         <img src={heroSources[1].src} class="beginner-scene" alt="" width={1100} height={Math.round(heroImage.height * 1100 / heroImage.width)} loading="lazy" decoding="async" />
         <div class="beginner-copy"><h2 id="beginner-title">最初の一投を、浜名湖で。</h2><p>道具選びから釣り場のマナーまで。</p></div>
-        <a href="/blog/guide/" class="coral-button">釣りの基本を読む<span aria-hidden="true">→</span></a>
+        <a href="/blog/guide/" class="coral-button">入門記事を探す<span aria-hidden="true">→</span></a>
       </div>
     </section>
   </div>
 </LandingLayout>
+
+<script>
+  // 端末の日付で「今の季節」に印を付ける（本文は静的なまま。表示の補助だけ）
+  const month = new Date().getMonth() + 1
+  document.querySelectorAll<HTMLElement>(".season-card").forEach(card => {
+    const months = (card.dataset.months ?? "").split(",").map(Number)
+    if (!months.includes(month)) return
+    card.classList.add("is-now")
+    card.querySelector<HTMLElement>(".season-now")?.removeAttribute("hidden")
+  })
+</script>
